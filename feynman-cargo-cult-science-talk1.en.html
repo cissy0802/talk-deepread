@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Richard Feynman &middot; "Cargo Cult Science" — The runway is perfect and still no planes land</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="feynman-cargo-cult-science-talk1.html">中文 →</a></div>
+<header>
+<div class="kicker">Caltech Commencement · 1974</div>
+<h1>The runway is perfect and still no planes land</h1>
+<p class="sub">Richard Feynman &middot; "Cargo Cult Science"</p>
+<div class="modebar"><button id="btn-pop" class="on">Short</button><button id="btn-deep">Full</button></div>
+</header>
+
+<div class="mode-pop" id="mode-pop">
+
+<p>1974, commencement day at Caltech. A man who had won the Nobel Prize in Physics nine years earlier walks up and opens with the fact that people in the Middle Ages believed rhinoceros horn was good for potency — "another crazy idea of the Middle Ages is these hats we have on today, which is too loose in my case."</p>
+
+<p>For the next half hour, Richard Feynman wishes nobody a bright future. What he delivers is an undercover report: why do people believe so many wonderful things? He spent hours floating in isolation tanks. He went to Esalen, the headquarters of California's New Age. Sitting in a hot bath there he heard the man beside him working on a woman's big toe and asking his instructor, "I feel a kind of dent. Is that the pituitary?" — and couldn't stop himself: "You're a hell of a long way from the pituitary, man."</p>
+
+<p>But the funny stuff wasn't what bothered him. What bothered him were the things far more people believed, things already built into institutions: methods for teaching reading, methods for handling criminals, the efficacy of psychotherapy. These are called science — and then they intimidate ordinary people with common sense. A teacher with a good idea about how to teach reading is forced by the school system to do it another way. A mother feels guilty for the rest of her life because she didn't do "the right thing" according to the experts.</p>
+
+<p>He gave the whole category a name: <strong>Cargo Cult Science</strong>. Islanders in the South Seas saw planes bring good things during the war, so they did it too: runways, fires along the sides, a man in a wooden hut with two wooden pieces on his head for headphones and bamboo sticking out for antennas — he's the controller.</p>
+
+<blockquote><span class="en">They're doing everything right. The form is perfect. It looks exactly the way it looked before. But it doesn't work. No airplanes land.</span><cite>— Feynman, "Cargo Cult Science," 1974</cite></blockquote>
+
+<p>What's missing? Something, Feynman says, that nobody ever states explicitly in school — you're just supposed to catch on by osmosis: a kind of <strong>utter honesty, a kind of leaning over backwards</strong>. When you run an experiment, report everything you think might make it invalid, not just what makes it look good. When you put out a theory, publish the facts that disagree with it alongside the ones that agree. In one line: hand over all the information anyone would need to judge what your contribution is worth.</p>
+
+<blockquote><span class="en">The first principle is that you must not fool yourself—and you are the easiest person to fool.</span><cite>— Feynman, "Cargo Cult Science," 1974</cite></blockquote>
+
+<p><strong>And afterwards?</strong> The diagnosis was forty years early. In 2015, a collaboration of over two hundred researchers redid 100 psychology studies: 97% of the originals had produced statistically significant results, and only 36% of the replications did. He said publish it whichever way it comes out; today that has a name — <strong>Registered Reports</strong>, where the method is reviewed and the paper accepted before the results exist. The contrast: 96% of ordinary papers report that their hypothesis was supported; among Registered Reports, 44%.</p>
+
+<p>But the examples holding the diagnosis up did not survive the same check. He said physics had already cured itself of this disease; twelve years later someone calculated in the <em>American Journal of Physics</em> that 57% of the field's own recommended values for fundamental constants had fallen outside the confidence interval the previous review had claimed — where well-calibrated would be 2%. His model experiment, the one he admired most, he got the name wrong, the year wrong, and had it secondhand from a textbook. And anthropologists gave up on "cargo cult" long ago as both inaccurate and insulting.</p>
+
+<p>None of which diminishes the talk. It confirms the line: you really are the easiest person to fool.</p>
+
+</div>
+
+<div class="mode-deep" id="mode-deep" hidden>
+<div class="meta-card"><b>Talk</b> Cargo Cult Science &middot; <b>Occasion</b> Caltech commencement, 1974 &middot; <b>Length</b> ~3,100 words &middot; <b>Full text</b> <a href="https://calteches.library.caltech.edu/51/2/CargoCult.htm">Caltech, <em>Engineering and Science</em> 37(7), pp. 10–13</a></div>
+
+<h2>The moment</h2>
+
+<p>The opening worth remembering isn't the cargo cult. It's a hot tub.</p>
+
+<p>Feynman is sitting in a bath at Esalen with a man and a woman. The man says he's learning massage and asks whether he can practise on her; she gets up on a table. He starts on her foot, working the big toe around, then turns to his instructor: "I feel a kind of dent. Is that the pituitary?" The instructor says no, that's not the way it feels.</p>
+
+<p>Then the Nobel laureate speaks up:</p>
+
+<blockquote><span class="en">"You're a hell of a long way from the pituitary, man."</span><cite>— Feynman, "Cargo Cult Science," 1974</cite></blockquote>
+
+<p>Both of them turn to look at him. In his own words, <em>I had blown my cover</em>. She says, "It's reflexology." So he closes his eyes and appears to be meditating.</p>
+
+<p>This is a commencement address, and the man giving it is not there to lecture anyone: he doesn't state a thesis and then illustrate it. He first lets you see him sitting inside the pseudoscience, shutting his own mouth.</p>
+
+<h2>The man, and the year</h2>
+
+<p>Richard Feynman (1918–1988) shared the 1965 Nobel Prize in Physics for quantum electrodynamics (QED). In 1974 he was 56, positioned exactly between the two things he is most famous for: the undergraduate physics lectures were ten years old, and <em>Challenger</em> was twelve years away.</p>
+
+<p>He was not a philosopher of science, and that decides the texture of this talk: his authority doesn't come from citations, it comes from the fact that he actually got into the isolation tank and actually went to Uri Geller's hotel room to watch him rub a key. There is not one footnote in the whole thing.</p>
+
+<p>Why 1974. America was in the middle of a broad collapse of trust in experts: Vietnam had just ended, and Watergate was two months from Nixon's resignation. Meanwhile parapsychology was at the most respectable moment in its history — J. B. Rhine had run four decades of extrasensory perception (ESP) experiments at Duke, with his own institute and his own journal, and Feynman takes his claims apart, unnamed, at the end of the talk. <strong>That same summer</strong>, Walter J. Levy, the successor Rhine had hand-picked, was caught by colleagues tampering with recording equipment to manufacture positive results, admitted it and resigned. What Feynman said on stage was being confirmed in real time off it.</p>
+
+<p>The audience was Caltech's graduating class. This is not science popularization for outsiders; it is a physicist laying out the rules of the trade to people about to enter it.</p>
+
+<h2>The talk, in full</h2>
+
+<p>He starts in the Middle Ages: all kinds of crazy ideas, rhinoceros horn among them (and, in passing, the hats). Then a method was found for separating ideas — try one, and if it doesn't work, eliminate it — and organized into science. The next line kicks the platform out: even today he keeps getting pulled into conversations about UFOs, astrology, expanded consciousness, ESP. Hence the investigation. That whole stretch is comedy, and structurally it is building credibility: he is not a man criticising these things from an armchair.</p>
+
+<p>Then he escalates, because the real target was never astrology: "But then I began to think, what else is there that we believe?" He points at education — schools of reading methods, while the reading scores keep going down; "there's a witch doctor remedy that doesn't work." He points at how we treat criminals: lots of theory, no progress. And these things are said to be scientific. Then comes the most easily overlooked and heaviest passage in the talk: ordinary people with common-sense ideas are intimidated by this pseudoscience. A teacher with a good idea about teaching reading is forced by the school system to do it some other way; a parent of difficult boys feels guilty for the rest of her life because she didn't do "the right thing" according to the experts. <strong>What he cares about is not the dignity of academia. It is the weight this stuff puts on ordinary people.</strong></p>
+
+<p>Now the metaphor arrives: runways, fires, the wooden hut, the wooden headphones, bamboo antennas, the controller waiting for planes. The form is perfect, the planes don't land. What's missing? He says it would be about as hard to explain as telling South Sea Islanders how to arrange things so wealth actually appears — <strong>not something simple like improving the shape of the earphones</strong>. But there is one feature he can name:</p>
+
+<blockquote><span class="en">It's a kind of scientific integrity, a principle of scientific thought that corresponds to a kind of utter honesty—a kind of leaning over backwards.</span><cite>— Feynman, "Cargo Cult Science," 1974</cite></blockquote>
+
+<p><em>Leaning over backwards</em> ordinarily means putting yourself out to accommodate someone else. He uses it for a counterintuitive motion: <strong>deliberately pushing in the direction that hurts your own case</strong> — report everything that might make your experiment invalid, publish the facts that disagree with your theory, and the one that would matter most later: decide to publish it whichever way it comes out, because otherwise publication probability depends on the answer.</p>
+
+<p>He uses Millikan as the case: his predecessor measured the charge on the electron a little low, and the measurements that followed creep slowly upward — get a number too far above Millikan's and you assume something must be wrong, go looking, and find a reason; get one close to his and you don't look so hard. Then a sentence that data would contradict twelve years later: "We've learned those tricks nowadays, and now we don't have that kind of a disease."</p>
+
+<blockquote><span class="en">The first principle is that you must not fool yourself—and you are the easiest person to fool. So you have to be very careful about that. After you've not fooled yourself, it's easy not to fool other scientists.</span><cite>— Feynman, "Cargo Cult Science," 1974</cite></blockquote>
+
+<p>Then the cost of not repeating other people's experiments: a psychology student at Cornell wanted to change the conditions on someone else's rat experiment, and Feynman told her she had to reproduce the original conditions in her own lab first. Her professor's answer was that the experiment had already been done and she would be wasting time. And the counter-example he saves for last. In 1937 a man named Young tried to train rats to enter the third door down from wherever they started; the rats went straight to the door where the food had been the time before. The corridor was beautifully uniform — so how could they tell? He painted the door textures identical: they could still tell. He used chemicals to change the smell after each run: they could still tell. He covered the corridor to hide the lights and the arrangement of the room: they could still tell. Finally he found they could tell by <strong>the way the floor sounded when they ran over it</strong>, and the only fix was to put the corridor in sand.</p>
+
+<blockquote><span class="en">They just went right on running rats in the same old way, and paid no attention to the great discoveries of Mr. Young, and his papers are not referred to, because he didn't discover anything about the rats. In fact, he discovered all the things you have to do to discover something about rats.</span><cite>— Feynman, "Cargo Cult Science," 1974</cite></blockquote>
+
+<p>Last comes Rhine's ESP: as criticisms accumulate the techniques improve, and the effects get smaller and smaller until they gradually disappear. "And now you find a man saying that it is an irrelevant demand to expect a repeatable experiment. This is science?" The ending carries no crescendo, only a wish: that these graduates have the luck to end up somewhere they are free to maintain this kind of integrity, without a need to keep their position or their funding forcing them to lose it. Then an anticlimax: <strong>never say you'll give a talk unless you know clearly what you're going to talk about.</strong></p>
+
+<h2>Under the iceberg</h2>
+
+<h3>Millikan cooked it first</h3>
+
+<p>In Feynman's version Millikan is the victim: he used a faulty value for the viscosity of air, and the culprits are the people afterwards who wouldn't jump straight to the right number. The direction is right, but it leaves out the worst half. Millikan's 1913 paper states plainly that the 58 drops used in the analysis were not a selected group but represented every drop experimented upon over 60 consecutive days. In the late 1970s, historians opened his laboratory notebooks. Allan Franklin's 1981 study is relayed by Henrion and Fischhoff about as bluntly as it can be put:</p>
+
+<blockquote><span class="en">Of the 107 oil drops he observed, he excluded from publication 49 which seemed discrepant, despite his claim that he reported all his observations. This had little effect on the best estimate of e, but increased the apparent precision of the experiment.</span><cite>— Henrion &amp; Fischhoff, "Assessing uncertainty in physical constants," 1986</cite></blockquote>
+
+<p>Note the last clause: put the 49 back and the central value of <em>e</em> barely moves — <strong>what changes is the error bar</strong>. And that result was not found to be off by 0.6%, three standard deviations, until fifteen years later. Which means the starting point of "nobody dared depart from Millikan" is not the timidity of those who came after. It is that Millikan had understated his own uncertainty: they didn't dare jump because they had been told the number was firmer than it was. The exact thing the whole talk is built to prevent was done by the protagonist of its own example. That isn't a failure on Feynman's part — Franklin's paper is seven years later than the talk. But it shows the iceberg always runs one layer deeper than the stage.</p>
+
+<h3>Mr. Young was almost certainly not named Young</h3>
+
+<p>The work traces to <strong>Quin Fischer Curtis</strong>, a graduate student of John F. Shepard at the University of Michigan, in his 1931 master's thesis and 1936 doctoral thesis — both on exactly this, the control of floor cues in maze learning. Not 1937, and not Young.</p>
+
+<p>The revealing part is the source. The work appears in Maier and Schneirla's 1935 textbook <em>Principles of Animal Psychology</em>, chapter 17, which describes the experimenter covering the concrete floor of the building with sand to a depth of 1.5 inches — exactly what Feynman said on stage. <strong>What he was retelling was probably not a paper he had read, but a textbook's summary of one.</strong> As for "his papers are not referred to," that half is roughly right: Curtis 1931 was cited exactly once (Solomon 1948), and even that citation notes "original not seen, as cited in Maier &amp; Schneirla 1935." But the reason isn't only that the field was blind: Shepard preferred perfection to publishing, Michigan's psychology department was isolated from the mainstream, and maze-running research went out of fashion around the war. A complicated disappearance, told as a moral story.</p>
+
+<p><strong>Even Feynman, on the one thing he cared about most, did not hold himself to the standard he was demanding of everyone else.</strong></p>
+
+<h3>The metaphor itself</h3>
+
+<p>Wooden headphones, bamboo antennas, a runway lined with fires: by 1974 that picture was ready-made pop culture, which is exactly why it was useful. The problem is that it doesn't hold. Per the Open Encyclopedia of Anthropology's entry, most anthropologists have abandoned "cargo cult" as misleading and even embarrassing: it bundles together movements with very little in common; "cult" is discourteous, even insulting; and "cargo," to the people involved, meant far more than manufactured goods — it could mean autonomy, salvation, resistance to colonial rule. Lamont Lindstrom's 1993 <em>Cargo Cult: Strange Stories of Desire from Melanesia and Beyond</em> pushes it all the way: these stories tell us more about Western desire than about Melanesia.</p>
+
+<p>In other words, the metaphor he used to identify "perfect in form, never checked" is itself a piece of retelling that is perfect in form and was never checked.</p>
+
+<h2>What became of it</h2>
+
+<div class="fate"><p class="verdict">PARTLY HELD UP · as of 2026-09</p><p>The diagnosis held: the replication crisis forty years later — published findings that don't come out the same when someone repeats the method — confirmed nearly every ailment he named, and the remedies he prescribed have been built into institutions. What did not hold are the specific examples propping the diagnosis up, above all his claim that physics had already cured itself, which a physics journal refuted with data twelve years later. The talk's own label, meanwhile, has been widely abused.</p></div>
+
+<p><strong>1986: physics had not been cured.</strong> Henrion and Fischhoff's paper in the <em>American Journal of Physics</em> is precisely a check-up on "now we don't have that kind of a disease." Across eight sets of officially recommended values for five fundamental constants between 1928 and 1973 (N=40):</p>
+
+<blockquote><span class="en">The surprise index of 57% indicates that current estimates would have come as a surprise to earlier reviewers in more than half the cases.</span><cite>— Henrion &amp; Fischhoff, <em>American Journal of Physics</em> 54, p. 791, 1986</cite></blockquote>
+
+<p>Well-calibrated would be 2%. Their conclusion in one line: reported uncertainties are systematically too small, and this is the same thing psychology labs had been measuring for decades under the name overconfidence. <strong>This is Feynman's own field, during the very decades he pronounced it healthy.</strong></p>
+
+<p><strong>2011: the mechanism was quantified.</strong> Simmons, Nelson and Simonsohn published "False-Positive Psychology" in <em>Psychological Science</em>: stack four extremely common "researcher degrees of freedom" — the analysis decisions that never make it into the paper — and the false-positive rate at p&lt;.05 is 60.7%. The paper's own words: "a stunning 61% false-positive rate!"</p>
+
+<p><strong>2015: a check-up on a whole discipline.</strong> The Open Science Collaboration redid 100 studies from three psychology journals in <em>Science</em>:</p>
+
+<blockquote><span class="en">Replication effects were half the magnitude of original effects, representing a substantial decline. Ninety-seven percent of original studies had significant results. Thirty-six percent of replications had significant results.</span><cite>— Open Science Collaboration, <em>Science</em> 349, 2015</cite></blockquote>
+
+<p><strong>2021: a reading on the remedy.</strong> "Publish it whichever way it comes out" is now called a <strong>Registered Report</strong> — method reviewed and accepted before results exist. Scheel, Schijen and Lakens ran the comparison: 96% of a random sample of standard psychology papers report their first hypothesis supported (N=152); among published Registered Reports it is 44% (N=71). Those fifty-odd percentage points are publication probability depending on the answer. Move the publication decision to before the result, and they vanish.</p>
+
+<p><strong>Meanwhile, it gets abused.</strong> Detached from the text, "cargo cult" became an all-purpose slur — cargo cult programming, cargo cult management — applied to any practice the critic dislikes. Feynman meant something quite specific: a form fully assembled but missing the leaning-over-backwards step. As a label, it is used to <strong>skip</strong> the argument.</p>
+
+<p>He applied it himself where it was hardest. After <em>Challenger</em> broke up in 1986 he joined the Rogers Commission and pressed an O-ring into a glass of ice water on national television. The last line of Appendix F, which he signed alone, is the twelve-years-later version of this talk:</p>
+
+<blockquote><span class="en">For a successful technology, reality must take precedence over public relations, for nature cannot be fooled.</span><cite>— Feynman, Rogers Commission Report, Appendix F, 1986</cite></blockquote>
+
+<p>So the verdict can only be "partly held up," and the way it held and failed is a mirror image: <strong>his principle passed the next forty years of testing, and his examples did not.</strong> Handing over the unflattering half is exactly what the talk asks you to do.</p>
+
+<h2>Sources</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://calteches.library.caltech.edu/51/2/CargoCult.htm">Richard P. Feynman, "Cargo Cult Science," <em>Engineering and Science</em> 37(7), 1974</a></span><span class="d">The full text as published by Caltech; every Feynman quotation on this page is taken from it word for word.</span></li>
+<li><span class="t"><a href="https://gwern.net/doc/statistics/bias/1986-henrion.pdf">Henrion &amp; Fischhoff, "Assessing uncertainty in physical constants," <em>American Journal of Physics</em> 54(9), 1986</a></span><span class="d">Calibration analysis of the fundamental physical constants. The 57% surprise index, Millikan's 49 excluded drops and the 0.6% error all come from here.</span></li>
+<li><span class="t"><a href="https://repository.tilburguniversity.edu/server/api/core/bitstreams/ce6eaf2b-a5df-4d49-9a0f-6d7b3e6f4e89/content">Open Science Collaboration, "Estimating the reproducibility of psychological science," <em>Science</em> 349, 2015</a></span><span class="d">Replications of 100 psychology studies; the 97%/36% figures and "half the magnitude" come from its abstract.</span></li>
+<li><span class="t"><a href="https://www.bitss.org/education/mooc-parent-page/week-2-publication-bias/is-there-a-credibility-crisis/false-positive-psychology-2/">Simmons, Nelson &amp; Simonsohn, "False-Positive Psychology," <em>Psychological Science</em> 22, 2011</a></span><span class="d">The simulation of researcher degrees of freedom; 60.7% and "a stunning 61% false-positive rate" are from this paper.</span></li>
+<li><span class="t"><a href="https://gwern.net/maze">Gwern Branwen, "Feynman's Maze-Running Story"</a></span><span class="d">Traces "a man named Young in 1937" to Quin Fischer Curtis's 1931/1936 theses, reaching Feynman via a textbook.</span></li>
+<li><span class="t"><a href="https://www.anthroencyclopedia.com/entry/cargo-cults">"Cargo cults," Open Encyclopedia of Anthropology</a></span><span class="d">Survey of the discipline's abandonment of and objections to the term; supports this page's doubts about the metaphor.</span></li>
+</ul>
+</div>
+<footer>Talk Deepread &middot; one talk, and where its idea came from and went &middot; written 2026-09-13</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
