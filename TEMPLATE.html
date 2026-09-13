@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <!-- TEMPLATE for talk-deepread pages. Copy, fill every {{…}}, delete all comments that start with TEMPLATE.
      Do not add comments.js / search.js / index-button.js / i18n-tts.js / lightbox.js (auto-injected),
      and do not add data-tts attributes (the TTS bake writes them). The English page mirrors this file
@@ -55,28 +56,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <div class="langbar"><a href="{{slug}}-talk{{N}}.en.html">English →</a></div>
 <header>
 <div class="kicker">{{场合}} · {{年份}}</div>
-<h1>{{钩子标题}}</h1>
+<h1 data-tts="dba3b9ef900fb10d">{{钩子标题}}</h1>
 <p class="sub">{{演讲者}} ·《{{演讲题目}}》</p>
-<div class="modebar"><button id="btn-pop" class="on">精华版</button><button id="btn-deep">完整版</button></div>
+<div class="modebar"><button class="on" id="btn-pop">精华版</button><button id="btn-deep">完整版</button></div>
 </header>
-
 <div class="mode-pop" id="mode-pop">
 <!-- TEMPLATE 短版 ~800 字：一篇一口气读完的短文，不是摘要。 -->
 </div>
-
-<div class="mode-deep" id="mode-deep" hidden>
-<div class="meta-card"><b>演讲</b> {{题目}} · <b>场合</b> {{场合 · 年份}} · <b>时长</b> {{分钟}} · <b>全文</b> <a href="{{逐字稿 URL}}">{{来源}}</a></div>
-<h2>那一刻</h2>
-<h2>讲的人，和那一年</h2>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card" data-tts="671e46d4ad24886f"><b>演讲</b> {{题目}} · <b>场合</b> {{场合 · 年份}} · <b>时长</b> {{分钟}} · <b>全文</b> <a href="{{逐字稿 URL}}">{{来源}}</a></div>
+<h2 data-tts="a5cc2fe6bf42ccc0">那一刻</h2>
+<h2 data-tts="3e5514c4bf833c45">讲的人，和那一年</h2>
 <!-- TEMPLATE 可选：<h2>术语表 · Glossary</h2><div class="glossary"><ul><li><b>词</b>：一句大白话</li></ul></div> -->
-<h2>这场演讲，讲透</h2>
+<h2 data-tts="b51f0e9f043babf7">这场演讲，讲透</h2>
 <!-- TEMPLATE 引语形状（英文演讲）：
 <blockquote><span class="en">原文</span><span class="zh">中译</span><cite>— 演讲者，《题目》，年份</cite></blockquote>
      中文演讲只放 <span class="zh">原文</span> + cite。 -->
-<h2>冰山下面</h2>
-<h2>后来的命运</h2>
+<h2 data-tts="470c5cee5e756106">冰山下面</h2>
+<h2 data-tts="ff13173ef5e2e181">后来的命运</h2>
 <div class="fate"><p class="verdict">{{VERDICT：站住了 / 部分站住 / 被推翻 / 被滥用 / 仍悬而未决}} · 截至 {{YYYY-MM}}</p><p>{{一两句判词}}</p></div>
-<h2>出处</h2>
+<h2 data-tts="124deb1762c7d278">出处</h2>
 <ul class="reads">
 <li><span class="t"><a href="{{URL}}">{{标题}}</a></span><span class="d">{{它是什么、支撑了本页哪一处}}</span></li>
 </ul>
