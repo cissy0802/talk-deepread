@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Daniel Kahneman · "The riddle of experience vs. memory" — you have two selves, and the bookkeeper signs everything</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="kahneman-experience-vs-memory-talk3.html">中文 →</a></div>
+<header>
+<div class="kicker">TED &middot; 2010</div>
+<h1>You have two selves, and the bookkeeper signs everything</h1>
+<p class="sub">Daniel Kahneman &middot; "The riddle of experience vs. memory"</p>
+<div class="modebar"><button class="on" id="btn-pop">Short</button><button id="btn-deep">Full</button></div>
+</header>
+
+<div class="mode-pop" id="mode-pop">
+<p>In February 2010, a seventy-five-year-old man stood on the TED stage and told a story someone had told him. The man had been listening to a recording of a symphony &mdash; twenty minutes of glorious music &mdash; and right at the end, a scratch on the disc produced a dreadful screeching sound. Recounting it, he was still upset: <strong>it ruined the whole experience.</strong></p>
+<p>The old man disagreed. What had been ruined was the <strong>memory</strong> of the experience. The twenty minutes of good music had genuinely happened. They just counted for nothing &mdash; because a memory was all he got to keep, and the memory was wrecked.</p>
+<p>The speaker was Daniel Kahneman, a psychologist who had won the Nobel in economics eight years earlier. He used the story to open a distinction: <strong>you have two selves</strong>. One is the experiencing self, which lives in the present &mdash; the one a doctor addresses by pressing somewhere and asking "does it hurt now?" The other is the remembering self, which keeps score, tells the story, maintains the narrative of your life &mdash; the one a doctor addresses by asking "how have you been feeling lately?" The two keep completely different books.</p>
+<p>How different? Kahneman put up minute-by-minute pain recordings from two patients undergoing colonoscopy. B's procedure was longer, and every minute of pain A had, B had, and more. Who suffered more? Obviously B. But ask afterwards how bad the whole thing was, and the answer inverts: <strong>A's memory was far worse</strong>. A's pain peaked at the very end; B's tapered off. How a story closes decides how bad a story it is.</p>
+<p>From which a cold conclusion follows: <strong>we don't choose between experiences, we choose between memories of experiences.</strong> The experiencing self gets no vote. Its moments &mdash; roughly 600 million in a lifetime, by his arithmetic &mdash; mostly leave no trace; they are "lost forever." He left the room a thought experiment: suppose that at the end of your next vacation all your photographs are destroyed and you're given an amnesic drug, so you'll remember nothing. Would you choose the same vacation? If you'd switch, then a good part of your holidays isn't being taken for you. It's being taken for the bookkeeper.</p>
+<p><strong>So what became of it?</strong> The core psychology held up. A 2022 independent meta-analysis pooling 174 effect sizes put the peak-end effect at r = 0.581, with the influence of duration "essentially nil." But the project he was selling that night did not survive. On stage he predicted that within one or two decades, measuring the population's experienced happiness would become part of national statistics. Eight years later he said flatly that he had left the field of happiness &mdash; because what people want isn't to maximize experience but to maximize satisfaction with their own lives. The remembering self won, decisively enough that its critic changed sides. More awkwardly, the famous result drawn from the same Gallup data &mdash; that happiness stops rising past about $75,000 a year &mdash; was largely overturned in 2023 by an adversarial collaboration he himself joined: the plateau was an artifact of a measurement ceiling, and it holds only for the least happy minority.</p>
+<p>On 27 March 2024, Kahneman died by assisted suicide in Switzerland, aged 90. It became public only a year later. The man who spent a career showing that endings dominate the story arranged his own.</p>
+</div>
+
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>Talk</b> The riddle of experience vs. memory &middot; <b>Where</b> TED2010 (recorded 2010-02-10, posted that March) &middot; <b>Length</b> about 20 minutes incl. the host Q&amp;A &middot; <b>Full text</b> <a href="https://www.ted.com/talks/daniel_kahneman_the_riddle_of_experience_vs_memory/transcript">official TED transcript</a></div>
+
+<h2>The moment</h2>
+<p>A few minutes in, Kahneman mentions a small thing. In the Q&amp;A after one of his lectures, an audience member reported an experience: he had been listening to a recording of a symphony, the music "absolutely glorious," and at the very end of the recording there was a dreadful screeching sound. Kahneman notes the man's delivery &mdash; "really quite emotionally." His conclusion: it ruined the whole experience.</p>
+<p>Then comes the beat that quiets the room. Kahneman doesn't console him. He contradicts, in public, a man's own account of his own life:</p>
+<blockquote><span class="en">But it hadn't. What it had ruined were the memories of the experience. He had had the experience. He had had 20 minutes of glorious music. They counted for nothing because he was left with a memory; the memory was ruined, and the memory was all that he had gotten to keep.</span><cite>&mdash; Daniel Kahneman, TED2010</cite></blockquote>
+<p>The line cuts both ways, which is why it lands. The first half is consolation: you didn't lose those twenty minutes, you really did enjoy them. The second half takes the consolation back: and they <strong>counted for nothing</strong>. The whole talk grows out of that crack.</p>
+
+<h2>The speaker, and that year</h2>
+<p>Daniel Kahneman was born in Tel Aviv on 5 March 1934 and spent his childhood in Nazi-occupied Paris. That isn't decoration on a CV: a child whose daily homework was knowing which sentence could get him killed grew up to study how human judgment goes wrong. In 2002 he won the Nobel Memorial Prize in economics for importing psychological experiment into the field &mdash; having never taken a course in economics.</p>
+<p>When he walked onto the TED stage in February 2010 he was seventy-five, emeritus at Princeton. What matters is where he stood at that moment. The work that made his name &mdash; prospect theory, the heuristics-and-biases program with Amos Tversky &mdash; dated from the 1970s and was already textbook material. This talk was about his <strong>second career</strong>: the hedonic psychology he had turned to in the 1990s, the measurement of happiness itself. That work was nowhere near settled.</p>
+<p>The audience was the usual TED crowd &mdash; founders, investors, foundation heads, precisely the people most committed to optimizing a life. Kahneman called them out in his opening: he had someone count the books published in the last five years with "happiness" in the title, and they gave up after about forty; happiness coaching everywhere. And the whole industry, he said, is conceptually confused.</p>
+<p>One more marker in time: <em>Thinking, Fast and Slow</em>, the book that made him a household name, didn't appear until October 2011, eighteen months after this talk, and its final part is called "Two Selves." These twenty minutes are therefore an unusual specimen &mdash; <strong>Kahneman selling an idea still in mid-air, as a researcher rather than as a bestselling author</strong>.</p>
+
+<h2>The talk, in full</h2>
+<p>Kahneman doesn't open with a story. He builds a frame first: three "cognitive traps" that make it nearly impossible to think straight about happiness &mdash; a reluctance to admit complexity, a confusion between experience and memory, and the focusing illusion (attend to any one factor and you will overweight its importance). That is a scholar's opening, not an orator's: he tells you what he intends to dismantle.</p>
+<p>The symphony story introduces the two selves, and the definitions are restrained. The experiencing self "lives in the present and knows the present, is capable of re-living the past, but basically it has only the present." The remembering self is "the one that keeps score, and maintains the story of our life." He nails the distinction down with two things a doctor says: "Does it hurt now when I touch you here?" addresses the first; "How have you been feeling lately?" or "How was your trip to Albania?" addresses the second. An utterly mundane contrast that splits the entire study of happiness in half.</p>
+<p>The second brick is data, and it is the talk's fulcrum: real-time recordings from two patients reporting pain every 60 seconds during a colonoscopy. He stresses this is an old study, from the 1990s, when the procedure was still painful.</p>
+<figure>
+<svg viewBox="0 0 700 300" role="img" aria-label="Schematic pain-over-time curves for two colonoscopy patients">
+<line x1="60" y1="250" x2="670" y2="250" stroke="#3a454f" stroke-width="1.5"/>
+<line x1="60" y1="250" x2="60" y2="30" stroke="#3a454f" stroke-width="1.5"/>
+<text x="60" y="278" fill="#7d8794" font-family="monospace" font-size="13">0</text>
+<text x="330" y="278" fill="#7d8794" font-family="monospace" font-size="13">time &rarr;</text>
+<text x="10" y="46" fill="#7d8794" font-family="monospace" font-size="13">pain</text>
+<text x="18" y="248" fill="#7d8794" font-family="monospace" font-size="13">0</text>
+<polyline points="60,240 90,190 120,150 150,175 180,130 210,160 240,105 270,140 300,70" fill="none" stroke="#e8d46b" stroke-width="2.6"/>
+<circle cx="300" cy="70" r="5" fill="#e8d46b"/>
+<text x="312" y="66" fill="#e8d46b" font-family="monospace" font-size="13">Patient A: ends at the peak</text>
+<polyline points="60,240 90,185 120,140 150,165 180,110 210,145 240,60 270,100 300,120 330,95 360,140 390,125 420,165 450,150 480,185 510,175 540,205 570,215 600,230" fill="none" stroke="#5ee6a8" stroke-width="2.6"/>
+<circle cx="600" cy="230" r="5" fill="#5ee6a8"/>
+<text x="360" y="262" fill="#5ee6a8" font-family="monospace" font-size="13">Patient B: longer, worse, but tapers off</text>
+<text x="230" y="46" fill="#93a1ae" font-family="monospace" font-size="12">B's peak</text>
+</svg>
+<figcaption>Schematic, redrawn from the shape Kahneman described on stage &mdash; not the original data</figcaption>
+</figure>
+<p>First the easy question: who suffered more? Obviously B &mdash; "every minute of pain that Patient A had, Patient B had, and more." Then the real one: how much did they <strong>think</strong> they suffered? The answer inverts: A's memory was far worse. The only difference is how each story closed &mdash; A's pain peaked at the very end. In his phrase, it's a bad story.</p>
+<p>Then the most counterintuitive step of the evening. If endings dominate memory, endings can be engineered.</p>
+<blockquote><span class="en">you could actually extend the colonoscopy of Patient A by just keeping the tube in without jiggling it too much. That will cause the patient to suffer, but just a little and much less than before. […] you have made the experiencing self of Patient A worse off, and you have the remembering self of Patient A a lot better off, because now you have endowed Patient A with a better story about his experience.</span><cite>&mdash; Daniel Kahneman, TED2010</cite></blockquote>
+<p>He adds: "we actually ran clinical experiments, and it has been done, and it does work." <strong>Deliberately hurt someone a little longer so that afterwards they remember it hurting less.</strong> On stage this is delivered as a victory. It became the talk's most contested legacy.</p>
+<p>Then the definition of a story: "What defines a story are changes, significant moments and endings. Endings are very, very important." And the experiencing self's moments? "They are lost forever." Time is therefore the deepest split between the two selves: for the experiencing self, two weeks of vacation is twice as good as one; for the remembering self, two weeks is barely better than one, because no new memories have been added. Which brings the hardest line in the talk:</p>
+<blockquote><span class="en">We actually don't choose between experiences, we choose between memories of experiences. […] you can think of the remembering self sort of dragging the experiencing self through experiences that the experiencing self doesn't need.</span><cite>&mdash; Daniel Kahneman, TED2010</cite></blockquote>
+<p>The last third pushes into measurement and policy, and here he indicts his own field: "Anyone who doesn't distinguish those notions is going to mess up the study of happiness, and I belong to a crowd of students of well-being, who've been messing up the study of happiness for a long time in precisely this way." A Nobel laureate putting himself, on stage, into the pile he is criticizing.</p>
+<p>He closes with California. Someone in Ohio thinking about California is really thinking about the <strong>contrast</strong> between the two places, mostly climate &mdash; and climate isn't very important to the experiencing self. So some people actually move. Their experiencing self won't get happier, but <strong>they will think they are happier</strong>, because whenever they consider it they'll be reminded of how horrible the weather was in Ohio. The final sentence is exceptionally restrained: "It is very difficult to think straight about well-being, and I hope I have given you a sense of how difficult it is." No advice. No action items. On a TED stage that is close to aberrant.</p>
+
+<h2>Under the iceberg</h2>
+<h3>That "it does work": a 682-patient trial, far narrower than the tone</h3>
+<p>The curves came from Redelmeier and Kahneman's 1996 paper in <em>Pain</em>, and the scale is both more specific and smaller than the stage implies: <strong>154 colonoscopy patients and 133 lithotripsy patients</strong>, pain logged every 60 seconds. Patients' judgments of total pain correlated strongly with <strong>peak intensity</strong> and with <strong>the last three minutes</strong> (P &lt; 0.005). On duration, the paper's own words: "Despite substantial variation in the duration of the experience, lengthy procedures were not remembered as particularly aversive." But this was <strong>correlational, not an experiment</strong>: it never showed that manipulating the ending changes the memory.</p>
+<p>That claim rests on the 2003 follow-up: Redelmeier, Katz and Kahneman's randomized controlled trial in <em>Pain</em>, <strong>682 consecutive outpatients</strong>, half of them randomly assigned to have the colonoscope tip left resting in the rectum for <strong>up to 3 minutes</strong> &mdash; no suction, no inflation, no added anesthetic. The results were positive, and every number is narrower than the stage voice:</p>
+<ul>
+<li>Pain in the final part: <strong>1.7</strong> in the modified group vs <strong>2.5</strong> in the conventional one (ten-point scale, P &lt; 0.001) &mdash; the manipulation itself worked.</li>
+<li>Remembered unpleasantness of the whole thing (10 cm visual analogue scale): <strong>4.4 vs 4.9</strong> (P = 0.006). The authors describe this themselves as "about a 10% relative decrease in the overall memory of pain."</li>
+<li>The behavioral endpoint &mdash; returning for a repeat colonoscopy, median follow-up 5.3 years: 50.4% overall, slightly higher in the modified group (odds ratio 1.41, P = 0.038). Among patients with no prior colonoscopy, <strong>10 people</strong> had to be treated this way to bring one extra person back.</li>
+</ul>
+<p>And an ironic detail. On stage Kahneman says "if you do that for a couple of minutes," which sounds like a visibly lengthened procedure. In the actual trial the two groups' total durations differed by about <strong>one minute</strong> (27.6 vs 26.8 minutes) &mdash; and the difference was <strong>not statistically significant</strong> (P &gt; 0.20). The authors' conclusion is far more cautious than the stage's: they call it a "proof-of-concept study" and write that the results "suggested that more effective interventions are needed in practice." The brisk <em>it does work</em> is, in the paper, a roughly 10% shift plus a note saying this isn't good enough.</p>
+<h3>The California segment: 1,993 undergraduates, and a caveat left out</h3>
+<p>The closing example comes from Schkade and Kahneman's 1998 paper in <em>Psychological Science</em>: <strong>1,993 undergraduates</strong> at the University of Michigan (492), Ohio State (499), UCLA (503) and UC Irvine (499). The core finding is an elegant null &mdash; <strong>no difference in self-reported overall life satisfaction</strong> between the regions (raw means for Caucasian respondents: 2.95 in the Midwest, 2.98 in California) &mdash; while respondents in both regions predicted that "someone like them" would be more satisfied in California.</p>
+<p>On stage he says climate isn't important to the experiencing self. The paper in fact <strong>never measured anything belonging to the experiencing self</strong>: it measured questionnaire satisfaction ratings, from students, not from people who had moved. More striking is a passage the talk skips entirely. Midwestern students were less satisfied with <strong>every aspect</strong> of their climate, and with the natural beauty of their region. From which the authors write something admirably careful: the hedonic treadmill hypothesis is sometimes taken to imply that people adapt to any sustained state of affairs, but "adaptation appears to have its limits: It is not nice to be cold and wet, even if one is surrounded by others who are also cold and wet."</p>
+
+<h2>What became of it</h2>
+<div class="fate"><p class="verdict">PARTLY HELD UP &middot; as of 2026-09</p><p>As psychology, the peak-end rule and duration neglect have been confirmed repeatedly by large independent evidence; they stand. But the project Kahneman was selling that night &mdash; replacing life satisfaction with experienced well-being as the measure of a life and the basis of policy &mdash; he abandoned himself, and the most famous result drawn from the same data was overturned with his own signature on the correction.</p></div>
+<p><strong>The core psychology held.</strong> In 2022, Alaybek, Dalal and colleagues published a meta-analysis in <em>Organizational Behavior and Human Decision Processes</em> pooling <strong>174 effect sizes</strong>. The verdict favors Kahneman: the peak-end effect is <strong>large</strong> (r = 0.581, 95% CI 0.487&ndash;0.661) and robust across the moderators examined, while the influence of <strong>duration</strong> was "essentially nil," directly supporting duration neglect. The evidence is independent of Kahneman. In 2024 Scharbert and colleagues took it out of the laboratory in the <em>European Journal of Personality</em>: four experience-sampling samples (<strong>1,889 people, 131,575 measurements</strong>) confirmed that peaks and ends are disproportionately weighted in everyday life too &mdash; but the size of the effect <strong>depends on how you ask</strong>: broadly framed retrospective questions are more easily captured by peak and end than more specific framings are.</p>
+<p><strong>He withdrew.</strong> At the end of the talk, host Chris Anderson presses on policy implications, and Kahneman predicts that in the United States efforts are being made to measure the population's experienced happiness: "This is going to be, I think, within the next decade or two, part of national statistics." Eight years later, on 12 November 2018, in a public conversation with the economist Tyler Cowen, he said this:</p>
+<blockquote><span class="en">I actually left the field of happiness, in that I was very interested in maximizing experience, but this doesn't seem to be what people want to do. They actually want to maximize their satisfaction with themselves and with their lives.</span><cite>&mdash; Daniel Kahneman, Conversations with Tyler, 2018-11-12</cite></blockquote>
+<p>This is not a refutation by others; it is the author conceding. And the shape of the concession is unusual. His <strong>description</strong> was right &mdash; the remembering self does run the show. What failed was the <strong>normative claim</strong>, that the experiencing self is the one that really matters and that policy should tilt toward it.</p>
+<p><strong>The most famous number from the same data was overturned, with him on the paper.</strong> The Gallup poll he mentions on stage was at that moment becoming his best-known article: Kahneman and Angus Deaton's September 2010 PNAS study, drawing on more than 450,000 responses, reporting that emotional well-being rises with income but makes "no further progress beyond an annual income of ~$75,000." In 2021 Matthew Killingsworth, using experience sampling, reached the opposite conclusion. Rather than trading fire, the two did something rare in academic life &mdash; an <strong>adversarial collaboration</strong>. In March 2023, Killingsworth, Kahneman and Barbara Mellers published "Income and emotional well-being: A conflict resolved" in PNAS, and the finding is unkind to Kahneman: the plateau holds <strong>only for the least happy 15&ndash;20%</strong>, at a threshold near $100,000; for happier people, well-being keeps rising with log income. The abstract is blunt: "We then explain why Kahneman and Deaton overstated the flattening pattern." The cause was a <strong>ceiling effect</strong> &mdash; average reported positive affect was already 89% of a perfect score, so the items could not discriminate among degrees of happiness. It was a ruler for unhappiness being used as a ruler for happiness. Kahneman was 89, and put his name to the correction of his own most famous result.</p>
+<p><strong>Finally, about endings.</strong> On 27 March 2024, Daniel Kahneman died by assisted suicide in Switzerland, aged 90. He had emailed friends a farewell the day before: he was still active and still enjoying much of life, but his kidneys were failing and mental lapses were growing more frequent, and he had believed since he was a teenager that the miseries and indignities of the last years of life are superfluous. It became public only in 2025, reported by Jason Zweig of <em>The Wall Street Journal</em>, a friend of nearly thirty years.</p>
+<p>A man who spent twenty minutes arguing that endings are very, very important did the consistent thing with his own story: he refused to let it end on the peak.</p>
+
+<h2>Sources</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.ted.com/talks/daniel_kahneman_the_riddle_of_experience_vs_memory/transcript">The riddle of experience vs. memory &mdash; official TED transcript</a></span><span class="d">The sole source for every quotation and stage figure on this page, including the closing exchange about national statistics.</span></li>
+<li><span class="t"><a href="https://pubmed.ncbi.nlm.nih.gov/8857625/">Redelmeier &amp; Kahneman, "Patients' memories of painful medical treatments" (Pain, 1996)</a></span><span class="d">The original study behind the pain curves on stage; supplies the 154 / 133 sample sizes and the sentence about duration.</span></li>
+<li><span class="t"><a href="https://www.amherst.edu/system/files/media/0678/colonoscopy%202.pdf">Redelmeier, Katz &amp; Kahneman, "Memories of colonoscopy: a randomized trial" (Pain, 2003)</a></span><span class="d">The trial behind "it does work," readable in full. The 682 patients, 1.7 vs 2.5, 4.4 vs 4.9 and odds ratio 1.41 all come from here.</span></li>
+<li><span class="t"><a href="https://web.mit.edu/curhan/www/docs/Articles/biases/9_Psychological_Science_340_(Schkade).pdf">Schkade &amp; Kahneman, "Does Living in California Make People Happy?" (Psychological Science, 1998)</a></span><span class="d">The study behind the California segment: the 1,993-student sample and the "cold and wet" caveat the talk omits.</span></li>
+<li><span class="t"><a href="https://ideas.repec.org/a/eee/jobhdp/v170y2022ics0749597822000334.html">Alaybek et al., meta-analysis of the peak-end rule and duration neglect (OBHDP, 2022)</a></span><span class="d">174 effect sizes, independent of Kahneman: r = 0.581, duration essentially nil.</span></li>
+<li><span class="t"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10013834/">Killingsworth, Kahneman &amp; Mellers, "Income and emotional well-being: A conflict resolved" (PNAS, 2023)</a></span><span class="d">The adversarial collaboration he joined: the plateau holds only for the least happy 15&ndash;20%, and stems from a ceiling effect.</span></li>
+</ul>
+</div>
+<footer>Talk Deepread &middot; one talk, and where its idea came from and went &middot; written 2026-09-15</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
