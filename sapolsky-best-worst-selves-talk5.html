@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Robert Sapolsky ·《我们最好和最坏的自己的生物学》— 从一秒前，一路问到一百万年前</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="sapolsky-best-worst-selves-talk5.en.html">English →</a></div>
+<header>
+<div class="kicker">TED2017 · 2017</div>
+<h1>从一秒前，一路问到一百万年前</h1>
+<p class="sub">Robert Sapolsky ·《我们最好和最坏的自己的生物学》</p>
+<div class="modebar"><button class="on" id="btn-pop">精华版</button><button id="btn-deep">完整版</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>一个神经生物学家站上 TED 舞台，开口讲的是他打算怎么折磨希特勒。</p>
+<p>制服精锐卫队，冲进秘密地堡，扭打，按住，铐上。<strong>"Adolf Hitler," I say, "I arrest you for crimes against humanity."</strong>（「阿道夫·希特勒，」我说，「我以反人类罪逮捕你。」）然后他说：拿荣誉勋章的那个版本到这里就结束了，画面开始变暗。接下来 Robert Sapolsky 用报菜名的语气念了一串：切断脊髓、挖出眼睛、刺穿耳膜、割掉舌头，接上呼吸机留他活着，<strong>只剩下能感觉</strong>，再注射致癌物，让每个细胞都在尖叫。这个幻想他从小做到大，现在偶尔还做，做的时候心跳会加快。然后他亲手把它拆了：</p>
+<blockquote><span class="en">But there's a problem, which is I don't actually believe in souls or evil, and I think wicked belongs in a musical.</span><span class="zh">但有个问题：我其实并不相信有灵魂，也不相信有邪恶，而「邪恶」这个词我觉得应该留给音乐剧。</span></blockquote>
+<p>接下来三十秒是整场演讲的引擎：有些人我确实想看他们被杀掉，但我反对死刑；我爱看烂俗的暴力片，但我支持严格控枪。<strong>"In other words, I'm your basic confused human when it comes to violence."</strong>（换句话说，一碰上暴力，我就是个标准的、糊涂的人类。）这份糊涂不是缺陷，它就是题目本身：我们并不恨暴力，我们恨的是<strong>不对的那一种</strong>；对的那一种，我们欢呼、发勋章、投票给他、跟他生孩子。而同一个会用淋浴喷头输送毒气的物种，也极端利他、极端有同情心。</p>
+<p>于是他给出了那个动作——<strong>倒着走</strong>。场景是：暴乱中一个陌生人朝你跑来，神情看不清，手里的东西有点像枪，你扣下扳机。那是一部手机。现在一层一层往回退：前一秒，你的杏仁核有多兴奋？前几个月，长期压力是否已经把杏仁核养大、把额叶磨薄？再往前是青春期、胎儿期的表观遗传标记、受精那一刻的基因、几百年前你祖先赶着骆驼和山羊时发明的「荣誉文化」、几百万年的灵长类演化。<strong>每一层都不是并列的解释，而是上一层的成因。</strong></p>
+<p>所以他给出的正式结论听起来像投降：<strong>"Officially, it's complicated. Wow, that's really helpful."</strong>（官方答案是：很复杂。哇，这可真有用。）但紧接着那半句才是刀刃：你最好非常小心、非常谨慎，再下结论说你知道一个行为的成因——<strong>尤其当你正在严厉地评判它的时候</strong>。</p>
+<p>最后他讲变化，而且例子的时间尺度越缩越短：约翰·牛顿用了几十年；1914 年圣诞节，英德士兵在无人区一起抬尸、挖坟、祷告、踢球，几个小时就重新划定了谁是「我们」；美莱村，直升机驾驶员 Hugh Thompson 把机枪调转对准自己的同胞，只用了几秒。</p>
+<p><strong>后来呢？</strong>「多层次因果」这个框架赢了——它成了那本 800 页《Behave》的骨架，今天在行为科学里近乎常识。但他在台上当砖头用的那几块，有的松了：MAO-A 那项研究的样本是 442 个白人男孩，迄今最大的一次独立重复没做出来；「额叶到 25 岁才成熟」这个数字，连最常被引用的那批研究者后来都说不清它是哪来的——它却已经进了法院的量刑考量。而 2023 年，Sapolsky 把同一条逻辑一路推到底，出了一本论证人根本没有自由意志的书；哲学家的回应是：一本讲自由意志的书，居然不讨论自由意志。</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>演讲</b> The biology of our best and worst selves · <b>场合</b> TED2017（2017-04-24 录制，2017-05-09 上线）· <b>时长</b> 15 分 41 秒 · <b>全文</b> <a href="https://www.ted.com/talks/robert_sapolsky_the_biology_of_our_best_and_worst_selves/transcript">TED 官方逐字稿</a></div>
+<h2>那一刻</h2>
+<p>「这个幻想大致是这样的。」</p>
+<p>一个六十岁的斯坦福神经生物学教授，在 TED 的红点上，正在描述自己怎么制服希特勒的精锐卫队、端着机枪冲进地堡。对方扑向鲁格手枪，被打掉；扑向氰化物胶囊，也被打掉；「他咆哮着，用一种超乎常人的力气朝我扑过来。我们扭打，我设法把他按住，给他戴上手铐。」</p>
+<blockquote><span class="en">"Adolf Hitler," I say, "I arrest you for crimes against humanity."</span><span class="zh">「阿道夫·希特勒，」我说，「我以反人类罪逮捕你。」</span><cite>— Robert Sapolsky, TED2017</cite></blockquote>
+<p>这是个漂亮的开场，观众知道该怎么反应。然后 Sapolsky 说：<strong>「荣誉勋章版本的幻想到此结束，画面开始变暗。」</strong></p>
+<p>接下来二十秒，他用近乎平铺直叙的语调报出一份清单：切断脊髓、取出眼睛、刺穿耳膜、割掉舌头，接上呼吸机和鼻饲管让他活着，不能说、不能动、不能看、不能听，<strong>只剩下能感觉</strong>——再注射某种致癌的东西，让它化脓溃烂，直到他身上每个细胞都在尖叫，直到每一秒都像地狱里的永恒。「这就是我会对希特勒做的事。」</p>
+<p>台上没有铺笑点，台下也没有地方可以笑。他说这个幻想他从小做到大，现在偶尔还会做，每次做的时候心跳都会加快。然后他自己伸手把它掀翻了——「但有个问题」。</p>
+<h2>讲的人，和那一年</h2>
+<p>Robert Sapolsky 1957 年生于布鲁克林，小时候趴在书上想象自己和银背大猩猩住在一起，十二岁开始给灵长类学家写信，高中自学斯瓦希里语。1978 年从哈佛毕业，一个星期后人已经在肯尼亚了——只不过没当成大猩猩，当了狒狒。此后二十多年，他每年夏天回马赛马拉，在同一群草原狒狒里泡四个月，一天八到十小时，记录谁欺负谁、谁给谁梳毛、谁血里的压力激素高。1984 年洛克菲勒大学神经内分泌学博士，1987 年麦克阿瑟奖，现在是斯坦福的生物学、神经学与神经外科教授。这份履历里藏着演讲的形状：他是少数几个<strong>同时在野外数狒狒、在实验室里测压力激素、还读得进人类学和法学文献</strong>的人。</p>
+<p>而 2017 年 4 月这一场，时机卡得极准。<strong>演讲录制于 4 月 24 日；他那本 800 页的《Behave: The Biology of Humans at Our Best and Worst》在 5 月 2 日出版</strong>——他上台的时候，书正在从印厂去书店的路上。主持人 Chris Anderson 在开场白里说，Robert 花了过去几年思考人类行为有多怪、而我们用来解释它的语言有多不够用，「非常高兴能听到他<strong>第一次公开</strong>讲出背后的思路」；结束时除了「祝你新书顺利」，还说了一句耐人寻味的 "we're going to try and get you to come here in person one year"（我们会争取哪一年把你请到现场来）。</p>
+<p>所以这不是一场「我刚发现了什么」的演讲，而是一场<strong>缝合</strong>：他要在十五分钟里，把神经科学、内分泌学、发育心理学、行为遗传学、文化人类学和演化生物学缝成一块布。这一点决定了后面哪些地方会绷得太紧。</p>
+<h2>术语表 · Glossary</h2>
+<div class="glossary"><ul>
+<li><b>杏仁核（amygdala）</b>：脑子深处的一小块结构，跟恐惧、威胁判断和攻击性关系最密切。可以粗糙地理解成「警报器」。</li>
+<li><b>额叶皮质（frontal cortex）</b>：前额后面那一大片，管冲动控制、长远规划、「在正确的时候做更难的那件事」。可以粗糙地理解成「刹车和前瞻」。</li>
+<li><b>基因 × 环境交互（gene-environment interaction）</b>：一个基因变体单独看没什么效果，只有在特定环境里才显出差别。它讲的是「看情况」，不是「决定」。</li>
+</ul></div>
+<h2>这场演讲，讲透</h2>
+<p>拆完希特勒幻想之后，Sapolsky 花了半分钟把自己钉在矛盾上：想看某些人被杀掉，却反对死刑；爱看烂俗的暴力电影，却支持严格控枪。然后他把这份糊涂升格成物种级别的：我们用淋浴喷头输送毒气、用信封寄炭疽、把飞机当武器、把大规模强奸当军事策略——「我们是个悲惨地暴力的物种」。但这里有个麻烦：</p>
+<blockquote><span class="en">we don't hate violence, we hate the wrong kind. And when it's the right kind, we cheer it on, we hand out medals, we vote for, we mate with our champions of it.</span><span class="zh">我们并不恨暴力，我们恨的是不对的那种。而当它是对的那种时，我们为它欢呼，我们颁发勋章，我们投票给它，我们跟它的冠军交配。</span><cite>— Robert Sapolsky, TED2017</cite></blockquote>
+<p>还有第二个麻烦：同一个物种也极端利他、极端有同情心。所以真正的问题不是「暴力从哪来」，而是<strong>同一套生物学怎么会同时产出这两头</strong>。难的从来不是行为的运动学——大脑告诉脊髓，脊髓告诉肌肉，你就动了；难的是行为的<strong>意义</strong>：同一个扣扳机的动作，换个场合就从骇人听闻的暴行变成英雄式的自我牺牲。而你要是以为存在「那个脑区」「那种激素」「那个基因」「那段童年经历」能解释一切，<strong>你哪儿也去不了</strong>。</p>
+<p>剩下的一多半演讲，是他把这句话变成一个动作。场景：暴乱之中，一个陌生人激动地朝你跑来，你看不清那表情是害怕、威胁还是愤怒，他手里拿着一个有点像手枪的东西。你不确定。他跑近了，你扣下扳机。那东西是一部手机。</p>
+<p>然后他开始倒着走，一层一层往回退：</p>
+<figure>
+<svg viewBox="0 0 640 468" role="img" aria-label="从扣扳机那一秒往回推的九个时间层级">
+<defs>
+<linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#5ee6a8"/><stop offset="100%" stop-color="#e8d46b"/>
+</linearGradient>
+</defs>
+<rect x="18" y="14" width="4" height="440" fill="url(#g1)" opacity=".55"/>
+<g font-family="SF Mono, Menlo, monospace" font-size="12.5">
+<g><circle cx="20" cy="30" r="6" fill="#5ee6a8"/><text x="40" y="27" fill="#e8d46b">一秒前</text><text x="40" y="45" fill="#93a1ae">杏仁核的兴奋程度</text></g>
+<g><circle cx="20" cy="82" r="6" fill="#5ee6a8"/><text x="40" y="79" fill="#e8d46b">几秒到几分钟前</text><text x="40" y="97" fill="#93a1ae">现场的声音、画面；对方的体型、性别、种族</text></g>
+<g><circle cx="20" cy="134" r="6" fill="#68e3a0"/><text x="40" y="131" fill="#e8d46b">几小时到几天前</text><text x="40" y="149" fill="#93a1ae">激素：睾酮、压力激素</text></g>
+<g><circle cx="20" cy="186" r="6" fill="#7fe097" fill-opacity=".95"/><text x="40" y="183" fill="#e8d46b">几周到几个月前</text><text x="40" y="201" fill="#93a1ae">神经可塑性：杏仁核变大，额叶萎缩</text></g>
+<g><circle cx="20" cy="238" r="6" fill="#a0dc8c"/><text x="40" y="235" fill="#e8d46b">若干年前</text><text x="40" y="253" fill="#93a1ae">青春期：额叶是最后成熟的那块</text></g>
+<g><circle cx="20" cy="290" r="6" fill="#c0d880"/><text x="40" y="287" fill="#e8d46b">童年与胎儿期</text><text x="40" y="305" fill="#93a1ae">大脑的搭建；表观遗传标记</text></g>
+<g><circle cx="20" cy="342" r="6" fill="#d8d675"/><text x="40" y="339" fill="#e8d46b">受精那一刻</text><text x="40" y="357" fill="#93a1ae">基因——但基因在不同环境里工作方式不同</text></g>
+<g><circle cx="20" cy="394" r="6" fill="#e4d56e"/><text x="40" y="391" fill="#e8d46b">几百年前</text><text x="40" y="409" fill="#93a1ae">祖先的生计方式；「荣誉文化」</text></g>
+<g><circle cx="20" cy="446" r="6" fill="#e8d46b"/><text x="40" y="443" fill="#e8d46b">几百万年前</text><text x="40" y="461" fill="#93a1ae">灵长类演化：人类落在两个极端之间</text></g>
+</g>
+</svg>
+<figcaption>演讲的骨架：同一个扣扳机的动作，九个时间尺度上的因果同时在场</figcaption>
+</figure>
+<p>这套讲法聪明在：层与层之间是<strong>咬合</strong>的，不是并列的——几个月的压力把杏仁核养大、把额叶磨薄，于是「一秒前」那个杏仁核才那么容易被点着。讲到基因那一层，他放了全场最硬的一个论断，也是后面最值得追的一块砖：</p>
+<blockquote><span class="en">genes don't determine anything, because genes work differently in different environments. Key example here: there's a variant of a gene called MAO-A, and if you have that variant, you are far more likely to commit antisocial violence if, and only if, you were abused as a child.</span><span class="zh">基因决定不了任何事情，因为基因在不同环境里的工作方式不同。这里的关键例子是：有一个叫 MAO-A 的基因存在一种变体，如果你带有这个变体，那么当且仅当你在童年被虐待过，你才远远更可能实施反社会的暴力。</span><cite>— Robert Sapolsky, TED2017</cite></blockquote>
+<p>再往前是几百年前的祖先：沙漠和草原上的游牧牧人「大概率会发明出所谓的荣誉文化，里面装满了武士阶层、报复性暴力、家族世仇」，几个世纪后仍在影响把你养大的那套价值观；最后一层是几百万年的演化，人类<strong>按每一项攻击性指标都浮在灵长类的中间</strong>。到这里他自嘲了一句「官方答案是：很复杂。哇，这可真有用」，但下半句立刻收紧：</p>
+<blockquote><span class="en">It's complicated, and you'd better be real careful, real cautious before you conclude you know what causes a behavior, especially if it's a behavior you're judging harshly.</span><span class="zh">它很复杂，而在你断定自己知道一个行为的成因之前，你最好非常小心、非常谨慎——尤其当这是一个你正在严厉评判的行为。</span><cite>— Robert Sapolsky, TED2017</cite></blockquote>
+<p>最后三分钟他掉了个头，讲<strong>变化</strong>：他刚才提到的每一点生物学，在不同情境下都是会变的。生态系统会变——几千年前撒哈拉还是一片丰茂的草地。文化会变——十七世纪欧洲最可怕的是到处烧杀的瑞典人，「这是今天瑞典军队在做的事。他们两百年没打过仗了。」最重要的是，大脑会变。</p>
+<p>然后是四个<strong>时间尺度越缩越短</strong>的例子。几十年：英国神学家约翰·牛顿，年轻时当过贩奴船船长、后来投资奴隶贸易，最终在十九世纪初的废奴运动里起了核心作用（这一个下一节单独拆）。五十年：日本飞行员阿部善次，1941 年 12 月 6 日早晨正要率轰炸机中队袭击珍珠港，五十年后的同一天在纪念仪式上抱着一个地面幸存者道歉。几个小时：1914 年圣诞休战，英德士兵出去收尸，接着互相帮忙抬尸体、挖坟、祷告、过圣诞、交换礼物，第二天一起踢球、交换地址——几个小时里他们就造出了一个全新的「我们」（战壕里两边所有毫无道理地送死的人）和一个全新的「他们」（后方那些拿他们当棋子、没有面孔的权力），直到军官赶来说：你们要是不回去继续互相残杀，我们就枪毙你们。几秒：美莱村，Hugh Thompson 驾着直升机落地、看见美军在射杀婴儿和老妇，把机身降在幸存村民和美军之间，把机枪对准自己的同胞——「如果你们不停止杀戮，我就把你们全突突了。」</p>
+<p>结尾他把那句老套的格言翻了过来：不研究历史的人注定重蹈覆辙——而<strong>不研究「非凡的人类改变」的历史、不研究「什么能把我们从最坏变成最好」的生物学的人，注定无法重演那些灼目而壮丽的时刻</strong>。</p>
+<h2>冰山下面</h2>
+<p><b>一、MAO-A 那块砖，比台上那句「当且仅当」窄得多。</b>他说的那项研究是 Caspi 等人 2002 年发在《Science》上的 <em>Role of genotype in the cycle of violence in maltreated children</em>。它的底子是：<strong>新西兰但尼丁（Dunedin）出生队列，442 人，100% 白人，而且全是男性</strong>；虐待发生在 3 到 11 岁之间，结果测量在 11 到 18 岁，指标是品行障碍、暴力定罪、反社会人格症状和暴力倾向的一个组合。在 2014 年那份把 27 项研究汇总起来的元分析里，Caspi 这篇自己贡献的是一个<strong>单尾 p = .005</strong>。</p>
+<p>三点台上没说的。第一，这是个交互效应，不是风险因子：带低活性变体但没被虐待的人，反社会指标并不高——真正说了算的是虐待，基因只调节斜率。第二，这是个纯男性、纯白人的样本；同一份元分析在 11 个女性队列里<strong>没有</strong>找到这个交互。第三，「far more likely」对应的是一个统计上的交互项，不是能落到某个人头上的预测——而「if, and only if」把一条有噪音的斜率说成了一道开关。讽刺的是，这句话出现在他强调「基因决定不了任何事情」的段落里。</p>
+<p><b>二、「额叶到 25 岁才成熟」，这个数字他自己十三年前没用过。</b>台上是 "It doesn't fully mature until you're around 25."。而在他 2004 年发表于《Philosophical Transactions of the Royal Society B》的那篇《额叶皮质与刑事司法系统》里，他写的是前额叶「<strong>完全髓鞘化可能要到成年早期才发生</strong>」——没有 25。差别不在语气，在于「成年早期」是一个观察，而「25 岁」是一条线。2016 年，哈佛的 Leah Somerville 在《Neuron》上专门写了一篇文章追问：当我们说「脑成熟」，我们到底在找什么？她的出发点正是「青春期神经发育仍在继续」这个说法<strong>越来越多地被援引进针对年轻人的政策讨论</strong>。2022 年，被引用最多的发育心理学家之一 Laurence Steinberg 对《Slate》说得更直白：「我真不知道大家为什么挑了 25。是因为这个数字念着好听？还是因为它能被 5 整除？」</p>
+<p><b>三、他手里最有力的「文化会变」的证据，被他砍掉了。</b>台上他用瑞典人证明文化会变——那是别人的历史。他自己那群狒狒才是第一手的：1983 到 1986 年间，他观察的 Forest Troop 里最有攻击性的那批公狒狒因为去旅游旅馆的垃圾坑觅食，感染牛结核病死了。到 1993 年之后，群里的公狒狒已经完全换过一轮（公狒狒成年后会离开出生群、加入新群），<strong>低攻击性的模式却留了下来</strong>：占优势的公狒狒明显更少欺负地位低的，而且身上<strong>没有对照群里那种压力激素升高的生理特征</strong>。他和 Lisa Share 把这个写进 2004 年的《PLoS Biology》，并自己留了个口子：传递机制要真正拆开还得靠将来的研究，而样本只有一个群。十五分钟里，这个不确定但属于他自己的例子，输给了确定但属于别人的瑞典。</p>
+<p><b>四、约翰·牛顿的改变，比台上慢了几十年。</b>Sapolsky 说牛顿「年轻时有几十年是贩奴船船长，后来又当奴隶贸易的投资人，靠这个发了财。然后有什么东西变了」，而牛顿在他最有名的那首赞美诗《奇异恩典》里庆祝了这个改变。实际时间线要难堪得多：牛顿把 1748 年 3 月那场风暴中的祷告记为自己皈依的日子——<strong>而皈依之后他才开始当船长</strong>：1750 年的 Duke of Argyle 号，1752–53 和 1753–54 两趟 African 号；1754 年一次中风逼他离开海上后，他仍继续投资奴隶贸易。《奇异恩典》写于 1772 年末，原题《信心的回顾与期待》，为 1773 年元旦的祷告会而作，1779 年收进《奥尔尼赞美诗集》——写的是牛顿自己的皈依，没有证据显示他把这首诗和反奴隶制主张联系在一起。他第一次公开反对奴隶贸易，是<strong>1788 年</strong>那本《关于非洲奴隶贸易的思考》，距离他离开这一行三十四年，距离那场风暴四十年。他确实成了废奴运动的盟友，也确实活到了 1807 年——但这场「改变」不是一道闪电，是一条极慢、极难看的斜坡。而演讲的整个下半场，恰恰是关于改变能有多快。</p>
+<h2>后来的命运</h2>
+<div class="fate"><p class="verdict">部分站住 · 截至 2026-09</p><p>「解释一个行为要同时问九个时间尺度」这个框架赢得很彻底，今天在行为科学里近乎常识。但他当场用来撑住框架的几块砖——MAO-A、「25 岁」——在此后十年里被磨薄了；而他把同一条逻辑推到底得出的那个结论（人没有自由意志），至今仍在挨打。</p></div>
+<p><b>框架那一层：赢了。</b>演讲录完一周后出版的《Behave》，章节顺序就是演讲的顺序，从「一秒钟之前」一路排到「几百年到几千年之前」。今天几乎没有严肃的行为科学家会主张「那个基因解释了攻击性」——某种意义上，Sapolsky 站在台上要打的那个稻草人，已经很难找到了。</p>
+<p><b>砖头那一层：被磨薄了。</b>早在演讲六年前的 2011 年，Laramie Duncan 和 Matthew Keller 就系统检查了 2000–2009 年间 103 项「候选基因 × 环境」研究，结论是一记闷棍：<strong>首次报告的新发现有 96%（45/47）是阳性的，而重复验证只有 27%（10/37）</strong>；中位样本量 345 人，检验中等效应的统计功效不到 10%。</p>
+<p>MAO-A 这一块，两个方向都有。2013 年，Brian Haberstick 等人用美国 Add Health 队列做了一次大样本检验——<strong>3356 名白人男性 + 960 名黑人男性，年龄 24–34</strong>——结论是一句话：「我们无法确认 MAOA 基因型调节童年受虐与成年反社会行为之间关系这一假设。」他们特地说明这不是功效不足造成的。但第二年，Byrd 和 Manuck 汇总 27 项研究的元分析<strong>在 20 个男性队列里确认了这个交互</strong>（收窄到「虐待」时 p = 8.2×10⁻⁷），并算出要让它失效需要 93 项从未发表的零结果研究；11 个女性队列则没有。</p>
+<p>所以 MAO-A 本身大致<strong>站住了，但只在男性身上，而且窄得多</strong>。真正的问题是它脚下那片地基：2019 年，Richard Border 等人用 62 万人的数据检验抑郁症领域被研究得最多的 18 个候选基因，发现它们跟抑郁的关联并不比随机挑的基因更强。整个「候选基因 × 环境」范式在那几年基本被放弃。MAO-A 是这栋楼里最结实的几间房之一——但楼塌了。</p>
+<p><b>「25 岁」那一块：被滥用了。</b>Somerville 2016 年那篇《Neuron》的落点正是这个：脑发育在青春期后仍在继续这件事，越来越多地被搬进面向年轻人的政策讨论，而神经科学家自己连「成熟」怎么定义、怎么量化都还没解决。十年过去，这个数字没变得更有依据，却已经进了苏格兰法院对 25 岁以下被告的量刑考量和美国若干州针对 18–25 岁「新成年人」的量刑改革。Sapolsky 讲它的本意是<strong>减少</strong>严厉评判，方向是对的；但一个说不清来历的数字一旦被当成一条线，就会被两边的人各取所需。</p>
+<p><b>他本人：没有收回，而是加码。</b>2023 年 10 月，Sapolsky 出版《Determined: A Science of Life Without Free Will》，把「往回推到一百万年前」这条逻辑推到终点：既然每个念头都由你无法控制的先前事件决定，自由意志就不存在，整个责任与惩罚的体系都该重来。同年 11 月 3 日，哲学家 John Martin Fischer 在《Notre Dame Philosophical Reviews》上给了一篇相当不客气的书评，核心指控是他用定义绕开了论证：「他在整本书里没有给出任何<em>论证</em>来反对相容论」，以及那句——「<strong>从我作为哲学家的角度看，一本讲自由意志的书竟然不讨论自由意志，这很扎眼。</strong>」同年，神经科学家 Kevin Mitchell 出版《Free Agents》给出相反答案：生命体演化出了能动性，最终演化出元认知，也就演化出了至少部分的自由意志。</p>
+<h2>出处</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.ted.com/talks/robert_sapolsky_the_biology_of_our_best_and_worst_selves/transcript">The biology of our best and worst selves — TED 官方逐字稿</a></span><span class="d">本页所有 Sapolsky 与 Chris Anderson 的引语、以及演讲结构的复述，全部来自这份 2423 词的逐字稿。</span></li>
+<li><span class="t"><a href="https://pubmed.ncbi.nlm.nih.gov/12161658/">Caspi et al., Role of genotype in the cycle of violence in maltreated children, Science, 2002</a></span><span class="d">演讲里 MAO-A 那句「当且仅当」的原始研究；摘要写明样本是「male children」。</span></li>
+<li><span class="t"><a href="https://moffittcaspi.trinity.duke.edu/sites/moffittcaspi.trinity.duke.edu/files/file-attachments/MAOA_2013_ByrdManuck.pdf">Byrd &amp; Manuck, MAOA, Childhood Maltreatment, and Antisocial Behavior: Meta-analysis of a Gene-Environment Interaction, Biological Psychiatry, 2014</a></span><span class="d">27 项研究的元分析。本页的 442 人 / 100% 白人 / 单尾 p=.005、男性队列 p=8.2×10⁻⁷、女性队列无效应、「需要 93 项未发表零结果」都出自它。</span></li>
+<li><span class="t"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3815496/">Haberstick et al., MAOA Genotype, Childhood Maltreatment, and Their Interaction in the Etiology of Adult Antisocial Behaviors, Biological Psychiatry, 2013</a></span><span class="d">迄今最大的一次独立检验；「我们无法确认……」那句引文是其讨论部分的第一句。</span></li>
+<li><span class="t"><a href="https://pubmed.ncbi.nlm.nih.gov/28009272/">Somerville, Searching for Signatures of Brain Maturity: What Are We Searching For?, Neuron, 2016</a></span><span class="d">支撑「25 岁」那一段：青春期神经发育的证据正越来越多地被援引进青年政策讨论，而「脑成熟」的定义与量化本身尚未解决。</span></li>
+<li><span class="t"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1693445/">Sapolsky, The frontal cortex and the criminal justice system, Phil. Trans. R. Soc. B, 2004</a></span><span class="d">他自己十三年前的长版论证，用来对照台上的「25 岁」——这里他的措辞是前额叶「完全髓鞘化可能要到成年早期才发生」。</span></li>
+<li><span class="t"><a href="https://ndpr.nd.edu/reviews/determined-a-science-of-life-without-free-will/">John Martin Fischer 评《Determined》，Notre Dame Philosophical Reviews，2023-11-03</a></span><span class="d">「后来的命运」最后一节的主要依据：哲学界对 Sapolsky 把同一条因果链推到「没有自由意志」的直接回应。</span></li>
+</ul>
+</div>
+<footer>演讲精读 · 一场演讲，一个想法的来龙去脉 · 写于 2026-09-17</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
