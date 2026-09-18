@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Geoffrey West ·《城市与公司背后令人意外的数学》— 城市每翻一倍，人均什么都多 15%</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="geoffrey-west-scaling-cities-talk6.en.html">English →</a></div>
+<header>
+<div class="kicker">TEDGlobal · 2011</div>
+<h1>他说城市每翻一倍，人均什么都多 15%——包括工资、专利，和艾滋病例</h1>
+<p class="sub">Geoffrey West ·《城市与公司背后令人意外的数学》</p>
+<div class="modebar"><button class="on" id="btn-pop">精华版</button><button id="btn-deep">完整版</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>2011 年 7 月，爱丁堡。一个七十岁的理论物理学家站上 TED 舞台，问台下这些坐在爱丁堡的人：</p>
+<blockquote><span class="en">Is London a great big whale? Is Edinburgh a horse? Is Microsoft a great big anthill?</span><span class="zh">伦敦是一头大鲸鱼吗？爱丁堡是一匹马吗？微软是一个大蚁丘吗？</span></blockquote>
+<p>他不是在玩比喻。Geoffrey West 上半辈子在洛斯阿拉莫斯做粒子物理，五十多岁才转行，他真的想知道一个城市在数学上是不是一只放大的动物。而且他认为，一个够格的理论应该能回答一个更冒犯的问题——那是 2011 年，Google 如日中天——<strong>"if you have a serious theory, you should be able to predict when Google is going to go bust."</strong>（如果你有一个像样的理论，你应该能预测 Google 什么时候倒闭。）</p>
+<p>他的证据从一张图开始。把所有生物的<strong>代谢率</strong>（每天维持生命所需的能量）对<strong>体重</strong>画在对数坐标上，从细菌到蓝鲸，横跨十几个数量级，所有东西落在同一条直线上。这条线的斜率是 <strong>3/4</strong>——小于 1。意思是：体型翻一倍，你只需要多 75% 的能量，不是多 100%。生物越大越省。代价是节奏越慢：心跳变慢，寿命变长，一切都放缓。</p>
+<p>城市呢？加油站数量、道路长度、电缆长度，也是同一个形状的曲线，也是越大越省。但当他画上工资、专利、GDP、犯罪数——斜率翻过了 1，大约 1.15 到 1.2。于是有了那句被引用了十五年的话：</p>
+<blockquote><span class="en">If you double the size of a city ... then systematically you get a 15 percent increase in wages, wealth, number of AIDS cases, number of police, anything you can think of.</span><span class="zh">如果你把一个城市的规模翻一倍……你会系统性地得到 15% 的增长：工资、财富、艾滋病例数、警察数量，你能想到的任何东西。</span></blockquote>
+<p>好的坏的一起涨，这是同一枚硬币。而原因，他说，就是我们自己：<strong>"we are the city"</strong>——城市不过是人与人互动的物理外壳，互动越密，创造和犯罪都越多。</p>
+<p>超线性有个漂亮的副作用和一个恐怖的后果。副作用是城市的节奏加快（他放了一张欧洲各城市走路速度的图，城市越大走得越快）。后果是：超线性增长在数学上会在<strong>有限时间内冲向无穷</strong>，也就是崩溃。人类避免崩溃的办法只有一个——在撞墙前来一次重大创新，把钟拨回去，重新开始。但下一次必须来得更早。<strong>"we're not only on a treadmill that's going faster, but we have to change the treadmill faster and faster."</strong>（我们不只是在一台越跑越快的跑步机上，我们还得越来越快地换跑步机。）他问：作为社会经济生物，我们躲得过心脏病发作吗？</p>
+<p>最后两分钟他转向公司。23,000 家美国公司的数据显示，公司的标度是<strong>亚线性</strong>的——像生物，不像城市。主导它们的不是创新，是规模经济，说白了是官僚和行政。而亚线性意味着 S 形曲线：先冲，然后弯，然后停。他放出沃尔玛的曲线，砍到 1994 年，说：如果我在 1994 年做这件事，我能预测出今天的沃尔玛。然后是 23,000 条曲线一起弯下去：<strong>"they all die like you and me."</strong></p>
+<p><strong>后来呢？</strong>这个想法<strong>部分站住</strong>了。总量数据上的规律确实反复出现，从美国到欧洲到中国到瑞典。但台上那两根支柱都被削细了。第一根，「什么都多 15%」——他自己 2007 年那篇论文的表格里，指数从 1.00 一直排到 1.34：住房总量和就业总数的指数是 1.00 和 1.01，也就是人均<strong>一点没多</strong>。第二根，「原因是我们的互动」——2019 年一项用瑞典全国人口登记做的研究说，互动最多解释一半，另一半是大城市把小地方受过更多教育的人吸走了。而统计学家 Cosma Shalizi 2011 年就指出：那条让人惊叹的直线，R² 高达 0.96，可即使人均产出跟城市大小<strong>完全无关</strong>，同样的画法也会得出 0.94。至于生物那边的 3/4 直线——2010 年《自然》上一篇用 637 种哺乳动物做的分析说，那根本不是一条直线，它是弯的。</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>演讲</b> The surprising math of cities and corporations · <b>场合</b> TEDGlobal，爱丁堡，2011 年 7 月 12 日 · <b>时长</b> 17 分 16 秒 · <b>全文</b> <a href="https://www.ted.com/talks/geoffrey_west_the_surprising_math_of_cities_and_corporations/transcript">TED 官方逐字稿</a></div>
+
+<h2>那一刻</h2>
+<p>演讲进行到第三分钟，Geoffrey West 抛出了两个一直在他脑子里转的问题。第一个是：城市算不算生物学的一部分？</p>
+<blockquote><span class="en">Is London a great big whale? Is Edinburgh a horse? Is Microsoft a great big anthill? What do we learn from that? We use them metaphorically -- the DNA of a company, the metabolism of a city, and so on -- is that just bullshit, metaphorical bullshit, or is there serious substance to it?</span><span class="zh">伦敦是一头大鲸鱼吗？爱丁堡是一匹马吗？微软是一个大蚁丘吗？我们能从中学到什么？我们把这些当比喻用——一家公司的 DNA、一座城市的代谢，诸如此类——这只是胡扯吗，比喻性的胡扯，还是里面真有正经东西？</span><cite>— Geoffrey West, TEDGlobal 2011</cite></blockquote>
+<p>他站在爱丁堡，问台下的爱丁堡人，他们住的地方是不是一匹马。这不是修辞，他真的在问，而且他打算用数据回答。</p>
+<p>第二个问题更不客气。他先摆出一个观察：城市几乎杀不死。<strong>"You could drop an atom bomb on a city, and 30 years later it's surviving. Very few cities fail."</strong>（你可以往一座城市上扔一颗原子弹，三十年后它还活着。极少有城市失败。）紧接着是一记反差：<strong>"All companies die, all companies."</strong>（所有公司都会死，所有的。）然后他把话推到一个在 2011 年听起来近乎冒犯的地方——那一年 Google 正如日中天：</p>
+<blockquote><span class="en">And if you have a serious theory, you should be able to predict when Google is going to go bust.</span><span class="zh">而如果你有一个像样的理论，你应该能预测 Google 什么时候倒闭。</span><cite>— Geoffrey West, TEDGlobal 2011</cite></blockquote>
+<p>这句话定下了整场演讲的赌注：他不是来讲城市很有趣，是来说城市和公司有一套可以写下来、可以预测、可以被证伪的数学。</p>
+
+<h2>讲的人，和那一年</h2>
+<p>Geoffrey West 1940 年生于英国萨默塞特的汤顿，剑桥读物理，斯坦福读博，之后长期在洛斯阿拉莫斯国家实验室，做到<strong>高能物理组的负责人</strong>。他的前半生和城市毫无关系——他研究的是基本粒子。</p>
+<p>转折发生在 1990 年代。1993 年，美国国会砍掉了超导超级对撞机（Superconducting Super Collider），那是美国高能物理的旗舰工程。他在 2018 年接受物理学家 Sean Carroll 的播客访谈时回忆，那几年他自己五十出头，出身于一个男性普遍短命的家庭，于是开始认真地想一个物理学家式的问题：<strong>寿命的「一百年」这个数字是从哪来的？</strong>他说，如果生物学像物理学一样是门科学，教科书里就该有一个计算，算出这个数。</p>
+<p>没有。于是他自己去算。1997 年，他和两位生态学家 James Brown、Brian Enquist 在《科学》上发表了一个模型，用「输送网络」推导出生物界那些以 1/4 为倍数的指数。这篇论文让他彻底转场。2003 年他加入圣塔菲研究所，2005 到 2009 年担任所长——那是复杂性科学的大本营，专做「跨学科找共同数学结构」这门生意。</p>
+<p>2011 年他上台时，这个工作已经推进了整整十四年：城市标度那篇核心论文 2007 年发表在 PNAS 上。所以台下不是在听一个刚冒出来的猜想，而是在听一个正在从生物学横跨到经济学、并且开始向市长和规划师兜售的框架。他本人对这件事的态度，在演讲第三分钟有一句很坦白的自嘲，介绍完合作者之后：<strong>"they've done all the work, and I'm the great bullshitter that tries to bring it all together."</strong>（活都是他们干的，我是那个负责把它们捏到一起的吹牛大王。）全场笑。</p>
+
+<h2>术语表 · Glossary</h2>
+<div class="glossary"><ul>
+<li><b>标度律 / 幂律（scaling law / power law）</b>：一个量随另一个量按固定「次方」变化：Y = Y₀·N<sup>β</sup>。</li>
+<li><b>指数 β（exponent）</b>：那个次方数。它是本页全部争论的焦点，因为它一个数字就概括了「变大之后会怎样」。</li>
+<li><b>亚线性（sublinear，β &lt; 1）</b>：越大越省。规模翻倍，需要的东西不到翻倍——人均下降。</li>
+<li><b>超线性（superlinear，β &gt; 1）</b>：越大越多。规模翻倍，得到的东西超过翻倍——人均上升。</li>
+<li><b>对数坐标（log scale）</b>：坐标轴不是 1、2、3，而是 10、100、1000。幂律在这种坐标上会变成一条直线，斜率就是 β。West 台上每一张图都是这么画的。</li>
+</ul></div>
+
+<h2>这场演讲，讲透</h2>
+<p>他的推进顺序很清楚：先立紧迫性，再立生物学，再把生物学的方法搬到城市，最后用同一套数学处理公司，并在公司那里收刀。</p>
+<p><strong>第一步：为什么现在。</strong>他甩出一个数字让台下听好：直到 2050 年，<strong>每一周</strong>都有超过一百万人被加进城市。城市既是全球变暖、污染、疾病的来源，又是解药——它是吸尘器和磁铁，把有创造力的人吸了进来。所以需要一个关于城市的科学理论，而科学理论意味着<strong>可量化、有普适原理、能做预测</strong>。</p>
+<p><strong>第二步：生物学为什么可以这么做。</strong>他先说生命最了不起的性质之一是<strong>可标度</strong>——同一套原理、同一套动力学，在跨越一亿倍体型的范围里都成立。然后是那张他称为「truly remarkable」的图：代谢率对体重，用每次乘以 10 的方式画，从最小的生物到最大的，所有东西落在同一条线上。他停在这里强调那件真正奇怪的事——每一个生物、每一种细胞、每一个基因，都是在自己独特的生态位里带着自己独特的历史演化出来的，然而尽管有那么多达尔文式的演化和自然选择，<strong>它们还是被约束着落在一条线上</strong>。</p>
+<p>这条线的斜率是 3/4，小于 1，也就是亚线性。他把这个数翻译成大白话：如果是线性的，体型翻倍就要双倍能量；但它是 3/4，所以体型翻倍<strong>只需要多 75% 的能量</strong>。生物界处处是规模经济。而且这不只对代谢率成立——任何生理变量、任何生命史事件，这么画都长这样。于是他敢说：你告诉我一只哺乳动物的体型，我能在 90% 的水平上告诉你它的一切。</p>
+<p>原因是<strong>网络</strong>：生命由输送网络控制，把网络加上可数学化的普适原理，这些标度关系就跟着出来了。他补了一句在演讲后半段会变成主角的推论：<strong>个头越大，生命的节奏越慢</strong>——心跳更慢，活得更久。</p>
+<p><strong>第三步：搬到城市。</strong>伦敦是放大的伯明翰吗？纽约是放大的旧金山吗？他说不知道，但城市也是网络，而且<strong>城市最重要的那张网就是你</strong>——城市只是我们互动的物理显形。他先放一个平淡的例子：加油站数量对城市规模，画法和生物学完全一样，形状也完全一样，斜率小于 1，规模经济。不奇怪。奇怪的是它<strong>在哪里都一样</strong>：换成日本、中国、哥伦比亚，还是同样的规模经济，同样的程度；任何基础设施都如此。</p>
+<p>然后他翻面。社会经济量——那些在生物学里根本没有对应物、人类一万年前结成社群才出现的量：工资、「超级创造类」从业者。这些的指数<strong>大于 1</strong>，大约 1.15 到 1.2。他把收入、GDP、犯罪、专利画在同一张图上，说它们都顺着同一条线。然后是全场最响的那句：</p>
+<blockquote><span class="en">If you double the size of a city from 100,000 to 200,000, from a million to two million, 10 to 20 million, it doesn't matter, then systematically you get a 15 percent increase in wages, wealth, number of AIDS cases, number of police, anything you can think of. It goes up by 15 percent, and you have a 15 percent savings on the infrastructure.</span><span class="zh">如果你把一个城市的规模翻一倍，从十万到二十万，从一百万到两百万，从一千万到两千万，都无所谓，那么你会系统性地得到 15% 的增长：工资、财富、艾滋病例数、警察数量，你能想到的任何东西。它涨 15%，同时你在基础设施上省下 15%。</span><cite>— Geoffrey West, TEDGlobal 2011</cite></blockquote>
+<p>他紧接着给出解释，语气几乎是道德性的：这毫无疑问就是每周一百万人涌进城市的原因，因为他们以为那些好东西——创造力、财富、收入——才是吸引他们的，<strong>忘掉了丑的和坏的</strong>。而机制是社会网络。「普适性就是我们自己——我们就是城市。」</p>
+<p><strong>第四步：节奏与崩溃。</strong>生物的亚线性带来「生命节奏放慢」；城市的超线性反过来，带来<strong>生命节奏加快</strong>。他并排放两张图：左边是心率（越大越慢），右边是一组欧洲城市的走路速度（越大越快）。然后是增长：亚线性给出 S 形曲线，先快后停，这对生物是韧性的来源，对城市是坏消息；超线性给出一条漂亮的指数上扬曲线，和实际发展吻合得很好，但它有个可怕的陷阱——<strong>这个系统注定崩溃</strong>，马尔萨斯式的，资源会耗尽。怎么躲？他说我们躲过很多次：在逼近崩溃时来一次重大创新，重新开始，下一次逼近时再来一次。</p>
+<blockquote><span class="en">So the image is that we're not only on a treadmill that's going faster, but we have to change the treadmill faster and faster. We have to accelerate on a continuous basis. And the question is: Can we, as socio-economic beings, avoid a heart attack?</span><span class="zh">所以画面是这样的：我们不只是在一台越跑越快的跑步机上，我们还得越来越快地换跑步机。我们必须持续不断地加速。问题是：作为社会经济生物，我们躲得过心脏病发作吗？</span><cite>— Geoffrey West, TEDGlobal 2011</cite></blockquote>
+<p><strong>第五步：公司，以及那把刀。</strong>最后一两分钟他转向公司。他们看了美国 23,000 家公司，画收入和资产对雇员人数。结果让他说「astonishing」：公司的标度是<strong>亚线性</strong>的——像生物，不像城市。主导它们的不是创新，而是规模经济；照他的解释，就是官僚和行政。而亚线性意味着 S 形增长。他放出沃尔玛，说看起来不太像 S 形，倒是我们喜欢的曲棍球杆；然后承认自己作弊了，图只画到 1994 年。把线延到 2008 年，红色的理论曲线就贴上去了。然后是 23,000 条线一起：</p>
+<blockquote><span class="en">They all start looking like hockey sticks, they all bend over, and they all die like you and me.</span><span class="zh">它们一开始都像曲棍球杆，然后全都弯下去，然后全都像你我一样死掉。</span><cite>— Geoffrey West, TEDGlobal 2011</cite></blockquote>
+<p>「Thank you.」——他就在这里结束了，没有回到城市，没有给出路，没有安慰。</p>
+
+<h2>冰山下面</h2>
+<p>台上 17 分钟里，几乎每一张图背后都压着一篇论文，而论文里的话都比台上窄。</p>
+<p><strong>那条 3/4 的直线，在他自己的理论里只是一个极限。</strong>「代谢率随体重的 3/4 次方变化」叫<strong>克莱伯定律（Kleiber's law）</strong>，Max Kleiber 1932 年提出——<a href="https://pdodds.w3.uvm.edu/files/papers/others/2010/kolokotrones2010a.pdf">依据是 13 个数据点</a>。West、Brown、Enquist 1997 年在《科学》上做的事，是给这个经验规律一个<strong>推导</strong>。模型建立在三条假设上：网络是<strong>空间填充的分形式分支</strong>，才能供应到生物的每一处；末端单元（比如毛细血管）<strong>尺寸不变</strong>，不随体型改变；分配资源的<strong>能量被最小化</strong>。论文自己写明这是理想化表示，忽略了血管渐细、湍流和非线性效应。而关键的一点台上完全没提：这个模型<strong>只在体重趋于无穷的极限下</strong>给出纯粹的 3/4 次方；对有限大小的动物，它给出的是一个隐式关系 M = c₀B + c₁B<sup>4/3</sup>，<strong>在对数坐标上是弯的</strong>。换句话说，台上那条让全场信服的笔直的线，在提出它的理论里本来就不该笔直。</p>
+<p><strong>「15%」是一个平均数，底下是一个从 1.00 到 1.34 的区间。</strong>演讲的骨架来自 2007 年那篇 PNAS 论文（Bettencourt、Lobo、Helbing、Kühnert、West）。那篇论文的表格是这场演讲最值得摊开看的东西——因为「anything you can think of」在表里并不成立：</p>
+<figure>
+<svg viewBox="0 0 760 250" role="img" aria-label="2007 年 PNAS 论文中各项城市指标的标度指数分布">
+<rect x="471" y="34" width="46" height="172" fill="#e8d46b" opacity="0.10"></rect>
+<text x="494" y="26" text-anchor="middle" fill="#e8d46b" font-family="'SF Mono',Menlo,monospace" font-size="12">台上说的：1.15–1.20</text>
+<line x1="105.7" y1="40" x2="105.7" y2="212" stroke="#7d8794" stroke-width="1" stroke-dasharray="2 5" opacity="0.4"></line>
+<line x1="334.3" y1="40" x2="334.3" y2="212" stroke="#93a1ae" stroke-width="1" stroke-dasharray="4 4" opacity="0.8"></line>
+<line x1="562.9" y1="40" x2="562.9" y2="212" stroke="#7d8794" stroke-width="1" stroke-dasharray="2 5" opacity="0.4"></line>
+<text x="105.7" y="228" text-anchor="middle" fill="#7d8794" font-family="'SF Mono',Menlo,monospace" font-size="11">0.75</text>
+<text x="334.3" y="228" text-anchor="middle" fill="#93a1ae" font-family="'SF Mono',Menlo,monospace" font-size="11">1.00 线性</text>
+<text x="562.9" y="228" text-anchor="middle" fill="#7d8794" font-family="'SF Mono',Menlo,monospace" font-size="11">1.25</text>
+<text x="50" y="245" fill="#7d8794" font-family="'SF Mono',Menlo,monospace" font-size="11">← 越大越省（亚线性）</text>
+<text x="710" y="245" text-anchor="end" fill="#7d8794" font-family="'SF Mono',Menlo,monospace" font-size="11">越大越多（超线性）→</text>
+<line x1="50" y1="130" x2="710" y2="130" stroke="#7d8794" stroke-width="1.5"></line>
+<line x1="124" y1="130" x2="124" y2="152" stroke="#5ee6a8" stroke-width="1"></line>
+<text x="124" y="166" text-anchor="middle" fill="#5ee6a8" font-family="'SF Mono',Menlo,monospace" font-size="12">加油站 0.77</text>
+<circle cx="124" cy="130" r="4.5" fill="#5ee6a8"></circle>
+<line x1="179" y1="130" x2="179" y2="106" stroke="#5ee6a8" stroke-width="1"></line>
+<text x="179" y="100" text-anchor="middle" fill="#5ee6a8" font-family="'SF Mono',Menlo,monospace" font-size="12">道路面积 0.83</text>
+<circle cx="179" cy="130" r="4.5" fill="#5ee6a8"></circle>
+<line x1="215" y1="130" x2="215" y2="176" stroke="#5ee6a8" stroke-width="1"></line>
+<text x="215" y="190" text-anchor="middle" fill="#5ee6a8" font-family="'SF Mono',Menlo,monospace" font-size="12">电缆长度 0.87</text>
+<circle cx="215" cy="130" r="4.5" fill="#5ee6a8"></circle>
+<line x1="338" y1="130" x2="338" y2="82" stroke="#93a1ae" stroke-width="1"></line>
+<text x="338" y="76" text-anchor="middle" fill="#93a1ae" font-family="'SF Mono',Menlo,monospace" font-size="12">住房 1.00 · 就业 1.01 · 家庭用电 1.00</text>
+<circle cx="334" cy="130" r="4.5" fill="#93a1ae"></circle>
+<circle cx="343" cy="130" r="4.5" fill="#93a1ae"></circle>
+<line x1="444" y1="130" x2="444" y2="152" stroke="#e8d46b" stroke-width="1"></line>
+<text x="444" y="166" text-anchor="middle" fill="#e8d46b" font-family="'SF Mono',Menlo,monospace" font-size="12">工资总额 1.12</text>
+<circle cx="444" cy="130" r="4.5" fill="#e8d46b"></circle>
+<line x1="481" y1="130" x2="481" y2="106" stroke="#e8d46b" stroke-width="1"></line>
+<text x="481" y="100" text-anchor="middle" fill="#e8d46b" font-family="'SF Mono',Menlo,monospace" font-size="12">重罪 1.16</text>
+<circle cx="481" cy="130" r="4.5" fill="#e8d46b"></circle>
+<line x1="545" y1="130" x2="545" y2="176" stroke="#e8d46b" stroke-width="1"></line>
+<text x="545" y="190" text-anchor="middle" fill="#e8d46b" font-family="'SF Mono',Menlo,monospace" font-size="12">新增艾滋病例 1.23</text>
+<circle cx="545" cy="130" r="4.5" fill="#e8d46b"></circle>
+<line x1="581" y1="130" x2="581" y2="106" stroke="#e8d46b" stroke-width="1"></line>
+<text x="581" y="100" text-anchor="middle" fill="#e8d46b" font-family="'SF Mono',Menlo,monospace" font-size="12">专利 1.27</text>
+<circle cx="581" cy="130" r="4.5" fill="#e8d46b"></circle>
+<line x1="645" y1="130" x2="645" y2="152" stroke="#e8d46b" stroke-width="1"></line>
+<text x="645" y="166" text-anchor="middle" fill="#e8d46b" font-family="'SF Mono',Menlo,monospace" font-size="12">私营研发就业 1.34</text>
+<circle cx="645" cy="130" r="4.5" fill="#e8d46b"></circle>
+</svg>
+<figcaption>2007 年 PNAS 论文表 1 中的部分指数。台上那句「什么都涨 15%」，在表里是一个从 1.00 到 1.34 的区间。</figcaption>
+</figure>
+<p>看具体的数：新增专利 <strong>1.27</strong>，私营部门研发就业 <strong>1.34</strong>，「超级创造类」就业 1.15，工资总额 1.12，重罪 1.16，新增艾滋病例 1.23。而另一头：<strong>住房总量 1.00，总就业人数 1.01，德国的家庭用电 1.00</strong>。也就是说，那些「每个人各需要一份」的东西——一张床、一份工作、一台冰箱的电——是<strong>严格线性</strong>的，人均一点没多。台上那句「anything you can think of」，如果你想到的是住房或者工作，答案就是 0%，不是 15%。</p>
+<p>台上还说「在哪里都一样」。表里的 GDP 指数是：中国 1.15、德国 1.13、欧盟 <strong>1.26</strong>——欧盟那一行的置信区间宽到 [1.09, 1.46]，几乎什么都没排除。德国道路面积那一行的样本量是 <strong>29</strong>。</p>
+<p><strong>「必须越来越快地换跑步机」不是修辞，是一个公式。</strong>这是 2007 年论文里最硬也最少被转述的部分。超线性增长（β&gt;1）在数学上会在<strong>有限时间</strong> t<sub>c</sub> 内发散；现实中资源有限，奇点永远到不了，所以取而代之的是停滞和最终崩溃。要避免，就必须发生重大质变，把方程的初始条件和参数重置，开启新的一轮。而论文推出的那个要命的推论是：相邻两次循环的间隔 <strong>随人口增长必然缩短</strong>；对一座大城市，他们估出的量级是几十年，而实际的循环时间必须比这更短。值得记一笔的是，论文在这一段的参考文献里列的是 Ray Kurzweil 的《奇点临近》——这条「加速到崩溃」的论证，和硅谷那套奇点叙事是明摆着的同一家族。</p>
+<p><strong>「所有公司都会死」后来变成了一篇论文，而论文推翻了那个比喻。</strong>台上说的是 23,000 家公司「像你我一样死掉」。四年后，West 和 Bettencourt 带着 Daepp、Hamilton 把这件事正式做了出来：<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4424689/">《公司的死亡率》</a>，用了超过 <strong>25,000 家</strong>北美上市公司、1950 到 2009 年的数据。结论一半支持台上：上市公司的典型<strong>半衰期约十年</strong>，不分行业。但另一半正好拆掉那个比喻——公司的死亡风险率<strong>近似恒定</strong>，也就是<strong>与年龄无关</strong>。生物不是这样死的：人的死亡风险随年龄陡峭上升，这正是「衰老」的定义。公司不衰老，它们只是每年被掷一次骰子。而且「死」在数据里主要不是倒闭：<strong>45.1% 是并购</strong>，破产只占 <strong>4.5%</strong>。所以 Google 会不会「go bust」，这套数学其实没在回答；它回答的是 Google 某一年被买走或摘牌的概率。</p>
+
+<h2>后来的命运</h2>
+<div class="fate"><p class="verdict">部分站住 · 截至 2026-09</p><p>总量数据上的标度规律是真的，在多国多年份反复出现。但台上的两根支柱都被削细了：「什么都多 15%」被摊成一个 1.00 到 1.34 的区间，且严重依赖城市边界怎么划；「因为人与人的互动」被独立研究测出最多只解释一半。生物那侧的 3/4 直线则被证明根本不是直线。</p></div>
+<p><strong>2010 年 4 月，生物那一侧先裂。</strong>Kolokotrones、Savage、Deeds、Fontana 在《自然》上发表《代谢标度中的曲率》，用 McNab 编纂的 <strong>637 种哺乳动物</strong>（跨越六个数量级的体重）重做这件事。结论是：质量与代谢率的关系<strong>在对数坐标上是凸弯的，因此不是纯粹的幂律</strong>，即便校正了体温也一样。这顺带解释了为什么不同研究测出的指数一会儿像 2/3、一会儿像 3/4：曲线是弯的，你取哪一段体重范围，就得到哪个斜率。而对理论的裁决写得很直接：基于血管系统结构的那个被广泛讨论的模型（也就是 WBE）<strong>没通过这个检验</strong>——它预测的是<strong>凹</strong>的曲率，数据里是<strong>凸</strong>的，拟合「相对较差」。他们没把门关死：换一种血管过渡方式后，修正版拟合得几乎和二次模型一样好，「网络决定分配」这个内核保住了。这个日期值得注意——它比这场演讲早了十五个月，而台上那张图仍然是一条直线，配的话是「everybody lies on the same line」。</p>
+<p><strong>2011 年，城市那一侧被一个统计学家拆开。</strong>卡内基梅隆大学（同时也是圣塔菲研究所成员）的 Cosma Rohilla Shalizi 重做了美国的都会产出数据，写了<a href="https://arxiv.org/abs/1102.4101">《城市经济中的标度与层级》</a>。他的核心一击极其干净：那张让人信服的「数据坍缩」图，画的是<strong>总量</strong>（城市的 GMP 对人口），R² = 0.96，看着无懈可击。但把同样的数据换成<strong>人均</strong>来画——在幂律模型下这两者逻辑上等价——R² 立刻掉到 <strong>0.24</strong>。他还给出了那个决定性的对照：如果人均产出与城市规模<strong>完全无关</strong>，纯粹因为把人均量乘回人口做成总量，同样的回归也会得到 <strong>R² = 0.94</strong>。实测值 0.96，只比这个「什么都没有」的基线高 0.02。他的判词是：那种令人印象深刻的标度外观，「很大程度上是加总假象」。最后他做了一件更伤的事：把各都会区的产业构成放进模型，「与规模的剩余标度关系可以忽略不计」——真正预测人均产出的，是这座城市有多少高附加值的专业服务业，也就是经济地理学一百年前就有的「中心地层级」。</p>
+<p><strong>2014–2016 年，边界问题成了公开战场。</strong>Arcaute、Hatna、Ferguson、Youn、Johansson、Batty 在《皇家学会界面杂志》发表<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4277074/">《建构城市，解构标度律》</a>：他们用通勤和人口密度阈值，为英格兰与威尔士造出<strong>成千上万套</strong>不同的城市边界，当作检验标度律的实验室。结论是「仅凭人口规模并不能提供足够的信息来描述或预测一座城市的状态」，「预期中的标度律没有得到证实」，而且「<strong>大多数城市指标随城市规模线性变化，无论城市边界如何定义</strong>」。</p>
+<p><strong>作者一方没有撤回，回应是继续做数据。</strong>2016 年 Bettencourt 与 Lobo 用统一的「功能性城市区域」定义重做欧洲，而这篇论文自己让了一步：他们承认西欧各国的城市<strong>大致</strong>符合预期，但「每个国家的城市数量太少、天然变异太大，无法得出强结论」——这几乎就是批评者说的话。解法是把各国城市池化成更大的数据集，标度关系于是「清晰地浮现」。</p>
+<p><strong>2019 年，机制被称重了。</strong>Keuschnigg、Mutgan、Hedström 在《科学进展》发表<a href="https://reglab.se/wp-content/uploads/2019/02/Urban-scaling-and-the-regional-divide.pdf">《城市标度与区域分化》</a>，用的是瑞典<strong>全国人口登记</strong>的地理编码微观数据——把一个国家的每一个人拆开来看。他们先确认了总量层面的规律：瑞典 75 个劳动力市场区里，公司营业额 β = 1.196，工资总额 1.082。然后他们做了台上没做的事：把人口构成的影响<strong>剥掉</strong>，看还剩多少。答案是——「社会互动只解释了工资收入标度参数的大约一半」，构成差异至少解释了 <strong>39%</strong>。而构成差异从哪来？选择性迁移。从小地方搬进瑞典大城市的人，平均比留下的人<strong>多 1.8 年教育</strong>，认知能力测验高 <strong>0.4 个标准差</strong>。他们的结论句是一记直拳：「大城市通过从腹地吸引人才而增长」，「已经占优势的人从城市集聚中获益最多」。演讲里那句温暖的「we are the city」，在这里换了个说法：不是城市让人变得更有创造力，至少有一半是<strong>有创造力的人搬进了城市</strong>。</p>
+<p>还有被滥用的那一层：「城市翻倍，人均一切多 15%」因为好记、好用、站在增长这一边，被规划文件和招商材料反复引用，通常不带那张表、不带置信区间、也不带 1.00 那一列；而演讲本身其实说过好的坏的一起涨——犯罪和艾滋病例就在他念的清单里——这部分在转述中基本蒸发了。</p>
+<p>今天学界的位置大致是这样：标度关系作为<strong>描述性规律</strong>是稳的，作为城市间比较的基线（「这座城市相对它的规模，专利是多还是少」）很有用；但作为一条像牛顿定律那样的<strong>普适律</strong>，以及作为「规模是城市大多数特征的主要决定因素，历史、地理和设计是次要的」这种强主张，它没有站住。而演讲最后那句「they all die like you and me」，被提出它的那个团队自己的后续论文改掉了：公司确实会死，但不像你我——它们不衰老。</p>
+
+<h2>出处</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.ted.com/talks/geoffrey_west_the_surprising_math_of_cities_and_corporations/transcript">TED 官方逐字稿：The surprising math of cities and corporations</a></span><span class="d">本页所有引语、以及演讲中的数字（每周一百万人、23,000 家公司、15%）都出自这份逐字稿。</span></li>
+<li><span class="t"><a href="https://pdodds.w3.uvm.edu/files/papers/others/1997/west1997a.pdf">West, Brown &amp; Enquist,《生物学中异速标度律起源的一般模型》，Science, 1997</a></span><span class="d">3/4 定律的推导，台上那条直线的理论来源；「冰山下面」里的三条假设出自此文。</span></li>
+<li><span class="t"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1852329/">Bettencourt, Lobo, Helbing, Kühnert &amp; West,《城市中的增长、创新、标度与生活节奏》，PNAS, 2007</a></span><span class="d">这场演讲的骨架论文。本页那张指数分布图、各项指标的 β 与置信区间、以及「创新周期必须不断加速」的推导，均取自此文及其表 1。</span></li>
+<li><span class="t"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4424689/">Daepp, Hamilton, West &amp; Bettencourt,《公司的死亡率》，J. R. Soc. Interface, 2015</a></span><span class="d">West 团队自己对「所有公司都会死」的正式检验：半衰期约十年、风险率与年龄无关、45.1% 的退出是并购而非破产。</span></li>
+<li><span class="t"><a href="https://pdodds.w3.uvm.edu/files/papers/others/2010/kolokotrones2010a.pdf">Kolokotrones, Savage, Deeds &amp; Fontana,《代谢标度中的曲率》，Nature, 2010</a></span><span class="d">637 种哺乳动物的重新分析：代谢标度不是纯幂律，WBE 模型「没通过这个检验」。命运一节生物学那一侧依据此文。</span></li>
+<li><span class="t"><a href="https://arxiv.org/abs/1102.4101">Cosma Rohilla Shalizi,《城市经济中的标度与层级》，arXiv, 2011</a></span><span class="d">对城市标度最锋利的统计学反驳：R² 0.96 对 0.94 的对照、人均 R² 只有 0.24、产业构成取代规模。命运一节 2011 年那段依据此文。</span></li>
+</ul>
+</div>
+<footer>演讲精读 · 一场演讲，一个想法的来龙去脉 · 写于 2026-09-18</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>

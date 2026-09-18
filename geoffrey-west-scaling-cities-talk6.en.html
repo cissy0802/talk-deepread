@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Geoffrey West · The surprising math of cities and corporations — double a city, get 15% more of everything</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="geoffrey-west-scaling-cities-talk6.html">中文 →</a></div>
+<header>
+<div class="kicker">TEDGlobal · 2011</div>
+<h1>Double a city and you get 15% more of everything per person — wages, patents, and AIDS cases</h1>
+<p class="sub">Geoffrey West · The surprising math of cities and corporations</p>
+<div class="modebar"><button class="on" id="btn-pop">Short</button><button id="btn-deep">Full</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>Edinburgh, July 2011. A seventy-year-old theoretical physicist walks onto the TED stage and asks a room full of people sitting in Edinburgh:</p>
+<blockquote><span class="en">Is London a great big whale? Is Edinburgh a horse? Is Microsoft a great big anthill?</span></blockquote>
+<p>He is not being cute. Geoffrey West spent the first half of his career doing particle physics at Los Alamos and switched fields in his fifties, and he genuinely wants to know whether a city is, mathematically, a scaled-up animal. He also thinks a decent theory owes you an answer to a ruder question — and remember, this is 2011, with Google at the top of the world: <strong>"if you have a serious theory, you should be able to predict when Google is going to go bust."</strong></p>
+<p>His evidence starts with one graph. Plot every organism's <strong>metabolic rate</strong> — the energy you need per day to stay alive — against its body mass on logarithmic axes, and from bacteria to blue whales, across a dozen orders of magnitude, everything falls on the same straight line. The slope is <strong>3/4</strong> — less than one. Meaning: double the size of an organism and you need only 75% more energy, not 100%. Bigger is cheaper. The price is pace: the heart slows, life lengthens, everything decelerates.</p>
+<p>Cities? Petrol stations, road length, cable length — same shape of curve, same economy of scale. But plot wages, patents, GDP, crime, and the slope crosses 1, landing around 1.15 to 1.2. Hence the line that has been quoted for fifteen years:</p>
+<blockquote><span class="en">If you double the size of a city ... then systematically you get a 15 percent increase in wages, wealth, number of AIDS cases, number of police, anything you can think of.</span></blockquote>
+<p>Good and bad rise together; they are the same coin. And the reason, he says, is us: <strong>"we are the city."</strong> A city is just the physical shell of human interaction, and denser interaction produces more of everything — creation and crime alike.</p>
+<p>Superlinearity has one lovely side effect and one horrifying consequence. The side effect is that the pace of urban life accelerates (he shows walking speeds in European cities: the bigger the city, the faster people walk). The consequence is that superlinear growth mathematically <strong>blows up to infinity in finite time</strong> — that is, it collapses. The only escape is a major innovation before you hit the wall, which resets the clock. But the next one has to arrive sooner. <strong>"we're not only on a treadmill that's going faster, but we have to change the treadmill faster and faster."</strong> Can we, he asks, as socio-economic beings, avoid a heart attack?</p>
+<p>In the last two minutes he turns to companies. Data on 23,000 American firms shows that companies scale <strong>sublinearly</strong> — like organisms, not like cities. What dominates them is not innovation but economies of scale; in his reading, bureaucracy and administration. And sublinear means a sigmoid: sprint, bend, stop. He shows Walmart's curve truncated at 1994, admits he cheated, and extends the theoretical line to 2008, where it fits. Then all 23,000 curves bend over at once: <strong>"they all die like you and me."</strong></p>
+<p><strong>What happened next?</strong> The idea <strong>partly holds</strong>. The regularity really does keep showing up in aggregate data, from the US to Europe to China to Sweden. But both pillars on that stage got thinner. First, "15% more of everything": in his own 2007 paper the exponents run from 1.00 all the way to 1.34 — total housing and total employment come in at 1.00 and 1.01, which is <strong>zero percent</strong> more per person. Second, "because of our interactions": a 2019 study built on Sweden's entire population register finds that interaction explains at most half, and the rest is big cities pulling better-educated people out of smaller ones. Meanwhile the statistician Cosma Shalizi had already pointed out in 2011 that the jaw-dropping straight line, with its R² of 0.96, would still come out at 0.94 even if per-capita output were <strong>completely unrelated</strong> to city size. And that 3/4 line on the biology side? A 2010 <em>Nature</em> analysis of 637 mammal species says it is not a straight line at all. It is curved.</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>Talk</b> The surprising math of cities and corporations · <b>Venue</b> TEDGlobal, Edinburgh, 12 July 2011 · <b>Length</b> 17 min 16 sec · <b>Transcript</b> <a href="https://www.ted.com/talks/geoffrey_west_the_surprising_math_of_cities_and_corporations/transcript">TED official</a></div>
+
+<h2>The moment</h2>
+<p>Three minutes in, Geoffrey West puts two questions to the room, the two he says are always running in his head on this subject. The first: are cities part of biology?</p>
+<blockquote><span class="en">Is London a great big whale? Is Edinburgh a horse? Is Microsoft a great big anthill? What do we learn from that? We use them metaphorically -- the DNA of a company, the metabolism of a city, and so on -- is that just bullshit, metaphorical bullshit, or is there serious substance to it?</span><cite>— Geoffrey West, TEDGlobal 2011</cite></blockquote>
+<p>He is standing in Edinburgh, asking people from Edinburgh whether the place they live is a horse. It is not rhetoric. He means to answer it with data.</p>
+<p>The second question is less polite. First an observation: cities are nearly unkillable. <strong>"You could drop an atom bomb on a city, and 30 years later it's surviving. Very few cities fail."</strong> Then the contrast: <strong>"All companies die, all companies."</strong> And then he pushes it somewhere that sounded close to offensive in 2011, the year Google could do no wrong:</p>
+<blockquote><span class="en">And if you have a serious theory, you should be able to predict when Google is going to go bust.</span><cite>— Geoffrey West, TEDGlobal 2011</cite></blockquote>
+<p>That line sets the stakes for the whole talk. He is not here to say cities are interesting. He is here to say cities and companies obey a mathematics you can write down, predict with, and be wrong about.</p>
+
+<h2>The man, and that year</h2>
+<p>Geoffrey West was born in 1940 in Taunton, Somerset. Physics at Cambridge, doctorate at Stanford, then a long run at Los Alamos National Laboratory, where he rose to <strong>lead the high energy physics group</strong>. The first half of his life had nothing to do with cities — he studied elementary particles.</p>
+<p>The turn came in the 1990s. In 1993 Congress killed the Superconducting Super Collider, the flagship of American high-energy physics. Speaking to the physicist Sean Carroll on his podcast in 2018, West recalled that he was in his early fifties at the time and came from a family of short-lived men, and that he began seriously asking a physicist's question: <strong>where does the number "a hundred years" come from?</strong> If biology were a science the way physics is, he said, a textbook ought to contain a calculation that produces that number.</p>
+<p>It did not. So he went and did the calculation. In 1997, with the ecologists James Brown and Brian Enquist, he published a model in <em>Science</em> deriving biology's quarter-power exponents from transport networks. That paper moved him out of particle physics for good. He joined the Santa Fe Institute in 2003 and was its president from 2005 to 2009 — Santa Fe being the headquarters of complexity science, an institution in the business of finding shared mathematical structure across disciplines.</p>
+<p>By the time he took the stage in 2011 the programme was fourteen years old: the core urban scaling paper had appeared in PNAS in 2007. So the audience was not hearing a fresh conjecture. It was hearing a framework already crossing from biology into economics and already being sold to mayors and planners. His own attitude to that shows up three minutes in, right after he introduces his collaborators: <strong>"they've done all the work, and I'm the great bullshitter that tries to bring it all together."</strong> The room laughs.</p>
+
+<h2>Glossary</h2>
+<div class="glossary"><ul>
+<li><b>Scaling law / power law</b>: one quantity varying as a fixed power of another: Y = Y<sub>0</sub>·N<sup>β</sup>.</li>
+<li><b>Exponent β</b>: that power. It is the whole argument on this page, because a single number summarises "what happens when you get bigger."</li>
+<li><b>Sublinear (β &lt; 1)</b>: bigger is cheaper. Double the size, need less than double — per capita falls.</li>
+<li><b>Superlinear (β &gt; 1)</b>: bigger is more. Double the size, get more than double — per capita rises.</li>
+<li><b>Log scale</b>: axes marked 10, 100, 1000 rather than 1, 2, 3. A power law becomes a straight line, and the slope is β. Every chart West showed is drawn this way.</li>
+</ul></div>
+
+<h2>The talk, in full</h2>
+<p>The order of attack is clear: establish urgency, establish biology, port biology to cities, then run the same mathematics over companies and end on the blade.</p>
+<p><strong>Step one: why now.</strong> He throws out a number and tells the room to listen: between now and 2050, <strong>every week</strong>, more than a million people are added to the world's cities. Cities are the source of global warming, pollution and disease, and also the cure — they are the vacuum cleaners and magnets that suck in creative people. So we need a scientific theory of cities, and scientific means <strong>quantifiable, built on generic principles, predictive</strong>.</p>
+<p><strong>Step two: why biology can do this.</strong> He starts with the claim that one of the most extraordinary things about life is that it is <strong>scalable</strong> — the same principles, the same dynamics, working across a hundred-million-fold range of size. Then comes the chart he calls "truly remarkable": metabolic rate against mass, plotted going up by factors of 10, and from the smallest organism to the largest everything lies on one line. He stops to press on what is genuinely strange about it — every one of these organisms, every cell type, every gene evolved in its own unique niche with its own unique history, and yet, despite all that Darwinian evolution and natural selection, <strong>they have been constrained to lie on a line</strong>.</p>
+<p>The slope is 3/4: less than one, sublinear. He translates it: if it were linear, doubling size would demand double the energy; at 3/4, doubling size needs <strong>only 75% more</strong>. Biology is economies of scale all the way down. And it is not just metabolic rate — any physiological variable, any life-history event, plotted this way looks like this. Which licenses the boast: tell me the size of a mammal and I can tell you, at the 90 percent level, everything about it.</p>
+<p>The reason is <strong>networks</strong>. Life is controlled by transport networks; apply mathematisable universal principles to them and the scalings follow. He adds a corollary that becomes the star of the second half: <strong>the bigger you are, the slower the pace of life</strong> — slower heart rates, longer lives.</p>
+<p><strong>Step three: port it to cities.</strong> Is London a scaled-up Birmingham? He says he doesn't know, but cities are networks too — and <strong>the most important network of a city is you</strong>. A city is just the physical manifestation of our interactions. He starts with something mundane: petrol stations against city size, plotted exactly as in biology, giving exactly the same shape, slope below one, economy of scale. Not surprising. What is surprising is that it is <strong>the same everywhere</strong>: Japan, China, Colombia, the same economy of scale to the same degree — and so is any infrastructure you look at.</p>
+<p>Then he flips it. Socio-economic quantities — the ones with no analogue in biology, which appeared only when humans started forming communities eight to ten thousand years ago: wages, "super-creative" employment. These have exponents <strong>greater than one</strong>, around 1.15 to 1.2. He puts income, GDP, crime and patents on one graph and says they all follow the same line. Then the loudest line of the talk:</p>
+<blockquote><span class="en">If you double the size of a city from 100,000 to 200,000, from a million to two million, 10 to 20 million, it doesn't matter, then systematically you get a 15 percent increase in wages, wealth, number of AIDS cases, number of police, anything you can think of. It goes up by 15 percent, and you have a 15 percent savings on the infrastructure.</span><cite>— Geoffrey West, TEDGlobal 2011</cite></blockquote>
+<p>His gloss is almost moral: this is no doubt why a million people a week are gathering in cities, because they think the wonderful things — creative people, wealth, income — are what attracts them, <strong>forgetting about the ugly and the bad</strong>. The mechanism is social networks. The universality, he repeats, is us: we are the city.</p>
+<p><strong>Step four: pace and collapse.</strong> Biology's sublinearity slows the pace of life; the city's superlinearity does the reverse and <strong>speeds it up</strong>. He puts two charts side by side: heart rate on the left (bigger is slower), walking speed in a set of European cities on the right (bigger is faster). Then growth. Sublinear gives a sigmoid — fast then stop, which is resilience for an organism and bad news for a city. Superlinear gives a beautiful rising exponential that fits the development of cities and economies very well, but carries a terrible catch: <strong>the system is destined to collapse</strong>, for Malthusian reasons, because resources run out. How do you dodge it? He says we have dodged it many times — a major innovation just before the wall, start over, and again at the next wall.</p>
+<blockquote><span class="en">So the image is that we're not only on a treadmill that's going faster, but we have to change the treadmill faster and faster. We have to accelerate on a continuous basis. And the question is: Can we, as socio-economic beings, avoid a heart attack?</span><cite>— Geoffrey West, TEDGlobal 2011</cite></blockquote>
+<p><strong>Step five: companies, and the knife.</strong> In the final minutes he turns to firms. They looked at 23,000 US companies, plotting income and assets against employee count. The result makes him say "astonishing": companies scale <strong>sublinearly</strong> — like biology, not like cities. What dominates them is not innovation but economies of scale; in his reading, bureaucracy and administration. And sublinear means sigmoidal growth. He shows Walmart, notes it doesn't look very sigmoidal — it looks like the hockey stick we like — then admits he cheated by stopping at 1994. Extend to 2008 and the red theoretical line lands on it. Then all 23,000 at once:</p>
+<blockquote><span class="en">They all start looking like hockey sticks, they all bend over, and they all die like you and me.</span><cite>— Geoffrey West, TEDGlobal 2011</cite></blockquote>
+<p>"Thank you." He ends right there. No return to cities, no way out, no comfort.</p>
+
+<h2>Under the iceberg</h2>
+<p>Behind almost every chart in those 17 minutes sits a paper, and every paper says something narrower than the stage did.</p>
+<p><strong>That 3/4 line is, in his own theory, only a limit.</strong> "Metabolic rate scales as the 3/4 power of mass" is <strong>Kleiber's law</strong>, proposed by Max Kleiber in 1932 <a href="https://pdodds.w3.uvm.edu/files/papers/others/2010/kolokotrones2010a.pdf">on the basis of 13 data points</a>. What West, Brown and Enquist did in <em>Science</em> in 1997 was give that empirical regularity a <strong>derivation</strong>. The model rests on three assumptions: the network is a <strong>space-filling, fractal-like branching</strong> structure, so it can supply every part of the organism; the terminal unit (the capillary, say) is <strong>size-invariant</strong>, not varying with body size; and the energy required to distribute resources is <strong>minimised</strong>. The paper itself states this is an idealised representation, ignoring vessel tapering, turbulence and nonlinear effects. And the crucial point never mentioned on stage: the model yields pure 3/4-power scaling <strong>only asymptotically, in the limit of infinite body mass</strong>. For animals of finite size it instead gives an implicit relation, M = c<sub>0</sub>B + c<sub>1</sub>B<sup>4/3</sup>, which <strong>is curved on a logarithmic scale</strong>. The dead-straight line that convinced the room was never supposed to be straight in the theory that produced it.</p>
+<p><strong>"15%" is an average over a range running from 1.00 to 1.34.</strong> The talk's skeleton is the 2007 PNAS paper by Bettencourt, Lobo, Helbing, Kühnert and West. Its table is the single most worthwhile thing to open, because "anything you can think of" is not what it says:</p>
+<figure>
+<svg viewBox="0 0 760 250" role="img" aria-label="Distribution of urban scaling exponents reported in the 2007 PNAS paper">
+<rect x="471" y="34" width="46" height="172" fill="#e8d46b" opacity="0.10"></rect>
+<text x="494" y="26" text-anchor="middle" fill="#e8d46b" font-family="'SF Mono',Menlo,monospace" font-size="12">on stage: 1.15–1.20</text>
+<line x1="105.7" y1="40" x2="105.7" y2="212" stroke="#7d8794" stroke-width="1" stroke-dasharray="2 5" opacity="0.4"></line>
+<line x1="334.3" y1="40" x2="334.3" y2="212" stroke="#93a1ae" stroke-width="1" stroke-dasharray="4 4" opacity="0.8"></line>
+<line x1="562.9" y1="40" x2="562.9" y2="212" stroke="#7d8794" stroke-width="1" stroke-dasharray="2 5" opacity="0.4"></line>
+<text x="105.7" y="228" text-anchor="middle" fill="#7d8794" font-family="'SF Mono',Menlo,monospace" font-size="11">0.75</text>
+<text x="334.3" y="228" text-anchor="middle" fill="#93a1ae" font-family="'SF Mono',Menlo,monospace" font-size="11">1.00 linear</text>
+<text x="562.9" y="228" text-anchor="middle" fill="#7d8794" font-family="'SF Mono',Menlo,monospace" font-size="11">1.25</text>
+<text x="50" y="245" fill="#7d8794" font-family="'SF Mono',Menlo,monospace" font-size="11">← cheaper per person (sublinear)</text>
+<text x="710" y="245" text-anchor="end" fill="#7d8794" font-family="'SF Mono',Menlo,monospace" font-size="11">more per person (superlinear) →</text>
+<line x1="50" y1="130" x2="710" y2="130" stroke="#7d8794" stroke-width="1.5"></line>
+<line x1="124" y1="130" x2="124" y2="152" stroke="#5ee6a8" stroke-width="1"></line>
+<text x="124" y="166" text-anchor="middle" fill="#5ee6a8" font-family="'SF Mono',Menlo,monospace" font-size="12">petrol stations 0.77</text>
+<circle cx="124" cy="130" r="4.5" fill="#5ee6a8"></circle>
+<line x1="179" y1="130" x2="179" y2="106" stroke="#5ee6a8" stroke-width="1"></line>
+<text x="179" y="100" text-anchor="middle" fill="#5ee6a8" font-family="'SF Mono',Menlo,monospace" font-size="12">road surface 0.83</text>
+<circle cx="179" cy="130" r="4.5" fill="#5ee6a8"></circle>
+<line x1="215" y1="130" x2="215" y2="176" stroke="#5ee6a8" stroke-width="1"></line>
+<text x="215" y="190" text-anchor="middle" fill="#5ee6a8" font-family="'SF Mono',Menlo,monospace" font-size="12">electrical cable 0.87</text>
+<circle cx="215" cy="130" r="4.5" fill="#5ee6a8"></circle>
+<line x1="338" y1="130" x2="338" y2="82" stroke="#93a1ae" stroke-width="1"></line>
+<text x="338" y="76" text-anchor="middle" fill="#93a1ae" font-family="'SF Mono',Menlo,monospace" font-size="12">housing 1.00 · employment 1.01 · household electricity 1.00</text>
+<circle cx="334" cy="130" r="4.5" fill="#93a1ae"></circle>
+<circle cx="343" cy="130" r="4.5" fill="#93a1ae"></circle>
+<line x1="444" y1="130" x2="444" y2="152" stroke="#e8d46b" stroke-width="1"></line>
+<text x="444" y="166" text-anchor="middle" fill="#e8d46b" font-family="'SF Mono',Menlo,monospace" font-size="12">total wages 1.12</text>
+<circle cx="444" cy="130" r="4.5" fill="#e8d46b"></circle>
+<line x1="481" y1="130" x2="481" y2="106" stroke="#e8d46b" stroke-width="1"></line>
+<text x="481" y="100" text-anchor="middle" fill="#e8d46b" font-family="'SF Mono',Menlo,monospace" font-size="12">serious crime 1.16</text>
+<circle cx="481" cy="130" r="4.5" fill="#e8d46b"></circle>
+<line x1="545" y1="130" x2="545" y2="176" stroke="#e8d46b" stroke-width="1"></line>
+<text x="545" y="190" text-anchor="middle" fill="#e8d46b" font-family="'SF Mono',Menlo,monospace" font-size="12">new AIDS cases 1.23</text>
+<circle cx="545" cy="130" r="4.5" fill="#e8d46b"></circle>
+<line x1="581" y1="130" x2="581" y2="106" stroke="#e8d46b" stroke-width="1"></line>
+<text x="581" y="100" text-anchor="middle" fill="#e8d46b" font-family="'SF Mono',Menlo,monospace" font-size="12">patents 1.27</text>
+<circle cx="581" cy="130" r="4.5" fill="#e8d46b"></circle>
+<line x1="645" y1="130" x2="645" y2="152" stroke="#e8d46b" stroke-width="1"></line>
+<text x="645" y="166" text-anchor="middle" fill="#e8d46b" font-family="'SF Mono',Menlo,monospace" font-size="12">private R&amp;D jobs 1.34</text>
+<circle cx="645" cy="130" r="4.5" fill="#e8d46b"></circle>
+</svg>
+<figcaption>Selected exponents from Table 1 of the 2007 PNAS paper. "Everything goes up 15%" is, in the table, a range from 1.00 to 1.34.</figcaption>
+</figure>
+<p>The actual numbers: new patents <strong>1.27</strong>, private R&amp;D employment <strong>1.34</strong>, "supercreative" employment 1.15, total wages 1.12, serious crimes 1.16, new AIDS cases 1.23. And at the other end: <strong>total housing 1.00, total employment 1.01, German household electricity 1.00</strong>. Which is to say the things everyone needs exactly one of — a bed, a job, a fridge's worth of power — scale <strong>strictly linearly</strong>, with no per-capita gain at all. If the thing you thought of was housing or a job, the answer is 0%, not 15%.</p>
+<p>He also said it is the same everywhere. In the table, GDP exponents run 1.15 for China, 1.13 for Germany, and <strong>1.26</strong> for the EU — where the confidence interval is [1.09, 1.46], wide enough to exclude almost nothing. The German road-surface row has a sample size of <strong>29</strong>.</p>
+<p><strong>"We have to change the treadmill faster and faster" is not a metaphor; it is a formula.</strong> This is the hardest and least-repeated part of the 2007 paper. Superlinear growth (β&gt;1) diverges in <strong>finite time</strong> t<sub>c</sub>; in reality resources are limited so the singularity is never reached, and what you get instead is stagnation and ultimate collapse. To avoid it, major qualitative changes must reset the equation's initial conditions and parameters, starting a new cycle. And the killer corollary the paper derives: the interval between successive cycles <strong>necessarily decreases as population grows</strong>; for a large city the order of magnitude they estimate is a few decades, and actual cycle times must be shorter still. Worth noting: the reference the paper cites at this point is Ray Kurzweil's <em>The Singularity Is Near</em> — this accelerate-or-collapse argument is openly in the same family as the Silicon Valley singularity story.</p>
+<p><strong>"All companies die" later became a paper, and the paper broke the metaphor.</strong> On stage it was 23,000 firms dying "like you and me." Four years later West and Bettencourt, with Daepp and Hamilton, did it properly: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4424689/">"The mortality of companies"</a>, using more than <strong>25,000</strong> publicly traded North American companies from 1950 to 2009. Half the result backs the stage: the typical <strong>half-life is about a decade</strong>, regardless of sector. The other half dismantles the analogy — the hazard rate is <strong>approximately constant</strong>, meaning mortality is <strong>independent of a company's age</strong>. Organisms do not die that way: human mortality risk climbs steeply with age, which is the definition of senescence. Companies do not senesce; they simply get a die rolled at them every year. And "death" in the data mostly is not failure: <strong>45.1% are mergers and acquisitions</strong>, and bankruptcy is only <strong>4.5%</strong>. So whether Google will "go bust" is not really what this mathematics answers. It answers the odds that Google gets bought or delisted in a given year.</p>
+
+<h2>What became of it</h2>
+<div class="fate"><p class="verdict">PARTLY HOLDS · as of 2026-09</p><p>The scaling regularity in aggregate data is real and recurs across countries and years. But both pillars of the talk have been thinned: "15% more of everything" spreads into a range from 1.00 to 1.34 and depends heavily on how city boundaries are drawn, and "because of human interaction" has been measured by independent work at no more than half. On the biology side, the 3/4 straight line turns out not to be straight.</p></div>
+<p><strong>April 2010: the biology side cracks first.</strong> Kolokotrones, Savage, Deeds and Fontana published "Curvature in metabolic scaling" in <em>Nature</em>, redoing the analysis on McNab's compilation of <strong>637 mammal species</strong> spanning six orders of magnitude of mass. The finding: the relationship between mass and metabolic rate <strong>has convex curvature on a logarithmic scale and is therefore not a pure power law</strong>, even after accounting for body temperature. That also explains why different studies kept measuring exponents near 2/3 or near 3/4 — the curve is bent, so whichever mass range you sample gives you that slope. The verdict on the theory is blunt: the widely debated model based on vascular architecture (that is, WBE) <strong>fails this test</strong> — it predicts <strong>concave</strong> curvature where the data are <strong>convex</strong>, giving "a relatively poor fit." They did not slam the door: with a different treatment of the transition in the vessel network, a modified version fits nearly as well as the quadratic, preserving the core claim that distribution networks govern scaling. The date is worth noting — this was fifteen months before the talk, in which the chart is still a straight line, captioned "everybody lies on the same line."</p>
+<p><strong>2011: a statistician takes the urban side apart.</strong> Cosma Rohilla Shalizi of Carnegie Mellon (and the Santa Fe Institute) reanalysed US metropolitan output in <a href="https://arxiv.org/abs/1102.4101">"Scaling and Hierarchy in Urban Economies"</a>. His central strike is very clean. That convincing "data collapse" chart plots <strong>totals</strong> — a metro area's gross product against population — with an R² of 0.96, apparently airtight. Replot the identical data <strong>per capita</strong>, which under the power-law model is logically equivalent, and R² drops to <strong>0.24</strong>. Then the decisive control: if per-capita output were <strong>entirely independent</strong> of city size, simply multiplying it back by population to form totals would still produce <strong>R² = 0.94</strong>. The measured value, 0.96, beats that nothing-at-all baseline by 0.02. His verdict is that the striking appearance of scaling is "largely artifact." Then he does something worse: he puts each metro area's industrial composition into the model, and "the remaining scaling with population is negligible" — what actually predicts per-capita output is how much of a city is high value-added specialist services, which is the "hierarchy of central places" that economic geography has had for a century.</p>
+<p><strong>2014–2016: boundaries become the battleground.</strong> Arcaute, Hatna, Ferguson, Youn, Johansson and Batty published <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4277074/">"Constructing cities, deconstructing scaling laws"</a> in the <em>Journal of the Royal Society Interface</em>: using commuting and population-density thresholds, they built <strong>thousands</strong> of alternative sets of city boundaries for England and Wales as a laboratory for testing scaling. The conclusion is that "population size alone does not provide us enough information to describe or predict the state of a city as previously proposed, indicating that the expected scaling laws are not corroborated," and that "<strong>most urban indicators scale linearly with city size, regardless of the definition of the urban boundaries</strong>."</p>
+<p><strong>The authors did not retract; they answered with more data.</strong> In 2016 Bettencourt and Lobo redid Europe using harmonised "functional urban area" definitions — and that paper concedes a step: they acknowledge that cities in Western European nations <strong>approximately</strong> agree with theory, but that "the small number of cities in each nation and their natural variability preclude drawing strong conclusions," which is very nearly what the critics said. Their fix is to pool cities across national systems into larger datasets, at which point the scaling relations "clearly emerge."</p>
+<p><strong>2019: the mechanism gets weighed.</strong> Keuschnigg, Mutgan and Hedström published <a href="https://reglab.se/wp-content/uploads/2019/02/Urban-scaling-and-the-regional-divide.pdf">"Urban scaling and the regional divide"</a> in <em>Science Advances</em>, using geocoded microdata from Sweden's <strong>entire population register</strong> — every single person in a country, taken apart. First they confirm the aggregate regularity across Sweden's 75 labour market areas: company turnover β = 1.196, total wages 1.082. Then they do what the stage did not: strip out the effect of population composition and see what is left. The answer — "social interactions only explain about half of the scaling parameter of wage income," with composition differences accounting for at least <strong>39%</strong>. And where do those differences come from? Selective migration. People who move from smaller places into Sweden's big labour markets have on average <strong>1.8 more years of education</strong> and score <strong>0.4 standard deviations higher</strong> on a test of cognitive ability than those who stayed. Their conclusion lands like a jab: big cities "grow through their attraction of talent from their hinterlands," and "the already-privileged benefit disproportionally from urban agglomeration." That warm line on stage — <em>we are the city</em> — reads differently here. It is not so much that cities make people more creative; at least half of it is that creative people move to cities.</p>
+<p>There is also the misuse layer. "Double a city and everything goes up 15% per person" is memorable, useful and on the side of growth, so it gets quoted in planning documents and investment brochures — usually without the table, without the confidence intervals, and without that 1.00 column. The talk itself did say the good and the bad rise together — crime and AIDS cases were in the list he read out — and that part evaporates in the retelling almost every time.</p>
+<p>Where the field sits today: scaling relations are solid as a <strong>descriptive</strong> regularity and genuinely useful as a baseline for comparing cities ("relative to its size, does this city produce more patents or fewer?"). But as a <strong>universal law</strong> in the Newtonian sense, and as the strong claim that size is the major determinant of most characteristics of a city with history, geography and design secondary, it has not held. And that closing line — "they all die like you and me" — was corrected by the very team that produced it: companies do die, but not like you and me. They do not age.</p>
+
+<h2>Sources</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.ted.com/talks/geoffrey_west_the_surprising_math_of_cities_and_corporations/transcript">TED official transcript: The surprising math of cities and corporations</a></span><span class="d">Every quotation on this page, and the talk's own figures (a million people a week, 23,000 companies, 15%), come from this transcript.</span></li>
+<li><span class="t"><a href="https://pdodds.w3.uvm.edu/files/papers/others/1997/west1997a.pdf">West, Brown &amp; Enquist, "A General Model for the Origin of Allometric Scaling Laws in Biology," Science, 1997</a></span><span class="d">The derivation of the 3/4 law and the theoretical source of that straight line; the three assumptions quoted under "Under the iceberg" are from this paper.</span></li>
+<li><span class="t"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1852329/">Bettencourt, Lobo, Helbing, Kühnert &amp; West, "Growth, innovation, scaling, and the pace of life in cities," PNAS, 2007</a></span><span class="d">The talk's skeleton. The exponent chart above, each indicator's β and confidence interval, and the accelerating-innovation-cycle derivation all come from this paper and its Table 1.</span></li>
+<li><span class="t"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4424689/">Daepp, Hamilton, West &amp; Bettencourt, "The mortality of companies," J. R. Soc. Interface, 2015</a></span><span class="d">West's own team formally testing "all companies die": half-life about a decade, hazard rate independent of age, 45.1% of exits by acquisition rather than bankruptcy.</span></li>
+<li><span class="t"><a href="https://pdodds.w3.uvm.edu/files/papers/others/2010/kolokotrones2010a.pdf">Kolokotrones, Savage, Deeds &amp; Fontana, "Curvature in metabolic scaling," Nature, 2010</a></span><span class="d">The 637-mammal reanalysis: metabolic scaling is not a pure power law, and the WBE model "fails this test." The biology side of the fate section rests on this.</span></li>
+<li><span class="t"><a href="https://arxiv.org/abs/1102.4101">Cosma Rohilla Shalizi, "Scaling and Hierarchy in Urban Economies," arXiv, 2011</a></span><span class="d">The sharpest statistical rebuttal: the 0.96-versus-0.94 control, per-capita R² of only 0.24, industrial composition displacing size. The 2011 paragraph rests entirely on this.</span></li>
+</ul>
+</div>
+<footer>Talk Deepread · one talk, one idea traced to its source and its fate · written 2026-09-18</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
