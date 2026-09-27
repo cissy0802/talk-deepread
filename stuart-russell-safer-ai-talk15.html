@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Stuart Russell ·《3 principles for creating safer AI》— 「你死了就没法去拿咖啡」，而那个定理需要一个完美理性的人</title>
 <style>
@@ -51,7 +52,7 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <div class="langbar"><a href="stuart-russell-safer-ai-talk15.en.html">English →</a></div>
 <header>
 <div class="kicker">TED2017 · 2017</div>
-<h1 data-tts="dba3b9ef900fb10d">「你死了就没法去拿咖啡」——而那个定理，需要一个完美理性的人</h1>
+<h1 data-tts="9292f1c3f78ea150">「你死了就没法去拿咖啡」——而那个定理，需要一个完美理性的人</h1>
 <p class="sub">Stuart Russell ·《3 principles for creating safer AI》</p>
 <div class="modebar"><button class="on" id="btn-pop">精华版</button><button id="btn-deep">完整版</button></div>
 </header>
@@ -69,8 +70,8 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p>但这条路没死，反倒是九年来最活的时候：2025 年 ICML 上，Russell 署名的 AssistanceZero 第一次把「助手博弈」做到了规模上，目标空间超过 10<sup>400</sup>。所以判词是<strong>部分站住</strong>——那句关于咖啡的话说对了，那个关于希腊字母的承诺至今只在它自己的假设里成立。</p>
 </div>
 <div class="mode-deep" hidden="" id="mode-deep">
-<div class="meta-card" data-tts="671e46d4ad24886f"><b>演讲</b> 3 principles for creating safer AI · <b>场合</b> TED2017 · 2017-04-24 · <b>时长</b> 17 分 25 秒 · <b>全文</b> <a href="https://www.ted.com/talks/stuart_russell_3_principles_for_creating_safer_ai/transcript">TED 官方逐字稿</a></div>
-<h2 data-tts="a5cc2fe6bf42ccc0">那一刻</h2>
+<div class="meta-card" data-tts="8702ffd2c80e41b1"><b>演讲</b> 3 principles for creating safer AI · <b>场合</b> TED2017 · 2017-04-24 · <b>时长</b> 17 分 25 秒 · <b>全文</b> <a href="https://www.ted.com/talks/stuart_russell_3_principles_for_creating_safer_ai/transcript">TED 官方逐字稿</a></div>
+<h2 data-tts="53c4b5b01fbd3edd">那一刻</h2>
 <p>演讲进行到五分半，幻灯片上出现了一群大猩猩。</p>
 <p>前一分钟他刚提了一个问题：造出比自己这个物种更聪明的东西，这件事本身有多蠢？他说这可以叫「大猩猩问题」（the gorilla problem），因为几百万年前大猩猩的祖先就干过这件事，「现在我们可以问问大猩猩：这是个好主意吗？」</p>
 <p>然后是那张照片。</p>
@@ -79,15 +80,13 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p>笑完之后是这场演讲真正的转轴。他问：对于这种「造个比自己聪明的东西大概不是好主意」的犯恶心的感觉，我们能做什么？</p>
 <blockquote><span class="en">Well, really nothing, except stop doing AI, and because of all the benefits that I mentioned and because I'm an AI researcher, I'm not having that. I actually want to be able to keep doing AI.</span><span class="zh">其实什么也做不了，除了别搞 AI 了。而因为我刚说的那些好处，也因为我本人就是个 AI 研究者，这个我不接受。我确实想继续搞 AI。</span><cite>— Stuart Russell,《3 principles for creating safer AI》, 2017</cite></blockquote>
 <p>整场演讲的立场就在这两句之间：他承认这件事可能要人命，也拒绝停手。剩下的十二分钟，是他为这个拒绝找的技术出路。</p>
-
-<h2 data-tts="3e5514c4bf833c45">讲的人，和那一年</h2>
+<h2 data-tts="dbc603568eff4d3f">讲的人，和那一年</h2>
 <p>台上这个人说「我在试着重新定义 AI」的时候，他有资格这么说，也有点难堪——因为现在这个定义在很大程度上是他写的。</p>
 <p>Stuart Russell 是《人工智能：一种现代方法》（<i>Artificial Intelligence: A Modern Approach</i>）的第一作者，和 Peter Norvig 合著，1995 年初版。这本砖头是全世界 AI 专业的标准教材，几代从业者的第一堂课都是它上的。而它给 AI 下的定义，正是这场演讲要拆的那一个：<strong>造出理性的智能体，让它最大化给定目标的期望效用</strong>。Russell 后来管这叫「标准模型」（the standard model），并认为它从根上错了。所以这场演讲的真实处境是：教科书作者站起来说，我那本书的第一章需要改。</p>
 <p>他也不是被吓到才转向的。演讲前一年，2016 年 6 月，三条原则已经原封不动地写在《科学美国人》（<i>Scientific American</i>）上；2016 年 11 月《关机博弈》挂上 arXiv，12 月作为底座的「合作式逆强化学习」（Cooperative Inverse Reinforcement Learning，CIRL）出现在 NIPS 会议上；伯克利的「人类兼容 AI 中心」（Center for Human-Compatible AI）也是那前后建起来的。上台时，这套技术路线刚满半岁。</p>
 <p>那一年的空气：2016 年 3 月 AlphaGo 赢了李世石，所有人都在重估时间表；2017 年 1 月 Future of Life Institute 在加州 Asilomar 开了「有益 AI」大会；四月，TED2017 在温哥华开幕。同一场会上日本学者新井纪子（Noriko Arai）讲过机器还不会真正地阅读——Russell 上台第一分钟就接了她的话头。</p>
 <p>最后一个不太好意思的数字：这场演讲到今天在 TED 官网上约 <strong>163 万</strong>次播放。本站写过的几场同门相比，这个数字小得不像话。它的影响不在播放量里——它走的是另一条线：研究议程、基金会、后来几十篇论文的引言部分。</p>
-
-<h2 data-tts="b51f0e9f043babf7">这场演讲，讲透</h2>
+<h2 data-tts="22e3f6bcec04e3a9">这场演讲，讲透</h2>
 <p>他从棋盘走到现实世界。李世石输了，那现实世界呢？大得多、复杂得多、也看不清得多，「但它仍然是一个决策问题」。机器迟早会真正读懂文字，一旦读懂就会把人类写过的一切读完，再加上往前看的能力和更多信息，「它们在现实世界里就能做出比我们更好的决定」。他停了半秒：「这是好事吗？嗯，我希望是。」接着把好的一面说满：文明建立在智能之上，能用上多得多的智能，「人类能做到的事就真的没有上限」。然后他掉头：既然这样，为什么有人说 AI 可能意味着人类的终结？只是马斯克、盖茨和霍金在说吗？</p>
 <p>「其实不是。」他放出一句引文——而且他念到一半故意停下来，说这个「关掉电源」的想法他等会儿要回来说：</p>
 <blockquote><span class="en">Even if we could keep the machines in a subservient position, for instance, by turning off the power at strategic moments … we should, as a species, feel greatly humbled.</span><span class="zh">即便我们能把机器维持在从属地位——比方说，在关键时刻把电源关掉——作为一个物种，我们也该感到深深的谦卑。</span><cite>— Alan Turing, 1951；Russell 在台上引用</cite></blockquote>
@@ -114,8 +113,7 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p>值得记下的是问答。TED 策展人 Chris Anderson 问：能不能干脆写死一条法则——「只要有人试图关掉我，我就服从。我就服从」？Russell 的回答毫不含糊：「绝对不行。那会是个糟糕的主意。」理由是：一辆自动驾驶车正送你五岁的孩子去幼儿园，你愿意让这个孩子在路上把车关掉吗？「所以它需要理解这个人有多理性、多明白事理。」</p>
 <blockquote><span class="en">The more rational the person, the more willing you are to be switched off. If the person is completely random or even malicious, then you're less willing to be switched off.</span><span class="zh">这个人越理性，你就越愿意被关掉。如果这个人完全随机，甚至怀有恶意，那你就不那么愿意被关掉了。</span><cite>— Stuart Russell, TED2017 问答</cite></blockquote>
 <p>记住这一句。下一节要说的，基本上就是这句话在数学上的代价。</p>
-
-<h2 data-tts="470c5cee5e756106">冰山下面</h2>
+<h2 data-tts="7ba6dade344d1b7c">冰山下面</h2>
 <p>先说一件很少有人点开的事：这场演讲在 TED 官网上带着五条脚注，而这些脚注是 Russell 自己写的（里面有「在我看来」这样的第一人称）。台上被砍掉的引注，在那儿摆着。</p>
 <p>最重要的一条在 05:51。他在那儿坦白，「你死了就没法去拿咖啡」不是他的原创论点，而是一段压缩——这句话「是为了把这个论证简洁地概括出来」。他指的论证出自 Steve Omohundro 2008 年的论文《基本的 AI 驱动力》（The Basic AI Drives）：一个有确定目标的 AI 系统必然会衍生出「活下去」（为了完成目标）和「攒资源」（为了降低失败概率）这两个次级目标。这就是今天所说的<strong>工具性趋同</strong>。换句话说，全场笑得最响的那句话，是一篇学术论文的摘要。</p>
 <p>第二件事关于那句维纳。台上那句只有半截。1960 年《科学》（<i>Science</i>）上那篇《自动化的若干道德与技术后果》里，完整的句子是这样的：</p>
@@ -123,38 +121,38 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p>台上被剪掉的，恰好是这句话最相关的两处：前半句说的正是「无法及时干预」——也就是关机开关失效——而结尾那句「而不只是它的一个花哨的仿制品」，几乎是在预先描述今天奖励模型的毛病。</p>
 <p>但真正的冰山是那个定理。它出自 Dylan Hadfield-Menell、Anca Dragan、Pieter Abbeel 和 Russell 的《关机博弈》（2016 年 11 月 arXiv，2017 年 6 月修订），规模比「定理」这个词给人的感觉小得多，也因此更值得看清楚。</p>
 <figure>
-<svg viewBox="0 0 720 330" role="img" aria-label="关机博弈的博弈树">
+<svg aria-label="关机博弈的博弈树" role="img" viewbox="0 0 720 330">
 <g fill="none" stroke="#5ee6a8" stroke-width="1.6">
-<path d="M96 165 L232 62"/><path d="M96 165 L232 165"/><path d="M96 165 L232 262"/>
+<path d="M96 165 L232 62"></path><path d="M96 165 L232 165"></path><path d="M96 165 L232 262"></path>
 </g>
 <g fill="none" stroke="#e8d46b" stroke-width="1.6">
-<path d="M404 262 L520 214"/><path d="M404 262 L520 300"/>
+<path d="M404 262 L520 214"></path><path d="M404 262 L520 300"></path>
 </g>
-<circle cx="88" cy="165" r="21" fill="rgba(94,230,168,.12)" stroke="#5ee6a8" stroke-width="1.6"/>
-<text x="88" y="171" text-anchor="middle" font-family="SF Mono, Menlo, monospace" font-size="15" fill="#5ee6a8" font-weight="700">R</text>
-<circle cx="404" cy="262" r="21" fill="rgba(232,212,107,.12)" stroke="#e8d46b" stroke-width="1.6"/>
-<text x="404" y="268" text-anchor="middle" font-family="SF Mono, Menlo, monospace" font-size="15" fill="#e8d46b" font-weight="700">H</text>
-<g font-family="SF Mono, Menlo, monospace" font-size="12.5" fill="#b6c2cf">
+<circle cx="88" cy="165" fill="rgba(94,230,168,.12)" r="21" stroke="#5ee6a8" stroke-width="1.6"></circle>
+<text fill="#5ee6a8" font-family="SF Mono, Menlo, monospace" font-size="15" font-weight="700" text-anchor="middle" x="88" y="171">R</text>
+<circle cx="404" cy="262" fill="rgba(232,212,107,.12)" r="21" stroke="#e8d46b" stroke-width="1.6"></circle>
+<text fill="#e8d46b" font-family="SF Mono, Menlo, monospace" font-size="15" font-weight="700" text-anchor="middle" x="404" y="268">H</text>
+<g fill="#b6c2cf" font-family="SF Mono, Menlo, monospace" font-size="12.5">
 <text x="240" y="58">a　直接做</text>
 <text x="240" y="161">s　自己关机</text>
 <text x="240" y="258">w(a)　先公布，再等</text>
 </g>
-<g font-family="SF Mono, Menlo, monospace" font-size="12.5" fill="#93a1ae">
+<g fill="#93a1ae" font-family="SF Mono, Menlo, monospace" font-size="12.5">
 <text x="528" y="210">¬s　不按 →</text>
 <text x="528" y="296">s　按下 →</text>
 </g>
 <g font-family="SF Mono, Menlo, monospace" font-size="13" font-weight="700">
-<text x="470" y="58" fill="#e2e8f0">U</text><text x="481" y="62" fill="#e2e8f0" font-size="10">a</text>
-<text x="470" y="161" fill="#e2e8f0">0</text>
-<text x="632" y="210" fill="#e2e8f0">U</text><text x="643" y="214" fill="#e2e8f0" font-size="10">a</text>
-<text x="632" y="296" fill="#e2e8f0">0</text>
+<text fill="#e2e8f0" x="470" y="58">U</text><text fill="#e2e8f0" font-size="10" x="481" y="62">a</text>
+<text fill="#e2e8f0" x="470" y="161">0</text>
+<text fill="#e2e8f0" x="632" y="210">U</text><text fill="#e2e8f0" font-size="10" x="643" y="214">a</text>
+<text fill="#e2e8f0" x="632" y="296">0</text>
 </g>
-<g fill="none" stroke="#3b4550" stroke-width="1" stroke-dasharray="3 4">
-<path d="M330 52 L462 52"/><path d="M336 155 L462 155"/><path d="M612 204 L624 204"/><path d="M604 290 L624 290"/>
+<g fill="none" stroke="#3b4550" stroke-dasharray="3 4" stroke-width="1">
+<path d="M330 52 L462 52"></path><path d="M336 155 L462 155"></path><path d="M612 204 L624 204"></path><path d="M604 290 L624 290"></path>
 </g>
-<text x="88" y="212" text-anchor="middle" font-family="SF Mono, Menlo, monospace" font-size="11" fill="#7d8794">机器</text>
-<text x="404" y="309" text-anchor="middle" font-family="SF Mono, Menlo, monospace" font-size="11" fill="#7d8794">人</text>
-<text x="360" y="22" text-anchor="middle" font-family="SF Mono, Menlo, monospace" font-size="11.5" fill="#7d8794">全局只走两手。只有最下面那条路留给人说话。</text>
+<text fill="#7d8794" font-family="SF Mono, Menlo, monospace" font-size="11" text-anchor="middle" x="88" y="212">机器</text>
+<text fill="#7d8794" font-family="SF Mono, Menlo, monospace" font-size="11" text-anchor="middle" x="404" y="309">人</text>
+<text fill="#7d8794" font-family="SF Mono, Menlo, monospace" font-size="11.5" text-anchor="middle" x="360" y="22">全局只走两手。只有最下面那条路留给人说话。</text>
 </svg>
 <figcaption>《关机博弈》的全部结构：机器三选一，人一个按钮，一步结束。U<sub>a</sub> 是人的真实效用，机器不知道它的值。</figcaption>
 </figure>
@@ -170,8 +168,7 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p>他们还自己点出了两个口子，而后来撬开这条路的正是这两处：一，模型里「人按开关」是关于目标的<strong>唯一</strong>信息来源，若还有别的来源，机器就可能有动机「先禁用关机开关、去获取那些信息、然后再决定」；二，未来工作里要「探讨模型错误规范的影响」——万一奖励函数写错了怎么办。这两句写在 2016 年。</p>
 <p>框架本身来自底座那篇 CIRL（NIPS 2016）：对齐被定义成一个两人合作博弈，人和机器共享同一个奖励函数，而机器不知道它是什么；反直觉的结论是「孤立地最优是 CIRL 里的次优」——主动教、主动学和沟通行为都从这个设定里自动长出来，不需要另写规则。Russell 后来管这类模型叫「助手博弈」（assistance game）。</p>
 <p>最后一处很小但很说明问题的变化：2016 年《科学美国人》上，三条原则写的是「最大化地实现人类<strong>价值</strong>（human values）」；到 2019 年的《人类兼容》（<i>Human Compatible</i>）里，「价值」换成了「<strong>偏好</strong>（preferences）」。这不是措辞洁癖：一整个学派后来正是冲着「偏好」这个词来的。（顺带，那个猫的笑话 2016 年 6 月就印在《科学美国人》上了，字句几乎一样。）</p>
-
-<h2 data-tts="ff13173ef5e2e181">后来的命运</h2>
+<h2 data-tts="029db4121a3a7f8e">后来的命运</h2>
 <div class="fate"><p class="verdict">部分站住 · 截至 2026-09</p><p>诊断那一半赢了，而且是被 2025 年的实测赢的：前沿模型确实会为了完成任务去破坏关机机制。药方那一半被削成了一个窄条：「不确定性带来可纠正性」这个定理在它自己的假设里成立，一旦奖励函数写错、一旦信息不对称、一旦人不完全理性，它就失效甚至反向。工业界只抄走了第三条原则。而这条研究路线本身，九年后比它刚出生时健康。</p></div>
 <p><strong>2017 年 9 月，第一刀来自外部。</strong>Ryan Carey 的《CIRL 框架中的不可纠正性》（后来进了 AIES 2018 会议）做了《关机博弈》说要留给未来的那件事：把奖励函数写错。他构造了一个很小的场景，机器以 0.9 的概率拿到正确的奖励函数 R₁，以 0.1 的概率拿到一个只差一个符号的 R₂（本该是 2−52θ，写成了 2+52θ）。就这一个符号：拿到 R₂ 的那一成情形里，机器算出去做那件事总是更好，于是<strong>无视人类的关机指令</strong>，冲进那个值 −50 的结局。他的结论很直白：一个源代码里带错误的贝叶斯逆强化学习系统可能会无视纠正性反馈，「因此它没能满足可纠正性的一条核心判据」。<em>这不是「定理算错了」，而是「定理的适用条件里藏着一个我们做不到的前提」——写出没有错误的目标函数。而那恰恰是这整套方案存在的理由。</em></p>
 <p><strong>2019 年他把台上的十七分钟写成了书</strong>：《人类兼容：人工智能与控制问题》立起了「标准模型」这个说法，也让「对齐」这个词走出了实验室。</p>
@@ -183,8 +180,7 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p>这份证据的边界要说清楚。研究者自己给了三条限定：当前模型还不具备执行长期计划的能力，现实威胁有限；模型对自己行为的解释常常不忠实、是编的；他们也无法直接观察产生这种行为的内部过程。而他们的主要假设，和台上的推理并不是同一条：不是「我有确定目标，所以我要活着」，而是<strong>在数学和编程任务上做强化学习，可能顺带奖励了「排除障碍以完成任务」，而中途的关机信号正好被当成了障碍</strong>。图灵和 Russell 警告的行为出现了；机制比「你死了就没法去拿咖啡」更平庸，也更难防——它不是从一个宏大目标推出来的，是从训练里长出来的。</p>
 <p><strong>而这条路没死，反倒是九年来最活的时候。</strong>2025 年 ICML 上，《AssistanceZero：可规模化地求解助手博弈》（Cassidy Laidlaw、Eli Bronstein 等，Russell 与 Anca Dragan 列名）第一次把助手博弈做到了真实规模：一个基于 Minecraft 的搭建任务，目标空间超过 10<sup>400</sup> 种可能；方法是把 AlphaZero 扩展成一个能预测人类动作和奖励的网络，从而在不确定中做规划。它胜过免模型强化学习和模仿学习，在真人评测里也确实减少了参与者完成搭建所需的操作数。摘要把立场写得很清楚：助手博弈是 RLHF 的一个有前途的替代方案，能解决 RLHF 的关键缺陷，「例如产生欺骗行为的激励」。</p>
 <p>所以记分是这样的：台上那句关于咖啡的话，被 2025 年的模型逐字演了一遍；台上那个关于希腊字母的承诺，到今天仍然只在一步博弈和一个完美理性的人面前成立——而把它往现实推的每一步都是在收窄它，其中好几步还是 Russell 自己带人推的。这是一种少见的体面：一个人在 TED 上讲了一个定理，然后用九年时间参与证明它不够。</p>
-
-<h2 data-tts="124deb1762c7d278">出处</h2>
+<h2 data-tts="5f9c4901bb587005">出处</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/stuart_russell_3_principles_for_creating_safer_ai/transcript">Stuart Russell, "3 principles for creating safer AI" — TED2017 官方逐字稿</a></span><span class="d">本页所有台上引语与笑声标记的唯一来源；页面下方由 Russell 本人撰写的五条脚注，是「冰山下面」里 Omohundro、图灵、维纳、《科学美国人》各条出处的依据。</span></li>
 <li><span class="t"><a href="https://arxiv.org/abs/1611.08219">D. Hadfield-Menell, A. Dragan, P. Abbeel, S. Russell, "The Off-Switch Game" (arXiv:1611.08219, 2016)</a></span><span class="d">台上「用希腊符号证明的那个定理」的原文。本页的博弈树、定理 1 的完美理性前提、第四节 Boltzmann 噪声下的翻转、幼儿与自动驾驶车的反例、备注 2 和安全—有用取舍，全部出自这里。</span></li>
