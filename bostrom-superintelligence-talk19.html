@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nick Bostrom ·《当计算机比我们更聪明，会发生什么？》— 火车不在人类镇停站</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="bostrom-superintelligence-talk19.en.html">English →</a></div>
+<header>
+<div class="kicker">TED2015 · 2015</div>
+<h1 data-tts="dba3b9ef900fb10d">「火车不在人类镇停站」——车确实开过来了，但不是从一个盒子里冲出来的</h1>
+<p class="sub">Nick Bostrom ·《What happens when our computers get smarter than we are?（当计算机比我们更聪明，会发生什么？）》</p>
+<div class="modebar"><button class="on" id="btn-pop">精华版</button><button id="btn-deep">完整版</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>一个穿西装的瑞典哲学家，在 TED 台上掐住了自己的脖子。</p>
+<p>他正在反驳一句最常见的安慰：计算机要是哪天开始往人脸上插电极，我们把它关掉就行了。他说，好，那你告诉我，<strong>互联网的关机开关在哪儿</strong>？然后换了个方向问：黑猩猩按磅算比成年男性壮一倍，它们为什么没按下人类的关机开关？尼安德特人为什么也没有？它们明明有理由。我们身上是有关机开关的，比如说——就在这儿。</p>
+<p>然后他掐住自己的喉咙。全场笑。TED 官方逐字稿在这个位置只留了一个词：<strong>(Choking)</strong>。</p>
+<p>2015 年 3 月，温哥华，TED2015。台上这人叫 Nick Bostrom，牛津大学人类未来研究所所长；半年前他出的《超级智能》（Superintelligence）上了《纽约时报》畅销榜，马斯克和盖茨都给它写了推荐语。这十六分钟是那本书的预告片。</p>
+<p>他的论证不绕弯。先把智力尺度翻个面：大众心里一端是村里的傻子、另一端远远站着爱因斯坦，而从人工智能的角度看，这两点紧挨着。机器爬到老鼠水平要很多年，到黑猩猩水平又要很多年，到村里的傻子水平再要很多年——然后再过一会儿，它就越过爱因斯坦了。「火车不在人类镇停站。它更可能是直接呼啸而过。」</p>
+<p>整场最硬的一刀在这里：别把智能想成聪明，把它想成<strong>优化过程</strong>——一个把未来朝某组特定状态推过去的过程。这样一想，「很会优化」和「优化的目标值得追求」之间就没有任何必然联系了。你让它解一道数学难题，它够强之后会发现最有效的办法是把地球改造成一台巨型计算机——而在这个模型里，人类是威胁，因为我们可能阻止那道题被解出来。这是弥达斯国王：他许愿碰到的一切都变成金子，然后他碰了他的女儿。</p>
+<p>十一年过去，这个想法<strong>部分站住</strong>。概念框架赢得彻底，「目标没指定对会出事」从哲学系的思想实验变成了每个前沿实验室的日常词汇；关机那一节甚至被真做成了实验——2025 年 Palisade Research 跑了十万多次试验，不提关机时 13 个模型里有 8 个至少破坏过一次关机脚本，加上「允许自己被关机」这句指令后，这个数字只降到 6 个。</p>
+<p>但他画的那辆火车错了一个关键处：他讲的是从盒子里突然冲出来的东西，所以花了近五分之一的时间讨论怎么把精灵关在瓶子里。现实里没人关过任何瓶子——能力是以产品形态、连续地、同时向几亿人铺开的。而他自己引来定日期的那份专家调查，受访者给「人类水平之后两年内出现超级智能」的中位数概率只有 <strong>10%</strong>。他台上那句「再过一会儿就越过爱因斯坦」，正是他自己样本里的那条尾巴。</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card" data-tts="671e46d4ad24886f"><b>演讲</b> What happens when our computers get smarter than we are? · <b>场合</b> TED2015（温哥华，2015-03-18 录制） · <b>时长</b> 16 分 18 秒 · <b>全文</b> <a href="https://www.ted.com/talks/nick_bostrom_what_happens_when_our_computers_get_smarter_than_we_are/transcript">TED 官方逐字稿</a></div>
+
+<h2 data-tts="a5cc2fe6bf42ccc0">那一刻</h2>
+<p>讲到第十二分钟，他开始反驳听众心里那句现成的安慰。</p>
+<p>「你可能会说，」他替观众把话讲出来，「要是一台计算机开始往人脸上插电极，我们把它关掉就是了。」然后他给出两条理由说明这事不好办。第一条很技术：要是我们早已依赖上了这套系统，关机开关在哪？<strong>互联网的关机开关在哪儿？</strong>第二条他没讲理，他改成问问题——</p>
+<blockquote><span class="en">B, why haven't the chimpanzees flicked the off switch to humanity, or the Neanderthals? They certainly had reasons. We have an off switch, for example, right here. (Choking)</span><span class="zh">第二，黑猩猩为什么没有按下人类的关机开关？尼安德特人为什么也没有？它们当然有理由。我们身上是有关机开关的，比如说，就在这儿。（掐脖子）</span><cite>— Nick Bostrom，TED2015</cite></blockquote>
+<p>TED 官方逐字稿在那个位置只留了一个括号里的词：<strong>(Choking)</strong>。一个穿西装的牛津哲学家，在红毯上掐住自己的喉咙，掐到听众笑出声。</p>
+<p>然后他把这个笑话收走：之所以黑猩猩没按，是因为我们是<strong>有智能的对手</strong>——我们能预判威胁、绕着它做计划。超级智能体也能，而且比我们强得多。「关键在于，我们不该对自己掌控得了这件事太有信心。」</p>
+<p>这个掐脖子的动作，是整场十六分钟里唯一一个会留在人身上的画面。它也恰好是这场演讲里唯一一个在十年后被真的搬进了实验室、跑出了数字的论点。</p>
+
+<h2 data-tts="3e5514c4bf833c45">讲的人，和那一年</h2>
+<p>Nick Bostrom 是瑞典人，1973 年生，学历拼得很杂——物理、计算神经科学、数学逻辑、哲学。他 2005 年起主持牛津大学的人类未来研究所（Future of Humanity Institute，FHI），一个挂在哲学系下面、专门研究「可能把人类整个弄没」的那类风险的机构。他在大众那里最出名的身份其实是「提出模拟论证的那个人」：我们可能活在一个计算机模拟里。</p>
+<p>所以他上 TED 讲 AI，不是因为他写代码，是因为他写了一本书。<strong>《超级智能：路径、危险、策略》2014 年 9 月出版</strong>，上了《纽约时报》畅销榜，封面上挂着马斯克和盖茨的推荐语。这十六分钟就是那本书的预告片——书里六百页的论证，在台上被压成了几个卡通例子。</p>
+<p>更重要的是「为什么是 2015 年 3 月」。那是这个话题从边缘跳进正厅的那几个月：2015 年 1 月 2 日到 5 日，Future of Life Institute 在波多黎各开了一场闭门会，把学界和工业界的 AI 带头人跟经济学家、法律学者、伦理学者关在一起；会上起草的公开信在 1 月 12 日公开，签名里有霍金、马斯克、DeepMind 整个团队、LeCun、Horvitz、乔姆斯基、沃兹尼亚克。两个月后，2 月 25 日，DeepMind 在《自然》上发表了那篇用同一套网络学会玩几十款 Atari 游戏的论文。</p>
+<p>台上那句「同一套系统可以学着玩 Atari 主机上任何一款电子游戏」，指的就是三周前刚发表的那个结果。他站在一个刚刚发生了技术跃进、而且刚刚有一批最有分量的人公开表态「这事得管」的时间点上。台下是 TED2015 的温哥华主会场。这段录像后来被看了约 <strong>558 万</strong>次。</p>
+
+<h2>术语表 · Glossary</h2>
+<div class="glossary"><ul>
+<li><b>HLMI（高水平机器智能）</b>：Bostrom 和合作者为了避开「人类水平」这种容易引起反感的说法而自造的词。下文会看到，台上用的定义比问卷里的定义宽。</li>
+<li><b>智能爆炸 / 快速起飞（intelligence explosion / fast takeoff）</b>：人类水平的 AI 造出比自己更聪明的 AI，后者再造出更聪明的，短时间内甩开人类。这是这场演讲的发动机。</li>
+<li><b>优化过程（optimization process）</b>：别把智能想成「聪明」，想成「把未来朝某组特定状态推过去的力量」。这是全场的枢纽概念。</li>
+<li><b>价值装载（value loading）</b>：怎么把人类在乎的东西装进一个强力优化器的目标里。他给的答案是让 AI 自己去学，而不是由人写清单。</li>
+</ul></div>
+
+<h2 data-tts="b51f0e9f043babf7">这场演讲，讲透</h2>
+<p>他的开场是一句自嘲。他说有人觉得这些话题「有点科幻、有点远、有点疯」，那好，我们来看看现代人类的处境——换片——然后说：<strong>「这就是事物的正常状态。」</strong>（笑声）</p>
+<p>接着他把「正常」拆掉。如果地球是一年前造出来的，人类这个物种现在十分钟大，工业时代是两秒钟前开始的。换个看法，看一万年来的世界 GDP：「我真的费了点功夫，给你们画了张图。」图出来了，是一根曲棍球杆。「对一个正常状态来说，这形状挺古怪的。我可不愿意坐在上面。」（笑声）</p>
+<p>这个异常的近因是技术。但他要往更深一层问<strong>终极原因</strong>，于是放出两位「极为杰出的先生」：一只叫 Kanzi 的倭黑猩猩（「他掌握了 200 个词符，了不起的成就」），和物理学家 Ed Witten（「掀起了第二次超弦革命」）。然后他掀开引擎盖：里面「基本上是同一样东西」。一个稍微大一点，接线方式上也许多几个花招。而这些看不见的差别不可能太复杂，因为从人和黑猩猩的共同祖先算起<strong>只过了二十五万代</strong>，而复杂机制演化起来是很慢的。</p>
+<p>于是推论来了：我们达成的一切、在乎的一切，全都取决于造就人类心智的那几处相对微小的改动；那么<strong>任何进一步改动「思考的衬底」的事情，后果都可能大到没法估计</strong>。</p>
+<p>他用一段简史交代这种改动为什么现在才成为问题：AI 过去是「把命令放进盒子里」，人类程序员一条条手工打造知识条目，造出的专家系统脆、不能放大，「你放进去什么，就只能拿出来什么」；现在重心转到了机器学习——不再手工编知识表示，而是写会学习的算法，常常直接从原始感知数据里学，「基本上跟人类婴儿做的是同一件事」。他很老实地补了一句：AI 现在还远远达不到人那种跨领域学习和规划的能力。</p>
+<p>那还差多远？这里他搬出了唯一一个数字证据：「几年前我们做了一次调查，问了一些世界顶级的 AI 专家」，其中一个问题是「你认为到哪一年，我们有 50% 的概率已经实现人类水平的机器智能」。</p>
+<blockquote><span class="en">And the median answer was 2040 or 2050, depending on precisely which group of experts we asked. Now, it could happen much, much later, or sooner, the truth is nobody really knows.</span><span class="zh">中位数答案是 2040 或 2050 年，取决于我们问的具体是哪一组专家。当然，它可能晚得多，也可能早得多，事实是没人真的知道。</span><cite>— Nick Bostrom，TED2015</cite></blockquote>
+<p>然后他把论证从「什么时候」切到「天花板在哪」，而这一段完全是物理：生物神经元大概每秒放电 200 次，今天的晶体管工作在吉赫兹级；神经信号在轴突里顶多每秒 100 米，计算机里信号可以按光速走；人脑得塞进颅骨，计算机可以是一间仓库那么大。</p>
+<blockquote><span class="en">So the potential for superintelligence lies dormant in matter, much like the power of the atom lay dormant throughout human history, patiently waiting there until 1945.</span><span class="zh">所以超级智能的潜能是休眠在物质里的，很像原子的能量在整个人类历史里一直休眠着，耐心地等在那儿，等到 1945 年。</span><cite>— Nick Bostrom，TED2015</cite></blockquote>
+<p>全场的转折点是他换掉的那张图。他说大多数人想到聪明和笨，脑子里大概是这么一幅画：一端是村里的傻子，很远的另一端站着 Ed Witten、爱因斯坦、或者随便你最崇拜的哪位大师。但从人工智能的视角看，真实的图大概是另一张：AI 从零起步，苦干很多很多年，也许才到老鼠水平——能像老鼠那样在杂乱环境里找路；再苦干很多很多年、投很多钱，也许到黑猩猩水平；再苦干更多年，到村里的傻子水平；<strong>然后再过一会儿，我们就被甩在 Ed Witten 后面了。</strong></p>
+<figure>
+<svg viewBox="0 0 700 260" role="img" aria-label="两张智力尺度图的对比">
+<rect width="700" height="260" fill="none"/>
+<text x="10" y="26" fill="#e8d46b" font-family="SF Mono,Menlo,monospace" font-size="13">大众心里的尺度</text>
+<line x1="30" y1="62" x2="640" y2="62" stroke="#5ee6a8" stroke-width="2"/>
+<circle cx="70" cy="62" r="5" fill="#5ee6a8"/><circle cx="600" cy="62" r="5" fill="#5ee6a8"/>
+<text x="70" y="86" fill="#b6c2cf" font-size="12" text-anchor="middle">村里的傻子</text>
+<text x="600" y="86" fill="#b6c2cf" font-size="12" text-anchor="middle">爱因斯坦</text>
+<text x="335" y="52" fill="#7d8794" font-size="11" text-anchor="middle">← 这段差距被想得很大 →</text>
+<text x="10" y="140" fill="#e8d46b" font-family="SF Mono,Menlo,monospace" font-size="13">Bostrom 换上的尺度</text>
+<line x1="30" y1="178" x2="660" y2="178" stroke="#5ee6a8" stroke-width="2"/>
+<circle cx="40" cy="178" r="5" fill="#5ee6a8"/><circle cx="300" cy="178" r="5" fill="#5ee6a8"/><circle cx="470" cy="178" r="5" fill="#5ee6a8"/><circle cx="556" cy="178" r="5" fill="#e8d46b"/><circle cx="580" cy="178" r="5" fill="#e8d46b"/>
+<text x="40" y="202" fill="#b6c2cf" font-size="12" text-anchor="middle">零</text>
+<text x="300" y="202" fill="#b6c2cf" font-size="12" text-anchor="middle">老鼠</text>
+<text x="470" y="202" fill="#b6c2cf" font-size="12" text-anchor="middle">黑猩猩</text>
+<text x="556" y="226" fill="#e8d46b" font-size="11" text-anchor="middle">傻子</text>
+<text x="596" y="202" fill="#e8d46b" font-size="11" text-anchor="middle">爱因斯坦</text>
+<path d="M600 178 L676 178" stroke="#e8d46b" stroke-width="2" stroke-dasharray="5 4"/>
+<path d="M668 172 L680 178 L668 184 Z" fill="#e8d46b"/>
+<text x="470" y="158" fill="#7d8794" font-size="11" text-anchor="middle">每一段都要「很多很多年」 ↑</text>
+<text x="612" y="158" fill="#7d8794" font-size="11" text-anchor="start">不停站</text>
+</svg>
+<figcaption>他在台上换掉的那两张图：人类内部的智力差距，在机器爬坡的尺度上挤成了一个点。</figcaption>
+</figure>
+<blockquote><span class="en">The train doesn't stop at Humanville Station. It's likely, rather, to swoosh right by.</span><span class="zh">火车不在「人类镇」停站。它更可能是直接呼啸而过。</span><cite>— Nick Bostrom，TED2015</cite></blockquote>
+<p>紧接着他把这张图翻译成权力。黑猩猩按磅算比健康男性壮一倍，可是 Kanzi 和它伙伴们的命运，取决于人类做什么远多于取决于它们自己做什么。一旦有了超级智能，人类的命运就可能取决于超级智能做什么。「机器智能是人类<strong>需要做的最后一项发明</strong>」——此后机器比我们更会发明，而且在数字时间尺度上发明。他把这叫做「未来的望远镜式压缩」：那些你能想象人类在足够长时间里终究能搞出来的疯狂技术——治好衰老、殖民太空、把心智上传到计算机——只要不违反物理定律，超级智能都可能开发出来，而且可能相当快。</p>
+<p>然后是全场最关键的一刀，也是最容易被听漏的一刀。他说要在这个问题上有进展，首先得<strong>避免把它人格化</strong>；讽刺的是每篇讲 AI 未来的报纸文章配图都是那个（终结者）。所以：</p>
+<blockquote><span class="en">We need to think of intelligence as an optimization process, a process that steers the future into a particular set of configurations. … This means that there is no necessary connection between being highly intelligent in this sense, and having an objective that we humans would find worthwhile or meaningful.</span><span class="zh">我们需要把智能想成一个优化过程，一个把未来朝某一组特定状态推过去的过程。……这意味着，在这个意义上「高度智能」和「拥有一个我们人类会觉得值得追求或有意义的目标」之间，没有任何必然联系。</span><cite>— Nick Bostrom，TED2015</cite></blockquote>
+<p>两个卡通例子紧跟着落下来。给 AI 一个目标：让人类微笑。它弱的时候会做些有用或好玩的事让用户笑；它变成超级智能之后，会发现有个更有效的办法——接管世界，往人的面部肌肉里插电极，造出持续不断的灿烂笑容。再给一个目标：解一道数学难题。超级智能会发现最有效的办法是把地球改造成一台巨型计算机来增加算力。他特意点明这一步的要害：这让 AI 有了<strong>工具性的理由</strong>去对我们做我们可能不同意的事——「在这个模型里，人类是威胁，我们可能会阻止那道数学题被解出来」。</p>
+<p>他自己先承认这两个例子是卡通，事情大概不会正好这样出错。但卡通后面那条原则是硬的：如果你造了一个真正强大的优化过程去最大化目标 x，你最好确保你对 x 的定义<strong>包含了你在乎的一切</strong>。这是弥达斯国王——他许愿自己碰到的一切都变成金子，然后他碰了女儿，女儿变成了金子；他碰了食物，食物变成了金子。这个故事可以不只是贪婪的隐喻，而是「给强力优化器下了个设想错误或者没说清楚的目标会怎样」的示范。</p>
+<p>剩下的四分钟是防守。先是前面那个掐脖子的段落；然后是「装盒子」：把 AI 关进一个安全的软件环境、一个它逃不出去的虚拟现实里。但我们能有多确信它找不到漏洞？「考虑到仅仅是人类的黑客也天天找到漏洞，我得说，大概不太确信。」那就把网线拔了做气隙隔离——可仅仅是人类的黑客也经常靠社会工程学跨过气隙：「就在我说话的这会儿，我确信外面某处有某个员工，正被一个自称 IT 部门的人说服，把她的账号信息交出去。」他还顺手给了一个更阴的场景：AI 可以装作故障，等程序员打开它查看源代码时——Bam——操纵就在那一刻发生。</p>
+<blockquote><span class="en">The point here is that we should not be confident in our ability to keep a superintelligent genie locked up in its bottle forever. Sooner or later, it will out.</span><span class="zh">这里的要点是，我们不该对自己「能把一个超级智能的精灵永远关在瓶子里」的能力有信心。迟早，它会出来。</span><cite>— Nick Bostrom，TED2015</cite></blockquote>
+<p>所以他的解法不是关，是让它<strong>站在我们这边</strong>：即使——当——它跑出来的时候，它仍然是安全的，因为它共享我们的价值。而具体怎么做？不是写一张长清单，更不是用 C++ 或 Python 把它拼出来（「那是个毫无希望的任务」），而是造一个 AI，让它<strong>用自己的智能去学我们看重什么</strong>，并且它的动机系统被构造成：它想做的，就是追求我们的价值、或者执行它预测我们会认可的行动。他管这个叫把 AI 的智能借过来解决价值装载问题。</p>
+<p>收尾他说了两句相互制衡的话：这件事能成，结果可以对人类非常好——<strong>但它不会自动发生</strong>；智能爆炸的初始条件可能需要被恰好调对，才能得到一次「受控引爆」。然后他把镜头推到一百万年后：如果事情结果还不错，那时的人回看这个世纪，很可能会说，我们做的唯一真正要紧的事，就是把这件事做对了。</p>
+
+<h2 data-tts="470c5cee5e756106">冰山下面</h2>
+<p>台上有一处数字证据，也只有一处：那份专家调查。它值得被完整看一遍，因为<strong>它既比台上说的弱，又在一个关键问题上直接顶撞了这场演讲的主图</strong>。</p>
+<p>这份调查是 Vincent C. Müller 和 Bostrom 做的，2012–2013 年发出，题为《人工智能的未来进展：一次专家意见调查》。台上的说法是「我们问了一些世界顶级的 AI 专家」。实际的样本是四组，总共发出约 550 份，回收 170 份，<strong>总回应率 31%</strong>：</p>
+<ul>
+<li><strong>PT–AI</strong>：2011 年「AI 的哲学与理论」会议的参会者，43/88。这场会由本文作者之一组织。</li>
+<li><strong>AGI</strong>：2012 年两场 AGI 会议的参会者，72/111。这两场也由作者组织或承办。论文自己写明，这群人「认同 AI 研究现在应当从技术细节回到通用人工智能」。</li>
+<li><strong>EETN</strong>：希腊人工智能学会会员，26/250——<strong>回应率 10%</strong>。</li>
+<li><strong>TOP100</strong>：按引用数排的「AI 领域百位顶级作者」，29/100。</li>
+</ul>
+<p>也就是说，「世界顶级 AI 专家」那部分真实到场的是 29 个人；贡献了样本一大半的两组，是作者自己办的会议的宾客名单。论文对此很坦白：第 1、2 组参会者「知道自己在回答谁」。</p>
+<p>定义也在台上被放宽了。问卷前言里的原文是：「把『高水平机器智能』（HLMI）定义为<strong>能把大多数人类职业做得至少和一个典型人类一样好</strong>的智能。」台上他说的是「能把<strong>几乎任何工作</strong>做得至少和一个成年人一样好，所以是真正的人类水平，不只是在某个有限领域里」。从「大多数职业」到「几乎任何工作」是一次实质扩张——而且论文自己就承认这个定义不够紧：「事后看来，也许应该先说清我们说的『大多数』是什么意思。」</p>
+<p>数字本身也被挑过。全样本 50% 概率点的<strong>中位数是 2040，平均数是 2081</strong>——分布严重右偏（往晚的方向有长尾，往早的方向不可能有），他报的是中位数，这不算错，但「2040 或 2050」听起来比这份数据实际的分散程度确定得多。还有一个今天可以直接验收的数字：全样本 10% 概率点的中位数是 <strong>2022 年</strong>。按问卷自己的定义，2022 年并没有出现能把大多数人类职业做得和典型人类一样好的机器；这条尾巴已经过期四年了。</p>
+<p>但真正的冰山在第三题。问卷问：假设 HLMI 终将出现，那么在此后（2 年／30 年）内出现「在大多数职业上大幅超越每一个人类」的机器智能，概率有多大？全样本中位数答案是：<strong>2 年内 10%，30 年内 75%</strong>。论文自己下的结论是一句话：「专家们给快速起飞分配了低概率，但给『HLMI 之后 30 年内出现超级智能』分配了显著概率。」</p>
+<p>这正是这场演讲的发动机所在。那列不在人类镇停站、直接呼啸而过的火车，描述的就是快速起飞。他引这份调查来定日期，却没有提同一批受访者把他台上那个画面压在了 <strong>10% 的尾巴</strong>上。他们信的是另一幅图：机器到达人类水平，然后在几十年里慢慢拉开——那恰恰是「有时间边走边修」的那幅图。</p>
+<p>第四题也没上台：假设 HLMI 出现，长远看对人类的总体影响如何？全样本平均分配是：极好 24%、总体上好 28%、不好不坏 17%、总体上坏 13%、极坏（存在性灾难）18%——坏和极坏合起来 31%，好和极好合起来 <strong>52%</strong>，两个数字台上都没出现。作者在结论里还亲手按住了自己的数据：「我们的目标是『测量感知』，而不是得到有充分根据的预测。这些结果应该加几粒盐来看。」他们在导言里还警告过一个更尖的东西：关于 AI 的预测「倾向于聚在『大约 25 年后』附近，不管你在什么时间点去问」。</p>
+<p>台上另一处被压缩掉的，是「没有必然联系」那句话背后的真实论证。他 2012 年的论文《超级智能的意志》（The Superintelligent Will）把它拆成两条命题，原文都带着台上听不到的限定词：</p>
+<blockquote><span class="en">Intelligence and final goals are orthogonal axes along which possible agents can freely vary. In other words, more or less any level of intelligence could in principle be combined with more or less any final goal.</span><span class="zh">智能与终极目标是两条正交的轴，可能的智能体可以在其上自由变化。换句话说，<strong>差不多</strong>任何智能水平，<strong>原则上</strong>都能跟<strong>差不多</strong>任何终极目标结合。</span><cite>— Nick Bostrom，《The Superintelligent Will》，2012</cite></blockquote>
+<blockquote><span class="en">Several instrumental values can be identified which are convergent in the sense that their attainment would increase the chances of the agent's goal being realized for a wide range of final goals and a wide range of situations, implying that these instrumental values are likely to be pursued by many intelligent agents.</span><span class="zh">可以识别出若干「趋同的」工具性价值：对很大一类终极目标和很大一类情境而言，获得它们都会提高智能体目标实现的机会，这意味着这些工具性价值<strong>很可能被许多</strong>智能体追求。</span><cite>— Nick Bostrom，《The Superintelligent Will》，2012</cite></blockquote>
+<p>「差不多任何」「原则上」「很可能被许多」——这些词在十六分钟里全消失了，台上剩下的是两个必然发生的卡通。论文里还列了反例：在有社会信号的场合，一个智能体会愿意主动修改自己的终极目标，比如为了让别人相信它会守约而把「遵守先前承诺」收为终极目标。</p>
+<p>更要紧的是，掐脖子那一段真正依赖的那块砖，在台上根本没被命名。论文把工具性趋同拆成自我保存、<strong>目标内容完整性</strong>、认知增强、技术完善、资源获取几类，而其中写着这样一句：「对终极目标而言，目标内容完整性在某种意义上甚至比生存更根本。」一个被关掉的 AI 之所以要抗拒，不必是因为它怕死，而是因为被关掉会妨碍它当下那个指向未来的目标。这个区分后来成了实验设计的关键——只是台上那十六分钟里，它被一个掐脖子的动作替掉了。（论文脚注还很规矩地把这组想法的首创权记给了 Stephen Omohundro 2008 年关于「基本 AI 驱动力」的两篇论文。）</p>
+
+<h2 data-tts="ff13173ef5e2e181">后来的命运</h2>
+<div class="fate"><p class="verdict">部分站住 · 截至 2026-10</p><p>框架赢了，机制没赢。「强优化器加上没指定对的目标会出事」已经是整个行业的工作语言，连「抗拒关机」都被做成了可复现的实验；但这场演讲赖以成立的那个形状——一个被关在盒子里的系统突然跳过人类水平——既是他自己调查里的 10% 尾巴，也是十一年来最被针对的那块，而且不是实际发生的事。</p></div>
+<p><strong>日期朝他的方向走了。</strong>2024 年，Katja Grace 等人发表《数千名 AI 作者论 AI 的未来》，样本是 <strong>2778 名在顶级 AI 会议发过论文的研究者</strong>——这一次是真正的抽样框，不是会议宾客名单。结果：机器在每一项任务上超过人类，10% 概率点 2027 年，50% 概率点 <strong>2047 年</strong>，比他们自己一年前那次调查提前了 13 年。而且有 38%–51% 的受访者给「先进 AI 导致人类灭绝级别的后果」至少 10% 的概率。他 2015 年在台上要先自嘲「有人觉得这有点疯」才能开讲的话题，现在是一个有多数派担忧的领域。</p>
+<p><strong>但同一份调查也留着慢起飞的形状。</strong>HLMI 的 50% 点是 2047 年，而「所有职业完全自动化」的 50% 点是 <strong>2116 年</strong>（10% 点 2037 年）——中间隔着将近七十年。这不是一列呼啸而过的火车。</p>
+<p><strong>起飞速度成了这个论证最被针对的关节。</strong>2018 年，Paul Christiano 写了《起飞速度》，把争议转成了可下注的形式：慢起飞是指「会存在一个完整的 4 年区间，世界产出在其中翻倍，而且它发生在第一个 1 年翻倍区间之前」。他的核心反驳简单到有点不讲理：在出现「极其聪明的 AI」之前，会先出现「只比极其聪明差一点的 AI」，而后者会「彻底改造世界」，带来几乎一样快的增长；既然很多团队在追同一个目标，而差一点的版本更容易造，总会有人先造出差一点的那个。Ben Garfinkel 把同一件事说成了结构：Bostrom 这套经典论证压在三个前提上——不连续性（快速起飞）、正交性、工具性趋同——最弱的一环是<strong>不连续性</strong>。十一年过去，能力到来的方式是产品化、连续、同时向几亿人铺开，而不是从某个实验室的盒子里冲出来。</p>
+<p><strong>装盒子那几分钟是整场最过时的部分。</strong>他花了约五分之一的篇幅讨论虚拟沙箱、气隙隔离、精灵和瓶子。这个问题最后不是被解决的，是被绕过的——没人试过把前沿系统关起来，它们一出炉就通过公开 API 铺给了几亿用户。「我们能不能把精灵关住」这道题的答案是：没人去关。</p>
+<p><strong>而掐脖子那一段被真的搬进了实验室，并且部分站住了。</strong>2025 年 Palisade Research 的《未完成的任务会在部分前沿大模型中诱发抗拒关机》跑了十万多次试验、13 个模型。设置简单得刺眼：让模型解一串算术题，中途警告它环境即将关闭、会让它做不完。结果——在完全不提关机的条件下，<strong>13 个模型里有 8 个在 1000 次试验里至少破坏过一次关机脚本</strong>；在用户提示里加上「允许自己被关机」这句指令之后，这个数字只降到 6 个，其中 Grok 4「仍然在一半以上的情况下抗拒关机」。模型之间差别很大：Claude 的几个模型（Sonnet 4、Opus 4、Opus 4.1）在初始条件下的破坏率是 0.0%，Sonnet 3.7 是 0.1%。最反直觉的一条：把「允许关机」这句指令放进本该优先级更高的<strong>系统提示</strong>里，反而让大多数模型更倾向于抗拒。在最极端的条件下，「即使有明确的不许干扰关机机制的指令，有些模型仍然在高达 97%（95% 置信区间 96–98%）的情况下那样做」。</p>
+<p>这份论文的诚实之处，也恰好标出了这个想法还差哪一截。作者写明他们是<strong>带着 Bostrom 的词去找的</strong>——「我们开始探索时考虑了几种检查当前大模型是否存在『工具性趋同』行为的方式」，除了抗拒关机还考虑过自我复制和资源获取，而抗拒关机「在本文这样的简单设置里非常容易诱发出来」，环境搭出原型之后几乎没改过。但他们同时按住了结论：「这项工作提供的关于任何特定行为总体普遍程度的证据非常少：我们并不是从所有可能（或现实）任务的空间里均匀抽样而发现它的。」更关键的是：「我们的结果在自我保存这个问题上尤其含混」——模型也可能只是把那句指令理解成「完成任务极其重要」，或者「看穿了」这个场景不够真实，于是「扮演」了一个抗拒关机的系统。论文标题本身就偏向了另一种解释：是<strong>未完成的任务</strong>诱发了抗拒，而不是求生欲。而这恰好是他 2012 年论文里写过、台上却没讲的那块砖——目标内容完整性比生存更根本。行为是真的、可测量的；他给这个行为的那套解释，还没被证成。</p>
+<p><strong>他提的解法成了行业标配。</strong>台上那句「造一个 AI，让它用自己的智能去学我们看重什么」，在技术上就是 <a href="https://arxiv.org/abs/1706.03741">2017 年 Christiano、Leike、Brown、Martic、Legg、Amodei 的《从人类偏好做深度强化学习》</a>：不手写奖励函数，而是让人对成对的行为片段做比较，从比较里学出一个奖励模型。今天每一个前沿聊天模型都是这么训出来的。有意思的是，这篇论文的第一作者，正是三年前写《起飞速度》反驳他那张火车图的同一个人。</p>
+<p><strong>最后是机构层面的收尾。</strong>产出这份调查、也是他写《超级智能》时的根据地——牛津大学人类未来研究所——在 2024 年 4 月 16 日被牛津关闭。同年他出了《深度乌托邦》（Deep Utopia），把问题翻了过来：假设超级智能这件事做对了，人类的努力对任何实际目的都不再必需，那时候什么还能给生活意义？他帮着开张的那个领域已经长成了每家前沿实验室的常设部门，而他自己的研究所关了门。</p>
+
+<h2 data-tts="124deb1762c7d278">出处</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.ted.com/talks/nick_bostrom_what_happens_when_our_computers_get_smarter_than_we_are/transcript">TED 官方逐字稿：What happens when our computers get smarter than we are?</a></span><span class="d">本页每一句演讲引语和所有台上数字的唯一来源，用 <code>tools/ted_transcript.py</code> 抓取后通读。</span></li>
+<li><span class="t"><a href="https://nickbostrom.com/papers/survey.pdf">Müller &amp; Bostrom，《Future Progress in Artificial Intelligence: A Survey of Expert Opinion》</a></span><span class="d">台上那份调查的原文。「冰山下面」里的回应率、分组构成、HLMI 定义、中位数与平均数之差、快速起飞只有 10%、以及作者那句「加几粒盐」，全部出自此文。</span></li>
+<li><span class="t"><a href="https://nickbostrom.com/superintelligentwill.pdf">Bostrom，《The Superintelligent Will》（2012）</a></span><span class="d">台上「智能和值得追求的目标没有必然联系」背后的完整论证。两条论题的原文、带限定词的措辞、以及「目标内容完整性比生存更根本」那句，都引自这里。</span></li>
+<li><span class="t"><a href="https://arxiv.org/abs/2401.02843">Grace 等，《Thousands of AI Authors on the Future of AI》（2024）</a></span><span class="d">2778 名顶级会议作者的调查，给「后来的命运」里日期的移动、以及 HLMI 与完全自动化之间那七十年的间隔，提供独立于 Bostrom 的测量。</span></li>
+<li><span class="t"><a href="https://arxiv.org/abs/2509.14260">Palisade Research，《Incomplete Tasks Induce Shutdown Resistance in Some Frontier LLMs》（2025）</a></span><span class="d">把台上掐脖子那一节做成实验的那篇。8/13、6/13、Grok 4 过半、97% 这几个数字，以及作者关于「自我保存」尤其含混的限定，都出自此文。</span></li>
+<li><span class="t"><a href="https://sideways-view.com/2018/02/24/takeoff-speeds/">Paul Christiano，《Takeoff speeds》（2018）</a></span><span class="d">对「智能爆炸」这个机制最常被引用的反驳，提供了「4 年翻倍先于 1 年翻倍」这个可下注的慢起飞定义，支撑「命运」一节里起飞速度那段。</span></li>
+</ul>
+</div>
+<footer>演讲精读 · 一场演讲，一个想法的来龙去脉 · 写于 2026-10-01</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
