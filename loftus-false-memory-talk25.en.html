@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Elizabeth Loftus · "How reliable is your memory?" — Memory is a Wikipedia page anyone can edit</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="loftus-false-memory-talk25.html">中文 →</a></div>
+<header>
+<div class="kicker">TEDGlobal · 2013</div>
+<h1>Memory is a Wikipedia page: you can edit it, and so can everyone else</h1>
+<p class="sub">Elizabeth Loftus · "How reliable is your memory?"</p>
+<div class="modebar"><button class="on" id="btn-pop">Short</button><button id="btn-deep">Full</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>A rape victim looks at a police photo lineup and points to one picture: <strong>"That one's the closest."</strong> Months later, on the witness stand, she points at the same man and says, "I'm absolutely positive that's the man."</p>
+<p>The man was Steve Titus, a Seattle restaurant manager about to get married. He was convicted. A journalist found the real rapist, and Titus was set free, but he had already lost his job, his savings and his fiancée. Days before his civil suit was to be heard, he died of a heart attack at 35. In Edinburgh in 2013, the psychologist Elizabeth Loftus opened her TEDGlobal talk with his story, then asked the question the rest of the talk tries to answer: how does someone get from "the closest" to "absolutely positive"?</p>
+<p>Her answer is that memory is not a recording. We picture the brain as a camera that plays back on demand. Decades of her research say that every time a memory is retrieved it is rebuilt, and outside information leaks in during the rebuild. Her image for it: <strong>memory is more like a Wikipedia page. You can go in and change it, and so can other people.</strong></p>
+<p>The evidence escalates. In the 1970s she showed people films of car crashes and asked how fast the cars were going when they "hit" each other, or when they "smashed" into each other. One verb changed, and the "smashed" group estimated higher speeds and was more likely a week later to "remember" broken glass that was never there. Then came soldiers interrogated roughly for 30 minutes in a mock prisoner-of-war camp, many of whom picked the wrong interrogator after being shown a misleading photo. Then the 1990s, when some patients went into therapy with depression and came out with "recovered memories" of satanic ritual abuse. To find out where such memories come from, she designed the famous "lost in the mall" study, telling subjects their family said they had been lost in a shopping mall at five or six. About a quarter came to "remember" it.</p>
+<p>The work earned her armed guards and nearly five years of litigation. She also suggested that parents could plant a false "that food once made me sick" memory in an overweight child. To the charge that she was advocating lying to children, she answered with three words, "Hello, Santa Claus," and the hall laughed.</p>
+<p>Her closing point is the heaviest of the talk. Someone can say a thing with confidence, in rich detail and with real emotion, and <strong>none of that means it happened</strong>. We can't reliably tell true memories from false ones, so we need independent corroboration.</p>
+<p>Thirteen years on, the core of her argument is intact. She said that three quarters of 300 DNA exonerations involved faulty eyewitness memory, and the Innocence Project's final count of 375 such cases puts it at 69%. The parts built on that core are contested. In 2023 an Irish team re-ran the lost-in-the-mall study with five times the sample and got 35%. In 2024 two other psychologists reread the interview transcripts line by line and concluded that far fewer people had recalled the whole event. Meanwhile, a 2017 review of eyewitness research found that under proper lineup procedures, <strong>confidence at the first identification is quite informative</strong>, and a low-confidence first pick is the warning sign. In other words, the line from the Titus case that most needed to be heard was "That one's the closest."</p>
+<p>Verdict: <strong>partly held up</strong>. That memory can be rewritten by outside information is solid. How easily a whole false event can be planted, and how far her warning about confident witnesses should be trusted, are still being argued.</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>Talk</b> How reliable is your memory? · <b>Venue</b> TEDGlobal (Edinburgh) · 2013-06-11 · <b>Length</b> about 17 min 37 s · <b>Transcript</b> <a href="https://www.ted.com/talks/elizabeth_loftus_how_reliable_is_your_memory/transcript">official TED transcript</a></div>
+<h2>The moment</h2>
+<p>There is no warm-up. Her first sentence is: I'd like to tell you about a legal case I worked on, involving a man named Steve Titus.</p>
+<p>The next two minutes read like a calm news report. He is 31, a restaurant manager, driving home from a romantic dinner with his fiancée Gretchen when a police officer pulls them over. His car sort of resembles one driven that evening by a man who raped a hitchhiker, and he sort of resembles the rapist. His photo goes into a lineup, and the victim points to it:</p>
+<blockquote><span class="en">"That one's the closest."</span><cite>— the victim at the photo lineup, as recounted by Loftus, TEDGlobal 2013</cite></blockquote>
+<p>At trial the same woman says, "I'm absolutely positive that's the man." Titus is convicted. His family screams at the jury and his fiancée collapses sobbing. He then calls the local paper himself, and an investigative journalist finds the real rapist, a man thought to have committed 50 rapes in the area, who confesses. Titus is freed.</p>
+<p>It should have ended there, and it didn't. He lost his job, his fiancée left because she couldn't live with his anger, and his savings were gone. He sued the police, and days before the case was to be heard he died of a stress-related heart attack. He was 35.</p>
+<p>Only then does she pose the question the talk is built around: <strong>how did that victim get from "That one's the closest" to "absolutely positive"?</strong></p>
+<h2>The speaker, and the year</h2>
+<p>Loftus was born in Los Angeles in 1944, studied mathematics and psychology as an undergraduate, and took a Stanford PhD in <strong>mathematical psychology</strong>, the branch that models mental processes with equations, in 1970. In the talk she says that when she tells a seatmate on a plane "I study memory," they start telling her about forgetting names or a relative with Alzheimer's, and she has to explain:</p>
+<blockquote><span class="en">"I don't study when people forget. I study the opposite: when they remember, when they remember things that didn't happen or remember things that were different from the way they really were. I study false memories."</span><cite>— Elizabeth Loftus, TEDGlobal 2013</cite></blockquote>
+<p>By 2013 she had nothing left to prove. A 2002 ranking of the 100 most eminent psychologists of the twentieth century put her 58th. Her car-crash study is a fixture of introductory psychology courses, and in the 1990s <strong>"memory wars"</strong> she was the most visible figure on the false-memory side. That year she and colleagues had just published the military study she calls, on stage, a study "we published just a few months ago." The talk is a founder looking back on forty years of work, and also a defence of it, with one whole section about what the work had cost her.</p>
+<h2>Glossary</h2>
+<div class="glossary"><ul>
+<li><b>Misinformation effect</b>: wrong information received after an event gets folded into the memory of the event itself.</li>
+<li><b>Rich false memory</b>: not one detail misremembered but a whole experience "remembered" that never happened.</li>
+<li><b>Repressed / recovered memory</b>: the claim that traumatic memories can be blocked for years and then "recovered" in therapy, which was the central dispute of the memory wars.</li>
+</ul></div>
+<h2>The talk, all the way through</h2>
+<p>After Titus, Loftus widens the frame from one case to a pattern. A U.S. project has gathered 300 people later proven innocent by DNA, people who served 10, 20 or 30 years. When those cases were analysed, <strong>three quarters</strong> came down to faulty eyewitness memory.</p>
+<p>Why did the juries believe the witnesses? Because most people think memory works like a recording device: you record, you call it up, you play it back. Decades of psychology say otherwise, and she offers the metaphor the talk is best remembered for:</p>
+<blockquote><span class="en">"Memory works a little bit more like a Wikipedia page: You can go in there and change it, but so can other people."</span><cite>— Elizabeth Loftus, TEDGlobal 2013</cite></blockquote>
+<p>From there she follows her own career, raising the stakes at each step. <strong>Step one is the 1970s crash films.</strong> Ask how fast the cars were going when they "hit" each other, or when they "smashed" into each other, and the "smashed" group gives faster estimates and is more likely to report broken glass that wasn't in the film. In another study, a question implying that a stop sign was a yield sign led many witnesses to remember a yield sign.</p>
+<p>She anticipates the objection that watching a film is not stressful, and asks what happens with an event that is. <strong>Step two</strong> is the military study. Trainees in a prisoner-of-war exercise are interrogated aggressively for 30 minutes, then fed suggestions that it was someone else, and many of them pick the wrong person, sometimes someone who looks nothing like the real interrogator. Her conclusion: feed people misinformation and you can distort, contaminate or change their memory. In the real world misinformation is everywhere, in leading questions, in other witnesses' talk, in media coverage.</p>
+<p><strong>Step three is the 1990s.</strong> Some patients entered therapy with depression or an eating disorder and left with memories of years of ritual abuse. One woman came to believe she had been forced into a pregnancy and that the baby had been cut from her belly, yet she had no scars. Most such cases involved one kind of therapy: imagination exercises, dream interpretation, sometimes hypnosis. To reproduce the process in the lab, she planted the memory of being lost in a mall at five or six, crying, rescued by an elderly person and reunited with family, and succeeded with <strong>about a quarter</strong> of subjects. Others went further, planting a near-drowning and rescue by a lifeguard (Tennessee), an attack by a vicious animal (Canada, "succeeding with about half"), and witnessing a demonic possession (Italy).</p>
+<p>Then comes the most personal section. After she spoke out against this brand of therapy, she sometimes needed armed guards at her talks, and people organised letter-writing campaigns to get her fired. The worst episode followed her investigation of a mother accused of abuse by her grown daughter on the basis of a repressed memory. Loftus concluded the mother was innocent and published an exposé without naming the daughter, who sued her for defamation and invasion of privacy anyway. The case took <strong>nearly five years</strong>.</p>
+<p>Back in the lab, she asked whether planted memories change behaviour. People led to believe they got sick on a food as children were less keen to eat it at an outdoor picnic, and a warm, fuzzy memory about asparagus made people want it more. She then takes the idea as far as it goes: therapists can't ethically do this, but nothing stops a parent from trying it on an overweight teenager. When she said so publicly, critics accused her of advocating that parents lie to their children. Her reply:</p>
+<blockquote><span class="en">"Hello, Santa Claus."</span><cite>— Elizabeth Loftus, TEDGlobal 2013 (laughter)</cite></blockquote>
+<p>In the last section her tone softens. Most people cherish their memories as who they are and where they came from, she says, and "I feel that way too," but she knows how much fiction is already in there. What decades of work have taught her is this:</p>
+<blockquote><span class="en">"just because somebody tells you something and they say it with confidence, just because they say it with lots of detail, just because they express emotion when they say it, it doesn't mean that it really happened. We can't reliably distinguish true memories from false memories. We need independent corroboration."</span><cite>— Elizabeth Loftus, TEDGlobal 2013</cite></blockquote>
+<p>That knowledge has made her more tolerant of her friends' and family's everyday memory mistakes, she says, and it might have saved Steve Titus. She ends by tying memory to a larger word: "memory, like liberty, is a fragile thing."</p>
+<h2>Below the waterline</h2>
+<p><strong>The crash study was smaller than the talk suggests.</strong> The 1974 paper by Loftus and Palmer reports two experiments. The first had 45 students, nine per verb. "Smashed" produced a mean estimate of 40.8 mph and "hit" produced 34.0. The talk leaves out one detail: four of the films were staged crashes at known speeds of 20 to 40 mph, yet the mean estimates for all four fell between 36 and 40. People can barely judge speed in the first place, which is what leaves room for one verb to move the number. The broken glass is from the second experiment, with 150 students. A week later, 16 of 50 in the "smashed" group said they had seen broken glass (32%), against 7 of 50 for "hit" (14%) and 6 of 50 controls (12%). The talk's description is accurate, but it helps to know the size of the effect: <strong>two thirds of the misled group did not fall for it</strong>. The question raised the odds of a false report; it did not reliably produce one.</p>
+<p><strong>The original lost-in-the-mall study had 24 people.</strong> In Loftus and Pickrell (1995), each subject got four childhood events, three true ones supplied by an older relative and the mall story. After a questionnaire and two interviews, 6 of 24 were judged to fully or partly remember being lost, the talk's "about a quarter." As the 2023 replication reports, the authors wrote at the time that the figure could not estimate how many people in general could be misled, and that the study was an "existence proof." Later critics focused on the same weak points: the small sample, undefined "full" and "partial" memories, and an unpublished coding process.</p>
+<p><strong>The military study was undersold on stage.</strong> Morgan, Southwick, Loftus and colleagues (2013) studied more than 800 service members in a mock POW camp. The abstract says that <strong>in some conditions more than half of those shown a misleading photograph</strong> identified the wrong person. The talk says only "many of them."</p>
+<p><strong>In the food studies, the talk says "false memory" where the papers say "false belief."</strong> The 2005 <em>PNAS</em> paper gave the suggestion of a childhood illness from a fattening food to 228 people, with 107 controls. Its abstract is cautious: only "a minority" came to believe they had been sick after strawberry ice cream, and those people were more likely to "indicate" not wanting it now. That is a stated preference on a questionnaire, not a measure of how much they ate. With the more commonly eaten chocolate chip cookie, the effect did not appear. The 2008 asparagus study also measured self-reported liking and willingness to pay. On stage, planted memories change behaviour. In the papers the claim is narrower: planted beliefs can shift stated food preferences, and only for some foods.</p>
+<p><strong>She supplies a small example herself.</strong> She quotes the victim's courtroom line twice. At the start it is "I'm absolutely positive that's the man"; a few minutes later it is "I'm absolutely positive that's the guy." The one-word drift changes nothing in her argument, but it demonstrates it: the same person repeating the same sentence quietly alters it the second time.</p>
+<p>Her central claim has always been narrow and sturdy: <strong>information that arrives after an event merges with the original memory, and once merged, people cannot tell where it came from.</strong> The 1974 paper already says it. The two sources are integrated so that we cannot tell which one a detail came from: "All we have is one 'memory.'" The forty years since have applied the same mechanism to bigger and more contested cases, and the dispute begins at the last of those steps.</p>
+<h2>What happened next</h2>
+<div class="fate"><p class="verdict">PARTLY HELD UP · as of 2026-10</p><p>The core claim, that memory is rewritten by information received afterwards, is solid. How often whole false events can be planted is being re-audited, and the warning that confidence proves nothing turns out to overreach once lineups are run properly.</p></div>
+<p><strong>The headline number roughly holds.</strong> She said that three quarters of 300 DNA exonerations involved faulty eyewitness memory. The Innocence Project stopped tracking DNA exonerations separately after reaching 375 in 2020, and <strong>69%</strong> of those involved eyewitness misidentification. The share is slightly lower, but misidentification is still the leading factor.</p>
+<p><strong>2017: two recounts of the implantation literature.</strong> Scoboria and colleagues recoded transcripts from eight implantation studies (423 participants) on a common scheme and found that about <strong>30.4%</strong> formed false memories. The same year, a systematic review by Brewin and Andrews reached the opposite conclusion. On average, 47% of participants had some recollective experience of the suggested event, but only about 15% were likely to count as full memories, and investigators' ratings did not necessarily match participants' own judgements.</p>
+<p><strong>2023: the original study, re-run.</strong> Gillian Murphy's team in Ireland ran a preregistered direct replication with 123 participants, five times the original sample. After the second interview, <strong>35%</strong> were coded as having a false memory (33 partial, 10 full), more than the original's 25%. But they also reported another figure: asked themselves, only <strong>14%</strong> of participants said they remembered the event, and another 52% said they didn't remember it but believed it had happened. Researchers and participants meant very different things by "remember."</p>
+<p><strong>2024–2025: a line-by-line reread, and a rebuttal.</strong> Andrews and Brewin obtained the transcripts and checked each one for the story's six core details. Their paper in <em>Applied Cognitive Psychology</em> found that participants judged to have false memories explicitly recalled fewer than two core details on average. Among those coded as full memories, 20% did not recall being lost, and among partial memories, 58%. Half described what may have been a real, separate experience of being lost. According to Wade and colleagues, Andrews and Brewin put the true false-memory rate at about 4%. In 2025 Kimberley Wade, Henry Otgaar, Loftus herself and others replied under a title that states their position: "Still Lost in the Mall—False Memories Happen and That's What Matters." Memory is reconstructive, they argue, so false memories should be expected to contain fragments of real ones. And the original study was an existence proof, so whether the rate is 4% or 35%, it shows the thing can happen. The abstract closes:</p>
+<blockquote><span class="en">"What matters is that suggestive influences can lead to substantial memory distortions and even plant new events that had not occurred."</span><cite>— Wade, Riesthuis, Bücken, Otgaar &amp; Loftus, Applied Cognitive Psychology, 2025</cite></blockquote>
+<p>Brewin and Andrews answered the same year with "Major Concerns About the False Memory Implantation Paradigm Persist," which this page has not read beyond its title. The real stakes are in court. One side worries that genuine victims will be dismissed with "it could be a false memory." The other worries that suggestive questioning and therapy will produce more cases like Titus. Loftus has since testified for the defence in high-profile sexual-assault cases, including Harvey Weinstein's in 2020 and Ghislaine Maxwell's in 2021, which makes the first worry concrete.</p>
+<p><strong>Eyewitness confidence: a major correction, and a surprising echo.</strong> In 2017 John Wixted and Gary Wells published a review in <em>Psychological Science in the Public Interest</em> that challenged a view the U.S. legal system had increasingly accepted: that an eyewitness's confidence says little about accuracy. Their conclusion was that under "pristine" conditions, with an initial uncontaminated test, a fair lineup, no influence from the lineup administrator and confidence recorded immediately, confidence and accuracy are strongly related, and <strong>high-confidence initial identifications are remarkably accurate</strong>. Low-confidence initial identifications are error-prone, and when conditions are not pristine, even high confidence can't be trusted. This narrows the line from the talk that confidence doesn't mean it happened: for lineups, first-test confidence carries information. But the review also supports her on Titus. The victim's first statement was "That one's the closest," which by the 2017 standard is exactly the low-confidence first identification that should raise a red flag. Loftus asked on stage what happened between "closest" and "absolutely positive" and didn't fully answer. The newer research at least says which of the two statements the jury should have heard.</p>
+<p>Where things stand now: no one still disputes that memories can be rewritten by information received afterwards. Whole false events can be planted, but how often and how completely is still being argued over the same transcripts. As for confidence, what matters is not how high it is but when, and under what conditions, it was expressed.</p>
+<h2>Sources</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.ted.com/talks/elizabeth_loftus_how_reliable_is_your_memory/transcript">Elizabeth Loftus — How reliable is your memory? (official TED transcript)</a></span><span class="d">The full talk; every quotation from the talk and every figure attributed to it comes from here.</span></li>
+<li><span class="t"><a href="https://gwern.net/doc/psychology/cognitive-bias/1974-loftus.pdf">Loftus &amp; Palmer (1974), Reconstruction of automobile destruction</a></span><span class="d">The original crash study; the sample sizes, speed estimates and broken-glass rates under "Below the waterline."</span></li>
+<li><span class="t"><a href="https://hdl.handle.net/10468/14378">Murphy et al. (2023), Lost in the mall again</a></span><span class="d">The preregistered replication; source of this page's account of the 1995 study and the 35% and 14% figures.</span></li>
+<li><span class="t"><a href="https://doi.org/10.1002/acp.70012">Andrews &amp; Brewin (2024), Lost in the Mall? Interrogating Judgements of False Memory</a></span><span class="d">The line-by-line reread of the replication transcripts; the core-detail and real-experience figures come from its abstract.</span></li>
+<li><span class="t"><a href="https://escholarship.org/uc/item/833180md">Wade, Riesthuis, Bücken, Otgaar &amp; Loftus (2025), Still Lost in the Mall</a></span><span class="d">The Loftus side's reply; source of the "4%" summary and the existence-proof argument.</span></li>
+<li><span class="t"><a href="https://doi.org/10.1177/1529100616686966">Wixted &amp; Wells (2017), The Relationship Between Eyewitness Confidence and Identification Accuracy</a></span><span class="d">The confidence-accuracy review behind this page's correction to the claim that confidence proves nothing.</span></li>
+</ul>
+</div>
+<footer>Talk Deep-Read · one talk, the life of one idea · written 2026-10-07</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
