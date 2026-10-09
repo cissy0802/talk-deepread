@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Murray Gell-Mann ·《美、真理与……物理？》— 美为什么能挑对理论</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="gell-mann-beauty-truth-physics-talk27.en.html">English →</a></div>
+<header>
+<div class="kicker">TED2007 · 2007</div>
+<h1>「七个实验，全错了」：他靠美挑中了对的理论，又说这份美与人类无关</h1>
+<p class="sub">Murray Gell-Mann ·《美、真理与……物理？》（Beauty, truth and ... physics?）</p>
+<div class="modebar"><button class="on" id="btn-pop">精华版</button><button id="btn-deep">完整版</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>2007 年 3 月，TED 的舞台上，一位年近八旬的理论物理学家讲起自己 1957 年和几位同行提出的一个关于弱力的理论。他停了一下，把数字重复了一遍：</p>
+<blockquote><span class="en">And it was in disagreement with seven -- seven, count them, seven experiments. Experiments were all wrong.</span><span class="zh">它和七个——七个，你数数，七个实验对不上。实验全错了。</span><cite>— Murray Gell-Mann，TED2007</cite></blockquote>
+<p>他们没等实验修正就发表了，「因为我们觉得它太美了，肯定是对的」。后来那些实验确实重做了，结果站到了理论这一边。</p>
+<p>讲这话的人叫默里·盖尔曼（Murray Gell-Mann），「夸克」（quark）这个名字是他起的，1969 年因为给基本粒子分门别类拿了诺贝尔物理学奖。这场 16 分钟的演讲只问一个问题：在基础物理里，「美」为什么会是挑选正确理论的好标准？</p>
+<p>他先说清「美」是什么意思：用某套数学记号，能把一个理论写得很短、不啰嗦，这就是物理学家说的美或优雅。然后给出他的解释。物理学家一层层往更小的尺度挖，像剥洋葱；每剥开一层，发现新一层要用的数学，和上一层几乎一样。牛顿的引力和库仑的电力都是「距离平方反比」；麦克斯韦方程借助旋转对称、再借助狭义相对论的对称，越写越短；杨振宁和米尔斯推广麦克斯韦方程得到的新对称，后来描述了强力和弱力。新的一层用的是我们已经会的数学，所以写出来短，所以看起来美。</p>
+<p>他由此下了一个很硬的判断：这份美与人类无关。换成七条触手、十四只复眼、脑子长成椒盐卷饼形状的外星人，也会发现同样的定律。洋葱每层彼此相像，是自然本身的性质，不是人脑的偏好。</p>
+<p>台下没听到的是：那个「美到不可能错」的故事，在论文里要谨慎得多。盖尔曼和费曼 1958 年发表的论文明写着，和氦-6 实验的冲突是「最严重的分歧」，「进一步检验显然非常必要」；同一时期他和别人合写的一篇综述，甚至把这套理论称作普适弱相互作用设想的「最后一搏」。台上的笃定，是事后讲出来的。</p>
+<p><strong>后来怎么样？部分站住。</strong>他举的例子都站住了，杨-米尔斯理论成了标准模型的骨架。但他没说的是，「美」是一条只在洋葱各层相像时才有效的经验。演讲之后，大型强子对撞机（LHC）找到了希格斯玻色子，却没找到被很多物理学家当作「美得一定存在」的超对称粒子。2018 年，理论物理学家霍森费尔德（Sabine Hossenfelder）写了一整本书，说「美」已经把物理带偏了。科学哲学家麦卡利斯特（James McAllister）则更早给出了另一种解释：物理学家觉得什么美，是从过去成功的理论里学来的。这恰好和盖尔曼自己那句「因为用的是我们已经会的数学」接得上，也恰好和他「与人无关」的结论相反。</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>演讲</b> Beauty, truth and ... physics? · <b>场合</b> TED2007（录于 2007-03-03） · <b>时长</b> 约 16 分钟 · <b>全文</b> <a href="https://www.ted.com/talks/murray_gell_mann_beauty_truth_and_physics/transcript">TED 官方逐字稿</a></div>
+<h2>那一刻</h2>
+<p>开场没几分钟，盖尔曼讲起 1957 年。「我们三四个人」提出了一个关于弱力的理论，不完整，但很漂亮。然后他把数字举了起来：</p>
+<blockquote><span class="en">And it was in disagreement with seven -- seven, count them, seven experiments. Experiments were all wrong.</span><span class="zh">它和七个——七个，你数数，七个实验对不上。实验全错了。</span><cite>— Murray Gell-Mann，TED2007</cite></blockquote>
+<blockquote><span class="en">And we published before knowing that, because we figured it was so beautiful, it's gotta be right! The experiments had to be wrong, and they were.</span><span class="zh">我们在知道这一点之前就发表了，因为我们觉得它太美了，肯定是对的！实验一定是错的，后来也确实错了。</span><cite>— Murray Gell-Mann，TED2007</cite></blockquote>
+<p>他马上又补了一个更大的名字：爱因斯坦听说有个叫 D. C. 米勒（Dayton Miller）的人做出了和狭义相对论矛盾的实验，回答是「哦，那个会消失的」。台下笑了。</p>
+<p>理论和实验打架，赢的是理论，凭的是「美」。这是物理学家最爱讲、也最危险的那种故事。这一页要把它放回原来的论文里看一看。</p>
+<h2>讲的人，和那一年</h2>
+<p>盖尔曼是二十世纪下半叶最重要的理论物理学家之一。他给基本粒子分类，给夸克起了名字，因此在 1969 年拿到诺贝尔物理学奖。他在加州理工学院（Caltech）教了几十年书，1984 年参与创办了研究复杂系统的圣塔菲研究所（Santa Fe Institute），对语言学、考古学和演化生物学的兴趣和他的物理学一样认真。他在诺贝尔晚宴上说过一句很像他的话：基本自然定律的美，近似于「一只秋沙鸭潜入纯净瑞典湖水时的轻盈」。</p>
+<p>2007 年站上 TED 时，他已年近八旬，物理学正处在一个等待的节点：欧洲核子研究中心（CERN）的大型强子对撞机即将启动，很多理论家相信它会看到超对称（supersymmetry）之类「美」的新物理。屏幕上放着他「同事」们的画像（牛顿、爱因斯坦），他开场第一句就拿这个开了玩笑，讲到一半还对着爱因斯坦的画像打了招呼：「Hi, Al!」</p>
+<p>所以这不只是老人的回忆，而是在大实验验收「美学押注」的前夜，押注最成功的人之一替这种押注做的辩护。</p>
+<h2>术语表 · Glossary</h2>
+<div class="glossary"><ul>
+<li><b>弱力（weak force）</b>：四种基本力之一，负责某些放射性衰变（如 β 衰变）。</li>
+<li><b>V-A 理论</b>：1957 年提出的弱力理论，只允许「矢量减轴矢量」（vector minus axial vector）这一种形式的相互作用。盖尔曼说的那个「美」的理论就是它。</li>
+<li><b>杨-米尔斯理论（Yang–Mills theory）</b>：对麦克斯韦电磁方程的推广，带一种新的对称性；今天标准模型里强力和弱力都写成这个形式。</li>
+<li><b>超对称（supersymmetry，SUSY）</b>：假设每种已知粒子都有一个「伙伴粒子」的理论，因其数学优雅被寄予厚望，至今没有被实验发现。</li>
+</ul></div>
+<h2>这场演讲，讲透</h2>
+<p>盖尔曼先把舞台搭小：他研究的是「把物质切得非常非常细，会剩下什么」。我们对四种力知道得很多，可能还有更多的力藏在极小的距离上。然后他抛出全场唯一的问题：在基础物理这个领域，美竟然是选择正确理论的一个非常成功的标准，「这到底是为什么？」</p>
+<p>V-A 理论和七个实验是第一个证据，爱因斯坦和米勒是第二个。接着他回答了一个更深的问题：这份美跟人类有没有关系？答案他提前揭晓了：没有。他请观众想象另一个星系里的智慧生物，七条触手，十四只滑稽的复眼，脑子长得像椒盐卷饼：</p>
+<blockquote><span class="en">Would they really have different laws? There are lots of people who believe that, and I think it is utter baloney.</span><span class="zh">它们真的会有不同的定律吗？很多人这么相信，我觉得那完全是胡扯。</span><cite>— Murray Gell-Mann，TED2007</cite></blockquote>
+<p>定律「真的在那儿」，我们只是一点点逼近。然后他给出定义，这是整场最该记住的一句：</p>
+<blockquote><span class="en">And when the mathematics is very simple -- when in terms of some mathematical notation, you can write the theory in a very brief space, without a lot of complication -- that's essentially what we mean by beauty or elegance.</span><span class="zh">当数学非常简单——当你借助某种数学记号，能把理论写在很短的篇幅里、不需要很多复杂的东西——这基本上就是我们所说的美或优雅。</span><cite>— Murray Gell-Mann，TED2007</cite></blockquote>
+<p>他在这里岔开一笔，纠正一个流行说法：终极统一理论不该叫「万物理论」（theory of everything）。因为它是量子力学的，只预言概率；宇宙的历史由基本定律加上「极其漫长的一串偶然」共同决定，而我们周围的大量信息来自那些偶然。</p>
+<p>然后是核心的比喻：剥洋葱。物理学家从低能到高能、从大尺度到小尺度一层层往里看，发现每一层和相邻的层有共同之处，写成数学，用的是非常相似的数学。牛顿引自然「与自身相符」（conformable to herself）。最简单的例子：牛顿的引力随距离平方反比减弱，库仑在法国发现电荷之间是同一条规律。复杂一点的是对称性：麦克斯韦方程原本要按 x、y、z 三个方向写一长串，用上旋转对称（向量记号）变短，再用上狭义相对论的对称变得更短。他把三组方程依次放在屏幕上，告诉观众不用懂含义，「看形状就行」。全场笑了。</p>
+<p>最重要的一步是杨振宁（他说「我们叫他 Frank」）和米尔斯（Bob Mills）半个世纪前对麦克斯韦方程的推广：数学很相似，却是一种全新的对称。它本身没帮上粒子物理，「后来我们中的一些人进一步推广了它，然后就成了」，强力和弱力都得到了很美的描述。于是他给出了自己的解释：</p>
+<blockquote><span class="en">And the kind of mathematics that we had for the previous skin is almost the same as what we need for the next skin. And that's why the equations look so simple. Because they use mathematics we already have.</span><span class="zh">我们为上一层准备的数学，和下一层需要的几乎一样。这就是方程看起来那么简单的原因：它们用的是我们已经有的数学。</span><cite>— Murray Gell-Mann，TED2007</cite></blockquote>
+<p>转折落在牛顿身上：苹果落地的力和让月亮绕地球转的力是同一种，这在当年是个大统一，今天谁还会说它只是「人脑的自负」？它是引力本身的性质。同理，各层洋葱彼此相像，是基本定律的性质。这些原则不必当作额外的形而上学假设，它们是「涌现性质」。最后他把这个词推到底：生命从物理化学加上大量偶然中涌现，人的心智从神经生物学加偶然中涌现。读者读完他的书《夸克与美洲豹》总问他，难道没有「更多的东西」吗？他的结束语是：</p>
+<blockquote><span class="en">You don't need something more to explain something more.</span><span class="zh">要解释更多，不需要更多的东西。</span><cite>— Murray Gell-Mann，TED2007</cite></blockquote>
+<h2>冰山下面</h2>
+<p><strong>「七个实验全错」的原始版本。</strong>台上的故事是：我们发表时还不知道冲突，凭美押注，实验后来认错。论文里的版本不一样。费曼（Richard Feynman）和盖尔曼的《费米相互作用理论》（Theory of the Fermi Interaction）1957 年 9 月 16 日投稿，1958 年 1 月 1 日刊于《物理评论》（Physical Review）第 109 卷。摘要里就明写着，理论与氦-6（He<sup>6</sup>）中测得的电子-中微子角关联不一致。正文说得更具体（据 Hadjiivanov 的史料综述所引）：</p>
+<blockquote><span class="en">Limiting ourselves to those that are well established, we find that the most serious disagreement with our theory is the recoil experiment in He6 of Rustad and Ruby indicating that the T interaction is more likely than the A. Further check on this is obviously very desirable.</span><span class="zh">只看那些已确立的实验，与我们理论分歧最严重的，是 Rustad 和 Ruby 在 He6 上做的反冲实验，它表明 T 型相互作用比 A 型更可能。对此做进一步检验显然非常必要。</span><cite>— Feynman &amp; Gell-Mann，Physical Review 109，1958</cite></blockquote>
+<p>也就是说，他们发表时知道冲突，并且公开写了出来，语气是「请再测一次」，而不是「实验错了」。更有意思的是盖尔曼自己同年的另一篇文字：他和 Rosenfeld 1957 年 12 月发表的综述把「V、A 假设」称为普适费米相互作用设想的「最后一搏」（'last stand'），并写道，要接受它，「首先必须无视」β 衰变中大量的电子-中微子角关联证据，尤其是 Rustad 和 Ruby 在 He6 上的结果，「这已经是一个非常严重的反对理由」。台上那份笃定，在当年他自己的文字里找不到。</p>
+<p>数字也有出入。台上是「七个」。同一理论的另一组独立提出者、罗切斯特大学的苏达山（E. C. G. Sudarshan）和马沙克（Robert Marshak）在 1957 年的会议论文里数的是「一项已发表、几项未发表」的实验，结论是「所有这些实验都应该重做」，并写明「上述四个实验中只要有一个站得住」，就必须放弃这个假设。他们押的同样是理论，但押注的条件写得清清楚楚。</p>
+<p>动机也不只是美。苏达山和马沙克的说法是，矢量与轴矢量的混合是唯一可能的普适四费米子相互作用，「并具有许多优雅的特征」。唯一性和普适性在前，优雅在后。费曼晚年对物理学史家 Mehra 说，这条定律「不像狄拉克或麦克斯韦的定律那么美」，但它是他一生中唯一一次发现了别人还不知道的自然定律。</p>
+<p>结局确实如盖尔曼所说：中微子左旋性在 1957 年底得到确认，那些与 V-A 冲突的数据在之后几年被仔细重查、修正。格拉肖（Sheldon Glashow）2009 年评价：「实验重做了，结果证实了他们的假设。」赌赢了，但赢的是一个公开承认风险、还附了检验清单的赌局。</p>
+<p><strong>爱因斯坦那句话。</strong>「那个会消失的」，盖尔曼没给出处，我也没有找到原文，只能当作他转述的轶事。米勒的「以太漂移」确实是物理史上著名的反常结果，后来也确实「消失」了：2006 年 Thomas Roberts 重新分析米勒的原始数据，结论是他 1933 年宣称测到地球「绝对运动」的结果没有统计显著性，分析方法的缺陷造出了一个恰好像他预期的假信号。</p>
+<p><strong>牛顿那几句。</strong>「自然……与自身相符」查得到：《光学》（Opticks）第 31 问写的是「For Nature is very consonant and conformable to her self」。而台上那段「免得被当成一个古怪的怪人」（extravagant freak），我在《光学》印本里没有找到，盖尔曼也没有说出自哪份文稿，本页不作判断。</p>
+<p><strong>「我们中的一些人」。</strong>杨-米尔斯理论变成强力理论，关键一步是 1973 年 Fritzsch、盖尔曼和 Leutwyler 的论文，用带「色」的夸克加八种色胶子构造杨-米尔斯规范模型，即后来的量子色动力学（QCD）。弱力那一半主要是格拉肖、温伯格（Steven Weinberg）、萨拉姆（Abdus Salam）的工作。台上一句「some of us」，把两段不同人的历史合在了一起。</p>
+<h2>后来的命运</h2>
+<div class="fate"><p class="verdict">部分站住 · 截至 2026-10</p><p>他举的历史案例都站得住；但「美是选对理论的可靠标准，且与人无关」这个一般命题，在 LHC 时代遭到了点名的挑战：最被看好的「美」的新物理没有出现，对「美从哪里来」也有一个以人为中心、且同样解释得通的竞争答案。</p></div>
+<p><strong>2007—2012：等待验收。</strong>演讲时，LHC 被普遍寄望于看到超对称。后来它找到了希格斯玻色子，补上标准模型最后一块；但除此之外，《自然》（Nature）2018 年的书评写道，超对称最「自然」、不需要精细调节的那个版本已被 LHC 的数据排除，「所有人都同意超对称遇到了麻烦」。</p>
+<p><strong>2018：霍森费尔德。</strong>德国法兰克福高等研究院的理论物理学家萨宾·霍森费尔德出版《迷失于数学：美如何让物理学误入歧途》（Lost in Math: How Beauty Leads Physics Astray）。她的开篇问题几乎是冲着盖尔曼来的：「自然定律凭什么在乎我觉得什么美？」她的论点是：实验数据越来越难拿到，理论家越来越多地用数学论证和主观审美来评判理论；她把超对称称为物理学家的「超常刺激」（superstimulus），因为它同时满足对称、自然性（naturalness）、统一这些理论家看重的价值。她并不主张放弃数学，而是提出几条底线：先确认存在真正的理论与数据冲突，明说自己的审美假设，用经验证据选择合适的数学。</p>
+<p>反方的声音同样具体。《自然》的书评人 Anil Ananthaswamy 指出，脱离数据的理论推演有过回报，举的恰恰是盖尔曼本人：1960 年代初他用对称性整理粒子、预言夸克，数学最后被证实。科学哲学家 Jeremy Butterfield 2019 年的长篇书评总体赞赏这本书，但先列出了他的主要分歧，集中在超对称、自然性和多重宇宙的讨论上。超对称的研究者没有放弃：Baer 等人 2025 年的综述认为 LHC 对超对称的搜索「才刚刚开始探索参数空间里有意思的区域」。</p>
+<p><strong>另一种解释：美是学来的。</strong>比霍森费尔德早二十多年，科学哲学家詹姆斯·麦卡利斯特在《科学中的美与革命》（Beauty and Revolution in Science，1996）里提出「审美归纳」（aesthetic induction）：一个科学共同体对某种审美特征的偏好，与过去具有该特征的理论的经验成功成正比。科学家先造出经验上成功的理论，再学会欣赏它的某些特征。（这一段我没有读到原书，据 Zamora Bonilla 2015 年的介绍转述。）</p>
+<p>把它和盖尔曼的原话放在一起读，很有意思。盖尔曼的机制是：新一层「看起来美，是因为我们已经知道怎么把它写得可爱而简洁」（it looks beautiful because we already know how to write it in a lovely, concise way）。「我们已经知道」，这正是一个关于人的陈述。洋葱各层相像可能是自然的性质；但「相像所以看起来美」，中间隔着的是物理学家熟悉的数学工具箱。他自己的解释，也恰好预言了这条经验什么时候会失灵：只要下一层不再像上一层，熟悉的数学就写不短它，「美」就会把人引向错误的方向。超对称在 LHC 上的遭遇，可以看作对这句话的检验。</p>
+<p>盖尔曼于 2019 年 5 月 24 日在圣塔菲去世，享年 89 岁。我没有找到他公开回应霍森费尔德的文字。今天的状况大致是：「美曾经管用」没有人否认；「美为什么管用」「它在下一层是否仍然管用」，是一个仍在 LHC 和下一代对撞机的数据面前等待裁决的问题。</p>
+<h2>出处</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.ted.com/talks/murray_gell_mann_beauty_truth_and_physics/transcript">Murray Gell-Mann, Beauty, truth and ... physics? (TED2007 transcript)</a></span><span class="d">演讲全文，本页所有盖尔曼引语的来源。</span></li>
+<li><span class="t"><a href="https://authors.library.caltech.edu/records/fnnbe-rx189">Feynman &amp; Gell-Mann, Theory of the Fermi Interaction, Physical Review 109 (1958)</a></span><span class="d">V-A 论文本身；投稿与发表日期、摘要中对 He6 冲突的承认。</span></li>
+<li><span class="t"><a href="https://arxiv.org/abs/1812.11629">Ludmil Hadjiivanov, Neutrino, parity violation, V-A: a historical survey (2018)</a></span><span class="d">V-A 的史料综述；苏达山-马沙克的「四个实验」、Gell-Mann &amp; Rosenfeld 的「最后一搏」、费曼对 Mehra 的话、格拉肖的评价均据此引用。</span></li>
+<li><span class="t"><a href="https://www.gutenberg.org/ebooks/33504">Isaac Newton, Opticks（Project Gutenberg 本）</a></span><span class="d">核对盖尔曼引的「Nature is very consonant and conformable to her self」。</span></li>
+<li><span class="t"><a href="https://www.nature.com/articles/d41586-018-05374-9">Anil Ananthaswamy, Beauty, proof and the crisis in physics, Nature 558 (2018)</a></span><span class="d">《迷失于数学》书评；霍森费尔德的论点、超对称现状与盖尔曼诺奖晚宴致辞的引文。</span></li>
+<li><span class="t"><a href="https://mappingignorance.org/2015/02/16/science-search-beauty-2-halflings-view/">Jesús Zamora Bonilla, Science and the search of beauty (2): the halflings' view (2015)</a></span><span class="d">麦卡利斯特「审美归纳」的介绍，本页对它的转述来源。</span></li>
+</ul>
+</div>
+<footer>演讲精读 · 一场演讲，一个想法的来龙去脉 · 写于 2026-10-09</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
