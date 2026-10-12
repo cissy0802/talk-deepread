@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Neil Gaiman · Make Good Art — Even When the Cat Explodes</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="langbar"><a href="gaiman-make-good-art-talk30.html">中文 →</a></div>
+<header>
+<div class="kicker">University of the Arts Commencement · 2012</div>
+<h1>"Cat exploded? Make good art" — a man who never went to college hands art graduates everything he knows</h1>
+<p class="sub">Neil Gaiman · Make Good Art</p>
+<div class="modebar"><button class="on" id="btn-pop">Short</button><button id="btn-deep">Full</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>Philadelphia, May 17, 2012. A British writer is giving the commencement address at the University of the Arts, and halfway through he starts listing the ways a life can go wrong:</p>
+<blockquote><span class="en">Husband runs off with a politician? Make good art. Leg crushed and then eaten by mutated boa constrictor? Make good art. IRS on your trail? Make good art. Cat exploded? Make good art.</span><cite>— Neil Gaiman, University of the Arts commencement, 2012</cite></blockquote>
+<p>He is Neil Gaiman, author of the comic <em>The Sandman</em> and the novel <em>Coraline</em>, and he opened by confessing he had no business up there: he never graduated from a university, never even started at one. He had escaped school as soon as he could, because four more years of enforced learning before he could become a writer felt stifling.</p>
+<p>So this is not a speech about education. It is someone who had lived off a craft for nearly thirty years emptying out his pockets. Not knowing the rules is good, because you don't know what's impossible. Keep a distant mountain in view, and when you don't know which job to take, ask whether it walks you toward the mountain or away; that is how he turned down editorial jobs with proper salaries. Failure hurts in the form of hunger and discouragement. Success hurts in ways nobody warns you about: the conviction you're getting away with something and someone will knock on the door to take it all back, and the day you look up and find you've become someone who professionally answers email and writes as a hobby.</p>
+<p>He handed over a piece of "secret freelancer knowledge": people keep getting work because their work is good, they're easy to get along with, and they deliver on time — and two out of three is fine.</p>
+<p>Then came the exploding cat. The weight of that list sits in the sentence before it: for him and many people he knew, making art had been a lifesaver. Life goes wrong; when it does, make the thing only you can make. The speech spread online within days, and a year later the designer Chip Kidd turned it into a small book.</p>
+<p><strong>What happened next? Partly holds up.</strong> As advice on how a maker survives failure, success and self-doubt, it still reads true, and Gaiman left room for luck himself. But time narrowed two things. One is his optimism about the industry: "The gatekeepers are leaving their gates," and YouTube could give you more viewers than television. The audience arrived; the money mostly didn't. When the Authors Guild surveyed 5,699 published authors in 2023, the median book income of full-time authors for 2022 was $10,000. The other is the podium itself. From 2024, several women publicly accused Gaiman of sexual assault or coercion; he denies all of it, and two US lawsuits were dismissed on the ground that they belong in New Zealand, without any court ruling on whether the allegations are true. That same June, the University of the Arts abruptly shut down in a financial crisis. The text is still shared, but few people today can read it the way they did in 2012, hearing only the words.</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>Talk</b> Make Good Art (commencement keynote) · <b>Venue</b> The University of the Arts, Philadelphia · 2012-05-17 · <b>Length</b> about 2,900 words · <b>Text</b> <a href="https://jamesclear.com/great-speeches/make-good-art-by-neil-gaiman">James Clear transcription (originally on the UArts website)</a></div>
+<h2>The moment</h2>
+<p>He had reached his fourth point and had just told a story about a small accident: writing a letter, he misspelled Caroline, swapping the A and the O, and thought, "Coraline looks like a real name…" It later became the title of one of his children's books.</p>
+<p>Whatever your discipline, he went on — music, photography, dance, design — you have one unique thing: the ability to make art. For him and many people he'd known, that had been a lifesaver. Life goes wrong, in love and business and friendship and health. And when it does, this is what you should do:</p>
+<blockquote><span class="en">Make good art.</span><cite>— Neil Gaiman, 2012</cite></blockquote>
+<p>Then the escalating catalogue of disasters: the husband who ran off with a politician, the leg eaten by a mutated boa constrictor, the IRS, the exploding cat, the stranger on the internet who says what you do is stupid or evil or already done. Each followed by the same three words. Then he landed it:</p>
+<blockquote><span class="en">Probably things will work out somehow, and eventually time will take the sting away, but that doesn't matter. Do what only you do best. Make good art.</span><cite>— Neil Gaiman, 2012</cite></blockquote>
+<p>And one more line: "Make it on the good days too." That is where the speech got its name.</p>
+<h2>The speaker, and the year</h2>
+<p>Gaiman was born in England in 1960, skipped university, and in his early twenties worked as a freelance journalist for British magazines; his first book, in 1984, was a biography of the band Duran Duran. In 1988 he began <em>The Sandman</em>, which ran 75 issues over eight years; in 1990 he co-wrote <em>Good Omens</em> with Terry Pratchett; in 2002 came <em>Coraline</em>. By 2012 he was 51 and a bestselling writer moving freely among comics, novels, children's books and screen work — more or less the list he had written at fifteen.</p>
+<p>The school gave him an honorary doctorate that day. The next day he posted the text on his blog, calling it "everything I could think of that someone starting out on a career in the arts right now might need to know." It was a particular moment: publishing and music were reeling from digitization, and crowdfunding and YouTube were just starting to look like ways around publishers and record labels. The last part of the speech is a bet on a world whose old rules were falling apart.</p>
+<h2>The talk, all the way through</h2>
+<p>He began with his own lack of qualifications:</p>
+<blockquote><span class="en">I never really expected to find myself giving advice to people graduating from an establishment of higher education. I never graduated from any such establishment. I never even started at one.</span><cite>— Neil Gaiman, 2012</cite></blockquote>
+<p>He couldn't call what he'd had a career, he said, because that implies a plan. All he had was a list made at fifteen: write an adult novel, a children's book, a comic, a movie, record an audiobook, write an episode of <em>Doctor Who</em>. He just did the next thing on the list. Then he started counting — first, second, third — a numbered inventory of what he knew.</p>
+<p><strong>First: you have no idea what you're doing, and that's great.</strong> People who know the rules know what's possible, and the rules were made by people who never went past the edge. "If you don't know it's impossible it's easier to do."</p>
+<p><strong>Second: if you know what you want to make, go and do it.</strong> But usually by a detour. He wanted to write comics and novels, so he became a journalist: journalists get to ask questions, and he was being paid to learn to write crisply and on time. He invented the mountain:</p>
+<blockquote><span class="en">And I knew that as long as I kept walking towards the mountain I would be all right.</span><cite>— Neil Gaiman, 2012</cite></blockquote>
+<p>He turned down magazine editing jobs because they walked away from the mountain. Then an honest caveat: had those offers come earlier, he might have taken them, because they would still have been closer to the mountain than he was at the time.</p>
+<p><strong>Third: failure, and success.</strong> A freelance life is like throwing messages in bottles from a desert island; you might send out a hundred for every one that comes back. His first book should have been a bestseller, but the publisher went into liquidation between the first print run selling out and the second printing, leaving him with an electric typewriter bought from the advance. So he made a rule: nothing he did only for the money was ever worth it, "except as bitter experience." The problems of success are harder because nobody warns you. The first is the conviction that you're getting away with something — what his wife, the musician Amanda Palmer, christened the Fraud Police; he pictured a man with a clipboard knocking on the door to say it was over and he'd have to get a real job. The second is that the world conspires to stop you doing the thing you do:</p>
+<blockquote><span class="en">There was a day when I looked up and realised that I had become someone who professionally replied to email, and who wrote as a hobby.</span><cite>— Neil Gaiman, 2012</cite></blockquote>
+<p><strong>Fourth: make mistakes</strong> — Coraline and the exploding cat both live here. <strong>Fifth: make your art.</strong> Copying is fine at the start; most people find their voice after sounding like a lot of other people. When you feel you're walking down the street naked, showing too much of what's inside, "That's the moment you may be starting to get it right."</p>
+<p><strong>Sixth: the freelancer's secret.</strong> First a confession that would get him in trouble today: starting out, when editors asked whom he'd written for, he lied, listing a handful of plausible magazines, then made it a point of honour to write for each of them, so he'd merely been "chronologically challenged." Then the actual secret:</p>
+<blockquote><span class="en">People keep working, in a freelance world, and more and more of today's world is freelance, because their work is good, and because they are easy to get along with, and because they deliver the work on time. And you don't even need all three. Two out of three is fine.</span><cite>— Neil Gaiman, 2012</cite></blockquote>
+<p>Here the speech turns. Preparing it, he had tried to recall the best advice he'd ever received. It came from Stephen King twenty years earlier, at the height of <em>Sandman</em>: "This is really great. You should enjoy it." He didn't. For the next fourteen or fifteen years there was never a moment he wasn't worrying about the next deadline or idea. "Best advice I got that I ignored." And then: this platform, today, is one of the remarkable places the ride had taken him — with a parenthesis, "(I am enjoying myself immensely.)"</p>
+<p>The last section is the bet on the era. Distribution was changing everywhere; even people at the top of publishing didn't know what things would look like in two years. That was intimidating and liberating: "The gatekeepers are leaving their gates," and YouTube and the web could give you more viewers than television ever did. So make up your own rules. He told a friend who dreaded recording an audiobook to pretend she was someone who could do it, and generalized: if you cannot be wise, pretend to be someone who is wise, and behave as they would. The close:</p>
+<blockquote><span class="en">And now go, and make interesting mistakes, make amazing mistakes, make glorious and fantastic mistakes. Break rules. Leave the world more interesting for your being here. Make good art.</span><cite>— Neil Gaiman, 2012</cite></blockquote>
+<h2>Below the waterline</h2>
+<p>The speech cites no research; its only evidence is Gaiman's own life. So the iceberg here isn't a paper. It is what each of his claims is attached to, usually narrower or messier than the stage version.</p>
+<p><strong>"Imposter Syndrome" began as a clinical observation about women.</strong> The concept comes from a 1978 paper by Pauline Rose Clance and Suzanne Imes, "The Imposter Phenomenon in High Achieving Women." It rests not on a controlled study but on what two therapists saw over five years of individual therapy, groups and classes with "over 150 highly successful women": PhDs, respected professionals, convinced they had fooled everyone. The paper says "phenomenon," not "syndrome," and a footnote reports that in their clinical experience it occurred "with much less frequency" in men. In 2020 Dominique Bravata and colleagues published the first systematic review: 62 studies, 14,161 participants, reported prevalence anywhere from 9% to 82% depending largely on the scale and cut-off used; of 33 studies comparing the sexes, 16 found higher rates in women and 17 found no difference; and "No published studies evaluated treatments for this condition." It is still not a diagnosis in the psychiatric manuals. Gaiman's version — everyone successful has it, a policeman with a clipboard — is broader than the source literature, and more comforting.</p>
+<p><strong>He later told the story better.</strong> In May 2017 a reader asked him how to deal with impostor feelings, and he told a story: at a gathering of accomplished people, an elderly gentleman told him that looking at everyone who had made amazing things, "I just went where I was sent." Gaiman replied that he had been the first man on the moon. It was Neil Armstrong. <a href="https://journal.neilgaiman.com/2017/05/the-neil-story-with-additional-footnote.html">On his blog</a> he wrote: "Maybe there weren't any grown-ups, only people who had worked hard and also got lucky and were slightly out of their depth." In the same post, his first suggestion was Amy Cuddy's book <em>Presence</em>, which interviews him — the same Cuddy whose "power posing" research, covered in issue 17 of this site, failed to replicate.</p>
+<p><strong>The book behind "never just for the money."</strong> He didn't name it on stage. It was the 1984 Duran Duran biography, written while he was a freelance journalist — in his words, "a piece of journalism I had done for the money." The detail about the first print run selling out before the publisher collapsed comes only from Gaiman himself. But it explains why money sits opposite the mountain in his scheme: the rule came out of a specific loss, not an aesthetic pose.</p>
+<p><strong>"Two out of three" is a survivor's formula.</strong> It has no data, and Gaiman doesn't pretend it does. Note its scope: it is about how people <em>keep</em> working. How he got in, by his own account, was lying, and he admits "You get work however you get work." The formula only covers what happens after the door opens. In the same speech he also said: "Often you will discover that the harder you work, and the more wisely you work, the luckier you get. But there is luck, and it helps." That last sentence tends to get cropped when the speech is shared.</p>
+<h2>What happened next</h2>
+<div class="fate"><p class="verdict">PARTLY HOLDS UP · AS OF 2026-10</p><p>As a way for a maker to live with failure, success and self-doubt, it still stands, and Gaiman left room for luck. But its 2012 optimism about the creative economy was narrowed by platform-era income data, and the popular version of "impostor syndrome" is much broader than the research behind it. The sexual-assault allegations against the speaker from 2024 on (which he denies, and which no court has ruled on) changed how the speech is read, not whether what it says is right.</p></div>
+<p><strong>2012–2013: everywhere.</strong> Days after the speech Gaiman wrote that he was thrilled by how many people had watched and reblogged it; a comic adaptation appeared almost immediately. On May 14, 2013, William Morrow published Chip Kidd's designed edition, the speech and nothing else.</p>
+<p><strong>2015–2023: after the gatekeepers left.</strong> The half about audiences came true; the half about livelihoods didn't. The writer and critic William Deresiewicz attacked the "never a better time to be an artist" story in <em>The Atlantic</em> in 2015 and in <em>The Death of the Artist</em> in 2020. This page has not read the book itself, only Robert Diab's 2020 review in the <em>Los Angeles Review of Books</em>, which relays its figures: of roughly six million books in the US Kindle store, 68% sell fewer than two copies a month; on Spotify, under 4% of some two million artists receive 95% of streams. Primary data is blunter. The Authors Guild's 2023 survey of 5,699 published authors found a 2022 median book income of $10,000 for full-time authors, $20,000 including related work like teaching and talks; counting part-timers, median book income was $2,000. The same survey had one Gaiman-flavoured bright spot: full-time self-published authors active since at least 2018 saw their median rise from $13,700 to $24,000. The gates did open — onto a very steep power law.</p>
+<p><strong>June 2024: the podium disappears.</strong> On May 31 the University of the Arts announced it would close for good on June 7, citing a steadily weakening cash position and falling enrollment; its accreditor withdrew accreditation at the same time. The class of 2012 had been told the old rules were crumbling. Twelve years later, what crumbled was the school that gave them their diplomas.</p>
+<p><strong>2024–2026: the speaker.</strong> In 2024 the Tortoise Media podcast <em>Master</em> aired allegations by five women against Gaiman; in January 2025 a long <em>New York</em> magazine report brought the number to eight, including coerced sex and violent sexual assault. Gaiman denied ever engaging in non-consensual sex. In February 2025 his family's former nanny, Scarlett Pavlovich, sued Gaiman and Palmer in the US; in October 2025 a federal judge in Wisconsin dismissed the case as belonging in New Zealand, and in February 2026 the Massachusetts case was dismissed on the same grounds — both on jurisdiction, <strong>with no ruling on whether the allegations are true</strong>. On February 2, 2026, Gaiman wrote on his blog: "The allegations against me are completely and simply untrue."</p>
+<p>What this means for the speech is not this page's call; it only says which layer it touches. It doesn't make "two out of three" or the mountain advice any more or less correct. It does cost a speech whose only evidence is "I" most of its audience's trust in that "I." NPR's Glen Weldon, in January 2025, wrote down a choice many readers made: revisit the old work he already owns, but give no more time or money to anything new. "Make good art" was written as advice to people in trouble. Today it is just as often cited in a different argument: whether good art can be separated from the person who made it.</p>
+<h2>Sources</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://jamesclear.com/great-speeches/make-good-art-by-neil-gaiman">Neil Gaiman, "Make Good Art," UArts Commencement Address (2012) — James Clear transcription</a></span><span class="d">Source of every Gaiman quote and the speech's structure (a third-party transcription, originally on the now-closed UArts website); quotes were checked line by line against a second transcription at The Singju Post.</span></li>
+<li><span class="t"><a href="https://paulineroseclance.com/pdf/ip_high_achieving_women.pdf">Clance &amp; Imes, "The Imposter Phenomenon in High Achieving Women," Psychotherapy: Theory, Research &amp; Practice (1978)</a></span><span class="d">The original impostor paper: clinical observation of 150+ women, "phenomenon" not "syndrome," the footnote on men.</span></li>
+<li><span class="t"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7174434/">Bravata et al., "Prevalence, Predictors, and Treatment of Impostor Syndrome: a Systematic Review," J Gen Intern Med (2020)</a></span><span class="d">Source for the 62 studies, the 9–82% prevalence range, the 16-vs-17 sex comparison, and the absence of treatment studies.</span></li>
+<li><span class="t"><a href="https://authorsguild.org/news/key-takeaways-from-2023-author-income-survey/">Authors Guild, "Key Takeaways from 2023 Author Income Survey" (2023)</a></span><span class="d">Median author incomes behind "after the gatekeepers left."</span></li>
+<li><span class="t"><a href="https://lareviewofbooks.org/article/the-great-unread-on-william-deresiewiczs-the-death-of-the-artist">Robert Diab, "The Great Unread: On William Deresiewicz's The Death of the Artist," Los Angeles Review of Books (2020)</a></span><span class="d">Source for Deresiewicz's argument and the Kindle and Spotify figures (the book itself was not read for this page).</span></li>
+<li><span class="t"><a href="https://aapnews.aap.com.au/news/author-s-nz-sexual-assault-lawsuits-dismissed-in-us">AAP, "Author's NZ sexual assault lawsuits dismissed in US" (2026)</a></span><span class="d">The filing and dismissal of Pavlovich's suits, the jurisdictional grounds, and Gaiman's side's denial.</span></li>
+</ul>
+</div>
+<footer>Talk Deep Read · one talk, the whole life of one idea · written 2026-10-12</footer>
+</div>
+
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
