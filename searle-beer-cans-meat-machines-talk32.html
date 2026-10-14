@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>John Searle ·《啤酒罐与肉做的机器》— 屋里的人一个中文字都不懂</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="searle-beer-cans-meat-machines-talk32.en.html">English →</a></div>
+<header>
+<div class="kicker">BBC Reith Lectures · 1984</div>
+<h1>屋里的人一个中文字都不懂，答卷却和母语者分不出来</h1>
+<p class="sub">John Searle ·《Beer Cans &amp; Meat Machines（啤酒罐与肉做的机器）》</p>
+<div class="modebar"><button class="on" id="btn-pop">精华版</button><button id="btn-deep">完整版</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>1984 年 11 月的一个晚上，BBC 广播四台的听众听到一位美国哲学家请他们想象：你被锁在一间屋子里，屋里有几筐中文符号，你一个字也不认识。你手里只有一本英文写的规则书，上面写着这样的话：</p>
+<blockquote><span class="en">Take a squiggle-squiggle sign out of basket number one and put it next to a squoggle-squoggle sign from basket number two.</span><span class="zh">从一号筐里拿出一个「弯弯绕绕」的符号，放到二号筐里那个「扭扭歪歪」的符号旁边。</span><cite>— John Searle，Reith 讲座第 2 讲，1984</cite></blockquote>
+<p>门缝里不断塞进新的符号，你照着规则书把另一些符号递出去。屋外的人管塞进来的叫「问题」，管你递出去的叫「答案」。规则写得足够好、你又练得足够熟，你的答案就和母语者的分不出来。但你还是一个中文字都不懂。</p>
+<p>这就是「中文屋」（Chinese Room），讲故事的人是加州大学伯克利分校的哲学家约翰·塞尔（John Searle）。它在 1980 年首次发表，1984 年他把它带上了 BBC 一年一度的 Reith 讲座（Reith Lectures）。这一讲的标题叫《啤酒罐与肉做的机器》：如果「心灵就是程序」，那么用旧啤酒罐搭一台电脑、拿风车供电，只要程序对，它就<strong>必须</strong>有思想和感受。塞尔觉得这荒唐，他要用一个思想实验把它驳倒。</p>
+<p>他的论证核心只有一句：<strong>语法（syntax）不足以产生语义（semantics）</strong>。程序只按符号的形状搬运符号，符号本身不指向任何东西；而人的念头是「关于」什么的——关于堪萨斯城，关于一杯冰啤酒。屋里的你执行了全部程序，仍然不懂；那么任何只靠运行程序的电脑，也不会比你多懂一点。</p>
+<p>要注意他<strong>没说</strong>什么。他说人脑就是一台「肉做的机器」，所以机器当然能思考；一台和人分子对分子相同的人造物也能。他否认的只有一件事：<strong>只靠运行对的程序，就足以有心灵</strong>。电脑模拟暴风雨不会把谁淋湿，模拟理解也不等于理解。</p>
+<p>台上没说的是：1980 年的原始论文比广播谨慎，坦白承认自己并没有证明「人理解英语也不过是更多的符号操作」是错的。到了广播里，论证成了「一个非常简单的逻辑真理」。</p>
+<p><strong>后来怎么样？仍悬而未决。</strong>它大概是图灵测试以来认知科学里被讨论得最多的哲学论证，首发时同刊就附了 27 篇评论，侯世达（Douglas Hofstadter）骂它是「宗教式的谩骂」。然后大语言模型来了。2025 年，一项预注册的三方图灵测试里，GPT-4.5 有 73% 的时候被判断为真人。塞尔假设里那间「答卷与母语者分不出来」的屋子，第一次接近成了实物。可这恰恰<strong>没有</strong>驳倒他——他的论证从一开始就是说，再好的表现也证明不了理解。2025 年塞尔去世，争论还在原地：我们仍然没有一个独立于行为、大家都认的「理解」检测方法。没有它，这道题既判不了他赢，也判不了他输。</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>演讲</b> Beer Cans &amp; Meat Machines（Reith Lectures 1984《Minds, Brains and Science》第 2 讲）· <b>场合</b> BBC Radio 4 · 1984-11-14 播出 · <b>篇幅</b> 讲稿约 4,500 英文词 · <b>全文</b> <a href="https://downloads.bbc.co.uk/rmhttp/radio4/transcripts/1984_reith2.pdf">BBC 官方讲稿 PDF</a></div>
+<h2>那一刻</h2>
+<p>在讲中文屋之前，塞尔先给听众念了一串 AI 先驱的原话。卡内基梅隆的赫伯特·西蒙（Herbert Simon）说我们已经有了能真正思考的机器。塞尔接了一句：</p>
+<blockquote><span class="en">Well, fancy that! Philosophers have been worried for centuries about whether or not a machine could think, and now we discover that they’ve already got such machines at Carnegie-Mellon.</span><span class="zh">哎呀，真想不到！哲学家为机器能不能思考操心了好几百年，现在我们才发现，卡内基梅隆早就有这种机器了。</span><cite>— John Searle，1984</cite></blockquote>
+<p>然后是他「一生最爱」的那条。「人工智能」一词的发明者约翰·麦卡锡（John McCarthy）说，连恒温器这么简单的机器也可以说有信念。塞尔当面问过他：你的恒温器有什么信念？</p>
+<blockquote><span class="en">‘My thermostat has three beliefs—it believes it’s too hot in here, it’s too cold in here and it’s just right in here.’</span><span class="zh">「我的恒温器有三个信念：它相信这里太热了，这里太冷了，这里刚刚好。」</span><cite>— 塞尔转述 McCarthy，1984</cite></blockquote>
+<p>这是一位哲学家在全国广播里的开场姿态：先让你笑，再告诉你，他喜欢这些说法只有一个原因——它们说得够清楚，所以能被「简单而决定性地驳倒」。</p>
+<h2>讲的人，和那一年</h2>
+<p>约翰·塞尔（1932–2025）是加州大学伯克利分校的哲学家。开场那段恒温器的对话说明，他和他要批评的那些 AI 先驱是当面交过手的。他在 1980 年那篇原始论文里自我介绍得很诚实：他不懂中文，甚至没把握能把中文和日文、或者一堆无意义的涂画分辨开。整个思想实验就压在这个「不懂」上。</p>
+<p>1984 年他受邀主讲 BBC 的 Reith Lectures，总题《心灵、大脑与科学》（Minds, Brains and Science），六讲，从 11 月 7 日到 12 月 12 日每周三在 Radio 4 播出。第一讲给出他对身心问题的回答：心理过程由大脑引起、又实现在大脑之中。第二讲矛头对准当时的主流：心灵之于大脑，就像程序之于硬件。</p>
+<p>那一年，中文屋已经四岁。它在 1980 年刊于《行为与脑科学》（The Behavioral and Brain Sciences），同刊附了 27 位学者的评论和他的答辩，早已是认知科学里最吵的话题之一。当年的靶子很具体：耶鲁大学罗杰·尚克（Roger Schank）团队的程序，能读一则「餐馆里点了汉堡」的小故事，回答故事里没明说的问题。到 1984 年，塞尔面对的不再是同行，而是收音机前的普通听众，于是他把论证磨成了能写在黑板上的四条公理。</p>
+<h2>术语表 · Glossary</h2>
+<div class="glossary"><ul>
+<li><b>语法 / 句法（syntax）</b>：只看符号的形状和排列规则，不管它代表什么。</li>
+<li><b>语义（semantics）</b>：符号的意义——它「关于」什么、指向世界上的什么。</li>
+<li><b>强人工智能（strong AI）</b>：塞尔的命名。主张装对程序的电脑<strong>就是</strong>心灵，真的在理解。与之相对的「弱 AI」只把电脑当研究心智的工具，塞尔对它没意见。</li>
+<li><b>图灵测试（Turing Test）</b>：图灵 1950 年提出，如果机器在文字对话中让人分不出它是机器，就该承认它有智能。</li>
+</ul></div>
+<h2>这场演讲，讲透</h2>
+<p>他先把对手的立场推到最尽头，再给它起名字。按「强 AI」的看法，大脑只是无数种能跑「智能程序」的硬件之一，生物性无关紧要。所以：</p>
+<blockquote><span class="en">if you made a computer out of old beer cans powered by windmills, if it had the right program. It would have to have a mind.</span><span class="zh">如果你用旧啤酒罐做一台电脑，用风车供电，只要它有对的程序，它就必须有心灵。</span><cite>— John Searle，1984</cite></blockquote>
+<p>不是「可能有」，而是「必须有」：按这种看法，有思想和感受无非就是运行了对的程序。</p>
+<p>接着他宣布，他的反驳和技术发展到哪一步<strong>毫无关系</strong>，只和数字电脑的定义有关。电脑的运算可以纯形式地规定：状态加符号，决定下一步擦掉还是打印。这些 0 和 1 没有意义，「甚至不代表数字」。正是这一点让电脑强大——同一个程序能跑在任何硬件上。但也正是这一点，对「心灵就是程序」是致命的：我想着堪萨斯城、想喝一杯冰啤酒、想利率会不会降，这些念头都有内容，而符号串本身不可能有内容。</p>
+<p>然后才是屋子。他先把电脑那一侧讲清：程序员写了个程序，电脑对中文问题的回答和母语者一样好。它是不是「字面意义上」懂中文？再让你走进屋子，替电脑执行程序。你的答卷无可挑剔，你却学不会任何中文。结论他说得很干脆：</p>
+<blockquote><span class="en">by virtue of implementing a formal computer program, you behave exactly as if you understood Chinese, but all the same, you don’t understand a word of Chinese.</span><span class="zh">凭着执行一个形式化的电脑程序，你的表现和懂中文一模一样，但你仍然一个中文字也不懂。</span><cite>— John Searle，1984</cite></blockquote>
+<p>你不懂，电脑就不会懂，因为电脑「仅凭运行程序」拥有的东西你全都有。他再加一个对照：同一间屋里也有人用英文问你问题。两边答卷从屋外看一样好，从屋里看天差地别——英文你懂，中文你只是在搬符号。</p>
+<p>然后他处理两个常见反驳。「系统反驳」：你只是中央处理器，懂中文的是屋子、筐、规则书加你的整个系统。他答：系统也没法从语法走到语义。「机器人反驳」：把程序装进能看能走的机器人。他答：那你就坐在机器人的颅腔里，机器人拿起汉堡，传进来的仍只是一个符号。</p>
+<p>转折在后半段。他问：机器能思考吗？当然能，我们自己就是「肉做的机器」（meat machine）。人造物能思考吗？一台分子对分子复制人的机器，原则上也能。数字电脑能思考吗？在最平凡的意义上，什么都能被描述为在执行程序，包括桌上那支笔：</p>
+<blockquote><span class="en">It just happens to have a very boring computer program. The program says: ‘Stay there.’</span><span class="zh">只不过它的程序非常无聊。程序写着：「待着别动。」</span><cite>— John Searle，1984</cite></blockquote>
+<p>剥掉这些平凡的答案，真正的问题只剩一个：执行对的程序，是否<strong>足以构成</strong>思考？他的答案是不。模拟不是复制：</p>
+<blockquote><span class="en">no one supposes that a computer simulation of a storm will leave us all wet, or a computer simulation of a fire is likely to burn the house down.</span><span class="zh">没有人会以为暴风雨的电脑模拟会把我们都淋湿，或者火灾的电脑模拟会把房子烧掉。</span><cite>— John Searle，1984</cite></blockquote>
+<p>那为什么还有人信？他给了两个猜测：一是残留的行为主义，表现得像懂就算懂；二是一个反讽：AI 文献满是对二元论的声讨，强 AI 却把心灵当成能脱离生物、纯形式规定的东西，这本身就是「一种残留的二元论」（a kind of residual dualism）。</p>
+<p>最后他把论证写成四条公理：大脑引起心灵；语法不足以产生语义；程序完全由语法定义；心灵有语义内容。由此推出四个结论，最狠的是第一条：没有任何程序本身足以让一个系统拥有心灵，所以「只靠设计程序来造心灵」的计划「从一开始就注定失败」。全讲收在一句：心理状态是生物现象，和生长、繁殖、分泌胆汁、消化一样。</p>
+<figure>
+<svg aria-label="塞尔 1984 年讲座中的四条公理与四个结论的推导关系" role="img" viewBox="0 0 760 300">
+<g font-family="-apple-system,'Noto Sans SC',sans-serif" font-size="13">
+<rect x="20" y="20" width="160" height="56" rx="8" fill="rgba(94,230,168,0.08)" stroke="#5ee6a8"/>
+<text x="100" y="44" text-anchor="middle" fill="#5ee6a8">公理 1</text><text x="100" y="64" text-anchor="middle" fill="#b6c2cf">大脑引起心灵</text>
+<rect x="205" y="20" width="160" height="56" rx="8" fill="rgba(94,230,168,0.08)" stroke="#5ee6a8"/>
+<text x="285" y="44" text-anchor="middle" fill="#5ee6a8">公理 2</text><text x="285" y="64" text-anchor="middle" fill="#b6c2cf">语法不足以产生语义</text>
+<rect x="390" y="20" width="160" height="56" rx="8" fill="rgba(94,230,168,0.08)" stroke="#5ee6a8"/>
+<text x="470" y="44" text-anchor="middle" fill="#5ee6a8">公理 3</text><text x="470" y="64" text-anchor="middle" fill="#b6c2cf">程序完全由语法定义</text>
+<rect x="575" y="20" width="160" height="56" rx="8" fill="rgba(94,230,168,0.08)" stroke="#5ee6a8"/>
+<text x="655" y="44" text-anchor="middle" fill="#5ee6a8">公理 4</text><text x="655" y="64" text-anchor="middle" fill="#b6c2cf">心灵有语义内容</text>
+<rect x="390" y="130" width="345" height="50" rx="8" fill="rgba(232,212,107,0.08)" stroke="#e8d46b"/>
+<text x="562" y="160" text-anchor="middle" fill="#e8d46b">结论 1：程序本身不足以构成心灵</text>
+<rect x="20" y="130" width="300" height="50" rx="8" fill="rgba(232,212,107,0.08)" stroke="#e8d46b"/>
+<text x="170" y="160" text-anchor="middle" fill="#e8d46b">结论 3：别的造心之物须有同等因果力</text>
+<rect x="390" y="230" width="345" height="50" rx="8" fill="rgba(232,212,107,0.08)" stroke="#e8d46b"/>
+<text x="562" y="260" text-anchor="middle" fill="#e8d46b">结论 2：大脑造心灵不只靠运行程序</text>
+<rect x="20" y="230" width="300" height="50" rx="8" fill="rgba(232,212,107,0.08)" stroke="#e8d46b"/>
+<text x="170" y="260" text-anchor="middle" fill="#e8d46b">结论 4：人造心灵须有等同大脑的能力</text>
+</g>
+<g stroke="#7d8794" stroke-width="1.4" fill="none">
+<path d="M285 76 L470 130"/><path d="M470 76 L520 130"/><path d="M655 76 L620 130"/>
+<path d="M120 76 L120 130"/>
+<path d="M60 76 L60 104 L355 104 L355 255 L390 255"/><path d="M562 180 L562 230"/>
+<path d="M170 180 L170 230"/><path d="M390 160 L300 230"/>
+</g>
+</svg>
+<figcaption>讲稿里的推导：结论 1 由公理 2、3、4 推出；整座楼的承重墙是公理 2，而它的支撑正是中文屋本身</figcaption>
+</figure>
+<h2>冰山下面</h2>
+<p><strong>广播版比论文版自信。</strong>1980 年的原始论文给强 AI 的两条主张分开判：第一条「编好程序的电脑真的理解故事」，他说中文屋显然否定了它；第二条「程序能解释人类的理解」，他写得小心得多：</p>
+<blockquote><span class="en">I have not demonstrated that this claim is false, but it would certainly appear an incredible claim in the example.</span><span class="zh">我并没有证明这个说法是错的，但在这个例子里，它看起来确实令人难以置信。</span><cite>— John Searle，《Minds, brains, and programs》，1980</cite></blockquote>
+<p>到了 1984 年的广播里，各种反驳「全都不够格」，而且「必然」不够格，因为论证立在「一个非常简单的逻辑真理」之上。四条公理的推导，他说用的是「所有（或几乎所有）争论者都同意」的前提。可是公理 2「语法不足以产生语义」恰恰是对手最不同意的那一条。斯坦福哲学百科（SEP）的条目点得很直白：支撑这条前提的，就是中文屋这个思想实验本身。广播里它被叫作「概念真理」，实际上它是全场争议的焦点。</p>
+<p><strong>靶子原本小得多。</strong>论文点名的是尚克的「脚本」程序：一个人点了汉堡，汉堡烤成了炭，他气冲冲地走了，没付钱也没给小费——问「他吃了汉堡吗」，程序答「没有」。SEP 的描述是，这类程序的数据库是手工搭的，产出不过是关于餐馆的一两句话。广播版把「尚克」换成了「任何数字电脑、任何程序、任何技术阶段」，打击面一下子从一个具体程序扩到了所有未来。</p>
+<p><strong>反驳的「出处」写在论文里。</strong>论文给每条反驳标了他听到的地方：系统反驳（伯克利）、机器人反驳（耶鲁）、大脑模拟反驳（伯克利和 MIT）。对系统反驳，论文比广播多走一步：让那人把规则和数据全<strong>背下来</strong>，他就是整个系统了，仍然不懂。</p>
+<p><strong>论文里那句被忘掉的话。</strong>摘要写着：按他的论证，「只有机器能思考」，而且只有大脑、以及内部因果能力与大脑相当的机器。大众记住的是「塞尔证明了 AI 永远不能理解」，他说的是更窄的「光靠程序不够」。</p>
+<p><strong>同刊的评论有多凶。</strong>侯世达的评论开头就是：</p>
+<blockquote><span class="en">This religious diatribe against AI, masquerading as a serious scientific argument, is one of the wrongest, most infuriating articles I have ever read in my life.</span><span class="zh">这篇伪装成严肃科学论证、针对 AI 的宗教式谩骂，是我这辈子读过最错误、最让人恼火的文章之一。</span><cite>— Douglas Hofstadter，BBS 评论，1980</cite></blockquote>
+<p>丹尼特（Daniel Dennett）的评论更有后劲。他说中文屋是一台「直觉泵」（intuition pump）：不是发现的引擎，而是说服的工具，塞尔靠的是「误导性呈现的思想实验」产生的有利直觉。他还指出，只能读写文字的程序——他管它们叫「卧床程序」（bedridden programs）——在 AI 圈里早就被认为只是对真实理解任务的严重截断，拿它开刀是「廉价的一击」（cheap shot）。后来丹尼特和平克又补了速度这一刀：屋里的人慢得离谱，直觉在这个速度下失灵，就像把电磁波放慢到看不见，再宣布它不是光。哲学家莫德林（Tim Maudlin）不同意：塞尔谈的是理解，不是反应快。</p>
+<h2>后来的命运</h2>
+<div class="fate"><p class="verdict">仍悬而未决 · 截至 2026-10</p><p>论证的靶子——手写规则的符号 AI 程序「真的理解」——今天几乎没人再辩护。但它的核心主张「只靠语法得不到语义」既没被证明，也没被驳倒；大语言模型让中文屋的前提接近成真，却没有带来一个能裁决「理解」的方法。</p></div>
+<p><strong>1980—1990 年代：反驳的产业。</strong>据 SEP，1991 年计算机科学家帕特·海斯（Pat Hayes）把认知科学定义为「持续驳斥塞尔论证的研究计划」；到 1990 年代中期，讨论它的文章已超过一百篇。1990 年 1 月《科学美国人》让塞尔和丘奇兰夫妇同台。丘奇兰夫妇同意屋里的系统不懂中文，却认为论证利用了我们对认知的无知，于是设想一间「发光的屋子」（Luminous Room）：有人挥动磁铁看不到光，就宣布「光是电磁波」错了。他们主张大脑是联结主义（connectionist）网络，不是按规则搬符号——「我脑子里没有一个神经元懂英语，可我整个大脑懂。」</p>
+<p><strong>2020 年：继承者换了论证。</strong>语言学家本德（Emily M. Bender）和科勒（Alexander Koller）在 ACL 2020 发表《攀向自然语言理解》，主张「只用形式训练的系统，先天就无法学到意义」。他们引了中文屋，再换上自己的思想实验：一只「超级聪明的深海章鱼」窃听两座孤岛间的电缆，学会了模仿对话；可当岛上的人被熊追赶、抓着棍子求救，它不知道这些词指什么。差别在于：他们认为意义来自语言与世界和说话者意图的连接，接地（grounding）的系统原则上有希望——这接近塞尔在讲座里驳回的「机器人反驳」。最响亮的继承者，比塞尔退了一步。</p>
+<p><strong>2022 年：从另一头反驳。</strong>伯克利的皮安塔多西（Steven T. Piantadosi）和 DeepMind 的希尔（Felix Hill）回应章鱼：大语言模型「很可能捕捉到了意义的重要方面」，因为按概念角色语义学（conceptual role semantics），意义来自内部表征之间的关系，不一定来自对外部对象的指称；判断要看内部状态，不能只看架构和训练目标。换句话说，公理 2 的「显然」依赖于某一种意义理论。</p>
+<p><strong>2024 年：百科全书的冷静一笔。</strong>SEP 当年 10 月的修订版专谈大语言模型，结论是：如果一个在所有场合都像人一样用语言的系统，仍被思想实验判为「不真懂」，那「真懂」就成了检测不到、没有因果作用、无关紧要的东西。</p>
+<p><strong>2025 年：屋子造出来了。</strong>3 月，认知科学家琼斯（Cameron R. Jones）和伯根（Benjamin K. Bergen）报告了两项预注册的三方图灵测试：受试者同时与一个真人和一个 AI 各聊 5 分钟，然后判断谁是人。被要求扮演人格的 GPT-4.5 有 73% 的时候被判为人，比真人被选中的比例还高；上世纪 60 年代的聊天程序 ELIZA 只有 23%。作者称这是第一份「任何人造系统通过标准三方图灵测试」的实证。中文屋的前提——「答卷与母语者分不出来」——第一次在短对话里接近实现。同年，塞尔去世。</p>
+<p>所以账是这样算的：塞尔 1984 年就说过「毫无疑问」模拟会越做越好，并声明这无关紧要。通过测试驳不倒他，因为他本来不接受行为作证据；也证实不了他，因为行为之外的检测方法他给不出，反方也给不出。分歧已经移到更具体的问题上：意义是否必须接地于感知和行动？从数据里学出来的网络，内部状态算不算有内容？都还开着。</p>
+<h2>出处</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://downloads.bbc.co.uk/rmhttp/radio4/transcripts/1984_reith2.pdf">John Searle — Reith Lectures 1984, Lecture 2: Beer Cans &amp; Meat Machines（BBC 官方讲稿）</a></span><span class="d">本页所有讲座引语、四条公理和四个结论的来源。</span></li>
+<li><span class="t"><a href="https://home.csulb.edu/~cwallis/382/readings/482/searle.minds.brains.programs.bbs.1980.pdf">Searle (1980). Minds, brains, and programs. Behavioral and Brain Sciences 3(3)，含同刊评论</a></span><span class="d">中文屋的原始论文：尚克程序、反驳的出处、「我并没有证明」那句，以及侯世达和丹尼特的评论原文。</span></li>
+<li><span class="t"><a href="https://plato.stanford.edu/entries/chinese-room/">Cole, The Chinese Room Argument. Stanford Encyclopedia of Philosophy（2024 修订）</a></span><span class="d">独立于塞尔的综述：27 篇评论、海斯与平克的说法、丘奇兰夫妇的「发光的屋子」，以及大语言模型一节。</span></li>
+<li><span class="t"><a href="https://aclanthology.org/2020.acl-main.463.pdf">Bender &amp; Koller (2020). Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data. ACL</a></span><span class="d">章鱼思想实验，以及继承者与塞尔在「接地」问题上的分歧。</span></li>
+<li><span class="t"><a href="https://arxiv.org/abs/2208.02957">Piantadosi &amp; Hill (2022). Meaning without reference in large language models</a></span><span class="d">从概念角色语义学出发，反驳「只有形式就没有意义」。</span></li>
+<li><span class="t"><a href="https://arxiv.org/abs/2503.23674">Jones &amp; Bergen (2025). Large Language Models Pass the Turing Test</a></span><span class="d">GPT-4.5 被判为人 73%、ELIZA 23% 的数据来源。</span></li>
+</ul>
+</div>
+<footer>演讲精读 · 一场演讲，一个想法的来龙去脉 · 写于 2026-10-14</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>

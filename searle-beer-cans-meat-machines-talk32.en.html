@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>John Searle · Beer Cans &amp; Meat Machines — The man in the room who understands no Chinese</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="searle-beer-cans-meat-machines-talk32.html">中文 →</a></div>
+<header>
+<div class="kicker">BBC Reith Lectures · 1984</div>
+<h1>The Man in the Room Understands No Chinese — and His Answers Pass for a Native Speaker's</h1>
+<p class="sub">John Searle · Beer Cans &amp; Meat Machines</p>
+<div class="modebar"><button class="on" id="btn-pop">Short</button><button id="btn-deep">Full</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>One evening in November 1984, listeners to BBC Radio 4 heard an American philosopher ask them to imagine being locked in a room. The room holds baskets full of Chinese symbols, and you cannot read a word of Chinese. All you have is a rule-book written in English, with instructions like this:</p>
+<blockquote><span class="en">Take a squiggle-squiggle sign out of basket number one and put it next to a squoggle-squoggle sign from basket number two.</span><cite>— John Searle, Reith Lecture 2, 1984</cite></blockquote>
+<p>More symbols are slipped in under the door; you follow the rules and pass other symbols back out. The people outside call what comes in "questions" and what goes out "answers". If the rules are good enough and you get fast enough at following them, your answers become indistinguishable from a native speaker's. And you still don't understand a word.</p>
+<p>That is the Chinese Room, and the man telling the story was John Searle, a philosopher at the University of California, Berkeley. He first published it in 1980; in 1984 he carried it into the BBC's annual Reith Lectures. The lecture was called "Beer Cans &amp; Meat Machines", after the view he set out to demolish: if the mind is just a program, then a computer built from old beer cans and powered by windmills would not merely <em>possibly</em> have thoughts and feelings — with the right program it <strong>must</strong> have them.</p>
+<p>His case comes down to one sentence: <strong>syntax is not sufficient for semantics</strong>. A program shuffles symbols by their shapes; the symbols themselves are not about anything. Human thoughts are about things — Kansas City, a cold beer. You in the room ran the whole program and understood nothing, so no computer that merely runs a program understands any more than you did.</p>
+<p>Notice what he did <strong>not</strong> say. The brain is a "meat machine", he said, so of course machines can think; an artefact built molecule for molecule like a human could too. He denied exactly one thing: that <strong>running the right program is by itself enough for a mind</strong>. A computer simulation of a storm leaves nobody wet, and a simulation of understanding is not understanding.</p>
+<p>What the broadcast left out: the original 1980 paper was more careful. There Searle admitted he had not demonstrated that human understanding of English isn't just more symbol manipulation. By 1984 the argument had become "a very simple logical truth".</p>
+<p><strong>What happened next? Still unresolved.</strong> It is probably the most widely discussed philosophical argument in cognitive science since the Turing Test; the journal that first printed it ran 27 commentaries alongside, and Douglas Hofstadter called it a "religious diatribe". Then came large language models. In 2025, in a pre-registered three-party Turing test, GPT-4.5 was judged to be the human 73% of the time. The room Searle imagined — answers indistinguishable from a native speaker's — came close to existing. Yet that did <strong>not</strong> refute him: his argument said from the start that no performance, however good, proves understanding. Searle died in 2025 with the dispute where he left it. We still have no agreed test for understanding that is independent of behaviour, and without one the question can be scored neither as his win nor as his loss.</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>Talk</b> Beer Cans &amp; Meat Machines (Reith Lectures 1984, <i>Minds, Brains and Science</i>, Lecture 2) · <b>Venue</b> BBC Radio 4 · broadcast 1984-11-14 · <b>Length</b> script of about 4,500 words · <b>Full text</b> <a href="https://downloads.bbc.co.uk/rmhttp/radio4/transcripts/1984_reith2.pdf">BBC official transcript (PDF)</a></div>
+<h2>The moment</h2>
+<p>Before the Chinese Room, Searle read his listeners a few quotations from the founders of AI. Herbert Simon of Carnegie-Mellon says we already have machines that can literally think. Searle's reply:</p>
+<blockquote><span class="en">Well, fancy that! Philosophers have been worried for centuries about whether or not a machine could think, and now we discover that they’ve already got such machines at Carnegie-Mellon.</span><cite>— John Searle, 1984</cite></blockquote>
+<p>Then his "all-time favourite". John McCarthy, who coined the term "artificial intelligence", held that even a thermostat can be said to have beliefs. Searle once asked him which beliefs his thermostat had:</p>
+<blockquote><span class="en">‘My thermostat has three beliefs—it believes it’s too hot in here, it’s too cold in here and it’s just right in here.’</span><cite>— McCarthy, as quoted by Searle, 1984</cite></blockquote>
+<p>That was the opening posture on national radio: get a laugh first, then explain that he liked these claims for one reason only — they were clear enough to be "simply and decisively refuted".</p>
+<h2>The speaker, and the year</h2>
+<p>John Searle (1932–2025) was a philosopher at UC Berkeley. The thermostat exchange tells you he had argued with the AI pioneers in person, not just in print. In the 1980 paper he was candid about his credentials for the experiment: he knows no Chinese and isn't even confident he could tell Chinese writing apart from Japanese or from meaningless squiggles. The whole thought experiment rests on that ignorance.</p>
+<p>In 1984 he gave the BBC Reith Lectures under the title <i>Minds, Brains and Science</i>: six lectures, broadcast on Radio 4 each Wednesday from 7 November to 12 December. The first offered his answer to the mind–body problem: mental processes are caused by the brain and realised in it. The second took aim at the reigning view: the mind is to the brain as the program is to the computer hardware.</p>
+<p>By then the Chinese Room was four years old. It had appeared in 1980 in <i>The Behavioral and Brain Sciences</i>, printed together with 27 commentaries and Searle's replies, and was already one of the loudest fights in cognitive science. The original target was concrete: programs from Roger Schank's group at Yale that could read a short story about ordering a hamburger in a restaurant and answer questions the story never spelled out. In 1984 the audience was no longer his peers but people at home with the radio on, so he boiled the argument down to four axioms you could write on a blackboard.</p>
+<h2>Glossary</h2>
+<div class="glossary"><ul>
+<li><b>Syntax</b>: the shapes of symbols and the rules for arranging them, regardless of what they stand for.</li>
+<li><b>Semantics</b>: what symbols mean — what they are about, what in the world they point to.</li>
+<li><b>Strong AI</b>: Searle's label for the claim that a suitably programmed computer <em>is</em> a mind and literally understands. "Weak AI" treats the computer as a tool for studying the mind; Searle had no quarrel with it.</li>
+<li><b>Turing Test</b>: Alan Turing's 1950 proposal that if a machine can pass for human in written conversation, we should grant it intelligence.</li>
+</ul></div>
+<h2>The talk, all the way through</h2>
+<p>He starts by pushing the opposing view to its limit and naming it. On "strong AI", the brain is just one of indefinitely many kinds of hardware that could run the programs of intelligence; biology is beside the point. Hence:</p>
+<blockquote><span class="en">if you made a computer out of old beer cans powered by windmills, if it had the right program. It would have to have a mind.</span><cite>— John Searle, 1984</cite></blockquote>
+<p>Not "might" but "must": on this view, having thoughts and feelings just is running the right program.</p>
+<p>Next he announces that his refutation has <strong>nothing to do</strong> with how far technology has come; it follows from what a digital computer is. A computer's operations are specified purely formally — a state plus a symbol on the tape determines whether to erase, print, or move. The zeros and ones have no meaning; "they don’t even stand for numbers". That is what makes computers powerful: one program runs on any hardware. And it is fatal to the idea that the mind is a program. When I think about Kansas City, or want a cold beer, or wonder whether interest rates will fall, my thoughts have content, and strings of symbols by themselves can have none.</p>
+<p>Only then does the room appear. First the computer's side: programmers have written a program whose answers to Chinese questions are as good as a native speaker's. Does the computer literally understand Chinese? Then you step into the room and run the program yourself. Your answers are flawless and you learn no Chinese. His conclusion is blunt:</p>
+<blockquote><span class="en">by virtue of implementing a formal computer program, you behave exactly as if you understood Chinese, but all the same, you don’t understand a word of Chinese.</span><cite>— John Searle, 1984</cite></blockquote>
+<p>If you don't understand, neither does the computer, because a computer running a program has nothing you lack. He adds a contrast: in the same room, someone also asks you questions in English. From outside, both sets of answers look equally good; from inside they are worlds apart — the English you understand, the Chinese you only shuffle.</p>
+<p>He then takes on two standard replies. The Systems Reply: you are only the central processing unit; the whole system of room, baskets, rule-books and you understands Chinese. His answer: the system has no way to get from syntax to semantics either. The Robot Reply: put the program in a robot that can see and move. His answer: then you are sitting in the robot's skull; when the robot picks up a hamburger, what reaches you is still only a symbol.</p>
+<p>The turn comes in the second half. Can a machine think? Of course — we are "meat machines". Can an artefact think? One that copied a human molecule for molecule could, in principle. Can a digital computer think? In the trivial sense, anything can be described as running a program, including the pen on his desk:</p>
+<blockquote><span class="en">It just happens to have a very boring computer program. The program says: ‘Stay there.’</span><cite>— John Searle, 1984</cite></blockquote>
+<p>Strip away the trivial answers and one real question remains: is running the right program sufficient for, or constitutive of, thinking? No. Simulation is not duplication:</p>
+<blockquote><span class="en">no one supposes that a computer simulation of a storm will leave us all wet, or a computer simulation of a fire is likely to burn the house down.</span><cite>— John Searle, 1984</cite></blockquote>
+<p>So why did anyone believe otherwise? He offers two guesses. One is leftover behaviourism: act as if you understand and you understand. The other is an irony: the AI literature is full of denunciations of dualism, yet strong AI treats the mind as something purely formal, detachable from biology — "a kind of residual dualism".</p>
+<p>He closes by writing the argument as four axioms: brains cause minds; syntax is not sufficient for semantics; programs are defined entirely by their syntax; minds have semantic content. Four conclusions follow, the sharpest being the first: no program by itself is enough to give a system a mind, so the project of creating minds solely by designing programs is "doomed from the start". The last line: mental states are biological phenomena, alongside growth, reproduction, the secretion of bile and digestion.</p>
+<figure>
+<svg aria-label="How Searle's four axioms yield his four conclusions in the 1984 lecture" role="img" viewBox="0 0 760 300">
+<g font-family="-apple-system,'Helvetica Neue',sans-serif" font-size="13">
+<rect x="20" y="20" width="160" height="56" rx="8" fill="rgba(94,230,168,0.08)" stroke="#5ee6a8"/>
+<text x="100" y="44" text-anchor="middle" fill="#5ee6a8">Axiom 1</text><text x="100" y="64" text-anchor="middle" fill="#b6c2cf">Brains cause minds</text>
+<rect x="205" y="20" width="160" height="56" rx="8" fill="rgba(94,230,168,0.08)" stroke="#5ee6a8"/>
+<text x="285" y="44" text-anchor="middle" fill="#5ee6a8">Axiom 2</text><text x="285" y="64" text-anchor="middle" fill="#b6c2cf">Syntax ≠ semantics</text>
+<rect x="390" y="20" width="160" height="56" rx="8" fill="rgba(94,230,168,0.08)" stroke="#5ee6a8"/>
+<text x="470" y="44" text-anchor="middle" fill="#5ee6a8">Axiom 3</text><text x="470" y="64" text-anchor="middle" fill="#b6c2cf">Programs are syntax</text>
+<rect x="575" y="20" width="160" height="56" rx="8" fill="rgba(94,230,168,0.08)" stroke="#5ee6a8"/>
+<text x="655" y="44" text-anchor="middle" fill="#5ee6a8">Axiom 4</text><text x="655" y="64" text-anchor="middle" fill="#b6c2cf">Minds have semantics</text>
+<rect x="390" y="130" width="345" height="50" rx="8" fill="rgba(232,212,107,0.08)" stroke="#e8d46b"/>
+<text x="562" y="160" text-anchor="middle" fill="#e8d46b">C1: programs alone aren't minds</text>
+<rect x="20" y="130" width="300" height="50" rx="8" fill="rgba(232,212,107,0.08)" stroke="#e8d46b"/>
+<text x="170" y="160" text-anchor="middle" fill="#e8d46b">C3: any mind-maker needs equal powers</text>
+<rect x="390" y="230" width="345" height="50" rx="8" fill="rgba(232,212,107,0.08)" stroke="#e8d46b"/>
+<text x="562" y="260" text-anchor="middle" fill="#e8d46b">C2: brains don't make minds just by computing</text>
+<rect x="20" y="230" width="300" height="50" rx="8" fill="rgba(232,212,107,0.08)" stroke="#e8d46b"/>
+<text x="170" y="260" text-anchor="middle" fill="#e8d46b">C4: artificial minds need brain powers</text>
+</g>
+<g stroke="#7d8794" stroke-width="1.4" fill="none">
+<path d="M285 76 L470 130"/><path d="M470 76 L520 130"/><path d="M655 76 L620 130"/>
+<path d="M120 76 L120 130"/>
+<path d="M60 76 L60 104 L355 104 L355 255 L390 255"/><path d="M562 180 L562 230"/>
+<path d="M170 180 L170 230"/><path d="M390 160 L300 230"/>
+</g>
+</svg>
+<figcaption>The derivation in the script: C1 follows from axioms 2–4. The load-bearing wall is axiom 2 — and what holds it up is the Chinese Room itself.</figcaption>
+</figure>
+<h2>Below the waterline</h2>
+<p><strong>The broadcast is more confident than the paper.</strong> The 1980 paper judged strong AI's two claims separately. The first — that the programmed computer really understands the stories — he said the Chinese Room plainly refutes. The second — that the program explains human understanding — he handled far more cautiously:</p>
+<blockquote><span class="en">I have not demonstrated that this claim is false, but it would certainly appear an incredible claim in the example.</span><cite>— John Searle, "Minds, brains, and programs", 1980</cite></blockquote>
+<p>On the radio in 1984, the replies are "all inadequate", and necessarily so, because the argument rests on "a very simple logical truth". The four-axiom derivation, he said, used premises "agreed to by all (or nearly all) of the disputants". But axiom 2, syntax is not sufficient for semantics, is precisely the one his opponents rejected. The Stanford Encyclopedia of Philosophy entry puts it plainly: what supports that premise is the Chinese Room thought experiment itself. On air it was called a conceptual truth; in reality it was the whole fight.</p>
+<p><strong>The original target was much smaller.</strong> The paper names Schank's "script" programs: a man orders a hamburger, it arrives burned to a crisp, he storms out without paying or tipping — asked "Did the man eat the hamburger?", the program answers no. As the SEP describes them, such programs ran on hand-built databases and produced a sentence or two about restaurants. The broadcast swapped "Schank" for any digital computer, any program, any stage of technology, widening the target from one specific program to every future one.</p>
+<p><strong>The paper records where the objections came from.</strong> Each reply is tagged with where he heard it: the Systems Reply (Berkeley), the Robot Reply (Yale), the Brain Simulator Reply (Berkeley and M.I.T.). On the Systems Reply the paper goes one step further than the broadcast: let the man <strong>memorise</strong> the rules and the data, so that he is the whole system, and he still understands nothing.</p>
+<p><strong>The forgotten line in the abstract.</strong> On his argument, the abstract says, "only a machine could think", and only very special machines: brains, and machines with internal causal powers equivalent to those of brains. The popular memory is "Searle proved AI can never understand"; what he said was narrower — programs alone are not enough.</p>
+<p><strong>How fierce the commentaries were.</strong> Hofstadter's begins:</p>
+<blockquote><span class="en">This religious diatribe against AI, masquerading as a serious scientific argument, is one of the wrongest, most infuriating articles I have ever read in my life.</span><cite>— Douglas Hofstadter, BBS commentary, 1980</cite></blockquote>
+<p>Daniel Dennett's had the longer reach. He called the Chinese Room an "intuition pump": not an engine of discovery but a persuader, trading on "favorable intuitions generated by misleadingly presented thought experiments". He also noted that text-only programs — he called them "bedridden programs" — had long been recognised in AI as a severe truncation of real understanding, so picking on them was "a cheap shot". Later Dennett and Steven Pinker pressed the point about speed: the man in the room is absurdly slow, and our intuitions fail at that pace, much as slowing electromagnetic waves until we can't see them wouldn't show they aren't light. The philosopher Tim Maudlin disagreed: Searle's claim is about understanding, not quick-wittedness.</p>
+<h2>What happened next</h2>
+<div class="fate"><p class="verdict">STILL UNRESOLVED · AS OF 2026-10</p><p>The argument's original target — hand-written symbolic programs that "really understand" — has almost no defenders left. But its core claim, that syntax alone cannot yield semantics, has been neither proved nor refuted. Large language models have made the room's premise nearly real without supplying any way to settle what "understanding" is.</p></div>
+<p><strong>1980s–1990s: a rebuttal industry.</strong> According to the SEP, in 1991 the computer scientist Pat Hayes defined cognitive science as the ongoing research project of refuting Searle's argument, and by the mid-1990s over a hundred articles had been written about it. In January 1990 <i>Scientific American</i> put Searle opposite Paul and Patricia Churchland. The Churchlands agreed the system in the room doesn't understand Chinese but argued that the argument exploits our ignorance of cognition, and offered "the Luminous Room": someone waves a magnet, sees no light, and declares the electromagnetic theory of light false. The brain, they said, is a connectionist network, not a symbol shuffler — "no neuron in my brain understands English, although my whole brain does."</p>
+<p><strong>2020: the heirs change the argument.</strong> The linguists Emily M. Bender and Alexander Koller argued at ACL 2020 that "a system trained only on form has a priori no way to learn meaning". They cite the Chinese Room, then substitute their own thought experiment: a "hyper-intelligent deep-sea octopus" taps a cable between two islands and learns to imitate the conversation — until one islander, chased by a bear and clutching a couple of sticks, begs for help, and the octopus has no idea what the words refer to. The difference matters: for them meaning is the link between language and the world and speakers' intentions, so a grounded system could in principle get there — close to the Robot Reply Searle rejected in his lecture. His loudest heirs have stepped back from his position.</p>
+<p><strong>2022: an attack from the other side.</strong> Steven T. Piantadosi (Berkeley) and Felix Hill (DeepMind) replied to the octopus: large language models "likely capture important aspects of meaning", because on conceptual role semantics meaning arises from relations among internal representations, not necessarily from reference to outside objects; whether a model has meaning has to be read off its internal states, not its architecture or training objective. In other words, the "obviousness" of axiom 2 depends on one particular theory of meaning.</p>
+<p><strong>2024: the encyclopedia's cool verdict.</strong> The October 2024 revision of the SEP entry has a section on large language models. Its conclusion: if a system that uses language as proficiently as humans in every context is still judged by a thought experiment not to "really" understand, then real understanding becomes undetectable, causally inert and irrelevant.</p>
+<p><strong>2025: the room gets built.</strong> In March the cognitive scientists Cameron R. Jones and Benjamin K. Bergen reported two pre-registered three-party Turing tests: participants chatted for five minutes with a human and an AI at once, then judged which was human. Prompted to adopt a humanlike persona, GPT-4.5 was judged to be the human 73% of the time — more often than the real human. ELIZA, the chatbot of the 1960s, managed 23%. The authors call it the first empirical evidence that any artificial system passes a standard three-party Turing test. The room's premise — answers indistinguishable from a native speaker's — came close to being met in short conversations. That same year, Searle died.</p>
+<p>So here is the ledger. In 1984 Searle said there was "no doubt" simulations would get much better, and that it would not matter. Passing the test cannot refute him, since he never accepted behaviour as evidence; it cannot confirm him either, since he offered no test beyond behaviour, and nor has anyone on the other side. The disagreement has moved to sharper questions: must meaning be grounded in perception and action? Do the internal states of a network that learned from data have content? Both are still open.</p>
+<h2>Sources</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://downloads.bbc.co.uk/rmhttp/radio4/transcripts/1984_reith2.pdf">John Searle — Reith Lectures 1984, Lecture 2: Beer Cans &amp; Meat Machines (BBC transcript)</a></span><span class="d">Source of every lecture quotation, the four axioms and the four conclusions.</span></li>
+<li><span class="t"><a href="https://home.csulb.edu/~cwallis/382/readings/482/searle.minds.brains.programs.bbs.1980.pdf">Searle (1980). Minds, brains, and programs. Behavioral and Brain Sciences 3(3), with commentaries</a></span><span class="d">The original paper: Schank's programs, where the replies came from, the "I have not demonstrated" line, and the Hofstadter and Dennett commentaries.</span></li>
+<li><span class="t"><a href="https://plato.stanford.edu/entries/chinese-room/">Cole, The Chinese Room Argument. Stanford Encyclopedia of Philosophy (2024 revision)</a></span><span class="d">An independent survey: the 27 commentaries, Hayes and Pinker, the Churchlands' Luminous Room, the speed objection, and the section on LLMs.</span></li>
+<li><span class="t"><a href="https://aclanthology.org/2020.acl-main.463.pdf">Bender &amp; Koller (2020). Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data. ACL</a></span><span class="d">The octopus test, and where the heirs part ways with Searle on grounding.</span></li>
+<li><span class="t"><a href="https://arxiv.org/abs/2208.02957">Piantadosi &amp; Hill (2022). Meaning without reference in large language models</a></span><span class="d">The conceptual-role case against "form alone means no meaning".</span></li>
+<li><span class="t"><a href="https://arxiv.org/abs/2503.23674">Jones &amp; Bergen (2025). Large Language Models Pass the Turing Test</a></span><span class="d">Source of the 73% (GPT-4.5) and 23% (ELIZA) figures.</span></li>
+</ul>
+</div>
+<footer>Talk Deep Read · one talk, the whole life of one idea · written 2026-10-14</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
