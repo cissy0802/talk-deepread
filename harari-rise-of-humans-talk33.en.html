@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yuval Noah Harari · What explains the rise of humans? — A green paper worth ten bananas</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="harari-rise-of-humans-talk33.html">中文 →</a></div>
+<header>
+<div class="kicker">TEDGlobalLondon · 2015</div>
+<h1>A green piece of paper worth ten bananas, and why no chimpanzee will ever buy it</h1>
+<p class="sub">Yuval Noah Harari · <em>What explains the rise of humans?</em></p>
+<div class="modebar"><button class="on" id="btn-pop">Short</button><button id="btn-deep">Full</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>London, June 2015. An Israeli historian puts a question to an audience of three or four hundred people: strand him and a chimpanzee on a desert island, and who comes out ahead? He backs the chimp.</p>
+<blockquote><span class="en">And if you take me and a chimpanzee and put us together on some lonely island, and we had to struggle for survival to see who survives better, I would definitely place my bet on the chimpanzee, not on myself.</span><cite>— Yuval Noah Harari, TEDGlobalLondon, 2015</cite></blockquote>
+<p>Yuval Noah Harari was then a lecturer in history at the Hebrew University of Jerusalem, and the English edition of <em>Sapiens</em> had come out the year before. These 17 minutes are the first part of that book, compressed.</p>
+<p>The argument has three short steps. <strong>One</strong>: the difference between us and other animals is collective, not individual. Bees cooperate in huge numbers but rigidly; they cannot "execute the queen and establish a republic of bees." Chimpanzees cooperate flexibly but only with individuals they know. Only humans cooperate both flexibly and in very large numbers. One on one, the chimp wins; a thousand against a thousand, the humans win, because a thousand chimps cannot cooperate at all.</p>
+<p><strong>Two</strong>: how? Imagination. Only humans create and believe fictions. Chimp communication describes reality ("Look! There's a lion"); human language also invents new realities. No chimpanzee will hand you a banana today in exchange for bananas in chimpanzee heaven.</p>
+<p><strong>Three</strong> is where the talk bites: the same mechanism runs far beyond religion. Human rights, nations, corporations and money are all stories. Cut a human open and you find the heart, the kidneys, neurons, DNA, "but you won't find any rights." A dollar bill can't be eaten, drunk or worn, yet because everyone believes in it, a stranger at the supermarket will give you real bananas for it. Then, in the chimp's voice: a worthless piece of paper for my banana? "What do you think I am, a human?" The room laughs.</p>
+<p>His conclusion: humans live in a dual reality. On top of rivers and lions sits a layer of gods, nations, money and corporations, and today the first layer's survival depends on the second.</p>
+<p>What the stage left out is a crack that his own later writing admits. A believer in a holy book says "I believe that the book is sacred"; a believer in the dollar says only "I believe that other people believe that the dollar is valuable." Convention and myth are not quite the same thing.</p>
+<p><strong>What happened next? Partly holds.</strong> The broad frame (we win by cooperating at scale, and shared beliefs glue strangers together) is not directly overturned by any critique this page read. What has loosened are the bricks beneath it. Archaeologists had begun dismantling a sudden "cognitive revolution" fifteen years before the talk, arguing that modern behaviour was assembled piece by piece in Africa over a far longer span; in 2017, Homo sapiens fossils from Morocco were dated to roughly 315,000 years. The famous figure of 150 behind the idea of a limit to how many people we can know was recomputed in 2021 with confidence intervals as wide as 4 to 520. And the most direct historical test of the claim that stories about gods made large societies possible, after a 2019 Nature paper was retracted and redone in 2023, points the other way: complex societies first, moralizing gods later. The idea is alive, but not as the clean, final version told on stage.</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>Talk</b> What explains the rise of humans? · <b>Venue</b> TEDGlobalLondon · 2015-06-12 · <b>Length</b> about 17 minutes (including Q&amp;A with host Bruno Giussani) · <b>Transcript</b> <a href="https://www.ted.com/talks/yuval_noah_harari_what_explains_the_rise_of_humans/transcript">TED official transcript</a></div>
+<h2>The moment</h2>
+<p>Halfway through the talk, Harari holds up a green piece of paper: a dollar bill.</p>
+<blockquote><span class="en">Take this green piece of paper, the dollar bill. Look at it -- it has no value. You cannot eat it, you cannot drink it, you cannot wear it.</span><cite>— Yuval Noah Harari, TEDGlobalLondon, 2015</cite></blockquote>
+<p>Then the "master storytellers" step in (the big bankers, the finance ministers, the prime ministers) and tell us this paper is actually worth 10 bananas. If I believe it and you believe it and everybody believes it, it works: you can hand it to a complete stranger at the supermarket and walk out with real bananas you can eat.</p>
+<p>Now he switches to the chimp's point of view. Chimps trade too; a coconut for a banana is fine. But a worthless piece of paper for a banana?</p>
+<blockquote><span class="en">No way! What do you think I am, a human?</span><cite>— Yuval Noah Harari, TEDGlobalLondon, 2015</cite></blockquote>
+<p>The audience laughs, and the laugh carries the whole thesis. The chimp is not the one being fooled. We are, and that capacity to be "fooled" together is what put us in charge of the planet.</p>
+<h2>The speaker, and the year</h2>
+<p>Harari was born in Israel in 1976 and took his doctorate at Oxford in 2002. His field was medieval and military history: a scholar of medieval warfare who went on to narrate seventy thousand years of the species. The English edition of <em>Sapiens</em> appeared in 2014 and became a global bestseller.</p>
+<p>When he took the TEDGlobal stage in London on 12 June 2015, the book was just taking off in the English-speaking world. In the Q&amp;A, host Bruno Giussani mentions that Harari has already written the next one, "out in Hebrew, but not yet translated"; Harari says he is translating it as they speak. That book became <em>Homo Deus</em>. So the talk presents an idea already in print, from a man whose attention had already moved to the future.</p>
+<p>The talk has since passed ten million views on TED's site, and many of its sentences match the book word for word.</p>
+<h2>Glossary</h2>
+<div class="glossary"><ul>
+<li><b>Cognitive Revolution</b>: Harari's name in <em>Sapiens</em> for a leap in human thinking and language about seventy thousand years ago, after which, he says, Sapiens began living in a "dual reality."</li>
+<li><b>Fiction / imagined reality</b>: Harari's term for things that exist only because many people believe in them together: gods, nations, corporations, money, human rights.</li>
+<li><b>Dunbar's number</b>: Robin Dunbar's estimate, extrapolated from primate neocortex size, of a natural human group size of about 150.</li>
+<li><b>Moralizing gods</b>: gods who reward and punish human moral behaviour.</li>
+</ul></div>
+<h2>The talk, in full</h2>
+<p>He opens with an uncomfortable fact. Seventy thousand years ago our ancestors were "insignificant animals" whose impact on the world was not much greater than that of jellyfish, fireflies or woodpeckers. Today we control the planet. How did we get from there to here?</p>
+<p>The usual answer is individual: a better brain, a special body. He closes that road first. On the individual level he is "embarrassingly similar to a chimpanzee," he would bet on the chimp on the island, and he guesses almost everyone in the room would lose too. The real difference is collective:</p>
+<blockquote><span class="en">Humans control the planet because they are the only animals that can cooperate both flexibly and in very large numbers.</span><cite>— Yuval Noah Harari, TEDGlobalLondon, 2015</cite></blockquote>
+<p>Two sets of animals stretch the definition. Bees and ants cooperate in large numbers and their cooperation is "very rigid"; a hive cannot reinvent its social system overnight when danger appears, cannot "execute the queen and establish a republic of bees." Wolves, dolphins and chimpanzees cooperate flexibly, but only in small numbers, because chimp cooperation rests on intimate knowledge: are you trustworthy? If I don't know you, how can I cooperate with you?</p>
+<p>Hence the image: cram 100,000 chimpanzees into Wembley Stadium and you get "complete madness"; humans gather there in tens of thousands and what you get is a sophisticated network of cooperation. He uses the talk itself as evidence. Most of the three or four hundred people in front of him are strangers; he doesn't know the organizers, the flight crew, or the people who built the microphone, and yet together they produce a global exchange of ideas. You will never catch a chimpanzee travelling to a distant band to give a talk about bananas.</p>
+<p>He adds a line that is easy to skip: cooperation is not always nice. Prisons are a system of cooperation; slaughterhouses are; concentration camps are. Chimpanzees have none of these.</p>
+<p>Then the second question: how exactly do we do it? Imagination.</p>
+<blockquote><span class="en">We can cooperate flexibly with countless numbers of strangers, because we alone, of all the animals on the planet, can create and believe fictions, fictional stories.</span><cite>— Yuval Noah Harari, TEDGlobalLondon, 2015</cite></blockquote>
+<p>A chimp can say there's a lion, or a banana tree. A human can say there is a god above the clouds who will send you to hell if you disobey, and if everyone believes it, everyone follows the same norms. Then the laugh line: you can never get a chimp's banana by promising it chimpanzee heaven.</p>
+<p>By now the audience may grant that religion runs on shared fictions. He wants the next step: <strong>the same mechanism underlies all mass cooperation</strong>. He goes field by field. Law: human rights, and the anatomy lesson (heart, kidneys, neurons, hormones, DNA, but no rights). Politics: a mountain is objective reality, you can see it, touch it, even smell it, whereas Israel or Iran or France or Germany is "just a story that we've invented and became extremely attached to." Economics: corporations are what lawyers call "legal fictions," maintained by "the powerful wizards we call lawyers." And finally money, the green paper.</p>
+<p>Money sits at the top: "the most successful story ever invented," because it is the only story everybody believes. Not everyone believes in God, human rights or nationalism, but everyone believes in the dollar. Even Osama Bin Laden, who hated American politics, religion and culture, had no objection to American dollars. "He was quite fond of them, actually."</p>
+<p>The close is the dual reality. Animals live only in objective reality; humans have built a second, fictional layer on top, one that has grown so powerful that the survival of rivers, trees, lions and elephants now depends on entities like the United States, Google and the World Bank, "entities that exist only in our own imagination."</p>
+<p>The Q&amp;A adds a phrase that would later travel on its own: as computers outperform us, he says, we may see "a new massive class of useless people." Pressed, he adds: "it's not a prophecy."</p>
+<h2>Beneath the iceberg</h2>
+<p><strong>Stage and book match almost word for word, minus a few qualifiers.</strong> In the chapter 2 excerpt of <em>Sapiens</em> on Harari's own website, "The Tree of Knowledge," the sentence about ants and bees cooperating "in a very rigid manner" continues: "<strong>and only with close relatives</strong>." On stage that half-sentence is gone. The closing line about chimps being "locked up in zoos and research laboratories" is lifted straight from the book. The book also carries a long example the talk had no room for: Peugeot. Junk every car, kill every employee, fire every manager, and the company still exists. In 1896 a lawyer performed the prescribed legal rituals, signed a document, and a company was born, which Harari likens to a priest saying "This is my body" over bread.</p>
+<p>The book's phrasing is also more absolute than the stage's:</p>
+<blockquote><span class="en">There are no gods, no nations, no money and no human rights, except in our collective imagination.</span><cite>— Yuval Noah Harari, <em>Sapiens</em>, chapter 2 excerpt, author's website</cite></blockquote>
+<p><strong>In his own longer writing, "fiction" gets taken apart.</strong> In 2018 the Guardian ran an extract from <em>21 Lessons for the 21st Century</em> under the headline "Humans are a post-truth species." There he pushes the stage argument to its end: "When a thousand people believe some made-up story for one month, that's fake news. When a billion people believe it for a thousand years, that's a religion." But the same piece takes on an objection the talk skipped: money and corporations are conventions everyone knows to be conventions, so why call them fiction? His answer is that a true believer says of a holy book "I believe that the book is sacred," but of the dollar only:</p>
+<blockquote><span class="en">I believe that other people believe that the dollar is valuable</span><cite>— Yuval Noah Harari, Guardian extract, 2018</cite></blockquote>
+<p>He grants the difference and then stitches it back up: people looking at the green paper forget it is a convention, and "humans have this remarkable ability to know and not to know at the same time." This is more honest than the stage version. On stage, rights and money are "just a story"; in the longer text there is a real line between convention and myth, one that people simply tend to blur.</p>
+<p><strong>The limit on how many people you can know has a number behind it.</strong> On stage, chimps can only cooperate with individuals they know well; no figure is given. The best-known scholarly answer to how large such a group can get is Robin Dunbar's 1993 paper in <em>Behavioral and Brain Sciences</em>: in non-human primates, relative neocortex volume predicts group size, and extending that regression line to humans yields a number close to hunter-gatherer group sizes, about 150. Dunbar's further argument is that primates bond by grooming, that grooming time runs out as groups grow, and that language, gossip included, is a more efficient form of grooming. Note what kind of claim this is: an <strong>extrapolation</strong> of a regression line, not a direct measurement of humans.</p>
+<h2>What happened next</h2>
+<div class="fate"><p class="verdict">PARTLY HOLDS · as of 2026-10</p><p>The broad frame (humans dominate through flexible cooperation at scale, with shared beliefs and institutions binding strangers) is not directly overturned by any critique this page read. But the specific bricks that held it up on stage, namely a sudden cognitive revolution 70,000 years ago, a 150-person limit, and gods coming before large societies, have each been weakened or questioned by later evidence. And the claim that every institution is "just a story" is one his own later writing walks back.</p></div>
+<p><strong>2000, before the talk: "The revolution that wasn't."</strong> Anthropologists Sally McBrearty and Alison Brooks published a review of more than a hundred pages in the <em>Journal of Human Evolution</em> with exactly that title. Their target was the "human revolution" model, in which modern human behaviour appeared suddenly and almost simultaneously across the Old World 40,000–50,000 years ago. They called this view the product of "a profound Eurocentric bias": the components supposedly born then (bone tools, long-distance trade, systematic use of pigment, art and decoration) appear in the African Middle Stone Age tens of thousands of years earlier, scattered across sites widely separated in space and time. Their conclusion was a "gradual assembling" of modern behaviour in Africa, with the origin of our species possibly tied to Middle Stone Age technology at 250,000–300,000 years. Harari's 70,000 is earlier than the 40,000–50,000 they attacked, but the shape, one sudden cognitive leap, is exactly what they set out to dismantle. By the time <em>Sapiens</em> came out in English, that paper was fourteen years old.</p>
+<p><strong>2017: the fossils move back.</strong> Jean-Jacques Hublin's team reported new fossils from Jebel Irhoud, Morocco, in <em>Nature</em>, dated by thermoluminescence to 315,000 ± 34,000 years, with faces and teeth close to modern humans and a more primitive braincase. The paper describes the emergence of Homo sapiens as a process involving the whole African continent. That makes the story of a switch flipped 70,000 years ago harder to tell.</p>
+<p><strong>2019–2023: gods or big societies, which came first?</strong> The talk's first example is the god above the clouds. That causal claim, that shared belief in gods made large-scale cooperation possible, has a direct historical test. In 2019 Harvey Whitehouse and colleagues used the Seshat global history databank to argue in <em>Nature</em> that complex societies <strong>precede</strong> moralizing gods. Bret Beheim of the Max Planck Institute and colleagues soon pointed out that the paper treated missing data ("unknown") as "absent." The paper was retracted in 2021. In 2023 the team redid the analysis in <em>Religion, Brain &amp; Behavior</em> with an expanded dataset (309 polities across 31 world regions); the abstract still says sociopolitical complexity "appears to precede" Big Gods. This does not refute Harari, since his "fictions" are far broader than moralizing gods and the team tested only that one kind of god, but it shows that on the small patch historical data can test, the arrow does not necessarily point his way.</p>
+<p><strong>2021: the confidence interval on 150.</strong> Patrik Lindenfors and colleagues at Stockholm University reran Dunbar's extrapolation in <em>Biology Letters</em> with larger datasets and modern phylogenetic methods. Bayesian methods gave average group sizes of 69–109; generalized least squares gave 16–42; the 95% confidence intervals were 4–520 and 2–336. Their conclusion: a cognitive limit on human group size "cannot be derived in this manner." Dunbar has disputed their methods; this page did not read his reply.</p>
+<p><strong>2022: a named critic.</strong> Darshana Narayanan, who earned her doctorate at the Princeton Neuroscience Institute after a decade studying marmoset vocal communication, published "The Dangerous Populist Science of Yuval Noah Harari" in <em>Current Affairs</em>, calling him a "science populist." Most of the errors she lists are in the books rather than this talk: <em>Sapiens</em> has chimps fighting cheetahs, and she quotes biologist Hjalmar Turesson that chimps and cheetahs do not share ranges in Africa; it says all monkeys and apes have "vocal languages," which she argues confuses information-bearing calls with a rule-bound symbolic system. Notably, the essay does not take on the core claim that shared fictions enable mass cooperation. This page found no public reply from Harari.</p>
+<p>As for the "useless class," it is a forecast, and this page does not rule on it.</p>
+<p>Where things stand: as an explanatory frame, the idea is still widely cited; as a scientific statement, its sharpest edges (the date, the number, the direction of cause) are all blurrier than on stage. And perhaps the best reading of "fiction" is the one he gave himself in 2018: not a lie, but something held up by "I believe that other people believe."</p>
+<h2>Sources</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.ted.com/talks/yuval_noah_harari_what_explains_the_rise_of_humans/transcript">TED official transcript · What explains the rise of humans?</a></span><span class="d">Source of every talk quotation, the Q&amp;A, and the talk's structure.</span></li>
+<li><span class="t"><a href="https://www.ynharari.com/topic/power-and-imagination/">Harari's website · <em>Sapiens</em> chapter 2 excerpt, "The Tree of Knowledge"</a></span><span class="d">The book's wording: the dropped "only with close relatives," the Peugeot example, and "no gods, no nations, no money and no human rights."</span></li>
+<li><span class="t"><a href="https://www.theguardian.com/culture/2018/aug/05/yuval-noah-harari-extract-fake-news-sapiens-homo-deus">The Guardian · Yuval Noah Harari extract: 'Humans are a post-truth species' (2018)</a></span><span class="d">Extract from <em>21 Lessons</em>; source of the post-truth species, fake news versus religion, and "other people believe" passages.</span></li>
+<li><span class="t"><a href="https://pubmed.ncbi.nlm.nih.gov/11102266/">McBrearty &amp; Brooks · The revolution that wasn't (J Hum Evol, 2000)</a></span><span class="d">The systematic case against a sudden cognitive revolution, behind the archaeology in the fate section; see also <a href="https://pubmed.ncbi.nlm.nih.gov/28593953/">Hublin et al., Nature 2017</a> for the 315,000-year fossils.</span></li>
+<li><span class="t"><a href="https://pubmed.ncbi.nlm.nih.gov/33947220/">Lindenfors, Wartel &amp; Lind · 'Dunbar's number' deconstructed (Biol Lett, 2021)</a></span><span class="d">Source of the recomputed group sizes and confidence intervals.</span></li>
+<li><span class="t"><a href="https://retractionwatch.com/2021/07/07/critique-topples-nature-paper-on-belief-in-gods/">Retraction Watch · Critique topples Nature paper on belief in gods (2021)</a></span><span class="d">How the 2019 Nature paper was retracted; for the 2023 redo see <a href="https://hraf.yale.edu/documents/1502">Whitehouse et al., RBB 2023, via HRAF</a>. See also <a href="https://currentaffairs.org/2022/07/the-dangerous-populist-science-of-yuval-noah-harari">Narayanan, Current Affairs 2022</a>, the named critique in the fate section.</span></li>
+</ul>
+</div>
+<footer>Talk Deep Read · one talk, the whole life of one idea · written 2026-10-15</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
