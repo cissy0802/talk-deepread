@@ -7,6 +7,7 @@ BigCat 人工维护的必读演讲清单。来源：**三家旗舰模型独立�
 > - `[surprise]` = 专门打破信息茧房的选片。**轮到就写，不许因为「跟兴趣不够贴」跳过。**
 > - 文件名 `{slug}-talk{N}.html`，**N = 现有最大 N + 1**（写作顺序，与清单顺序解耦）。slug 里不许出现 `day/week/book/issue/read/paper/blog/talk/novel`。
 > - 本清单**人工策划、routine 只读不改**（`publish.sh` 硬卡改动）。全做完 → PushNotification 请 BigCat 续单、本次不发布。
+> - **`[公开课]` = 公开课单元**（2026-10-16 加入，BigCat 定）：名校里讲「怎么做」的课。和普通演讲交替排（一期公开课、一期演讲），写法差异见 CLAUDE.md 第 8 节；index 里进 `#lectures` 分区，不进主列表。`[短课 k/3]` 是同一门短课拆成的三期，按顺序写。
 > - `transcript` 是已核实的全文来源；标 `[第三方转录]` 的没有官方逐字稿，引用前按 CLAUDE.md 第 2 节交叉核对。
 
 ---
@@ -181,55 +182,110 @@ BigCat 人工维护的必读演讲清单。来源：**三家旗舰模型独立�
   - transcript: <https://www.nobelprize.org/prizes/peace/1964/king/lecture/>
   - slug: `mlk-nobel-lecture`
 
+- **Patrick Winston** — How to Speak · MIT IAP · 2018 · 表达 / 演讲方法 · [公开课]
+  - MIT 人工智能教授的年度保留课：讲者成败取决于知识、练习、天赋三者里的哪一个——以及为什么开场别讲笑话、幻灯片字越少越好。
+  - transcript: <https://ocw.mit.edu/courses/res-tll-005-how-to-speak-january-iap-2018/bc92763ffa0dad0ecafe44967e834e16_Unzc731iCUY.pdf>（MIT OCW 官方逐字稿 PDF，约 8,800 词）
+  - slug: `winston-how-to-speak`
+
 - **Sean Carroll** — Distant time and the hint of a multiverse · TEDxCaltech · 2011 · 物理 / 时间之箭 · 1票
   - 为什么你记得过去不记得未来：时间之箭来自宇宙起点的低熵之谜。
   - transcript: <https://www.ted.com/talks/sean_carroll_distant_time_and_the_hint_of_a_multiverse/transcript>
   - slug: `sean-carroll-arrow-of-time`
+
+- **Larry McEnerney** — The Craft of Writing Effectively · 芝加哥大学 Leadership Lab · 2014 · 写作 / 说服 · [公开课] [第三方转录]
+  - 读者不在乎你的想法，只在乎它对他们有没有价值；「清楚」不是目标，「有用」才是——专业写作要先找到读者社群里的问题。
+  - transcript: <https://singjupost.com/the-craft-of-writing-effectively-larry-mcenerney-transcript/>（交叉核对：<https://medium.com/feed/@lzyu> RSS 里标题含 Craft of Writing 的那条；文章页对 curl 返回 403，只能走 RSS。页面上标的 2024 日期是错的）
+  - slug: `mcenerney-writing-effectively`
 
 - **David Chalmers** — How do you explain consciousness? · TED · 2014 · 意识 / 困难问题 · 1票
   - 解释了大脑的所有功能，仍没解释为什么会有主观体验——意识的「困难问题」。
   - transcript: <https://www.ted.com/talks/david_chalmers_how_do_you_explain_consciousness/transcript>
   - slug: `chalmers-hard-problem`
 
+- **Randy Pausch** — Really Achieving Your Childhood Dreams（最后一课） · 卡内基梅隆大学 · 2007 · 人生选择 / 面对死亡 · [公开课]
+  - 胰腺癌晚期的计算机教授讲怎么实现童年梦想：墙是用来挡住不够想要的人的；整场演讲本身是个「声东击西」。
+  - transcript: <https://www.cs.cmu.edu/~pausch/Randy/pauschlastlecturetranscript.pdf>（CMU 官方 PDF，约 17,000 词；含开场介绍和结尾致辞，那些不是 Pausch 本人的话）
+  - slug: `pausch-childhood-dreams`
+
 - **Jonathan Haidt** — The moral roots of liberals and conservatives · TED · 2008 · 道德心理学 / 政治 · 1票
   - 五种道德基础：自由派和保守派不是一方有道德一方没有，而是调音台上的旋钮不同。
   - transcript: <https://www.ted.com/talks/jonathan_haidt_the_moral_roots_of_liberals_and_conservatives/transcript>
   - slug: `haidt-moral-roots`
+
+- **Matt Abrahams** — Think Fast, Talk Smart: Communication Techniques · 斯坦福商学院 · 2014 · 即兴表达 / 沟通 · [公开课] [第三方转录]
+  - 被临时点名时怎么开口：先管住焦虑，把「说对」换成「回应」，再用「是什么—所以呢—接下来」这类结构托底。
+  - transcript: <https://singjupost.com/think-fast-talk-smart-communication-techniques-by-matt-abrahams-full-transcript/>（只引 TRANSCRIPT: 标记到「Want a summary」之间的部分；交叉核对用斯坦福官方访谈逐字稿 <https://www.gsb.stanford.edu/insights/how-think-faster-talk-smarter-masterclass-matt-abrahams>）
+  - slug: `abrahams-spontaneous-speaking`
 
 - **Hans Rosling** — The best stats you've ever seen · TED · 2006 · 数据 / 全球发展 · 1票 [surprise]
   - 瑞典顶尖学生对世界的认知不如黑猩猩：「发达 vs 发展中」的二分早已过时。
   - transcript: <https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen/transcript>
   - slug: `rosling-best-stats`
 
+- **Clayton Christensen** — How Will You Measure Your Life? · TEDxBoston · 2012 · 人生选择 / 管理理论 · [公开课]
+  - 「颠覆式创新」的提出者把管理学理论用在自己身上：资源分配决定你实际过的人生，「就这一次」是最贵的边际成本。
+  - transcript: <https://amara.org/api/videos/o8JtnyyHnyKT/languages/en/subtitles/?format=txt>（TED 团队在 Amara 上的人工英文字幕，约 2,450 词；字幕行在句中断开，引用前先拼句。2010 年 HBR 同名文章付费且是改写稿，只作背景，不长引）
+  - slug: `christensen-measure-your-life`
+
 - **Brian Greene** — Is our universe the only universe? · TED · 2012 · 物理 / 宇宙学 · 1票
   - 暗能量为什么小得离谱？多重宇宙作为解释——以及它还算不算科学。
   - transcript: <https://www.ted.com/talks/brian_greene_is_our_universe_the_only_universe/transcript>
   - slug: `greene-multiverse`
+
+- **Barbara Oakley** — Learning How to Learn（1/3：专注与发散） · Coursera · 2014 · 学习科学 · [公开课] [短课 1/3]
+  - 卡住时离开反而能解开：大脑在「专注模式」和「发散模式」之间切换，番茄钟和「先难后易」都从这里来。
+  - transcript: 课程本身没有公开文本。主文本：TEDxOaklandUniversity 演讲 <https://amara.org/api/videos/0X49ztTMTuWD/languages/en/subtitles/?format=txt> + Talks at Google 逐字稿 <https://singjupost.com/barbara-oakley-learning-how-to-learn-talks-at-google-transcript/>（前三分之一）；课程片段字幕在 `../podcast-transcripts/talk-courses/oakley-learning/`（W2anBZxFfEQ、lJtUg-3DfUk）
+  - slug: `oakley-focused-diffuse`
 
 - **Daniel Wolpert** — The real reason for brains · TEDGlobal · 2011 · 神经科学 / 运动控制 · 1票
   - 大脑存在的唯一理由是产生可适应、可复杂的运动——海鞘定居后会吃掉自己的脑。
   - transcript: <https://www.ted.com/talks/daniel_wolpert_the_real_reason_for_brains/transcript>
   - slug: `wolpert-reason-for-brains`
 
+- **Barbara Oakley** — Learning How to Learn（2/3：组块） · Coursera · 2014 · 学习科学 · [公开课] [短课 2/3]
+  - 专家脑子里存的是「组块」不是知识点；看懂答案不等于会做（能力错觉），反复只练一种题会让你卡在熟悉的解法里。
+  - transcript: Talks at Google 逐字稿（同上，中段）；课程片段字幕 `../podcast-transcripts/talk-courses/oakley-learning/`（9uG13LhsRFc、UqGx7RsSViQ、J4YazZUXT_A、LMkx2DmAxgc）
+  - slug: `oakley-chunking`
+
 - **Dan Gilbert** — The surprising science of happiness · TED · 2004 · 心理学 / 合成幸福 · 1票
   - 我们有一套「心理免疫系统」，能在得不到想要的东西时合成出真实的幸福。
   - transcript: <https://www.ted.com/talks/dan_gilbert_the_surprising_science_of_happiness/transcript>
   - slug: `gilbert-science-of-happiness`
+
+- **Barbara Oakley** — Learning How to Learn（3/3：拖延、记忆与睡眠） · Coursera · 2014 · 学习科学 · [公开课] [短课 3/3]
+  - 拖延是大脑在躲开「开始」那一下的疼；盯过程不盯结果、间隔重复、睡觉时大脑在清理和巩固——以及学得慢的人的优势。
+  - transcript: TEDx 文本 + Talks at Google 逐字稿后三分之一（同上）；课程片段字幕 `../podcast-transcripts/talk-courses/oakley-learning/`（0egaPpfFFLI、b2wxhG2viWc、FlMFz22ZZQA、_ioaZ7u83Fk）
+  - slug: `oakley-procrastination-memory`
 
 - **Benjamin Zander** — The transformative power of classical music · TED · 2008 · 音乐 / 领导力 · 1票 [surprise]
   - 指挥自己不发一声：领导者的力量在于唤醒别人的可能性——看他们的眼睛有没有发光。
   - transcript: <https://www.ted.com/talks/benjamin_zander_the_transformative_power_of_classical_music/transcript>
   - slug: `zander-classical-music`
 
+- **Laurie Santos** — The Science of Well-Being（1/3：我们对幸福的误解） · 耶鲁 / Coursera · 2018 · 幸福心理学 · [公开课] [短课 1/3]
+  - 耶鲁史上选课人数最多的课：好工作、更多的钱、好东西、完美身材、好成绩——我们以为会让自己开心的东西，数据说大多不会；知道了也没用（G.I. Joe 谬误）。
+  - transcript: 耶鲁官方 YouTube 课程视频的字幕，本地预抓于 `../podcast-transcripts/talk-courses/santos-well-being/`，第 01–08 讲（模块 1–2）
+  - slug: `santos-happiness-misconceptions`
+
 - **Isaiah Berlin** — Two Concepts of Liberty · 牛津大学就职讲座 · 1958 · 政治哲学 / 自由 · 1票
   - 消极自由与积极自由：以「真正的自我」之名强迫人自由，是二十世纪暴政的思想根源。
   - transcript: <https://berlin.wolf.ox.ac.uk/published_works/tcl/tcl-b.pdf>
   - slug: `berlin-two-concepts-of-liberty`
 
+- **Laurie Santos** — The Science of Well-Being（2/3：心智的四个恼人特性） · 耶鲁 / Coursera · 2018 · 幸福心理学 · [公开课] [短课 2/3]
+  - 参照点、享乐适应、聚焦错觉与免疫忽视、错误想要：为什么我们的预期这么不准，以及买体验、制造间断、重设参照点这些对策。
+  - transcript: 同上目录，第 09–18 讲（模块 3–4）
+  - slug: `santos-mind-biases`
+
 - **Robert Waldinger** — What makes a good life? Lessons from the longest study on happiness · TEDxBeaconStreet · 2015 · 心理学 / 幸福研究 · 1票
   - 跟踪 75 年的哈佛研究：让人健康幸福的不是财富名声，是关系的质量。
   - transcript: <https://www.ted.com/talks/robert_waldinger_what_makes_a_good_life_lessons_from_the_longest_study_on_happiness/transcript>
   - slug: `waldinger-good-life`
+
+- **Laurie Santos** — The Science of Well-Being（3/3：真正管用的） · 耶鲁 / Coursera · 2018 · 幸福心理学 · [公开课] [短课 3/3]
+  - 善意、社交连接、时间富裕、少走神、运动和睡眠——再加上怎么把知道变成做到（WOOP 目标法）。
+  - transcript: 同上目录，第 19–31 讲（模块 5–6，含 Dunn、Epley、Oettingen 访谈）
+  - slug: `santos-what-works`
 
 - **Kevin Kelly** — How technology evolves · TED · 2005 · 技术哲学 / 演化 · 1票
   - 技术是生命的第七界（technium），有它自己的「想要」和演化方向。
