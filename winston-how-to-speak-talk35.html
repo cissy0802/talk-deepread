@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Patrick Winston ·《How to Speak》— 天赋那一项很小</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="winston-how-to-speak-talk35.en.html">English →</a></div>
+<header>
+<div class="kicker">MIT IAP · 2018</div>
+<h1>天赋那一项很小：一位 AI 教授讲了四十年的「怎么说话」</h1>
+<p class="sub">Patrick Winston ·《How to Speak》</p>
+<div class="modebar"><button id="btn-pop">精华版</button><button class="on" id="btn-deep">完整版</button></div>
+</header>
+<div class="mode-pop" hidden="" id="mode-pop">
+<p>几十年前，Patrick Winston 在太阳谷滑雪，听说那个周末是「名人周末」，来的人里有奥运体操冠军 Mary Lou Retton，而且她是滑雪新手。他朝初学者坡道望过去，看见一个年轻女子，一失去平衡，身体就做出一个特别的反应（他在台上比画了一下）。他想：那一定是她。</p>
+<p>接着他想到另一件事：我滑得比她好多了，而她是奥运选手，还是顶尖的那种。为什么？</p>
+<blockquote><span class="en">And I was a better skier because I had the K, and I had the P, and all she had was the T.</span><span class="zh">我滑得比她好，是因为我有 K，我有 P，而她只有 T。</span><cite>— Patrick Winston，《How to Speak》，2018</cite></blockquote>
+<p>K 是知识（knowledge），P 是练习（practice），T 是天赋（talent）。Winston 是 MIT 的人工智能教授，当过 25 年 MIT 人工智能实验室主任。从 1980 年前后起，他每年一月在 MIT 讲一小时「怎么说话」，一讲讲了四十年。2018 年那一场被录下来放上 MIT 开放课程，第二年夏天他去世了。这堂课开头就在黑板上写下那个公式：说话的质量由 K、P、T 决定，<strong>而 T 写得很小</strong>。所以这一小时全在讲 K，都是能学、学了就能用的东西。</p>
+<p>他给的东西很具体。开场别讲笑话，因为听众还在收电脑、还在适应你的嗓音；开场要给一个「赋能承诺」，告诉大家一小时后他们会知道什么。重要的话绕着说三遍，因为任何时刻大约有 20% 的人在走神。给你的想法围一圈篱笆，说清它和别人的想法哪里不同。讲到一处就报个数（「这是第三条」），让走神的人能重新上车。提了问题要忍住沉默，等够七秒。</p>
+<p>工具上，他偏爱黑板，因为写字的速度差不多就是人吸收想法的速度；道具最容易被记住；幻灯片则永远太多、字永远太多，它该是佐料，不是主菜。</p>
+<p>到了说服的场合，规则更狠。求职报告里，你要在五分钟内让人看到你的愿景，并且做成过事。想让工作被记住，就要凑齐五样 S 开头的东西：符号、口号、惊奇、一个突出的想法、一个故事。他自己的博士论文「拱门学习」碰巧五样齐全，多年后他才明白它当年为什么出名。最后一页幻灯片写「贡献」，不写「结论」，更不放合作者名单。最后一句别说谢谢，因为说谢谢等于暗示大家是出于礼貌才熬到现在。</p>
+<p>这些建议后来站住了多少？大多数是一个讲了四十年的人的手艺，没人拿实验检验过整套方法，也谈不上被推翻。<strong>但他顺手挂上去的那几个数字，都比原始研究说得满。</strong>「等七秒」的出处应该是 Mary Budd Rowe 的研究，可她测的是小学科学课，推荐的是三到五秒；「20% 在走神」，走神研究常测到的是 30% 到 40%；黑板好用是因为「镜像神经元」，这个他自己称作「疯狂边缘」的看法，所依托的理论在神经科学界被质疑得厉害。站得最稳的反倒是最朴素的那条，幻灯片少放字，多媒体学习研究反复支持它。所以判它<strong>部分站住</strong>。</p>
+<p>它被讲歪的方式也很典型。2026 年还有人在社交网络上说，这一小时教你的东西超过所有书、所有课、所有导师加起来。Winston 自己许的诺小得多：这一小时里会有某一条，「也许只有一条」，在某个你没料到的时刻帮你拿到那份工作。</p>
+</div>
+<div class="mode-deep" id="mode-deep">
+<div class="meta-card"><b>课</b> How to Speak · <b>场合</b> MIT 一月独立活动期（IAP）· 2018 · <b>时长</b> 约 60 分钟（约 8,800 词）· <b>全文</b> <a href="https://ocw.mit.edu/courses/res-tll-005-how-to-speak-january-iap-2018/bc92763ffa0dad0ecafe44967e834e16_Unzc731iCUY.pdf">MIT OpenCourseWare 官方逐字稿（PDF）</a></div>
+<h2>那一刻</h2>
+<p>MIT 26-100 教室的天花板上垂下一根长钢丝，下面挂着一个大钢球。Winston 回忆他大一上 8.01（MIT 的大一力学课）的时候，讲台上的 Alan Lazarus 正在讲能量守恒，动能和势能的互换。</p>
+<p>Lazarus 把钢球拉到墙边，把头平贴在墙上稳住自己，然后放手。钢球荡出去，过了好几秒才荡回来，轻轻碰了一下 Lazarus 的鼻子。「所以你有好几秒钟可以想：这家伙是真信能量守恒。」</p>
+<p>Winston 接着提醒：别在家试。第一次做的人往往不只是放手，「人有一种天然的倾向，会推一下」。</p>
+<p>台下的人笑了，因为他们都懂那个「推一下」意味着什么。这一段落在课的中段，讲的是道具。几分钟后他又提到，坐在上面座位里的 Jim Glass 大约二十年前听过这堂课，至今记得的是「你掰断教鞭的那次」。「道具往往就是被记住的那部分，真是奇妙。」整堂课的论证，其实就藏在这两个画面里：<strong>人记住的是具体的东西，不是你屏幕上的字。</strong></p>
+<h2>讲的人，和那一年</h2>
+<p>Patrick Henry Winston 1970 年在 MIT 拿到博士，导师是人工智能的开创者之一 Marvin Minsky。两年后他接手 MIT 人工智能实验室，一直当到 1997 年，前后 25 年。晚年他带一个叫 Genesis 的小组，想让计算机理解故事，因为他认定「能听懂故事」是人类智能的标志。这堂课里也露了一下他的好胜心：他在海军科学委员会认识的工程学者 Delores Etter 写过 21 本书，「我嫉妒得想吐口水，因为她写了 21 本，而我只写了 17 本。」</p>
+<p>按 MIT Open Learning 的说法，这堂课是 1980 年前后开始的：Winston 抱怨大多数报告质量太差，被人劝着自己讲一次「怎么说话」。此后每年一月的 IAP 都讲，内容越讲越多，听众越来越挤。2008 年，Cal Newport 在博客上记下了那年的现场：座位坐满，台阶坐满，讲台周围的地上坐满，走廊里还站着人。</p>
+<p>2018 年这一场被 MIT OpenCourseWare 录了下来。这时课已经讲了将近四十年。2019 年 7 月 19 日他在波士顿去世，享年 76 岁。2020 年 1 月 30 日，MIT 在 IAP 期间放映了这段录像，再请两位同事各补充十分钟。同年，他把这堂课扩写成的书《Make It Clear》由 MIT Press 出版。</p>
+<h2>术语表 · Glossary</h2>
+<div class="glossary"><ul>
+<li><b>IAP（Independent Activities Period）</b>：MIT 每年一月的「独立活动期」，大约四周，开很多不计学分的短课和讲座。</li>
+<li><b>Job talk（求职报告）</b>：博士或博士后申请教职时，对系里全体教员讲的一小时研究报告，基本决定了能不能拿到这份工作。</li>
+<li><b>Empowerment promise（赋能承诺）</b>：Winston 的说法，指开场时告诉听众，这一小时结束时他们会知道什么开始时不知道的东西。</li>
+<li><b>Heuristic（启发式）</b>：经验法则，不保证每次都对，但多数时候管用。Winston 是 AI 研究者，这是他的行话。</li>
+</ul></div>
+<h2>这场演讲，讲透</h2>
+<p>他用一句军法开场：《统一军事司法法典》规定，任何军官如果送士兵上战场却不给武器，要上军事法庭。他说学生也该有类似的保护，不能没有沟通能力就被送进社会，因为：</p>
+<blockquote><span class="en">your success in life will be determined largely by your ability to speak, your ability to write, and the quality of your ideas, in that order.</span><span class="zh">你这一生的成功，很大程度上取决于你说话的能力、写作的能力和想法的质量，依次排序。</span><cite>— Patrick Winston，《How to Speak》，2018</cite></blockquote>
+<p>「依次排序」这四个字是故意的：想法的质量排在最后。然后是 K、P、T 的公式和滑雪场上的 Retton，结论是好的知识能让你胜过有天赋的人。接着他许下这一小时的承诺：你会看到很多技巧，其中某一条，「也许只有一条」，会在将来某个说不准的时刻帮你拿到工作。他说这是一个「非常非线性的过程」。</p>
+<p>正式开讲前先立一条规矩：不许开电脑，不许看手机。理由有三层。第一，人只有一个语言处理器，你在读邮件，就听不了讲。第二，你会让周围的人分心，「研究表明了这一点」。第三，台上的人看到哪里亮着一台电脑，会被逼疯，讲得更差，于是那些认真听的人也拿不到他们来听的东西。话说到一半，他停下来对台下某人说：「能把电脑合上吗？」</p>
+<p><strong>怎么开场。</strong>很多人以为该用笑话开场，他不建议。开场时大家还在收电脑，还在适应你的音色和语速，没准备好笑，笑话多半会冷场。开场该给的是赋能承诺。他的例子就是这堂课本身：六十分钟后，你会知道一些现在不知道的关于说话的东西，其中某一样会改变你的生活。</p>
+<p><strong>四个随身带着的启发式。</strong>第一是<strong>绕圈</strong>：把主题绕一遍，再绕一遍，再绕一遍。这不是把听众当傻子，而是因为「在任何时刻，不管讲的是什么，你们中大约有 20% 的人在走神」，要让每个人都听到，就得说三次。第二是<strong>围篱笆</strong>：说清你的想法不是什么。他画了一座拱门，又画了几样「不是拱门」的东西；换成技术语言就是，我的算法看起来像 Jones 的，但他的是指数级的，我的是线性的。第三是<strong>口头标点</strong>：走神的人需要地方「重新上车」，所以讲到哪一段就报个号。他当场示范：第一条是绕圈，第二条是围篱笆，现在是第三条。第四条他不说，转头问台下：还有什么办法能让人重新上车？有人答「提一个问题」。他借机讲提问：问完了能沉默多久？他刚才数了，七秒。七秒对台上的人像一辈子，但这是标准的等待时间。问题也得挑：太简单，大家不好意思答；太难，没人有话说。</p>
+<p>他在这里点出整堂课的意图：如果你开始相信说话这件事「有知识可学」，他就已经成功了。去观察你佩服的讲者，问自己他们为什么好，攒起你自己的一套，形成你自己的风格。</p>
+<p><strong>时间和地点。</strong>上午 11 点最好，因为「MIT 的大多数人这时已经醒了，又几乎没有人回去接着睡」，也不是刚吃完饭。场地要亮，灯光一暗，人就收到该睡觉的信号。会场技术人员说关灯幻灯片看得更清楚，他的回答是：</p>
+<blockquote><span class="en">it's extremely hard to see slides through closed eyelids.</span><span class="zh">隔着闭上的眼皮看幻灯片，那可难得很。</span><cite>— Patrick Winston，《How to Speak》，2018</cite></blockquote>
+<p>场地还得提前「踩点」，就像抢银行前要先去银行看几次。他每到一处，先请主人带他去讲的那间屋子看看；今天早上他还照例把满座想象成「毫无兴趣的农场动物」，这样待会儿再糟也不会比那更糟。座位最好坐满一半以上：大厅里只坐十个人，大家都会想，别处到底有什么更好玩的事。</p>
+<p><strong>黑板、道具、幻灯片。</strong>他把用途分开：要「告知」（教东西）用黑板，要「展示」（job talk、学术会议）用幻灯片。黑板有三个好处：能画图；书写的速度大约就是人吸收想法的速度；还给了手一个去处。新手常常突然意识到自己的手，好像那是不该见人的部位，于是插进口袋或背到身后。在有些文化里这很失礼：他在塞尔维亚一座修道院做客时，一位修女直接把他背在身后的手拉了出来。他听过两遍 Seymour Papert（MIT 的教育学家、计算机科学家）的讲座，第一遍学内容，第二遍学风格，发现 Papert 一直在指黑板，指的东西却和嘴上说的毫无关系，照样管用。</p>
+<p>道具这件事上，他说剧作家最懂，然后举了 Papert 的自行车轮：转动的轮子，往轴上加一个力矩，它往哪边倒？机械工程的学生掏出右手定则，却记不清手指怎么对，大概一半时候答对，「他们那么高级的教育，把他们带到了和扔硬币一样的水平」。换个看法就简单了：用胶带标出轮缘上的一小段，只想这一小段转到顶上时被吹一口气会怎样。最后才是开头那个 Lazarus 的钢球。</p>
+<p>为什么学生调查里总说「多用粉笔、少用 PowerPoint」？他给了自己所谓「疯狂边缘」的解释，叫「共情镜像」：你看我在黑板上写字，脑子里那些镜像神经元被激活了，你能感觉到自己在写；我讲钢球荡过来荡过去，你能像我一样感觉到那个球。幻灯片和图片做不到。他也补了一句：这里面还有速度的因素，要分开看。</p>
+<p>幻灯片这部分从洛根机场讲起。他开完一个很糟的会，平生唯一一次停下来喝杯咖啡，一个陌生人认出他，说自己正要去欧洲做求职报告，能不能帮忙看看幻灯片。「你的幻灯片太多，字也太多。」对方问他怎么知道，以为他听过自己的报告。他没听过：</p>
+<blockquote><span class="en">There are always too many slides, always too many words.</span><span class="zh">幻灯片永远太多，字永远太多。</span><cite>— Patrick Winston，《How to Speak》，2018</cite></blockquote>
+<p>接着他走到离屏幕很远的地方，对着一张满是字的幻灯片，一字一句念「不要念你的幻灯片」，故意把能犯的错同时犯一遍：字太多，人和屏幕隔得太远，听众的头像看网球赛一样来回转。然后一步步修：删掉背景花纹，删掉大部分字，删掉 logo，删掉标题（「标题我嘴上已经说了」），删掉没用的项目符号。原则只有一句：</p>
+<blockquote><span class="en">You want the slides to be condiments to what you're saying, not the main event</span><span class="zh">幻灯片应该是你所说内容的佐料，不是主菜。</span><cite>— Patrick Winston，《How to Speak》，2018</cite></blockquote>
+<p>他还引了一个学生做的小实验：教几个新生一些网页编程知识，一半内容放幻灯片上，另一半用嘴讲，对照组反过来。结果人们记得更牢的是幻灯片上读到的那一半。实验后的反馈里，有个被试说：「我真希望你别讲那么多话，太让人分心了。」被试是这个学生兄弟会里的新生。</p>
+<p>然后是一串「罪状」。字号太小：他问台下最小用多大，有人说 40 或 50，他同意，说 35 就开始太小了，倒不是看不清，而是你多半在用它往页面上塞字。激光笔：一用就得转头，观众看到的只剩你的后脑勺。要指东西，在图上画个箭头，说「看一号箭头那里」就行。太「重」：把整套幻灯片打印出来铺在桌上，一眼就能看出字太多、留白和图片太少。他给的反例是自己一个报告，基本全是图片，只有三四张有字，比如达特茅斯 AI 会议计划书的摘录，而且讲到那几张时会停下来等大家读完。</p>
+<p>这些罪真的有人犯吗？他放了一张照片，台下一阵阵笑：Stata 中心的一场报告，讲者站得离屏幕老远，拿着激光笔，屏幕上是第 80 张幻灯片，写着「这是 10 张结论幻灯片中的第一张」。会议主办人在看邮件，联合主办人在研究午餐菜单，第三个人看上去在听，「但那只是因为这是张静态照片」。</p>
+<p><strong>告知：怎么让人受鼓舞。</strong>系主任请他给新教员讲这堂课时，特意要他讲讲怎么激励学生。他发现自己从没想过这个问题，于是做了个小调查：刚入学的新生说，激励他们的是某位高中老师，告诉他们「你行」；资深教授说，激励他们的是某个人帮他们换个角度看问题；而所有人都提到，当一个人对自己做的事表现出热情，他们会被打动。他的例子是自己 AI 课的开场：一个给美国地图着色的程序，原版要跑到「太阳爆炸吞掉地球」，稍改一下几秒跑完，「这不酷吗？」他还谈到，教授们都说自己最重要的工作是「教人思考」，可问他们怎么教，只有一脸茫然。他的回答是：人是讲故事的动物，从童话一路学到法学院、医学院，所以教人思考，就是教人需要知道的故事，以及怎么追问、拆解、拼接、判断这些故事。</p>
+<p><strong>说服：口试、求职报告、出名。</strong>口试挂掉的人，最常见的原因是没有「定位」（不交代你的研究在领域里的位置）和没有练习。练习别找知道你在做什么的人，包括你的导师，因为他们会「脑补」出你报告里其实没有的东西。要找不知道你在做什么的朋友，开场先说：「你们要是不能把我说哭，我就不认你们这个朋友了。」他还说，挑刺的狠劲和年龄成反比，能选满头白发的委员会就选。</p>
+<p>求职报告的规矩，来自圣迭戈一间酒吧。他问 Etter 和德州大学的 Bill Weldon：你们招教员看什么？Etter 一微秒之内回答：要看到某种愿景。Weldon 紧接着说：要看到他做成过事。候选人有多少时间证明这两点？答案是五分钟。愿景就是一个有人关心的问题，加上你方法里的新东西。他拿自己的研究示范：问题是理解人类智能；方法是问我们和黑猩猩、尼安德特人到底差在哪；答案是人是符号的动物，能把关系和事件串成故事。「这就是我的固定开场白。」「做成过事」则靠列出解决问题需要的几步来证明，不必都做完；结尾列出贡献，和开头的步骤首尾对上。</p>
+<p>拿到工作后要考虑被认出来。为什么该在乎出名？他在一场筹款晚宴上坐在 Julia Child（美国著名烹饪节目主持人）旁边，整晚不断有人来找她签名。他问她：出名好玩吗？她想了一下：「你会习惯的。」他接着说：</p>
+<blockquote><span class="en">You never get used to being ignored.</span><span class="zh">被忽视，你永远习惯不了。</span><cite>— Patrick Winston，《How to Speak》，2018</cite></blockquote>
+<p>所以讲究包装是正当的：「你的想法就像你的孩子，你不会想让他们衣衫褴褛地走进这个世界。」怎么被记住？他画了一颗「Winston 之星」，五个角都以 S 开头：<strong>符号</strong>（symbol）、<strong>口号</strong>（slogan）、<strong>惊奇</strong>（surprise）、<strong>突出的想法</strong>（salient idea）、<strong>故事</strong>（story）。他的例子是自己的博士论文。符号是那座拱门；口号是「一次学习」（one-shot learning），因为程序从每个例子里都能学到确定的东西；惊奇是不需要一百万个例子，一个就够，只要你会用；突出的想法是「近似错例」（near miss），一个「不是拱门，但差得不多」的例子：给程序看一个顶上那块没搭在上面的「非拱门」，它就学到「必须在上面」。他特意说明，salient 不是「重要」，是「突出」：有些论文好想法太多，反而没人知道它到底讲什么。最后是讲清楚你怎么做的、为什么重要的那个故事。他说这项工作当年「小有名气」，他自己也不知道为什么，多年后才发现它碰巧五样齐全。</p>
+<p><strong>怎么收尾。</strong>最后一页幻灯片他翻了好几种。合作者名单不行：MIT 有一千名教员，满屏名字让人觉得你的那份工作除以一千就没多少了。合作者要致谢，但放在第一页。接下来他又翻了几张常见的结尾页（逐字稿只记下他的评语，没记下页面上写了什么）：一张是「最糟糕的结尾方式」，能在屏幕上挂二十分钟，白占地方；一张他常见，「但从没见谁抄下来过」。「结论」也不好，那是些正确但没人在乎的话。人们在乎的是你做了什么，所以最后一页的标题应该是「贡献」，和开头列的步骤首尾呼应，大家提问、陆续离场时一直挂在屏幕上。</p>
+<p>最后一句话怎么说？结尾讲笑话可以，这时大家已经适应了你。他在奥斯汀另一间酒吧问过同事 Doug Lenat（他口中「出色的演讲者」）有什么秘诀，Lenat 说：</p>
+<blockquote><span class="en">oh, I always finish with a joke, and that way, people think they've had fun the whole time.</span><span class="zh">噢，我总是用一个笑话结尾，这样大家就会觉得自己从头到尾都很开心。</span><cite>— Doug Lenat，转述于 Winston《How to Speak》，2018</cite></blockquote>
+<p>说「谢谢」他不推荐：</p>
+<blockquote><span class="en">You will not go to hell if you conclude your talk by saying thank you, but it's a weak move</span><span class="zh">用「谢谢」结束报告不会让你下地狱，但这是一步弱棋。</span><cite>— Patrick Winston，《How to Speak》，2018</cite></blockquote>
+<p>说「谢谢」，更糟的是「谢谢聆听」，暗示大家熬到现在全凭礼貌，其实非常想去别处。他放了两段党代会主题演讲的结尾，Chris Christie 和 Bill Clinton 都以「上帝保佑你们，上帝保佑美国」收尾。他把 Clinton 那段倒回去重放：这里他抿住嘴唇，像在强忍着不说谢谢；那里他敬了个礼。还有一种办法是「向听众致敬」：说说你在这里过得多愉快，大家的问题多么有启发，期待再来。</p>
+<p>他就是这么收尾的：「我很高兴你们来了。」因为来了这件事说明，你们懂得怎么呈现、怎么包装想法是要紧的事，「我向你们致敬」。最后一句：下次再来，带上你的朋友。</p>
+<h2>冰山下面</h2>
+<p>这一小时里，Winston 只在几处说过「研究表明」或者给了数字，其余全是攒了四十年的手艺。把这几处挂钩一个个拉出来看，台上的版本普遍比原始研究说得宽。</p>
+<p><strong>七秒。</strong>提问后的「等待时间」（wait time）是教育研究里一个老题目，奠基者是 Mary Budd Rowe。她 1972 年在美国全国科学教学研究协会年会上的论文，分析了三百多盘小学科学课录音：老师提问后平均只等<strong>大约一秒</strong>，学生答完后老师平均 0.9 秒就接话。老师经过训练把这两段等待拉到<strong>三到五秒</strong>后，九百多盘录音显示学生的回答变长，主动的恰当回答变多，不答的变少，被老师看作「慢」的学生开口也多了。她的数字是三到五秒，不是七秒；对象是小学课堂，不是 MIT 的大讲堂。Winston 说七秒是「标准」，这个标准在课上没有出处。</p>
+<p><strong>20% 在走神。</strong>这个数字也没有来源，而且可能说少了。Farley、Risko 和 Kingstone 2013 年在《Frontiers in Psychology》上的论文提到，以往的走神研究在随机抽查时，「不在状态」的回答通常占 30% 到 40%。他们自己的实验只有 21 名大学生：看一段 40 分钟的讲座录像，每 5 分钟自评一次专注度，结果专注度和对内容的记忆都随时间下降，坐不住的小动作则越来越多。这反倒给「绕圈」和「口头标点」撑了腰：听众越往后掉线越多。</p>
+<p><strong>开电脑影响旁人。</strong>「研究表明了这一点」，最常被引的是 Sana、Weston 和 Cepeda 2013 年发在《Computers &amp; Education》上的两个实验。实验一，40 名心理学导论课学生（有效样本）在模拟课堂里用电脑记笔记，随机一半人额外做和讲课无关的网上任务，测验正确率 55% 对 66%。实验二更直接：38 名只用纸笔的学生，一半被安排坐在两个正在开小差的「托儿」后面，能看到他们的屏幕，正确率 56% 对 73%。论文称之为低了 11% 和 17%，严格说是百分点。样本小，场景是模拟的，但方向和 Winston 说的一致。</p>
+<p><strong>少字的幻灯片。</strong>他引的那个学生实验（兄弟会新生，一半内容在屏幕、一半在嘴上）本页没能找到任何发表记录，只能报告「他在课上提到了这样一个实验」。但这条建议有一整块研究撑着。Richard Mayer 等人 2001 年的实验发现，学生看配旁白的动画时，屏幕上再加上文字，学得反而更差，这就是多媒体学习里的「冗余效应」（redundancy effect）。不过 2023 年一篇覆盖 63 项研究的综述也指出，后来的研究把这条收窄了：Mayer 和 Johnson 2008 年发现，在画面上嵌几个关键词能帮助记忆。所以研究支持的是「少放字」，不是「一个字都不放」。更有意思的是标题。Garner 和 Alley 2013 年让 110 名工程专业学生（59 对 51）看同一段讲核磁共振如何发现肿瘤的技术报告，一组幻灯片是 PowerPoint 默认的「主题标题 + 项目符号」，另一组是「一句完整论断做标题 + 图像证据」（assertion-evidence）。后一组理解更好，误解更少，主观认知负荷更低，延迟测验的回忆也更好。两边都反对满屏要点，但 Winston 删掉标题，Alley 则把标题换成一整句话。</p>
+<p><strong>镜像神经元。</strong>Winston 自己说这是「疯狂边缘」的看法，这份诚实值得记一笔。他依托的理论是「镜像神经元让我们理解他人动作」，这在 2009 年就被 Gregory Hickok 在《认知神经科学杂志》上系统质疑过：猴子身上没有直接检验这个理论的数据，人类的证据则「有力地反对」它。黑板比幻灯片好用，也许是真的，但用镜像神经元来解释它，站不住。</p>
+<p><strong>那颗星和他的研究。</strong>「Winston 之星」是事后总结的：他说拱门学习出名时他并不知道为什么。这篇 1970 年的博士论文题为《Learning Structural Descriptions from Examples》，导师 Minsky。课里那段「固定开场白」（人类是能讲故事的符号动物）就是他晚年 Genesis 小组的研究纲领。教人思考就是教故事，这句话不只是讲课技巧，是他对人类智能的整个理论。他教人怎么说话，和他研究机器怎么理解故事，是同一件事的两面。2020 年的《Make It Clear》把求职报告那套扩成 VSN-C 框架：愿景（Vision）、步骤（Steps）、新闻—贡献（News–Contributions）。</p>
+<p><strong>公式本身也变过。</strong>Newport 2008 年的笔记里，那条公式写成 I = f(K, P, T)，I 是影响力（impact），三项「重要性依次递减」。2018 年的台上，它变成了说话的质量。四十年里这堂课一直在改，录像只是其中一年的切片。</p>
+<h2>后来的命运</h2>
+<div class="fate"><p class="verdict">部分站住 · 截至 2026-10</p><p>结构性的建议（承诺开场、绕圈、口头标点、五分钟交代愿景、以「贡献」收尾）是经验之谈，没被检验，也没被推翻；少字幻灯片有多媒体学习研究支持；他顺手挂上去的数字和机制（七秒、20%、镜像神经元、「天赋很小」）大多比证据说得满。</p></div>
+<p>2019 年 7 月 Winston 去世，MIT 新闻的讣告专门提到这堂每年一次、「极受欢迎」的课。录像在 OpenCourseWare 上传得很远。2022 年 MIT Open Learning 公布 OCW 历史上播放最多的五个视频，How to Speak 在列，而且列在第一个，五个合计 4,150 万次播放。单个视频的播放数本页没能从一手来源核实。</p>
+<p>和他相关的几条研究线，这些年各有走向。电脑这条最热闹：2014 年 Mueller 和 Oppenheimer 发表「笔比键盘更有力」，说用手写笔记的学生概念题答得更好，一度成了各校禁电脑的主要理由。2021 年 Urry 等人用 145 名塔夫茨大学学生做了直接复制（原研究 67 人），加上对八项相关研究的小型元分析，<a href="https://www.psychologicalscience.org/news/releases/no-benefit-handwriting-notes.html">结论</a>是按记笔记方式区分，测验成绩「只有很小的、统计上不显著的差异」。不过 Winston 禁电脑的理由从来不是记笔记的方式，而是分心和干扰旁人，这一条 Sana 2013 的实验仍然撑得住。他的规矩比他的理由走得远，而他的理由本身没倒。</p>
+<p>「天赋很小」这条，从来没有人直接测过说话能力的 K、P、T 比例。旁证来自专长研究。Macnamara、Hambrick 和 Oswald 2014 年的元分析发现，刻意练习能解释的表现差异，在游戏里是 26%，音乐 21%，体育 18%，教育 4%，职业领域不到 1%。这一刀砍在 P 上，不砍 K：Winston 的公式里分量最重的是「关于说话的知识」，这恰好没人量过。所以这条只能判「仍悬而未决」，但它提醒人们，「天赋不重要」作为一句口号，说得比任何研究都满。镜像神经元那条，Hickok 2014 年把质疑扩成了一本书《The Myth of Mirror Neurons》（本页只读了他 2009 年的论文）。</p>
+<p>被讲歪的方式则很典型。2026 年 8 月 Upworthy 一篇介绍这堂课的文章里，嵌着一条推文，说这一小时「比所有的书、课程和导师加起来」教你的都多。MIT 新闻网站转引这篇文章时的摘要写着，「我总是用笑话结尾……」是 Winston 的「妙语」，可原话出自 Doug Lenat，Winston 只是转述。一堂反复提醒「字太多」「别夸张」的课，在传播中被压成了几条金句，还错配了作者。</p>
+<p>站得最稳的部分，恰恰是 Winston 没挂研究的那些：开场就告诉人能得到什么，结尾留下你做了什么。它们没被实验检验过，但也没有任何证据反对它们。工程教育里今天推的 assertion-evidence 幻灯片，和这堂课在方向上也一致：少放要点，让讲者成为主角。</p>
+<h2>出处</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://ocw.mit.edu/courses/res-tll-005-how-to-speak-january-iap-2018/bc92763ffa0dad0ecafe44967e834e16_Unzc731iCUY.pdf">MIT OpenCourseWare：How to Speak 官方逐字稿（2018）</a></span><span class="d">本页所有引语和课程结构的来源。</span></li>
+<li><span class="t"><a href="https://files.eric.ed.gov/fulltext/ED061103.pdf">Mary Budd Rowe：Wait-Time and Rewards as Instructional Variables（1972，ERIC）</a></span><span class="d">等待时间研究的原始会议论文：一秒、0.9 秒、三到五秒，支撑「七秒」一段的对照。</span></li>
+<li><span class="t"><a href="https://www.eecs.yorku.ca/course_archive/2015-16/F/2011/laptop%20in%20classroom%20article.pdf">Sana, Weston &amp; Cepeda：Laptop multitasking hinders classroom learning for both users and nearby peers（2013）</a></span><span class="d">笔记本电脑分心实验的全文，支撑「冰山」和「命运」里关于干扰旁人的样本与数字。</span></li>
+<li><span class="t"><a href="https://www.ijee.ie/articles/Vol29-6/23_ijee2791ns.pdf">Garner &amp; Alley：How the Design of Presentation Slides Affects Audience Comprehension（2013）</a></span><span class="d">assertion-evidence 幻灯片的对照实验，支撑「少字」与「标题」的比较。</span></li>
+<li><span class="t"><a href="https://pages.ucsd.edu/~jpineda/COGS171/readings/Hickok.pdf">Gregory Hickok：Eight Problems for the Mirror Neuron Theory of Action Understanding（2009）</a></span><span class="d">对镜像神经元「理解动作」理论的批评综述，支撑「共情镜像」一段。</span></li>
+<li><span class="t"><a href="https://pubmed.ncbi.nlm.nih.gov/24986855/">Macnamara, Hambrick &amp; Oswald：Deliberate practice and performance（2014，PubMed）</a></span><span class="d">刻意练习元分析的摘要，支撑「天赋很小」一条的旁证。</span></li>
+</ul>
+</div>
+<footer>演讲精读 · 一场演讲，一个想法的来龙去脉 · 写于 2026-10-17</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode-lecture',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode-lecture');}catch(e){}
+  set(saved==='pop'?'pop':'deep');
+})();
+</script>
+</body></html>
