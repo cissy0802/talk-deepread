@@ -45,6 +45,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -108,6 +116,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>The games got made; the intuition hasn't been measured.</strong> In 2012 the MIT Game Lab released a relativity game in which the speed of light gradually slows down. Australia's Einstein-First project teaches relativity and quantum ideas to schoolchildren: a 2022 study of 54 Year 3 pupils (age 8) found pretest scores of zero, and post-course class averages of 64% and 24%, a gap the authors put down to teacher involvement. There was no control group, and what was measured was answers to concept questions, not intuition. On the quantum side it's more awkward. A 2016 Nature paper, "Exploring the quantum speed limit with computer games" (Quantum Moves), claimed players succeeded where numerical optimization failed; in 2019 Grønlund found a standard algorithm "outperforms all players by a large margin," and in 2020 the authors retracted, citing an error in their code that meant the quantitative results were not valid. One more irony: in 1959 Penrose and Terrell independently predicted that a fast-moving object wouldn't look contracted in a snapshot, but rotated; in 2025 a team using picosecond laser pulses and ultra-fast photography demonstrated the effect in the lab for the first time. A physically faithful "Lorentz contraction game" should show rotation, not the squashing Dawkins imagined.</p>
 <p><strong>The bombshell was a dud.</strong> In 2005 Spalding, Frisén and colleagues used the carbon-14 that 1950s–60s nuclear tests left in the atmosphere to date human cells, and found that neurons in the occipital cortex "are as old as the individual." In 2008 a Danish team dated the eye lens and concluded that the core lens protein "is never subject to turnover or remodelling once formed" — the only other human tissue then known to be lifelong was dental enamel. So "not a single atom" is literally false. Grand's gist — most of your matter flows through you; you are a pattern rather than a pile of stuff — survives, with the word "most" added.</p>
 <p>Where things stand today: science is counterintuitive, true; evolution shaped our intuitions, also true; but neither gets you to a biological ceiling on human understanding. Quantum mechanics itself is the counterexample — we got it with mathematics rather than intuition. Dawkins, in the last line of his book, left that door open too.</p>
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Cognitive science · Interface theory (Donald Hoffman)</b>: Hoffman argues that perception works like desktop icons, tuned for fitness rather than truth — the same shape as "real is whatever the brain needs it to be." The difference: Hoffman treats space-time itself as an icon, while Dawkins still believes the atoms are there and that science can widen the window.</li>
+<li><b>Buddhism · The two truths (Nagarjuna)</b>: Nagarjuna's Mulamadhyamakakarika says the Buddhas teach through two truths: conventionally a table is a table; ultimately it lacks inherent existence. "Solid" and "mostly empty" are likewise both true, each at its own level. Where it breaks is the word "empty": Dawkins means space between nuclei; Buddhist emptiness means having no fixed, independent self — closer, in fact, to Grand's "you are a pattern."</li>
+<li><b>Psychology · The moving triangles (Heider and Simmel)</b>: In 1944 Heider and Simmel showed people a short film of two triangles and a circle moving about; nearly everyone narrated chases and bullying — social Middle World software overreaching. But seeing intention is automatic perception, not belief; getting from there to a purposeful universe takes one more step.</li>
+<li><b>Distributed systems · Rolling updates</b>: Replace a service's instances one by one until every machine is new, and it is still the same service — Grand's walking dune in server form. Except that carbon-14 dating shows the body keeps a few machines that never rotate out (lens core, cortical neurons), more like a cluster with a handful of stateful nodes.</li>
+</ul></div>
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Dawkins's "Middle World": our ancestors lived among medium-sized things, so our brains find quantum theory and relativity dizzying.</li>
+<li>Rock is almost entirely empty space yet feels solid, because "solid" is a useful concept for navigating Middle World.</li>
+<li>Every animal's "reality" is a model its brain builds for survival; bats, pond skaters and monkeys need different world models.</li>
+<li>Steve Grand's dune, which walks about 17 meters west a year without changing shape, shows that a person is a pattern, not a pile of stuff.</li>
+<li>Humans live in a social Middle World and model things as agents with intentions — software that overreaches onto cars and the cosmos.</li>
+<li>The talk's title comes from a 1927 Haldane essay that used it to make room for mystical experience; Dawkins turned it to naturalism.</li>
+<li>The Feynman line quoted on stage has no known source; what Feynman said in 1965 was that nobody understands quantum mechanics.</li>
+<li>The idea of intuition tuned to medium scales wasn't original: Gerhard Vollmer named the "mesocosm" in 1975.</li>
+<li>The boundary isn't scale: people are accurate intuitive physics engines when perceiving and acting, but often wrong when reasoning explicitly.</li>
+<li>Carbon-14 dating shows lens-core proteins and cortical neurons last from birth, so "not a single atom was there" is literally false.</li>
+</ol>
 <h2>Sources</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/richard_dawkins_why_the_universe_seems_so_strange/transcript">TED official transcript: Why the universe seems so strange</a></span><span class="d">Source of every Dawkins quote and on-stage number on this page.</span></li>

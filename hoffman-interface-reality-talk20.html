@@ -46,6 +46,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head>
 <body>
@@ -176,6 +184,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>他自己这条线也一直在走。</strong>2020 年他和 Prakash、Fields、Prentner、Singh 在《Entropy》第 22 卷第 514 篇发表《Fact, Fiction, and Fitness》，又证了四个定理，方向一致：适应度收益函数通常<strong>不是</strong>保持知觉结构的同态；2021 年 FBT 定理正式落在《Acta Biotheoretica》。争论也进了哲学期刊：2023 年 Jeffrey N. Bagwell 在《Synthese》第 201 卷发表《拆穿界面论：为什么 Hoffman 的怀疑论（真的）自我瓦解》——这一篇本次运行没读到全文，这里只报它存在这个书目事实。</p>
 <p><strong>而他的正面主张还停在同一个位置。</strong>「意识主体网络」是 2015 年台上那句「我目前正在研究它」；十一年过去，它仍然是一个数学构造，没有产出一个可检验的知觉学预测——这跟定理那一半的处境完全不同。更微妙的是，台上那个让步一直悬着：他亲口说演化模拟只跑了知觉，没跑逻辑和数学，而他押注逻辑和数学「至少是朝着真相的方向」。可他整个论证都是由数学推进的。如果演化在数学上是偏向真相的，那它凭什么在知觉上如此彻底地不偏向？这个不对称需要一个理由，而那个理由至今是一句押注。</p>
 <p>最后是传播层面。562 万次播放让这场演讲成了「科学证明现实是幻觉」这类说法最常被援引的出处。而被记住的是甲虫和桌面——不是 (|X|−3)/(|X|−1)，不是「真相」策略不许取期望，更不是 Hoffman 自己写的那句「真实性与适应无关」。他在台上说我们对自己的盲区是盲的；这场演讲最整齐的一个注脚是，它流传出去的那一版正好印证了这句话。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>佛学 · 二谛（龙树）</b>：龙树在《中论》里说，佛法依二谛而说：世俗谛照着过日子，胜义谛里万物没有自性；不依世俗，就讲不出胜义。这和「不当字面上的真，但认真对待」几乎是同一个结构。不像在地基：中观连心识也说是空的，Hoffman 却把意识主体立为最底层的真实，这一步更接近唯识宗。</li>
+<li><b>神经科学 · 受控的幻觉（Anil Seth）</b>：Anil Seth 把知觉称作「受控的幻觉」，即大脑对感觉信号成因的最佳猜测，和 Hoffman 一样说知觉是构造出来的。不像的是，这个猜测时刻被预测误差拉回世界，而做猜测的正是大脑，恰是 Hoffman 说没有因果力的那个东西。</li>
+<li><b>控制论 · 好调节器定理（Conant 与 Ashby）</b>：1970 年 Conant 和 Ashby 证明，又成功又最简单的调节器必须是被调节系统的一个模型，结论和「适应度胜过真相」正相反。像的是两者都很依赖定义：他们的「模型」只是一个会丢信息的映射（同态）；不像的是方向。</li>
+<li><b>经济学 · 古德哈特定律（Charles Goodhart）</b>：Goodhart 1975 年谈英国货币政策时指出，统计规律一旦被当作调控目标，就会失灵。甲虫「越大越亮越褐越好」也是代理指标，管用了很久，直到啤酒瓶把它推到极致。不像的是，古德哈特说的是有人钻指标的空子，瓶子却不是为骗甲虫造的。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>知觉不是拍照：上亿个神经元在实时构造我们看见的形状、物体、颜色和运动。</li>
+<li>教科书认为知觉是对外部世界的准确重构，理由是看得准的祖先更能留下后代。</li>
+<li>演化方程里居中的是适应度而不是真实：同一块牛排对饿狮、饱狮和兔子价值各不相同。</li>
+<li>澳洲宝石甲虫把啤酒瓶当成母虫是真事，但「差点灭绝」「澳洲改瓶子救甲虫」都与原始记录不符。</li>
+<li>Hoffman 的界面理论把时空比作电脑桌面、物体比作图标：不当字面上的真，但要认真对待。</li>
+<li>Hoffman 承认演化模拟只跑了知觉，并押注逻辑和数学受到朝向真相的选择压力。</li>
+<li>「适应度胜过真相」定理的下界是 (|X|−3)/(|X|−1)，知觉空间只有 3 个状态时降到 0。</li>
+<li>定理里的「真相」策略只许盯住单一最大后验点，不许对整束世界状态取期望，所以按定义会输。</li>
+<li>Barton Anderson 指出，适应度随生物状态变化，恰恰要求知觉追踪真相、并与效用分开。</li>
+<li>Manolo Martínez 的模型显示，生物一旦要合并两条互补线索，如实报告线索就成了收益最高的策略。</li>
+</ol>
 <h2 data-tts="c9121e75920978fe">出处</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/donald_hoffman_do_we_see_reality_as_it_is/transcript">TED 官方逐字稿：Do we see reality as it is?</a></span><span class="d">本页每一句演讲引语（含 Chris Anderson 的问答）和所有台上数字的唯一来源，用 <code>tools/ted_transcript.py</code> 抓取后通读，约 3190 词。</span></li>

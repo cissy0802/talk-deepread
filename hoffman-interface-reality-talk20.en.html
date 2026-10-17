@@ -46,6 +46,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head>
 <body>
@@ -176,6 +184,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>His own line has kept moving too.</strong> In 2020 he and Prakash, Fields, Prentner and Singh published "Fact, Fiction, and Fitness" in <i>Entropy</i> 22(5): 514, proving four more theorems in the same direction: fitness payoff functions are generically <strong>not</strong> homomorphisms of key perceptual structures. In 2021 the FBT theorem landed formally in <i>Acta Biotheoretica</i>. The argument also moved into philosophy journals: in 2023 Jeffrey N. Bagwell published "Debunking interface theory: why Hoffman's skepticism (really) is self-defeating" in <i>Synthese</i> volume 201 — a paper this run could not read in full, so it is reported here only as a bibliographic fact.</p>
 <p><strong>And his positive claim is still where it was.</strong> "A network of conscious agents" was, in 2015, the thing he was "currently exploring." Eleven years on it remains a mathematical construction that has yielded no testable prediction in perception science — a very different position from the theorem half. More subtly, the concession from the stage still hangs there: he said himself that the simulations were run on perception, never on logic or mathematics, and that he would bet logic and mathematics are pushed "at least in the direction of truth." Yet his entire argument is driven by mathematics. If evolution biases us toward truth in mathematics, why would it fail so completely to do so in perception? That asymmetry needs a reason, and so far the reason is a bet.</p>
 <p>Finally, the dissemination. 5.62 million plays have made this talk the most frequently cited source for claims of the form "science has proved reality is an illusion." What got remembered is the beetle and the desktop — not (|X| − 3)/(|X| − 1), not the fact that "Truth" is not allowed to take an expectation, and certainly not Hoffman's own written sentence that veridicality is irrelevant to adaptation. He said on stage that we are blind to our own blindnesses; the neatest footnote to the talk is that the version of it that travelled proves the point.</p>
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Buddhism · the two truths (Nagarjuna)</b>: In the <em>Mulamadhyamakakarika</em>, Nagarjuna says the Buddha taught through two truths: conventional truth, which you live by, and ultimate truth, in which nothing has intrinsic existence; without the conventional, the ultimate cannot be taught. That is nearly the structure of "don't take it literally, but take it seriously." The difference is the foundation: Madhyamaka says consciousness is empty too, while Hoffman makes conscious agents the bedrock of reality, a move closer to the Yogacara "mind-only" school.</li>
+<li><b>Neuroscience · controlled hallucination (Anil Seth)</b>: Anil Seth calls perception a "controlled hallucination," the brain's best guess about the causes of its sensory signals, so he too says perception is constructed. The difference: prediction errors keep pulling that guess back toward the world, and the thing doing the guessing is the brain, exactly what Hoffman says has no causal powers.</li>
+<li><b>Cybernetics · the good regulator theorem (Conant &amp; Ashby)</b>: In 1970 Conant and Ashby proved that the simplest maximally successful regulator must be a model of the system it regulates, the mirror image of "fitness beats truth." Both results lean hard on definitions: their "model" is only a homomorphism, a mapping that can throw information away. What differs is the direction of the conclusion.</li>
+<li><b>Economics · Goodhart's law (Charles Goodhart)</b>: Writing about British monetary policy in 1975, Goodhart observed that a statistical regularity tends to collapse once it is used as a control target. The beetle's "bigger, shinier, browner is better" is a proxy too, reliable for ages until a beer bottle maxed it out. The difference: Goodhart was describing people gaming a measure, and nobody designed the bottle to fool beetles.</li>
+</ul></div>
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Perception is not a snapshot: billions of neurons construct the shapes, objects, colors and motion we see in real time.</li>
+<li>The textbook view treats perception as an accurate reconstruction of the world, because ancestors who saw more accurately left more offspring.</li>
+<li>Fitness, not truth, sits at the center of evolution's equations: one steak is worth different amounts to a hungry lion, a sated lion and a rabbit.</li>
+<li>Australian jewel beetles really did court beer bottles, but "nearly extinct" and "Australia changed its bottles" are not in the original record.</li>
+<li>Hoffman's interface theory casts space-time as a desktop and objects as icons: not to be taken literally, but to be taken seriously.</li>
+<li>Hoffman conceded that his evolutionary simulations covered only perception, and bet that logic and mathematics are selected toward truth.</li>
+<li>The fitness-beats-truth theorem's lower bound is (|X|−3)/(|X|−1), which falls to zero when the perceptual space has three states.</li>
+<li>The theorem's "Truth" strategy may look only at a single maximum-a-posteriori point, never at expected fitness over a whole fiber, so it loses by definition.</li>
+<li>Barton Anderson argued that because fitness depends on an organism's state, perception must track truth and stay separate from utility.</li>
+<li>Manolo Martínez showed that once an organism must combine two complementary cues, honestly reporting the cues becomes the best-paying strategy.</li>
+</ol>
 <h2>Sources</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/donald_hoffman_do_we_see_reality_as_it_is/transcript">Official TED transcript: Do we see reality as it is?</a></span><span class="d">The sole source for every talk quotation on this page (including the Chris Anderson Q&amp;A) and every number spoken on stage; pulled with <code>tools/ted_transcript.py</code> and read end to end, ~3,190 words.</span></li>

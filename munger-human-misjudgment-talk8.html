@@ -46,6 +46,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -135,6 +143,27 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>仍悬着的是 lollapalooza 本身。</strong>「四五条倾向合流会产生极端结果」这个说法很难证伪：事后总能从清单上挑出四五条。这点不用别人指出——Munger 自己在台上就问了：「这份清单是不是不当地同义反复？是不是有重叠，是不是有些条目能从别的条目组合里推出来？」他的回答是：「明摆着，是的。」2005 年他又补一句：在心理学这样的软科学里，「相当一部分混乱是修不好的」。这是坦率，但坦率不等于验证。三十年过去，这个词进了投资圈的日常词汇，没有进心理学的文献。</p>
 <p>最后是那个绕不开的自指。一个七十岁的人，在哈佛讲了一小时「人怎么被自己的记忆、自己的说出口、自己的不查证骗过去」；十年后，八十一岁的他把这篇东西重写了一遍，<strong>凭记忆，不借助任何研究</strong>，还自己给这种行为起好了名字，自己预言了后果。他删对了一个，留错了一个。</p>
 <p>这份清单最有说服力的一条证据，是它作者身上的那几处刀口。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>神经科学 · 解释器（Michael Gazzaniga）</b>：裂脑病人的左脑没看到右脑收到的画面，却会替左手的选择当场编出真诚的理由，Gazzaniga 称之为「解释器」。像胆囊医生：理由是事后生成的；不像在于，解释器只是在补信息缺口，背后没有激励在推。</li>
+<li><b>分布式系统 · 拜占庭容错（Lamport 等，1982）</b>：拜占庭将军问题不问出错的节点是恶意还是糊涂，只要求出错节点少于三分之一时系统仍能达成一致，和 Munger 夸收银机是同一思路：设计不赌动机。不像的是，容错靠彼此独立的节点投票，社会认同却让人的错误一起发生。</li>
+<li><b>佛学 · 见取</b>：佛教把执取分为四种，其中「见取」是对自己观点的执著，和 Munger 的卵子比喻同一个结构：一个想法进来，门就关上。不像在于，Munger 的解药是像达尔文那样专记反面证据，佛学要松开的是那个持有观点的「我」。</li>
+<li><b>科学哲学 · 保护带（Imre Lakatos）</b>：Lakatos 说研究纲领有不许动的硬核，外面围着一圈辅助假说当保护带，反例来了先改保护带，「宁可加一个西格玛」正是这样。不像的是，Lakatos 认为只要纲领还在预言新事实，修补保护带并不算非理性。</li>
+<li><b>生物进化 · 上位效应（epistasis）</b>：遗传学里，两个突变放在一起的效果常常不等于各自效果之和，这叫上位效应，和 lollapalooza「组合远大于单条」是同一个结构。不像在于，生物学家先测出每个突变单独的效果，再拿组合的实测值去比，偏离多少能量出来；Munger 的清单没有单条的基准，事后总能凑出四五条，所以至今没法检验。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>Munger 讲的胆囊医生说明，最危险的不是骗子，而是被激励塑造得真心相信自己的人。</li>
+<li>联邦快递夜班从按小时改成按班次付钱后，枢纽转运慢的老问题立刻解决了。</li>
+<li>一致性与承诺像卵子的关闭装置：一个想法进来之后，后来的想法就很难再进去。</li>
+<li>Lollapalooza 指几条心理倾向同时朝一个方向推，合起来的力量远超任何单独一条。</li>
+<li>米尔格拉姆实验里起作用的是一个假的科学理由、一级级加码的电击和对比，不只是服从权威。</li>
+<li>Cialdini 1975 年的动物园实验共 72 人，先拒后退把答应率从 16.7% 提到 50%，测的只是嘴上答应。</li>
+<li>2005 年 Munger 凭记忆把演讲重写到两倍长，删掉了斯坦福监狱实验，却留下了基蒂·吉诺维斯案。</li>
+<li>2007 年的庭审记录研究表明「38 个目击者无动于衷」缺乏证据，但旁观者效应的实验研究本身站得住。</li>
+<li>Haslam 与 Reicher 2012 年指出，米尔格拉姆实验里唯一一句纯命令式提示语，恰恰让受试者拒绝继续。</li>
+<li>「宁可加一个西格玛也不改理论」，和 Lakatos 说的用辅助假说护住理论硬核是同一个结构。</li>
+</ol>
 <h2 data-tts="71d66f82cb57d179">出处</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://jamesclear.com/great-speeches/psychology-of-human-misjudgment-by-charlie-munger">The Psychology of Human Misjudgment（1995 现场逐字稿）</a></span><span class="d">本页所有 1995 年引语的来源。这场演讲没有官方逐字稿，本页每句引语都与另一份独立转录<a href="https://speakola.com/ideas/charlie-munger-human-misjudgement-harvard-1995">（Speakola）</a>逐字比对过，两份一致才引；部分段落还核对了第三份<a href="https://www.joshuakennon.com/the-psychology-of-human-misjudgment-by-charlie-munger/">（Joshua Kennon 转录）</a>。</span></li>

@@ -46,6 +46,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -114,6 +122,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>与此同时，一件台上完全没提的事浮了出来。</strong>2017 年 Lindahl 与 Britton 等人在 PLOS ONE 发表《禅修体验的多样性》，访谈 <strong>60 名西方佛教修行者和 32 名禅修教师</strong>，整理出 7 个领域、59 类与禅修相关的体验，其中许多是困难的、损害功能的。必须把话说准：这是一个<strong>有意招募</strong>有过困难体验者的样本，文中那些比例不是人群发生率。但它确立了一件之前在公共话语里几乎不存在的事——密集禅修有不良反应，而台上那个「奥运冠军」的框架里没有给它留位置。</p>
 <p><strong>还有被误传的那一层，而这一层 Ricard 自己在打。</strong>媒体从那批脑扫描里提炼出一个标题——「世界上最快乐的人」——贴了他二十年。他管这叫「一个荒谬的说法」——「我们怎么可能知道八十亿人的幸福状态？」问他烦不烦，他的回答是「我觉得难为情」。最后劝住他的是上师的孙子：「拿着它，用它。别再跟它较劲了。」这标签的问题不只在不准，而在把他的主张翻了个面：他讲的是一门人人可练的手艺，标签讲的是一个天赋异禀的异人。第二重误传更大：2004 年之后，正念成了产业。<strong>而对这件事最尖锐的批评者里就有他本人。</strong>2013 年他写过一篇短文，句子很不客气：「一个等待猎物的狙击手：他可以全神贯注，毫不动摇地安住于当下，冷静而沉着。」单纯的「裸觉察」再精湛也「不过是一个工具……它同样可以被用来造成巨大的痛苦」。六年后 Ronald Purser 在《McMindfulness》里从世俗一侧得出了相近的结论——批评者和被批评者站到了同一边。</p>
 <p>今天学界的位置大致是这样：<strong>作为方法，禅修有效且效果温和</strong>，与既有疗法相当；<strong>作为脑科学故事，2004 年那一版已经不能直接用了</strong>——样本太小、混杂太多、一根关键指标已不被信任，而它最经得起复制的部分（高频脑电的特质性差异）恰恰是当时说得最少的那部分。至于他真正的主张——sukha 是一种可以通过看清事物而培养的、不依赖条件的安适——科学到今天也没有真正检验过：它需要几十年尺度的纵向研究，而八周试验是我们有的全部。所以最诚实的说法是：他台上那句「幸福是一门手艺」到今天仍然可能是对的，只是二十二年过去了，证明它的那副担子还没人挑起来。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>西方哲学 · 动态快乐与静态快乐（伊壁鸠鲁）</b>：伊壁鸠鲁把吃喝这类边满足边耗尽的快乐叫「动态快乐」，把无扰的宁静（ataraxia）叫「静态快乐」，视后者为至乐，正是快乐与安适之分。不像的是，他靠削减欲望求无扰，Ricard 的安适却容许风暴照来。</li>
+<li><b>心理学 · 交互抑制（Joseph Wolpe）</b>：Wolpe 1958 年的系统脱敏法建立在「放松与焦虑不能并存」上，和「相反的心理因素不能同时发生」同构。不像的是，Wolpe 靠条件化消退具体恐惧，没有「直接看情绪本身」这条通用解药。</li>
+<li><b>东方哲学 · 用心若镜（庄子）</b>：《庄子·应帝王》说至人「用心若镜，不将不迎，应而不藏」，正是那面不被染脏的镜子。不像在用途：庄子描述至人如何应物，Ricard 拿镜子论证仇恨不是心的本性。</li>
+<li><b>分布式系统 · 串联可用性</b>：必须所有节点在线才能工作的系统，可用性是各节点可用性的乘积，依赖越多越脆，正如「缺一样就塌」。不像的是，工程靠冗余和多数派补救，Ricard 则让安适不再依赖条件。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>我们说的「幸福」多半是快乐，它依赖时间、对象和地点，在体验中耗尽自己，也不向外辐射。</li>
+<li>Ricard 把安适定义为贯穿并托住所有情绪的深沉宁静：海面可以有风暴，海的深处不变。</li>
+<li>向外凑齐条件的幸福自带崩塌：要拥有一切，只要缺一样，它就塌了。</li>
+<li>情绪都是来去的；仇恨若是心的本性，就该随时都在，所以心有被改造的余地。</li>
+<li>两种相反的心理因素不能同时发生，所以可以用随喜对治嫉妒、用慈爱对治仇恨。</li>
+<li>Ricard 说禅修的本义是熟悉化：旧倾向是时间堆起来的，新的存在方式也要花时间变熟。</li>
+<li>台上的伽马波研究实为 8 名中年修行者对 10 名 21 岁学生，组间混杂无法排除。</li>
+<li>惊跳反射研究 2012 年发表时只是单人案例，无预警条件下他与 12 名对照者没有差别。</li>
+<li>2014 年 47 项试验的荟萃分析：禅修降低焦虑抑郁约 0.3 个标准差，与药物相当而不更好。</li>
+<li>伊壁鸠鲁区分耗尽自己的动态快乐与无扰的静态快乐，和快乐／安适之分同构。</li>
+</ol>
 <h2 data-tts="86d307601ea85b78">出处</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/matthieu_ricard_the_habits_of_happiness/transcript">TED 官方逐字稿：The habits of happiness</a></span><span class="d">本页每一句引语和台上出现的每个数字（256 个电极、150 个对照、两万到四万小时）都出自这份逐字稿。</span></li>

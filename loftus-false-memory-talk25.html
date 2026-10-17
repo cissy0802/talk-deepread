@@ -46,6 +46,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -115,6 +123,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p>Brewin 与 Andrews 同年再发《对虚假记忆植入范式的重大担忧依然存在》（Major Concerns About the False Memory Implantation Paradigm Persist），本页未读到正文。争论的实际赌注不在实验室里：一方担心法庭用「假记忆可能」打发真实的受害者，另一方担心暗示性的问话和疗法制造出新的 Titus。Loftus 后来为高知名度性侵案的被告方出庭作证，包括 2020 年的 Harvey Weinstein 案和 2021 年的 Ghislaine Maxwell 案，这让前一种担心变得很具体。</p>
 <p><strong>目击信心：一次重要的修正，也是一次意外的呼应。</strong>2017 年，John Wixted 与 Gary Wells 在《公众利益心理科学》（Psychological Science in the Public Interest）上发表综述，挑战的正是美国司法界越来越接受的「目击者的信心说明不了什么」。他们的结论是：在「干净」的条件下——第一次、未受污染的辨认，列队公平，主持者不施加影响，当场记录信心——信心和准确度强相关，<strong>高信心的初次指认相当准确</strong>；低信心的初次指认则容易出错；条件一旦不干净，高信心也靠不住。这收窄了 Loftus 台上那句「说得很有信心……都不意味着发生过」：在列队这个场景里，第一次的信心有信息量。可它同时替 Titus 案作了证——那位受害者第一次说的是「这张最像」。按 2017 年的标准，那恰恰是一个应该亮红灯的低信心初次指认。从「最像」到「绝对确定」之间究竟发生了什么，是 Loftus 在台上提出、却没有展开回答的问题；新的研究至少说明，该被陪审团听见的是第一句，而不是第二句。</p>
 <p>今天的共识大致是：事后信息能改写记忆，没人再争；整段假记忆可能被植入，但多常见、多完整，学界还在用同一批访谈稿吵架；至于信心，要看的不是多高，而是什么时候、在什么条件下说的。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>神经科学 · 记忆再巩固（Nader、Schafe 与 LeDoux）</b>：2000 年三人发现，大鼠的恐惧记忆被唤起后会重新变得不稳定，此时阻断杏仁核的蛋白质合成就能削弱它：调出即重存。不像的是，那里是旧记忆变弱，Loftus 这里是新内容被写进去。</li>
+<li><b>西方哲学 · 休谟论记忆与想象</b>：休谟在《人性论》（1739）里说，记忆和想象只差在生动程度，又承认想象能生动到冒充记忆：说谎的人谎话说多了，会把它当真事记住。不像的是，休谟仍拿生动当记忆的标志，Loftus 的结论是生动、细节、情绪都不能作证。</li>
+<li><b>分布式系统 · 只存状态、不留日志</b>：只存当前值、写入即覆盖的存储，查不出某个值是谁何时写的，正如「整合之后只剩一个记忆」。不像的是，工程上可改用只追加的事件日志保住来源，大脑不行；维基百科其实留着全部编辑历史，比喻在这点上太乐观。</li>
+<li><b>佛学 · 五蕴无我</b>：佛教说「我」只是五蕴的暂时聚合，没有恒常的主人；Loftus 结尾承认人们把记忆当作「我是谁」，而记忆本身一再被重拼。不像的是，她要用佐证分真假，佛学要的是不执着，不是核实。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>受害者在 Steve Titus 案里从初次指认的犹豫变成庭上的笃定，Titus 因此被错判强奸罪。</li>
+<li>Elizabeth Loftus 说，300 个靠 DNA 洗冤的案子里约四分之三出在错误的目击记忆上。</li>
+<li>记忆不像录像，更像一页维基百科：每次调出都要重新拼，自己能改，别人也能改。</li>
+<li>1974 年车祸实验里，把「撞」换成「猛撞」，被试估的车速更高，也更多人记得不存在的碎玻璃。</li>
+<li>误导信息效应的要害是：事后信息混进原始记忆之后，人分不清某个细节是从哪来的。</li>
+<li>Loftus 1995 年的「商场走失」实验只有 24 人，约四分之一「记起」了从未发生的走失。</li>
+<li>2005 年的食物研究改变的只是自报的饮食意愿，比台上「改变行为」的说法窄得多。</li>
+<li>2023 年的复制研究按编码得出 35% 的假记忆率，被试自认记得的只有 14%。</li>
+<li>规范的列队程序下，初次指认时的信心很有信息量，低信心的初次指认才是危险信号。</li>
+<li>记忆像只存当前值、不留修改日志的存储：信息整合之后，来源就查不回来了。</li>
+</ol>
 <h2 data-tts="c1f507cb5c950bf9">出处</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/elizabeth_loftus_how_reliable_is_your_memory/transcript">Elizabeth Loftus — How reliable is your memory?（TED 官方逐字稿）</a></span><span class="d">演讲全文，本页所有演讲引语与演讲中的数字均出自此处。</span></li>

@@ -45,6 +45,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -111,6 +119,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p>Finally, the machine turned on her. In a 2017 interview she said that "trans women are trans women"; in 2021 she posted a long essay, "It Is Obscene," attacking cancel culture and naming former students; and since then, for a sizeable share of readers, she has been one thing. In April 2023 the National Council of Teachers of English published a blog post by the teacher Danelle Adeniji arguing that the talk should no longer be used in classrooms, on the grounds that its author's views conflict with her core value of "creating and upholding pro-Black, queer community spaces."</p>
 <p>The rights and wrongs of that dispute are outside this page's range. What is worth recording is the <strong>shape</strong>: the woman who stood on that stage and said "show a people as one thing, as only one thing, over and over again, and that is what they become" is now, to a great many people, one thing. Her talk is still correct. It simply failed to protect anyone &mdash; including her.</p>
 
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Psychology · WYSIATI (Daniel Kahneman)</b>: In <em>Thinking, Fast and Slow</em>, Kahneman's "what you see is all there is" describes fast thinking spinning a coherent story out of whatever information is at hand, with confidence tracking coherence rather than completeness. A single story works the same way: the less you know, the easier it is to tell, and the surer you feel. The difference: Kahneman describes a glitch inside every head; Adichie is asking who decides what information reaches your head at all.</li>
+<li><b>Neuroscience · predictive processing (Karl Friston / Andy Clark)</b>: On this view the brain interprets the senses through prior expectations, passing upward only the "prediction errors" that fail to match. Her mild surprise on a Guadalajara street is a media-fed prior colliding with an error. The difference: brains update priors from error automatically, while a single story is kept alive by repetition, and the error only shows up once you are physically there.</li>
+<li><b>Philosophy · epistemic injustice (Miranda Fricker)</b>: Fricker's 2007 notion of testimonial injustice is a hearer discounting a speaker's credibility out of prejudice about who the speaker is. The professor who found Adichie's novel not "authentically African" was discounting an African narrator's testimony. The difference: Fricker is about how the listener discounts; nkali is about whose version becomes definitive before anyone else speaks.</li>
+<li><b>Buddhism · the blind men and the elephant (Udana)</b>: In the Pali Canon's Udana, the Buddha tells of a king who has blind men touch an elephant: the one who feels the head says it is like a pot, the one who feels an ear says a winnowing basket, and they come to blows; the Buddha uses it for wanderers who each cling to a partial view. None of them is wrong, only incomplete, which is exactly the talk's point. The difference: the blind men are symmetrical and no one wins; with nkali, one man's patch becomes the whole elephant and the others never get heard.</li>
+</ul></div>
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>A childhood of only British and American books convinced Adichie that books by nature had to be about foreigners, until she read Achebe and Camara Laye.</li>
+<li>The houseboy Fide's family meant nothing but "poor" to her until she saw the basket his brother had woven: their poverty was her single story of them.</li>
+<li>Her American roommate pitied her before they ever met, because the single story leaves no room for Africans as equals.</li>
+<li>Show a people as one thing, over and over, and that is what they become; Adichie admits doing this herself to Mexicans.</li>
+<li>The problem with stereotypes is not that they are untrue but that they are incomplete, and the talk never denies that Africa's catastrophes are real.</li>
+<li>The power named by the Igbo word nkali is not just telling another person's story but making it the definitive story of that person.</li>
+<li>The "headless men" the talk attributes to John Lok come from a 1554 voyage and copy the classical Blemmyae: Europe was writing Africa from Pliny before arriving.</li>
+<li>The "balance of stories" and "place of negations" arguments come from Chinua Achebe; the talk is the teacher's thesis compressed into the first person.</li>
+<li>In Paluck's Rwanda radio experiment, reconciliation stories shifted perceived social norms and behaviour but barely changed personal beliefs.</li>
+<li>The blind men and the elephant share the talk's structure, each account true but partial, minus the power that decides whose account counts.</li>
+</ol>
 <h2>Sources</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/chimamanda_ngozi_adichie_the_danger_of_a_single_story/transcript">Official TED transcript: The danger of a single story</a></span><span class="d">The sole source for every quotation from the talk and for the play count on this page; pulled in full for this piece with <code>tools/ted_transcript.py</code> (2,860 words) and read end to end.</span></li>

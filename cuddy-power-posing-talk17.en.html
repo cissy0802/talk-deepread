@@ -45,6 +45,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -196,6 +204,28 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p>First: TED now prefixes the talk's description with a parenthesis — <strong>"NOTE: Some of the findings presented in this talk have been referenced in an ongoing debate among social scientists about robustness and reproducibility."</strong> Second, and more interesting: the talk used to be titled "Your Body Language <em>Shapes</em> Who You Are." Visit the old address today and it 301-redirects, with the title now reading "Your Body Language <em>May Shape</em> Who You Are." <strong>A word was inserted into a title with 77 million views, and the word is "may."</strong></p>
 <p>The human side of this dispute — what it is like to be publicly audited by a field after becoming its public face — was written up at length by Susan Dominus in <em>The New York Times Magazine</em> on 18 October 2017, under the title "When the Revolution Came for Amy Cuddy." This page did not read that article; it reports the bibliographic fact only and does not restate its argument.</p>
 <p>Worth noting, finally: the thing the talk is actually remembered for was never in dispute. "Fake it till you become it" is not an experimental finding. It is what an advisor said on the phone to a graduate student who wanted to quit. It has held up, and it has nothing to do with p-values.</p>
+
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Eastern philosophy · Xunzi's "transforming nature by deliberate effort"</b>: Xunzi wrote that the sages transformed their nature by establishing <em>wei</em>, a word that can mean "false" but here means "artifice": doing the rites over and over until your nature changes. Same structure as "fake it till you become it." The difference is time: Xunzi meant a lifetime of accumulated practice, not two minutes before a meeting.</li>
+<li><b>Buddhism · practice and realization are one (Dōgen)</b>: In <em>Bendōwa</em>, Dōgen says practice and enlightenment are not two things; the posture of seated meditation already is realization. Both treat the body's posture as a door into the mind. But they point opposite ways: Cuddy's two minutes are a means to a better interview, while Dōgen rejects sitting in order to get anything.</li>
+<li><b>Neuroscience · the somatic marker hypothesis (Antonio Damasio)</b>: In <em>Descartes' Error</em> (1994), Damasio argued that signals from the body's state tag options as good or bad and steer decisions: the same "body first, mind follows" shape. The difference: somatic markers are spontaneous visceral signals, not a pose you deliberately strike.</li>
+<li><b>Investing · backtest overfitting (Bailey, Borwein, López de Prado &amp; Zhu)</b>: In a 2014 paper in the <em>Notices of the AMS</em>, the four showed that the more strategies you try on the same historical data, the easier it is to find one that backtests beautifully and earns nothing live. Carney's "add subjects and check" and "pick the question that worked" are the same move; the large Zurich replication was the live trading. The difference is bookkeeping: quants can discount for the number of trials, nobody counted them in 2010, and preregistration is that ledger arriving late.</li>
+</ul></div>
+
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Amy Cuddy's 2012 TEDGlobal talk argued that body language shapes not only how others see you but how you think and feel about yourself.</li>
+<li>The numbers on stage: after two minutes of expansive posing, testosterone rose about 20%, cortisol fell about 25%, and 86% versus 60% chose to gamble.</li>
+<li>What moved the audience most was not the data but Cuddy's story of a brain injury, an advisor who made her keep giving talks, and becoming a scientist for real.</li>
+<li>The original 2010 paper had just 42 participants, about 21 per group, and all three headline results sat right at the .05 threshold.</li>
+<li>With no neutral-posture control group, the study cannot tell whether expanding helps or contracting hurts.</li>
+<li>A 2015 Zurich replication with about 200 people reproduced the feeling of power, but not the hormone changes or the risk-taking.</li>
+<li>Dana Carney, first author of the original paper, said publicly in 2016 that she no longer believes the effect is real, and listed practices like checking p-values while adding subjects.</li>
+<li>In 2018 Cuddy renamed the effect "postural feedback": the evidence for effects on feelings is strong, but hormones, interview performance and gambling lack evidential value.</li>
+<li>A 2022 meta-analysis of 128 studies found that expansive posture affects mainly subjective feelings, with almost no detectable effect on hormones.</li>
+<li>Trying many analyses on the same data and reporting the best one is the trap investors call backtest overfitting: beautiful in sample, nothing out of sample.</li>
+</ol>
 
 <h2>Sources</h2>
 <ul class="reads">

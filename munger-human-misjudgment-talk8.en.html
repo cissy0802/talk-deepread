@@ -46,6 +46,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -135,6 +143,27 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>Still open is lollapalooza itself.</strong> The claim that four or five tendencies in confluence produce extreme outcomes is hard to falsify: after the fact, you can always find four or five on the list. Nobody had to point this out — Munger asked it on stage. "Isn't this list of standard psychological tendencies improperly tautological compared with the system of Euclid? That is, aren't there overlaps, and can't some items on the list be derived from combinations of other items? The answer to that is, plainly, yes." In 2005 he added that in a soft science "a significant amount of messiness is unfixable." That is candor, and candor is not verification. Thirty years on, the word has entered the working vocabulary of investors. It has not entered the psychology literature.</p>
 <p>Which leaves the self-reference nobody can step around. A seventy-year-old man spent an hour at Harvard explaining how people are fooled by their own memory, their own spoken conclusions, their own failure to check. Ten years later, at eighty-one, he rewrote it <strong>from memory, unassisted by any research</strong> — having already coined the name for that behavior and predicted its consequence. He cut the right one. He kept the wrong one.</p>
 <p>The most persuasive evidence for the checklist is the set of cuts it left on its own author.</p>
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Neuroscience · the interpreter (Michael Gazzaniga)</b>: A split-brain patient's left hemisphere, blind to what the right hemisphere was shown, will instantly invent a sincere reason for what the left hand chose; Gazzaniga called this the interpreter. Like the gallbladder surgeon, the reason comes after the fact. Unlike him, the interpreter is only filling an information gap, with no incentive pushing it.</li>
+<li><b>Distributed systems · Byzantine fault tolerance (Lamport et al., 1982)</b>: The Byzantine Generals problem never asks whether a faulty node is malicious or merely confused; it only requires agreement as long as fewer than a third of nodes fail. That is Munger's cash-register logic: design that doesn't bet on motive. The difference is that fault tolerance relies on independent nodes outvoting each other, while social proof makes human errors move together.</li>
+<li><b>Buddhism · clinging to views</b>: Buddhist teaching lists four kinds of clinging, one of which is clinging to one's own views, the same shape as Munger's egg that shuts once the first idea gets in. Munger's remedy is Darwin's habit of recording disconfirming evidence; the Buddhist remedy is to loosen the "I" that holds the view at all.</li>
+<li><b>Philosophy of science · the protective belt (Imre Lakatos)</b>: Lakatos described research programmes as a hard core surrounded by a belt of auxiliary hypotheses that absorbs counterexamples, which is exactly "add a sigma rather than change the theory." Unlike Munger's scorn for it, though, Lakatos held that patching the belt is rational so long as the programme keeps predicting novel facts.</li>
+<li><b>Evolutionary biology · epistasis</b>: In genetics, two mutations together often do something other than the sum of their separate effects, the same structure as lollapalooza's "the combination beats any single tendency." The difference is measurement: biologists first measure each mutation alone, then compare the combination against that baseline and can say how far it deviates. Munger's list has no single-tendency baseline, and four or five items can always be assembled after the fact, so the claim still can't be tested.</li>
+</ul></div>
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Munger's gallbladder surgeon shows that the real danger is not the con man but the person whom incentives have made sincerely believe.</li>
+<li>FedEx fixed its slow overnight hub transfers the moment it paid the night shift by the shift instead of by the hour.</li>
+<li>Consistency and commitment work like the egg's shut-off device: once one idea gets in, later ideas struggle to enter.</li>
+<li>Lollapalooza means several psychological tendencies pushing in the same direction at once, with far more force than any one alone.</li>
+<li>What drove the Milgram experiment was a false scientific reason, shocks raised step by step, and contrast, not obedience to authority alone.</li>
+<li>Cialdini's 1975 zoo study had 72 people; reject-then-retreat raised agreement from 16.7% to 50%, and it measured only verbal agreement.</li>
+<li>Munger's 2005 rewrite, done from memory at twice the length, dropped the Stanford prison experiment but kept Kitty Genovese.</li>
+<li>Trial records showed in 2007 that the "38 unmoved witnesses" lacked evidence, though experimental bystander research itself holds up.</li>
+<li>Haslam and Reicher showed in 2012 that the one pure-order prod in Milgram's script was exactly the one that made participants refuse.</li>
+<li>"Add a sigma rather than change the theory" has the same structure as Lakatos's auxiliary hypotheses shielding a theory's hard core.</li>
+</ol>
 <h2>Sources</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://jamesclear.com/great-speeches/psychology-of-human-misjudgment-by-charlie-munger">The Psychology of Human Misjudgment (1995 live transcript)</a></span><span class="d">Source of every 1995 quotation on this page. There is no official transcript of this talk, so each quotation here was checked word by word against an independent second transcription <a href="https://speakola.com/ideas/charlie-munger-human-misjudgement-harvard-1995">(Speakola)</a> and quoted only where the two agree; some passages were also checked against a third <a href="https://www.joshuakennon.com/the-psychology-of-human-misjudgment-by-charlie-munger/">(Joshua Kennon's transcription)</a>.</span></li>

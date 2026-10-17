@@ -46,6 +46,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -135,6 +143,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>框架本身也挨了批。</strong>2020 年 6 月，Litwin 与 Miłkowski 在《Cognitive Science》上说，把预测加工宣传为统一解释为时过早：「基于预测加工的模型很少得到经验检验，它们经常只是被当作『就是这样』的故事端出来」。上一节末尾那个把柄，被人正面抓住了。</p>
 <p><strong>最后是词本身的命运。</strong>「受控的幻觉」在传播中被剪掉了一半，剩下「幻觉」，于是变成「现实是假的」。可受控的意思正是<strong>预测被外界信息拽着</strong>，这一点他在台上已经说死了。2022 年 2 月 Sophie McBain 在《New Statesman》的长文里记下：Seth 希望有个更好的词。</p>
 <p>至于台上那句「有意识的 AI 前景相当渺茫」，2025 年 4 月被他扩成了《Behavioral and Brain Sciences》的靶子文章《有意识的人工智能与生物自然主义》：立场没变，但门留了一道缝——真正的人工意识沿着<strong>当前</strong>路线不太可能出现，可如果 AI 变得更像大脑、或更像生命，它就会变得更可信。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>佛学 · 无我（anattā）</b>：佛教说「我」只是色、受、想、行、识五蕴暂时聚合后起的名字，背后没有一个常住不变的主人，这和 Seth「统一的自我本身是一次建构」很像。不像在去向：佛学认为执着这个建构是苦的根源，修行要看穿它；Seth 的自我预测扎根于维持身体存活，是生命调节的一部分，不是一个该被放下的错觉。</li>
+<li><b>分布式系统 · 共识算法（Paxos / Raft）</b>：分布式数据库里每个节点只有自己的局部视图，系统把多数节点认可的那份日志当作「事实」，很像「对幻觉取得一致就叫现实」。不像的是，Raft 靠显式投票和多数票达成一致；人与人的知觉相近，是因为相似的大脑被同一个世界拽着，没有谁在投票。</li>
+<li><b>量子力学 · QBism（Christopher Fuchs 等）</b>：QBism 把量子态解释为观察者对测量结果的个人信念，每次测量后像贝叶斯推断那样更新，和「知觉是带着先验的最佳猜测」是同一个形状。不像的是，QBism 讲的是物理学家有意识地使用的形式工具，Seth 的预测是大脑里察觉不到的过程。</li>
+<li><b>控制工程 · 卡尔曼滤波（Rudolf Kálmán，1960）</b>：卡尔曼滤波先用模型预测系统状态，再用带噪声的测量去修正，修正多少取决于预测和测量哪个更可靠，正是「预测朝下、误差朝上」的工程版。不像的是，滤波器的模型是工程师事先写好的，大脑的模型要靠经验自己学出来。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>麻醉醒来和深睡醒来不同，没有「时间过去了」的连续感，Anil Seth 用这段亲身经历引出意识问题。</li>
+<li>大脑锁在没有光和声音的头骨里，只拿到间接的电脉冲，所以知觉只能是对信号成因的最佳猜测。</li>
+<li>同一段正弦波语音，听过原句之后就能听懂：感官输入一点没变，变的是大脑的预测。</li>
+<li>Anil Seth 把知觉称为受控的幻觉：预测被外界感官信息拽着，大家对幻觉取得一致，就叫它现实。</li>
+<li>橡胶手实验和随心跳闪红的虚拟手表明，「这是我的身体」的感觉同样是大脑做出的推断。</li>
+<li>朝内的内感受预测不为识别「那是什么」，而为把生理变量控制在能活下去的窄窗口里。</li>
+<li>Deep Dream 幻觉机器能模拟出像致幻剂的视觉体验，却没有引起意识改变状态中常见的时间扭曲。</li>
+<li>2020 年 Seth 参与署名的研究发现，橡胶手错觉的强度与一个人接受想象性暗示的能力相关。</li>
+<li>预测加工框架被批评经验检验太少，什么现象都能解释的理论，很难说它禁止了什么。</li>
+<li>「对幻觉取得一致就叫现实」和分布式系统的共识算法同构，只是大脑之间并不投票。</li>
+</ol>
 <h2 data-tts="afc068c030877db1">出处</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/anil_seth_your_brain_hallucinates_your_conscious_reality/transcript">Your brain hallucinates your conscious reality（TED 官方逐字稿）</a></span><span class="d">本页全部引语与演讲细节的来源；16 分 51 秒，约 2,830 词。</span></li>

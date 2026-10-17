@@ -46,6 +46,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -129,6 +137,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>同一套数据里最有名的数字，被他本人参与推翻。</strong>台上提到的盖洛普民调，当时正在变成他最著名的论文：Kahneman 与 Angus Deaton 2010 年 9 月发在 PNAS 上的研究，用超过 45 万份问卷得出「情绪幸福超过约 7.5 万美元年收入后不再上升」。2021 年 Matthew Killingsworth 用经验取样法得到相反结论。两边没有互相开火，而是做了学界罕见的事——<strong>对抗性合作</strong>：2023 年 3 月三人在 PNAS 联名发表《收入与情绪幸福：一场冲突的解决》，结论对 Kahneman 不客气：平台期<strong>只对最不快乐的那部分人（约 15–20%）成立</strong>，门槛约在 10 万美元；对更快乐的人，幸福随收入持续上升。摘要写得非常直白：「我们随后解释了为什么 Kahneman 与 Deaton 夸大了那个平台效应。」原因是那套二分式问题存在<strong>天花板效应</strong>——平均报告的正性情绪已达满分的 89%，它其实是一把测「不快乐」的尺子，却被当成测「快乐」的尺子用了。Kahneman 时年 89 岁，在自己最著名的结论上署名认错。</p>
 <p><strong>最后，关于结尾。</strong>2024 年 3 月 27 日，Daniel Kahneman 在瑞士接受协助死亡，享年 90 岁。他事先给朋友发了告别信：自己仍在活动、仍享受生活中的许多事，但肾功能已支撑不住，思维失误越来越频繁；他从少年时代起就相信人生最后几年的痛苦与难堪是多余的。这件事直到 2025 年才由《华尔街日报》记者、与他相识近三十年的 Jason Zweig 公开。</p>
 <p>一个用二十分钟论证「结尾非常非常重要」的人，在自己的故事上做了完全一致的事：不肯让结尾落在峰值上。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>神经科学 · 记忆再巩固（Nader、Schafe 与 LeDoux）</b>：2000 年三人在《Nature》报告，大鼠的恐惧记忆被唤起后会重新变得不稳定，此时在杏仁核阻断蛋白质合成，记忆就会受损：记忆是可以事后改写的。不像的是，延长肠镜改的是写进记忆的那段输入，再巩固改的是已经存好的记忆本身。</li>
+<li><b>佛学 · 刹那灭</b>：阿毗达磨把心识看成一串生起即灭的刹那，中间没有一个贯穿始终的「我」，和体验自我「只有现在」、时刻转瞬即逝是同一幅图。不像在价值排序：Kahneman 描述的是记账的那个自我说了算；佛学把编故事、执着于「我」的那一面当作苦的来源，修行要回到当下。</li>
+<li><b>哲学 · 反叙事（Galen Strawson）</b>：Strawson 2004 年的论文《反对叙事性》（Against Narrativity）区分「历时型」和「片段型」两种人，认为不把人生过成一个故事，照样可以活得好、活得有德性。这像是替体验自我辩护；不像的是，Strawson 谈的是人怎样理解自己，不是事后打分会不会被结尾带偏。</li>
+<li><b>分布式系统 · 监控数据的合并函数（RRDtool）</b>：监控工具 RRDtool 把旧数据压缩归档时，要给每个时间段选一个合并函数：AVERAGE、MIN、MAX 或 LAST，压缩后原来有多少个采样点就看不出来了。记忆自我像是在 MAX 和 LAST 之间取了个折中，时长于是被丢掉，这就是峰终定律加时长忽视。不像的是，运维工程师会按用途挑函数，大脑只有这一种，而且我们按它做决定时并不知道。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>Kahneman 区分两个自我：体验自我活在当下，回答「现在疼吗」；记忆自我负责记账、维护人生故事。</li>
+<li>交响乐结尾的一道划痕，毁掉的不是那二十分钟的音乐体验，而是对那段体验的记忆。</li>
+<li>肠镜研究中，疼得更久更多的病人 B 事后记忆反而更好，因为病人 A 的疼痛结束在峰值：这是峰终定律。</li>
+<li>对记忆自我来说时长几乎不算数，两周的假期只比一周好一点点，这叫时长忽视。</li>
+<li>人做选择时依据的是对体验的记忆，而不是体验本身，于是记忆自我拖着体验自我走。</li>
+<li>故意延长肠镜结尾的随机试验共 682 人，事后不适评分只从 4.9 降到 4.4，作者自称概念验证。</li>
+<li>加州研究里，中西部和加州的大学生生活满意度没有差别，但两地学生都预测住在加州的人更满意。</li>
+<li>2022 年汇总 174 个效应量的独立元分析确认，峰终效应很大，而经历时长的影响基本为零。</li>
+<li>Kahneman 2018 年说自己已离开幸福研究：人们想最大化的是对一生的满意，而不是体验。</li>
+<li>「收入过约 7.5 万美元幸福不再上升」经 2023 年对抗性合作修正为只对最不快乐的一小群人成立。</li>
+</ol>
 <h2 data-tts="b121a6a0925ea13d">出处</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/daniel_kahneman_the_riddle_of_experience_vs_memory/transcript">The riddle of experience vs. memory — TED 官方逐字稿</a></span><span class="d">本页全部演讲引语与台上数字的唯一来源，含结尾处关于国家统计的问答。</span></li>

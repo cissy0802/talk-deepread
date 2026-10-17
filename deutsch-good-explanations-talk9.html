@@ -44,6 +44,14 @@ li{margin:8px 0}
 footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
 .fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
 </style>
@@ -124,6 +132,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>2021 年 1 月 20 日</strong>，Richard Ngo 在 LessWrong 发表<a href="https://www.lesswrong.com/posts/mHZRauLwZWhR8KWbL/deutsch-and-yudkowsky-on-scientific-explanation">《Deutsch and Yudkowsky on scientific explanation》</a>：「难以更改」听上去是条新判据，其实是<strong>简约性</strong>的一个推论——一个真能预测给定数据的「众神干的」理论，必须把那些数据整个编码进自己，按 Kolmogorov 复杂度算，坏解释本来就是复杂解释。Deutsch 事先回应过：他承认参数越多越容易更改，但拒绝反过来说，因为「有一大堆简单的解释是高度可变的，比如『得墨忒耳干的』」。争论至今没有裁决。</p>
 <p><strong>没进哲学教科书，倒是进了机器学习。</strong>2025 年 5 月 2 日，Kola Ayonrinde 和 Louis Jaburi 在 arXiv 发表《Evaluating Explanations: An Explanatory Virtues Framework for Mechanistic Interpretability》，把「Deutsch 式」与贝叶斯式、库恩式、律则式并列，作为评价 AI 可解释性研究的四个视角之一。一条 2009 年讲出来的判据，十六年后成了判断「某个神经网络解释算不算好解释」的工具。这大概是它最健康的一条去向。</p>
 <p><strong>最别扭的一条在 2023 年 10 月 16 日。</strong>Marc Andreessen 发表《The Techno-Optimist Manifesto》，在「技术乐观主义的守护圣徒」名单上列了 David Deutsch，并引用他：「我们有义务保持乐观。因为未来是开放的，不是预先决定的……我们所有人都对它将包含什么负责。」这句话和「难以更改」毫无关系：被搬走的是他的<strong>乐观主义</strong>，不是他的判据——而这场演讲全部的力气，恰恰是用来教人分辨一个断言值不值得信。那份宣言把五十六位守护圣徒并排摆着，抽掉任何一位结论都分毫不动；按演讲自己的标准，那正是 easy to vary。不是被驳倒，是被绕过。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>生物进化 · 保守序列（组蛋白 H4）</b>：组蛋白 H4 的 102 个氨基酸里，豌豆和牛只差 2 个：几乎每个位置都在扛活，突变一出现就被选择清掉，不扛活的假基因却随便漂变。细节越有功能越改不动，这正是「难以更改」。不像的是，生物的难改靠亿万次试错淘汰出来，Deutsch 要人在检验之前凭理性看出来。</li>
+<li><b>神经科学 · 左脑解释器（Michael Gazzaniga）</b>：Gazzaniga 给裂脑病人的右脑看雪景、左脑看鸡爪，病人左手挑了铲子；左脑马上编出理由：「铲子是用来清理鸡舍的。」大脑天生会生产这种不扛活、随手可换的解释。不像的是，这种虚构是无意识的自我连贯，不是对世界的理论。</li>
+<li><b>佛学 · 《卡拉玛经》</b>：佛陀劝卡拉玛人不要因传闻、传统、经典或师长的权威就接受一种说法，要自己验证。前一半和 Deutsch 一样拒绝权威；后一半落在亲身体验上，恰好是他在台上排除掉的经验主义。</li>
+<li><b>投资 · 叙事谬误（Nassim Taleb）</b>：Taleb 在《黑天鹅》里说，人总爱给随机事件配因果故事；同一个理由既能解释涨也能解释跌，正是 easy to vary。不像的是，Taleb 的药方是少信解释、多看数据，Deutsch 正相反：没有解释的统计趋势才是「巫师干的」。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>珀耳塞福涅的季节神话可以被检验，Deutsch 当场改编的相反版本同样可以，所以「可检验」分不开科学和神话。</li>
+<li>人类停滞了十万年，而从 1899 年发现放射性起，物理学家四十年内就解释了星光的来源。</li>
+<li>拒绝权威和经验主义都不是科学进步的原因：科学理论用看不见的东西解释看得见的东西。</li>
+<li>坏解释的标志是容易更改：它的细节和所解释的现象没有关系，可以随意换成别的。</li>
+<li>地轴倾斜是好解释：每个细节都有独立于季节的依据，还预言南北半球季节相反。</li>
+<li>神话被观测驳倒后改一句就能继续用，所以只有当解释已经够好，可检验才开始有意义。</li>
+<li>只外推统计趋势、不给难以更改的成因说法，就是「无解释的理论」，等于说「有个巫师干的」。</li>
+<li>这条判据在 1997 年《The Fabric of Reality》对工具主义的论战里已经成形：可预测不等于解释。</li>
+<li>Deutsch 在台上把平行宇宙说得像定论，而 2011 年一场 33 人的会议问卷里只有 18% 偏爱 Everett 诠释。</li>
+<li>Elton 2020 年承认「难以更改」尚未被形式化：不先限定变体范围，任何解释都能改成任何别的解释。</li>
+</ol>
 <h2 data-tts="6bf9f56b5212f858">出处</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/david_deutsch_a_new_way_to_explain_explanation/transcript">A new way to explain explanation — TED 官方逐字稿</a></span><span class="d">1829 词全文，2009-07-23 录于牛津。本页全部演讲引语与笑点位置的唯一来源。</span></li>

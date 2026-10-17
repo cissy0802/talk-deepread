@@ -45,6 +45,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -146,6 +154,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>2024: the encyclopedia's cool verdict.</strong> The October 2024 revision of the SEP entry has a section on large language models. Its conclusion: if a system that uses language as proficiently as humans in every context is still judged by a thought experiment not to "really" understand, then real understanding becomes undetectable, causally inert and irrelevant.</p>
 <p><strong>2025: the room gets built.</strong> In March the cognitive scientists Cameron R. Jones and Benjamin K. Bergen reported two pre-registered three-party Turing tests: participants chatted for five minutes with a human and an AI at once, then judged which was human. Prompted to adopt a humanlike persona, GPT-4.5 was judged to be the human 73% of the time — more often than the real human. ELIZA, the chatbot of the 1960s, managed 23%. The authors call it the first empirical evidence that any artificial system passes a standard three-party Turing test. The room's premise — answers indistinguishable from a native speaker's — came close to being met in short conversations. That same year, Searle died.</p>
 <p>So here is the ledger. In 1984 Searle said there was "no doubt" simulations would get much better, and that it would not matter. Passing the test cannot refute him, since he never accepted behaviour as evidence; it cannot confirm him either, since he offered no test beyond behaviour, and nor has anyone on the other side. The disagreement has moved to sharper questions: must meaning be grounded in perception and action? Do the internal states of a network that learned from data have content? Both are still open.</p>
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Psychology · Clever Hans (Oskar Pfungst)</b>: In early-1900s Berlin a horse called Clever Hans tapped out answers to arithmetic problems with his hoof; in 1907 the psychologist Pfungst showed he was reading the questioner's involuntary body cues. Right answers, no arithmetic. The difference: Pfungst could design a test that exposed it, since Hans failed whenever the questioner didn't know the answer. The Chinese Room is exactly the case where no such test exists.</li>
+<li><b>Neuroscience · integrated information theory (Giulio Tononi)</b>: Tononi and Koch wrote in 2015 that, on IIT, a conventional digital computer simulating a human brain would have almost no consciousness even if it behaved identically, because what counts is the physical system's causal structure. That mirrors Searle's demand for "causal powers" equal to the brain's; unlike Searle, IIT offers a quantity, Φ, that can in principle be computed.</li>
+<li><b>Physics · the non-computable mind (Roger Penrose)</b>: In <em>The Emperor's New Mind</em> (1989) Penrose also rejected the idea that the mind is computation, and later, with Stuart Hameroff, located consciousness in quantum processes inside neuronal microtubules. The difference: Penrose holds that what the brain does cannot be computed at all, not even simulated; Searle grants that the brain can be simulated and says only that the simulation isn't a mind.</li>
+<li><b>Chinese philosophy · the debate on the Hao bridge (Zhuangzi and Huizi)</b>: "You are not a fish; how do you know the fish are happy?" Huizi asks Zhuangzi the Chinese Room's question: from outward behavior alone, what entitles you to say there is experience or understanding inside? The difference: Huizi's doubt applies to anyone at all, while Searle never doubts that other people understand English, only programs.</li>
+</ul></div>
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>In the Chinese Room, a person follows a rulebook to shuffle Chinese symbols and produces answers indistinguishable from a native speaker's, without understanding a word of Chinese.</li>
+<li>"Strong AI" says the mind just is a program, so a computer built from beer cans and powered by windmills would have to have a mind if it ran the right program.</li>
+<li>The heart of the argument is that syntax is not sufficient for semantics: programs move symbols by shape, while human thoughts are always about something.</li>
+<li>The systems reply and the robot reply get the same answer: widen it to the whole system or put it inside a robot, and there are still only symbols, never meaning.</li>
+<li>Searle does not deny that machines can think, since the brain is a meat machine; he denies only that running the right program is by itself enough for a mind.</li>
+<li>Simulation is not duplication: a computer simulation of a storm leaves no one wet, and a simulation of understanding is not understanding.</li>
+<li>The 1980 paper admitted it had not shown that programs cannot explain human understanding, but the 1984 broadcast called the argument a simple logical truth.</li>
+<li>The load-bearing axiom is "syntax is not sufficient for semantics," and the only support for that premise is the Chinese Room itself, which is why it sits at the center of the dispute.</li>
+<li>In a 2025 three-party Turing test GPT-4.5 was judged human 73% of the time, yet Searle had never accepted behavior as evidence of understanding.</li>
+<li>Penrose also rejects mind-as-computation but holds that the brain's workings are non-computable; the Chinese Room argument grants the brain can be simulated and denies only that the simulation is a mind.</li>
+</ol>
 <h2>Sources</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://downloads.bbc.co.uk/rmhttp/radio4/transcripts/1984_reith2.pdf">John Searle — Reith Lectures 1984, Lecture 2: Beer Cans &amp; Meat Machines (BBC transcript)</a></span><span class="d">Source of every lecture quotation, the four axioms and the four conclusions.</span></li>

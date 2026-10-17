@@ -46,6 +46,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -116,6 +124,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>2018 年，哲学上的正面冲突。</strong>英国哲学家盖伦·斯特劳森（Galen Strawson）在《纽约书评》发表《意识否认者》，把丹尼特一派的立场称为「有史以来最愚蠢的主张」，说照此推论就没有人真正受过苦。丹尼特回信反驳：「我不否认意识的存在；当然，意识存在；只是它不是大多数人以为的那样。」他在信里又一次搬出「锯美女」，劝人先排除平凡的解释；又一次说：我们能知道自己体验的许多内容，但对这如何可能「没有特权式的洞察」，也并非不会出错。十五年过去，台上的两个核心主张没变。斯特劳森在回复里坚持，这就是否认意识存在。</p>
 <p><strong>2020 年，实验这一侧最漂亮的一次加码。</strong>科恩、博奇和罗伯逊（Cohen, Botch &amp; Robertson）在《美国国家科学院院刊》（PNAS）上发表虚拟现实实验：被试戴着带眼动追踪的头显自由看 360° 真实场景，系统实时把视线以外的部分全变成黑白。结果，在最极端的条件下，彩色部分不到整个画面的 5%，仍有将近三分之一的被试完全没察觉。作者的结论是，我们对一个丰富多彩视觉世界的直觉感受「在很大程度上是错的」，讨论部分引用的正是《意识的解释》。这几乎就是丹尼特台上那幅贝洛托的升级版。</p>
 <p><strong>今天的位置。</strong>丹尼特 2024 年 4 月 19 日去世，享年 82 岁。他的两条主张命运不同。「内省不可靠，外部科学能告诉你关于你自己意识的事」：有变化盲视和虚拟现实实验撑着，基本站住了。「意识看起来的样子本身是错觉」：弗兰基什 2016 年仍称之为「少数派立场」，也没有实验能裁决它，因为变化盲视既符合「细节不在」，也符合「细节在、但没被访问」。台上最有画面的那句，恰恰是最没被证实的一句。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>佛学 · 无我（anattā）</b>：「没有笛卡尔剧场」否认大脑里有个看戏的内在观众；「无我」也否认有个常住不变、在背后观看的「我」，心只是一串生灭的过程。不像在方法：佛学靠训练内观看穿「我」，把第一人称练成可信的工具；丹尼特恰恰认为第一人称不可靠，看穿戏法得靠第三人称科学。</li>
+<li><b>神经科学 · 预测加工（Anil Seth）</b>：知觉是大脑对外界的最佳猜测，Seth 借 Chris Frith 的话称之为「受控的幻觉」，和「大脑让你以为细节在」同向。不像的是，这里大脑真生成了一份猜测的画面，更像丹尼特否认的「小画工」。</li>
+<li><b>演化心理学 · 知觉界面论（Donald Hoffman）</b>：Hoffman 主张「适应度胜过真相」：演化给的知觉是一套好用的桌面图标，不是现实的照片，像丹尼特说意识的样子只是印象。不像的是，Hoffman 由此走向「意识才是根本实在」，正是丹尼特反对的方向。</li>
+<li><b>分布式系统 · 没有全局时钟（Leslie Lamport）</b>：Lamport 1978 年的论文说明，分布式系统没有全局时钟，也没有哪个节点看得到「此刻全貌」，像大脑里没有笛卡尔剧场。不像的是，工程师知道全局视图不存在，大脑却给我们一个天衣无缝的整体感。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>变化盲视：两张图之间插一道短暂灰屏，发动机消失这样的大变化也可能十几秒都看不出来。</li>
+<li>丹尼特这场 TED 演讲想动摇一个信心：人们以为自己是自己意识的权威。</li>
+<li>意识话题上人很难被说服，因为每个人都觉得「我有意识，所以我知道」，自认是专家。</li>
+<li>眼睛高分辨率的中央凹只有伸直手臂时一个拇指指甲大，我们得到的视觉信息比以为的少得多。</li>
+<li>走近一幅风景画，桥上行人只剩几团颜料：大脑没有补齐细节，只是让人以为细节在那儿。</li>
+<li>变化盲视的原始论文每组只有 10 名被试，结论是看出变化需要注意力，比台上的说法窄。</li>
+<li>2005 年西蒙斯与伦辛克承认，拿变化盲视证明大脑不存细节是过强的主张。</li>
+<li>丹尼特 2016 年合写的论文改口：大脑对没注意的大片区域存一份集合统计式的摘要。</li>
+<li>2020 年虚拟现实实验里，视野中只剩不到 5% 是彩色，仍有将近三分之一的被试没有察觉。</li>
+<li>「没有笛卡尔剧场」和佛学「无我」都否认有内在观众，但佛学靠内观看穿，丹尼特靠第三人称科学。</li>
+</ol>
 <h2 data-tts="2446d07cb4e3e67d">出处</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/dan_dennett_the_illusion_of_consciousness/transcript">Dan Dennett, The illusion of consciousness — TED 官方逐字稿</a></span><span class="d">本页所有演讲引语和台上数字的来源。</span></li>

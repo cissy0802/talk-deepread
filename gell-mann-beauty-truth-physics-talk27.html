@@ -46,6 +46,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -115,6 +123,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>另一种解释：美是学来的。</strong>比霍森费尔德早二十多年，科学哲学家詹姆斯·麦卡利斯特在《科学中的美与革命》（Beauty and Revolution in Science，1996）里提出「审美归纳」（aesthetic induction）：一个科学共同体对某种审美特征的偏好，与过去具有该特征的理论的经验成功成正比。科学家先造出经验上成功的理论，再学会欣赏它的某些特征。（这一段我没有读到原书，据 Zamora Bonilla 2015 年的介绍转述。）</p>
 <p>把它和盖尔曼的原话放在一起读，很有意思。盖尔曼的机制是：新一层「看起来美，是因为我们已经知道怎么把它写得可爱而简洁」（it looks beautiful because we already know how to write it in a lovely, concise way）。「我们已经知道」，这正是一个关于人的陈述。洋葱各层相像可能是自然的性质；但「相像所以看起来美」，中间隔着的是物理学家熟悉的数学工具箱。他自己的解释，也恰好预言了这条经验什么时候会失灵：只要下一层不再像上一层，熟悉的数学就写不短它，「美」就会把人引向错误的方向。超对称在 LHC 上的遭遇，可以看作对这句话的检验。</p>
 <p>盖尔曼于 2019 年 5 月 24 日在圣塔菲去世，享年 89 岁。我没有找到他公开回应霍森费尔德的文字。今天的状况大致是：「美曾经管用」没有人否认；「美为什么管用」「它在下一层是否仍然管用」，是一个仍在 LHC 和下一代对撞机的数据面前等待裁决的问题。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>心理学 · 加工流畅性（Reber、Schwarz 与 Winkielman）</b>：三人 2004 年提出，一个东西越容易被大脑处理，人就越觉得它美；熟悉、对称、简洁都会提高流畅性。这正是「用我们已经会的数学，所以看起来美」的心理学版本。不像的是，同一套研究也发现流畅会让一句话显得更「真」，不管它真不真：它解释了美感从哪来，却正好不支持美能当真理的向导。</li>
+<li><b>神经科学 · 数学之美的脑成像（Semir Zeki 与 Michael Atiyah）</b>：2014 年，Zeki 和数学家 Atiyah 等人让 15 位数学家给公式的美打分，美感越强，内侧眶额皮层的一块区域越活跃，和看画、听音乐时的美感同一处，欧拉恒等式平均得分最高。像在公式之美确实可以测；不像在它测到的是人脑，和「外星人也会觉得美」恰好对不上。</li>
+<li><b>演化生物学 · 扩展适应（Gould 与 Vrba）</b>：Gould 和 Vrba 1982 年用「扩展适应」（exaptation）称呼为一种用途演化出来、后来被借去做别的事的结构，比如可能先用于保温、后来用于飞行的羽毛。为上一层洋葱准备的数学被借去写下一层，是同一个借用结构。不像的是，演化里的借用全凭历史偶然；盖尔曼说数学借得上，是因为自然各层本来就相像。</li>
+<li><b>西方哲学 · 康德的先验观念论</b>：康德认为空间、时间和因果是人类认识的形式，知性在一定意义上「为自然立法」；盖尔曼的七触手外星人，正是对这类立场的反驳。不像的是，康德自己也承认无法断定别的有限存在者的直观形式和人相同，他并不主张外星人一定看到同样的定律，只说人类没办法跳出自己的形式去核对。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>盖尔曼在 TED2007 的演讲只问一个问题：在基础物理里，美为什么是挑选正确理论的好标准。</li>
+<li>物理学家说的美，就是借助某种数学记号，能把一个理论写得很短、不复杂。</li>
+<li>1957 年的 V-A 弱力理论和七个实验对不上，后来实验重做，结果站到了理论一边。</li>
+<li>剥洋葱的比喻：自然每一层用到的数学，和上一层几乎一样，所以方程写出来短而美。</li>
+<li>平方反比、旋转对称、狭义相对论的对称、杨-米尔斯理论，是洋葱各层相像的几个例子。</li>
+<li>盖尔曼认为这份美与人类无关，另一个星系的智慧生物也会发现同样的定律。</li>
+<li>费曼和盖尔曼的 V-A 论文其实明写了与氦-6 实验的冲突，并要求进一步检验，并非事后那样笃定。</li>
+<li>大型强子对撞机找到了希格斯玻色子，却没有找到被寄予厚望的超对称粒子。</li>
+<li>霍森费尔德在《迷失于数学》里认为，脱离数据的审美判断已经把物理学带偏。</li>
+<li>麦卡利斯特的审美归纳认为物理学家的美感是从过去成功的理论里学来的，与「与人无关」相反。</li>
+</ol>
 <h2 data-tts="fbdf3cf379e2de01">出处</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/murray_gell_mann_beauty_truth_and_physics/transcript">Murray Gell-Mann, Beauty, truth and ... physics? (TED2007 transcript)</a></span><span class="d">演讲全文，本页所有盖尔曼引语的来源。</span></li>

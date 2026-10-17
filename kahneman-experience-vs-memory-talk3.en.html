@@ -45,6 +45,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -136,6 +144,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>Finally, about endings.</strong> On 27 March 2024, Daniel Kahneman died by assisted suicide in Switzerland, aged 90. He had emailed friends a farewell the day before: he was still active and still enjoying much of life, but his kidneys were failing and mental lapses were growing more frequent, and he had believed since he was a teenager that the miseries and indignities of the last years of life are superfluous. It became public only in 2025, reported by Jason Zweig of <em>The Wall Street Journal</em>, a friend of nearly thirty years.</p>
 <p>A man who spent twenty minutes arguing that endings are very, very important did the consistent thing with his own story: he refused to let it end on the peak.</p>
 
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Neuroscience · memory reconsolidation (Nader, Schafe &amp; LeDoux)</b>: In a 2000 <em>Nature</em> paper, the three showed that a rat's fear memory, once recalled, becomes unstable again, and blocking protein synthesis in the amygdala at that point impairs it: memories can be rewritten after the fact. The difference: the extended colonoscopy changes the input before it is stored, while reconsolidation changes a memory that is already stored.</li>
+<li><b>Buddhism · momentariness</b>: The Abhidharma treats the mind as a stream of moments that arise and vanish at once, with no lasting self running through them, which is the same picture as the experiencing self that "has only the present." The difference is in the ranking: Kahneman describes the bookkeeping self as the one in charge, while Buddhism treats the story-telling, self-grasping side as the source of suffering and trains attention back to the present.</li>
+<li><b>Philosophy · against narrativity (Galen Strawson)</b>: In his 2004 paper "Against Narrativity," Strawson distinguishes "Diachronic" from "Episodic" people and argues that you can live a good, ethical life without experiencing it as a story. It reads like a defense of the experiencing self; the difference is that Strawson is talking about how people understand themselves, not whether a rating after the fact gets skewed by the ending.</li>
+<li><b>Distributed systems · consolidation functions (RRDtool)</b>: When the monitoring tool RRDtool rolls old data into archives, it applies a consolidation function to each interval: AVERAGE, MIN, MAX or LAST, and after that you can no longer tell how many samples went in. The remembering self behaves like a blend of MAX and LAST, so duration drops out: the peak-end rule plus duration neglect. The difference: an operator picks the function to suit the job, while the brain has only this one and decides by it without knowing.</li>
+</ul></div>
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Kahneman separates two selves: the experiencing self lives in the present and answers "does it hurt now," while the remembering self keeps score and maintains the story of a life.</li>
+<li>The screech at the end of a symphony recording did not ruin twenty minutes of music; it ruined the memory of that experience.</li>
+<li>In the colonoscopy study, patient B suffered longer and more yet remembered it as less bad, because patient A's pain ended at its peak: the peak-end rule.</li>
+<li>Duration barely counts for the remembering self: a two-week vacation is only a little better than a one-week one, which is called duration neglect.</li>
+<li>People choose between memories of experiences rather than experiences themselves, so the remembering self drags the experiencing self along.</li>
+<li>The randomized trial that extended the end of colonoscopies enrolled 682 patients and lowered later discomfort ratings only from 4.9 to 4.4; its authors called it a proof of concept.</li>
+<li>In the California study, Midwestern and Californian students reported the same life satisfaction, yet both groups predicted that people in California would be more satisfied.</li>
+<li>An independent 2022 meta-analysis of 174 effect sizes found a large peak-end effect and essentially no effect of duration.</li>
+<li>In 2018 Kahneman said he had left happiness research, because people want to maximize satisfaction with their lives, not their experience.</li>
+<li>A 2023 adversarial collaboration revised the claim that happiness stops rising above about $75,000: the plateau holds only for the least happy minority.</li>
+</ol>
 <h2>Sources</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/daniel_kahneman_the_riddle_of_experience_vs_memory/transcript">The riddle of experience vs. memory &mdash; official TED transcript</a></span><span class="d">The sole source for every quotation and stage figure on this page, including the closing exchange about national statistics.</span></li>

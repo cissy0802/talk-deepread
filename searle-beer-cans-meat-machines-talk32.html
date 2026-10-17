@@ -46,6 +46,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -147,6 +155,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>2024 年：百科全书的冷静一笔。</strong>SEP 当年 10 月的修订版专谈大语言模型，结论是：如果一个在所有场合都像人一样用语言的系统，仍被思想实验判为「不真懂」，那「真懂」就成了检测不到、没有因果作用、无关紧要的东西。</p>
 <p><strong>2025 年：屋子造出来了。</strong>3 月，认知科学家琼斯（Cameron R. Jones）和伯根（Benjamin K. Bergen）报告了两项预注册的三方图灵测试：受试者同时与一个真人和一个 AI 各聊 5 分钟，然后判断谁是人。被要求扮演人格的 GPT-4.5 有 73% 的时候被判为人，比真人被选中的比例还高；上世纪 60 年代的聊天程序 ELIZA 只有 23%。作者称这是第一份「任何人造系统通过标准三方图灵测试」的实证。中文屋的前提——「答卷与母语者分不出来」——第一次在短对话里接近实现。同年，塞尔去世。</p>
 <p>所以账是这样算的：塞尔 1984 年就说过「毫无疑问」模拟会越做越好，并声明这无关紧要。通过测试驳不倒他，因为他本来不接受行为作证据；也证实不了他，因为行为之外的检测方法他给不出，反方也给不出。分歧已经移到更具体的问题上：意义是否必须接地于感知和行动？从数据里学出来的网络，内部状态算不算有内容？都还开着。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>心理学 · 聪明的汉斯（Oskar Pfungst）</b>：20 世纪初柏林有匹马叫「聪明的汉斯」，会用蹄子敲出算术答案；心理学家 Pfungst 1907 年查明，它读的是提问者无意中的身体信号，答案对，却不懂算术。不像的是，Pfungst 能设计实验拆穿它：提问者自己也不知道答案时，汉斯就失灵了；中文屋恰恰没有这样一个实验可做。</li>
+<li><b>神经科学 · 整合信息理论（Giulio Tononi）</b>：Tononi 和 Koch 2015 年写道，按整合信息理论，普通数字计算机模拟人脑，哪怕行为一模一样，也几乎没有意识，因为意识取决于物理系统的因果结构。这和塞尔「须有大脑那样的因果能力」同构；不像的是，它给出了可计算的量 Φ，塞尔没有。</li>
+<li><b>物理学 · 不可计算的心灵（Roger Penrose）</b>：彭罗斯 1989 年在《皇帝新脑》里同样反对「心灵即计算」，后来和 Hameroff 把意识归到神经元微管里的量子过程。不像的是，彭罗斯认为大脑做的事根本不可计算，连模拟都做不到；塞尔承认大脑可以被模拟，只说模拟不是心灵。</li>
+<li><b>中国哲学 · 濠梁之辩（庄子与惠子）</b>：惠子问庄子「子非鱼，安知鱼之乐」，和中文屋问的是同一件事：只看外在表现，凭什么断定里面有体验或理解。不像的是，惠子的怀疑对谁都成立；塞尔并不怀疑别人懂英文，只怀疑程序。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>中文屋思想实验：屋里的人照规则书搬运中文符号，答卷与母语者分不出来，却一个中文字都不懂。</li>
+<li>「强人工智能」主张心灵就是程序，照此推论，用啤酒罐和风车搭的电脑只要程序对，就必须有心灵。</li>
+<li>中文屋论证的核心是语法不足以产生语义：程序只按形状搬运符号，人的念头却总是关于某样东西。</li>
+<li>对系统反驳和机器人反驳的回答相同：无论扩到整个系统还是装进机器人，里面仍只有符号，走不到意义。</li>
+<li>塞尔并不否认机器能思考，人脑就是肉做的机器；他否认的只是运行对的程序本身足以构成心灵。</li>
+<li>模拟不是复制：暴风雨的电脑模拟不会把人淋湿，理解的模拟也不等于理解。</li>
+<li>1980 年的原始论文承认没有证明「程序能解释人类理解」是错的，1984 年广播版却把论证说成简单的逻辑真理。</li>
+<li>四条公理里承重的是「语法不足以产生语义」，而支撑这条前提的正是中文屋本身，这也是整场争议的焦点。</li>
+<li>2025 年的三方图灵测试中 GPT-4.5 有 73% 的时候被判为真人，但塞尔本就不接受行为是理解的证据。</li>
+<li>彭罗斯同样反对心灵即计算，但他认为大脑的运作不可计算；中文屋论证则承认大脑可以被模拟，只是模拟不是心灵。</li>
+</ol>
 <h2 data-tts="050ae9cf4f6202e2">出处</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://downloads.bbc.co.uk/rmhttp/radio4/transcripts/1984_reith2.pdf">John Searle — Reith Lectures 1984, Lecture 2: Beer Cans &amp; Meat Machines（BBC 官方讲稿）</a></span><span class="d">本页所有讲座引语、四条公理和四个结论的来源。</span></li>

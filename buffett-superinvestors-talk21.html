@@ -46,6 +46,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -160,6 +168,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p>「经常是荒谬的」变成了「总体上是理性的，偶尔疯」。而早在 2013 年的股东信里，他已经把遗嘱的一部分公开了——留给妻子的那笔现金，他给受托人的指令是：</p>
 <blockquote><span class="en">Put 10% of the cash in short-term government bonds and 90% in a very low-cost S&amp;P 500 index fund. (I suggest Vanguard's.)</span><span class="zh">「把 10% 的现金放进短期政府债券，90% 放进一只成本极低的标普 500 指数基金。（我建议先锋的。）」</span><cite>— Warren Buffett，伯克希尔 2013 年致股东信</cite></blockquote>
 <p>他紧接着写：相信这个安排的长期结果，会好过「大多数雇用高收费经理人的投资者——无论是养老金、机构还是个人」。1984 年他说读格雷厄姆和多德的人将继续兴旺；2013 年他给自己家里开的方子，是不读，直接买下整个市场。这不是自相矛盾：他一直说的是「大多数人做不到」，台上那九个人恰恰是他拿来证明「极少数人做得到」的。只是四十年过去，被记住的是猩猩和地平说学会，而不是他从头到尾都钉在那里的那条前提——这些人，<strong>我提前就认识</strong>。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>生物进化 · 系统发育的非独立性（Joseph Felsenstein）</b>：Felsenstein 1985 年指出，比较不同物种时不能把每个物种当一个独立样本，共享祖先的物种本来就相像，该数的是谱系分叉，不是树梢。这正是 Buffett 自己提的「215 个赢家其实只是 21.5 个家庭」。不像在用途：Felsenstein 把共同祖先当作要扣掉的噪音，Buffett 却要证明共同祖先格雷厄姆就是原因；而他名单的入选过程本身，也是一棵只从他自己长出去的树。</li>
+<li><b>分布式系统 · 共模故障（Knight 与 Leveson）</b>：多副本容错的前提是各副本独立出错。Knight 和 Leveson 1986 年让 27 个团队按同一份规格各写一版程序，结果出错的位置明显扎堆，独立性假设被拒绝。九份记录持仓不重叠，像各自独立写的代码；但同一份规格（格雷厄姆）教出来的人，可能在同一类行情里一起栽。</li>
+<li><b>心理学 · 预注册</b>：心理学在重复危机之后推行预注册：看数据之前先把假设和分析方案公开登记，堵住事后挑结果。Buffett「提前十五年认定」是同一个动作。不像的是，预注册锁死的是分析方法，Buffett 锁死的是名单，而谁上名单仍由他一个人决定。</li>
+<li><b>佛学 · 南顿北渐（慧能与神秀）</b>：《六祖坛经》里慧能主张当下顿悟，神秀主张渐修，和 Buffett「要么瞬间认出来，要么就是没有」的预防针说很像：道理不靠反复说服。不像的是，禅宗说人人本有佛性、都能顿悟，Buffett 说的恰是大多数人永远认不出来。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>1984 年哥伦比亚商学院把《证券分析》五十周年研讨会办成对打：有效市场派的 Michael Jensen 讲运气，Buffett 讲价值投资。</li>
+<li>Buffett 先给论证设障碍：九位赢家都是提前认定的，最近一次认定也在十五年前，所以不是事后从记录里挑出来的。</li>
+<li>两亿两千五百万人掷硬币，二十天后随机也会剩下 215 个赢家；关键不是赢家数量，而是有 40 个来自同一家奥马哈动物园。</li>
+<li>九份记录持仓几乎不重叠，不是一人喊、五十人跟，共同点只是都师从格雷厄姆，只看价格和价值两个变量。</li>
+<li>价值投资里便宜不是风险的来源而是风险的减项，就像造桥要能承重三万磅，却只让一万磅的卡车开过。</li>
+<li>九张表里客户拿到的回报明显低于常被引用的合伙企业总回报，Schloss 是年化 16.1% 对 21.3%。</li>
+<li>「风险远低于平均」的说法被他自己的表格推翻一半：Munger 和 Guerin 在 1973–74 年都远比大盘跌得狠。</li>
+<li>AQR 测得伯克希尔夏普比率 0.76，不是运气；但控制低风险和质量因子后 alpha 只剩 0.3%，另有约 1.6 倍廉价杠杆。</li>
+<li>Fama 与 French 的复盘显示，大盘价值股的月度超额收益从 1963–1991 年的 0.36% 掉到 1991–2019 年的 0.05%。</li>
+<li>当年讥讽有效市场派是地平说学会的 Buffett，在 2013 年公开的遗嘱指令里让妻子的钱 90% 买低成本标普 500 指数基金。</li>
+</ol>
 <h2 data-tts="3bbc5d3f6243c411">出处</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://acquirersmultiple.com/2016/08/the-superinvestors-of-graham-and-doddsville-freshly-transcribed-2016-part-1/">The Superinvestors of Graham-and-Doddsville（转录，三部分）</a></span><span class="d">本页使用的演讲全文来源之一。这是 1984 年 5 月 17 日讲话的印行稿（Hermes 杂志 1984 年秋季号）的网络转录，约 4,900 词，但有若干 OCR 错误（如把 Perlmeter 拼成 Perimeter、漏掉「共同的智识主题」一整句），所以本页所有引语都用下一条核对过。</span></li>

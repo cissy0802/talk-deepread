@@ -45,6 +45,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -136,6 +144,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>The framework itself took fire as well.</strong> In June 2020, Litwin and Miłkowski argued in <em>Cognitive Science</em> that presenting predictive processing as a unifying account is premature: "PP-based models are seldom empirically validated, and they are frequently offered as mere just-so stories." The objection planted at the end of the last section had been picked up head-on.</p>
 <p><strong>Finally, the fate of the phrase.</strong> "Controlled hallucination" lost half of itself in transit. What survives is "hallucination," which becomes "reality is fake" — when the controlled part means precisely that the predictions are reined in by the world, a point he nailed down onstage. In a long piece in the <em>New Statesman</em> in February 2022, Sophie McBain records that Seth wishes there were a better word.</p>
 <p>As for the line about conscious AI being "pretty remote": in April 2025 he expanded it into a target article in <em>Behavioral and Brain Sciences</em>, "Conscious artificial intelligence and biological naturalism." The position is unchanged, but a door is left ajar — real artificial consciousness is unlikely along <strong>current</strong> trajectories, and becomes more plausible as AI becomes more brain-like or more life-like.</p>
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Buddhism · non-self (anattā)</b>: Buddhism holds that "I" is only a label for a passing bundle of the five aggregates (form, feeling, perception, mental formations, consciousness), with no permanent owner behind them, which is close to Seth's claim that the unified self is itself a construction. The difference is where it leads: for Buddhism, clinging to the construction is the root of suffering and practice aims to see through it; Seth's self-prediction is rooted in keeping the body alive, part of life's regulation rather than an illusion to let go of.</li>
+<li><b>Distributed systems · consensus (Paxos / Raft)</b>: Each node in a distributed database sees only its own local state, and the system treats the log a majority has accepted as "the facts," much like agreeing on our hallucinations and calling that reality. The difference: Raft reaches agreement through explicit votes and majorities, while people's perceptions line up because similar brains are reined in by the same world, and nobody votes.</li>
+<li><b>Quantum mechanics · QBism (Christopher Fuchs and others)</b>: QBism reads the quantum state as an agent's personal degrees of belief about measurement outcomes, updated after each measurement in the manner of Bayesian inference, the same shape as perception as a best guess built on priors. The difference: QBism concerns a formal tool physicists use deliberately, while Seth's predictions are processes in the brain we never notice.</li>
+<li><b>Control engineering · the Kalman filter (Rudolf Kálmán, 1960)</b>: A Kalman filter predicts a system's state from a model, then corrects it with noisy measurements, weighting the correction by whether the prediction or the measurement is more reliable: an engineer's version of predictions flowing down and errors flowing up. The difference: the filter's model is written in advance by an engineer, while the brain has to learn its model from experience.</li>
+</ul></div>
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Coming round from anaesthesia, unlike waking from deep sleep, carries no sense that time has passed, and Anil Seth uses his own operation to open the question of consciousness.</li>
+<li>The brain sits in a dark, silent skull receiving only indirect electrical impulses, so perception can only be a best guess about their causes.</li>
+<li>The same sine-wave speech becomes intelligible once you have heard the original sentence: the sensory input is unchanged, and only the brain's prediction differs.</li>
+<li>Anil Seth calls perception a controlled hallucination: predictions are reined in by sensory signals, and when we agree about our hallucinations we call that reality.</li>
+<li>The rubber hand illusion and a virtual hand flashing in time with the heartbeat show that the sense of "this is my body" is also an inference.</li>
+<li>Inward-facing interoceptive prediction is not about identifying what is there but about keeping physiological variables within the narrow range compatible with staying alive.</li>
+<li>The Deep Dream hallucination machine reproduces psychedelic-like visuals but not the distortions of time common in altered states.</li>
+<li>A 2020 study co-authored by Seth found that the strength of the rubber hand illusion correlates with a person's responsiveness to imaginative suggestion.</li>
+<li>Predictive processing has been criticised as seldom tested empirically, and a framework that explains everything struggles to say what it rules out.</li>
+<li>Agreeing on hallucinations and calling it reality mirrors consensus in distributed systems, except that brains do not vote.</li>
+</ol>
 <h2>Sources</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/anil_seth_your_brain_hallucinates_your_conscious_reality/transcript">Your brain hallucinates your conscious reality (official TED transcript)</a></span><span class="d">The source for every quotation and stage detail on this page; 16 min 51 s, ~2,830 words.</span></li>

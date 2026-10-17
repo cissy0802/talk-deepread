@@ -46,6 +46,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -118,6 +126,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>2022 年：点名的批评。</strong>在普林斯顿神经科学研究所拿到博士、研究了十年狨猴发声的 Darshana Narayanan 在《Current Affairs》发表长文《尤瓦尔·赫拉利危险的民粹科学》，称他是「科学民粹主义者」。她挑的错多半在书里：比如书里说黑猩猩会一起对抗猎豹（cheetahs），她转引生物学家 Hjalmar Turesson 的话说两者在非洲根本不共享栖息地；书里说所有猴子和猿都有「声音语言」，她认为猴叫传递信息，但不是有规则的符号系统。值得注意的是，这篇文章没有正面攻击「共享虚构使大规模合作成为可能」这个核心论点。本页没有找到赫拉利对这篇文章的公开回应。</p>
 <p>至于「无用阶级」，那是对未来的推测，本页不下判词。</p>
 <p>今天的局面大致是：作为解释框架它依然被大量引用；作为科学陈述，它最锋利的几处（时间点、数字、因果方向）都比台上模糊得多。而「虚构」一词最好的读法，也许正是他 2018 年自己给的：不是谎言，而是靠「我相信别人也相信」撑起来的东西。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>哲学 · 制度性事实（John Searle）</b>：Searle 在《社会实在的建构》（1995）里说，钱和婚姻靠「X 在语境 C 中算作 Y」的集体接受而存在，和赫拉利的「虚构」是同一个结构。不像的是，Searle 坚持这类事实客观成立、能判真假，不是故事，更接近赫拉利 2018 年承认的「约定」。</li>
+<li><b>佛学 · 二谛（龙树）</b>：中观把真理分成世俗谛和胜义谛，前者是约定俗成的名言，和「双重现实」很像。不像在刀口：龙树连河流、狮子和「我」都看作空、只是假名；赫拉利底下那层客观现实是实打实的。</li>
+<li><b>投资 · 选美比赛（凯恩斯）</b>：凯恩斯在《通论》（1936）第 12 章说，股市玩家不猜哪张脸最美，猜的是别人以为别人会选哪张，和「我相信别人相信美元有价值」是同一种嵌套。不像的是，钱的嵌套信念因人人在用而稳定，选美式的层层猜测却会自我放大成泡沫。</li>
+<li><b>分布式系统 · 拜占庭将军问题（Lamport 等，1982）</b>：互不信任的节点怎样对同一个状态达成一致，是「陌生人怎样大规模合作」的工程版。不像的是，拜占庭容错靠协议和验证，叛徒必须少于节点总数的三分之一；人类的虚构靠相信，不靠验证。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>人类统治地球不靠个体更强，而靠唯一能既灵活、又大规模合作的能力。</li>
+<li>蜜蜂和蚂蚁能大规模合作但很僵硬，黑猩猩合作灵活却只限于彼此熟识的同伴。</li>
+<li>赫拉利认为，人类能和无数陌生人合作，是因为只有智人会创造并相信虚构的故事。</li>
+<li>人权、国家、公司和钱都只存在于集体想象里，钱是唯一几乎人人都信的故事。</li>
+<li>人类活在双重现实里：河流和狮子能不能活下去，取决于国家、公司这些想象中的实体。</li>
+<li>赫拉利 2018 年的长文承认，信美元只是相信别人也相信它有价值，约定和神话之间有一道线。</li>
+<li>邓巴数 150 是灵长类回归线的外推，2021 年重算的置信区间宽到 4 到 520 人。</li>
+<li>考古证据显示现代人行为在非洲几十万年里逐渐组装，七万年前的突然认知革命难以成立。</li>
+<li>Seshat 历史数据库撤稿重做后的结论是，复杂社会似乎先于道德化神祇出现。</li>
+<li>赫拉利的「虚构」与哲学家 Searle 的制度性事实同构，只是 Searle 认为这类事实客观成立。</li>
+</ol>
 <h2 data-tts="88a7ba84a4f16633">出处</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/yuval_noah_harari_what_explains_the_rise_of_humans/transcript">TED 官方逐字稿 · What explains the rise of humans?</a></span><span class="d">本页所有演讲引语、问答内容和演讲结构的来源。</span></li>

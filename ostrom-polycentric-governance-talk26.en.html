@@ -46,6 +46,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -136,6 +144,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>2016.</strong> Araral had criticized the meta-analysis in a paper titled "Ostrom, Hardin and the commons" (this page could not read it and does not restate its argument). Cox and colleagues replied in <em>Environmental Science &amp; Policy</em>, correcting what they saw as factual errors while conceding that the critique had hit two real problems: the difficulty of unpacking complex variable relationships, and the conflation of diverse outcomes — challenges, they said, for the whole commons field. The same year, Baggio and colleagues ran a configurational analysis of 69 irrigation, fishery and forestry cases and found that which principles matter depends on the resource: clear social boundaries for mobile resources like tuna, monitoring for static ones like forests or water in canals; only congruence with local conditions and proportionality between investment and extraction mattered regardless. They also wrote that the principles "have often been viewed as a panacea," and argued that this did not reflect Ostrom's intent.</p>
 <p><strong>2019.</strong> Frischmann, Marciano and Ramello, from law and economics, published "Tragedy of the Commons after 50 Years" in the <em>Journal of Economic Perspectives</em> — the retrospective on this page from outside Ostrom's group. Their verdict: in light of the Ostroms' work, Hardin made two conceptual mistakes, conflating a resource with its governance and conflating open access with a commons, and "Hardin's distorted perspective on the commons often persists to this day in economic discussions." The same year, Sarker and Blomquist, in the <em>Journal of Institutional Economics</em>, addressed the opposite misreading: her critical stance had led people to see her work as "anti-Hardin, anti-tragedy, or more specifically, anti-statist and anti-privatization," and it was neither. The lecture itself is the evidence: government recognition of local rights and nested layers are both among her principles.</p>
 <p>Today's consensus runs roughly like this: Hardin's world of anonymous people who never talk does exhaust resources, and Ostrom herself produced that tragedy again and again in the lab; but it is a special case, not the normal one. What remains open is the harder half. Are the design principles causes of success, or traits of the successful? Can what works in a small community scale up to a global common pool like the atmosphere? The lecture ends with a to-do list, not a finished map.</p>
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Distributed systems · the Byzantine Generals Problem (Lamport, Shostak &amp; Pease)</b>: The 1982 paper asks whether separated generals, some of them traitors, can reach agreement by messenger alone; they can, as long as fewer than a third are traitors. Like Ostrom, it puts communication at the center: the prisoner's dilemma deadlocks because the channel was cut. The difference is that the Byzantine guarantee is a proof that holds even against arbitrary malice, while herders' cheap talk has no proof behind it, only daily contact and watching each other.</li>
+<li><b>Cybernetics · the law of requisite variety (W. Ross Ashby)</b>: In <em>An Introduction to Cybernetics</em> (1956), Ashby argued that a regulator needs at least as much variety as the disturbances it must absorb. Twenty-seven boundary rules and 112 allocation rules are exactly the variety a single uniform rulebook lacks. The difference: Ashby pictured one regulator, while Ostrom's variety grows from many user groups on their own.</li>
+<li><b>Evolutionary biology · worker policing (Ratnieks &amp; Visscher)</b>: A 1989 <em>Nature</em> study showed that honeybee workers eat eggs laid by other workers, holding free-riding down through policing from inside the colony: the same structure as local monitoring and local sanctions. The difference: the hive's rules are written in genes and kinship, and nobody sits down to negotiate or revise them.</li>
+<li><b>Buddhism · the monastic code (Vinaya)</b>: The sangha is a self-governing community whose rules are graded by severity: the gravest offenses (parajika) mean expulsion, lighter ones only call for confession. Every fortnight, on uposatha days, monks recite the rules together and admit their lapses, which amounts to regular monitoring. That mirrors graduated sanctions and active monitoring among the design principles. The difference: the rules are held to come from the Buddha, so a local sangha cannot rewrite them to fit its circumstances.</li>
+</ul></div>
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>The prisoner's dilemma assumes the prisoners are deliberately kept apart; people who share a resource meet every day, so that assumption fails.</li>
+<li>Studies of policing in 80 U.S. metropolitan areas found patrol works best in small units and crime labs in large ones: complexity is not chaos.</li>
+<li>Goods come in four kinds, not two: besides private and public goods there are toll goods and common-pool resources, hard to fence off yet used up by use.</li>
+<li>After screening 500-plus case studies and finding no specific rules tied to success, Ostrom's team abstracted eight design principles instead.</li>
+<li>In common-pool lab experiments, unenforceable face-to-face talk sharply raised earnings, and groups that chose their own sanctions reached 90% of the optimum.</li>
+<li>Farmer-run irrigation systems in Nepal outperformed government-run ones, and forest condition tracked local monitoring, not protected-area status.</li>
+<li>Hardin's pasture parable describes unmanaged open access, not a commons with members, boundaries and rules.</li>
+<li>The review cited in the lecture as covering over 100 studies was published with 91; the direction held, but the stage version was rounder.</li>
+<li>Which design principle matters most depends on the resource: social boundaries for mobile resources, monitoring for stationary ones.</li>
+<li>Ostrom was neither anti-state nor anti-privatization; what she opposed was treating any single arrangement as a panacea.</li>
+</ol>
 <h2>Sources</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.nobelprize.org/prizes/economic-sciences/2009/ostrom/lecture/">Elinor Ostrom — Prize Lecture (NobelPrize.org)</a></span><span class="d">Full lecture PDF and slides; every Ostrom quotation and lecture figure on this page comes from the printed text.</span></li>

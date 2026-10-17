@@ -46,6 +46,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -110,6 +118,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>2015 年：两项大研究，各站一边。</strong>一边是波尔德曼（Tinca Polderman）等人在《自然·遗传学》（Nature Genetics）上的元分析，几乎汇总了全部已发表的双胞胎研究：2,748 篇论文、17,804 个性状、14,558,903 对双胞胎（部分重复计入）。平均遗传率 49%；69% 的性状单用基因的加性作用就能解释；数据「与共享环境的显著影响不相容」。这是对平克前半场最有力的背书。另一边是肯德勒（Kenneth Kendler）、特克海默等人在《美国科学院院刊》（PNAS）上的瑞典研究，用的正是平克点名要的收养设计：436 组亲兄弟，一个由亲生父母养大，一个被收养走，18 到 20 岁征兵时测智商。被收养的那个平均高 4.41 分；在 2,341 组半血缘兄弟里重复，高 3.18 分；养父母受教育程度每高一级，智商高约 1.7 分。家庭在智力上留下了可测的印记，至少延续到成年早期。</p>
 <p><strong>2018 年：父母的基因，通过环境起作用。</strong>冰岛的孔（Augustine Kong）等人在《科学》上报告了「遗传养育」（genetic nurture）：父母<strong>没有</strong>传给孩子的那一半基因变异，照样能预测孩子的受教育程度，效应约为传下去那一半的 29.9%。没传下去的基因只能经由父母营造的环境起作用——养育是真实的，只是有一部分被记到了基因头上。</p>
 <p>今天的共识大致是：没有人再认真主张白板；在中产、富裕国家的人群里，同一个家并不让孩子长大后人格更像，这条大体站得住。但「不留永久印记」说宽了：智力和教育上，家庭条件差距一大，印记就清楚地显出来。艺术那一半，二十年来一直只是论断，没人把它做成过可检验的研究。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>中国哲学 · 孟子与告子之辩</b>：告子说人性像湍急的水，「决诸东方则东流，决诸西方则西流」，和白板说同构；孟子反驳：水不分东西，难道也不分上下？不像的是，孟告争的是人性善不善，平克争的是心智有没有预装的结构。</li>
+<li><b>机器学习 · 没有免费午餐定理（David Wolpert）</b>：Wolpert 1996 年证明，平均到所有可能的问题上，没有哪个学习算法更好，能学会全靠预先偏向某类答案；孩子学会语言而宠物学不会，也是这个道理。不像的是，机器的偏置是工程师写的，人的是演化写的。</li>
+<li><b>神经科学 · 同基因小鼠的个性（Freund 等，2013）</b>：Freund 等人在《科学》上报告，40 只基因相同的小鼠同住一个丰富环境，三个月后探索行为分化出稳定的个性，探索越广的海马新生神经元越多，正是平克说的「运气」。不像的是，小鼠的分化看得见；人类的「运气」只是减掉基因和家庭后的余项，还混着测量误差。</li>
+<li><b>投资 · 技能悖论（Michael Mauboussin）</b>：Mauboussin 说，参赛者技能越接近，结果差异越由运气决定；家庭条件相近的人群里，家庭也解释不了孩子的差异，却不等于家庭不重要。不像的是，那里技能让位给运气，这里家庭的份额多半记到了基因头上。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>平克说《白板》的八十多篇书评里，九成火气不冲种族和性别，而冲着艺术和育儿两个话题。</li>
+<li>孩子和家里的猫狗听到一样多的人话，只有孩子学会了语言，可见人心不是白板。</li>
+<li>出生即分开的同卵双胞胎，在人格、兴趣、社会态度上和一起长大的差不多一样相似。</li>
+<li>白板说受欢迎靠的是政治：人人是白板就天生平等，可公平的概念不等于相同的概念。</li>
+<li>平克认为 1930 年代后衰落的只是精英艺术、批评和人文学科，恰与否认人性同时发生。</li>
+<li>大多数育儿研究没排除遗传，健谈的父母养出健谈的孩子，可能只是把基因传了下去。</li>
+<li>行为遗传学说「家里不留印记」，指兄弟姐妹共享的环境作用小，各自的环境仍然重要。</li>
+<li>非共享环境能解释一半以上的行为差异，研究者实际测到的兄弟姐妹差异却只解释不到 2%。</li>
+<li>瑞典收养研究和美国贫困家庭研究都显示，家庭条件差距一大，家庭就在智商上留下可测的印记。</li>
+<li>告子说人性像水、往哪决口就往哪流，和白板说同构；孟子反驳水必然往低处流。</li>
+</ol>
 <h2 data-tts="9459f87b97bf5b70">出处</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/steven_pinker_chalks_it_up_to_the_blank_slate/transcript">Steven Pinker, "Human nature and the blank slate"（TED2003 逐字稿）</a></span><span class="d">本页所有平克引语和演讲结构的来源。</span></li>

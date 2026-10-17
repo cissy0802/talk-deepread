@@ -44,6 +44,14 @@ li{margin:8px 0}
 footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
 .fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
 </style>
@@ -134,6 +142,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p>所以 MAO-A 本身大致<strong>站住了，但只在男性身上，而且窄得多</strong>。真正的问题是它脚下那片地基：2019 年，Richard Border 等人用 62 万人的数据检验抑郁症领域被研究得最多的 18 个候选基因，发现它们跟抑郁的关联并不比随机挑的基因更强。整个「候选基因 × 环境」范式在那几年基本被放弃。MAO-A 是这栋楼里最结实的几间房之一——但楼塌了。</p>
 <p><b>「25 岁」那一块：被滥用了。</b>Somerville 2016 年那篇《Neuron》的落点正是这个：脑发育在青春期后仍在继续这件事，越来越多地被搬进面向年轻人的政策讨论，而神经科学家自己连「成熟」怎么定义、怎么量化都还没解决。十年过去，这个数字没变得更有依据，却已经进了苏格兰法院对 25 岁以下被告的量刑考量和美国若干州针对 18–25 岁「新成年人」的量刑改革。Sapolsky 讲它的本意是<strong>减少</strong>严厉评判，方向是对的；但一个说不清来历的数字一旦被当成一条线，就会被两边的人各取所需。</p>
 <p><b>他本人：没有收回，而是加码。</b>2023 年 10 月，Sapolsky 出版《Determined: A Science of Life Without Free Will》，把「往回推到一百万年前」这条逻辑推到终点：既然每个念头都由你无法控制的先前事件决定，自由意志就不存在，整个责任与惩罚的体系都该重来。同年 11 月 3 日，哲学家 John Martin Fischer 在《Notre Dame Philosophical Reviews》上给了一篇相当不客气的书评，核心指控是他用定义绕开了论证：「他在整本书里没有给出任何<em>论证</em>来反对相容论」，以及那句——「<strong>从我作为哲学家的角度看，一本讲自由意志的书竟然不讨论自由意志，这很扎眼。</strong>」同年，神经科学家 Kevin Mitchell 出版《Free Agents》给出相反答案：生命体演化出了能动性，最终演化出元认知，也就演化出了至少部分的自由意志。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>佛学 · 十二因缘</b>：佛陀观缘起，从老死倒推到生、到有，一环环退到无明，和从扣扳机倒退到受精、再到祖先是同一个动作。不像在目的：佛学倒推是为了找出能斩断的那一环，Sapolsky 是为了先别急着下判词。</li>
+<li><b>复杂系统 · 没有根因（Richard Cook）</b>：Cook 1998 年的《复杂系统如何失效》说，事故总是多个缺陷叠加，归到单一根因本身就错，后见之明还会加重对当事人的苛责。不像的是，Cook 的缺陷同时潜伏，Sapolsky 的九层按时间嵌套。</li>
+<li><b>物理学 · 拉普拉斯妖</b>：拉普拉斯 1814 年设想一个智者，知道每个粒子的位置和受力，就能看尽过去未来；九层倒推像它的缩小版。不像在于，九层每层只给概率，MAO-A 只是一条有噪音的斜率；而按量子力学的主流理解，连粒子层面也只给概率。</li>
+<li><b>社会心理学 · 罗伯斯山洞实验（Muzafer Sherif）</b>：1954 年 Sherif 先让营地里两组男孩结仇，再用修水管、合力拖卡车等共同目标把他们并成一个「我们」，像圣诞休战。不像的是，那次和解是设计的、花了几天；休战几小时自发成形，又被军官拆散。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>人类并不恨暴力，只恨不对的那种；对的那种会被欢呼、授勋、投票支持。</li>
+<li>解释一个暴力行为，要从一秒前的杏仁核一路倒推到几百万年前的灵长类演化。</li>
+<li>各个时间尺度的原因层层咬合：几个月的长期压力会养大杏仁核、磨薄额叶。</li>
+<li>Sapolsky 的落点：断定一个行为的成因前要非常谨慎，尤其当你正在严厉评判它。</li>
+<li>大脑和文化都会变，而且可以很快：圣诞休战只用几小时，美莱村的 Hugh Thompson 只用几秒。</li>
+<li>MAO-A 变体与童年受虐的交互只在男性样本里得到确认，比「当且仅当」窄得多。</li>
+<li>「额叶到 25 岁才成熟」这个数字来历说不清，却已进入苏格兰和美国部分州的量刑考量。</li>
+<li>Forest Troop 狒狒群最凶的公狒狒病死后，低攻击的风气撑过了公狒狒的整轮换代。</li>
+<li>约翰·牛顿皈依后仍当贩奴船长，离开这一行三十四年后才公开反对奴隶贸易。</li>
+<li>Sapolsky 2023 年的《Determined》把同一条因果链推到底，主张人没有自由意志。</li>
+</ol>
 <h2 data-tts="bcdb0e9da231359f">出处</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/robert_sapolsky_the_biology_of_our_best_and_worst_selves/transcript">The biology of our best and worst selves — TED 官方逐字稿</a></span><span class="d">本页所有 Sapolsky 与 Chris Anderson 的引语、以及演讲结构的复述，全部来自这份 2423 词的逐字稿。</span></li>

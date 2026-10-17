@@ -46,6 +46,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -134,6 +142,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>2021 年，连那半张好成绩单也被人来敲了。</strong>M. V. Simkin 在《EPL》（134, 48004）上论证 Q 未必需要「才能」这个东西：只要把一个老的随机引用复制模型升级一下——让复制某篇论文的概率与其作者全部论文总引用数的对数成正比——数值模拟就能得出与 Q 因子那篇论文相似的经验图景。如果他对，那么「稳定的个人能力」这一项也是运气，只不过是复利过的运气。这个争论今天没有定论，但它足以让人不要把 2016 年那篇当成 Hamming 的定罪判决书。</p>
 <p>至于这场演讲真正的下场，它没有变成一个假设，而变成了一种仪式。那句「我这个领域里重要的问题是什么，以及我为什么不在做它」被单独拎出来，在研究组、博士生、理性主义社群里当作一种定期自问的做法流传；Paul Graham 把这篇稿子放在自己的网站上。而被一起带走的从来只有这半边。每周 10% 的时间、被忽略的妻子、刻意穿对的衣服、以及他自己承认的那个有偏样本，基本没人转。</p>
 <p>最后一件事，他自己早就说过了。他在台上判 Shannon 的死刑——「Shannon 离开贝尔实验室时我说过，『那就是 Shannon 科学生涯的终点』」，然后说「我确实相信是」。1997 年从海军研究生院退休前不久，他把同样的判词下给了自己：他说他离开贝尔实验室时就知道那是他研究生涯的终点，而真正的终点会是他停止教书的那天。他教到 1997 年 12 月，1998 年 1 月 7 日因心脏病去世。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>心理学 · 创造的四阶段（Graham Wallas）</b>：Wallas 1926 年在《思考的艺术》里把创造分成准备、酝酿、顿悟、验证四步，和 Hamming 脑子里常备十到二十个问题、一见线索就扑上去是同一个结构。不像的是，Wallas 的酝酿是放下不管、交给潜意识，Hamming 的等待是睁着眼扫描攻法。</li>
+<li><b>复杂性科学 · 相邻可能（Stuart Kauffman）</b>：Kauffman 说生物圈和经济每一步只能走进「相邻可能」，即离现有状态只差一步的那些组合。「有攻法才算重要问题」讲的也是这个：反重力不在相邻可能里。不像的是，Kauffman 描述的是系统怎么自己扩张，Hamming 要的是个人主动挑出边界上的那一格。</li>
+<li><b>生物进化 · 扩展适应（Gould 与 Vrba）</b>：Gould 和 Vrba 1982 年提出「扩展适应」（exaptation）：为一种用途长出的性状，后来被挪作别用，比如羽毛先用来保温，后来才用来飞。没有程序员把 Hamming 逼进自动编程，也是缺陷换了用途。不像的是，进化的挪用没有谁在设计，Hamming 是自己坐下来想了很久，主动换了视角。</li>
+<li><b>佛学 · 初心（铃木俊隆）</b>：铃木俊隆在《禅者的初心》里说，初学者心里可能性很多，专家心里很少。Hamming 讲的名声诅咒是同一种收窄：得了奖的人只肯做大问题，不再种小橡果，等于亲手关掉了大部分可能。不像在出发点：禅宗的初心是一种当下的心态，不图结果；Hamming 要保住小问题，恰恰是因为它们更可能长成大成果，算的仍是产出。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>不做重要的问题，就不会做出重要的工作；Hamming 在贝尔实验室的午餐桌上拿这个问题追问化学家同事。</li>
+<li>你做出的那件具体事情是运气，但你总能做出点什么不是运气，机遇偏爱有准备的头脑。</li>
+<li>勇气比脑子更重要：Shannon 敢问随机编码平均表现如何，由此证明好编码必然存在。</li>
+<li>成名是一种诅咒：得奖之后的人只肯做大问题，不再去种能长成橡树的小橡果。</li>
+<li>问题重要与否不看后果，而看有没有合理的进攻路线，所以反重力和时间旅行不算重要问题。</li>
+<li>开着门工作常被打断，却能得到哪些问题值得做的线索；关着门干十年，容易一直在做偏了的题。</li>
+<li>做出来还不够，必须把成果卖出去：写得清楚、会做正式演讲，也会在会上当场发言。</li>
+<li>这场演讲的证据全部来自已经成功的人，是典型的生存者偏差，Hamming 在问答里自己点破了这一点。</li>
+<li>诺贝尔物理学奖工作在 30 岁前完成的比例 1923 年见顶，此后一路下滑，「物理学家必须趁年轻」在 1986 年已经过期。</li>
+<li>2016 年对 2887 位物理学家的研究发现，一生影响力最高的论文在序列里随机出现，而个人能力参数 Q 基本稳定。</li>
+</ol>
 <h2 data-tts="d1eae78b3a49f4b3">出处</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.cs.virginia.edu/~robins/YouAndYourResearch.html">You and Your Research（1986 年 3 月 7 日逐字稿，J. F. Kaiser 据录音转录，弗吉尼亚大学存档）</a></span><span class="d">本页所有 1986 年引语、现场细节、时长与问答内容的唯一来源；全文含正式演讲与问答，约一万四千词。</span></li>

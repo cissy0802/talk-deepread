@@ -45,6 +45,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -114,6 +122,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p>Brewin and Andrews answered the same year with "Major Concerns About the False Memory Implantation Paradigm Persist," which this page has not read beyond its title. The real stakes are in court. One side worries that genuine victims will be dismissed with "it could be a false memory." The other worries that suggestive questioning and therapy will produce more cases like Titus. Loftus has since testified for the defence in high-profile sexual-assault cases, including Harvey Weinstein's in 2020 and Ghislaine Maxwell's in 2021, which makes the first worry concrete.</p>
 <p><strong>Eyewitness confidence: a major correction, and a surprising echo.</strong> In 2017 John Wixted and Gary Wells published a review in <em>Psychological Science in the Public Interest</em> that challenged a view the U.S. legal system had increasingly accepted: that an eyewitness's confidence says little about accuracy. Their conclusion was that under "pristine" conditions, with an initial uncontaminated test, a fair lineup, no influence from the lineup administrator and confidence recorded immediately, confidence and accuracy are strongly related, and <strong>high-confidence initial identifications are remarkably accurate</strong>. Low-confidence initial identifications are error-prone, and when conditions are not pristine, even high confidence can't be trusted. This narrows the line from the talk that confidence doesn't mean it happened: for lineups, first-test confidence carries information. But the review also supports her on Titus. The victim's first statement was "That one's the closest," which by the 2017 standard is exactly the low-confidence first identification that should raise a red flag. Loftus asked on stage what happened between "closest" and "absolutely positive" and didn't fully answer. The newer research at least says which of the two statements the jury should have heard.</p>
 <p>Where things stand now: no one still disputes that memories can be rewritten by information received afterwards. Whole false events can be planted, but how often and how completely is still being argued over the same transcripts. As for confidence, what matters is not how high it is but when, and under what conditions, it was expressed.</p>
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Neuroscience · memory reconsolidation (Nader, Schafe &amp; LeDoux)</b>: In 2000 the three found that a rat's fear memory, once recalled, becomes unstable again, and blocking protein synthesis in the amygdala at that moment impairs it. Recall means re-storing, the same structure as "every memory is rebuilt when it is retrieved." The difference: there an old memory is weakened, while in Loftus's work new content gets written in.</li>
+<li><b>Western philosophy · Hume on memory and imagination</b>: In the <em>Treatise of Human Nature</em> (1739), Hume held that memory and imagination differ only in the force and vivacity of their ideas, and he granted that imagination can grow vivid enough to pass for memory: a liar who repeats a lie often enough comes to remember it as real. The difference: Hume still treats vividness as the mark of memory, while Loftus concludes that vividness, detail and emotion prove nothing.</li>
+<li><b>Distributed systems · state without a log</b>: A store that keeps only the current value, with each write overwriting the last, cannot later say who wrote a value or when; that is "all we have is one memory." The difference: engineers can switch to an append-only event log and keep provenance, and the brain cannot. Wikipedia in fact keeps a full edit history, so the metaphor is, on this point, too optimistic.</li>
+<li><b>Buddhism · the five aggregates and non-self</b>: Buddhism describes the self as a passing bundle of five aggregates (form, feeling, perception, mental formations, consciousness) with no permanent owner. Loftus ends by granting that people treat memories as who they are, while those memories keep being rebuilt. The difference: Loftus wants independent corroboration to sort true from false; Buddhism cares about letting go, not verification.</li>
+</ul></div>
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>In the Steve Titus case, the victim went from a hesitant pick at the photo lineup to total certainty in court, and Titus was wrongly convicted of rape.</li>
+<li>In her 2013 TED talk, Elizabeth Loftus said that about three quarters of 300 DNA exonerations involved faulty eyewitness memory.</li>
+<li>Memory is not a recording but more like a Wikipedia page: it is rebuilt on each retrieval, and both you and other people can edit it.</li>
+<li>In the 1974 crash study, asking how fast cars "smashed" rather than "hit" raised speed estimates, and a week later more people recalled broken glass that was never there.</li>
+<li>The core of the misinformation effect is that once later information merges with the original memory, people cannot tell where a detail came from.</li>
+<li>Loftus's 1995 lost-in-the-mall study had only 24 participants, and about a quarter were judged to fully or partly remember an event that never happened.</li>
+<li>The 2005 food study changed only self-reported eating preferences, a much narrower result than the talk's claim about changing behavior.</li>
+<li>The 2023 preregistered replication coded 35% of participants as having a false memory, yet only 14% said themselves that they remembered it.</li>
+<li>Under properly run lineups, confidence at the first identification is informative, and a low-confidence first identification is the real warning sign.</li>
+<li>Memory behaves like a store that keeps only current values and no edit log: once information is merged, its source cannot be recovered.</li>
+</ol>
 <h2>Sources</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/elizabeth_loftus_how_reliable_is_your_memory/transcript">Elizabeth Loftus — How reliable is your memory? (official TED transcript)</a></span><span class="d">The full talk; every quotation from the talk and every figure attributed to it comes from here.</span></li>

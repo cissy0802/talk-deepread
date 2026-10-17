@@ -44,6 +44,14 @@ li{margin:8px 0}
 footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
 .fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
 </style>
@@ -125,6 +133,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>20 January 2021.</strong> Richard Ngo published <a href="https://www.lesswrong.com/posts/mHZRauLwZWhR8KWbL/deutsch-and-yudkowsky-on-scientific-explanation">"Deutsch and Yudkowsky on scientific explanation"</a> on LessWrong, making a different objection: hard-to-vary sounds like a new criterion but is really an implication of <strong>simplicity</strong>. A version of "the gods did it" that could actually predict a given set of data would have to encode all that data, so it is not simple at all; in Kolmogorov terms, bad explanations were already complex explanations and no new word is needed. Deutsch had pre-empted the move: he grants that models with more parameters are more variable but refuses the converse, since "there are plenty of simple explanations that are highly variable, such as 'Demeter did it'." The argument has not been settled.</p>
 <p><strong>It never entered philosophy textbooks; it entered machine learning instead.</strong> On 2 May 2025 Kola Ayonrinde and Louis Jaburi published "Evaluating Explanations: An Explanatory Virtues Framework for Mechanistic Interpretability" on arXiv, setting the "Deutschian" perspective alongside the Bayesian, the Kuhnian and the Nomological as one of four lenses for judging interpretability research. A criterion delivered on a TED stage in 2009 became, sixteen years later, a tool for deciding whether a given account of a neural network is a good explanation. That is probably its healthiest destination.</p>
 <p><strong>The most awkward one is dated 16 October 2023.</strong> Marc Andreessen published "The Techno-Optimist Manifesto," listing David Deutsch among the "Patron Saints of Techno-Optimism" and quoting him: "We have a duty to be optimistic. Because the future is open, not predetermined and therefore cannot just be accepted: we are all responsible for what it holds." That line has nothing to do with hard-to-vary. What was carried off was Deutsch's <strong>optimism</strong>, not his criterion — and the entire force of this talk goes into teaching people how to tell whether an assertion is worth believing. A manifesto that lines up fifty-six patron saints, any one of whom could be struck out without moving the conclusion a millimetre, is by the talk's own standard easy to vary. Not refuted. Circumvented.</p>
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Evolution · conserved sequences (histone H4)</b>: Of histone H4's 102 amino acids, the pea and the cow differ at only two. Nearly every position is doing work, so almost any change breaks it and selection keeps purging mutations, while a pseudogene that does nothing drifts freely. Same structure as "hard to vary": the more each detail does, the less it can move. The difference: biology earns its hard-to-vary parts through ages of trial and culling, while Deutsch wants us to see the property by reason before any test.</li>
+<li><b>Neuroscience · the left-brain interpreter (Michael Gazzaniga)</b>: Gazzaniga showed a split-brain patient a snow scene to the right hemisphere and a chicken claw to the left; the left hand picked a shovel, and the left hemisphere at once explained that the shovel was for cleaning out the chicken shed. The brain mass-produces explanations whose details do no work. Unlike a theory, though, this confabulation is unconscious and serves a coherent self, not an account of the world.</li>
+<li><b>Buddhism · the Kalama Sutta</b>: The Buddha told the Kalamas not to accept a teaching on report, tradition, scripture or a teacher's authority, but to see for themselves. The first half rejects authority, as Deutsch does; the second half rests on personal experience, which is exactly the empiricism he rules out on stage.</li>
+<li><b>Investing · the narrative fallacy (Nassim Taleb)</b>: In <em>The Black Swan</em>, Taleb argues that we compulsively attach causal stories to random events; market commentary that cites the same reason for a rise and a fall is easy to vary in Deutsch's sense. The difference: Taleb's cure is to trust explanations less and data more, while for Deutsch a statistical trend with no explanation is the wizard.</li>
+</ul></div>
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>The Persephone myth of the seasons is testable, and so is the opposite version Deutsch invented on stage, so testability cannot separate science from myth.</li>
+<li>Humanity stagnated for a hundred thousand years, yet within forty years of the 1899 clue of radioactivity physicists had explained what makes stars shine.</li>
+<li>Neither rejecting authority nor empiricism explains scientific progress: scientific theories explain the seen in terms of the unseen.</li>
+<li>The mark of a bad explanation is that it is easy to vary: its details have nothing to do with what it explains and can be swapped freely.</li>
+<li>Axis tilt is a good explanation because every detail has support independent of the seasons, and it predicts opposite seasons in the two hemispheres.</li>
+<li>A refuted myth can be patched with one sentence, so testability only starts to matter once an explanation is already good.</li>
+<li>Extrapolating a statistical trend without a hard-to-vary account of its cause is a theory without explanation, the equivalent of saying a wizard did it.</li>
+<li>The criterion was already taking shape in the 1997 book The Fabric of Reality, in a fight against instrumentalism: prediction is not explanation.</li>
+<li>Deutsch spoke of parallel universes as settled, yet in a 2011 poll of 33 conference attendees only 18% favored the Everett interpretation.</li>
+<li>Daniel Elton admitted in 2020 that "hard to vary" has not been formalized: without limiting the allowed variants, any explanation can be varied into any other.</li>
+</ol>
 <h2>Sources</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/david_deutsch_a_new_way_to_explain_explanation/transcript">A new way to explain explanation — official TED transcript</a></span><span class="d">1,829 words, recorded in Oxford on 2009-07-23. The sole source for every quotation and laugh-line position on this page.</span></li>
