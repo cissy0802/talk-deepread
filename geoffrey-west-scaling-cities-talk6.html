@@ -46,6 +46,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -166,6 +174,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p><strong>2019 年，机制被称重了。</strong>Keuschnigg、Mutgan、Hedström 在《科学进展》发表<a href="https://reglab.se/wp-content/uploads/2019/02/Urban-scaling-and-the-regional-divide.pdf">《城市标度与区域分化》</a>，用的是瑞典<strong>全国人口登记</strong>的地理编码微观数据——把一个国家的每一个人拆开来看。他们先确认了总量层面的规律：瑞典 75 个劳动力市场区里，公司营业额 β = 1.196，工资总额 1.082。然后他们做了台上没做的事：把人口构成的影响<strong>剥掉</strong>，看还剩多少。答案是——「社会互动只解释了工资收入标度参数的大约一半」，构成差异至少解释了 <strong>39%</strong>。而构成差异从哪来？选择性迁移。从小地方搬进瑞典大城市的人，平均比留下的人<strong>多 1.8 年教育</strong>，认知能力测验高 <strong>0.4 个标准差</strong>。他们的结论句是一记直拳：「大城市通过从腹地吸引人才而增长」，「已经占优势的人从城市集聚中获益最多」。演讲里那句温暖的「we are the city」，在这里换了个说法：不是城市让人变得更有创造力，至少有一半是<strong>有创造力的人搬进了城市</strong>。</p>
 <p>还有被滥用的那一层：「城市翻倍，人均一切多 15%」因为好记、好用、站在增长这一边，被规划文件和招商材料反复引用，通常不带那张表、不带置信区间、也不带 1.00 那一列；而演讲本身其实说过好的坏的一起涨——犯罪和艾滋病例就在他念的清单里——这部分在转述中基本蒸发了。</p>
 <p>今天学界的位置大致是这样：标度关系作为<strong>描述性规律</strong>是稳的，作为城市间比较的基线（「这座城市相对它的规模，专利是多还是少」）很有用；但作为一条像牛顿定律那样的<strong>普适律</strong>，以及作为「规模是城市大多数特征的主要决定因素，历史、地理和设计是次要的」这种强主张，它没有站住。而演讲最后那句「they all die like you and me」，被提出它的那个团队自己的后续论文改掉了：公司确实会死，但不像你我——它们不衰老。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>演化生物学 · 范瓦伦的恒定灭绝律与红皇后（Leigh Van Valen）</b>：Van Valen 1973 年翻查化石记录，发现一个类群灭绝的概率和它已经存在了多久无关，并用红皇后解释：对手也在进化，得一直跑才能留在原地。West 团队测出的公司死亡率几乎同一个结论：风险恒定，不衰老。不像的是，物种是被共同进化的对手拖垮，公司退出里最多的是被并购。</li>
+<li><b>软件工程 · 布鲁克斯定律（Fred Brooks）</b>：Brooks 1975 年在《人月神话》里说，给延期的项目加人只会更晚，因为 n 个人之间有 n(n−1)/2 条沟通线。互动随人数超线性增长，在城市里是创造力，在公司里是协调成本。不像的是，Brooks 说的是一个项目的工期，不是跨规模的统计规律。</li>
+<li><b>社会学 · 弱关系的力量（Mark Granovetter）</b>：Granovetter 1973 年发现，人们找到工作的消息多半来自不常见面的熟人，而不是密友。大城市多出来的主要就是弱关系，这给「we are the city」一个可检验的版本。不像的是，瑞典数据提醒，城市的优势还有一半来自谁搬了进来。</li>
+<li><b>投资 · 林迪效应（Nassim Taleb）</b>：Taleb 2012 年在《反脆弱》里说，书和技术这类不会腐坏的东西，已经活得越久，预期还能活得越久。公司恰好两头都不是：死亡风险不随年龄上升，所以不像生物衰老；也不随年龄下降，所以老牌公司也不享受林迪效应。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>生物的代谢率随体重按 3/4 次方增长：体型翻倍只需多 75% 的能量，越大越省，节奏也越慢。</li>
+<li>Geoffrey West 认为城市只是人与人互动的物理外壳，规模和互动密度决定了城市的产出。</li>
+<li>加油站、道路、电缆这类基础设施随城市规模亚线性增长，城市越大，人均越省。</li>
+<li>工资、专利、犯罪和艾滋病例随城市规模超线性增长：城市翻一倍，人均约多 15%。</li>
+<li>超线性增长会在有限时间内冲向崩溃，只能靠越来越频繁的重大创新把时钟拨回去。</li>
+<li>美国 23,000 家公司的标度是亚线性的，像生物不像城市，所以 West 断言公司都会死。</li>
+<li>2007 年论文里的指数从 1.00 到 1.34：住房和就业是线性的，人均一点没多。</li>
+<li>Cosma Shalizi 指出，即使人均产出与城市规模无关，同样的总量画法也能得到 0.94 的 R²。</li>
+<li>瑞典人口登记数据显示，社会互动只解释了工资标度的一半左右，另一半来自人才迁入大城市。</li>
+<li>上市公司的死亡风险不随年龄变化，和 Van Valen 在化石里看到的物种灭绝规律一样，不衰老。</li>
+</ol>
 <h2 data-tts="ee71d50ce0356ac9">出处</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/geoffrey_west_the_surprising_math_of_cities_and_corporations/transcript">TED 官方逐字稿：The surprising math of cities and corporations</a></span><span class="d">本页所有引语、以及演讲中的数字（每周一百万人、23,000 家公司、15%）都出自这份逐字稿。</span></li>

@@ -45,6 +45,14 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 </style>
 </head><body>
 <div class="wrap">
@@ -172,6 +180,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p>There is also the misuse layer. "Double a city and everything goes up 15% per person" is memorable, useful and on the side of growth, so it gets quoted in planning documents and investment brochures — usually without the table, without the confidence intervals, and without that 1.00 column. The talk itself did say the good and the bad rise together — crime and AIDS cases were in the list he read out — and that part evaporates in the retelling almost every time.</p>
 <p>Where the field sits today: scaling relations are solid as a <strong>descriptive</strong> regularity and genuinely useful as a baseline for comparing cities ("relative to its size, does this city produce more patents or fewer?"). But as a <strong>universal law</strong> in the Newtonian sense, and as the strong claim that size is the major determinant of most characteristics of a city with history, geography and design secondary, it has not held. And that closing line — "they all die like you and me" — was corrected by the very team that produced it: companies do die, but not like you and me. They do not age.</p>
 
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Evolutionary biology · Van Valen's law of constant extinction and the Red Queen (Leigh Van Valen)</b>: in 1973 Van Valen combed the fossil record and found that a group's chance of going extinct does not depend on how long it has already existed; his explanation was the Red Queen: rivals keep evolving, so you must keep running to stay in place. West's team found nearly the same thing for company mortality: a constant hazard, no aging. The difference: species are worn down by coevolving rivals, while the most common way a company exits is by being acquired.</li>
+<li><b>Software engineering · Brooks's law (Fred Brooks)</b>: in The Mythical Man-Month (1975) Brooks argued that adding people to a late project makes it later, because n people have n(n-1)/2 lines of communication. Interaction grows superlinearly with headcount; in a city it becomes creativity, in a company coordination cost. The difference: Brooks was describing one project's schedule, not a statistical law across scales.</li>
+<li><b>Sociology · The strength of weak ties (Mark Granovetter)</b>: in 1973 Granovetter found that people more often heard about the jobs they got from acquaintances they rarely saw than from close friends. Weak ties are mostly what a bigger city adds, which gives "we are the city" a testable form. The difference: the Swedish data are a reminder that half of a city's edge comes from who moves in.</li>
+<li><b>Investing · The Lindy effect (Nassim Taleb)</b>: in Antifragile (2012) Taleb argued that for things that do not perish, like books and technologies, the longer something has lasted, the longer it can be expected to last. Companies fit neither side: their risk of dying does not rise with age, so they do not age like organisms, and it does not fall with age either, so old firms get no Lindy bonus.</li>
+</ul></div>
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>An organism's metabolic rate grows with the 3/4 power of body mass: double the size needs only 75% more energy, and life runs slower.</li>
+<li>Geoffrey West sees a city as the physical shell of human interaction, with size and interaction density setting what it produces.</li>
+<li>Infrastructure such as gas stations, roads and cables grows sublinearly with city size, so bigger cities spend less per person.</li>
+<li>Wages, patents, crime and AIDS cases grow superlinearly: double a city's size and each rises about 15% per person.</li>
+<li>Superlinear growth heads toward collapse in finite time, held off only by major innovations that must come more and more often.</li>
+<li>Data on 23,000 U.S. companies scale sublinearly, like organisms rather than cities, which is why West says all companies die.</li>
+<li>The exponents in the 2007 paper run from 1.00 to 1.34: housing and employment scale linearly, with nothing extra per person.</li>
+<li>Cosma Shalizi showed that the same aggregate plot gives an R² of 0.94 even when output per person has nothing to do with city size.</li>
+<li>Swedish population registers show social interaction explains only about half of wage scaling; the rest comes from talent moving to big cities.</li>
+<li>A listed company's risk of dying does not change with age, the same pattern Van Valen found for extinction in the fossil record.</li>
+</ol>
 <h2>Sources</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://www.ted.com/talks/geoffrey_west_the_surprising_math_of_cities_and_corporations/transcript">TED official transcript: The surprising math of cities and corporations</a></span><span class="d">Every quotation on this page, and the talk's own figures (a million people a week, 23,000 companies, 15%), come from this transcript.</span></li>
