@@ -43,6 +43,14 @@ li{margin:8px 0}
 footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
 .fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
 </style>
@@ -134,6 +142,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p>「天赋很小」这条，从来没有人直接测过说话能力的 K、P、T 比例。旁证来自专长研究。Macnamara、Hambrick 和 Oswald 2014 年的元分析发现，刻意练习能解释的表现差异，在游戏里是 26%，音乐 21%，体育 18%，教育 4%，职业领域不到 1%。这一刀砍在 P 上，不砍 K：Winston 的公式里分量最重的是「关于说话的知识」，这恰好没人量过。所以这条只能判「仍悬而未决」，但它提醒人们，「天赋不重要」作为一句口号，说得比任何研究都满。镜像神经元那条，Hickok 2014 年把质疑扩成了一本书《The Myth of Mirror Neurons》（本页只读了他 2009 年的论文）。</p>
 <p>被讲歪的方式则很典型。2026 年 8 月 Upworthy 一篇介绍这堂课的文章里，嵌着一条推文，说这一小时「比所有的书、课程和导师加起来」教你的都多。MIT 新闻网站转引这篇文章时的摘要写着，「我总是用笑话结尾……」是 Winston 的「妙语」，可原话出自 Doug Lenat，Winston 只是转述。一堂反复提醒「字太多」「别夸张」的课，在传播中被压成了几条金句，还错配了作者。</p>
 <p>站得最稳的部分，恰恰是 Winston 没挂研究的那些：开场就告诉人能得到什么，结尾留下你做了什么。它们没被实验检验过，但也没有任何证据反对它们。工程教育里今天推的 assertion-evidence 幻灯片，和这堂课在方向上也一致：少放要点，让讲者成为主角。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>信息论 / 分布式系统 · 重复码与关键帧</b>：「绕圈三遍」就是最朴素的纠错码：同一个比特发三次，接收端按多数表决，丢一次也能还原。「口头标点」则像视频编码里的关键帧（I 帧），中途加入的观众从下一个关键帧起就能接上。不像在两点：重复码很浪费，工程上早有效率高得多的编码；而听众掉线不是独立随机的，越往后越集中，更像突发丢包，单纯重复不一定扛得住。</li>
+<li><b>认知心理学 · 冯·雷斯托夫效应（Hedwig von Restorff）</b>：1933 年 von Restorff 发现，一串相似的项目里那个与众不同的最容易被记住，这和 Winston 要的「突出的想法」是一回事。不像的是，von Restorff 说的是一个项目在列表里的醒目程度，Winston 担心的是一篇论文好想法太多，结果没有一个醒目。</li>
+<li><b>心理学 · 峰终定律（Daniel Kahneman）</b>：Lenat「用笑话结尾，大家就觉得一直很开心」，正是 Kahneman 说的峰终定律：人回顾一段经历时，主要记住最强烈的那一刻和结尾（本站<a href="kahneman-experience-vs-memory-talk3.html">另有一期</a>）。不像的是，峰终定律量的是对痛苦和愉快的回忆，不是听完报告记住了多少内容。</li>
+<li><b>商业思维 · 亚马逊的「逆向工作法」</b>：亚马逊做新产品前先写新闻稿和常见问题（PR/FAQ），先说清用户最后能得到什么，再倒推怎么做，和 Winston 的「赋能承诺」同一个方向。不像的是，新闻稿是内部用来决定做不做的工具，赋能承诺是对着听众许的诺，许了就得兑现。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>Patrick Winston 把说话的质量看作知识、练习、天赋三者的函数，天赋那一项很小。</li>
+<li>开场别讲笑话，听众还在适应讲者；开场要给赋能承诺，说清一小时后大家会多知道什么。</li>
+<li>重要的想法绕着说三遍，因为任何时刻都有一部分听众在走神。</li>
+<li>口头标点给走神的人留出重新上车的地方，提问后要忍住沉默，等人回答。</li>
+<li>黑板适合教东西，因为书写速度接近人吸收想法的速度；幻灯片该是佐料，不是主菜。</li>
+<li>求职报告要在五分钟内让人看到愿景和做成过的事，最后一页写「贡献」，不写「结论」。</li>
+<li>让工作被记住要凑齐五个 S：符号、口号、惊奇、突出的想法、故事。</li>
+<li>Mary Budd Rowe 的研究里，小学老师提问后平均只等一秒，拉到三到五秒后学生答得更多、更长。</li>
+<li>Sana 等人 2013 年的实验里，坐在开小差的笔记本电脑后面的学生，测验正确率从 73% 降到 56%。</li>
+<li>「绕圈三遍」和信息论里的重复码同构：同一信号发三次，丢一次也能靠多数表决还原。</li>
+</ol>
 <h2>出处</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://ocw.mit.edu/courses/res-tll-005-how-to-speak-january-iap-2018/bc92763ffa0dad0ecafe44967e834e16_Unzc731iCUY.pdf">MIT OpenCourseWare：How to Speak 官方逐字稿（2018）</a></span><span class="d">本页所有引语和课程结构的来源。</span></li>

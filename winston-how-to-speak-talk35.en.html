@@ -43,6 +43,14 @@ li{margin:8px 0}
 footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
 .fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
 .fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
 [hidden]{display:none!important}
 @media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
 </style>
@@ -134,6 +142,26 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14
 <p>No one has measured K, P and T for speaking. The nearest evidence comes from expertise research. A 2014 meta-analysis by Macnamara, Hambrick and Oswald found that deliberate practice explained 26% of the variance in performance for games, 21% for music, 18% for sports, 4% for education and less than 1% for professions. That cuts against P, not K: the heaviest term in Winston's formula, knowledge about speaking, is exactly what nobody has measured. So that claim stays unresolved, with a warning that "talent doesn't matter," as a slogan, says more than any study does. On mirror neurons, Hickok expanded his critique into the 2014 book <i>The Myth of Mirror Neurons</i> (this page read only his 2009 paper).</p>
 <p>How the talk got distorted is typical. An August 2026 Upworthy write-up embedded a post claiming the hour teaches more than every book, course and mentor combined. MIT News's summary of that article calls "I always finish with a joke..." something Winston "quipped," but the line is Doug Lenat's, which Winston was quoting. A talk that kept warning against too many words and overclaiming got squeezed into quotable lines, one of them credited to the wrong person.</p>
 <p>What stands firmest is the advice Winston didn't tie to any study: tell people at the start what they'll get, and leave them at the end with what you did. No experiment has tested it, but no evidence cuts against it either. The assertion-evidence slides now taught in engineering education point the same direction: fewer bullets, and the speaker as the main event.</p>
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Information theory / distributed systems · repetition codes and keyframes</b>: Cycling three times is the simplest error-correcting code: send each bit three times and take a majority vote at the receiver, and one loss is recoverable. Verbal punctuation is like a keyframe (I-frame) in video coding, which lets a viewer who joins mid-stream lock on at the next one. The differences: repetition is wasteful, and engineers have far more efficient codes; and listeners don't drop out independently at random but more and more as time goes on, closer to bursty packet loss, which plain repetition handles poorly.</li>
+<li><b>Cognitive psychology · the von Restorff effect (Hedwig von Restorff)</b>: In 1933 von Restorff found that in a list of similar items, the one that differs is remembered best, which is what Winston's "salient idea" is after. The difference: von Restorff measured how one item stands out in a list, while Winston worried about theses with so many good ideas that none stands out.</li>
+<li><b>Psychology · the peak-end rule (Daniel Kahneman)</b>: Lenat's "finish with a joke and people think they've had fun the whole time" is Kahneman's peak-end rule: looking back on an experience, people weigh its most intense moment and its end (see our <a href="kahneman-experience-vs-memory-talk3.en.html">Kahneman issue</a>). The difference: the peak-end rule concerns remembered pain and pleasure, not how much of a talk's content sticks.</li>
+<li><b>Business thinking · Amazon's "working backwards"</b>: Before building a product, Amazon writes the press release and FAQ (the PR/FAQ), stating what the customer will get and reasoning backward from there, the same direction as Winston's empowerment promise. The difference: the press release is an internal tool for deciding whether to build at all, while an empowerment promise is made to the audience and has to be kept.</li>
+</ul></div>
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Patrick Winston treated speaking quality as a function of knowledge, practice and talent, with talent the smallest term.</li>
+<li>Don't open with a joke while the audience is still adjusting; open with an empowerment promise saying what they'll know in an hour.</li>
+<li>Cycle through an important idea three times, because at any moment part of the audience has drifted off.</li>
+<li>Verbal punctuation gives drifting listeners a place to get back on, and after asking a question, hold the silence.</li>
+<li>The board suits teaching because writing speed matches the speed of absorbing ideas; slides should be condiments, not the main event.</li>
+<li>A job talk must show a vision and something done within five minutes, and its final slide should read "Contributions," not "Conclusions."</li>
+<li>Memorable work needs five S's: a symbol, a slogan, a surprise, a salient idea and a story.</li>
+<li>In Mary Budd Rowe's research, elementary teachers waited about one second after a question; at three to five seconds, students answered more and at greater length.</li>
+<li>In Sana and colleagues' 2013 experiment, students seated behind multitasking laptop users scored 56% instead of 73% on a comprehension test.</li>
+<li>Cycling three times mirrors a repetition code in information theory: send a signal three times and a majority vote survives one loss.</li>
+</ol>
 <h2>Sources</h2>
 <ul class="reads">
 <li><span class="t"><a href="https://ocw.mit.edu/courses/res-tll-005-how-to-speak-january-iap-2018/bc92763ffa0dad0ecafe44967e834e16_Unzc731iCUY.pdf">MIT OpenCourseWare: How to Speak, official transcript (2018)</a></span><span class="d">Source of every quotation and of the talk's structure.</span></li>
