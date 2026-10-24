@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Matt Abrahams ·《Think Fast, Talk Smart》— 被点名时，别求说对，求回应</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="abrahams-spontaneous-speaking-talk38.en.html">English →</a></div>
+<header>
+<div class="kicker">斯坦福商学院 · 2014</div>
+<h1>敢于平庸：被临时点名时怎么开口，以及这些招数背后的实验站住了多少</h1>
+<p class="sub">Matt Abrahams ·《Think Fast, Talk Smart: Communication Techniques》</p>
+<div class="modebar"><button id="btn-pop">精华版</button><button class="on" id="btn-deep">完整版</button></div>
+</header>
+<div class="mode-pop" hidden="" id="mode-pop">
+<p>一百多个斯坦福商学院的老校友站起来，用手指着房间里的东西，大声喊出错误的名字。指着椅子喊「豪猪」，指着讲台喊「加利福尼亚」，接下来是「盐瓶」「网球拍」「紫色」。三十秒到，台上的 Matt Abrahams 喊停，问了一个问题：开始之前，有多少人已经想好了前五六个词？</p>
+<p>很多人举了手。这就是他要讲的病。这个游戏没有输法，你唯一能把它玩坏的办法，就是提前把答案囤好。第二轮他让大家发现自己在「囤词」或者在按规律出词（水果、A 开头的词）时，对脑子说一声「谢谢」，然后不理它。</p>
+<p>这是 2014 年 10 月的一个周六上午，斯坦福校友返校周末，听众散场后要去看橄榄球赛。Abrahams 在商学院教战略沟通。这个工作坊的来历很实际：学校做过一次调查，问学生什么能帮他们更成功，排第一的是怎么接住教授的冷点名（cold call），就是教授突然看着你问「你怎么看」。</p>
+<p>他的框架分两层。第一层是先管住焦虑：感到心跳出汗时，跟自己说一句「这是我在紧张」；把讲话当成对话而不是表演，因为表演有标准答案，讲话没有；再想办法把注意力拉回此刻，他最喜欢的办法是绕口令。第二层是四步：先别挡自己的路，他借来即兴戏剧的一句箴言「敢于平庸」（dare to be dull）；把场面看成机会而不是威胁，用的是互送想象礼物的游戏；放慢下来听，让两人用拼字母的方式聊天；最后用结构回答，最常用的是「是什么—所以呢—接下来」。他说结构的作用很反直觉：</p>
+<blockquote><span class="en">Structure sets you free and I know that’s kind of ironic, but it’s true</span><span class="zh">结构让你自由，我知道这听着有点讽刺，但它是真的。</span><cite>— Matt Abrahams，《Think Fast, Talk Smart》，2014</cite></blockquote>
+<p>这个视频后来在 YouTube 上被看了一千多万次。九年后他把它扩成书《Think Faster, Talk Smarter》，「焦虑 + 四步」整理成了六步，「敢于平庸」改叫「把平庸最大化」。</p>
+<p>台上他说这些技巧「都基于学术研究」，但几乎没点名是哪些研究。逐条对一下，结果是<strong>部分站住</strong>。「给焦虑贴标签」最接近的实验是让怕蜘蛛的人边看狼蛛边说出感受：一周后，他们的皮肤电反应更低，自评的害怕程度却没变，和他台上那句「不一定减少焦虑，但能止住打转」几乎一样。「当成机会」最接近的是 2014 年哈佛商学院 Alison Wood Brooks 的「我很兴奋」实验，2025 年一组研究者原样重做：说「我很兴奋」的人确实更兴奋，评委却看不出他们讲得更好。即兴游戏能降低社交焦虑，有一项底特律中学生的研究支持，但它没有对照组。他引用的「结构化信息的加工效率高 40%」，我找不到出处。这一小时的骨架是对的：先管身体，再管注意力，最后靠结构托底。挂在上面的那几个数字，比台上说的要松。</p>
+</div>
+<div class="mode-deep" id="mode-deep">
+<div class="meta-card"><b>课</b> Think Fast, Talk Smart: Communication Techniques · <b>场合</b> 斯坦福校友返校周（Reunion Homecoming）暨商学院秋季校友周末 · 2014-10-25 · <b>篇幅</b> 逐字稿约 9,700 词，其中问答约 1,800 词 · <b>全文</b> <a href="https://singjupost.com/think-fast-talk-smart-communication-techniques-by-matt-abrahams-full-transcript/">The Singju Post 第三方转录</a></div>
+<h2>那一刻</h2>
+<p>讲到第三个缓解焦虑的办法时，Abrahams 宣布全场要一起念他最喜欢的绕口令。他先打了预防针：这句之所以是他的最爱，是因为念错了就会说出一个脏字，「我会仔细听今天早上有没有人说脏话」。</p>
+<blockquote><span class="en">Repeat after me. It’s only three phrases. I slit a sheet. A sheet I slit. And on that slitted sheet I sit. Very good, no shits.</span><span class="zh">跟我念，只有三句。I slit a sheet（我割开一张床单）。A sheet I slit。And on that slitted sheet I sit（我坐在那张割开的床单上）。很好，没人说出 shit。</span><cite>— Matt Abrahams，《Think Fast, Talk Smart》，2014</cite></blockquote>
+<p>笑声过后他才说出用意：刚才那几秒，没人在想「我站在一屋子人面前，这很怪，这家伙干吗让我念这个」。你们全神贯注要念对，还在猜那个脏字是什么，于是人就待在了当下。一个有些下流的笑话，把这一小时的核心机制演了一遍：<strong>紧张的人在想未来，你得想办法把他拽回现在。</strong></p>
+<h2>讲的人，和那一年</h2>
+<p>Abrahams 是斯坦福 1991 届本科生，在商学院教战略沟通，也在斯坦福继续教育项目里教公开演讲。他讲过自己当校园导游的经历：受训整整一个学季（quarter），要从方庭一头倒着走到另一头，走歪了就从头再来，「到今天我还能倒着走直线」。读本科时他跟着 Phil Zimbardo 做过研究，就是做斯坦福监狱实验的那位，Zimbardo 也是最早建害羞研究所的人之一。</p>
+<p>这场工作坊有一个很具体的起因。商学院做过学生调查，问什么能帮他们更成功，排第一的是应付冷点名。于是有了这门课，商学院大多数一年级学生都会上。那个周六上午，他讲的是给校友的「混合版」。台下大多是商学院毕业生，散场后要去看橄榄球赛，那周 Chapman 大学刚发布一份美国人恐惧调查，他当场就拿来用了。他已经出过一本书《Speaking Up Without Freaking Out》，还和讲电影的讲师 Adam Tobin 合开了一门即兴表达课，叫「improvisationally speaking」。</p>
+<p>视频 12 月上传到商学院的 YouTube 频道。一份旧的网页存档显示它当时已有一千四百多万次观看，后来又长出了同名播客，2023 年出了扩写的书《Think Faster, Talk Smarter》。这一小时算是一切的起点。</p>
+<h2>这场演讲，讲透</h2>
+<p>开场他先自嘲：「我这个讲座的标题语法不通，我以为能吓走几个人。」他说在商学院教书学到的一件事是，抓住人的注意力很难，这么个小把戏也许就能把人引进来。然后他宣布这是一场要互动的工作坊，因为「我们成为有效沟通者的方式，就是真的去沟通」。</p>
+<p>第一个活动：屏幕上一句话，数里面有几个字母 f。大多数人数出三个，正确答案是六个，漏掉的是那个两个字母、以 f 结尾的小词。他说自己十二年前第一次做也只数出三个，觉得很蠢，所以每次开课都要把这种感觉传下去，然后改口：真正的原因是，一屋子聪明人在这件小事上都没做到最好，讲话也一样，<strong>差别常常就在小处</strong>。</p>
+<p>接着他划定今天的范围：不讲主题演讲、会议报告、事先写好的祝酒词，只讲临场的、事先没准备的讲话。他认为后者其实比前者更常见：饭桌上有人让你介绍某位朋友，老板突然转过来问你怎么看，没预料到的祝酒，问答环节。议程很简单：不管有没有准备，想讲好话都得先管住焦虑。</p>
+<h3>先管焦虑：三个办法</h3>
+<p>他引用了一个数字，接了一个包袱：</p>
+<blockquote><span class="en">85% of people tell us that they’re nervous when speaking in public. And I think the other 15% are lying.</span><span class="zh">85% 的人告诉我们，他们在公开讲话时会紧张。我觉得剩下那 15% 在撒谎。</span><cite>— Matt Abrahams，《Think Fast, Talk Smart》，2014</cite></blockquote>
+<p>他又提到 Chapman 大学刚发布的调查：美国人最怕的事情里，和遭遇恐怖袭击、身份被盗排在一起的，就是公开讲话，它在前五名里。但他刻意用的词是「管理」，不是「克服」：焦虑给人能量，帮人集中注意力，提醒你这件事很重要。</p>
+<p>为什么必须管？他问台下：看一个紧张的讲者，你是什么感觉？有人喊「不舒服」。于是观众点头微笑，或者干脆走神，而讲者看到一片点头或走神的脸，只会更慌。由此他给出这一小时的一条底层原则：讲话的人，不管有没有准备，工作都是让听众舒服，「因为他们舒服了，才能接收你的信息」。舒服不等于把话说得甜，信息可以很刺耳，但听众得处在能听进去的状态。</p>
+<p><strong>第一个办法：跟焦虑打招呼。</strong>多数人在开口前几分钟开始出现症状：胃里咕噜、腿抖、出汗。然后开始对自己说「天哪我紧张了，他们会看出来的，这下完了」，越想越乱。他说正念注意（mindful attention）的研究表明，症状一来就对自己说一句「嘿，这是我在紧张，我要去做一件有分量的事」，承认它正常、自然，就能止住这种打转。他特意加了一句限定：这不一定会减少焦虑，但能防止它失控。</p>
+<p><strong>第二个办法：把讲话从「表演」重新看成「对话」。</strong>这一条他说自己读研时参与过相关研究。表演有对错，唱错一个音、说错一句台词，你就错了，台上台下都会被打乱。</p>
+<blockquote><span class="en">But when you present, there is no right way. There’s certainly better and worse ways. But there is no one right way.</span><span class="zh">但你做讲话时，没有正确的方式。当然有更好和更差的方式，但没有唯一正确的方式。</span><cite>— Matt Abrahams，《Think Fast, Talk Smart》，2014</cite></blockquote>
+<p>光说「这是对话」不够，他给了两个具体做法。一是从提问开始：问题天生是双向的。他今天做的第一件事就是让大家数 f、举手。他列提纲也不写要点，只写一串他要回答的问题，「此刻我在回答的问题是：怎么管理焦虑？」二是用对话的语言。紧张的讲者会在身体上往后缩，在语言上也拉开距离，比如说「人们必须考虑其后果」（one must consider the ramifications），或者「今天我们讲第一步、第二步、第三步」。换成「这对你很重要」「我们都得关心这个」，换成「我们首先要做的是这个，第二件你该想的是那个」。区别在代词，一换就从宣读变成了说话。</p>
+<p><strong>第三个办法：回到当下。</strong>这是他本科时跟 Zimbardo 做的研究方向：人对时间的取向怎样影响人的反应。他们发现，把自己拉回当下，而不是担心将来的后果，人就没那么紧张。学生怕拿不到好成绩，创业者怕拿不到钱，讲者怕没人笑，这些都是未来。办法有很多：他认识一位一小时出场费一万美元的职业讲者，上台前在后台做一百个俯卧撑，但他不推荐，那人上台时气喘吁吁一身汗，绕楼走一圈就够了。或者像运动员那样听一首歌；或者从 100 开始每次减 17 往下数，「我停一下，因为我知道屋里有人在试」。最后就是开头那句绕口令，它还有个附带的好处：热嗓子。紧张的人很少热嗓子，他们缩进自己的脑子里，对自己说坏话。</p>
+<h3>四步：从挡路到托底</h3>
+<p>焦虑管住以后，才进入正题。他预告了四步，每步配一个活动，「没有一个比念绕口令更痛苦」。每步的结尾再配一句即兴戏剧的箴言，这些是 Adam Tobin 教给他的，好记。</p>
+<p><strong>第一步：别挡自己的路。</strong>临场讲话最大的障碍是自己。我们想完美，想给出正确答案，想让祝酒词被记住，这些努力本身就是负担。屋里多半是 A 型人格，工作勤奋、反应快、事事求对，在临场讲话里，这些反而帮倒忙。</p>
+<p>活动就是精华版开头那个「喊错名字」：站起来，三十秒内指着周围的东西，大声喊出任何不是它本来名字的词。他在开始前问：谁已经想好了前五六个要喊的词？很多人举手。「你们都是优秀的玩家。我刚说完规则，你们已经开始琢磨怎么赢了。这是你的大脑想帮你做对。」可这个游戏唯一的玩错方式，就是你刚才做的事。你指着椅子喊「椅子」也不会受罚，因为没人知道你指的是不是椅子下面的地板。</p>
+<p>第一轮喊完，他问大家注意到什么规律：有人在过水果蔬菜，有人在过 A 开头的词。这是大脑换了个更狡猾的办法：你不让我囤，那我给你出规律，问题是一样的。他们在即兴课上的说法是，大脑是来帮你的，它这些习惯让你一路成功，但现在要像雨刷一样把这些建议刮掉。第二轮只有十五秒，规则加了一条：发现自己在囤词或套规律时，说一声「谢谢你，大脑」，然后不理它。</p>
+<p>有人说第二轮也没容易多少。他说没关系，这些技能不是电灯开关。这个游戏随时能玩，他喜欢在堵车时玩。你在对抗的是一辈子养成的肌肉记忆：一个反应飞快、急着帮你解决问题的大脑。他在这里玩了一个词源上的文字游戏：</p>
+<blockquote><span class="en">In essence we are reacting rather than responding. To react means to act again.</span><span class="zh">本质上，我们是在「反应」，而不是在「回应」。react 的意思是「再做一次」。</span><cite>— Matt Abrahams，《Think Fast, Talk Smart》，2014</cite></blockquote>
+<p>你先想好了，再照着演一遍，这太慢，也太刻意。他要的是真诚的、即时的回应。这一步的箴言是他最喜欢的之一：<strong>敢于平庸（dare to be dull）</strong>。他先道歉，说在一屋子斯坦福人面前讲这个有点冒犯。然后解释：与其奔着伟大去，不如允许自己平庸，允许了，反而能到达伟大。把伟大当靶子时，你会过度评估、过度分析，然后僵住。</p>
+<p><strong>第二步：把场面看成机会，而不是挑战和威胁。</strong>他给高管做问答辅导时，发现他们面对媒体或投资人，常把问答看成你死我活的对抗。他首先要改的就是这个：问答是机会，可以澄清，可以了解别人在想什么。觉得被挑战时，人只会做最低限度的回应来保护自己；觉得是机会时，人会解释、会展开。公司晚宴上老板说「你比我们都熟他，介绍一下吧」，你该说「好啊，谢谢给我这个机会」，而不是心里一声惨叫。</p>
+<p>活动是「送礼物」，正好赶上节日季。两人一组，B 把一个想象中的礼物递给 A；A 打开盒子，说出第一眼看到的东西，不是你刚才已经想好的那个，也不是再下一个，「还记得我们之前说的吗？你在囤」。他说自己玩这个游戏时，打开盒子看到的是一条青蛙腿，「我也不知道为什么」。然后轮到送礼的人：不管对方说盒子里是什么，你都得接住，说「太好了，你喜欢就好，我买给你是因为……」。没有错的玩法，「你随时可以拿去退货，换你真正想要的」。</p>
+<p>回收时，有人在盒子里找到了一个变速箱，他接得很快：「有法拉利的话，你确实需要一个变速箱。」还有人找到一只活的独角兽。开场时有些人看着有点阴沉、有点怀疑，这一轮大家都在笑。把临场讲话重新看成机会，看成两个人一起造出来的东西，人就没那么紧张、没那么防御。这一步配的是即兴最有名的那句：<strong>Yes, and</strong>（是的，而且）。我们很多人的沟通习惯是「No, but」（不，但是）。他特意说明，这不是要你对别人的问题说「是」，而是说你进入这个场面的姿态。</p>
+<p><strong>第三步：放慢，去听。</strong>我们往往只听到「差不多懂了」的程度，就开始想自己要说什么，然后开口。可讲话的人归根结底是为听众服务的，听不懂对方要什么，就没法尽这个义务。</p>
+<p>这一步的游戏他用拼字母来宣布：先把规则一个字母一个字母拼出来，再「翻译」：还是刚才那个搭档，告诉对方你今天还打算做的一件好玩的事，但每个词都要拼出来。拼写差没关系；也别为了少拼字母，就说自己要「F-E-E-D T-H-E C-A-T」（喂猫）。一位观众拼出 G-O-T A-T G-A-M-E（去看球赛），他也拼着回：E-X-C-E-L-L-E-N-T。</p>
+<p>大家学到什么？除了「我们拼写不太行」，还有：词与词之间得停顿，你必须专注，必须听，没法提前想下一句。这一步配的是他最喜欢的箴言：</p>
+<blockquote><span class="en">Don’t just do something, stand there. Listen. Listen, and then respond.</span><span class="zh">别急着做点什么，站在那儿。听。先听，然后回应。</span><cite>— Matt Abrahams，《Think Fast, Talk Smart》，2014</cite></blockquote>
+<p>这是把一句老话倒过来说，原话是「别光站着，做点什么」（Don’t just stand there, do something）。</p>
+<p><strong>第四步：用结构回答，讲成一个故事。</strong>他说不管有没有准备，讲话成功的关键都是结构。先讲为什么：结构提高「加工流畅度」（processing fluency），「我们加工结构化信息，比没有结构的信息大约高效 40%」。他看着台下的校友说，你们和我一样还记得要背电话号码的年代，十位数很难记，你们怎么记的？切成三、三、四。结构帮人记。</p>
+<p>然后是他当导游的故事。受训的那一个学季里，他们被灌输的最重要的一件事是什么？「千万别把你的团弄丢。」他说他没开玩笑。讲话也一样，千万别把听众弄丢，而结构就是让人跟上的办法。如果他说「嗨，我叫 Matt，走吧」，没人会跟他走，大家想知道去哪儿、为什么去、要多久。结构就是在设定预期。</p>
+<p>他给了两个最常用的结构。一是「问题—方案—好处」：先说问题，再说怎么解决，最后说照做的好处。它也可以改成「机会—方案—好处」，因为不是每件事都是问题，也许只是有个市场机会还没去抓。二是「是什么—所以呢—接下来」（What? So what? Now what?）：先说是什么，再说为什么重要，最后说下一步。答问题、介绍人都能用。介绍人时把「是什么」换成「是谁」：他是谁，他为什么重要，接下来我们做什么，「也许是听他讲，也许是喝我们的酒」。</p>
+<p>他说临场讲话难，是因为你得同时解决两件事：说什么，以及怎么说。结构替你解决了「怎么说」。练习是向搭档推销一个弹簧玩具 Slinky，任选一种结构。散发的讲义背面列着更多结构，他就在这时说出了精华版里那句「结构让你自由」：有了结构，你就能把心思放在「说什么」上，它降低了同时想内容和形式的认知负荷。</p>
+<p>收尾他建议大家去看球的路上都指着东西喊错名字，「大家都喊就不怪了」。他自己在两个孩子身上练「是什么—所以呢—接下来」，孩子们不知道，可他们去朋友家，听别的爸爸回答问题时，就听不到这种结构了。</p>
+<h3>问答</h3>
+<p>问答环节同样是这套方法的现场演示。有人问遇到敌意怎么办。他说要承认情绪，但别给情绪命名：你说「你听起来很生气」，对方会说「我不是生气，是沮丧」，然后你们就开始争论他的心理状态了。更好的说法是「我听出你对这件事很有热情」或「我听到你很担心」。然后重新框定再回答：有人说「你们的产品贵得离谱」，你可以说「我听到了很大的担心，你真正问的是我们产品的价值」，讲完价值主张，再回到「正因为提供了这些价值，我们认为价格是公道的」。价格的问题你答了，只是换了一个你更舒服的框。</p>
+<p>做专家证人的观众问怎么应付敌意的交叉询问。他建议事先准备几个主题和配套的证据，不背措辞，到时按需要组装；而为自己争取时间最好的工具是复述（paraphrase）：</p>
+<blockquote><span class="en">The paraphrase is like the Swiss Army knife of communication.</span><span class="zh">复述就像沟通里的瑞士军刀。</span><cite>— Matt Abrahams，《Think Fast, Talk Smart》，2014</cite></blockquote>
+<p>复述让你有机会重新框定问题、想答案、停一下确认自己听对了，比如说「所以你真正问的是 X、Y 和 Z」。他接着自嘲：「我没当过专家证人，因为我什么都不是专家。」其余几个问题（远程听众、跨文化、幽默、记者怎么提问）他也都用同一套办法接住：先听清，再套结构，必要时先复述。</p>
+<h2>冰山下面</h2>
+<p>台上他说，这些技巧「都基于学术研究」。可整整一小时，他点名的只有三处：Chapman 大学的恐惧调查、他和 Zimbardo 做的时间取向研究、「正念注意的研究」。其余几乎都是即兴课和他的教学经验。下面逐条对。前两条台上没点名具体论文，写在这里的是能对上这条建议的实验，不是他引用过的东西。</p>
+<p><strong>「跟焦虑打招呼」对上的是情绪标记（affect labeling）研究。</strong>UCLA 的 Matthew Lieberman 等人 2007 年在脑扫描里发现，给一张负面图片选一个情绪词（比如「害怕」），杏仁核的反应会减弱，同时右腹外侧前额叶被激活；换成和情绪无关的标签，这块前额叶不会被激活。2012 年 Katharina Kircanski、Lieberman 和 Michelle Craske 把它搬到了临床场景：88 个怕蜘蛛的人（筛选时得分在前四分之一），反复靠近一只腿展约 15 厘米的活狼蛛，分成四组：说出自己的感受、重新评价、分散注意、什么都不做。一周后换一只狼蛛、换一个房间再测，说出感受那组的皮肤电反应比其他组都低，靠近的程度比分心组略高；但<strong>自评的害怕程度和其他组没有差别</strong>。这和 Abrahams 台上那句限定（不一定减少焦虑，只是止住打转）出奇地吻合。不过要注意两点差别：实验里的被试说的是对着刺激物描述自己的情绪，不只是一句「这是我在紧张」；被试也是怕蜘蛛的人，不是怕讲话的人。</p>
+<p><strong>「看成机会而不是威胁」对上的是 Alison Wood Brooks 的「兴奋重评」。</strong>Brooks 是哈佛商学院的研究者，这篇论文 2014 年发表在《实验心理学杂志：总论》上，正是这场工作坊那一年。她的第二项研究找了东北部一所名校的 140 名大学生，要他们在一个面无表情的观察者和摄像机前讲两三分钟「为什么你是个好的工作伙伴」，并告诉他们录像之后会交给同龄人组成的委员会评审。开口前，一半人大声说「我很兴奋」，一半人说「我很冷静」。结果「兴奋组」自评更兴奋，但自评的焦虑并没有更低；评委打分时，觉得他们更有说服力、更胜任、更自信、更坚持，他们讲的时间也更长。Brooks 把这归因于心态从「威胁」转向了「机会」。<strong>台上的版本比这宽了一大截</strong>：实验是在讲话前说一句话，Abrahams 讲的是整个人进入场面的姿态；实验测的是两三分钟的事先命题讲话，不是临场被点名。</p>
+<p><strong>「回到当下」和 Zimbardo 自己的理论并不完全一样。</strong>Abrahams 说本科时和 Zimbardo 做过时间取向与反应的研究，我没找到这项研究发表的版本。Zimbardo 的时间观理论把人分进几个「时区」，其中「现在」就分享乐和宿命两档。2021 年他上 Abrahams 的播客时说，想到现在，有人想到的是自己的不足和害羞，有人想到的是长处。在他的框架里，「活在现在」本身不保证轻松。Abrahams 讲的「回到当下」更窄，也更具体：把注意力从想象中的后果上拉回眼前这件事，比如念对一句绕口令。更接近注意力训练。</p>
+<p><strong>两个数字没有出处。</strong>「85% 的人会紧张」他说是「人们告诉我们的」，没给来源，2023 年的版本里成了「我们有研究说高达 85%」，仍然没有点名。「结构化信息的加工效率高约 40%」，我找不到这个数字出自哪项研究。「加工流畅度」是心理学里的真概念，但通常指加工信息时「感觉有多顺」以及它怎样影响判断，和「效率高 40%」不是一回事。Chapman 那项倒查得到：2014 年访问 1,500 人，公开讲话排在恐惧第五，他说「在前五名里」是准确的。</p>
+<p><strong>箴言来自即兴戏剧，不来自实验。</strong>台上他把这些话归给 Adam Tobin；2023 年重讲时，他点名的即兴老师是 Patricia Ryan Madson、Adam Tobin 和 Dan Klein。Madson 2005 年的《即兴智慧》（Improv Wisdom）列了十三条箴言，第五条就是「做个普通人」（Be average）。它们的根据是一代代即兴演员的手感。</p>
+<p><strong>九年后，这套方法长成了什么样。</strong>2023 年版的框架从「先管焦虑 + 四步」整理成六步，分「心态」和「信息」两半。焦虑管理拆成症状和来源两头，症状那头加了腹式呼吸、握冰水降温，来源那头还是回到当下。「敢于平庸」改叫「把平庸最大化」（maximize mediocrity），后面补上半句「这样你才能达到卓越」。看成机会那一步加了三件工具：Carol Dweck 成长型思维里的「还没有」（not yet）、篮球教练 Mike Krzyzewski 的「下一球」（next play），以及把错误（mistakes）重新叫作「失手的那一条」（missed takes），像拍电影那样再来一条。倾听一步借来同事 Collins Dobbs 的「节奏、空间、宽容」（pace, space, grace）。结构之后多了第六步「聚焦」，他引用他母亲的一句话：「告诉我几点了，别给我造一座钟。」2014 年的「把讲话当对话」和「跟焦虑打招呼」都没有作为单独的一条出现。</p>
+<h2>后来的命运</h2>
+<div class="fate"><p class="verdict">部分站住 · 截至 2026-10</p><p>「给焦虑贴标签」有扎实的实验，效果和他台上的限定一致；「看成机会」唯一一次原样重做，只复制出了「感觉更兴奋」，没复制出「讲得更好」；即兴训练降低社交焦虑的证据令人鼓舞，但缺少对照组；台上的两个数字找不到出处。方法的骨架可信，挂在上面的科学比台上说的要松。</p></div>
+<p>没有人专门检验过这套「焦虑 + 四步」的组合。我能找到的，是对其中几块零件的检验。</p>
+<p><strong>情绪标记：站住了，而且比流行说法更窄。</strong>脑成像和狼蛛实验都指向同一个方向：说出情绪，生理唤起会降下来，自评的害怕却未必少。如果有人把这条讲成「说一句我在紧张，紧张就消失了」，那是讲歪了；他本人没有这么讲。</p>
+<p><strong>兴奋重评：感觉复制了，表现没复制。</strong>Brooks 的论文被引用 450 次以上，进了教科书，却一直没人发表过复制。2025 年，美国 Avila 大学的 Michelle Poynter 和 Marcia Smith Pasqualini 做了一次直接复制，并加了一项「情绪 Stroop」任务作为焦虑的间接测量。74 名学生，同样的讲题、同样的指令。结果说「我很兴奋」的人自评更兴奋，效应量 d = 0.486，比原研究的 0.404 还大；和原研究一样，自评的焦虑和自我效能没有变化。但评委在六项表现指标上都看不出两组的区别，而且那几项小差异连方向都和预测相反。情绪 Stroop 上也没有差别。作者特别说明，他们的统计效力足以发现有意义的效应；Brooks 的数据没有公开供独立核查。她们的解释是：一句话改变了人们<strong>报告</strong>的感受，但也许不足以改变表现，可能需要更完整的干预。两份研究的样本也不同（复制的被试大多是女生，原研究来自一所招生更严的名校），目前是一对一，谁也盖不过谁。</p>
+<p><strong>即兴训练：有希望，但证据还薄。</strong>北密歇根大学的 Peter Felsman 和密歇根大学的同事，跟踪了底特律低收入社区 8 到 12 年级的 350 名学生，他们在课堂里上了十周免费的即兴戏剧课。前后测显示，社交焦虑和「无法忍受不确定」都明显下降，后者下降越多，前者也降得越多；论文 2022 年发表在《艺术心理治疗》上。Felsman 自己也说，即兴不是对每个人都马上有效。这项研究只有前后测，没有对照组，所以只能说「上了课的人焦虑降了」，不能说「是即兴让焦虑降了」。它支持的是 Abrahams 课的大方向：反复在一群人面前即兴，本身就是一种暴露练习。</p>
+<p><strong>剩下的部分是经验之谈，没有对错之分。</strong>「敢于平庸」「别急着做点什么，站在那儿」「是什么—所以呢—接下来」，这些没人做过实验检验，它们的根据是即兴舞台和课堂。最值得警惕的不是哪条建议错了，而是「都基于学术研究」这句话，它让一套很好的经验看起来比实际更像科学。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>佛学 · 马哈希的「标记」法</b>：缅甸禅师马哈希（Mahasi Sayadaw）的内观里，念头一起就在心里默念「想，想」，不推开也不跟着跑，和「这是我在紧张」是同一个动作。不像在目的：标记是为了看清身心现象的生灭，不是为了上台讲得更好。</li>
+<li><b>心理学 · Wegner 的「白熊」</b>：Daniel Wegner 的讽刺性加工理论（ironic process theory）发现，越是叫人别想白熊，白熊越冒出来，认知负荷高时尤其如此。「喊错名字」里越想不囤词就越在囤，正是这个结构。不像在解法：Abrahams 不叫人压制，而是「谢谢你，大脑」，承认它，再放过它，更接近接纳而不是抑制。</li>
+<li><b>认知科学 · Miller 的「组块」</b>：George Miller 1956 年的《神奇的数字 7±2》指出，短时记忆按「块」而不是按单个数字计算容量，三三四切开的电话号码就是组块。不像在受益者：Miller 讲的是听的人记得住，Abrahams 还把结构用在说的人身上，让说话的人少想一件事。</li>
+<li><b>分布式系统 · 确认（ACK）</b>：TCP 每收到一段数据就回一个确认，发送方据此决定下一步，复述就是对话里的 ACK：先告诉对方「我收到的是这个」。不像在内容：ACK 只回一个序号，原样确认收到了哪些字节；复述是有损压缩，还能顺手把问题重新框定，这正是 Abrahams 看重它的地方。</li>
+<li><b>东方哲学 · 庄子的庖丁</b>：庖丁解牛「以神遇而不以目视」，不靠逐步盘算，刀自己找到骨节的缝隙，像「别急着做点什么，站在那儿」之后的那种即时回应。不像、也更深的一层在后面：庖丁说「今臣之刀十九年矣」，那份不假思索是十九年练出来的。Abrahams 在台上也说，这些技能不是电灯开关，一小时的工作坊给的只是一个开头。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>临场讲话比事先准备的讲话更常见：介绍别人、当场给反馈、突然的祝酒、问答环节都算。</li>
+<li>讲话者的底层工作是让听众舒服，听众舒服了才接收得到信息，哪怕信息本身很刺耳。</li>
+<li>焦虑要管理而不是消灭：一句「这是我在紧张」能止住打转，但不一定让焦虑变少。</li>
+<li>把讲话看成对话而不是表演：表演有唯一正确答案，讲话只有更好和更差。</li>
+<li>紧张来自对未来后果的担心，绕口令、散步、从 100 倒数 17 都能把注意力拉回当下。</li>
+<li>「敢于平庸」：把伟大当靶子会让人过度分析而僵住，允许自己普通反而讲得更好。</li>
+<li>「是什么—所以呢—接下来」把怎么说交给结构，讲的人只需要想说什么。</li>
+<li>复述是沟通的瑞士军刀：它争取时间、确认听懂，还能把带敌意的问题重新框定。</li>
+<li>说「我很兴奋」的人确实更兴奋，但 2025 年的复制里，评委看不出他们讲得更好。</li>
+<li>给情绪命名能降低生理唤起，狼蛛实验里自评的害怕却没变，和 Matt Abrahams 的限定一致。</li>
+</ol>
+<h2>出处</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://singjupost.com/think-fast-talk-smart-communication-techniques-by-matt-abrahams-full-transcript/">The Singju Post：Think Fast, Talk Smart Communication Techniques by Matt Abrahams（Full Transcript）</a></span><span class="d">本页所有 2014 年引语的唯一来源，第三方转录；没能找到第二份独立的逐字稿来比对。</span></li>
+<li><span class="t"><a href="https://pickscribe.com/v/x6TsR3y5Qfg">Think Faster, Talk Smarter with Matt Abrahams（斯坦福校友会 2023 年演讲，自动字幕）</a></span><span class="d">九年后的六步版本：症状与来源、「把平庸最大化」、next play、pace space grace、聚焦，以及他点名的三位即兴老师。</span></li>
+<li><span class="t"><a href="https://gsb.stanford.edu/insights/get-psyched-how-time-situations-shape-communication">Stanford GSB：Get Psyched: How Time and Situations Shape Communication（2021）</a></span><span class="d">Zimbardo 在 Abrahams 播客里讲时间观的几个「时区」，支撑「回到当下」与 Zimbardo 理论的区别。</span></li>
+<li><span class="t"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4721564/">Kircanski, Lieberman &amp; Craske（2012），Feelings Into Words，Psychological Science</a></span><span class="d">88 名怕蜘蛛者的狼蛛实验，以及文中对 Lieberman 2007 年脑成像研究的概述。</span></li>
+<li><span class="t"><a href="https://reference-global.com/article/10.58734/plc-2025-0011">Poynter &amp; Pasqualini（2025），Getting Excited About Public Speaking: A Replication</a></span><span class="d">对 Brooks 2014 年第二项研究的直接复制，含原研究的设计细节；支撑「后来的命运」里的兴奋重评一段。</span></li>
+<li><span class="t"><a href="https://news.nmu.edu/improv-training-can-reduce-social-anxiety">Northern Michigan University：Improv Training Can Ease Social Anxiety（2023）</a></span><span class="d">Felsman 等人底特律 350 名中学生即兴课研究的介绍，以及 Felsman 本人对效果的限定。</span></li>
+</ul>
+</div>
+<footer>演讲精读 · 一场演讲，一个想法的来龙去脉 · 写于 2026-10-24</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode-lecture',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode-lecture');}catch(e){}
+  set(saved==='pop'?'pop':'deep');
+})();
+</script>
+</body></html>
