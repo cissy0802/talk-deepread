@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Barbara Oakley ·《Learning How to Learn》（2/3）— 看懂了不等于会了</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="oakley-chunking-talk41.en.html">English →</a></div>
+<header>
+<div class="kicker">Coursera · 2014 · 短课 2/3</div>
+<h1>看懂了不等于会了：组块、能力错觉，和为什么要把题打乱了做</h1>
+<p class="sub">Barbara Oakley ·《Learning How to Learn》（2/3：组块）</p>
+<div class="modebar"><button id="btn-pop">精华版</button><button class="on" id="btn-deep">完整版</button></div>
+</header>
+<div class="mode-pop" hidden="" id="mode-pop">
+<p>Barbara Oakley 给台下出了个假设：一头熊突然从投影幕里冲出来，在屋里横冲直撞，你会不会心跳加速、浑身冒汗？会。然后她说，很多学生坐下来一看考卷，就是这种感觉。他们管这叫考试焦虑；她的诊断是，他们在那一刻才发现自己其实没学会，虽然之前一直以为会了。</p>
+<p>这是《Learning How to Learn》第二周的核心。这门课是她和神经科学家 Terrence Sejnowski 2014 年在 Coursera 上开的，第一周讲专注和发散两种模式，第二周讲的是：学会一样东西，脑子里到底多了什么，以及你怎么知道自己真的学会了。</p>
+<p>她的答案是「组块」（chunk）。工作记忆只有大约四个槽位，一次只装得下几样东西。新手看一道题，每一步都要占一个槽，脑子手忙脚乱；练熟之后，整套步骤压缩成一个块，只占一个槽，像一条缎带一样一拉就出来。专家和新手的区别，在她看来就是脑子里有没有一座「组块图书馆」。下棋的大师一眼认出几千种局面，靠的就是这个。</p>
+<p>块是怎么做成的？专注、理解、练习，缺一不可。只理解不练，块是淡的，几天不碰就散了；只背不懂，块是个孤零零的圆圈，接不上别的块。然后就是那头熊。最常见的自欺是反复读、划线、看懂答案就以为会做。划线时笔在纸上移动，你会觉得东西正在进脑子，其实常常没有。她开的药方很简单：合上书，看自己能想起多少；小测验不停地考自己；作业题隔几天再做一遍，直到解法像一首歌一样能在脑子里放出来。</p>
+<p>最后一招最反直觉：别把同一类题连做十道。课本每一节只练一种技巧，你翻到那一节就已经知道该用哪招了。她要你做一两道就跳到别的章节，逼自己判断「这道题为什么用这招、不用那招」，这叫交错练习（interleaving）。会用一招不够，还得知道什么时候用。</p>
+<p>这些建议后来怎么样？在这门课三周的内容里，这一周站得最稳。「合上书回忆」有一大批实验撑着：2008 年《科学》上一项实验里，反复自测的学生一周后记得约 80%，只复习不自测的只有 36%；划线和重读在 2013 年一份权威评估里被评为低效。交错练习在 2019 年一项 787 名初一学生参加的随机对照试验里，一个月后的成绩是 61% 对 38%。但有两处比证据走得远：她说物理学里的块能帮你学商业，而「远迁移」研究的结论是这种跨领域迁移很少发生；她说跨学科交错能让人更有创造力，交错研究测的却是在相近题型之间分辨，不是创造力，而且换成背单词，交错反而更差。所以判词是部分站住：手上的方法几乎都站住了，越出那几张练习卷的推论没有。</p>
+</div>
+<div class="mode-deep" id="mode-deep">
+<div class="meta-card"><b>课程</b> Learning How to Learn（Coursera，与 Terrence Sejnowski 合开）· <b>本期</b> 第 2 周：组块 · <b>年份</b> 2014 · <b>文本</b> <a href="https://singjupost.com/barbara-oakley-learning-how-to-learn-talks-at-google-transcript/">Talks at Google 第三方逐字稿（中段与问答）</a> + <a href="https://amara.org/api/videos/0X49ztTMTuWD/languages/en/subtitles/?format=txt">TEDxOaklandUniversity 演讲字幕（Amara）</a> + 课程第二周四段视频的自动字幕</div>
+<h2>那一刻</h2>
+<p>讲到一半，她让台下想象一个画面：一头熊从投影幕里冲出来，在会议室里横冲直撞。你的身体会立刻起反应，肾上腺素飙升，因为你突然意识到，熊真的就在你面前。然后她把这头熊挪到了考场：</p>
+<blockquote><span class="en">But for a lot of students, sadly, sitting down and looking at a test is like there’s a bear there.</span><span class="zh">可是对很多学生来说，很遗憾，坐下来一看考卷，就像面前站着一头熊。</span><cite>— Barbara Oakley，Talks at Google</cite></blockquote>
+<p>学生管这叫考试焦虑。她的说法冷酷一些：那一刻他们才发现自己没学会，虽然之前一直以为自己会了。在 TEDx 的版本里她把这句话说得更直白，你只是刚刚得知，你没有掌握这些材料。</p>
+<p>这头熊是这一期的主角。<a href="oakley-focused-diffuse-talk40.html">上一期</a>讲的是大脑怎么在专注和发散之间来回切换；这一期问的是：一样东西「学会了」，脑子里究竟多了什么？以及，在熊冲出来之前，你怎么知道自己是不是在骗自己？</p>
+<h2>讲的人，和那一年</h2>
+<p>Barbara Oakley 是那个小学三年级就跟不上数学、二十六岁才从军队退伍回头学数学的工程学教授，经历<a href="oakley-focused-diffuse-talk40.html">上一期</a>讲过了。这里只补一件和本周有关的事：她学的第一样「难东西」是俄语，后来在白令海的苏联拖网渔船上当翻译。所以这一周她反复拿语言和音乐打比方：没人弹一遍钢琴曲就说自己会了，没人唱一遍歌就以为记住了。理工科的学生却常常做一遍作业就收工。</p>
+<p>2014 年，她和 Salk 研究所的 Terrence Sejnowski 把她的书《A Mind for Numbers》做成了 Coursera 课程。课程第二周的标题是「Chunking」，四段视频：组块的要义、能力错觉、组块图书馆的价值、过度学习与交错，外加一段她自己用「组块」的方法给这一周做的总结。本页用到的文本有三份：课程第二周的视频自动字幕（只有开场、图书馆、过度学习与交错、总结四段，「什么是组块」「怎么做组块」两段原视频的文本没能拿到），她在 Google 讲的长版的中段和问答（这部分讲的正是组块、能力错觉和交错），以及 TEDx 版里关于测验和回忆的那几段。下面的引语都注明了出处。</p>
+<h2>术语表 · Glossary</h2>
+<div class="glossary"><ul>
+<li><b>工作记忆（working memory）</b>：脑子里临时托住几样东西的那块「草稿纸」，比如你心算时记着的中间结果。容量很小。</li>
+<li><b>组块（chunk）</b>：被练熟、绑在一起、可以当成一个单位取用的一团信息。「FBI」是三个字母，也可以是一个块。</li>
+<li><b>提取练习（retrieval practice）</b>：不看材料，靠自己把它想起来。自测、闪卡、合上书复述都是。</li>
+<li><b>交错练习（interleaving）</b>：把不同类型的题混在一起练，而不是一种题集中练完再练下一种（分块练习，blocked practice）。</li>
+<li><b>定势效应（Einstellung effect）</b>：脑子里已有的熟悉解法挡住了更好的解法。Einstellung 是德语，大意是「心向」「设定」。</li>
+</ul></div>
+<h2>这场演讲，讲透</h2>
+<p><strong>先从一个瓶颈说起：工作记忆。</strong>她说，工作记忆是你把一个念头暂时托在脑子里的地方。过去认为它有七个槽位，所以电话号码是七位数；现在看来更像四个。她自嘲，对她自己来说可能只有两个。她把注意力画成一只「注意力章鱼」，触手穿过这四个槽，在不同的想法之间搭线。槽就这么几个，所以一次想太多会乱；一边做难题一边瞄着消息提醒，就等于砍掉了一根触手。她的原话是，一心多用的时候，你本来有多少智力分量，就会损失掉一部分。</p>
+<p><strong>那怎么用四个槽装下复杂的东西？做成块。</strong>这是整周的枢纽：</p>
+<blockquote><span class="en">It turns out that if you create a chunk, one chunk, of the material, it’s easy to pull into working memory.</span><span class="zh">事实证明，如果你把材料做成一个块，只是一个块，它就很容易被拉进工作记忆。</span><cite>— Barbara Oakley，Talks at Google</cite></blockquote>
+<p>她放了一张乱糟糟的拼图，说这是原始信息：一团乱麻，工作记忆在里面手忙脚乱。她提到斯坦福的一项研究，正在学算术的孩子，前额叶皮层「忙得发疯」；一旦把算术事实掌握了，这里就放松下来。掌握之后的样子，她画成一条光滑的缎带，需要时一拉就进了工作记忆，还能和别的题目接上。课程视频里她的定义更简洁：组块是一种把信息压缩得紧凑得多的方式。</p>
+<p>压缩是关键词。她转述一位她没点名的大数学家的话：数学最妙的地方之一，就是它能被压缩。你使劲啃、啃、啃，然后突然咔哒一下，它被压缩好了。压缩好的块还可以长大：像学一首歌，学会一段再学一段，两段接起来就是一个更大的块。</p>
+<p><strong>块是怎么做成的？</strong>她在本周的总结视频里给了配方：专注的、不分心的注意力；理解基本的意思；练习，用来加深模式，也帮你看到大局。这里有两个反面例子。只理解不练习，块是「淡的」：在 Google 她说，你听教授讲懂了，甚至有了顿悟，走出教室几天不碰，那块模式就被她叫作「代谢小吸血鬼」的东西吸走了。只背不理解，块倒是有了，她画成一个孤零零的小圆圈：</p>
+<blockquote><span class="en">But you can’t fit it very well with other chunks.</span><span class="zh">但你没法把它和别的块很好地拼在一起。</span><cite>— Barbara Oakley，Talks at Google</cite></blockquote>
+<p>问答环节有人追问：既然块是理解的产物，有块就说明理解了吧？她答「不一定」。你可以背下一门外语的单词而不知道它什么意思，所以「技术上说，不需要」理解；只是理解像一座桥，帮你把东西编织进去，更好记，也更好用。</p>
+<p>块要连成大局。每学会一个块就填上一块拼图，缺几块也看得出大局；块没练扎实，就像拿一堆模糊的碎片拼图。所以她主张自下而上和自上而下来回走：学一个小块，然后尽量把它放进大图，再回来学下一块。</p>
+<p><strong>组块图书馆。</strong>这是这一周的第三段视频。她说，人们增长知识、获得专长，基本上就是在脑子里逐渐累积块的数量：</p>
+<blockquote><span class="en">So true experts often have enormous libraries of chunks that they’ve developed.</span><span class="zh">所以真正的专家，往往有他们自己攒下的巨大的组块图书馆。</span><cite>— Barbara Oakley，Talks at Google</cite></blockquote>
+<p>国际象棋大师能轻松调出几千种棋形，音乐家、语言学家、科学家在各自领域里也是如此。图书馆越大、练得越熟，解题就越容易，因为你能更快跳到正确的解法，她说那像是在听「发散模式的耳语」，发散模式会把两个或更多的块用新方式连起来。</p>
+<p>块还能跨界，她管这叫迁移（transfer）。物理学里学到的概念和解题方法，可能和商业里的块很像；她自己学语言的一些经验，后来帮她学了编程。在 Google 她说，物理学家学经济学可能更容易，因为有些块的形状很相似；语言学习里「练习和重复」的那套，本身就是一个可以搬到数学里的「元组块」。问答里有人追问迁移，她的回答比台上收紧了一圈：</p>
+<blockquote><span class="en">Depending on how close the area is.</span><span class="zh">要看两个领域离得多近。</span><cite>— Barbara Oakley，Talks at Google，问答</cite></blockquote>
+<p>学冰岛语可能让你学德语更容易；学汉语时，它能帮上的大概只剩一些元认知层面的东西。这个限定很重要，命运那一节会回到这里。</p>
+<p>这段视频收在一个安慰上：一章里有那么多题、那么多概念，怎么学得完？她说这里有一条「偶然律」（law of serendipity）：</p>
+<blockquote><span class="en">Lady Luck favors the one who tries</span><span class="zh">幸运女神眷顾去试的人</span><cite>— Barbara Oakley，课程第二周视频（自动字幕）</cite></blockquote>
+<p>把第一个概念放进图书馆，第二个就容易一点，第三个更容易。不是轻而易举，但会越来越容易。</p>
+<p><strong>能力错觉：那头熊。</strong>她在 Google 说，这可能是她要讲的最重要的一件事，所以放在最后。学生和所有人一样，会骗自己说正在学，其实没有。她开的几味药，可以连成一条从轻到重的阶梯。</p>
+<p>第一味，测验。TEDx 上她只说了半句「Tests. Tests are the best.」（考试，考试最好），在 Google 补全了：</p>
+<blockquote><span class="en">Test yourself on everything, all the time.</span><span class="zh">什么都考考自己，随时随地。</span><cite>— Barbara Oakley，Talks at Google</cite></blockquote>
+<p>她的说法是，同样一小时，拿来测验比拿来学习收获多得多。闪卡不只属于学外语的人，数学和理科也该用。</p>
+<p>第二味，作业要重做。很多人做完一道题就以为会了。她在 TEDx 上反问：</p>
+<blockquote><span class="en">Would you ever sing a song once and think you knew that song? No.</span><span class="zh">你会唱一遍一首歌，就以为自己会唱了吗？不会。</span><cite>— Barbara Oakley，TEDxOaklandUniversity，2014</cite></blockquote>
+<p>没时间把每道题都重做，就挑几道关键的，隔几天再做一遍，或者在脑子里一步一步走一遍。等解法能「像一首歌」一样在脑子里流出来，它就成了一个块。</p>
+<p>第三味，也是她说最有价值的：回忆。读书时人的本能是划线：</p>
+<blockquote><span class="en">There's something about the motion of the pen on a page that makes you think that it's actually going into your brain, but it often isn't.</span><span class="zh">笔在纸上移动的那个动作，会让你以为东西真的进了脑子，但它常常没有。</span><cite>— Barbara Oakley，TEDxOaklandUniversity，2014</cite></blockquote>
+<p>重读也一样，是在原地空转。她说最有效的办法简单到可笑：读完一页，把目光移开，看自己能想起多少。在 Google 她点了名：思维导图和重读，都远不如回忆。她还补了一条：换个地方回忆，让材料不管在哪个房间都调得出来，这对考试有帮助。</p>
+<p>第四味，找人讲。专注模式自带一种「我是对的」的感觉，有时只有把想法讲给别人听，才能打破它。还可以试着讲给一个十岁小孩听，或者像遗传学家芭芭拉·麦克林托克（Barbara McClintock）那样，把自己想象成题目里的一员。</p>
+<p>贯穿这几味药的，是 TEDx 上的那句收尾：</p>
+<blockquote><span class="en">don't be fooled by the erroneous idea that understanding alone is enough to build the mastery of the material.</span><span class="zh">别被这个错误的想法骗了：光是理解，就足以掌握这些材料。</span><cite>— Barbara Oakley，TEDxOaklandUniversity，2014</cite></blockquote>
+<p>所以犯错是好事，她在总结里说，错误能让你及时抓到能力错觉。</p>
+<p><strong>过度学习、刻意练习和定势。</strong>第二周最后一段长视频转向了「练」的分寸。同一次学习里，把已经会了的东西一遍遍地练，叫过度学习（overlearning）。它有用处：发球、弹协奏曲需要自动化；容易在考试或演讲时卡壳的人尤其用得上。但她提醒，研究显示在同一次学习里反复过度学习是在浪费时间，换一次学习再重复才有价值。更糟的是只练一种技巧，她说那就像学木工只练锤子，练久了你会觉得什么都能靠敲来修。只练简单的部分还会带来另一种能力错觉，所以要刻意去练你觉得难的部分，她把这叫刻意练习（deliberate practice），说这常常就是好学生和优秀学生的差别。</p>
+<p>和这有关的是定势效应：你脑子里已经有的念头、已经练熟的神经模式，会挡住更好的解法。她回到上一期的弹珠机：旧模式在密集的橡胶柱之间挖出了一道车辙。她特别提到体育和科学，因为那里你最初的直觉常常就是错的，你得一边学新东西，一边拆掉旧东西。另一种常见错误是还没学游泳就跳下水：不读课本、不听课，上来就做作业。</p>
+<p><strong>交错。</strong>掌握一个学科，不只是学会基本的块，还要学会挑选和使用不同的块。最好的练法是在需要不同技巧的题目之间来回跳。课本不配合你：一节只讲一种技巧，你翻到那一节就已经知道该用哪招了。所以你得自己打乱：在 Google 的问答里她说，学微积分的一种新技巧，别连着做十道几乎一样的题，做一两道就翻到别的章节做一道，比较一下「为什么这里用这招、那里用那招」，再翻回来。课程里她说：</p>
+<blockquote><span class="en">you also need to know when to use it</span><span class="zh">你还得知道什么时候用它</span><cite>— Barbara Oakley，课程第二周视频（自动字幕）</cite></blockquote>
+<p>她把交错抬得很高：练习和重复打下扎实的模式，交错才开始培养灵活性和创造力；在一个学科内部交错，培养这个学科里的创造力；在几个学科之间交错，更容易在不同领域的块之间搭出新连接。这里有一个取舍：几个领域都懂的人能把一个领域的点子带到另一个领域，但每个领域都不如专攻一门的人深；只深耕一门的人，又容易被自己熟悉的思路困住。她引科学哲学家托马斯·库恩（Thomas Kuhn）：科学里的范式转移多半是年轻人或从别的学科转来的人带来的，他们没被旧训练形成的定势困住。她还补了那句老话：科学每次前进一个葬礼。</p>
+<p>最后她提醒，学习不只发生在课本里，修漏水的龙头也是学习；费曼得诺贝尔奖的工作，灵感来自看见食堂里有人把一只盘子抛向空中。</p>
+<p>把这一周压成一条线：工作记忆只有几个槽 → 把材料压缩成块才装得下 → 块要靠专注、理解和练习做成，专家就是一座组块图书馆 → 最大的敌人是以为自己学会了，解药是回忆和测验 → 练习要有分寸，别只练简单的、别只练一种 → 交错练习，学会「什么时候用哪一招」。读者照做的清单只有几行：合上书回忆，常常考自己，作业隔几天重做，难的部分多练，把题打乱了做。</p>
+<h2>冰山下面</h2>
+<p><strong>「四个槽」比台上更谨慎。</strong>她说的「过去认为七个，现在更像四个」，对应 Nelson Cowan 2001 年在《行为与脑科学》上的长文。Cowan 说 Miller 1956 年的「七个左右」更像粗略估计和修辞；成年人各组的平均值一般在 3 到 5 个块之间，个体从 2 到 6 不等。台上没提的条件是：这个上限只在人没法复述、也没法借长期记忆重新编组时才显现，他自己也承认证据「一直有争议」。</p>
+<p><strong>象棋大师的经典实验，只有三个被试。</strong>台上的「几千种棋形」背后是 William Chase 和 Herbert Simon 1973 年的《Perception in chess》：一位大师、一位 A 级棋手、一位新手，各看真实中局 5 秒后凭记忆复盘，大师平均摆对约 16 子，A 级约 8 子，新手约 4 子；换成随机摆放的棋子，记忆和棋力「完全没有关系」。大师记住的是棋形，不是棋子。Simon 和 Chase 同年估计大师存了「大约 50,000 个模式」，并自称「非常粗略」。1996 年 Fernand Gobet 和 Simon 汇总 13 项研究，发现强棋手在随机局面上仍保留一点优势，只是小得多。</p>
+<p><strong>「斯坦福的研究」比台上说的窄。</strong>对得上的是 Shaozheng Qin、Vinod Menon 等人 2014 年发表在《自然·神经科学》上的论文：28 个 7 到 9 岁的孩子间隔约 1.2 年扫描两次，任务是个位数加法。孩子从数手指转向直接提取答案时，前额叶和顶叶的参与下降，海马体的参与上升，28 人里 23 人如此。所以「前额叶放松」有据，但主角其实是海马体，「缎带」是她的画法。</p>
+<p><strong>能力错觉有实验出处。</strong>Asher Koriat 和 Robert Bjork 2005 年的论文标题就叫《Illusions of competence in monitoring one’s knowledge during study》：学习时判断「以后能不能想起来」，答案就摆在眼前，考试时它却不在，于是放在一起显得很相关的词对会制造出虚假的「知道感」。他们称之为「先见偏差」（foresight bias）。</p>
+<p><strong>回忆胜过「思维导图」：那项实验比的是概念图。</strong>Jeffrey Karpicke 和 Janell Blunt 2011 年在《科学》上让 80 名大学生读一篇讲海獭的短文，画概念图和回忆用的时间完全一样。一周后回忆组得 0.67，概念图组 0.45（d = 1.50），概念图并不比多读几遍好。第二个实验 120 人，84% 在回忆条件下考得更好，可 75% 事先相信画概念图至少一样有效。更早的原型是 Karpicke 和 Henry Roediger 2008 年的斯瓦希里语单词实验：答对后继续自测的人一周后记得约 80%，不再自测、只继续看的人只有 36% 和 33%。</p>
+<p><strong>她没点名的过度学习和交错研究。</strong>Doug Rohrer 等人 2005 年的实验里，多练的人一周后记得更多，第四周优势就没了（64%→22% 对 38%→18%）。Rohrer 和 Kelli Taylor 2007 年让 18 名大学生学四种立体的体积公式：练习时集中练的正确率 89%，交错练的 60%；一周后考试倒了过来，交错组 63%，集中组 20%。练的时候觉得自己会了的那组，正是考砸的那组。能力错觉和交错放在同一周讲，原因就在这里，虽然她在台上没把两者连起来。</p>
+<p><strong>定势：专家也看不见自己的车辙。</strong>Merim Bilalić、Peter McLeod 和 Gobet 2008 年给棋手一个能用熟悉的五步杀解决、其实还有三步杀的局面。知道五步杀的棋手说自己在找更好的解法，眼动记录却显示，他们的目光一直停在和熟悉解法有关的格子上。</p>
+<h2>后来的命运</h2>
+<div class="fate"><p class="verdict">部分站住 · 截至 2026-10</p><p>她开的学习方法几乎都有一大批实验撑着：自测和回忆、隔几天重做、少划线少重读、交错练习。站不住的是越出练习卷的那几步：跨领域的「迁移」很少发生，「交错培养创造力」没有证据，交错也不是对什么材料都管用。</p></div>
+<p><strong>2013 年：一份独立的评分表。</strong>John Dunlosky 等五位心理学家在《公众利益心理科学》上评估了十种学习技巧：自我测验和分散练习是高效用；交错练习是中等，理由是证据还有限；划线和重读是低效用，他们写道，大多数学生都在用，却不能稳定地提高成绩。Oakley 台上的几条和这张表几乎逐条对得上。</p>
+<p><strong>2014 年：测验效应站住了，幅度是半个标准差。</strong>Christopher Rowland 在《心理学公报》上汇总 61 项研究、159 个效应量，自测相比重读平均 g = 0.50，也看到了发表偏差的迹象（已发表 0.58，未发表 0.25）。「同样一小时，测验收获多得多」方向对，「多得多」说重了。换个房间回忆的效应也真实但温和：Steven Smith 回顾这类研究，平均约 d = 0.28。</p>
+<p><strong>2014 年：刻意练习被称了一下。</strong>Brooke Macnamara 等人汇总 88 项研究、11,135 人，刻意练习平均解释表现差异的 12%：棋牌 26%，音乐 21%，体育 18%，教育 4%，职业不到 1%。她说刻意练习「常常是好学生和优秀学生的差别」，恰恰在教育这一项，它能解释的最少。</p>
+<p><strong>2017 年：远迁移的坏消息。</strong>Giovanni Sala 和 Fernand Gobet 汇总了练象棋、音乐和工作记忆训练对其他能力的影响：跟同样做了别的活动的对照组比，效应几乎归零，音乐从 0.25 降到 0.03，工作记忆训练从 0.18 降到 0.05。他们说远迁移「很少发生」。他们测的是练一种技能能否提升一般能力，不完全是「学过物理再学经济学」；Oakley 问答里那句「要看两个领域离得多近」和这个结论一致，越界的是台上物理到商业的那个例子。</p>
+<p><strong>2019 年：交错进了真实课堂，也被画出了边界。</strong>Rohrer 和同事在佛罗里达一个学区做了预先注册的随机对照试验，15 位老师的 54 个初一数学班、787 名学生，四个月后又过一个月突击测验：交错组 61%，分块组 38%，d = 0.83，每位老师的班上都是正效应。作者也写明，交错题可能更费时间，学生也不该完全不做分块练习。同年 Monika Brunmair 和 Tobias Richter 的元分析汇总 59 项研究，总效应 g = 0.42，但辨认画作 0.67、数学 0.34，说明文没有显著效果，背单词是 −0.39。类别越相似、越需要分辨，交错越有用。它练的是「什么时候用哪一招」；「跨学科交错培养创造力」，这批研究没测过。</p>
+<p>对这门课本身，我们没找到独立的学术批评；能找到的课程评估都有 Oakley 自己署名，我们只看到摘要，不引用。按「每条建议有没有研究撑着」来判，这一周比<a href="oakley-focused-diffuse-talk40.html">上一期</a>的专注与发散站得稳得多，越出练习卷的推论则没有跟上。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>佛学 · 初心</b>：铃木俊隆《禅者的初心》（1970）开篇第一句：初学者的心里有很多可能，专家的心里很少。这几乎就是定势效应的禅宗版本，也呼应 Oakley 引的库恩：带来新范式的是新手和外来者。像在诊断：熟练本身会缩窄视野。不像在药方：Oakley 要你一边攒块、一边用交错和别人的眼光去撞开车辙，专长照样要攒；铃木要的是在修行里始终保持初学者的那颗心，他说的「专家」是一种心态，不是一座图书馆。</li>
+<li><b>神经科学 · 互补学习系统</b>：James McClelland、Bruce McNaughton 和 Randall O’Reilly 1995 年提出，神经网络集中学一批新东西会「灾难性地」覆盖旧知识，把新旧经验交错着学就能避免；他们认为海马体在睡眠中回放经历，就是在给大脑皮层做交错训练。不像在目的：这里交错是为了保护旧知识，Rohrer 的交错是为了学会分辨用哪招。</li>
+<li><b>信息论 · 信源编码</b>：香农证明，常出现的模式可以用更短的码来表示，压缩率取决于你对信息源的统计规律了解多少。组块是同一件事：见得越多，越能把常见模式编成一个短码。不像在保真：编码可以无损还原，组块会丢细节，还会把「看起来像」的局面硬塞进旧块里。</li>
+<li><b>投资 · 芒格的锤子</b>：查理·芒格 1994 年在南加大讲「普世智慧」时说，手里只有锤子的人，看什么问题都像钉子，所以要攒下各个学科的一组模型。和 Oakley「学木工只练锤子」是同一个比喻。不像在迁移的层级：芒格搬的是显性的原理，远迁移研究否定的是靠练一种技能自动提升别的能力。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>工作记忆一次只能托住大约四个组块，一心多用等于主动砍掉其中一个槽位。</li>
+<li>把材料练成一个组块，它就只占一个槽，可以随时被拉进工作记忆，并和别的组块连起来。</li>
+<li>组块靠专注、理解和练习做成：只懂不练会淡掉，只背不懂则接不上别的知识。</li>
+<li>Chase 与 Simon 的象棋实验只有三名被试，大师记真实棋局远胜新手，记随机棋局则没有优势。</li>
+<li>Barbara Oakley 认为最常见的能力错觉是重读、划线和看懂答案就以为会做，解药是合上书回忆。</li>
+<li>Karpicke 与 Blunt 的实验中，回忆组一周后得分 0.67，同样时间画概念图的只有 0.45。</li>
+<li>Rohrer 与 Taylor 的实验里，集中练习时正确率更高的那一组，一周后的考试反而远远落后。</li>
+<li>交错练习把不同类型的题混在一起做，训练的是判断什么时候该用哪一种解法。</li>
+<li>远迁移研究发现，练象棋、音乐或工作记忆很少能提升其他领域的能力。</li>
+<li>互补学习系统理论认为，新旧经验交错学习可以避免新知识覆盖旧知识。</li>
+</ol>
+<h2>出处</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://singjupost.com/barbara-oakley-learning-how-to-learn-talks-at-google-transcript/">The Singju Post：Barbara Oakley，Learning How to Learn @ Talks at Google（第三方转录）</a></span><span class="d">标注 Talks at Google 的引语，以及工作记忆、组块、能力错觉、交错和问答内容的来源；课程第二周四段视频的自动字幕用于交叉核对和补充。</span></li>
+<li><span class="t"><a href="https://amara.org/api/videos/0X49ztTMTuWD/languages/en/subtitles/?format=txt">Amara：Learning how to learn，Barbara Oakley，TEDxOaklandUniversity（2014，英文字幕）</a></span><span class="d">标注 TEDx 的引语：唱歌、划线、回忆和「光理解不够」。</span></li>
+<li><span class="t"><a href="https://andymatuschak.org/prompts/Chase1973.pdf">Chase &amp; Simon（1973），Perception in chess，Cognitive Psychology</a></span><span class="d">三名被试的象棋记忆实验，支撑「冰山下面」的组块证据。</span></li>
+<li><span class="t"><a href="https://learninglab.psych.purdue.edu/downloads/2011/2011_Karpicke_Blunt_Science.pdf">Karpicke &amp; Blunt（2011），Retrieval practice produces more learning than elaborative studying with concept mapping，Science</a></span><span class="d">回忆对概念图的实验与学生的错误预测。</span></li>
+<li><span class="t"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5724589/">Sala &amp; Gobet（2017），Does far transfer exist?，Current Directions in Psychological Science</a></span><span class="d">远迁移的汇总证据，支撑对「迁移」的收窄。</span></li>
+<li><span class="t"><a href="https://www.psychologie.uni-wuerzburg.de/fileadmin/06020400/2019/Brunmair_Richter_in_press__2019_META-ANALYSIS_OF_INTERLEAVED_LEARNING.pdf">Brunmair &amp; Richter（2019），Similarity matters，Psychological Bulletin（录用稿）</a></span><span class="d">交错学习元分析：总效应 g = 0.42 和按材料的边界；课堂随机对照试验的数据来自 Rohrer 等（2019，Journal of Educational Psychology）。</span></li>
+</ul>
+</div>
+<footer>演讲精读 · 一场演讲，一个想法的来龙去脉 · 写于 2026-10-27</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode-lecture',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode-lecture');}catch(e){}
+  set(saved==='pop'?'pop':'deep');
+})();
+</script>
+</body></html>

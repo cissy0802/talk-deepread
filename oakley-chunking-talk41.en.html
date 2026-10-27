@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Barbara Oakley · Learning How to Learn (2/3) — Understanding is not knowing</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="oakley-chunking-talk41.html">中文 →</a></div>
+<header>
+<div class="kicker">Coursera · 2014 · Short course 2/3</div>
+<h1>Understanding is not knowing: chunks, illusions of competence, and why you should shuffle the problems</h1>
+<p class="sub">Barbara Oakley · Learning How to Learn (2/3: Chunking)</p>
+<div class="modebar"><button id="btn-pop">Short</button><button class="on" id="btn-deep">Full</button></div>
+</header>
+<div class="mode-pop" hidden="" id="mode-pop">
+<p>Barbara Oakley asks the room to imagine a bear bursting out of the projection screen and rampaging through the audience. Your heart would pound. Then she says that for many students, sitting down in front of an exam feels exactly like that. They call it test anxiety. Her diagnosis is colder: that is the moment they discover they never learned the material, though they were sure they had.</p>
+<p>This is the core of week two of Learning How to Learn, the Coursera course she launched in 2014 with the neuroscientist Terrence Sejnowski. Week one was about switching between focused and diffuse thinking. Week two asks two questions: when you have learned something, what is now in your head that was not there before? And how do you know you have actually learned it?</p>
+<p>Her answer is the chunk. Working memory has roughly four slots, so it holds only a few things at once. A novice working a problem spends a slot on every step and the mind scrambles. With practice the whole procedure compresses into one chunk that occupies one slot and can be pulled out like a ribbon. In her account, what separates an expert from a novice is a library of chunks. A chess master recognises thousands of board patterns at a glance.</p>
+<p>How is a chunk built? Focused attention, understanding, and practice, all three. Understand without practising and the chunk stays faint; a few days later it has faded. Memorise without understanding and you get an isolated chunk that does not connect to anything. Then comes the bear. The commonest self-deceptions are rereading, highlighting, and taking a worked solution you understand for one you could produce. The pen moving across the page makes you feel the material is going into your brain; often it is not. Her remedy is plain: close the book and see what you can recall; test yourself constantly; redo key homework problems over several days until the solution plays in your head like a song.</p>
+<p>The last tip is the least intuitive: do not do ten problems of the same type in a row. Each textbook section teaches one technique, so you know which tool to use before you start. She wants you to do one or two, jump to another chapter, and make yourself explain why this problem takes this method and not that one. That is interleaving. Knowing how to use a technique is not enough; you need to know when.</p>
+<p>How did this advice fare? Of the course's three weeks, this one holds up best. Retrieval has a mountain of experiments behind it: in a 2008 Science study, students who kept testing themselves remembered about 80% a week later, those who stopped testing and kept rereading about 36%. A 2013 review rated highlighting and rereading as low-utility techniques. In a 2019 randomised trial with 787 seventh-graders, interleaved practice scored 61% to 38% on a test a month later. Two claims run past the evidence. She says chunks from physics help you learn business; research on far transfer finds such transfer rare. She says interleaving across disciplines makes you more creative; interleaving studies measure telling similar problem types apart, not creativity, and for vocabulary, interleaving actually does worse. Verdict: partly holds. Nearly all the study methods held; the inferences that reach beyond the worksheet did not.</p>
+</div>
+<div class="mode-deep" id="mode-deep">
+<div class="meta-card"><b>Course</b> Learning How to Learn (Coursera, with Terrence Sejnowski) · <b>This part</b> Week 2: Chunking · <b>Year</b> 2014 · <b>Texts</b> <a href="https://singjupost.com/barbara-oakley-learning-how-to-learn-talks-at-google-transcript/">Talks at Google, third-party transcript (middle section and Q&amp;A)</a> + <a href="https://amara.org/api/videos/0X49ztTMTuWD/languages/en/subtitles/?format=txt">TEDxOaklandUniversity subtitles (Amara)</a> + auto-captions of four week-two course videos</div>
+<h2>The moment</h2>
+<p>Halfway through, she asks the room to picture a bear hurtling out of the screen and rampaging through the room. Your body would react at once, a surge of adrenaline, because you have just realised the bear is really in front of you. Then she moves the bear into the exam hall:</p>
+<blockquote><span class="en">But for a lot of students, sadly, sitting down and looking at a test is like there’s a bear there.</span><cite>— Barbara Oakley, Talks at Google</cite></blockquote>
+<p>Students call it test anxiety. Her reading is harsher: in that moment they discover they did not learn the material, though they believed they had. In the TEDx version she puts it more bluntly still: you have just learned that you are not a master of the material.</p>
+<p>The bear is the protagonist of this part. <a href="oakley-focused-diffuse-talk40.en.html">Part one</a> covered how the brain moves between focused and diffuse modes. This part asks what has actually changed in your head once you have "learned" something, and how, before the bear arrives, you can tell whether you are fooling yourself.</p>
+<h2>The speaker, and the year</h2>
+<p>Barbara Oakley is the engineering professor who fell off the math bandwagon in third grade and went back to math only after leaving the army at 26; <a href="oakley-focused-diffuse-talk40.en.html">part one</a> told that story. One detail matters for this week: the first hard thing she learned was Russian, which she later used as a translator on Soviet trawlers in the Bering Sea. So this week she keeps reaching for language and music. Nobody plays a piano piece once and says they know it; nobody sings a song once and thinks they have it. Science and engineering students, though, routinely do a homework problem once and move on.</p>
+<p>In 2014 she and Terrence Sejnowski of the Salk Institute turned her book A Mind for Numbers into a Coursera course. Week two is titled Chunking: videos on the essentials of chunks, illusions of competence, the value of a library of chunks, and overlearning and interleaving, plus a summary in which she "chunks the week on chunking." This page draws on three texts: the auto-captions of four week-two videos (the intro, the library, overlearning and interleaving, and the summary; the text of the videos on what a chunk is and how to form one was not available), the middle section and Q&amp;A of her longer talk at Google, which covers chunks, illusions of competence and interleaving, and the TEDx passages on testing and recall. Each quotation below names its source.</p>
+<h2>Glossary</h2>
+<div class="glossary"><ul>
+<li><b>Working memory</b>: the mental scratchpad that briefly holds a few items, such as the intermediate results in mental arithmetic. Its capacity is small.</li>
+<li><b>Chunk</b>: a cluster of information practised and bound together until it can be handled as a single unit. "FBI" is three letters, or one chunk.</li>
+<li><b>Retrieval practice</b>: pulling material out of memory without looking at it. Self-tests, flashcards and recalling with the book closed all count.</li>
+<li><b>Interleaving</b>: mixing different problem types in one session, rather than finishing one type before moving on (blocked practice).</li>
+<li><b>Einstellung effect</b>: a familiar solution already in mind blocks a better one. Einstellung is German for roughly "set" or "mindset."</li>
+</ul></div>
+<h2>The talk, in full</h2>
+<p><strong>It begins with a bottleneck: working memory.</strong> Working memory, she says, is how you keep a brief thought in mind. It used to be thought there were seven slots, which is why phone numbers have seven digits; now it looks more like four. For her, she jokes, maybe two. She draws attention as an "octopus of attention" whose tentacles reach through those slots and link ideas. With so few slots, holding too much at once gets confusing, and keeping one eye on your messages while working a hard problem is like losing a tentacle. Multitasking, she says, costs you some of whatever intellectual heft you have.</p>
+<p><strong>So how do you fit complex material into four slots? Make it a chunk.</strong> This is the hinge of the week:</p>
+<blockquote><span class="en">It turns out that if you create a chunk, one chunk, of the material, it’s easy to pull into working memory.</span><cite>— Barbara Oakley, Talks at Google</cite></blockquote>
+<p>She shows a scrambled jigsaw: raw information, a mad scramble, with working memory going a little crazy trying to make sense of it. She mentions recent research at Stanford in which children learning math facts show prefrontal cortex activity "going crazy," which relaxes once the facts are mastered. The mastered version she draws as one smooth ribbon that can be pulled into working memory and linked to other problems. The course video's definition is tighter: a chunk is a way of compressing information much more compactly.</p>
+<p>Compression is the key word. She paraphrases an unnamed great mathematician: one of the best things about mathematics is that you can compress it. You grapple, grapple, grapple, and all of a sudden it clicks, and the idea is compressed. A compressed chunk can then grow, like learning one piece of a song, then another, and joining them into a bigger chunk.</p>
+<p><strong>How is a chunk built?</strong> Her summary video gives the recipe: focused, undivided attention; an understanding of the basic idea; and practice, to deepen the pattern and to give you the big-picture context. Two failures mark the edges. Understanding without practice leaves a faint chunk. At Google she says you can follow a professor and even have that stroke of insight, then not look at the material for a few days, and her "little metabolic vampires" suck the pattern away. Memorising without understanding does give you a chunk, which she draws as a small isolated circle:</p>
+<blockquote><span class="en">But you can’t fit it very well with other chunks.</span><cite>— Barbara Oakley, Talks at Google</cite></blockquote>
+<p>In the Q&amp;A someone presses her: if a chunk comes from understanding, does having one mean you understood? Not necessarily, she answers. You can learn words in a language without knowing what they mean, so technically understanding is not required; it acts as a bridge that knits material together so it is easier to remember and to use.</p>
+<p>Chunks have to join into a bigger picture. Each one fills in a piece of the jigsaw, and you can see the whole even with a few pieces missing; but if the chunks were never practised, you are assembling the picture from faint fragments. So she recommends moving between bottom-up and top-down: learn a small chunk, fit it into the big picture as far as you can, then come back for the next one.</p>
+<p><strong>The library of chunks.</strong> This is the third video of the week. Building expertise, she says, is basically gradually increasing the number of chunks in your mind:</p>
+<blockquote><span class="en">So true experts often have enormous libraries of chunks that they’ve developed.</span><cite>— Barbara Oakley, Talks at Google</cite></blockquote>
+<p>Chess masters can easily call up thousands of patterns, and musicians, linguists and scientists do the same in their own fields. The bigger and better-practised the library, the easier problem solving becomes, because you can skip to the right solution, listening, as she puts it, to whispers from the diffuse mode, which can connect two or more chunks in new ways.</p>
+<p>Chunks can also cross borders, which she calls transfer. Concepts and problem-solving methods from physics can resemble chunks in business; some of what she learned from languages later helped her learn programming. At Google she says a physicist may find economics easier because some chunks have similar shapes, and that the practice-and-repetition habit from language learning is itself a "meta-chunk" that carries into math. When an audience member asks about transfer, her answer is narrower than the stage version:</p>
+<blockquote><span class="en">Depending on how close the area is.</span><cite>— Barbara Oakley, Talks at Google, Q&amp;A</cite></blockquote>
+<p>Icelandic may make German easier; for Chinese it may help only with some metacognitive skills. That caveat matters, and the fate section comes back to it.</p>
+<p>The video ends with reassurance. A single chapter holds so many problems and concepts; how can you learn them all? Here she invokes a "law of serendipity":</p>
+<blockquote><span class="en">Lady Luck favors the one who tries</span><cite>— Barbara Oakley, week-two course video (auto-captions)</cite></blockquote>
+<p>Put the first concept in your library and the second goes in a little more easily, the third more easily still. Not a snap, but easier.</p>
+<p><strong>Illusions of competence: the bear.</strong> At Google she calls this perhaps the most important thing she has to say, and saves it for the end. Students, like everyone, can fool themselves that they are learning when they are not. Her remedies form a ladder.</p>
+<p>First, tests. At TEDx she says only "Tests. Tests are the best." At Google she finishes the thought:</p>
+<blockquote><span class="en">Test yourself on everything, all the time.</span><cite>— Barbara Oakley, Talks at Google</cite></blockquote>
+<p>An hour spent testing, she says, teaches far more than the same hour spent studying. Flashcards are not just for language learners; they belong in math and science too.</p>
+<p>Second, redo the homework. Many people work a problem once and assume they have it. At TEDx she asks:</p>
+<blockquote><span class="en">Would you ever sing a song once and think you knew that song? No.</span><cite>— Barbara Oakley, TEDxOaklandUniversity, 2014</cite></blockquote>
+<p>You do not have time to redo every problem, so pick the key ones and work them again over several days, or step through them in your head. When the solution flows like a song, it has become a chunk.</p>
+<p>Third, and in her view most valuable: recall. The instinct while reading is to highlight:</p>
+<blockquote><span class="en">There's something about the motion of the pen on a page that makes you think that it's actually going into your brain, but it often isn't.</span><cite>— Barbara Oakley, TEDxOaklandUniversity, 2014</cite></blockquote>
+<p>Rereading is the same, just spinning your wheels. The most effective technique, she says, is almost embarrassingly simple: read a page, look away, and see what you can recall. At Google she names the competition: mind mapping and rereading are not nearly as good as recall. She adds that recalling material in different places makes it accessible whatever room you are in, which helps on tests.</p>
+<p>Fourth, talk to people. Focused-mode work comes with a feeling that what you have just learned is right, and sometimes the only way out of it is to bounce your ideas off others. You can also try explaining it so a ten-year-old would understand, or, like the geneticist Barbara McClintock, imagine yourself inside the problem.</p>
+<p>Running through all four is the line that closes her TEDx talk:</p>
+<blockquote><span class="en">don't be fooled by the erroneous idea that understanding alone is enough to build the mastery of the material.</span><cite>— Barbara Oakley, TEDxOaklandUniversity, 2014</cite></blockquote>
+<p>So mistakes are good, she says in the summary: they let you catch your illusions of competence in time.</p>
+<p><strong>Overlearning, deliberate practice and Einstellung.</strong> The last long video of the week turns to how much to practise. Continuing to drill something you have already mastered within the same session is overlearning. It has a place: automaticity matters for a tennis serve or a piano concerto, and especially for people who choke on tests or in public speaking. But she warns that research shows repetitive overlearning in a single session wastes time; repeating in a later session is what helps. Worse is practising a single technique, which she likens to learning carpentry with only a hammer: after a while you think you can fix anything by bashing at it. Practising only the easy parts brings its own illusion of competence, so you should deliberately focus on what you find difficult. She calls this deliberate practice and says it is often what separates a good student from a great one.</p>
+<p>Related is Einstellung: an idea already in mind, or a neural pattern you have already strengthened, blocks a better solution. She returns to part one's pinball machine: old patterns wear a rut among the crowded bumpers. She singles out sports and science, where first intuitions are often wrong and you have to unlearn old approaches while learning new ones. Another common mistake is jumping into the water before you can swim: starting the homework without reading the textbook or attending the lecture.</p>
+<p><strong>Interleaving.</strong> Mastering a subject means learning not just the basic chunks but how to select and use them, and the best way to learn that is to jump between problems that need different techniques. Textbooks do not help: each section covers one technique, so you know which one to use as soon as you turn the page. So you shuffle it yourself. In the Google Q&amp;A she says not to do ten nearly identical calculus problems in a row; do one or two, flip to another section, do a problem there, compare why this one takes this technique and that one takes another, then flip back. In the course she says:</p>
+<blockquote><span class="en">you also need to know when to use it</span><cite>— Barbara Oakley, week-two course video (auto-captions)</cite></blockquote>
+<p>She sets interleaving high. Practice and repetition build solid patterns; interleaving is where flexibility and creativity begin. Interleave within a discipline and you develop creative power in it; interleave across disciplines and new connections between fields come more easily. There is a trade-off: knowing several fields lets you carry ideas between them but may leave you shallower than a specialist, while the specialist risks being trapped in familiar ways of thinking. She cites the philosopher of science Thomas Kuhn: most paradigm shifts come from young people or from people trained in another discipline, who are not caught in the Einstellung of their predecessors' training. She adds the old line that science advances one funeral at a time.</p>
+<p>Finally she reminds the audience that learning is not confined to books; fixing a leaky faucet is learning too, and Richard Feynman's Nobel-winning work was inspired by watching someone toss a dinner plate into the air in a cafeteria.</p>
+<p>Compressed into a line: working memory has a few slots → material fits only once compressed into chunks → chunks come from focus, understanding and practice, and an expert is a library of them → the main enemy is believing you have learned, and the antidote is recall and testing → practise with judgement, not only the easy parts and not only one technique → interleave, so you learn when to use which tool. The checklist that follows is short: recall with the book closed, test yourself often, redo homework days later, spend more time on the hard parts, shuffle the problems.</p>
+<h2>Beneath the surface</h2>
+<p><strong>"Four slots" is more cautious than she makes it sound.</strong> Her "used to be seven, now more like four" corresponds to Nelson Cowan's 2001 target article in Behavioral and Brain Sciences. Cowan says Miller's 1956 "seven or so" was more a rough estimate and rhetorical device than a capacity limit; group means for adults generally run from 3 to 5 chunks, and individuals from 2 to 6. A condition she leaves out: the limit shows only when people cannot rehearse or use long-term memory to regroup items, and Cowan acknowledges the evidence "has been controversial."</p>
+<p><strong>The classic chess study had three participants.</strong> The "thousands of patterns" rest on William Chase and Herbert Simon's 1973 "Perception in chess": one master, one Class A player and one beginner, each shown a real middle-game position for five seconds and asked to reconstruct it. The master placed about 16 pieces correctly on average, the Class A player about 8, the beginner about 4. With randomly placed pieces, memory showed "no relation at all" to playing strength. Masters remember configurations, not pieces. The same year Simon and Chase estimated a master stores "something of the order of 50,000 patterns," calling it "very crude." In 1996 Fernand Gobet and Simon pooled 13 studies and found strong players keep some advantage even on random positions, though a much smaller one.</p>
+<p><strong>The "Stanford research" is narrower than the stage version.</strong> The match is a 2014 Nature Neuroscience paper by Shaozheng Qin, Vinod Menon and colleagues: 28 children aged 7 to 9, scanned twice about 1.2 years apart, doing single-digit addition. As children moved from counting to retrieving answers from memory, prefrontal and parietal involvement fell and hippocampal involvement rose, in 23 of the 28. The prefrontal "relaxing" is supported, but the hippocampus is the real story, and the "ribbon" is her drawing, not the paper's.</p>
+<p><strong>Illusions of competence have an experimental source.</strong> Asher Koriat and Robert Bjork titled a 2005 paper "Illusions of competence in monitoring one's knowledge during study." When learners judge during study whether they will remember something later, the answer is in front of them; at test it is not. Word pairs that look related when shown together therefore create a false feeling of knowing. They call it foresight bias.</p>
+<p><strong>Recall beats "mind mapping": the experiment compared concept maps.</strong> Jeffrey Karpicke and Janell Blunt's 2011 Science study had 80 undergraduates learn a short text about sea otters, with concept mapping and retrieval given exactly the same time. A week later retrieval scored 0.67 and concept mapping 0.45 (d = 1.50); concept mapping did no better than extra reading. In a second experiment with 120 students, 84% did better after retrieval, while 75% had believed concept mapping would be at least as effective. The earlier prototype is Karpicke and Henry Roediger's 2008 Swahili-vocabulary study: students who kept testing items they had already recalled remembered about 80% a week later; those who stopped testing and only restudied, 36% and 33%.</p>
+<p><strong>The overlearning and interleaving studies she did not name.</strong> In Doug Rohrer and colleagues' 2005 experiment, extra practice helped at one week and the advantage was gone by week four (64%→22% versus 38%→18%). In Rohrer and Kelli Taylor's 2007 study, 18 undergraduates learned volume formulas for four solids. During practice the blocked group scored 89% and the mixed group 60%; on the test a week later it flipped, 63% for mixers and 20% for blockers. The group that felt it had learned during practice was the one that failed. That is why illusions of competence and interleaving belong in the same week, though she never connects the two on stage.</p>
+<p><strong>Einstellung: experts cannot see their own ruts.</strong> In 2008 Merim Bilalić, Peter McLeod and Gobet gave chess players a position solvable by a familiar five-move mate that also had a three-move mate. Players who knew the familiar mate said they were looking for something better, but their eye movements kept returning to the squares tied to the solution they already had.</p>
+<h2>What happened next</h2>
+<div class="fate"><p class="verdict">PARTLY HOLDS · as of 2026-10</p><p>Nearly all the study methods she prescribes have a large body of experiments behind them: self-testing and recall, redoing problems after a delay, less highlighting and rereading, interleaving. What does not hold is the reach beyond the worksheet: transfer across fields is rare, there is no evidence that interleaving builds creativity, and interleaving does not help with every kind of material.</p></div>
+<p><strong>2013: an independent scorecard.</strong> John Dunlosky and four colleagues rated ten study techniques in Psychological Science in the Public Interest. Practice testing and distributed practice were rated high utility; interleaving moderate, because the evidence was still limited; highlighting and rereading low, since most students use them yet they do not consistently boost performance. Her stage advice lines up with that table almost item by item.</p>
+<p><strong>2014: the testing effect holds, at about half a standard deviation.</strong> Christopher Rowland's meta-analysis in Psychological Bulletin pooled 159 effect sizes from 61 studies and found an average advantage of testing over restudy of g = 0.50, with signs of publication bias (0.58 for published studies, 0.25 for unpublished). "Far more" overstates it; the direction is right. Recalling in a different room has a real but modest effect: Steven Smith's review puts the mean at about d = 0.28.</p>
+<p><strong>2014: deliberate practice gets weighed.</strong> Brooke Macnamara and colleagues pooled 88 studies and 11,135 people: deliberate practice explained 12% of performance differences on average, 26% in games, 21% in music, 18% in sports, 4% in education and under 1% in professions. She calls it often the difference between a good student and a great one; education is exactly where it explains least.</p>
+<p><strong>2017: bad news for far transfer.</strong> Giovanni Sala and Fernand Gobet reviewed whether training in chess, music or working memory improves other abilities. Against control groups that did some other activity, effects nearly vanished: music fell from 0.25 to 0.03, working-memory training from 0.18 to 0.05. Far transfer, they conclude, "rarely occurs." They tested whether practising one skill raises general ability, not quite whether a physicist learns economics faster. Her Q&amp;A answer, "depending on how close the area is," fits their conclusion; the physics-to-business example on stage is where she overreaches.</p>
+<p><strong>2019: interleaving reaches a real classroom, and gets its limits drawn.</strong> Rohrer and colleagues ran a preregistered randomised trial in one Florida district: 54 seventh-grade math classes taught by 15 teachers, 787 students analysed. On a surprise test a month after four months of practice, the interleaved group scored 61% and the blocked group 38% (d = 0.83), with a positive effect for every teacher. The authors note that interleaved problems may take longer and that students should not abandon blocked practice entirely. The same year Monika Brunmair and Tobias Richter's meta-analysis of 59 studies found an overall g = 0.42, but 0.67 for paintings, 0.34 for math, no significant effect for expository texts, and −0.39 for words. Interleaving helps most when categories are similar and must be told apart. It trains when to use which tool; these studies never measured creativity.</p>
+<p>We found no independent scholarly critique of the course itself; the course evaluations we could find are co-authored by Oakley, and we saw only their abstracts, so we do not cite them. Judged claim by claim against the research, this week stands much more firmly than <a href="oakley-focused-diffuse-talk40.en.html">part one</a>'s focused and diffuse modes, while the inferences beyond the worksheet have not kept up.</p>
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Buddhism · Beginner's mind</b>: Shunryu Suzuki opens Zen Mind, Beginner's Mind (1970) by saying that the beginner's mind holds many possibilities and the expert's holds few. That is close to a Zen version of Einstellung, and it echoes the Kuhn line she cites: new paradigms come from newcomers and outsiders. Where it matches: skill itself narrows sight. Where it differs: Oakley still wants you to build the library and break ruts with interleaving and other people's eyes; Suzuki's "expert" is a state of mind, not a library, and the practice is to keep the beginner's mind throughout.</li>
+<li><b>Neuroscience · Complementary learning systems</b>: James McClelland, Bruce McNaughton and Randall O'Reilly argued in 1995 that a network trained on a block of new material catastrophically overwrites old knowledge, and interleaving new with old avoids it; hippocampal replay during sleep, they proposed, gives the cortex interleaved training. The difference is purpose: there, interleaving protects old knowledge; in Rohrer's studies it teaches discrimination.</li>
+<li><b>Information theory · Source coding</b>: Shannon showed that frequent patterns can be given shorter codes, and compression depends on how well you know the source's statistics. A chunk is the same move: the more you have seen, the shorter your code for common patterns. Unlike a code, a chunk is lossy, and it can force a merely similar situation into an old chunk.</li>
+<li><b>Investing · Munger's hammer</b>: In his 1994 talk at USC, Charlie Munger warned that to the man with only a hammer every problem looks like a nail, and urged collecting models from many disciplines. It is Oakley's carpentry image. The difference is level: Munger moves explicit principles between fields, while far-transfer research doubts that drilling one skill lifts others.</li>
+</ul></div>
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Working memory holds roughly four chunks at a time, and multitasking gives up one of those slots.</li>
+<li>Material practised into a single chunk takes one slot, can be pulled into working memory at will, and links to other chunks.</li>
+<li>Chunks are built from focus, understanding and practice: understanding without practice fades, memorising without understanding stays isolated.</li>
+<li>Chase and Simon's chess study had three participants; the master far outdid the novice on real positions but not on random ones.</li>
+<li>Barbara Oakley names rereading, highlighting and mistaking an understood solution for mastery as the commonest illusions of competence; recall is the cure.</li>
+<li>In Karpicke and Blunt's study, retrieval scored 0.67 a week later against 0.45 for concept mapping done for the same time.</li>
+<li>In Rohrer and Taylor's study, the group that scored higher during blocked practice fell far behind on the test a week later.</li>
+<li>Interleaving mixes problem types in one session and trains the judgement of which method a problem needs.</li>
+<li>Far-transfer research finds that training in chess, music or working memory rarely improves abilities in other fields.</li>
+<li>Complementary learning systems theory holds that interleaving new and old experience keeps new learning from overwriting old.</li>
+</ol>
+<h2>Sources</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://singjupost.com/barbara-oakley-learning-how-to-learn-talks-at-google-transcript/">The Singju Post: Barbara Oakley, Learning How to Learn @ Talks at Google (third-party transcript)</a></span><span class="d">Source of quotations marked Talks at Google and of the material on working memory, chunks, illusions of competence, interleaving and the Q&amp;A; auto-captions of four week-two course videos used to cross-check and supplement.</span></li>
+<li><span class="t"><a href="https://amara.org/api/videos/0X49ztTMTuWD/languages/en/subtitles/?format=txt">Amara: Learning how to learn, Barbara Oakley, TEDxOaklandUniversity (2014, English subtitles)</a></span><span class="d">Source of quotations marked TEDx: the song, highlighting, recall, and "understanding alone is not enough."</span></li>
+<li><span class="t"><a href="https://andymatuschak.org/prompts/Chase1973.pdf">Chase &amp; Simon (1973), Perception in chess, Cognitive Psychology</a></span><span class="d">The three-participant chess memory study behind the chunk evidence in "Beneath the surface."</span></li>
+<li><span class="t"><a href="https://learninglab.psych.purdue.edu/downloads/2011/2011_Karpicke_Blunt_Science.pdf">Karpicke &amp; Blunt (2011), Retrieval practice produces more learning than elaborative studying with concept mapping, Science</a></span><span class="d">Retrieval versus concept mapping, and students' wrong predictions.</span></li>
+<li><span class="t"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5724589/">Sala &amp; Gobet (2017), Does far transfer exist?, Current Directions in Psychological Science</a></span><span class="d">Pooled evidence on far transfer, behind the narrowing of "transfer."</span></li>
+<li><span class="t"><a href="https://www.psychologie.uni-wuerzburg.de/fileadmin/06020400/2019/Brunmair_Richter_in_press__2019_META-ANALYSIS_OF_INTERLEAVED_LEARNING.pdf">Brunmair &amp; Richter (2019), Similarity matters, Psychological Bulletin (accepted manuscript)</a></span><span class="d">Interleaving meta-analysis: overall g = 0.42 and its limits by material; the classroom trial figures come from Rohrer et al. (2019, Journal of Educational Psychology).</span></li>
+</ul>
+</div>
+<footer>Talk Deep Read · one talk, the whole life of one idea · written 2026-10-27</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode-lecture',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode-lecture');}catch(e){}
+  set(saved==='pop'?'pop':'deep');
+})();
+</script>
+</body></html>
