@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Laurie Santos ·《The Science of Well-Being》（1/3）— 你以为会让你快乐的，大多不会</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="santos-happiness-misconceptions-talk43.en.html">English →</a></div>
+<header>
+<div class="kicker">耶鲁 / Coursera · 2018 · 短课 1/3</div>
+<h1>你以为会让你快乐的，大多不会：方向站住了，台上好几个数字和它引的论文对不上</h1>
+<p class="sub">Laurie Santos ·《The Science of Well-Being》（1/3：我们对幸福的误解）</p>
+<div class="modebar"><button id="btn-pop">精华版</button><button class="on" id="btn-deep">完整版</button></div>
+</header>
+<div class="mode-pop" hidden="" id="mode-pop">
+<p>耶鲁心理学教授 Laurie Santos 在自家客厅里，对着二十几个学生举起两张彩色卡纸。屏幕上是 Roger Shepard 画的两张桌子，一张看着又窄又长，一张又短又宽。学生说左边那张长。她把剪好的卡纸往上一叠——先叠反了，「Oh, no, it's upside down. Hold on.」——再叠一次，两张桌面一模一样。她说你们这时候应该「Whoa!」一声，然后补了一句：现在你们知道了，可再看一眼，还是会看成一长一短。</p>
+<p>这一课（2018 年在 Coursera 上线的「The Science of Well-Being」，它的耶鲁本科版是校史上选课人数最多的一门）就从这里开讲。它的第一个论点不是关于幸福，而是关于知道：她和哲学家 Tamar Gendler 起名叫「G.I. Joe 谬误」，取自八十年代动画片每集结尾那句「knowing is half the battle（知道就赢了一半）」。Santos 的说法是：知道连一半都算不上。你看穿了错觉，眼睛照旧被骗；读懂了幸福研究，日子照旧这么过。所以这门课要留「作业」，要练习惯。</p>
+<p>然后她请学生列出想要的东西：好成绩、实习、高薪、读研、恋爱结婚。接下来一个小时，她把清单一项项划掉。没拿到心仪的工作？Dan Gilbert 的实验里，人们预测会跌两分，实际跌得少得多；能怪招聘方不公平的，几乎不跌。钱？Kahneman 和 Deaton 的数据说，美国人年收入过了七万五千美元，日常情绪就不再上升；耶鲁毕业生 34 岁时收入中位数已经过线，「you guys are set」。结婚？头一两年更快乐，之后回到原点。减肥？体重降下来的人四年后抑郁情绪反而最多。好成绩？高了没你想的那么开心，低了也没你想的那么难过。</p>
+<p>她给这一课收尾的话很直白：你们对什么会让自己快乐一无所知。最后她用 Sonja Lyubomirsky 那张著名的饼图给了一点希望：幸福大约 50% 来自基因，10% 来自生活境遇，40% 来自你的行动和习惯，而那 40% 握在自己手里。问题只是我们一直把力气使在了错误的目标上。</p>
+<p>这个框架今天看依然结实：人确实系统性地高估好事坏事对情绪的冲击（「影响偏差」），确实会适应新境遇。但把台上的数字对回原始论文，会掉出不少东西。Gilbert 的「工作」是一份 25 美元的产品试用差事，「之后」是十分钟后。她用来证明「成绩没那么重要」的那篇论文，主旨恰好相反：只要问清楚「你对这个成绩会有什么感觉」，学生的预测相当准，所谓高估有一部分是问法造成的。七万五千美元的平台在 2021 年被 Killingsworth 的一百七十多万条实时报告推翻；2023 年他和 Kahneman 联手重新分析，平台只在最不快乐的那群人身上出现，门槛大约十万美元。那张 50/10/40 饼图，Lyubomirsky 本人也承认 40% 「很可能高估了」，而且这些数字说的是人群差异，从来不是一个人幸福的成分表。</p>
+<p>所以命运是<strong>部分站住</strong>：「你对快乐的直觉经常错」这个方向站住了，「所以这些目标都不值得追」这个台上的强版本没站住。最讽刺也最公道的一笔是，这门课自己做了检验：2021 年的研究里，修完课的人幸福感比修心理学导论的对照组高出一截，效应中等，但没有随机分组，也没跟踪多久。</p>
+</div>
+<div class="mode-deep" id="mode-deep">
+<div class="meta-card"><b>课程</b> <a href="https://www.coursera.org/learn/the-science-of-well-being">The Science of Well-Being</a>（耶鲁 / Coursera，2018 年上线）· <b>本期</b> 模块 1–2：我们对幸福的误解（8 段视频：开场、为什么开这门课、G.I. Joe 谬误、好工作、钱、好东西 / 真爱 / 完美身材 / 好成绩、心智的恼人特性、问答）· <b>时长</b> 约 75 分钟 · <b>文本</b> Santos 官方 YouTube 频道课程视频（<a href="https://www.youtube.com/watch?v=s-00jpvglb8">第一段</a>）的自动字幕，约 17,000 词</div>
+<h2>那一刻</h2>
+<p>两张桌子画在幻灯片上。左边那张像一条走廊，右边那张像一块砧板。「哪张更长？」客厅里的学生说左边。Santos 早有准备，她拿出用彩色卡纸剪好的桌面，比着左边那张放上去，再拿去比右边——叠反了。「Oh, no, it's upside down. Hold on. We got this.」再放一次，严丝合缝。</p>
+<blockquote><span class="en">This is where you're supposed to go, "Whoa!" Oh my goodness, right? And I actually invested in this construction paper.</span><span class="zh">这时候你们应该「哇！」一声。天哪，对吧？我可是专门为这个买了彩色卡纸。</span><cite>— Laurie Santos，The Science of Well-Being，第 3 段视频</cite></blockquote>
+<p>然后是这一课真正的包袱：你们现在知道两张桌子一样大了，可再看一眼，看到的还是一长一短。她专门买来的卡纸，证明的是这份「知道」改变不了你的眼睛。接下来一个多小时里她要拆掉学生对幸福的一整套直觉，而这个开场已经先把丑话说在前头：拆掉了，你还是会照旧那样感觉。</p>
+<h2>讲的人，和那一年</h2>
+<p>Laurie Santos 的老本行是研究猴子。她在耶鲁做比较认知，拿卷尾猴和人比谁更会犯同样的决策错误，在校内开的是进化心理学，课上她说有些学生上过。她同时是耶鲁住宿学院 Silliman 的院长，就住在学生中间。她说开这门新课不是必须的，备课很累，但她觉得眼前这些耶鲁学生需要它。</p>
+<p>这一课的录像本身很特别：没有讲台，没有大教室，她坐在自家客厅，对面是二十五个左右的 Silliman 学生，课后「外面还有咖啡和蛋糕」。她明说这是试点，目标是把课扩成耶鲁的大课，所以开课时让学生先做一次幸福问卷，结课再做一次，看课到底有没有用。从课上提到的「上周的《纽约时报》」「新年才过几周」和「这还是在那场撕裂的大选之前」来推断，录制大约在 2017 年初。一年后，耶鲁本科版「Psychology and the Good Life」开放选课，选课人数将近 1,200，约占本科生的四分之一，是耶鲁有记录以来最大的一门课；客厅里录下的这一版成了 Coursera 上的公开课。</p>
+<p>她给出开课的三个理由，第三个最有意思：她自己也需要。她把自己的问卷截图放上幻灯片，忘了上面有分数——在同龄人里大约排在四成的位置，低于平均。讲幸福课的教授，自己并不怎么幸福。这件事她没有藏，反而拿来接上了 G.I. Joe 谬误：她读了所有这些研究，知道了，没用。</p>
+<h2>术语表 · Glossary</h2>
+<div class="glossary"><ul>
+<li><b>情感预测（affective forecasting）</b>：预测某件事发生后自己会有什么感受。Santos 在问答里点了这个名字，说下一讲细讲。</li>
+<li><b>影响偏差（impact bias）</b>：人们一贯高估未来事件对自己情绪冲击的强度和持续时间。</li>
+<li><b>享乐适应（hedonic adaptation）</b>：生活变好或变坏之后，情绪逐渐回到原先的水平。</li>
+<li><b>情绪幸福 vs. 生活评价（emotional well-being vs. life evaluation）</b>：前者是日常感受（昨天笑了没、焦虑了没），后者是你退一步给整个人生打分（0 到 10 的梯子）。两者不总是同向。</li>
+<li><b>设定点（set point）</b>：假说中每个人幸福感会回归的基线，部分由遗传决定。</li>
+</ul></div>
+<h2>这场演讲，讲透</h2>
+<p>课一开头，Santos 交代这门课要做两件事：一是讲幸福科学，二是讲幸福的<strong>练习</strong>。她说这门课最先要学到的一件事就是，光知道什么会让你快乐，并不会让你快乐。所以没有阅读作业，却有「作业」：看看自己的习惯。路线图是：今天讲误解，下一讲讲为什么我们的预期这么不准，再往后讲真正管用的东西和策略，最后讲怎么用到社会层面。</p>
+<p>开这门课有三个理由。第一，时机成熟：英美政府用「助推」（nudge）让人多存钱、吃得健康，大规模实施也见效，可教的东西从没这么多。第二，我们需要：她说抗抑郁药的处方率是二十年前的 400 倍（这个数字后面要回头看），应届毕业生比以往更不快乐，而最需要的就是眼前这些耶鲁学生。第三，她自己需要。</p>
+<p>第三个理由把她直接带到这一课的第一个论点。她说，以为「我懂这些，所以应该做得好」，正是本课要讲的第一个谬误，是她和耶鲁哲学家 Tamar Gendler 一起起的名字：G.I. Joe 谬误。G.I. Joe 是八十年代的儿童动画，每集结尾有一段公益短片，教小孩过马路看两边、别跟陌生人说话，片尾小孩说「谢谢你 G.I. Joe，现在我知道了」，G.I. Joe 回一句招牌台词：知道就赢了一半。Santos 说这就是谬误本身。</p>
+<blockquote><span class="en">Merely knowing something is not enough to actually change your behavior. And that's the GI Joe fallacy.</span><span class="zh">光是知道某件事，不足以真正改变你的行为。这就是 G.I. Joe 谬误。</span><cite>— Laurie Santos，第 3 段视频</cite></blockquote>
+<p>为了让学生「看见」这个谬误，她借了视觉的比喻：先是缪勒-莱尔错觉，两条等长的线，见过这张图的人照样看成一长一短；再是 Shepard 的桌子和那几张卡纸。她说可以把背后的视觉科学讲给你听，你看到的还是不会变。要改变行为必须改习惯，她这个讲幸福课的教授之所以「和你们一样蔫」，就是因为光学了；出路是作为一个互相支持的群体，一起把习惯定下来。</p>
+<p>进入正题，她先让学生自己说。这学期想要什么？「好成绩。」夏天呢？「实习。」志愿的还是带薪的？「带薪。」低薪还是高薪？「高薪。」五年后呢？「读研。」有人说「好的友谊和家人关系」，她接住：我猜你们很多人正在申请实习，但很少有人花同样多的时间确保明年的友谊会好。还有人想恋爱、结婚。目标都摆上桌了，她宣布：接下来要告诉你们，你们刚才说的大多数东西都不会像你们以为的那样让你们快乐；想守住错误直觉的人，现在可以离场回去刷成绩。</p>
+<p><strong>好工作。</strong>她先让学生模拟：挑一个你最想要的暑期机会，申请了，没拿到，你会怎样？她讲的是 Dan Gilbert 和同事的实验：大学生去争取一份很多人想要的带薪工作，事先预测被拒后的心情，然后真的被拒。她让客厅里的学生跟着玩，先报现在几分（六、七分），再报被拒之后（四、五、三）。研究的结果是：如果拒绝是公平的，人们预测会跌两分左右，实际跌幅「远不到一分」；如果人们觉得这个决定不公平，比如面试官根本没看资历，预测照样是跌两分，实际几乎不跌。她的解释是，一旦你能给自己找到理由（「他们不知道自己错过了史上最好的候选人」），心情就掉不下来。</p>
+<p>可学生要的是高薪的工作。多少算够？她引 Sonja Lyubomirsky 的书《The How of Happiness》：年薪三万美元的人说要五万才够；年薪十万的人并没有说「我够了」，他们说要二十五万。我们以为需要的数目，每次拿到更多就往上跳。</p>
+<p><strong>钱。</strong>她用一个数字开场：2015 年美国人在彩票上花了七百亿美元，比书、音乐、电影票、体育比赛和电子游戏的花费加起来还多。然后是美国新生调查（American Freshman Survey），1967 年起一直在做，2005 年那一轮超过二十万人、来自近四百所学校。2005 年，71% 的新生说「非常富裕」对人生非常重要，觉得「发展出一套有意义的人生哲学」重要的只有一半左右；1967 年正好反过来，只有大约 40% 看重富裕。</p>
+<p>钱到底能不能让人更快乐？她先给学生画了几张散点图，从相关系数 0.9 降到 0.25，0.25 时点已经散得没法从收入猜出满意度；然后公布 Ed Diener 的跨国数据：收入和生活满意度的平均相关大约只有 0.1。穷国里收入越高越满意，因为钱买到的是干净的水和基本医疗；富国里几乎看不出关系。1940 年代只有约三分之二的房子有室内淋浴和热水，那时的人报告的幸福感却不比 2005 年的 7.2 分（满分 10）低。她引 David Myers 在《The American Paradox》里的判断：比起祖辈，今天的年轻人富裕得多，幸福却略少，抑郁风险更大。</p>
+<p>最后，也是她讲得最细的一项：Daniel Kahneman 和 Angus Deaton 的研究。两人都拿过诺贝尔经济学奖，她说「他们知道自己在说什么」。他们问的是有没有一个门槛：收入过了某个点，幸福就不再上升。他们看几项日常情绪指标：昨天笑得多不多、是不是「不忧郁」、是不是没有压力。结果低收入段里收入越高越好，然后曲线变平，门槛大约是七万五千美元。她马上把它接到学生身上：《纽约时报》刚登出各校毕业生 34 岁时的收入中位数，耶鲁是 76,000 美元，刚好过线。</p>
+<blockquote><span class="en">So, basically once you guys turn 34, you guys are set.</span><span class="zh">所以基本上，你们一到 34 岁，就到头了。</span><cite>— Laurie Santos，第 5 段视频</cite></blockquote>
+<p>但她讲的还没完。Kahneman 和 Deaton 还测了第二样东西，「生活评价」：想象一架 0 到 10 级的梯子，你把自己的人生放在哪一级。这一项随收入一直往上走，到高收入段才变缓。Santos 认为这正是我们错误直觉的来源：日常感受过了七万五千就不动了，可我们对自己人生的评价还在涨。年薪二十万的人会觉得「我的人生一定很好」，可这份好并没有落到每天的情绪上。她的判断是：钱也许有一点用，年收入一万的美国人多挣点会更快乐，但对大多数人差别不大，而且比我们以为的小得多，「如果你暑假的目标是这个，划掉吧」。</p>
+<p><strong>好东西。</strong>「要是我有＿＿，我就会特别开心。」她自己填的是没有划痕的平底锅和加拿大鹅羽绒服。可 1940 年代的人没有这一切，幸福感并不比我们低。更糟的是追求本身：Nickerson 等人调查 1976 年入学新生的物质主义态度，二十年后回访，越物质主义的人生活满意度越低，她还说这些人后来的精神疾病诊断也更多。</p>
+<p><strong>真爱。</strong>她引 Richard Lucas 等人的长期追踪和一组德国数据：结婚头一两年确实更快乐，有一段「蜜月效应」，之后回到基线，和没结婚的人一样。</p>
+<p><strong>完美身材。</strong>新年刚过，社交媒体上全是减重对比照。Jackson 和同事追踪约两千名肥胖者四年（她说是一个减重项目）：减了重的那组抑郁情绪最多，几乎是其他组的两倍。整形呢？挪威青少年被追踪 13 年的研究里，后来去整形的人术前就已经在自杀念头、饮酒和品行问题上比别人糟，术后这些指标更糟。</p>
+<p><strong>好成绩。</strong>她把这一项留到最后，因为这是耶鲁学生说的第一个愿望，也是「所有视觉错觉里你们信得最深的一个」。她讲 Levine 和同事在加州大学做的调查：先让学生预测，成绩比预期高、符合预期、比预期低时各会多开心（1 到 9 分）。客厅里的学生跟着报：比预期高，八分、九分；比预期低，四分、五分，还有人报一分，她夸他们诚实。研究里的预测和他们几乎一样，高了八分左右，低了四分左右。实际呢？比预期高的那份快乐，跟拿到预期成绩没什么区别；比预期低，稍微低一点，但统计上不显著，比预测好得多。而且这是刚看到成绩的时候测的，不是几个月后想通了。</p>
+<p>清单划完，她请学生停一下消化：这些目标她读本科时也有、现在也有，你们投入精力、申请、焦虑的方向，基本全是错的。</p>
+<blockquote><span class="en">you are clueless about what is going to make you happy.</span><span class="zh">你们对什么会让自己快乐，一无所知。</span><cite>— Laurie Santos，第 7 段视频（她说这是「更粗一点的说法」）</cite></blockquote>
+<p>接着她处理学生通常会给的两种解释。一种是：这些东西不起作用，是因为幸福根本改不了，基因定好了，你要么是杯子半满的人，要么是半空的人。另一种是：生活境遇压倒一切，或者好事坏事总会相互抵消。她说两种都不被数据支持，然后放出 Lyubomirsky 的饼图：通过比较同卵和异卵双胞胎估出遗传，通过研究遭遇重大变故（瘫痪、失业、丧偶）的人估出境遇，最后得到：基因约 50%，「确实有一个遗传的幸福设定点，但比我们以为的小」；生活境遇只占约 10%，「是最小的一块」；剩下约 40% 来自行动、意图和习惯，而这部分在我们控制之中。所以问题不是我们改变不了，而是我们一直朝错误的目标努力。</p>
+<p>最后，她预先堵住一种念头：「这些科学也许适用于别人，可我拿到那份工作是真的会更开心。」她把它称为本课第一个「心智的恼人特性」：心智递给你一个直觉时，你以为它在规范上是对的。直觉经常就是错的，视觉里有那两张桌子，推理里有球拍和球：球拍和球一共 1.10 美元，球拍比球贵 1 美元，球多少钱？脱口而出的「10 美分」是错的，正确答案是 5 美分。幸福也一样：你会强烈地觉得，出门被车撞瘫痪会毁掉你在耶鲁剩下的日子，一个不认识的亲戚突然留给你两千七百万会让日子棒极了，拿到比预期高的成绩会更好——都不对。</p>
+<blockquote><span class="en">So many of our intuitions about happiness are just wrong.</span><span class="zh">我们关于幸福的直觉，太多就是错的。</span><cite>— Laurie Santos，第 7 段视频</cite></blockquote>
+<p>问答占了这一课近三分之一，讲出了正文没说的几处限定。有学生问：数据是平均值，我怎么知道自己不是极端情况？她承认有个体差异，但几乎每个人都预测错了，只是程度不同；她给这个现象点了名，叫「情感预测」，人们在强度和持续时间上都会错。她拿自己举例：本科入门课拿了个 B，当时觉得糟透了，现在完全无所谓。问到相对幸福，她说心智按相对值思考，最显眼的参照物是别人：年薪十万的人身边都是年薪十万的人；社交媒体更糟，人们只发人生最好的那几帧，你却拿自己人生的完整分布去比。</p>
+<p>问到怎么对付这些直觉、又不至于怀疑每一个决定，她给出这一课最接近「方法」的建议：借正念的做法，把渴望当成「只是念头」，这类技术在戒烟、戒毒里用得最多也最好；然后观察真实结果。</p>
+<blockquote><span class="en">Treating yourself like a real experimental subject and watching your own data rather than your intuitions</span><span class="zh">把自己当成一个真正的实验对象，看你自己的数据，而不是你的直觉</span><cite>— Laurie Santos，第 8 段视频</cite></blockquote>
+<p>她让学生把刚才报的「拿到低分我会是一分」写下来，等成绩出来再对一遍。最后她坦白这个领域的一个麻烦：各项研究测的东西不一样，有的测「不忧郁」，有的测生活满意度，我们常把它们混为一谈，它们未必说的是同一件事。下课作业：去 Authentic Happiness 网站测一下自己的分数，结课再测。</p>
+<h2>冰山下面</h2>
+<p>这一课的论证方式是「一项目标，一项研究」，每项研究在台上只有一两分钟。把它们一项项对回原文，会发现台上的版本通常比原文宽，有两处甚至和原文的主旨拧着。</p>
+<p><strong>Gilbert 的「工作」。</strong>这是 Gilbert、Wilson 等人 1998 年《免疫忽视》（Immune Neglect）论文的第 6 项研究，被试是德州大学奥斯汀分校 91 名修心理学导论的女生。「工作」是给本地企业试用产品，报酬 25 美元；「面试」是对着麦克风回答 15 个问题。公平条件下由三名 MBA 学生一致同意才拒绝，不公平条件下由一名 MBA 学生凭几个不太相关的问题独断。所有人都被拒，台上说的「之后」是<strong>十分钟后</strong>。被试预测十分钟后比基线低 2.00（公平）和 1.90（不公平）；实际上，公平条件下预测过的人低了 1.26，没预测过的人低了 0.84，不公平条件下是 0.00 和 −0.10。所以「预测跌两分」对，「实际远不到一分」只对一部分人成立，「不公平就不跌」完全对得上。它证明的是心理免疫系统十分钟内能起多大作用，没有测找工作被拒对一个暑假意味着什么。</p>
+<p><strong>成绩那篇论文，主旨是反的。</strong>Santos 说的「Lavine」是 Linda Levine、Heather Lench 等人 2012 年的《准确与伪影》（Accuracy and Artifact）。成绩研究的被试是加州大学尔湾分校 181 名修心理学导论的本科生，不是台上说的「加州大学系统上千名学生」。台上漏掉的是论点本身：作者认为影响偏差有一部分是<strong>问法造成的伪影</strong>。标准问法问「你总体上会有多开心」，被试理解成「想到这个成绩时会有多开心」，事后却测总体心情。问清楚「你对这个成绩会有什么感觉」之后，高估消失了：比预期低的学生预测 4.34 分，实际 4.04；比预期高的预测 7.33，实际 7.78。数据里还有个细节：60% 的学生预期拿 A 档，实际只有 18% 拿到，「比预期高」那组每个条件只有 9 到 11 人。台上用它说明「成绩没你以为的那么要紧」，论文说的却是「人对自己的了解，比这个领域通常描绘的要好」。</p>
+<p><strong>七万五千美元的两种幸福。</strong>Kahneman 和 Deaton 2010 年那篇发在 PNAS（台上说是《Science》），用盖洛普 45 万多份回答，标题就是结论：《高收入改善生活评价，但不改善情绪幸福》。Santos 两半都讲准了。她没讲的是，情绪指标都是「昨天有没有……」的是 / 否题，这一点后来成了关键。</p>
+<p><strong>体重：样本不是台上那样。</strong>Jackson 等人 2014 年的研究用的是英国老龄化纵向研究里 1,979 名 50 岁以上的超重或肥胖者，不是减重项目的参与者，而是四年间体重自然变化的普通人。减重 5% 以上那组抑郁情绪的比例增加了 289%，稳定组增加 86%；但生活满意度的组间差异不显著，减重组的高血压和高甘油三酯则明显减少。作者强调这不说明减重导致抑郁，两者可能有共同原因，比如生病。</p>
+<p><strong>物质主义那项，被压掉了一个限定。</strong>Nickerson、Schwarz、Diener 和 Kahneman 2003 年的论文摘要里写得很清楚：追求财务成功对整体生活满意度的负面影响，会随着家庭收入的上升而减弱；伤害最集中的是人际关系和家庭生活。台上「物质主义者二十年后更不满意」是平均值，「对挣到钱的人伤害更小」这一半没讲。她说的「DSM 诊断更多」，这篇论文摘要里没有提到，我没找到它的出处。</p>
+<p><strong>饼图的 40% 是减出来的。</strong>Lyubomirsky、Sheldon 和 Schkade 2005 年提出那张饼图时，Sheldon 和 Lyubomirsky 后来回顾说，50% 和 10% 是「基于某些起始假设和一份不完整的文献回顾」给出的估计，40% 是「剩下的」，不是直接测出来的。原文的措辞是活动「可能占到多达 40% 的方差」。方差说的是人群里人与人之间的差异，不是某一个人的幸福由哪几块组成。台上说「我们实际幸福的大约 10% 受境遇影响」，正好是这张图最常见的误读。</p>
+<p><strong>两个数字的来源。</strong>台上说抗抑郁药处方率是二十年前的「400 倍」。最常被引用的美国疾控中心 2011 年简报说的是 1988–1994 年到 2005–2008 年间使用率上升了<strong>将近 400%</strong>，即五倍左右；我无法确定她用的是哪个来源。年薪三万想要五万、十万想要二十五万，她注明出自 Lyubomirsky 的书，我没读到原始数据，只报这是台上的说法。</p>
+<h2>后来的命运</h2>
+<div class="fate"><p class="verdict">部分站住 · 截至 2026-10</p><p>「你对什么会让自己快乐的直觉经常错」站住了：影响偏差和享乐适应至今是主流结论。台上那些硬数字没站住：七万五千美元的平台被推翻后又被改写，40% 的饼图被作者自己收回，成绩研究的原文主张恰恰相反。这门课本身对幸福感有中等效应，但证据还不够硬。</p></div>
+<p><strong>2003 年起，适应论变复杂了。</strong>Santos 讲婚姻时引的 Lucas 那项研究，2003 年原文（德国社会经济面板，15 年，两万四千多人）摘要里有一句台上没讲：平均会回到基线，但「个体差异相当大」，反应强烈的人多年后仍远离基线，不少人的轨迹和适应论预测的相反。2012 年 Luhmann、Lucas 等人汇总近 66,000 人的纵向数据，发现生活事件的作用并不按「好事坏事」来分。「一两年后回到原点」是平均曲线，不是每个人的命运。</p>
+<p><strong>2012–2013 年，问法之争。</strong>Levine 等人的元分析结论是高估在很大程度上取决于问法；Gilbert 和 Wilson 2013 年回应，认为影响偏差「依然健在」。我没读到这篇回应的全文，只报它的存在。今天稳妥的说法是：人确实会高估，但幅度比早期研究报的小，而且跟问法有关。</p>
+<p><strong>2019 年，饼图被拆。</strong>Nicholas Brown 和 Julia Rohrer 在《幸福研究杂志》上发表《像（幸福）派一样简单？》，指出三块并不独立（基因会影响你选什么活动、处在什么境遇），境遇的 10% 主要来自单一国家内的人口学变量，自然偏小；就算比例对，也说明不了一个人能把幸福提高多少。Sheldon 和 Lyubomirsky 同年回应，开头就说「大体同意」，承认饼图已经过了它有用的时候，40% 「很可能高估了」，积极心理干预的效应「相当小」。他们坚持的只剩核心前提：人能靠有意的行为提升幸福，只是效果比最初以为的弱。</p>
+<p><strong>2021–2023 年，七万五千美元。</strong>Matthew Killingsworth 2021 年在 PNAS 上用 33,391 名在职美国成年人的 1,725,994 条手机实时报告，发现无论是当下感受还是生活评价，都随收入的对数一路上升，七万五千以上「没有平台的证据」。随后他和 Kahneman 做了一次「对抗性合作」（两个结论相反的人一起设计分析），由 Barbara Mellers 居中协调，2023 年三人联名发表《收入与情绪幸福：冲突的化解》。重新分析的结果是：平台只出现在最不快乐的那群人身上（论文的说法是最不快乐的约 20%，正文分析里第 15 百分位以下最明显），他们的痛苦随收入减轻，大约到十万美元为止；较快乐的多数人，幸福随收入稳步上升，最快乐的一组甚至加速上升。他们说，Kahneman 和 Deaton 当年那些是/否题有天花板效应，测到的其实是「不快乐」而不是「快乐」。所以台上「34 岁就到头了」是错的：对大多数人来说，多挣钱的那份快乐并没有在七万五千处停下。不过「钱的作用比我们以为的小、以对数递减」这层意思还在：收入翻倍才换来固定那么一点。</p>
+<p><strong>2021 年，这门课自己的检验。</strong>Santos 在课上说「我想看看这到底有没有用」。2021 年她和 David Yaden 等人在《PLOS ONE》上发表了结果：三批 Coursera 学员，分别和修心理学导论的对照组比，两门课的人都变得更幸福，但修幸福课的人结课时幸福感更高，效应量 d 约 0.37 到 0.43，大致是中等。论文自己列的局限也很直接：没有随机分组，选幸福课的人本来更想变好，大量学员没有完成课程，而且只测了结课后不久，「效应可能是短暂的」。也就是说，G.I. Joe 谬误那一条，这门课至少部分绕过去了：修完课的人不只是知道了，幸福感也真的变了，只是还不知道能维持多久。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>佛学 · 渴爱（taṇhā）</b>：四圣谛把苦的成因归于渴爱，追逐的对象本身不带来满足，这和 Santos 那张被划掉的清单是同一个结构。不像在出路：佛学要止息渴爱本身，Santos 只是要你换一批更对的目标。</li>
+<li><b>哲学 · 伊壁鸠鲁的两种财富</b>：伊壁鸠鲁说自然所需的财富有限、容易得到，虚妄欲望所求的财富却没有尽头。年薪三万想要五万、十万想要二十五万，几乎是这句话的数据版。不像在方法：他靠推理得出结论，这一课靠追踪数据。</li>
+<li><b>神经科学 · Berridge 的「想要」与「喜欢」</b>：Kent Berridge 发现多巴胺系统驱动的是「想要」，「喜欢」走的是另一套更小的回路，所以人可以强烈想要一个得到后并不怎么享受的东西。像在想要和得到后的感受脱节；不像在层面：Berridge 讲的是神经回路，这一课讲的是有意识的预测出了错。</li>
+<li><b>遗传学 · Lewontin 的两盆种子</b>：Richard Lewontin 1970 年打过一个比方：同一袋种子分种在肥沃和贫瘠的两个盆里，每盆内部的高矮差异几乎全来自遗传，两盆之间的差异却全来自土壤。遗传率是一个人群统计量，说的是人与人的差别从哪来，不是一个人身上的成分。幸福饼图被误读成「我的幸福一半是基因」，犯的就是这种错。不像在用意：Lewontin 是在警告不要用遗传率解释群体差异，饼图的作者则是想证明还有改变的余地。</li>
+<li><b>控制论 · 设定点与负反馈</b>：享乐适应像恒温器，偏离了就被拉回基线。Lucas 的数据显示有些人多年都回不去，更像一个设定点本身会被冲击挪动的系统，不是一台固定刻度的恒温器。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>G.I. Joe 谬误是 Santos 和 Tamar Gendler 起的名字：以为「知道就赢了一半」，其实知道几乎改变不了行为。</li>
+<li>就像看穿了 Shepard 桌子错觉，眼睛还是会看成一长一短，懂了幸福研究也不会自动变快乐，得靠练习和习惯。</li>
+<li>在 Gilbert 的实验里，被拒的人十分钟后比预测的好受得多；能把拒绝归咎于不公平时，几乎不难过。</li>
+<li>人们觉得「够」的收入会水涨船高：年薪三万想要五万，年薪十万想要二十五万。</li>
+<li>Kahneman 和 Deaton 2010 年发现，日常情绪在年收入约七万五千美元后不再上升，对人生的评价却继续上升。</li>
+<li>对抗性合作重新分析后，收入平台只出现在最不快乐的约五分之一人身上，门槛约十万美元；多数人的幸福随收入一路上升。</li>
+<li>结婚带来的快乐平均一两年后回落，但个体差异很大，有人多年都回不到原来的水平。</li>
+<li>成绩研究的作者认为，影响偏差有一部分是问法造成的：被问到「对这个成绩的感觉」时，学生的预测相当准。</li>
+<li>「50% 基因、10% 境遇、40% 行动」描述的是人与人之间的差异，40% 是剩下来的数，作者后来承认它很可能高估了。</li>
+<li>修完 The Science of Well-Being 的人，幸福感比修心理学导论的对照组更高，效应中等，但没有随机分组，也没长期跟踪。</li>
+</ol>
+<h2>出处</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.coursera.org/learn/the-science-of-well-being">The Science of Well-Being（Coursera）</a> · <a href="https://www.youtube.com/watch?v=s-00jpvglb8">Santos 官方频道课程视频</a></span><span class="d">本页所有引语和台上数字的来源：模块 1–2 的 8 段视频（约 75 分钟），依据其自动字幕；引语只取意思完整、无明显识别错误的句子。</span></li>
+<li><span class="t"><a href="https://pubmed.ncbi.nlm.nih.gov/9781405/">Gilbert, Pinel, Wilson 等，Immune Neglect（JPSP，1998）</a></span><span class="d">「好工作」一项的原始实验：91 名女生、25 美元的试用差事、十分钟后的测量和公平 / 不公平条件的数字。</span></li>
+<li><span class="t"><a href="https://escholarship.org/uc/item/1cq347f8">Levine, Lench, Kaplan &amp; Safer，Accuracy and Artifact（JPSP，2012）</a></span><span class="d">「好成绩」一项的原始论文：181 名尔湾本科生，以及「高估部分来自问法」这一主旨。</span></li>
+<li><span class="t"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2944762/">Kahneman &amp; Deaton（PNAS，2010）</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10013834/">Killingsworth, Kahneman &amp; Mellers（PNAS，2023）</a></span><span class="d">七万五千美元门槛的原文，以及 2023 年对抗性合作对它的改写。</span></li>
+<li><span class="t"><a href="https://escholarship.org/uc/item/6wb2g3fw">Sheldon &amp; Lyubomirsky，Revisiting the Sustainable Happiness Model and Pie Chart（2019/2021）</a> · <a href="https://doi.org/10.1007/s10902-019-00128-4">Brown &amp; Rohrer（2019/2020）</a></span><span class="d">饼图 40% 是「剩下的」、作者承认高估的原话；Brown 与 Rohrer 的批评要点据其摘要和二手报道转述。</span></li>
+<li><span class="t"><a href="https://doi.org/10.1371/journal.pone.0249193">Yaden, Claydon, Bathgate, Platt &amp; Santos，Teaching Well-Being at Scale（PLOS ONE，2021）</a></span><span class="d">这门课自己的效果检验：三批学员对照心理学导论，效应量和作者列出的局限。体重（<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4123950/">Jackson 等，2014</a>）与整形（<a href="https://pubmed.ncbi.nlm.nih.gov/21781375/">von Soest 等，2012</a>）两项的样本细节另见原文。</span></li>
+</ul>
+</div>
+<footer>演讲精读 · 一场演讲，一个想法的来龙去脉 · 写于 2026-10-29</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode-lecture',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode-lecture');}catch(e){}
+  set(saved==='pop'?'pop':'deep');
+})();
+</script>
+</body></html>
