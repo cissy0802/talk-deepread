@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sean Carroll · Distant time and the hint of a multiverse — why you remember the past and not the future</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="sean-carroll-arrow-of-time-talk46.html">中文 →</a></div>
+<header>
+<div class="kicker">TEDxCaltech · 2011</div>
+<h1>Why do you remember the past? Because the universe began absurdly tidy, and nobody knows why</h1>
+<p class="sub">Sean Carroll · Distant time and the hint of a multiverse</p>
+<div class="modebar"><button class="on" id="btn-pop">Short</button><button id="btn-deep">Full</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>January 2011, an auditorium at Caltech. A cosmologist has just finished a long stretch of thermodynamics when he suddenly starts correcting Carl Sagan. Sagan said that to make an apple pie, you must first invent the universe. The man on stage says: not quite.</p>
+<blockquote><span class="en">In Boltzmann's scenario, if you want to make an apple pie, you just wait for the random motion of atoms to make you an apple pie.</span></blockquote>
+<p>Behind the joke sits an unnerving inference. The speaker is Sean Carroll, and his sixteen minutes are aimed at a question that sounds like something a child would ask: why do we remember the past and not the future?</p>
+<p>His answer comes in two layers. The first belongs to the nineteenth-century physicist Ludwig Boltzmann. Entropy, loosely the amount of disorder, is precisely the number of ways you can rearrange a system's insides without anyone noticing from outside. There are vastly more messy arrangements than tidy ones, so things drift from tidy to messy: that is the second law of thermodynamics. Every difference between past and future, Carroll says, comes from this. You remember yesterday, you are born before you die, a broken egg never reassembles, all because entropy is going up.</p>
+<p>The second layer is what he really came to say. Boltzmann explained why entropy increases. He never explained why it was ever low to begin with. Near the Big Bang, some fourteen billion years ago, the universe was extraordinarily smooth, and under that era's crushing gravity any lump should have collapsed into a black hole. It didn't. Time has a direction because the universe started in an absurdly tidy state, and nobody knows who set it up that way.</p>
+<p>Boltzmann had a guess: perhaps the universe is an eternal, churning gas in equilibrium that occasionally fluctuates into a tidy patch, and we live in one because nowhere else is livable. Carroll calls this the first multiverse plus the first anthropic principle, and then takes it apart. Small fluctuations are far likelier than big ones, so a lone brain with a full set of memories popping out of chaos is far easier than a whole galaxy. If the theory were right, you would most likely be such a brain. "The good news is that, therefore, this scenario does not work." Worse, the dark energy discovered in 1998 turns the far future back into Boltzmann's eternal gas, and the problem returns.</p>
+<p>Carroll admits he doesn't know the answer and offers his favorite guess instead. Nobody is surprised to find an unbroken egg in the fridge, because eggs come out of chickens. Perhaps our universe comes out of a "universal chicken," and the Big Bang is not the beginning at all. He predicts that in fifty years, all this will be accepted as truth.</p>
+<p>Fifteen years on, the picture is messier than he predicted. The question has held up: why the universe began with such low entropy is now taken seriously as a central puzzle in cosmology. His demolition of Boltzmann's fluctuation idea has held up too; "Boltzmann brains" have become a standard test for cosmological models. The chicken has not fared as well. In 2013 Alexander Vilenkin showed that Carroll's 2004 model still needs a special low-entropy boundary condition once you trace it through; in 2014 a paper by Carroll himself argued that empty space may not fluctuate at all, undercutting the chicken's egg-laying mechanism; and in 2025 the DESI survey hinted that dark energy may be changing, loosening the talk's very premise. The question stands. The answer is still unsettled.</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>Talk</b> Distant time and the hint of a multiverse · <b>Venue</b> TEDxCaltech (theme "Feynman's Vision: The Next 50 Years") · 2011-01-14 · <b>Length</b> about 16 minutes · <b>Transcript</b> <a href="https://www.ted.com/talks/sean_carroll_distant_time_and_the_hint_of_a_multiverse/transcript">official TED transcript</a></div>
+<h2>The moment</h2>
+<p>Near the end of the talk, Carroll assigns his audience some "homework" and then turns on Carl Sagan. Sagan's famous line is that to make an apple pie, you must first invent the universe. Not in Boltzmann's world, says Carroll: there you just wait for atoms to bump into each other until they happen to form an apple pie. That happens far more often than atoms randomly forming an orchard, a bag of sugar and an oven, which then go on to make a pie.</p>
+<p>The audience laughs. Then he turns the same logic on them:</p>
+<blockquote><span class="en">Even if you imagine that this room we are in now exists and is real and here we are, and we have, not only our memories, but our impression that outside there's something called Caltech and the United States and the Milky Way Galaxy, it's much easier for all those impressions to randomly fluctuate into your brain than for them actually to randomly fluctuate into Caltech, the United States and the galaxy.</span><cite>— Sean Carroll, TEDxCaltech, 2011</cite></blockquote>
+<p>This is the monster later named the "Boltzmann brain": on one perfectly reasonable-looking physics, the likeliest thing for you to be right now is an isolated brain that just popped into existence, stocked with false memories. Then he adds: "The good news is that, therefore, this scenario does not work."</p>
+<h2>The speaker, and the year</h2>
+<p>Sean Carroll was then a theoretical physicist at Caltech working on cosmology and gravity, and the author of a widely read physics blog. His delivery has a particular, half-serious swagger: he opens by announcing that "100 billion is the only number you need to know," and his closing "bold speculation" is that history will prove him absolutely right.</p>
+<p>On January 14, 2011, Caltech held its first TEDx event under the theme "Feynman's Vision: The Next 50 Years." The fifty years had a source: Feynman's talk "There's Plenty of Room at the Bottom" and the start of the Feynman Lectures on Physics both lay about half a century back. That explains why Carroll keeps quoting Feynman, and why he closes with "50 years from now."</p>
+<p>More important is what he was carrying. The year before, he had published a popular book on the arrow of time, <em>From Eternity to Here</em> (2010). In 2004, at the University of Chicago, he and Jennifer Chen had written a paper proposing the model he calls "my favorite scenario" at the end of the talk. So these sixteen minutes are a man who had bet seven years on this problem giving his theory its shortest possible pitch, on a question that, by his own account, many cosmologists hardly bothered with.</p>
+<h2>Glossary</h2>
+<div class="glossary"><ul>
+<li><b>Entropy</b>: how many internal arrangements of a system look identical from the outside. More arrangements means higher entropy and a more "disordered" look.</li>
+<li><b>Dark energy / cosmological constant</b>: energy carried by empty space itself; the amount per cubic centimeter stays fixed as the universe expands, driving the expansion to accelerate.</li>
+<li><b>de Sitter space</b>: what a universe looks like once everything but dark energy has thinned away. It has a horizon, and quantum effects give it a tiny temperature.</li>
+<li><b>Boltzmann brain</b>: an observer that fluctuates randomly out of thermal chaos, with memories that seem real but no real past behind them.</li>
+</ul></div>
+<h2>The talk, in full</h2>
+<p>Carroll opens with a Hubble deep-field image: every little blob is a galaxy roughly the size of the Milky Way, and the observable universe holds about a hundred billion of them. First joke, right away: the age of the universe is "a hundred billion in dog years."</p>
+<p>The first clue: the universe is expanding, so in the past it was denser and hotter. What defies intuition is that the early universe was also <strong>extremely smooth</strong>. The air in the room is smooth too, but gravity near the Big Bang was far stronger; a hundred billion galaxies squeezed into a region "about this big," and any spot with a few extra atoms would have collapsed into a black hole. Where gravity rules, smoothness is the least natural state of all. "It's a clue that the early universe is not chosen randomly."</p>
+<p>Step two brings in Boltzmann. His formula, now engraved on his tombstone, says entropy is the number of ways you can rearrange a system's constituents without anyone noticing from outside. Entropy rises simply because there are many more ways to be high entropy than low. From there comes the biggest sentence of the talk:</p>
+<blockquote><span class="en">Every difference that there is between the past and the future is because entropy is increasing -- the fact that you can remember the past, but not the future.</span><cite>— Sean Carroll, TEDxCaltech, 2011</cite></blockquote>
+<p>The turn follows at once: "What he didn't explain was why the entropy was ever low in the first place." The early universe's low entropy is its smoothness, and explaining it, Carroll says, is exactly the cosmologist's job, yet few treat it as a priority. He calls in Feynman, who stressed the puzzle in his popular lectures, his undergraduate lectures and his graduate lectures on gravitation alike, and reads him aloud:</p>
+<blockquote><span class="en">For some reason, the universe, at one time, had a very low entropy for its energy content, and since then the entropy has increased.</span><cite>— Feynman, as quoted by Carroll in the talk</cite></blockquote>
+<p>Step three: the problem gets worse. In 1998 astronomers found that the expansion is accelerating, and the best explanation is dark energy: every cubic centimeter of empty space carries energy that does not dilute as space grows. Three consequences follow. The universe will expand forever. Because of the acceleration, the space we can see is finite, bounded by a horizon. And empty space has a temperature: a calculation by Hawking and Gary Gibbons shows that a universe full of dark energy radiates, much as a black hole does. So "the universe is like a box of gas that lasts forever."</p>
+<p>That leads back to Boltzmann. The second law is only a statement of probability: the air in the room bunching into one corner is wildly unlikely, but lock the doors and keep us here "literally forever" and it will happen. Boltzmann knew nothing of the Big Bang, so he pictured the universe as a gas in equilibrium that occasionally fluctuates into low-entropy patches; since life depends on the arrow of time, we can only turn up inside such a patch. Here, says Carroll, Boltzmann invented two "very modern-sounding ideas": the multiverse and the anthropic principle.</p>
+<p>Then comes the apple pie. The scenario predicts that the fluctuation that made us should be the minimal kind: if all you need is this room, there should be no hundred billion other galaxies. Feynman saw this too, and Carroll reads him again: if the world were a fluctuation, every part we haven't looked at yet should be a mess, and "we therefore conclude the universe is not a fluctuation."</p>
+<p>So what is the right answer? "And I would love to tell you the answer, but I'm running out of time." The room laughs.</p>
+<p>He spends the remaining minutes pushing the situation to its limit. Stars burn out and fall into black holes; the black holes evaporate; what remains is empty space with a temperature, which cycles through every possible combination over 10 to the 10 to the 120 years. So why were we born in the first 14 billion years, in "the warm, comfortable afterglow of the Big Bang," rather than as a random fluctuation out of the nothingness?</p>
+<p>He offers two ways out. Either it is a brute fact you should learn to accept and stop asking about. Or, his favorite, the Big Bang is not the beginning. An unbroken egg in your fridge is a low-entropy configuration, yet nobody is surprised, because an egg is not a closed system; it comes out of a chicken.</p>
+<blockquote><span class="en">Maybe the universe comes out of a universal chicken.</span><cite>— Sean Carroll, TEDxCaltech, 2011</cite></blockquote>
+<p>If some physical process naturally produces low-entropy universes like ours, it would happen more than once, and we would be part of a much bigger multiverse. Asked by the organizers to end with a bold speculation, he says that in fifty years all his current wild ideas will be accepted as truths, and that we will have a theory of the Big Bang we can compare to observations. "This is a prediction. I might be wrong."</p>
+<h2>Beneath the iceberg</h2>
+<p>The "universal chicken" gets one sentence on stage. Behind it is the 2004 paper by Carroll and Chen, "Spontaneous Inflation and the Origin of the Arrow of Time." Its numbers are far sharper than the talk's "very, very smooth." The entropy of ordinary matter in our observable universe, mostly photons and neutrinos, is about 10<sup>88</sup>. The supermassive black holes at galaxy centers add up to about 10<sup>99</sup>; a single million-solar-mass black hole holds more entropy than all the ordinary matter in the visible universe. Pack all the mass of the observable universe into one black hole and you would reach about 10<sup>121</sup>. Today's actual entropy falls short of that maximum by a factor of 10<sup>22</sup>, and the early universe was lower still. Here the paper leans on Roger Penrose's point that entropy could have been far larger: what keeps entropy low is gravity, not temperature, and smoothness is itself an extreme kind of order.</p>
+<p>The paper's mechanism has three steps, which the talk compresses into a chicken. First, almost any starting state with a small positive vacuum energy empties out into nearly blank de Sitter space. Second, if a suitable "inflaton" field exists, quantum fluctuations in that de Sitter space will sooner or later ignite a small inflating patch, and inflation lets the total entropy of the universe grow without bound, never reaching equilibrium. Third, along the way inflation spawns "pocket universes" like ours. The key is the missing ceiling: if things can always get messier, no state counts as maximally messy, and a low-entropy start no longer needs special explanation.</p>
+<p>One consequence the talk leaves out: the model requires time to be <strong>statistically symmetric</strong> on ultra-large scales. Inflation happens in both directions, there is a surface of minimum entropy in the middle, and on its far side the arrow of time runs backwards. Carroll wants this symmetry because he accepts the philosopher Huw Price's "double-standard principle": whatever counts as natural for an initial condition should count as equally natural for a final one. Specifying a special state only at the beginning is, to him, cheating.</p>
+<p>The paper is also candid about its soft spots. It concedes that where our initial conditions came from may not be an answerable scientific question at all, and that if some unknown principle demands specific initial conditions (Penrose's Weyl Curvature Hypothesis, for example), "there is no problem to be solved," a possibility it says cannot be ruled out. The "brute fact" option from the talk is taken seriously in the paper.</p>
+<p>The Boltzmann brain appears on stage without its name, but it was a hot fight in the field at the time. In 2002, Lisa Dyson, Matthew Kleban and Leonard Susskind argued in "Disturbing Implications of a Cosmological Constant" that a permanent positive cosmological constant leads to "very deep paradoxes." Carroll's question about why we aren't a fluctuation in empty space is the popular version of that argument.</p>
+<h2>What happened next</h2>
+<div class="fate"><p class="verdict">Unsettled · as of 2026-11</p><p>The question has held up, and so has the argument against Boltzmann's fluctuations. But Carroll's "favorite scenario" was weakened in 2013–2014 by others' work and by his own, and the premise that dark energy never changes was shaken by observations in 2025. Why the universe began with such low entropy still has no accepted answer.</p></div>
+<p>What held up first. In 2017 Carroll published "Why Boltzmann Brains Are Bad," sharpening "the good news is that it doesn't work" into a precise argument. The trouble is not that data rule out fluctuated observers; it is that theories predicting most observers are of that kind are "cognitively unstable": "they cannot simultaneously be true and justifiably believed." Believe such a theory and you should conclude your own memories and observations are fluctuations, which wipes out your reasons for believing the theory.</p>
+<p>Then the chicken. In 2013, the Tufts cosmologist Alexander Vilenkin published "Arrows of time and the beginning of the universe," a direct test of the Carroll–Chen model. The model sets "generic" initial conditions on an infinite spacelike surface and evolves them both into the past and the future. Vilenkin showed that under the null convergence condition (satisfied by all known classical matter), a universe with no singularities apart from black holes and inflation at both ends must have a surface that is <strong>compact</strong>, and the universe at the "bounce" between the two ends cannot be much bigger than the de Sitter horizon. The model therefore "does require special boundary conditions at the bounce." As the chicken lays its egg, low entropy slips back in through the side door.</p>
+<p>More striking is Carroll's own work. In 2014, he, Kimberly Boddy and Jason Pollack argued that under plausible assumptions, empty de Sitter space settles into a "quiescent vacuum" with no fluctuations unfolding in time; only if it is a closed system with a finite-dimensional state space does it cycle through every combination as the talk described. Consequences the paper lists: the Boltzmann brain problem is greatly eased; vacuum states do not "uptunnel" to higher-energy vacua; eternal inflation is "much less common than often supposed." The paper does not name the 2004 work, but as we read it, the Carroll–Chen model depends precisely on upward fluctuations out of cold de Sitter space igniting inflation. In chasing away Boltzmann brains, Carroll also pulled a brick out from under his own chicken.</p>
+<p>Finally, the foundation. Every step of the talk rests on dark energy never fading. In March 2025 the Dark Energy Spectroscopic Instrument (DESI) reported three years of data from more than 14 million galaxies and quasars. The standard cosmological-constant model still describes the results, but a dark energy that evolves over time fits better, preferred at 3.1σ when DESI is combined with the cosmic microwave background and at 2.8 to 4.2σ once supernovae are added, depending on the supernova sample, still short of the 5σ discovery threshold. If dark energy really is changing, the "box of gas that lasts forever" has to be redrawn.</p>
+<p>As for the prediction: fifteen years in, fifty is a long way off. The multiverse is still something serious physicists argue about, nowhere near accepted truth, and no Big Bang theory testable against observations has arrived. The line that has aged best is the talk's most modest one: "I might be wrong."</p>
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Western philosophy · Descartes' demon</b>: Descartes imagined a demon feeding you false perceptions; the Boltzmann brain is the same skeptical scenario grown out of physics itself. The difference: the demon is a deliberate thought experiment, while the Boltzmann brain is a by-product of a theory, which physicists can turn around and use to throw the theory out.</li>
+<li><b>Evolutionary biology · Schrödinger's "negative entropy"</b>: In <em>What Is Life?</em>, Schrödinger said organisms keep themselves ordered by drawing "negative entropy" from their surroundings, pushing the entropy bill outside. That is the structure of Carroll's egg: local low entropy paid for by entropy growth in a bigger system, the egg by the hen, the hen by her feed, ultimately by the sun. The difference: life's source of low entropy can be pointed to, a low-entropy light source called the sun; what the universal chicken eats, and where it lives, nobody can yet say.</li>
+<li><b>Buddhism · beginninglessness</b>: Buddhism describes the round of rebirth as without beginning, refusing the world an absolute first moment; Carroll suggesting the Big Bang may not be the beginning is likewise a refusal of a special starting point. The difference: beginninglessness is a stance that declines to chase a first cause, while Carroll wants a calculable physical mechanism that can eventually be checked against observation.</li>
+</ul></div>
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Entropy counts how many internal arrangements of a system look the same from outside; high-entropy arrangements vastly outnumber low ones, so entropy tends to rise.</li>
+<li>Carroll argues every difference between past and future, including remembering the past but not the future, comes from rising entropy.</li>
+<li>Boltzmann explained why entropy increases but not why the universe's entropy was so low to begin with.</li>
+<li>In the gravity-dominated early universe, extreme smoothness is the least natural state, since any lump would collapse into a black hole.</li>
+<li>Dark energy gives empty space undiluting energy and a tiny temperature, making the far-future universe resemble a box of gas that lasts forever.</li>
+<li>If the universe were a random fluctuation, the likeliest product would be a lone brain with false memories, not a galaxy: the Boltzmann brain problem.</li>
+<li>The 2004 Carroll–Chen model has inflation ignite spontaneously from cold de Sitter space, letting entropy grow without limit and making time statistically symmetric on huge scales.</li>
+<li>The observable universe's actual entropy, about 10 to the 99, falls 10 to the 22 times short of what one black hole holding all its mass would have.</li>
+<li>Vilenkin showed in 2013 that the Carroll–Chen model, under reasonable conditions, still needs a special low-entropy boundary condition at its bounce.</li>
+<li>Schrödinger's "negative entropy" shares the universal chicken's structure: local low entropy paid for by a larger system, though nobody has found the chicken's food.</li>
+</ol>
+<h2>Sources</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.ted.com/talks/sean_carroll_distant_time_and_the_hint_of_a_multiverse/transcript">Sean Carroll, Distant time and the hint of a multiverse (official TED transcript)</a></span><span class="d">Source of every quotation and every in-talk number on this page.</span></li>
+<li><span class="t"><a href="https://arxiv.org/abs/hep-th/0410270">Carroll &amp; Chen (2004), Spontaneous Inflation and the Origin of the Arrow of Time</a></span><span class="d">The paper behind the "universal chicken"; source of the entropy estimates, the three-step mechanism and the time-symmetry consequence.</span></li>
+<li><span class="t"><a href="https://arxiv.org/abs/1305.3836">Vilenkin (2013), Arrows of time and the beginning of the universe</a></span><span class="d">Independent critique showing the Carroll–Chen model still needs special boundary conditions.</span></li>
+<li><span class="t"><a href="https://arxiv.org/abs/1405.0298">Boddy, Carroll &amp; Pollack (2014), De Sitter Space Without Dynamical Quantum Fluctuations</a></span><span class="d">Carroll's own revision of "empty space cycles through every combination," and its consequences for eternal inflation.</span></li>
+<li><span class="t"><a href="https://arxiv.org/abs/1702.00850">Carroll (2017), Why Boltzmann Brains Are Bad</a></span><span class="d">Source of the "cognitively unstable" argument, Carroll's systematic statement of the Boltzmann brain problem.</span></li>
+<li><span class="t"><a href="https://arxiv.org/abs/2503.14738">DESI Collaboration (2025), DESI DR2 Results II</a></span><span class="d">The 2.8 to 4.2σ evidence that dark energy may evolve, unsettling the talk's premise.</span></li>
+</ul>
+</div>
+<footer>Talk Deep Read · one talk, the whole life of one idea · written 2026-11-01</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
