@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>David Chalmers ·《How do you explain consciousness?》— 把大脑功能全解释完，还剩一个问题：为什么会有感觉</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="chalmers-hard-problem-talk47.en.html">English →</a></div>
+<header>
+<div class="kicker">TED2014 · Vancouver · 2014</div>
+<h1>把大脑的功能全部解释完，还剩一个问题：为什么这一切会有感觉</h1>
+<p class="sub">大卫·查默斯（David Chalmers）·《How do you explain consciousness?》</p>
+<div class="modebar"><button class="on" id="btn-pop">精华版</button><button id="btn-deep">完整版</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>演讲的第一句话就是对台下每个人说的：</p>
+<blockquote><span class="en">Right now you have a movie playing inside your head.</span><span class="zh">此刻，你的脑袋里正放着一部电影。</span></blockquote>
+<p>这部电影有立体画面、环绕声、气味、疼痛、情绪、记忆，还有一个不停说话的旁白。大卫·查默斯（David Chalmers）问：我们为什么不是一台只管接收输入、产出输出、里面却一片漆黑的机器人？</p>
+<p>2014 年 3 月，TED 三十周年大会。台上的哲学家二十年前给这个问题起了名字：意识的「困难问题」（hard problem）。神经科学很会找「哪块脑区对应哪种体验」，查默斯说这些都是「简单问题」：回答了大脑做什么，没回答为什么做的时候会有感受。</p>
+<blockquote><span class="en">But this is still a science of correlations. It's not a science of explanations.</span><span class="zh">但这仍然是一门关于相关性的科学，不是一门关于解释的科学。</span></blockquote>
+<p>交通堵塞、飓风都被解释成「涌现」，但那解释的是行为。把大脑的行为全部解释完，「为什么会有感觉」依然多出来。所以他认为，要让意识进入科学，可能需要一两个初听很疯狂的想法。</p>
+<p>坐在台下的丹尼尔·丹尼特（Daniel Dennett）的疯狂想法是：根本没有困难问题，内心电影是错觉。查默斯觉得这太接近否认事实，选了另外两个。第一个：意识是<strong>基本的</strong>，就像 19 世纪麦克斯韦发现电磁现象没法用质量和空间解释，只好把电荷加进物理学的基本清单。第二个：意识可能是<strong>普遍的</strong>，即泛心论（panpsychism），连光子都可能有一点最原始的感受。他马上补了个笑话：如果你因为不想吃有意识的东西而吃素，又成了泛心论者，「你会饿得很厉害」。</p>
+<p>他还拿出了一个当时正热的科学理论替第二个想法撑腰：朱利奥·托诺尼（Giulio Tononi）的整合信息理论（IIT），用一个叫 Φ 的数衡量系统整合了多少信息，Φ 越高意识越多。顺着这条思路，他推出电影《她》（Her）里的 AI 萨曼莎「很可能」有意识，又抛出一个问题：此刻这一礼堂的 TED 观众，会不会有一个集体意识？</p>
+<p>十二年后回头看，这场演讲的两半命运不同。<strong>问题这一半站住了</strong>：「困难问题」至今是意识研究绕不开的参照，连反对者也得先回应它。<strong>答案这一半仍悬着</strong>，还摔了几跤。他引来撑腰的 IIT，自己的提出者在 2015 年写明：数字计算机哪怕完美模拟人脑也「几乎什么都体验不到」，一群人也不会有集体意识，正好和他台上推的两个例子相反。2023 年，一百多位研究者联名称 IIT 为「伪科学」；2025 年《自然》上的大规模对抗实验又否定了 IIT 的一项关键预测。泛心论在哲学界仍是少数派。查默斯本人在 2023 年给当下的大语言模型有意识的可能性估了「不到 10%」，而且特意不以泛心论为前提。疯狂的想法还没找到，问题还在原处。</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>演讲</b> How do you explain consciousness? · <b>场合</b> TED2014，温哥华 · 2014-03-18 · <b>时长</b> 约 18 分钟 · <b>全文</b> <a href="https://www.ted.com/talks/david_chalmers_how_do_you_explain_consciousness/transcript">TED 官方逐字稿</a></div>
+
+<h2>那一刻</h2>
+<p>演讲进行到三分之二，查默斯刚说完「连光子都可能有一点意识」，紧接着给光子配了一段内心独白：</p>
+<blockquote><span class="en">It's not that a photon is wracked with angst because it's thinking, "Aww, I'm always buzzing around near the speed of light. I never get to slow down and smell the roses."</span><span class="zh">不是说光子满心焦虑，想着「唉，我老是以接近光速嗡嗡乱飞，从来没机会停下来闻闻玫瑰」。</span></blockquote>
+<p>没过几分钟，他又把这个想法推到了自己的盘子里：他以前觉得不该吃任何有意识的东西，所以应该吃素，可「如果你是个泛心论者，又坚持这条，你会饿得很厉害」。</p>
+<p>第一个笑话在降低防御：我说的不是光子会思考。第二个在交底：这个理论一旦当真，值得道德考虑的就不再是「有没有意识」，而是意识的程度和复杂度。一场很玄的演讲，在这里落到了吃什么上。</p>
+
+<h2>讲的人，和那一年</h2>
+<p>查默斯是澳大利亚出生的哲学家，演讲时在纽约大学任教。1995 年他还在亚利桑那大学的时候，发表了一篇《直面意识问题》（Facing Up to the Problem of Consciousness），把意识问题切成「简单」和「困难」两半。这篇文章引来 26 篇回应文章，「困难问题」从此成了这个领域的通用词。同一篇文章的结尾，这位年轻哲学家已经在问一个后来会跟着他二十年的问题：<strong>恒温器有没有体验？</strong>他的回答是「也许有，最简单的那种」。</p>
+<p>2014 年是 TED 三十周年。查默斯在台上说「大约 20 年前，一切开始改变」，指克里克（Francis Crick）、彭罗斯（Roger Penrose）号召科学进攻意识，那也正是他自己提出困难问题的时候，但他没提自己。台下坐着老对手丹尼特；几分钟前刚讲完的南希·坎维舍（Nancy Kanwisher），工作正是「相关性科学」的范本：找出看脸时亮起的脑区。</p>
+<p>那一年，意识科学正处在一个兴奋点上。托诺尼的整合信息理论有了克里斯托夫·科赫（Christof Koch）这样有分量的神经科学家站台。泛心论在分析哲学里也正有一波小热潮，同一时期查默斯在写一篇系统梳理泛心论最大难题的长文。他上台讲的不是一个已经被接受的结论，是一个正在升温的赌注。</p>
+
+<h2>术语表 · Glossary</h2>
+<div class="glossary"><ul>
+<li><b>简单问题 / 困难问题（easy / hard problems）</b>：前者解释大脑能做什么（辨别、注意、报告），后者解释为什么做这些时伴随着主观感受，即「身为它是什么感觉」的那一面，哲学上叫现象意识（phenomenal consciousness）。</li>
+<li><b>错觉论（illusionism）</b>：认为现象意识是大脑制造的错觉。</li>
+<li><b>泛心论（panpsychism）</b>：认为意识（或它最原始的形态）遍布自然，连基本粒子也有一点。</li>
+<li><b>整合信息理论（Integrated Information Theory, IIT）</b>：托诺尼提出的意识理论，用一个量 Φ 衡量系统作为整体整合了多少信息，主张 Φ 就是意识的量。</li>
+</ul></div>
+
+<h2>这场演讲，讲透</h2>
+<p>演讲从那部「内心电影」开场：3D 画面、环绕声、气味、触觉、疼痛、饥饿、情绪、记忆，还有不停的内心旁白。查默斯说，意识是我们知道得最直接的东西（至少我直接知道我自己的，你们有没有意识我不能确定），也是宇宙里最神秘的现象。问题被压成一句：为什么我们不是只处理输入、产出输出、却没有内心电影的机器人？</p>
+<p>接着是历史。20 世纪大部分时间，「科学是客观的、意识是主观的」这种看法占上风，没人提意识。大约 20 年前情况变了，意识研究开始爆发。查默斯先称赞，再指出它的根本局限：核心工作是在找<strong>相关性</strong>，哪些脑区对应看到脸、感到疼、觉得开心。</p>
+<blockquote><span class="en">But this is still a science of correlations. It's not a science of explanations.</span><span class="zh">但这仍然是一门关于相关性的科学，不是一门关于解释的科学。</span><cite>— David Chalmers, How do you explain consciousness?, 2014</cite></blockquote>
+<p>这些是「简单问题」（他马上补一句：意识研究里没有真正简单的问题）。它们没碰到核心的谜：大脑里所有那些物理处理，<strong>为什么会伴随着意识</strong>？然后他堵住最自然的退路：再给神经科学几年，意识会像交通堵塞、飓风、生命一样被解释成涌现。他的回答是，经典涌现解释的都是<strong>行为</strong>，同样的方法可以解释我们怎么走路、说话、下棋；但在意识这里，行为问题本身就属于简单问题。</p>
+<p>转折点是他亮出的立场：</p>
+<blockquote><span class="en">Now, I'm a scientific materialist at heart.</span><span class="zh">说到底，我骨子里是个科学唯物主义者。</span></blockquote>
+<p>他说自己撞了很久的墙，想找纯物理的意识理论，最后认定这条路因为系统性的原因走不通：还原解释给出的永远是结构、动力学和行为，而「为什么从里面看会有感觉」永远是一个<strong>进一步的问题</strong>。物理解释化学，化学解释生物，生物解释一部分心理学，意识塞不进这条链。它是个事实，又是个「反常」，而面对反常，可能需要一两个初看很疯狂的想法。</p>
+<p>第一个候选是丹尼特的：根本没有困难问题，内心电影是错觉，把大脑的客观功能解释完就够了。查默斯当着他的面说「祝他好运」，但这种看法对他来说「太接近于直接否认意识这个事实」。他往另一个方向走。</p>
+<p><strong>第一个疯狂想法：意识是基本的。</strong>物理学把空间、时间、质量当作不再往下解释的积木。19 世纪麦克斯韦发现电磁现象没法用已有的基本量解释，就把电荷加进了清单。</p>
+<blockquote><span class="en">If you can't explain consciousness in terms of the existing fundamentals — space, time, mass, charge — then as a matter of logic, you need to expand the list.</span><span class="zh">如果你没法用现有的基本量（空间、时间、质量、电荷）来解释意识，那么按逻辑，你就得扩充这张清单。</span></blockquote>
+<p>这不是放弃科学：接下来要找的是把意识和其他基本量连起来的定律，最好简单到能印在 T 恤正面。</p>
+<p><strong>第二个疯狂想法：意识可能是普遍的</strong>，即泛心论，光子笑话就出现在这里。他给了三条理由。一是顺着第一个想法：基本的东西往往也是普遍的。二是最深的一条：把意识连到<strong>信息</strong>上，复杂的信息处理对应复杂的意识，简单的对应简单的。他把托诺尼的 IIT 举为这条思路的数学版本：人脑 Φ 很高，老鼠中等，往下到蠕虫、粒子越来越小但不为零。他说不知道它对不对，但它「也许是目前意识科学里领先的理论」。三是物理学只用方程描述结构，不说结构底下是什么，他借霍金（Stephen Hawking）的话问：是什么给方程注入了火？</p>
+<blockquote><span class="en">On this view, it's consciousness that puts the fire into the equations.</span><span class="zh">在这种看法里，给方程注入火的正是意识。</span></blockquote>
+<p>然后是后果。吃素的笑话之后，他问《她》里的 AI 萨曼莎有没有意识：按信息加泛心论的看法，她有复杂的信息处理和整合，「所以答案很可能是肯定的」，这带出了开发和关掉 AI 的伦理问题。再往上推：加拿大有没有意识？此刻这一屋子观众，会不会有一部「集体 TED 电影」？</p>
+<p>收尾时他往回收了一步，这句常被转述漏掉：</p>
+<blockquote><span class="en">I'm actually more confident about the first crazy idea, that consciousness is fundamental, than about the second one, that it's universal.</span><span class="zh">其实我对第一个疯狂想法（意识是基本的）比对第二个（意识是普遍的）更有把握。</span></blockquote>
+<p>泛心论最大的难题是：小块的意识怎么加成我们熟悉的复杂意识？他说这也许是科学和哲学里最难的问题，别指望一夜解决，「It may just take the right crazy idea.」（也许只差一个对的疯狂想法。）</p>
+
+<h2>冰山下面</h2>
+<p><strong>「简单问题」的清单里，本来就有「信息整合」。</strong>1995 年的《直面意识问题》列的简单问题包括辨别刺激、报告心理状态、注意、控制行为，还有「认知系统对信息的整合」（the integration of information by a cognitive system）。所以在查默斯自己的框架里，Φ 解释不了意识；它最多是一条不再往下解释的「桥接定律」：整合信息伴随着意识。台上这两层没有分开，听起来像是 IIT 给困难问题提供了答案。</p>
+<p><strong>台上的两个想法，1995 年就都在了。</strong>那篇文章已主张把体验当作与质量、电荷、时空并列的基本特征，连麦克斯韦的类比都一模一样；他管这叫「自然主义二元论」（naturalistic dualism），并提出信息有物理和现象两面。泛心论的结论也已在场：</p>
+<blockquote><span class="en">perhaps a thermostat, a maximally simple information processing structure, might have maximally simple experience?</span><span class="zh">也许一个恒温器，一个最简单的信息处理结构，会有最简单的体验？</span><cite>— David Chalmers, Facing Up to the Problem of Consciousness, 1995</cite></blockquote>
+<p>同一篇文章还有一段很准的观察：许多意识论文开头大谈主观性的神秘，后半篇的理论解释的却只是报告能力之类的简单问题，读者像是「被调包了」（the victim of a bait-and-switch）。困难问题这个区分最锋利的用处，就是一把检查理论有没有偷换题目的刀。</p>
+<p><strong>台上的 IIT 被说宽了，宽在两个具体例子上。</strong>演讲一年后，托诺尼和科赫系统阐述 IIT 时写道：</p>
+<blockquote><span class="en">IIT implies that digital computers, even if their behaviour were to be functionally equivalent to ours, and even if they were to run faithful simulations of the human brain, would experience next to nothing.</span><span class="zh">IIT 意味着，数字计算机哪怕行为在功能上和我们等价，哪怕运行的是对人脑的忠实模拟，也几乎什么都体验不到。</span><cite>— Tononi &amp; Koch, Consciousness: here, there and everywhere?, 2015</cite></blockquote>
+<p>同一篇文章说，「一群人或者一堆沙子这样的聚合体」也没有意识，并特意划清界限：「不像泛心论，IIT 明确意味着并非一切都有意识。」台上最抓人的两个推论，萨曼莎和集体 TED 意识，都和他引来撑腰的理论相反。它们属于查默斯自己更宽的「信息即意识」直觉。</p>
+<p><strong>台上一笔带过的「加起来」，是泛心论的命门。</strong>同一时期的长论文《泛心论的组合问题》开头引了威廉·詹姆斯（William James）1890 年的思想实验：找十二个人，每人告诉他一个词，让他们各自使劲想，「任何地方都不会有对整句话的意识」。查默斯把问题拆成主体、质性、结构三块逐一检查，坦承已提出的方案里「没有一个获得了多少支持」，他自己也既没解决它，也没证明它无解。</p>
+
+
+<h2>后来的命运</h2>
+<div class="fate"><p class="verdict">仍悬而未决 · 截至 2026-11</p><p>问题这一半站住了：「困难问题」是意识研究的标准参照。答案这一半既没被推翻也没被证实：泛心论仍是少数派，台上借来撑腰的 IIT 先被一百多位学者称为伪科学，又在大规模实验里输掉一项关键预测。</p></div>
+<p><strong>2014 年 5 月，演讲两个月后</strong>，计算机科学家斯科特·阿伦森（Scott Aaronson）发表博文《为什么我不是整合信息理论者》。他构造了一类毫无智能的系统（按特定矩阵或扩展图连接的逻辑门），算出它们的 Φ 可以任意大，结论是 Φ 不可能抓住意识的本质。</p>
+<p><strong>2023 年 6 月，一个 25 年的赌局结了账。</strong>1998 年科赫赌 25 年内会找到意识清晰的神经标记，查默斯赌不会，赌注是一箱好酒。2023 年在纽约，科赫当众认输，送上一瓶马德拉酒。见分晓的是一项 IIT 对阵全局神经工作空间理论（GNWT）的「对抗合作」实验的初步结果：两边的预测都没被完全证实。</p>
+<p><strong>2023 年 9 月，「伪科学」信。</strong>媒体把那次结果报道成 IIT 是「领先的」「经过实证检验的」理论。一百多位研究者随即在 PsyArXiv 发表公开信，起草人包括斯蒂芬·弗莱明（Stephen Fleming）、刘克顽（Hakwan Lau）、约瑟夫·勒杜（Joseph LeDoux），丹尼特也签了名。信里说，实验检验的只是一些和 IIT 核心思想「在逻辑上并无真正关联」的预测；按 IIT，一个不做任何计算的静止逻辑门网格可以比人更有意识，类器官和早期胎儿可能有意识；鉴于它的泛心论承诺，在理论作为整体可被检验之前，「我们认为伪科学的标签确实适用」。查默斯站在反对这封信的一边：</p>
+<blockquote><span class="en">IIT has many problems, but “pseudoscience” is like dropping a nuclear bomb over a regional dispute.</span><span class="zh">IIT 有很多问题，但「伪科学」这个词就像为一场地区争端扔了一颗核弹。</span><cite>— David Chalmers，2023 年 9 月，X，转引自 Daily Nous</cite></blockquote>
+<p>他担心决策者听到的会是「意识研究是伪科学」。</p>
+<p><strong>2025 年 4 月 30 日，对抗实验的正式论文刊于《自然》。</strong>两个理论的支持者事先共同登记预测，研究者用功能磁共振、脑磁图和颅内脑电测了 256 名被试，结果对两边都不客气：</p>
+<blockquote><span class="en">For IIT, a lack of sustained synchronization within the posterior cortex contradicts the claim that network connectivity specifies consciousness.</span><span class="zh">对 IIT 而言，后部皮层内缺乏持续同步，与「网络连接决定意识」这一主张相矛盾。</span><cite>— Cogitate Consortium, Nature, 2025</cite></blockquote>
+<p>但这项实验检验的是 IIT 关于大脑哪里、怎样产生意识的预测，不是泛心论，也不是困难问题。它否定不了「意识是基本的」，也证明不了。困难问题的麻烦正在这里：脑成像只能测相关，而查默斯的论点就是相关不等于解释。</p>
+<p><strong>萨曼莎的问题，查默斯自己换了算法。</strong>2023 年发表的《大语言模型能有意识吗？》里，他明说不假设泛心论，因为那是一条「很容易的路」；改用主流理论逐项检查之后，他对当时的大语言模型有意识的信心是「somewhere under 10 percent」（不到 10%）。和台上那句「很可能是肯定的」相比，这是一次明显的回撤，只是他没把它表述成回撤。</p>
+<p><strong>今天的位置。</strong>2020 年 PhilPapers 哲学家调查里，51.9% 接受或倾向于心灵的物理主义，32.1% 倾向于非物理主义，后者里约四分之一是泛心论者；意识的几种立场中，比泛心论更冷门的只有取消论。泛心论成了被认真讨论的少数派，组合问题仍无公认解法；困难问题则成了领域的公共基础设施，反对它的人也得先论证它为什么是错觉。</p>
+
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>神经心理学 · 盲视（blindsight）</b>：劳伦斯·韦斯克兰茨（Lawrence Weiskrantz）研究的病人初级视皮层受损，坚称视野某处什么也看不见，被逼着猜时却能远高于随机地指出光点位置。这像是现实里一小块「有处理、没电影」的样本。不像的是，他们的表现比正常视觉差得多，要强迫选择才挤得出来：它说明体验和部分功能能分离，却证明不了全套功能可以完全脱离体验运转。</li>
+<li><b>佛学 · 唯识（Yogācāra）</b>：「万法唯识」也把识放在最底层。但唯识否认离开识的外境，是唯心论；查默斯让物理方程原封不动，只在清单上加一项，要的是能印在 T 恤上的定律，不是破除执着。</li>
+<li><b>量子力学 · 冯·诺依曼—维格纳诠释</b>：尤金·维格纳（Eugene Wigner）主张意识让波函数坍缩，同样把意识请进基础物理。不同在于维格纳让意识改动物理过程，查默斯要的恰是方程保持原样。</li>
+<li><b>分布式系统 · 没有全局视角的共识</b>：Raft 一类协议让一群节点对同一状态达成一致，却没有哪个节点「看见」整体，正是詹姆斯那十二个人的处境。不像的是，集群的全局状态完全由功能定义，整个落在简单问题那一侧。</li>
+</ul></div>
+
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>意识的「简单问题」是解释大脑能做什么，「困难问题」是解释为什么做这些时会伴随主观感受。</li>
+<li>神经科学找到的脑区与体验的对应，是相关性的科学，不是解释的科学。</li>
+<li>交通堵塞、飓风这类经典涌现解释的是行为，而在意识这里，行为问题本身就属于简单问题。</li>
+<li>丹尼尔·丹尼特的方案是否认有困难问题，查默斯认为这太接近否认意识这个事实。</li>
+<li>第一个疯狂想法仿照麦克斯韦加入电荷：解释不了的东西，就加进物理学的基本清单。</li>
+<li>泛心论认为连光子都有最原始的感受，查默斯对它的把握小于对「意识是基本的」的把握。</li>
+<li>查默斯 1995 年的框架把「信息整合」列为简单问题，所以 Φ 最多是一条桥接定律，不是对意识的解释。</li>
+<li>IIT 的提出者认为数字计算机和人群几乎没有意识，正好与查默斯台上的萨曼莎和集体意识推论相反。</li>
+<li>泛心论的命门是组合问题：詹姆斯的十二个人各想一个词，没有人意识到整句话。</li>
+<li>盲视病人说看不见却能指对光点，说明体验和部分功能可以分离，但还不足以证明全套功能能脱离体验。</li>
+</ol>
+
+<h2>出处</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.ted.com/talks/david_chalmers_how_do_you_explain_consciousness/transcript">How do you explain consciousness?（TED 官方逐字稿）</a></span><span class="d">演讲全文，本页所有演讲引语和演讲结构的来源。</span></li>
+<li><span class="t"><a href="https://consc.net/papers/facing.html">Chalmers, Facing Up to the Problem of Consciousness (1995)</a></span><span class="d">提出困难问题的原始论文，支撑「冰山下面」关于简单问题清单、麦克斯韦类比、恒温器和「调包」的部分。</span></li>
+<li><span class="t"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4387509/">Tononi &amp; Koch, Consciousness: here, there and everywhere? (2015)</a></span><span class="d">IIT 提出者对理论的系统阐述，支撑「数字计算机与人群几乎没有意识」与台上说法的对照。</span></li>
+<li><span class="t"><a href="https://osf.io/preprints/psyarxiv/zsr78">IIT-Concerned et al., The Integrated Information Theory of Consciousness as Pseudoscience (2023)</a></span><span class="d">一百多位研究者的公开信，支撑「后来的命运」里伪科学之争的内容；查默斯的回应见 <a href="https://dailynous.com/2023/09/22/the-study-of-consciousness-accusations-of-pseudoscience-and-bad-publicity/">Daily Nous 的报道</a>。</span></li>
+<li><span class="t"><a href="https://www.nature.com/articles/s41586-025-08888-1">Cogitate Consortium, Adversarial testing of GNWT and IIT, Nature (2025)</a></span><span class="d">256 名被试的预登记对抗实验，支撑 IIT 关键预测落空的判断。</span></li>
+<li><span class="t"><a href="https://arxiv.org/abs/2303.07103">Chalmers, Could a Large Language Model be Conscious? (2023)</a></span><span class="d">查默斯对 AI 意识的后来估计，支撑「不到 10%」和不以泛心论为前提的部分；组合问题部分另见他的 <a href="https://consc.net/papers/combination.pdf">The Combination Problem for Panpsychism</a>。</span></li>
+</ul>
+</div>
+<footer>演讲精读 · 一场演讲，一个想法的来龙去脉 · 写于 2026-11-02</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>

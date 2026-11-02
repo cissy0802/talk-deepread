@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>David Chalmers · "How do you explain consciousness?" — explain everything the brain does, and why it feels like something is still left over</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="chalmers-hard-problem-talk47.html">中文 →</a></div>
+<header>
+<div class="kicker">TED2014 · Vancouver · 2014</div>
+<h1>Explain everything the brain does, and one question is left over: why does any of it feel like something?</h1>
+<p class="sub">David Chalmers · "How do you explain consciousness?"</p>
+<div class="modebar"><button class="on" id="btn-pop">Short</button><button id="btn-deep">Full</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>The talk opens with a sentence aimed at every person in the room:</p>
+<blockquote><span class="en">Right now you have a movie playing inside your head.</span></blockquote>
+<p>It has 3D vision, surround sound, smell, pain, emotions, memories, and a voiceover that never stops. David Chalmers then asks the question the whole talk hangs on: why aren't we robots that take in input and produce output, with nothing playing inside at all?</p>
+<p>March 2014, TED's thirtieth-anniversary conference. Twenty years earlier the philosopher on stage had given this question a name: the "hard problem" of consciousness. Neuroscience has become very good at finding which brain area goes with which experience. Chalmers calls those the "easy problems": they tell us what the brain does, not why doing it comes with feeling.</p>
+<blockquote><span class="en">But this is still a science of correlations. It's not a science of explanations.</span></blockquote>
+<p>Traffic jams and hurricanes get explained as "emergence," but what emergence explains is behavior. Explain every behavior of the brain and "why does it feel like something?" is still left over. So, he argues, getting consciousness into science may take an idea or two that sound crazy at first.</p>
+<p>Daniel Dennett, sitting in the audience, has one crazy idea: there is no hard problem, and the inner movie is an illusion. Chalmers finds that too close to denying the data, and picks two others. First, consciousness is <strong>fundamental</strong>: in the 19th century Maxwell found that electromagnetism couldn't be explained by mass and space, so he added charge to physics' list of basics. Second, consciousness may be <strong>universal</strong>, the view called panpsychism, under which even a photon might have a flicker of raw feeling. He follows it with a joke: if you went vegetarian to avoid eating anything conscious and then became a panpsychist, "you're going to go very hungry."</p>
+<p>He brings in a scientific theory that was riding high at the time to back the second idea: Giulio Tononi's integrated information theory (IIT), which measures how much information a system integrates with a quantity called phi (Φ). The more phi, the more consciousness. Following that line he concludes that Samantha, the AI in the film <i>Her</i>, is "very likely" conscious, and wonders aloud whether this hall full of TED attendees might have a collective consciousness.</p>
+<p>Twelve years on, the two halves of the talk have had different fates. <strong>The question has held up</strong>: the hard problem is still the reference point for consciousness research, and even its opponents have to answer it first. <strong>The answer is still unsettled</strong>, and it has taken some falls. In 2015, the people behind the theory he leaned on wrote that a digital computer running a perfect simulation of a brain would "experience next to nothing," and that a group of people has no consciousness of its own. Those are the opposite of the two examples he gave on stage. In 2023 more than a hundred researchers signed a letter calling IIT "pseudoscience." In 2025 a large adversarial experiment published in <i>Nature</i> went against one of IIT's key predictions. Panpsychism is still a minority view among philosophers. And in 2023 Chalmers himself put the chance that current large language models are conscious at "under 10 percent," while deliberately not assuming panpsychism. The right crazy idea hasn't turned up yet. The question is still where he left it.</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>Talk</b> How do you explain consciousness? · <b>Venue</b> TED2014, Vancouver · 2014-03-18 · <b>Length</b> about 18 min · <b>Transcript</b> <a href="https://www.ted.com/talks/david_chalmers_how_do_you_explain_consciousness/transcript">TED official transcript</a></div>
+
+<h2>The moment</h2>
+<p>Two-thirds of the way in, Chalmers has just said that even a photon might have some degree of consciousness. He immediately gives the photon an inner monologue:</p>
+<blockquote><span class="en">It's not that a photon is wracked with angst because it's thinking, "Aww, I'm always buzzing around near the speed of light. I never get to slow down and smell the roses."</span></blockquote>
+<p>A few minutes later he turns the idea on his own dinner plate. He used to think he shouldn't eat anything conscious, so he should be a vegetarian. "Now, if you're a panpsychist and you take that view, you're going to go very hungry."</p>
+<p>The first joke lowers the audience's guard: I'm not saying photons think. The second gives the game away: take this theory seriously and what matters morally is no longer whether something is conscious but how much, and how complex that consciousness is. A very abstract talk comes down, for a moment, to what to have for dinner.</p>
+
+<h2>The speaker, and the year</h2>
+<p>Chalmers is an Australian-born philosopher who was teaching at New York University at the time of the talk. In 1995, while still at the University of Arizona, he published "Facing Up to the Problem of Consciousness," which split the problem of consciousness into an "easy" half and a "hard" half. The paper drew 26 published responses, and "the hard problem" became the field's shared vocabulary. Near the end of that same paper, the young philosopher was already asking a question that would follow him for twenty years: <strong>does a thermostat have experience?</strong> Maybe, he answered, of the simplest kind.</p>
+<p>2014 was TED's thirtieth year. When Chalmers says on stage that "about 20 years ago, all that began to change," he means Francis Crick and Roger Penrose calling on science to take on consciousness. That was also exactly when he coined the hard problem, though he doesn't mention himself. His old sparring partner Dennett was in the audience. The speaker just before him was the neuroscientist Nancy Kanwisher, whose work, such as finding the brain region that responds to faces, is a model of the "science of correlations" he is about to describe.</p>
+<p>Consciousness science was at a high point of excitement that year. Tononi's integrated information theory had a heavyweight neuroscientist, Christof Koch, in its corner. Panpsychism was having a small revival in analytic philosophy, and around the same time Chalmers was writing a long paper that set out panpsychism's biggest problem. He was not presenting an accepted result. He was presenting a bet that was gaining ground.</p>
+
+<h2>Glossary</h2>
+<div class="glossary"><ul>
+<li><b>Easy problems / hard problem</b>: the easy problems explain what the brain can do (discriminate, attend, report). The hard problem explains why doing those things comes with subjective feeling, the "what it is like" side, which philosophers call phenomenal consciousness.</li>
+<li><b>Illusionism</b>: the view that phenomenal consciousness is an illusion the brain produces.</li>
+<li><b>Panpsychism</b>: the view that consciousness, or its most primitive form, is found throughout nature, down to elementary particles.</li>
+<li><b>Integrated Information Theory (IIT)</b>: Giulio Tononi's theory of consciousness. It measures how much information a system integrates as a whole with a quantity, Φ, and holds that Φ is the amount of consciousness.</li>
+</ul></div>
+
+<h2>The talk, in full</h2>
+<p>The talk opens with the "inner movie": 3D vision, surround sound, smell, touch, pain, hunger, emotions, memories, and the voiceover of conscious thought. Consciousness, Chalmers says, is the thing we know most directly ("At least, I know about my consciousness directly. I can't be certain that you guys are conscious"), and it is also the most mysterious phenomenon in the universe. The question comes down to one line: why aren't we robots who process input and produce output without experiencing the inner movie at all?</p>
+<p>Then comes the history. For most of the 20th century the view that "science is objective, consciousness is subjective" won out, and nobody mentioned consciousness. About twenty years earlier that changed, and work on consciousness took off. Chalmers praises it and then names its basic limit. The centerpiece has been the search for <strong>correlations</strong>: which brain areas go with seeing faces, feeling pain, feeling happy.</p>
+<blockquote><span class="en">But this is still a science of correlations. It's not a science of explanations.</span><cite>— David Chalmers, How do you explain consciousness?, 2014</cite></blockquote>
+<p>Those are the "easy problems." He adds at once that there are no truly easy problems with consciousness. But they don't touch the core mystery: why should all that physical processing in a brain <strong>be accompanied by consciousness at all</strong>? Then he closes off the most natural way out, which is to give neuroscience a few years and let consciousness turn out to be emergent, like traffic jams, hurricanes and life. The classic cases of emergence, he answers, all explain <strong>behavior</strong>. The same methods could explain how we walk, talk and play chess. But when it comes to consciousness, questions about behavior are among the easy problems.</p>
+<p>The turn comes when he states where he stands:</p>
+<blockquote><span class="en">Now, I'm a scientific materialist at heart.</span></blockquote>
+<p>He says he spent a long time banging his head against the wall looking for a purely physical theory of consciousness, and concluded that it fails for systematic reasons. Reductive explanations only ever give you structure, dynamics and behavior. "why does all this feel like something from the inside?" is always a <strong>further question</strong>. Physics explains chemistry, chemistry explains biology, biology explains parts of psychology, and consciousness doesn't fit into that chain. It is a datum, and it is also an anomaly. Faced with an anomaly, you may need an idea or two that seem crazy at first.</p>
+<p>The first candidate is Dennett's: there is no hard problem, the inner movie is an illusion, and once you explain the brain's objective functions you are done. Chalmers says "more power to him" with Dennett in the room, but for him the view is "a bit too close to simply denying the datum of consciousness to be satisfactory." So he goes the other way.</p>
+<p><strong>Crazy idea one: consciousness is fundamental.</strong> Physics treats space, time and mass as building blocks that aren't explained by anything more basic. In the 19th century Maxwell found that electromagnetism couldn't be explained by the existing basics, so he added charge to the list.</p>
+<blockquote><span class="en">If you can't explain consciousness in terms of the existing fundamentals — space, time, mass, charge — then as a matter of logic, you need to expand the list.</span></blockquote>
+<p>This isn't giving up on science. The next job is to find the laws that connect consciousness to the other fundamentals, ideally laws simple enough to fit on the front of a T-shirt.</p>
+<p><strong>Crazy idea two: consciousness may be universal.</strong> This is panpsychism, and it is where the photon joke comes in. He gives three reasons for it. The first follows from idea one: fundamental things tend to be universal. The second is the deepest: link consciousness to <strong>information</strong>, so that complex information processing goes with complex consciousness and simple processing with simple consciousness. He presents Tononi's IIT as the mathematical version of this line of thought. A human brain has high phi, a mouse has a middling amount, and phi keeps falling through worms and particles without ever reaching zero. He says he doesn't know whether it is right, but it is "perhaps the leading theory right now in the science of consciousness." The third is that physics describes structure with equations and is silent on what that structure is made of. He borrows Stephen Hawking's question: what puts the fire into the equations?</p>
+<blockquote><span class="en">On this view, it's consciousness that puts the fire into the equations.</span></blockquote>
+<p>Then come the consequences. After the vegetarian joke he asks whether Samantha, the AI in <i>Her</i>, is conscious. On the informational, panpsychist view she has complicated information processing and integration, "so the answer is very likely yes," which raises ethical questions about building such systems and about switching them off. Then he goes bigger still: does Canada have a consciousness? Is this room of TED attendees having a "collective TED consciousness" right now?</p>
+<p>At the close he takes a step back, in a line that summaries of the talk usually leave out:</p>
+<blockquote><span class="en">I'm actually more confident about the first crazy idea, that consciousness is fundamental, than about the second one, that it's universal.</span></blockquote>
+<p>Panpsychism's biggest challenge is how those little bits of consciousness add up to the complex consciousness we know. This may be the hardest problem in science and philosophy, he says, and we can't expect to solve it overnight. "It may just take the right crazy idea."</p>
+
+<h2>Beneath the surface</h2>
+<p><strong>"Integration of information" was on the easy list all along.</strong> The 1995 paper lists the easy problems: discriminating stimuli, reporting mental states, attention, the control of behavior, and "the integration of information by a cognitive system." So in Chalmers's own framework, phi can't explain consciousness. At most it is a "bridging law," a basic principle that integrated information goes along with experience, with nothing further underneath. On stage those two layers aren't separated, and it can sound as though IIT has answered the hard problem.</p>
+<p><strong>Both ideas from the stage were already there in 1995.</strong> The paper argued for treating experience as a fundamental feature alongside mass, charge and space-time, and it used the same Maxwell analogy. He called the position "naturalistic dualism" and proposed that information has two aspects, one physical and one phenomenal. The panpsychist conclusion was already on the table too:</p>
+<blockquote><span class="en">perhaps a thermostat, a maximally simple information processing structure, might have maximally simple experience?</span><cite>— David Chalmers, Facing Up to the Problem of Consciousness, 1995</cite></blockquote>
+<p>The same paper makes a sharp observation. Many consciousness papers open with the mystery of subjectivity, but the theory in the second half turns out to explain only an easy problem, such as reportability, and the reader is "left feeling like the victim of a bait-and-switch." This is the hard-problem distinction at its most useful: a test for whether a theory has quietly swapped one question for another.</p>
+<p><strong>IIT was stretched on stage, and in two specific places.</strong> A year after the talk, Tononi and Koch set out the theory at length:</p>
+<blockquote><span class="en">IIT implies that digital computers, even if their behaviour were to be functionally equivalent to ours, and even if they were to run faithful simulations of the human brain, would experience next to nothing.</span><cite>— Tononi &amp; Koch, Consciousness: here, there and everywhere?, 2015</cite></blockquote>
+<p>The same paper says that "aggregates such as groups of individuals or heaps of sand" are not conscious either, and it draws an explicit line: "Unlike panpsychism, however, IIT clearly implies that not everything is conscious." Both of the talk's most striking conclusions, Samantha and the collective TED mind, run against the theory he called on to support them. They come from Chalmers's own broader intuition that information is consciousness.</p>
+<p><strong>The "adding up" he mentions in passing is panpsychism's weak point.</strong> His long paper from the same period, "The Combination Problem for Panpsychism," opens with William James's thought experiment from 1890. Take twelve men, tell each of them one word of a sentence, and let each think hard about his word: "nowhere will there be a consciousness of the whole sentence." Chalmers breaks the problem into three parts, the subject, the qualities and the structure, and works through each one. He admits that "no proposed solution has yet gained much support," and that he himself has neither solved the problem nor shown that it can't be solved.</p>
+
+<h2>What happened next</h2>
+<div class="fate"><p class="verdict">STILL UNSETTLED · AS OF 2026-11</p><p>The question has held up: the hard problem is the standard reference point in consciousness research. The answer has been neither refuted nor confirmed. Panpsychism remains a minority view, and IIT, the theory brought in to support it, was labeled pseudoscience by more than a hundred researchers and then failed a key prediction in a large experiment.</p></div>
+<p><strong>May 2014, two months after the talk.</strong> The computer scientist Scott Aaronson published a blog post titled "Why I Am Not An Integrated Information Theorist." He built a family of systems with no intelligence at all, logic gates wired together according to particular matrices or expander graphs, and showed that their phi can be made arbitrarily large. His conclusion was that phi can't possibly capture what makes a system conscious.</p>
+<p><strong>June 2023: a 25-year bet is settled.</strong> In 1998 Koch bet that within 25 years researchers would find a clear neural signature of consciousness. Chalmers bet against him, and the stake was a case of fine wine. In New York in 2023, Koch conceded on stage and handed over a bottle of Madeira. What settled it was the preliminary result of an "adversarial collaboration" pitting IIT against global neuronal workspace theory (GNWT): neither theory's predictions were fully borne out.</p>
+<p><strong>September 2023: the "pseudoscience" letter.</strong> Press coverage of that result called IIT a "leading" and "empirically tested" theory. More than a hundred researchers then posted an open letter on PsyArXiv. Its drafters included Stephen Fleming, Hakwan Lau and Joseph LeDoux, and Dennett signed it. The letter argued that the experiments tested only predictions "not really logically related to the core ideas of IIT." It noted that under IIT an inactive grid of logic gates could be conscious, perhaps more so than a human, and that organoids and early fetuses are likely conscious. "Given its panpsychist commitments," it concluded, until the theory as a whole is testable, "we feel that the pseudoscience label should indeed apply." Chalmers sided against the letter:</p>
+<blockquote><span class="en">IIT has many problems, but “pseudoscience” is like dropping a nuclear bomb over a regional dispute.</span><cite>— David Chalmers, September 2023, on X, as quoted by Daily Nous</cite></blockquote>
+<p>His worry was that policymakers would hear "consciousness research is pseudoscience."</p>
+<p><strong>30 April 2025: the full adversarial paper appears in <i>Nature</i>.</strong> Supporters of both theories preregistered their predictions together, and the researchers tested 256 participants with fMRI, MEG and intracranial EEG. Neither side got off lightly:</p>
+<blockquote><span class="en">For IIT, a lack of sustained synchronization within the posterior cortex contradicts the claim that network connectivity specifies consciousness.</span><cite>— Cogitate Consortium, Nature, 2025</cite></blockquote>
+<p>But what the experiment tested was IIT's prediction about where and how the brain produces consciousness. It did not test panpsychism, and it did not test the hard problem. It can't refute "consciousness is fundamental," and it can't prove it either. That is exactly the trouble with the hard problem: brain imaging measures correlations, and Chalmers's whole point is that correlation isn't explanation.</p>
+<p><strong>On Samantha, Chalmers changed his method.</strong> In his 2023 paper "Could a Large Language Model be Conscious?" he says outright that he won't assume panpsychism, because that would be a "very easy road." Going through mainstream theories one requirement at a time, he ends with "confidence somewhere under 10 percent in current LLM consciousness." Compared with "very likely yes" on the TED stage, that is a clear step back, though he doesn't present it as one.</p>
+<p><strong>Where things stand.</strong> In the 2020 PhilPapers survey of philosophers, 51.9% accepted or leaned toward physicalism about the mind and 32.1% toward non-physicalism, about a quarter of whom were panpsychists. Among the views on consciousness, only eliminativism was less popular than panpsychism. Panpsychism has become a minority position that people take seriously, and the combination problem still has no accepted solution. The hard problem, meanwhile, has become shared infrastructure for the field: even its opponents have to argue first for why it is an illusion.</p>
+
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Neuropsychology · blindsight</b>: Lawrence Weiskrantz studied patients with damage to primary visual cortex. They insist they see nothing in part of their visual field, yet when forced to guess they point to a light there far better than chance. That looks like a small real-world case of processing without the movie. Unlike the hard problem's thought experiments, their performance is much worse than normal vision and has to be squeezed out by forced choice. It shows that experience and some functions can come apart. It doesn't show that the full set of functions can run with no experience at all.</li>
+<li><b>Buddhism · Yogācāra</b>: "consciousness-only" also puts consciousness at the bottom of everything. But Yogācāra denies an external world apart from consciousness, which makes it a form of idealism. Chalmers leaves the equations of physics untouched and adds one item to the list. He wants a law you could print on a T-shirt, not freedom from attachment.</li>
+<li><b>Quantum mechanics · von Neumann–Wigner interpretation</b>: Eugene Wigner argued that consciousness collapses the wave function, which also brings consciousness into basic physics. The difference is that Wigner's consciousness changes physical processes, while Chalmers wants the equations left exactly as they are.</li>
+<li><b>Distributed systems · consensus without a global view</b>: protocols like Raft get a cluster of nodes to agree on one state without any node "seeing" the whole system. That is the situation of James's twelve men. Unlike them, the cluster's global state is defined entirely by function, so it sits wholly on the easy-problem side.</li>
+</ul></div>
+
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>The "easy problems" of consciousness explain what the brain can do. The "hard problem" asks why doing it comes with subjective feeling.</li>
+<li>Neuroscience's maps from brain areas to experiences are a science of correlations, not a science of explanations.</li>
+<li>Classic emergence, like traffic jams or hurricanes, explains behavior, and for consciousness behavior is already an easy problem.</li>
+<li>Daniel Dennett's move is to deny that there is a hard problem. Chalmers finds that too close to denying the data of consciousness.</li>
+<li>The first crazy idea copies Maxwell adding charge: whatever physics can't explain, add to its list of fundamentals.</li>
+<li>Panpsychism says even photons have raw feeling, and Chalmers is less sure of it than of "consciousness is fundamental."</li>
+<li>Chalmers's 1995 framework already listed information integration as an easy problem, so phi can at most be a bridging law, not an explanation.</li>
+<li>IIT's own authors say digital computers and crowds have almost no consciousness, the opposite of the Samantha and collective-TED claims.</li>
+<li>Panpsychism's weak point is the combination problem: James's twelve men each think of one word, and no one is conscious of the sentence.</li>
+<li>Blindsight patients who see "nothing" yet point to a light show that experience can come apart from some functions, but not from all of them.</li>
+</ol>
+
+<h2>Sources</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.ted.com/talks/david_chalmers_how_do_you_explain_consciousness/transcript">How do you explain consciousness? (TED official transcript)</a></span><span class="d">Full text of the talk; the source of every quotation from the talk and of its structure.</span></li>
+<li><span class="t"><a href="https://consc.net/papers/facing.html">Chalmers, Facing Up to the Problem of Consciousness (1995)</a></span><span class="d">The original hard-problem paper; supports the easy-problem list, the Maxwell analogy, the thermostat and the "bait-and-switch."</span></li>
+<li><span class="t"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4387509/">Tononi &amp; Koch, Consciousness: here, there and everywhere? (2015)</a></span><span class="d">IIT's authors setting out the theory; supports the contrast between "computers and crowds experience next to nothing" and the claims made on stage.</span></li>
+<li><span class="t"><a href="https://osf.io/preprints/psyarxiv/zsr78">IIT-Concerned et al., The Integrated Information Theory of Consciousness as Pseudoscience (2023)</a></span><span class="d">The open letter from more than a hundred researchers; supports the pseudoscience dispute. Chalmers's reply is in <a href="https://dailynous.com/2023/09/22/the-study-of-consciousness-accusations-of-pseudoscience-and-bad-publicity/">Daily Nous's report</a>.</span></li>
+<li><span class="t"><a href="https://www.nature.com/articles/s41586-025-08888-1">Cogitate Consortium, Adversarial testing of GNWT and IIT, Nature (2025)</a></span><span class="d">The preregistered adversarial experiment with 256 participants; supports the failed key prediction for IIT.</span></li>
+<li><span class="t"><a href="https://arxiv.org/abs/2303.07103">Chalmers, Could a Large Language Model be Conscious? (2023)</a></span><span class="d">Chalmers's later estimate on AI consciousness, made without assuming panpsychism; the combination-problem material is from his <a href="https://consc.net/papers/combination.pdf">The Combination Problem for Panpsychism</a>.</span></li>
+</ul>
+</div>
+<footer>Talk Deep Read · one talk, the whole life of one idea · written 2026-11-02</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
