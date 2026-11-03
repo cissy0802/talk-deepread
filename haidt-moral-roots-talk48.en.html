@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jonathan Haidt · "The moral roots of liberals and conservatives" — left and right are not moral and amoral, just knobs set differently</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="haidt-moral-roots-talk48.html">中文 →</a></div>
+<header>
+<div class="kicker">TED2008 · Monterey · 2008</div>
+<h1>Liberals and conservatives aren't the moral and the amoral. They're the same mixing board with the knobs set differently</h1>
+<p class="sub">Jonathan Haidt · "The moral roots of liberals and conservatives"</p>
+<div class="modebar"><button class="on" id="btn-pop">Short</button><button id="btn-deep">Full</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>March 2008, Monterey, California. The social psychologist Jonathan Haidt asks the TED audience for a show of hands. Liberal or left of center: a sea of arms. Libertarian: "About two dozen." Right of center or conservative, and he counts them one by one:</p>
+<blockquote><span class="en">One, two, three, four, five -- about eight or 10.</span></blockquote>
+<p>This, he says, is a problem. When people share the same morals they become a team, and team psychology shuts down open-minded thinking. After losing the 2004 election, liberals consoled themselves by imagining the other half of America as blinded by religion or just stupid. Anyone who thinks that way, Haidt says, is trapped in a "moral Matrix."</p>
+<p>He offers the red pill: moral psychology. He and his colleague Craig Joseph had combed the anthropology and evolutionary psychology literature for moral concerns that show up across cultures and even species, and picked five best candidates, the "moral foundations": <strong>harm/care, fairness/reciprocity, in-group/loyalty, authority/respect, purity/sanctity</strong>. They are an innate first draft that culture then revises.</p>
+<p>Then the metaphor: the moral mind as a five-channel audio equalizer. He shows questionnaire data from about 23,000 Americans on YourMorals.org. Everyone cares about harm and fairness, liberals slightly more. But on the other three lines, liberals sit near the floor, and the scores rise as people get more conservative.</p>
+<blockquote><span class="en">We can say liberals have a two-channel or two-foundation morality. Conservatives have more of a five-foundation, or five-channel morality.</span></blockquote>
+<p>Why should those extra three count as morality rather than xenophobia, authoritarianism and puritanism? Because order decays. He cites a public goods experiment: anonymous players who see others free ride contribute less and less until cooperation nearly vanishes; let them pay to punish the slackers and cooperation shoots back up. From which he draws the conservative insight:</p>
+<blockquote><span class="en">The great conservative insight is that order is really hard to achieve. It's precious, and it's really easy to lose.</span></blockquote>
+<p>He closes with the Zen master Sengcan: "The struggle between 'for' and 'against' is the mind's worst disease." He isn't asking anyone to give up their side, only to step out of the Matrix for a moment, see that everyone thinks they're right, and cultivate moral humility.</p>
+<p>Eighteen years on, the talk has two fates. <strong>The broad pattern held.</strong> A meta-analysis of 89 samples published in 2021 confirmed the basic difference: liberals weight care and fairness more, conservatives weight loyalty, authority and purity more. <strong>The five knobs themselves did not hold steady.</strong> The same meta-analysis found that effects from Haidt's own volunteer website ran larger than in independent samples; a 27-country test could not get the five-factor structure to fit reliably; critics argued the five overlap so heavily they may be variants of a single template of harm. In 2023 Haidt's own team split "fairness" into "equality" and "proportionality," making six. And that moment with eight or ten conservative hands later went into a paper criticizing psychology's own lack of political diversity.</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>Talk</b> The moral roots of liberals and conservatives · <b>Venue</b> TED2008, Monterey, California · 2008-03 · <b>Length</b> about 18 min (about 3,550 words) · <b>Transcript</b> <a href="https://www.ted.com/talks/jonathan_haidt_the_moral_roots_of_liberals_and_conservatives/transcript">TED official transcript</a></div>
+
+<h2>The moment</h2>
+<p>A few minutes in, Haidt takes a census. He reminds the simulcast rooms to join in, then reads the options. Liberal: hands everywhere, and he just says "OK." Libertarian, meaning people who want government to do as little as possible: "About two dozen." Then conservatives, and he starts counting aloud:</p>
+<blockquote><span class="en">One, two, three, four, five -- about eight or 10.</span><cite>— Jonathan Haidt, TED2008</cite></blockquote>
+<p>"OK. This is a bit of a problem." A room that prides itself on openness has just been shown its own uniformity. For the next eighteen minutes he will try to convince it that the other half of America is not missing morality but running a few more channels of it.</p>
+<p>Three years later he ran the same census in a tougher room. The numbers were worse; we'll get there.</p>
+
+<h2>The speaker, and that year</h2>
+<p>Haidt was then a social psychologist at the University of Virginia, living in what he calls a liberal college town. On stage he wonders how the "first draft" of his son Max's moral mind will be revised there, compared with a kid born 60 miles south in Lynchburg. He was best known for his 2001 "social intuitionist model": moral judgment is made in a flash by intuition, and reasoning mostly arrives afterwards to justify it. Back in 1993 he had asked people in the US and Brazil about offensive stories where nobody is hurt, such as a family that cooks and eats its dog after it is killed by a car.</p>
+<p>March 2008 was primary season. The audience had lived through the 2004 loss, and he put up two post-election maps that liberals had passed around: one merging the blue states with Canada and labeling the rest "Jesusland," the other giving the red states an obscene name. The room laughed and applauded, and he told the laughers that they were demonstrating his point.</p>
+<p>The theory was young. He and Craig Joseph sketched Moral Foundations Theory in 2004, and he and Jesse Graham applied it to politics in 2007. The curves on stage came from a paper not published until May 2009. The TED audience was seeing an idea before peer reviewers had gone after it.</p>
+
+<h2>Glossary</h2>
+<div class="glossary"><ul>
+<li><b>Moral foundations</b>: Haidt's proposed set of innate intuition systems, each giving a quick sense of right and wrong about one kind of thing: harm, cheating, betrayal, subversion, degradation.</li>
+<li><b>Openness to experience</b>: one of the Big Five personality traits. High scorers crave novelty and variety; low scorers prefer the familiar, safe and dependable.</li>
+<li><b>Public goods game</b>: an economics experiment. Everyone can put money into a common pot, which is multiplied and split among all. The group does best if all contribute; each individual does best by contributing nothing.</li>
+</ul></div>
+
+<h2>The talk, in full</h2>
+<p>Haidt opens with a thought experiment. Two American friends in Florence stand before Michelangelo's David and both freeze. Adam is transfixed by the beauty of the human form; Bill is transfixed by embarrassment at the thing in the center. Which one voted for Bush? Everyone knows: Bill. Here, he says, the stereotype matches reality. Liberals are much higher than conservatives on openness to experience, a trait that predicts what people read, where they travel and what they eat:</p>
+<blockquote><span class="en">Once you understand this trait, you can understand why anybody would eat at Applebee's, but not anybody that you know.</span><cite>— Jonathan Haidt, TED2008</cite></blockquote>
+<p>He reads out TED's own mission statement and builds a syllogism: openness predicts who becomes liberal and who becomes a TEDster. The census confirms it.</p>
+<p>The first turn comes immediately. People who share morals become a team, and team psychology shuts down open thinking; when the liberal team loses, it consoles itself with "they're blinded by religion" or "they're stupid." <strong>That consolation is itself the symptom of being trapped in the Matrix.</strong> He borrows the film's red and blue pills; the red one is moral psychology.</p>
+<p>The first dose is where morality comes from. The worst idea in psychology, he says, is the blank slate, and he borrows the brain scientist Gary Marcus's definition of innateness: nature provides a first draft, which experience revises; "built-in" means organized in advance of experience, not unmalleable. The draft has five entries, each paired with a painting. <strong>Harm/care</strong>: mammalian bonding and compassion. <strong>Fairness/reciprocity</strong>: Norman Rockwell's "The Golden Rule." <strong>In-group/loyalty</strong>: only humans form huge groups that unite to fight other groups, and tribal psychology is so pleasurable that when we have no tribes we make some:</p>
+<blockquote><span class="en">Sports is to war as pornography is to sex.</span><cite>— Jonathan Haidt, TED2008</cite></blockquote>
+<p><strong>Authority/respect</strong>: human authority rests more on voluntary deference than on brutality. <strong>Purity/sanctity</strong>: any idea that you attain virtue by controlling what you do with your body and what you put into it. The right moralizes sex more; the left is doing a lot of it with food.</p>
+<p>Then the equalizer. In data from about 23,000 Americans, the harm and fairness lines slope down only slightly from left to right; the loyalty, authority and purity lines start near the floor for liberals and climb as people get more conservative. "We find this in every country we look at," he says, flipping through Canada, the UK, East Asia, South Asia and more, and within each country the fight is over the three, not over harm and fairness. Even a dog-breed survey shows it: liberals like the independent dog that treats its owner as an equal, conservatives like the loyal one that is cool to strangers,</p>
+<blockquote><span class="en">But to a liberal, it sounds like this dog is running for the Republican nomination.</span><cite>— Jonathan Haidt, TED2008</cite></blockquote>
+<p>The second turn carries the most weight: what makes the three extra foundations moral? First, Bosch's triptych "The Garden of Earthly Delights" as a story of social entropy: ordered creation, everyone doing whatever he wants ("Some of you might recognize this as the '60s"), then hell. Then Ernst Fehr and Simon Gächter's public goods game in Nature: anonymous players start by giving about half, see others giving less, refuse to be suckers, and cooperation sinks toward zero; on the seventh round they are allowed to pay to punish non-contributors, and cooperation shoots up. Appealing to good motives isn't enough; large groups need some punishment, even just shame or gossip.</p>
+<p>The real wonder of the world, he says, is not the Grand Canyon but that people cooperated in places like it, and that villages grew into Babylon and Rome. That took every tool in the moral toolbox, and liberals have thrown out three of them. Their motives are noble, since traditional order can crush those at the bottom, women, and misfits. But conservatives see the other side:</p>
+<blockquote><span class="en">The great conservative insight is that order is really hard to achieve. It's precious, and it's really easy to lose.</span><cite>— Jonathan Haidt, TED2008</cite></blockquote>
+<p>See the two sides as a balance between change and stability, and the way out of the Matrix opens. He ends in Asia: yin and yang are not enemies; Vishnu the preserver and Shiva the destroyer share one body; and the Zen master Sengcan's lines, which he calls the deepest insight ever attained into moral psychology: "never be 'for' or 'against.' The struggle between 'for' and 'against' is the mind's worst disease." Before you feel superior to George Bush, he adds, ask whether you accept that. His conclusion:</p>
+<blockquote><span class="en">our righteous minds were designed by evolution to unite us into teams, to divide us against other teams and then to blind us to the truth.</span><cite>— Jonathan Haidt, TED2008</cite></blockquote>
+<p>He insists he is not telling anyone to stop striving. To change other people, charging in with "You're wrong, and I'm right" fails, because everybody thinks they are right. Stepping out of the Matrix, even for a moment, is the essential move toward moral humility.</p>
+
+<h2>Below the waterline</h2>
+<p><strong>Whose curves.</strong> All the data on stage came from YourMorals.org, a site people seek out and where they get their own scores back. The 2009 paper (Graham, Haidt and Nosek) actually had four studies with richer methods: abstract ratings of moral relevance, judgments of statements and scenarios, "how much would you have to be paid" to do a sacrilegious act, and counts of moral words in sermons by liberal and conservative pastors. Its wording is more restrained too: liberals endorse harm and fairness <strong>more than the other three</strong>, while conservatives endorse all five <strong>more equally</strong>. "Two channels" is a relative tilt, not three knobs at zero.</p>
+<p><strong>Who "every country" was.</strong> Later testers pointed out the sample of the key validation study for the questionnaire (Graham et al., 2011): 80% from the United States, 87% white, 63% male, all English-speaking, mostly college-educated or beyond. The country slides were not representative national samples.</p>
+<p><strong>How the experiment worked.</strong> Fehr and Gächter's 2002 paper had 240 students in groups of four, each given 20 money units a round. Every unit put into the group project paid 0.4 to each of the four members, so the pot was multiplied by 1.6, not "doubled" as on stage. Groups were reshuffled every round so no two people met twice. Each point of punishment cost the punisher 1 unit and the punished 3. Each condition ran six rounds, so in some sessions punishment really did arrive in round seven; Haidt got that right. In the last punishment round, 38.9% of subjects contributed everything; in the last no-punishment round, 58.9% contributed nothing.</p>
+<p>There is a gap in the argument here. What the paper shows is that punishing free riders sustains cooperation. Its title is "Altruistic punishment," and its engine is anger at cheaters, which sits closest to <strong>fairness/reciprocity</strong>, the foundation liberals endorse too. On stage, an experiment about fairness was called as a witness for the other three.</p>
+<p><strong>How hard the modules were, and where they sit.</strong> On stage it was a cautious "first draft"; the theoretical literature was once bolder. A 2013 review by Graham and colleagues, as quoted by critics, placed the theory "near the maximalist side" of the modularity spectrum, and Haidt's 2012 book compared the foundations to taste buds on the tongue. In his larger project, the foundations are the second half of the 2001 social intuitionist model: if moral judgment is driven by intuition, how many kinds of intuition are there? In 2012 he combined the two in <em>The Righteous Mind</em>.</p>
+
+<h2>What happened next</h2>
+<div class="fate"><p class="verdict">PARTLY HOLDS · AS OF 2026-11</p><p>The basic difference, liberals weighting care and fairness more and conservatives weighting loyalty, authority and purity more, is confirmed by meta-analysis, but it is smaller than on stage and far less uniform than "every country we look at." The structure of five distinct innate foundations did not hold steady; Haidt's own team has since revised it to six.</p></div>
+<p><strong>2011: the second census.</strong> A 2015 paper by Haidt and colleagues in Behavioral and Brain Sciences records a show of hands at the 2011 meeting of the Society for Personality and Social Psychology: among roughly 1,000 attendees, 3 conservative hands and roughly 80% liberal. The authors grant that 267:1 is surely an overestimate, since conservatives may have been reluctant to raise their hands, "it illustrates the problem we are raising." The TED joke became evidence in a paper criticizing psychology's own lack of political diversity.</p>
+<p><strong>2012: a sixth knob.</strong> The "about two dozen" libertarians had their say too. A study of 11,994 self-identified libertarians by Haidt's group admits that liberty was not measured originally and that items were added after hearing objections from libertarians that their core value was not represented. <em>The Righteous Mind</em>, published the same year, added liberty/oppression to the candidate foundations.</p>
+<p><strong>2018: are the five really one?</strong> Chelsea Schein and Kurt Gray of the University of North Carolina proposed the Theory of Dyadic Morality: all moral judgment runs on a single template of an intentional agent harming a vulnerable patient. They note that in the original questionnaire data authority and loyalty correlate at .88 and purity and authority at .80, higher than the subscales' own reliabilities, which leaves little room for distinct "taste buds," and that the retreat to a "first draft" makes the theory hard to falsify. I did not read a formal reply from Haidt's side, so none is summarized here.</p>
+<p><strong>2019–2020: weaker outside English, weaker with other methods.</strong> Kathryn Iurino and Gerard Saucier of the University of Oregon tested the short questionnaire in 27 countries and found it "difficult" to get a five-factor model to converge without problems; they suggest it may suit mainly "highly motivated, English-speaking participants." Jeremy Frimer replicated the 2009 sermon study; according to the abstract, the average replication success rate was 30%, effect sizes were about 38 times smaller, and the two sides did not differ in harm or fairness words.</p>
+<p><strong>2021: the meta-analytic ledger.</strong> Kivikangas and colleagues, in Psychological Bulletin, pooled 89 samples with 33,804 independent participants plus 192,870 from YourMorals.org. The basic differences are <strong>supported</strong>, but the website's effect sizes look inflated, and the associations vary by country and between white and Black respondents.</p>
+<p><strong>2023: the team revises itself.</strong> Mohammad Atari, Haidt, Graham and colleagues used data from 25 populations to build the MFQ-2, splitting fairness into equality and proportionality for six foundations in all; liberals care more about equality, conservatives about proportionality. The offhand line on stage, "we debate over what's fair," became a formal structural revision fifteen years later.</p>
+<p>Where it stands: as a <strong>description</strong>, the idea that left and right weight moral concerns differently has held. As a <strong>theory</strong> of five distinct innate modules, it has been weakened. And the talk's most forceful move, urging people not to see opponents as stupid or evil, was never a claim a replication could test.</p>
+
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Decision science · exploration vs. exploitation</b>: In a multi-armed bandit an agent splits its effort between trying new options and exploiting known ones, and the faster the world changes, the more it should explore. "Change versus stability" is the same trade-off, with open people as explorers and order-keepers as exploiters. Unlike the bandit, where one agent tunes its own ratio, in a society the ratio is spread across different people, and nobody holds the master knob.</li>
+<li><b>Commons governance · Ostrom's graduated sanctions</b>: Elinor Ostrom found that long-lived commons almost always have monitoring and "graduated sanctions," the same structure as punishment reviving cooperation in Fehr's lab. The difference: Ostrom's communities were neighbors and penalties started small, while Fehr's players were anonymous one-time strangers. (<a href="ostrom-polycentric-governance-talk26.en.html">our Ostrom issue</a>)</li>
+<li><b>Evolutionary psychology · the behavioral immune system</b>: Mark Schaller proposed that disgust is a pathogen-avoidance system. The purity foundation looks like that system borrowed for morality, with dirty things becoming "impure" acts. Unlike real disgust, moral impurity often has nothing to do with germs, as in desecrating a flag.</li>
+<li><b>Complex systems · the diversity prediction theorem</b>: Scott Page showed that a crowd's error equals the average individual error minus the diversity of the predictions, so more diverse views make the crowd more accurate. It is a mathematical version of "eight or ten conservatives is a problem." Unlike the theorem, moral disagreements are not necessarily errors scattered around one true value.</li>
+</ul></div>
+
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Openness to experience, a craving for novelty and variety, predicts who is more likely to become a political liberal.</li>
+<li>People who share the same morals form a team, and team psychology shuts down open thinking, which Haidt calls the "moral Matrix."</li>
+<li>Moral Foundations Theory holds that the moral mind has an innate first draft: harm/care, fairness/reciprocity, in-group/loyalty, authority/respect, purity/sanctity.</li>
+<li>YourMorals.org data show liberals relatively favor harm and fairness, while conservatives endorse all five foundations more evenly.</li>
+<li>In Fehr and Gächter's public goods game, anonymous cooperation slides toward zero and rebounds once people may pay to punish free riders.</li>
+<li>That punishment experiment shows the power of fairness/reciprocity; it does not directly show that loyalty, authority and purity are needed to keep order.</li>
+<li>The conservative insight, in Haidt's telling, is that order is hard to achieve, precious and easy to lose, so left and right balance change against stability.</li>
+<li>A meta-analysis confirmed the basic left–right difference in moral weighting, but self-selected website samples inflate it and it varies across cultures and groups.</li>
+<li>The foundations correlate heavily with one another and the questionnaire's structure was unstable across 27 countries, so "five distinct modules" has not held.</li>
+<li>The diversity prediction theorem says crowd error equals average individual error minus diversity, a mathematical version of "a room of one opinion is a problem."</li>
+</ol>
+
+<h2>Sources</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.ted.com/talks/jonathan_haidt_the_moral_roots_of_liberals_and_conservatives/transcript">The moral roots of liberals and conservatives (TED official transcript)</a></span><span class="d">The full talk; source of every quotation, figure from the stage and the order of the argument.</span></li>
+<li><span class="t"><a href="https://pubmed.ncbi.nlm.nih.gov/19379034/">Graham, Haidt &amp; Nosek, Liberals and conservatives rely on different sets of moral foundations (2009)</a></span><span class="d">The published paper behind the stage data; supports the "four studies" and "relative tilt" wording.</span></li>
+<li><span class="t"><a href="https://econwpa.ub.uni-muenchen.de/econ-wp/mic/papers/0305/0305006.pdf">Fehr &amp; Gächter, Altruistic punishment in humans (Nature, 2002)</a></span><span class="d">The original public goods experiment; supports the 240 subjects, the 1.6 multiplier, six rounds and the percentages.</span></li>
+<li><span class="t"><a href="https://researchportal.tuni.fi/en/publications/moral-foundations-and-political-orientation-systematic-review-and/">Kivikangas et al., Moral foundations and political orientation: Systematic review and meta-analysis (2021)</a></span><span class="d">Abstract of the 89-sample meta-analysis; supports "basic differences supported, YourMorals effects inflated, varies by culture."</span></li>
+<li><span class="t"><a href="https://kurtgray-lab.squarespace.com/s/the-theory-of-dyadic-morality.pdf">Schein &amp; Gray, The Theory of Dyadic Morality (2018)</a> · <a href="https://darkwing.uoregon.edu/~gsaucier/SaucierIurino2020MoralFoundationsCrossCulturalMeasurementNonInvariance.pdf">Iurino &amp; Saucier, Testing Measurement Invariance of the MFQ Across 27 Countries (2020)</a></span><span class="d">The two main critiques; support the inter-foundation correlations, the falsifiability charge, the 27-country non-convergence and the validation sample's makeup.</span></li>
+<li><span class="t"><a href="https://par.nsf.gov/servlets/purl/10531651">Atari, Haidt, Graham et al., Morality Beyond the WEIRD (2023)</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3424229/">Iyer et al., Understanding Libertarian Morality (2012)</a> · <a href="https://gwern.net/docs/www/scottlilienfeld.com/7265d9230746261e33658077d48ea6e3bdec38bf.pdf">Duarte et al., Political diversity will improve social psychological science (2015)</a></span><span class="d">Haidt's team's own follow-ups: the six-foundation MFQ-2, the origin of the liberty foundation, the 2011 SPSP census. Frimer's sermon replication was read only as its <a href="https://bibbase.org/network/publication/frimer-doliberalsandconservativesusedifferentmorallanguagestworeplicationsandsixextensionsofgrahamhaidtandnoseks2009moraltextanalysis-2019">abstract</a>.</span></li>
+</ul>
+</div>
+<footer>Talk Deep Read · one talk, the whole life of one idea · written 2026-11-03</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
