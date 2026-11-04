@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hans Rosling · "The best stats you've ever seen" — the world stopped being two boxes long ago</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="rosling-best-stats-talk49.html">中文 →</a></div>
+<header>
+<div class="kicker">TED · 2006</div>
+<h1>The world stopped being two boxes long ago</h1>
+<p class="sub">Hans Rosling · "The best stats you've ever seen"</p>
+<div class="modebar"><button class="on" id="btn-pop">Short</button><button id="btn-deep">Full</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>Sometime in the mid-1990s, a professor at Sweden's Karolinska Institute was about to launch an undergraduate course in global health. His students had the highest grades the Swedish system can give, and he worried they already knew everything he planned to teach. So he gave them a pretest. One question: in each of five pairs of countries, which has the higher child mortality? Sri Lanka or Turkey, for instance (Turkey). He built every pair so that one country had twice the rate of the other, a gap far bigger than any uncertainty in the data.</p>
+<p>The students averaged 1.8 out of five. Late one night, writing up the results, Hans Rosling saw what he had actually found:</p>
+<blockquote><span class="en">I have shown that Swedish top students know, statistically, significantly less about the world than the chimpanzees.</span><cite>— Hans Rosling, TED, 2006</cite></blockquote>
+<p>Give a chimpanzee two bananas, one labeled Sri Lanka and one labeled Turkey, and it gets half of them right: 2.5 out of five. Scoring below chance means the students' heads weren't empty. They were full of the wrong things. As Rosling put it, the problem was not ignorance but <strong>preconceived ideas</strong>. He tested the Karolinska professors too, the institution that awards the Nobel Prize in Medicine. They were "on par with the chimpanzee."</p>
+<p>What were the wrong things? The students said the world was still "we" and "them." "We" were the West, with long lives and small families. "Them" was the Third World, with short lives and large families. Two boxes.</p>
+<p>So Rosling put up his bubble chart: one bubble per country, sized by population, with children per woman on one axis and life expectancy on the other. In 1962 there really were two clusters. Then he pressed play and chased the bubbles like a sports commentator. China climbs toward better health. Latin America drifts toward smaller families. In the 1980s the imams of Bangladesh start promoting family planning and the country shoots into the top corner. In the 1990s HIV drags African life expectancy down. By 2003 most of the world has crowded into the "long life, small family" corner, and the two clusters have melted into one continuous band. Vietnam in 2003 matched the United States of 1974.</p>
+<p>Income looked the same: people all the way from one dollar a day to a hundred, so the "gap" between rich and poor was a myth. Inside Africa the spread was even wider; Mauritius and Sierra Leone had nothing in common. In his words, everything in this world exists in Africa. In the second half he turned on the statisticians. The data already sat in UN and national databases, he said, locked behind prices and "stupid passwords."</p>
+<p>Two decades on, the trunk of the argument has held. In 2010 the World Bank made its subscription-only development indicators free. In 2015 its data team proposed dropping the term "developing world" from its statistics starting in 2016, and the post cited Rosling. Two branches have not held up as well. His claim that countries move faster if they get healthy first is still disputed by economists arguing over whether health raises income per head. His posthumous book <em>Factfulness</em> was criticized for picking only the variables that were improving. And his prediction that Chile would soon have lower child mortality than Cuba? By UN estimates it came true only in 2020, and mostly because Cuba's numbers went back up.</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>Talk</b> The best stats you've ever seen · <b>Venue</b> TED, Monterey · 2006-02-22 · <b>Length</b> about 20 min · <b>Transcript</b> <a href="https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen/transcript">TED official transcript</a></div>
+<h2>The moment</h2>
+<p>A Swedish professor tells the audience he has made a "discovery," and the discovery is a punchline: Sweden's best students know less about the world than chimpanzees. The room laughs. Before the laughter dies he adds: "I did also an unethical study of the professors of the Karolinska Institute," the body that hands out the Nobel Prize in Medicine, "and they are on par with the chimpanzee there."</p>
+<p>Under the joke sits a careful design. The test was five pairs of countries, compared on child mortality, with each pair differing by a factor of two, far more than the uncertainty in the data, so wrong answers couldn't be blamed on fuzzy numbers. The students averaged 1.8 correct, while random guessing gives 2.5. Below chance has only one explanation: they didn't lack knowledge, they "knew" the wrong answers.</p>
+<blockquote><span class="en">The problem for me was not ignorance; it was preconceived ideas.</span><cite>— Hans Rosling, TED, 2006</cite></blockquote>
+<p>The next eighteen minutes take that preconception apart.</p>
+<h2>The speaker, and that year</h2>
+<p>Hans Rosling trained as a physician. From 1979 to 1981 he was a district medical officer in Nacala, in northern Mozambique, and in 1981 he began investigating an outbreak there of a paralytic disease called konzo, work that earned him a PhD from Uppsala University in 1986. As he says at the start of the talk, he had spent about 20 years working with African institutions on hunger in Africa. When he says "Bangladesh," "Uganda" or "Niger," he is not pointing at dots on a map.</p>
+<p>When he took the TED stage in February 2006, he was professor of international health at Karolinska. A year earlier he had founded the nonprofit Gapminder Foundation with his son Ola Rosling and daughter-in-law Anna Rosling Rönnlund, and the moving bubble chart was their software, Trendalyzer. This is the talk that made him famous. The sword-swallowing many people remember is not here; that closed a different TED talk of his. Keep in mind that the second half of this talk is a pitch to the room: set public data free. In March 2007, Google bought Trendalyzer.</p>
+<h2>The talk, in full</h2>
+<p>After the pretest, Rosling asked his students what they thought the world looked like. His first finding:</p>
+<blockquote><span class="en">Well, I first discovered that the textbook was Tintin, mainly.</span><cite>— Hans Rosling, TED, 2006</cite></blockquote>
+<p>The students said the world was still "we" and "them": the West with long lives and small families, the Third World with short lives and large families. Rosling drew their sentence as a chart. Fertility rate (children per woman, one to eight) on one axis, life expectancy at birth (30 to about 70) on the other, one bubble per country, sized by population. The 1962 chart did bear the students out: one cluster of industrialized countries, one of developing countries.</p>
+<p>Then he set the world in motion and called it like a race. China moves toward better health; the Latin American countries move toward smaller families; the Arab states get longer lives but not smaller families; Africa stays put. In the 1980s Bangladesh is still among the African countries, then "the imams start to promote family planning," and it moves into the corner. In the 1990s HIV pulls African life expectancy down. Nearly everyone else crowds into the corner of long lives and small families, and the audience applauds. He then set the US beside Vietnam. Even during the war, Vietnamese life expectancy kept improving; family planning followed; in the 1980s came the turn to a market economy. Vietnam in 2003 had the same life expectancy and family size as the United States in 1974.</p>
+<p>The second chart was the world distribution of income per day, on a log scale.</p>
+<blockquote><span class="en">There's no gap between rich and poor any longer. This is a myth.</span><cite>— Hans Rosling, TED, 2006</cite></blockquote>
+<p>He gave a set of figures: the richest 20 percent take about 74 percent of world income, the poorest 20 percent about 2 percent, and the majority in the middle 24 percent. We picture aid flowing from one group to the other, but most people are in the middle, which makes "the concept of developing countries" "extremely doubtful." Africa and the OECD overlapped heavily; Latin America spanned everything from poorest to richest.</p>
+<p>Third, he put GDP per capita against child survival to age five, then burst the "sub-Saharan Africa" bubble into its countries. Sierra Leone sat at the bottom, Mauritius near the top, the first country to get rid of trade barriers and sell its sugar and textiles on equal terms with Europe and North America. "In Sierra Leone, humanitarian aid. Here in Uganda, development aid. Here, time to invest; there, you can go for a holiday." He added a line that would be quoted often: "Data is often better than you think." The differences between countries were much bigger than the weakness of the data. And he made a specific prediction: Chile would have lower child mortality than Cuba "within some few years."</p>
+<p>The turn came when he took South Korea and Brazil back to 1960 and drew their trails: South Korea fast, Brazil slow. From this he drew the most ambitious claim of the talk, that "it seems you can move much faster if you are healthy first than if you are wealthy first." His example was the United Arab Emirates, which got the oil money, but</p>
+<blockquote><span class="en">health cannot be bought at the supermarket. You have to invest in health.</span><cite>— Hans Rosling, TED, 2006</cite></blockquote>
+<p>Then he warned against his own chart: national averages are dangerous. Uganda's average sat where South Korea's had been in 1960, but split into quintiles, its richest and poorest fifths were far apart. Put Niger's poorest 20 percent next to South Africa's richest 20 percent, and we still talk about "solutions for Africa." "Everything in this world exists in Africa."</p>
+<p>In the last minutes he turned to the data itself. It already existed in the UN, national statistics agencies and universities, but it was buried in databases; the few websites that showed it came with "prices on them, stupid passwords and boring statistics," and the room roared. Every statistics office told him it was impossible. Then the second big laugh: the good news, he said, was that the new head of UN statistics didn't say it was impossible. "He only says, 'We can't do it.'" At the close he admitted that statisticians disliked his animations, saying they didn't show reality and that analysis needed proper statistical methods. His whole reply: "But this is hypothesis-generating."</p>
+<h2>Below the waterline</h2>
+<p><strong>The chimpanzee test is narrower than the joke.</strong> The 1.8 on stage came from his own pretest of his students. It was never published, and on stage he gave neither the sample size nor the full question list; all we know is five pairs, each differing twofold. Gapminder later turned it into a formal survey. The 2017 Gapminder Misconception Study polled about 12,245 people in 14 countries: 1,221 in Norway and 1,000 in Finland by NOVUS, and 10,024 across the other 12 countries in an online Ipsos MORI panel. There were 12 scored questions with three options each, so random guessing averages 4 correct. Humans averaged 2.2. Only 10 percent beat random, and 15 percent got all twelve wrong.</p>
+<p>The methods page has one line worth reading. There were originally 13 questions; the 13th was dropped because 87 percent answered it correctly. In other words, the test <strong>selects for questions people systematically get wrong</strong>. What it shows is that errors on these questions point in one direction, not that people know nothing about the world. That matches what Rosling actually said on stage in 2006, preconceived ideas, not ignorance. "Humans are dumber than chimps" is the wider version that spread. And Gapminder's line that zoo chimpanzees "picked the right answer every third time" is a framing device; the study did not test chimpanzees.</p>
+<figure>
+<svg viewBox="0 0 640 390" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#5ee6a8"/></marker></defs>
+<rect x="60" y="40" width="560" height="300" fill="rgba(255,255,255,.02)" stroke="rgba(94,230,168,.18)"/>
+<g stroke="rgba(94,230,168,.08)"><line x1="60" y1="90" x2="620" y2="90"/><line x1="60" y1="140" x2="620" y2="140"/><line x1="60" y1="190" x2="620" y2="190"/><line x1="60" y1="240" x2="620" y2="240"/><line x1="60" y1="290" x2="620" y2="290"/><line x1="209" y1="40" x2="209" y2="340"/><line x1="359" y1="40" x2="359" y2="340"/><line x1="508" y1="40" x2="508" y2="340"/></g>
+<g fill="#7d8794" font-size="11" text-anchor="end"><text x="54" y="94">80</text><text x="54" y="144">70</text><text x="54" y="194">60</text><text x="54" y="244">50</text><text x="54" y="294">40</text></g>
+<g fill="#7d8794" font-size="11" text-anchor="middle"><text x="60" y="356">8</text><text x="209" y="356">6</text><text x="359" y="356">4</text><text x="508" y="356">2</text><text x="583" y="356">1</text></g>
+<text x="340" y="380" fill="#93a1ae" font-size="12" text-anchor="middle">Children per woman (rightward = smaller families)</text>
+<text x="18" y="190" fill="#93a1ae" font-size="12" text-anchor="middle" transform="rotate(-90 18 190)">Life expectancy (years)</text>
+<g stroke="#5ee6a8" stroke-width="1.6" fill="none" marker-end="url(#ah)" opacity=".85">
+<line x1="493" y1="123" x2="550" y2="77"/><line x1="396" y1="140" x2="534" y2="100"/><line x1="239" y1="214" x2="601" y2="76"/><line x1="150" y1="261" x2="489" y2="119"/><line x1="135" y1="256" x2="332" y2="151"/><line x1="179" y1="302" x2="317" y2="221"/>
+</g>
+<g fill="none" stroke="#e8d46b" stroke-width="1.6"><circle cx="493" cy="123" r="5"/><circle cx="396" cy="140" r="5"/><circle cx="239" cy="214" r="5"/><circle cx="150" cy="261" r="5"/><circle cx="135" cy="256" r="5"/><circle cx="179" cy="302" r="5"/></g>
+<g fill="#5ee6a8"><circle cx="553" cy="74" r="4"/><circle cx="538" cy="98" r="4"/><circle cx="605" cy="73" r="4"/><circle cx="493" cy="116" r="4"/><circle cx="336" cy="148" r="4"/><circle cx="321" cy="218" r="4"/></g>
+<g fill="#c8d2dc" font-size="11.5"><text x="470" y="138">Sweden</text><text x="378" y="158">USA</text><text x="210" y="232">S. Korea</text><text x="140" y="280">Bangladesh</text><text x="74" y="250">Uganda</text><text x="150" y="320">Nigeria</text></g>
+<g font-size="11"><circle cx="78" cy="58" r="5" fill="none" stroke="#e8d46b" stroke-width="1.6"/><text x="90" y="62" fill="#93a1ae">1962</text><circle cx="140" cy="58" r="4" fill="#5ee6a8"/><text x="151" y="62" fill="#93a1ae">2023</text></g>
+</svg>
+<figcaption>Six countries, 1962 to 2023 (World Bank WDI, updated 2026-10; drawn for this page, axis direction ours). Bangladesh and South Korea have joined Sweden and the US in the corner; Uganda and Nigeria have moved much more slowly.</figcaption>
+</figure>
+<p><strong>Stage numbers against today's data.</strong> The Vietnam line checks out: in current World Bank data, Vietnam in 2003 had a life expectancy of about 73.2 and about 2.0 children per woman; the US in 1974, about 72.0 and 1.8. Close enough. For the income split of 74, 2 and 24 percent, Rosling named no source on stage, and we could not find the dataset he used, so we report it only as he said it.</p>
+<p><strong>"Healthy first, then wealthy" is an observation about trails.</strong> The evidence on stage was a few trajectories: South Korea outpacing Brazil from 1960, the UAE turning oil money into health and schooling. His own wording was "it seems." Trails can generate hypotheses but cannot identify causes; countries that got healthy first may also have been doing other things right. That is exactly his closing defense of the animations, "hypothesis-generating," though on the health-first point his tone on stage was more confident than that defense.</p>
+<p><strong>His longer argument is in <em>Factfulness</em>.</strong> Rosling died on 7 February 2017. <em>Factfulness</em>, written with Ola and Anna, came out in April 2018. It turns the talk's core idea into ten "instincts," the first of which is the gap instinct: whenever a story describes two separate groups with a gap between them, remember that reality is often not polarized, and that "usually the majority is right there in the middle, where the gap is supposed to be." The 2006 income chart became four income levels: Level 1, under $2 a day, extreme poverty; Level 2, $2 to $8, where almost half the world lives; Level 3, $8 to $32; Level 4, over $32 a day, home to "the richest billion people on earth." Four steps instead of two boxes: the mature form of "there's no gap."</p>
+<h2>What happened next</h2>
+<div class="fate"><p class="verdict">HELD UP · as of 2026-11</p><p>The view of the world as two boxes, developed and developing, is outdated. That trunk of the argument has been confirmed by twenty years of data and by the World Bank's own statistical practice. Two branches are shakier: the causal claim that health comes before wealth is still disputed, and Rosling's optimism has been criticized for choosing the variables that were improving.</p></div>
+<p><strong>The data was freed, and the boxes were formally retired.</strong> Google bought Trendalyzer in 2007. On 20 April 2010 the World Bank launched its Open Data initiative, putting more than 2,000 development indicators online free; they had been available only to paying subscribers. We have no evidence Rosling caused this, but the "prices and passwords" he mocked disappeared from the biggest database of all. On 16 November 2015, Tariq Khokhar and Umar Serajuddin of the World Bank's data team proposed that the World Development Indicators stop using the term "developing world" from 2016, citing Rosling's argument that the divide no longer exists and that using the term is "intellectually lazy." The 2016 WDI followed through. Yet in January 2024 the same blog ran a post titled "Time to stop referring to the 'developing world,'" a sign that the term never left everyday use.</p>
+<p><strong>The trends went his way, but Africa much more slowly.</strong> World Bank data updated in October 2026: the share of people below $3.00 a day (2021 PPP) fell from 27.0 percent in 2006 to 10.1 percent in 2024. Sub-Saharan Africa's fertility rate fell from about 5.5 in 2006 to about 4.3 in 2023; Bangladesh is at 2.2. Of the African bubbles in 2006 he said, "They still remain here." Twenty years later that still describes the one large region that has not reached the top corner.</p>
+<p><strong>The prediction came true, in an unexpected way.</strong> In the UN Inter-agency Group for Child Mortality Estimation (UN IGME) modelled figures, under-five mortality in 2006 was 9.0 per 1,000 live births in Chile and 6.8 in Cuba. The lines crossed between 2019 and 2020 (Chile 6.8, Cuba 7.2 in 2020), and by 2024 Cuba had risen to 8.6. "Within some few years" took about fourteen, and it happened mostly because Cuba slid back from 6.0 in 2013.</p>
+<p><strong>"Healthy first" has not been cleanly confirmed.</strong> Three months after the talk, in May 2006, Daron Acemoglu and Simon Johnson released the working paper "Disease and Development" (published in the <em>Journal of Political Economy</em> in 2007). They used the mortality changes caused by the international health interventions from the 1940s on, such as penicillin, streptomycin and DDT, as an instrument. A 1 percent rise in life expectancy raised population by about 1.5 percent but raised total GDP much less, so there was "no evidence" that the large rise in life expectancy led to significantly faster growth in income per head. In 2014 David Bloom, David Canning and Günther Fink replied in the same journal that this result depends on the untested assumption that initial health has no effect on later growth. Acemoglu and Johnson answered in the same issue that they still found no positive effect at 40- or 60-year horizons. The debate is unresolved. It doesn't map exactly onto Rosling, though: he described healthy-first countries moving faster, while the economists are arguing about whether health causes higher income per head.</p>
+<p><strong>The optimism was called one-sided.</strong> In November 2018, Christian Berggren, a Swedish professor of industrial management, wrote in <em>Quillette</em> that <em>Factfulness</em> "presents a highly biased sample of statistics as the true perspective on global development," with many charts of bad things in decline but "not a single graph of bad things on the rise," and claims about population stabilizing that "are not supported by the reports they refer to." In 2019 the Swedish sociologist Roland Paulsen criticized Rosling's worldview in <em>Dagens Nyheter</em>; we have not read that piece and don't summarize it. The same year the anthropologist Jason Hickel challenged the falling-poverty story in <em>The Guardian</em>, aiming at an Our World in Data chart that Bill Gates had shared. That fight was about the school of thought that grew up after Rosling, not about this talk.</p>
+<p>Rosling rejected the label "optimist" and called himself a "possibilist." His 2006 charts include HIV, the war in Yemen and famine in Niger. What he opposed was seeing the world as two boxes, and twenty years later that still holds.</p>
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Psychology · the availability heuristic</b>: Tversky and Kahneman showed in 1973 that people estimate frequency by how easily examples come to mind. Famine photos are more memorable than fertility curves, so students' world maps get built from images. The difference: Rosling's students were mostly out of date; their images had once been accurate.</li>
+<li><b>Evolutionary biology · life-history theory</b>: Life-history theory predicts that where outside mortality is high, organisms reproduce earlier and more, and shift toward fewer offspring with more investment when mortality falls. Rosling's "children survive, families shrink" has the same shape. Where it differs: in evolution the shift takes many generations of selection, while Bangladesh went from about 6.8 children per woman to 2.2 in two or three human generations, through contraception, schooling and the imams' sermons. That is a cultural and institutional response, not a genetic one.</li>
+<li><b>Distributed systems · cache invalidation</b>: The students' picture of the world was a cache with no expiry, a Tintin-era snapshot that nothing told to refresh after the source data changed. The difference: engineers can set an expiry time; prejudices have none and need an embarrassing test to force a refresh.</li>
+<li><b>Buddhism · vikalpa</b>: Buddhist thought calls the mind's habit of cutting continuous experience into opposed concepts, then treating the concepts as things, vikalpa (conceptual discrimination). "We versus them" is exactly such a cut. The difference: Buddhism aims to see through concepts as such, while Rosling swaps two boxes for four income levels, a better concept rather than none.</li>
+<li><b>Sociology · the ecological fallacy</b>: W. S. Robinson showed in 1950 that correlations among groups cannot be carried over to individuals. Rosling's warning that averages are dangerous, and his splitting of Uganda into quintiles, comes from the same caution. The difference: Robinson was about correlations changing across levels; Rosling is about one average hiding very different populations.</li>
+</ul></div>
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>On Hans Rosling's pretest, Sweden's top students averaged 1.8 out of five, below the 2.5 that random guessing would score.</li>
+<li>Scoring below chance shows the problem is not ignorance but preconceived ideas: people "know" outdated wrong answers.</li>
+<li>The split of a long-lived, small-family West versus a short-lived, large-family Third World roughly held in 1962 but had dissolved into one continuous band by 2003.</li>
+<li>Bangladesh's fast shift to small families in the 1980s, after imams began promoting family planning, is what Rosling called a miracle.</li>
+<li>Africa contains huge internal differences, from Sierra Leone needing humanitarian aid to Mauritius thriving on equal trade, so no single "African solution" fits.</li>
+<li>In Gapminder's 2017 Misconception Study, about 12,245 respondents averaged 2.2 correct on 12 three-option questions, where random guessing gives 4.</li>
+<li>The study keeps only questions people systematically get wrong (one answered correctly by 87 percent was dropped), so it measures biased errors, not total ignorance.</li>
+<li><em>Factfulness</em> replaces two boxes with four income levels split at $2, $8 and $32 a day, with almost half the world on Level 2.</li>
+<li>Acemoglu and Johnson found rising life expectancy mainly increased population, not income per head, so "healthy first, then wealthy" remains disputed as a causal claim.</li>
+<li>The ecological fallacy warns that group averages cannot be applied to individuals, the same caution behind splitting a country into income quintiles.</li>
+</ol>
+<h2>Sources</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen/transcript">Hans Rosling — The best stats you've ever seen (TED transcript)</a></span><span class="d">Full text of the talk; the source of every quotation and stage figure on this page.</span></li>
+<li><span class="t"><a href="https://www.gapminder.org/ignorance/studies/gms/">Gapminder Misconception Study 2017</a></span><span class="d">The formal "chimpanzee test" across 14 countries and about 12,245 people: samples, question design, the 2.2-versus-4 result and the dropped thirteenth question.</span></li>
+<li><span class="t"><a href="https://www.gapminder.org/fw/income-levels/">Gapminder — Four income levels</a></span><span class="d">Definitions of the four income levels from <em>Factfulness</em>, behind the "two boxes into four steps" passage.</span></li>
+<li><span class="t"><a href="https://www.nber.org/papers/w12269">Acemoglu &amp; Johnson — Disease and Development (NBER w12269, 2006)</a></span><span class="d">Instrumental-variable study of whether health raises income per head; the basis for the "healthy first" discussion.</span></li>
+<li><span class="t"><a href="https://blogs.worldbank.org/en/opendata/should-we-continue-use-term-developing-world">Khokhar &amp; Serajuddin — Should we continue to use the term "developing world"? (World Bank, 2015)</a></span><span class="d">The World Bank post proposing to drop "developing world" from its statistics from 2016, citing Rosling.</span></li>
+<li><span class="t"><a href="https://quillette.com/2018/11/16/the-one-sided-worldview-of-hans-rosling/">Christian Berggren — The One-Sided Worldview of Hans Rosling (Quillette, 2018)</a></span><span class="d">The critique of <em>Factfulness</em>'s selective use of data, behind the "called one-sided" paragraph.</span></li>
+</ul>
+</div>
+<footer>Talk Deep Read · one talk, the whole life of one idea · written 2026-11-04</footer>
+</div>
+
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
