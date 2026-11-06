@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Daniel Wolpert ·《The real reason for brains》— 大脑只为动而生</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="wolpert-reason-for-brains-talk51.en.html">English →</a></div>
+<header>
+<div class="kicker">TEDGlobal · 2011</div>
+<h1>大脑只为一件事而生：动</h1>
+<p class="sub">Daniel Wolpert ·《The real reason for brains》</p>
+<div class="modebar"><button class="on" id="btn-pop">精华版</button><button id="btn-deep">完整版</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>海鞘（sea squirt）小时候是一只会游的小东西，有神经系统。长到某一天，它把自己钉在一块石头上，从此再不离开。Daniel Wolpert 在台上说，它落定之后做的第一件事，是把自己的脑子和神经系统当饭吃掉。「不需要动了，也就用不着脑子这件奢侈品。」他补一句：这常被拿来比喻教授拿到终身教职以后，「不过那是另一个话题」。全场鼓掌。</p>
+<p>这是 2011 年的 TEDGlobal。Wolpert 是剑桥大学的工程学教授，学医出身，研究的是人怎么控制自己的手。他开场就问了一个听起来很傻的问题：我们为什么有脑子？你可能会说为了感知世界、为了思考。他说这完全错了：</p>
+<blockquote><span class="en">We have a brain for one reason and one reason only, and that's to produce adaptable and complex movements. There is no other reason to have a brain.</span><span class="zh">我们有脑子只为一个理由，唯一的理由：产生可适应的、复杂的运动。脑子没有别的存在理由。</span><cite>— Daniel Wolpert，TEDGlobal，2011</cite></blockquote>
+<p>理由是：你影响世界的唯一方式是收缩肌肉（除了出汗）。记得童年、看清玫瑰的颜色，如果不影响你以后怎么动，演化上就毫无用处。</p>
+<p>难题在这儿：电脑下棋早赢了世界冠军，可论灵巧地捏起一枚棋子，五岁小孩轻松赢过最好的机器人。难在哪？在<strong>噪声</strong>：你的感觉不准，把手藏在桌下，另一只手去摸，能偏好几厘米；你的动作也不准，扔飞镖连同一个点都打不回去。</p>
+<p>大脑对付噪声，靠的是贝叶斯推断（Bayesian inference）：把这一眼的证据和多年攒下的经验（先验）按可靠程度合起来。他说实验证明人学新动作时「正是这么做的」。</p>
+<p>更妙的是预测。大脑每发出一个动作指令，都抄送一份给内部的「模拟器」，预先算出这个动作会带来什么感觉，再从真实感觉里减掉。剩下的，就是外面发生的事。所以你挠不了自己的痒。他的实验室用机器人把一只手的动作传到另一只手掌心上挠；中间插进 0.2 秒延迟，大脑预测不准了，就和别人挠一样痒。</p>
+<p>最好笑的一段来自他两个女儿。车后座打架，两人都说对方下手更重。他说自己的孩子不撒谎，于是去实验室验证：两个成年人轮流把刚感受到的力「原样」还给对方，结果力度每轮升级约 70%。自己出的力被大脑减掉了一部分，所以人人都觉得自己只是在以牙还牙。</p>
+<p>十五年后，这场演讲的骨架基本站得住，可好几处被讲宽了。「自己的触感会被减弱」后来在预注册实验里反复重现，是最硬的一块。「贝叶斯最优」被批评成能解释任何行为的框架，而 Wolpert 那篇论文只有 10 个被试，原文只说「定性地吻合」。力度升级实验后来有人重做，发现双方的力会收敛到某个值，并不会一直涨下去。连海鞘也被讲过头：2011 年的追踪实验发现，幼体大部分中枢神经被保留下来，改建成了成体的。判词：<strong>部分站住</strong>。</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>演讲</b> The real reason for brains · <b>场合</b> TEDGlobal · 2011 · <b>篇幅</b> 逐字稿约 4,000 词（含与 Chris Anderson 的问答） · <b>全文</b> <a href="https://www.ted.com/talks/daniel_wolpert_the_real_reason_for_brains/transcript">TED 官方逐字稿</a></div>
+<h2>那一刻</h2>
+<p>长途车，后座，两个女儿打起来了。一个先动手，另一个还手，很快越打越重。父亲回头吼她们停下，两人异口同声：是她打得更重。</p>
+<p>讲到这里，Daniel Wolpert 一本正经地说：</p>
+<blockquote><span class="en">Now I happen to know my children don't lie, so I thought, as a neuroscientist, it was important how I could explain how they were telling inconsistent truths.</span><span class="zh">我恰好知道我的孩子不撒谎，所以作为神经科学家，我觉得必须解释她们怎么会说出互相矛盾的真话。</span><cite>— Daniel Wolpert，TEDGlobal，2011</cite></blockquote>
+<p>台下笑了。他真把这事搬进了实验室：「我们不跟小孩打交道，也不打人，但概念完全一样。」两个大人对坐，隔着测力装置轮流按对方的手指，每人都被告知要按回「刚才感到的那么大的力」。结果每一对都在升级，他说每轮约 70%。两个女儿都没撒谎，是她们的大脑在给自己打折。</p>
+<h2>讲的人，和那一年</h2>
+<p>Wolpert 是个当过医生的工程师：先在剑桥、牛津读医，再去牛津读生理学博士，博士论文写的是视觉—运动控制里怎么克服时间延迟。1995 年他进了伦敦大学学院（UCL）的神经病学研究所，2005 年转到剑桥大学工程系当教授。2011 年站上爱丁堡的 TEDGlobal 时，他已研究「人怎么动」近二十年，第二年当选皇家学会院士，2018 年转到哥伦比亚大学。</p>
+<p>台上用到的几项研究都已发表多年，在领域里有名，圈外几乎没人听过：1998 年的噪声与轨迹，1999 年的机器人挠痒，2003 年的力度升级，2004 年的贝叶斯学习。这场演讲把它们串成一个故事：<strong>大脑是为运动而生的，运动的难处在噪声，大脑对付噪声靠的是概率和预测。</strong></p>
+<h2>这场演讲，讲透</h2>
+<p>Wolpert 从「最简单的问题」切入：为什么我们和其他动物有脑子？地球上不是所有物种都有。答案对他来说「显而易见」：</p>
+<blockquote><span class="en">We have a brain for one reason and one reason only, and that's to produce adaptable and complex movements. There is no other reason to have a brain.</span><span class="zh">我们有脑子只为一个理由，唯一的理由：产生可适应的、复杂的运动。脑子没有别的存在理由。</span><cite>— Daniel Wolpert，TEDGlobal，2011</cite></blockquote>
+<p>理由是：运动是你影响世界的唯一途径（他马上补了个例外：出汗），语言、手势、写字都靠肌肉收缩。感觉、记忆、认知都重要，但只在推动或抑制未来动作时才重要。「如果不影响你以后怎么动，记住童年或看清玫瑰的颜色就不可能有任何演化上的好处。」证据是树和草没有脑子，「决定性的证据」是海鞘：幼年游动、有神经系统，一旦把自己固定在石头上，就把自己的脑和神经系统消化掉当食物。然后是那个终身教职的笑话。他宣布自己是「运动沙文主义者」（movement chauvinist）。</p>
+<p>接下来他问：既然运动这么重要，我们对它懂多少？答案是「非常差」。看机器就知道：IBM 的深蓝能赢卡斯帕罗夫，下棋这个问题「已经解决」；可捏起一枚棋子放回棋盘，五岁小孩的灵巧完胜当今最好的机器人。下棋的算法五岁小孩都能说清（穷举到终局、挑能赢的那步），灵巧连该解什么算法都不清楚。他放了一段机器人倒水的视频，那是一个博士项目的成果，换个任务就得再读三年博士；对照组是叠杯世界纪录保持者 Emily Fox：</p>
+<blockquote><span class="en">There is no generalization at all from one task to another in robotics.</span><span class="zh">在机器人学里，一个任务学到的东西完全迁移不到另一个任务上。</span><cite>— Daniel Wolpert，TEDGlobal，2011</cite></blockquote>
+<p>「我们完全不知道她做这个时脑子里发生了什么。」</p>
+<p>然后是问题的核心：噪声。感觉反馈有噪声，手藏在桌子下面，用另一只手去找，能偏好几厘米；运动输出也有噪声，掷飞镖瞄同一个点都会散开一大片；外部任务还模糊多变，茶壶可能满也可能空。我们泡在「一锅噪声汤」里。</p>
+<p>他的框架是贝叶斯决策理论（Bayesian decision theory）：先推断，再行动。推断要两种信息：感觉数据，和一生积累的先验知识。他用网球打比方：看球飞来，感觉告诉你它大概落在红色那片；但打过一整场你还知道，对手的球并不是均匀地落在场上，好对手会把它打到某片绿色区域。贝叶斯法则说，把红的数乘以绿的数，得到黄色那片，那就是你的信念。他接着说：</p>
+<blockquote><span class="en">Now I wouldn't tell you all this if it wasn't that a few years ago, we showed this is exactly what people do when they learn new movement skills. And what it means is we really are Bayesian inference machines.</span><span class="zh">要不是几年前我们证明了人学新动作技能时正是这么做的，我也不会跟你们讲这些。这意味着我们真的是贝叶斯推断机器。</span><cite>— Daniel Wolpert，TEDGlobal，2011</cite></blockquote>
+<p>公式里还有一项要求预测：给定我的信念，会收到什么感觉？于是演讲转向预测。你发出动作指令时，复制一份送进脑内的「神经模拟器」，预先算出感觉后果。摇番茄酱瓶时，如果有人好心在瓶底拍一下，两股感觉在感官看来混成一股，只有把预测减掉，剩下的才是外来的。他的总结是：「我在世界里走动，一直预测自己该收到什么，把它减掉。剩下的一切都是我之外的东西。」</p>
+<p>证据一是挠痒：自己挠没有别人挠那么痒。实验室让人一只手来回做正弦运动，由机器人传到另一只手的掌心。在动作和触感之间插入延迟，从 0 到 0.1 秒、0.1 到 0.2 秒都越来越痒，到 0.2 秒已经和完全由机器人挠一样痒。然后他自嘲：「这是我实验室做过的最烂的研究」，因为掌心的痒感时有时无，要很多被试才能显著。于是有了证据二：后座打架和那个 70% 的升级。</p>
+<p>最后讲行动。任务是符号化的（我想喝水），身体却要按顺序收缩约 600 块肌肉，走法无穷多；可人的动作惊人地一致，几个移动的光点就能让你认出这人是快乐还是悲伤、年老还是年轻。为什么偏偏这么动？他的答案是：噪声随着用力变大，所以要选那条最终误差最小的路线，「规划动作，让噪声的负面后果最小」，原则之一就是避免用大力。问答里 Chris Anderson 问：做梦、渴望、坠入爱河都只是附带的吗？他说不，它们都重要，最终都为了驱动正确的运动、繁殖后代；忘掉大部分童年「大概也无妨」，因为它不影响以后的动作。</p>
+<h2>冰山下面</h2>
+<p><strong>「我们证明了人正是这么做的」</strong>，指的是 Körding 和 Wolpert 2004 年发在《自然》上的那篇。实验很小：<strong>10 名被试</strong>，在虚拟现实里伸手指向目标，代表手指的光标被偷偷右移，每次的平移量从一个均值 1 厘米、标准差 0.5 厘米的高斯分布里随机抽。动作中途只闪一下光标，清楚、轻度模糊、重度模糊或者干脆不给。每人做 2,000 次，只分析后 1,000 次。结果漂亮：反馈越模糊，被试越往「平均 1 厘米」那边靠，正好是贝叶斯模型的预测；换成双峰分布，被试也学会了。但论文自己写得很克制：要在<strong>定量</strong>上证明系统是最优的，需要直接测出被试的感觉不确定性，而这测不到，所以结果是「<strong>定性地</strong>吻合贝叶斯整合过程」。论文里的「定性吻合」到了台上成了「正是这么做」，再一般化为「我们真的是贝叶斯推断机器」。这中间宽出来一大截。</p>
+<p><strong>挠痒实验</strong>是 Blakemore、Frith 和 Wolpert 1999 年的论文：16 名右利手被试，年龄 19 到 30 岁，闭着眼，用<strong>左</strong>手捏着一个连在机器人上的小圆柱做 2 赫兹、1.5 厘米幅度的正弦运动，第二台机器人带着一块泡沫在<strong>右</strong>手掌心复现这个动作（台上说成右手动，方向反了，不影响结论）。延迟设 100、200、300 毫秒三档。痒的评分从 0 到 200 毫秒显著上升，200、300 毫秒和外来刺激之间没有显著差别。16 人里有 14 人说根本没察觉延迟。论文还加了空间扰动（把触感方向转 30°、60°、90°），痒感同样上升，台上没讲。</p>
+<p><strong>力度升级</strong>的原始论文（Shergill、Bays、Frith、Wolpert，《科学》2003）是一页短报告，本次没能读到全文，所以无法核对台上「每轮 70%」这个数，这里只报告演讲里的说法。2016 年 Takagi 等人重做这个范式时描述过它：成对交换力，力度会升级。</p>
+<p><strong>「避开大力」的动作规划</strong>来自 Harris 和 Wolpert 1998 年的《自然》论文：假设神经控制信号的噪声随信号变大而变大（信号依赖噪声，运动神经元放电的标准差随平均水平上升），那么在所有能到达目标的轨迹里，大脑应该挑终点位置方差最小的那条。这个「最小方差」模型能复现眼球跳动（扫视）和手臂运动的轨迹形状，还能预测 Fitts 定律所描述的速度与精度权衡。它是一篇理论论文，对照的扫视和手臂数据大多引自别人的已有研究。台上「我们能解释大量数据」，说的就是这个模型。</p>
+<p>拼起来，Wolpert 的完整图景是一条流水线：估计（合并先验和感觉）→ 预测（减掉自己造成的感觉）→ 规划（在噪声下选最稳的动作）。2006 年他和 Körding 在综述里的提法比台上谨慎：人的行为「接近」贝叶斯决策理论的预测。</p>
+<h2>后来的命运</h2>
+<div class="fate"><p class="verdict">部分站住 · 截至 2026-11</p><p>「自己造成的感觉会被预测并减弱」站得最稳，后来在预注册实验里反复重现。「我们是贝叶斯最优机器」被批评为讲宽了，力度会「无限升级」也没站住；作为开场证据的海鞘，故事本身就被简化了。</p></div>
+<p><strong>贝叶斯这一块，挨批最重。</strong>2012 年，Jeffrey Bowers 和 Colin Davis 在《心理学公报》上发表《心理学与神经科学中的贝叶斯「原来如此」故事》，指控先验、似然和效用函数可以被任意调整去拟合数据，模型因此几乎不可证伪，而且很少比更简单的非贝叶斯理论预测得更好；神经元「能」做贝叶斯计算的数学很漂亮，「真的在做」的证据却很少。2018 年 Dobromir Rahnev 和 Rachel Denison 在《行为与脑科学》上整理了感知决策中八大类「次优」表现（包括线索合并时权重失当），建议领域别再追问「是否最优」，改为建能同时解释最优和次优行为的模型。这些批评针对整个领域，2004 年那个实验本身没有被推翻；被削弱的是台上那句总括。</p>
+<p><strong>感觉衰减这一块，越做越硬。</strong>2020 年 Konstantina Kilteni、Ehrsson 等人在 iScience 上发现，只有在食指<strong>主动</strong>运动触发触碰时才有衰减，被动带着动就没有，说明需要动作指令的副本，正是 Wolpert 的前向模型所说的。也有人提出相反的「增强」说，认为预测到的触感会被放大（Clare Press 等人 2020 年称之为「知觉预测悖论」）。2023 年 Job 和 Kilteni 在 eLife 上做了三个预注册实验，结论是「增强」效应来自所用的参照条件，自我触感仍被稳定地减弱。</p>
+<p><strong>力度升级没有「越打越重」到底。</strong>2016 年 Takagi、Bagnato 和 Burdet 在《科学报告》上重做：先测个人复现力度的偏差，发现人会把 2 牛以下的小力复现得偏大、把大力复现得偏小，所以两人对打时力度应当<strong>收敛</strong>到某个值，而他们的数据确实收敛。还有个台上没有的新变量：两人面对面时，多数配对会把对方的力复现得偏小，收敛值明显更低。看得见对方，人就手下留情。所以「自我减弱让以牙还牙变成两牙还一牙」作为机制大体还在，「冲突必然螺旋升级」却不能从这个实验里推出来。</p>
+<p><strong>海鞘被讲过头了。</strong>2011 年 Horie 等人用光转换荧光蛋白追踪海鞘变态，发现幼体中枢神经除尾部神经索外，大部分被<strong>保留并改建</strong>成成体的中枢神经，多数幼体神经元消失，但一部分运动神经元留了下来，非神经的室管膜细胞还像干细胞一样长出新神经元。神经科学家 Rogier Mars 在 2026 年的新书里写：海鞘幼体的脑大概只有 177 个神经元，成体「确实保留了某种脑」，主要用来控制进出水的速度。论点（不动就不需要那么多脑）没倒，但「把脑吃光」的画面比事实戏剧得多。</p>
+<p>「运动是脑存在的唯一理由」本身是立场，不是一项实验能检验的命题，它在具身认知和预测加工的潮流里一直有人接着讲。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>机器人学 · Moravec 悖论</b>：Hans Moravec 1988 年在《心智儿女》里说，让电脑在智力测验上达到成人水平相对容易，给它一岁小孩的感知和行动能力却极难。和「深蓝 vs 五岁小孩」同构。不同在解释：Moravec 归因于感觉运动能力经过了更久的演化打磨，Wolpert 归因于噪声。</li>
+<li><b>神经科学 · 预测加工与 Anil Seth</b>：本站<a href="anil-seth-controlled-hallucination-talk2.html">第 2 期</a>的 Seth 说知觉是「受控的幻觉」，大脑由内向外预测世界。Wolpert 的前向模型是它在运动领域的近亲：都是先预测、再和输入比较。最不像的地方恰好是 Press 那个悖论：在 Seth 那里预测<strong>构成</strong>了你看见的东西，在 Wolpert 那里预测被<strong>减掉</strong>，你感到的是剩下的误差。同一套机器，两种用法，至今没有统一说法。</li>
+<li><b>现象学 · Merleau-Ponty 的「我能」</b>：Merleau-Ponty 在《知觉现象学》（1945）里说，意识首先不是「我思」，而是「我能」，身体对世界的把握先于概念。和「运动沙文主义」站在一边。不同在于：Merleau-Ponty 拒绝把身体还原成计算，Wolpert 恰恰要用工程和概率把它算出来。</li>
+<li><b>工程 · 主动降噪耳机</b>：耳机用麦克风采到噪声，生成反相信号抵消，你听见的是「减去之后剩下的」。和大脑减掉自我产生的感觉是同一个减法结构。方向却相反：耳机减掉的是外部，留下你想听的；大脑减掉的是自己，留下外部。</li>
+<li><b>投资 · Black–Litterman 模型</b>：高盛的 Fischer Black 和 Robert Litterman 在 1990 年代初提出，以市场均衡收益作先验，再按信心大小混入投资者自己的观点。和网球的「红乘绿」同一个算法：观点越没把握，结果越贴近先验。不像的是，市场先验是人选定的，被试的先验是从上千次试验里自己学出来的。</li>
+</ul></div>
+<h2>十条要点</h2>
+<ol class="takeaways">
+<li>Daniel Wolpert 主张大脑存在的唯一理由是产生可适应的复杂运动，感觉、记忆和认知都只为驱动或抑制未来的动作服务。</li>
+<li>人影响外界的唯一途径是收缩肌肉（出汗除外），说话和写字也不例外。</li>
+<li>电脑下棋早已赢过世界冠军，灵巧地捏起一枚棋子却仍是机器人的难题，因为灵巧连该解哪个算法都不清楚。</li>
+<li>运动控制难在噪声：感觉反馈和运动输出都带随机误差，手藏在桌下去找能偏好几厘米。</li>
+<li>贝叶斯推断把这一次的感觉证据和长期积累的先验按可靠程度加权合并，感觉越模糊，越依赖先验。</li>
+<li>Körding 与 Wolpert 2004 年的实验只有 10 名被试，论文自称结果与贝叶斯模型「定性吻合」，演讲里说成了「正是这么做」。</li>
+<li>大脑用动作指令的副本预测自己动作的感觉后果并减掉，剩下的才被当作外部事件，所以人挠不了自己的痒。</li>
+<li>动作和触感之间插入 0.2 秒延迟，自己挠就和别人挠一样痒；2023 年的预注册实验仍证实自我触感被减弱。</li>
+<li>对打时每人都低估自己出的力，力度因此升级；2016 年的重做显示力度会收敛，面对面时还会偏小。</li>
+<li>海鞘「吃掉自己的脑」是简化版：2011 年的追踪实验发现，幼体大部分中枢神经被保留并改建成了成体的神经系统。</li>
+</ol>
+<h2>出处</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.ted.com/talks/daniel_wolpert_the_real_reason_for_brains/transcript">Daniel Wolpert, The real reason for brains（TED 官方逐字稿）</a></span><span class="d">本页所有引语和演讲中的数字（70%、0.2 秒、600 块肌肉）都出自这里。</span></li>
+<li><span class="t"><a href="https://pubmed.ncbi.nlm.nih.gov/14724638/">Körding &amp; Wolpert, Bayesian integration in sensorimotor learning, Nature 2004</a></span><span class="d">「我们证明了人正是这么做的」所指的实验：10 名被试、平移先验的设置，以及「定性吻合」的原话。</span></li>
+<li><span class="t"><a href="https://pubmed.ncbi.nlm.nih.gov/10511643/">Blakemore, Frith &amp; Wolpert, Spatio-temporal prediction modulates the perception of self-produced stimuli, J Cogn Neurosci 1999</a></span><span class="d">挠痒实验的原始论文：16 名被试、左手动右手被挠、100/200/300 毫秒延迟和空间扰动。</span></li>
+<li><span class="t"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5064314/">Takagi, Bagnato &amp; Burdet, Facing the partner influences exchanges in force, Scientific Reports 2016</a></span><span class="d">独立重做力度交换范式：力度收敛而非无限升级，面对面时复现偏小。</span></li>
+<li><span class="t"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10723797/">Job &amp; Kilteni, Action does not enhance but attenuates predicted touch, eLife 2023</a></span><span class="d">三个预注册实验，支撑「自我触感被减弱」站住了，并回应了「增强」说。</span></li>
+<li><span class="t"><a href="https://www.nature.com/articles/nature09631">Horie et al., Ependymal cells of chordate larvae are stem-like cells that form the adult nervous system, Nature 2011</a></span><span class="d">海鞘变态时幼体中枢神经大部分被保留改建，用来校正「吃掉自己的脑」。</span></li>
+</ul>
+</div>
+<footer>演讲精读 · 一场演讲，一个想法的来龙去脉 · 写于 2026-11-06</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>

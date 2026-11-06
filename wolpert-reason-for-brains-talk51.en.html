@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Daniel Wolpert · "The real reason for brains" — Brains Exist to Move</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="wolpert-reason-for-brains-talk51.html">中文 →</a></div>
+<header>
+<div class="kicker">TEDGlobal · 2011</div>
+<h1>Brains exist for one thing: to move</h1>
+<p class="sub">Daniel Wolpert · "The real reason for brains"</p>
+<div class="modebar"><button class="on" id="btn-pop">Short</button><button id="btn-deep">Full</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>As a juvenile, the sea squirt swims around the ocean with a nervous system. Then one day it implants itself on a rock it will never leave, and, Daniel Wolpert told the audience, the first thing it does is digest its own brain and nervous system for food. "So once you don't need to move, you don't need the luxury of that brain." He added that this is often taken as an analogy for professors who get tenure, "but that's a different subject." Applause.</p>
+<p>This was TEDGlobal 2011. Wolpert, trained as a physician and by then a professor of engineering at Cambridge, studies how people control their hands. He opened with a question that sounds naive: why do we have brains at all? To perceive the world, or to think, you might say. Completely wrong, he said:</p>
+<blockquote><span class="en">We have a brain for one reason and one reason only, and that's to produce adaptable and complex movements. There is no other reason to have a brain.</span><cite>— Daniel Wolpert, TEDGlobal, 2011</cite></blockquote>
+<p>The argument is short. Apart from sweating, the only way you can affect the world is by contracting muscles. Laying down childhood memories or perceiving the color of a rose is evolutionarily worthless if it never changes how you will move.</p>
+<p>Then the hard part. Computers beat chess champions long ago, but when it comes to dexterously picking up a chess piece, a five-year-old easily beats the best robot. Why? <strong>Noise.</strong> Your senses are imprecise: hide one hand under a table and find it with the other, and you can be off by several centimeters. Your movements are imprecise too: try to hit the same spot on a dartboard over and over and you get a wide spread.</p>
+<p>The brain handles noise with Bayesian inference: it weighs what it senses now against what it has learned over a lifetime (the prior), each by how reliable it is. People learning new movements, he said, do "exactly" this.</p>
+<p>Better still is prediction. Every time the brain sends out a motor command, it copies it to an internal simulator, predicts the sensations the movement will cause, and subtracts that prediction from what it actually feels. Whatever is left must come from outside. That is why you can't tickle yourself. His lab used robots to relay one hand's movement into a tickle on the other palm; insert a 0.2-second delay and the prediction fails, so it tickles as much as when someone else does it.</p>
+<p>The funniest part came from his two daughters, fighting in the back seat, each insisting the other hit harder. His children don't lie, he said, so he took it to the lab: two adults take turns pressing back on each other's finger with the force they just felt, and the force escalates by about 70 percent per turn. Each person's brain discounts the force they produce, so everyone thinks they are just evening the score.</p>
+<p>Fifteen years on, the skeleton holds, but several claims were stretched. The attenuation of self-generated touch has been reproduced again and again, including in preregistered experiments; it is the hardest piece. "Bayes-optimal" has been attacked as a framework that can explain anything, and Wolpert's own paper had 10 participants and claimed only a "qualitative" match. A later rerun of the force game found forces converge rather than escalate. Even the sea squirt was overstated: a 2011 tracing study found most of the larval central nervous system is kept and rebuilt into the adult one. Verdict: <strong>partly holds</strong>.</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>Talk</b> The real reason for brains · <b>Venue</b> TEDGlobal · 2011 · <b>Length</b> transcript about 4,000 words (including Q&amp;A with Chris Anderson) · <b>Text</b> <a href="https://www.ted.com/talks/daniel_wolpert_the_real_reason_for_brains/transcript">official TED transcript</a></div>
+<h2>The moment</h2>
+<p>A long car journey, two daughters in the back seat. One does something to the other, the other retaliates, and it quickly escalates. When their father screams at them to stop, each says the other hit harder.</p>
+<p>Daniel Wolpert delivered the next line with a straight face:</p>
+<blockquote><span class="en">Now I happen to know my children don't lie, so I thought, as a neuroscientist, it was important how I could explain how they were telling inconsistent truths.</span><cite>— Daniel Wolpert, TEDGlobal, 2011</cite></blockquote>
+<p>The audience laughed. Then he actually took it to the lab: "we don't work with children, we don't work with hitting, but the concept is identical." Two adults sit facing each other and take turns pressing on each other's finger through a force transducer, each told to give back exactly the force they just felt. Every pair escalated, by about 70 percent per turn, he said. Neither daughter was lying. Their brains were discounting their own blows.</p>
+<h2>The speaker, and the year</h2>
+<p>Wolpert is a doctor turned engineer: medicine at Cambridge and Oxford, then a doctorate in physiology at Oxford, with a thesis on overcoming time delays in visuomotor control. He joined the Institute of Neurology at University College London in 1995 and became a professor of engineering at Cambridge in 2005. When he took the TEDGlobal stage in Edinburgh in 2011 he had spent nearly two decades on how people move; he was elected a Fellow of the Royal Society the next year and moved to Columbia University in 2018.</p>
+<p>The studies he used on stage had all been published years earlier, well known in the field and almost unknown outside it: noise and trajectories in 1998, robotic tickling in 1999, force escalation in 2003, Bayesian learning in 2004. The talk strings them into one story: <strong>the brain is built for movement, the difficulty of movement is noise, and the brain fights noise with probability and prediction.</strong></p>
+<h2>The talk, in full</h2>
+<p>Wolpert starts with "the easiest question": why do we and other animals have brains? Not every species does. The answer, to him, is "blindingly obvious":</p>
+<blockquote><span class="en">We have a brain for one reason and one reason only, and that's to produce adaptable and complex movements. There is no other reason to have a brain.</span><cite>— Daniel Wolpert, TEDGlobal, 2011</cite></blockquote>
+<p>Movement is the only way to affect the world around you (he immediately concedes one exception: sweating), and speech, gestures and writing all run through muscle contractions. Sensation, memory and cognition matter, but only to drive or suppress future movements. "There can be no evolutionary advantage to laying down memories of childhood or perceiving the color of a rose if it doesn't affect the way you're going to move later in life." Trees and grass have no brains; the "clinching evidence" is the sea squirt, which swims as a juvenile, settles on a rock and digests its own brain and nervous system. Then comes the tenure joke. He declares himself a "movement chauvinist."</p>
+<p>If movement matters so much, how well do we understand it? "Extremely poorly." Look at machines: IBM's Deep Blue can beat Kasparov, so choosing a chess move is "solved"; but in picking up a piece and putting it back on the board, a five-year-old's dexterity beats the best robots of today. A five-year-old could tell you the chess algorithm (look at all possible moves to the end and pick the winner); for dexterity it's not even clear what the algorithm is. He shows a robot pouring water, the end product of a PhD project, and notes that a different task would mean another three-year PhD; for contrast, he shows cup-stacking world-record holder Emily Fox:</p>
+<blockquote><span class="en">There is no generalization at all from one task to another in robotics.</span><cite>— Daniel Wolpert, TEDGlobal, 2011</cite></blockquote>
+<p>"We have no idea what is going on inside her brain when she does that."</p>
+<p>Then the core problem: noise. Sensory feedback is noisy: localize a hand hidden under a table with the other hand and you can be off by several centimeters. Motor output is noisy: aim at the same spot on a dartboard and you get a huge spread. And the task itself is ambiguous and variable: the teapot could be full or empty. We work in "a whole sensory movement task soup of noise."</p>
+<p>His framework is Bayesian decision theory: make inferences, then take actions. Inference draws on two sources: sensory data and the prior knowledge built up over a lifetime. His example is tennis. Your eyes say the ball will land somewhere in the red cloud. But over a match you also learn that a good opponent doesn't spread shots evenly; they land in a green region. Bayes' rule says multiply the red numbers by the green numbers to get the yellow, and that is your belief. Then:</p>
+<blockquote><span class="en">Now I wouldn't tell you all this if it wasn't that a few years ago, we showed this is exactly what people do when they learn new movement skills. And what it means is we really are Bayesian inference machines.</span><cite>— Daniel Wolpert, TEDGlobal, 2011</cite></blockquote>
+<p>One term in the formula requires predicting the sensory feedback you will get given your beliefs, and so the talk turns to prediction. When you send a motor command, you tap off a copy into a "neural simulator" that anticipates its sensory consequences. Shake a ketchup bottle while someone kindly taps its bottom, and your senses receive one combined signal; only by subtracting the prediction can you isolate what came from outside. His summary: "So as I go around the world, I'm making predictions of what I should get, subtracting them off. Everything left over is external to me."</p>
+<p>Evidence one is tickling: you can't tickle yourself as well as others can. Participants move one hand back and forth sinusoidally, and a robot replays the motion as a tickle on the other palm. Add a delay: from 0 to 0.1 seconds and from 0.1 to 0.2 it gets more ticklish, and by 0.2 seconds it is as ticklish as a robot acting alone. Then he admits these are "the worst studies my lab has ever run," because the tickle sensation comes and goes and needs large numbers of subjects. Hence evidence two: the back seat, and the 70 percent escalation.</p>
+<p>The last part is about action. Tasks are symbolic ("I want to drink"), but the body must contract 600 muscles in sequence, with infinitely many ways to do it. Yet we move in remarkably stereotyped ways; a few moving dots are enough to tell whether someone is happy or sad, old or young. Why these movements? Because noise grows with force, you pick the path whose end result varies least: "you want to plan your movements so as to minimize the negative consequence of the noise," and one principle is to avoid big forces. In the Q&amp;A, Chris Anderson asks whether dreaming, yearning and falling in love are a side show. No, Wolpert says: they all matter for driving the right movement behavior, and ultimately reproduction. That we forget most of our childhood "is probably fine, because it doesn't effect our movements later in life."</p>
+<h2>Beneath the iceberg</h2>
+<p><strong>The line "we showed this is exactly what people do"</strong> refers to Körding and Wolpert's 2004 paper in Nature. The experiment was small: <strong>10 participants</strong> reaching to a target in virtual reality while the cursor representing their finger was secretly shifted right by an amount drawn each trial from a Gaussian with mean 1 cm and standard deviation 0.5 cm. Midway through the reach the cursor flashed once: clear, moderately blurred, heavily blurred, or not at all. Each person did 2,000 trials; only the last 1,000 were analyzed. The result is elegant: the blurrier the feedback, the more people leaned toward the 1 cm average, as the Bayesian model predicts, and a second group learned a two-peaked prior too. But the paper is restrained. Showing <strong>quantitatively</strong> that the system is optimal would require directly measuring sensory uncertainty, which cannot easily be done; the results "<strong>qualitatively</strong> match a bayesian integration process." The paper's "qualitatively match" became "exactly what people do" on stage, and then the general "we really are Bayesian inference machines." That is a sizeable widening.</p>
+<p><strong>The tickle study</strong> is Blakemore, Frith and Wolpert, 1999: 16 right-handed participants aged 19 to 30, eyes closed, moving a small cylinder attached to a robot with the <strong>left</strong> hand at 2 Hz and 1.5 cm amplitude while a second robot reproduced the motion with a piece of foam on the <strong>right</strong> palm (on stage the hands were swapped, which doesn't change anything). Delays were 100, 200 and 300 ms. Tickliness rose significantly from 0 to 200 ms, and ratings at 200 and 300 ms did not differ significantly from external stimulation. Fourteen of the 16 said they never noticed the delays. The paper also rotated the direction of the touch by 30, 60 and 90 degrees, and tickliness rose with that too, which the talk leaves out.</p>
+<p><strong>The force escalation paper</strong> (Shergill, Bays, Frith and Wolpert, Science 2003) is a one-page report whose full text I could not read for this piece, so the "70 percent per turn" figure cannot be checked here and is reported only as the talk's claim. A 2016 replication by Takagi and colleagues describes the original as finding that paired exchanges escalate.</p>
+<p><strong>"Avoid big forces"</strong> comes from Harris and Wolpert's 1998 Nature paper. Assume the noise in neural control signals grows as the signal grows (signal-dependent noise; the spread of motor neuron firing rises with its mean). Then, among all trajectories that reach the target, the brain should choose the one that minimizes the variance of the final position. This minimum-variance model reproduces the shape of rapid eye movements (saccades) and arm movements, and predicts the speed-accuracy trade-off described by Fitts's law. It is a theory paper: most of the saccade and arm data it is compared against come from earlier studies by others. "We can explain a huge amount of data" refers to this model.</p>
+<p>Put together, Wolpert's full picture is a pipeline: estimate (combine prior and senses) → predict (subtract what you caused) → plan (pick the steadiest action under noise). In a 2006 review with Körding the wording is more careful than on stage: human behavior is "close to" what Bayesian decision theory predicts.</p>
+<h2>What happened next</h2>
+<div class="fate"><p class="verdict">PARTLY HOLDS · as of 2026-11</p><p>"Self-generated sensations are predicted and attenuated" is the sturdiest part and keeps replicating, including in preregistered work. "We are Bayes-optimal machines" was stated too broadly, forces do not escalate without limit, and the sea squirt used as opening evidence was itself a simplification.</p></div>
+<p><strong>The Bayesian claim took the heaviest fire.</strong> In 2012 Jeffrey Bowers and Colin Davis published "Bayesian just-so stories in psychology and neuroscience" in Psychological Bulletin. They argued that priors, likelihoods and utility functions can be adjusted freely to fit the data, making the models nearly unfalsifiable, and that Bayesian theories rarely predict better than simpler alternatives; in neuroscience the mathematics of how neurons could compute in a Bayesian way is impressive, but there is little evidence that they do. In 2018 Dobromir Rahnev and Rachel Denison, in Behavioral and Brain Sciences, catalogued eight classes of suboptimal perceptual decisions (including misweighting in cue combination) and urged the field to stop asking "is it optimal?" and build models that explain both optimal and suboptimal behavior. These critiques target the field, not the 2004 experiment, which has not been overturned; what they weaken is the sweeping line from the stage.</p>
+<p><strong>Sensory attenuation has only grown firmer.</strong> In 2020 Konstantina Kilteni, Ehrsson and colleagues, in iScience, found attenuation only when touch was triggered by <strong>active</strong> movement of the index finger, not passive movement, which means a copy of the motor command is needed, just as Wolpert's forward model says. A rival "enhancement" account held that predicted touch is amplified (Clare Press and colleagues called the tension "the perceptual prediction paradox" in 2020). In 2023 Job and Kilteni ran three preregistered experiments in eLife and concluded that the "enhancement" effects came from the reference condition used, and that self-generated touch is robustly attenuated.</p>
+<p><strong>Force does not spiral forever.</strong> In 2016 Takagi, Bagnato and Burdet reran the paradigm in Scientific Reports. They first measured individual bias and found that people over-reproduce forces below about 2 N and under-reproduce larger ones, so two partners should <strong>converge</strong> on a force, and their data did converge. They also found a variable the talk never mentions: pairs facing each other mostly under-reproduced the partner's force and converged much lower. Seeing the other person makes people pull their punches. So self-attenuation as a mechanism behind "two eyes for an eye" largely stands, but "conflict must spiral" does not follow from this experiment.</p>
+<p><strong>The sea squirt was overdone.</strong> In 2011 Horie and colleagues tracked ascidian metamorphosis with photoconvertible fluorescent proteins and found that most of the larval central nervous system, except the tail nerve cord, is <strong>kept and rebuilt</strong> into the adult one; most larval neurons disappear, but a subset of motor neurons stays, and non-neuronal ependymal cells act like stem cells to produce new neurons. Neuroscientist Rogier Mars writes in a 2026 book that the larva probably had only 177 neurons to begin with, and that the adult does maintain "a kind of brain," mainly to control the rate of water intake. The point (if you stop moving you need far less brain) survives; the image of eating the whole thing is more dramatic than the facts.</p>
+<p>"Movement is the only reason for a brain" is a stance, not a claim one experiment can test, and it has kept finding heirs in embodied cognition and predictive processing.</p>
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Robotics · Moravec's paradox</b>: In Mind Children (1988), Hans Moravec observed that it is comparatively easy to make computers perform like adults on intelligence tests and very hard to give them a one-year-old's perception and mobility. Same shape as "Deep Blue vs. the five-year-old." The difference is the explanation: Moravec points to the far longer evolutionary polish of sensorimotor skill, Wolpert to noise.</li>
+<li><b>Neuroscience · Predictive processing and Anil Seth</b>: In <a href="anil-seth-controlled-hallucination-talk2.en.html">issue 2</a> of this site, Seth calls perception a "controlled hallucination," with the brain predicting the world from the inside out. Wolpert's forward model is its motor cousin: predict first, then compare with input. The biggest difference is exactly Press's paradox. For Seth, the prediction <strong>constitutes</strong> what you see; for Wolpert, it is <strong>subtracted</strong>, and what you feel is the leftover error. Same machinery, two uses, and no agreed account that unifies them.</li>
+<li><b>Phenomenology · Merleau-Ponty's "I can"</b>: In Phenomenology of Perception (1945), Merleau-Ponty wrote that consciousness is in the first place not "I think that" but "I can," and that the body's grip on the world comes before concepts. This sides with movement chauvinism. Unlike Wolpert, though, Merleau-Ponty refused to reduce the body to computation, which is exactly what Wolpert's engineering and probability set out to do.</li>
+<li><b>Engineering · Noise-cancelling headphones</b>: The headphones pick up ambient noise and play an inverted signal to cancel it, so you hear what is left after subtraction. That is the same subtraction the brain performs on self-generated sensation. The direction is reversed: headphones subtract the outside and keep what you want; the brain subtracts the self and keeps the outside.</li>
+<li><b>Investing · The Black–Litterman model</b>: Fischer Black and Robert Litterman at Goldman Sachs proposed in the early 1990s to start from market-equilibrium returns as a prior and blend in an investor's own views weighted by confidence. That is the same calculation as the tennis "red times green": the less sure the view, the closer the result stays to the prior. The difference: the market prior is chosen by people, while the participants' prior was learned from over a thousand trials.</li>
+</ul></div>
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Daniel Wolpert argues the only reason brains exist is to produce adaptable, complex movement; sensation, memory and cognition matter only as drivers of future movement.</li>
+<li>Apart from sweating, the only way to affect the world is by contracting muscles, and speech and writing are no exception.</li>
+<li>Computers beat chess champions long ago, yet dexterously picking up a chess piece remains hard for robots, because nobody knows what algorithm dexterity requires.</li>
+<li>Motor control is hard because of noise: sensory feedback and motor output both carry random error, enough to misplace a hidden hand by centimeters.</li>
+<li>Bayesian inference weights current sensory evidence against a learned prior by reliability, so the blurrier the senses, the more the prior dominates.</li>
+<li>Körding and Wolpert's 2004 experiment had just 10 participants and claimed a "qualitative" Bayesian match, which the talk turned into "exactly what people do."</li>
+<li>The brain uses a copy of each motor command to predict and subtract the resulting sensations, treating the remainder as external, which is why self-tickling fails.</li>
+<li>A 0.2-second delay between movement and touch makes self-tickling as ticklish as external touch; 2023 preregistered experiments still confirm that self-touch is attenuated.</li>
+<li>Each partner underestimates their own force, so exchanges escalate; a 2016 rerun found forces converge instead, and run lower when partners face each other.</li>
+<li>The sea squirt "eating its brain" is simplified: a 2011 tracing study found most of the larval central nervous system is kept and rebuilt into the adult one.</li>
+</ol>
+<h2>Sources</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.ted.com/talks/daniel_wolpert_the_real_reason_for_brains/transcript">Daniel Wolpert, The real reason for brains (official TED transcript)</a></span><span class="d">Source of every quotation and every number from the talk on this page (70 percent, 0.2 seconds, 600 muscles).</span></li>
+<li><span class="t"><a href="https://pubmed.ncbi.nlm.nih.gov/14724638/">Körding &amp; Wolpert, Bayesian integration in sensorimotor learning, Nature 2004</a></span><span class="d">The experiment behind "we showed this is exactly what people do": 10 participants, the shifted-cursor prior, and the "qualitatively match" wording.</span></li>
+<li><span class="t"><a href="https://pubmed.ncbi.nlm.nih.gov/10511643/">Blakemore, Frith &amp; Wolpert, Spatio-temporal prediction modulates the perception of self-produced stimuli, J Cogn Neurosci 1999</a></span><span class="d">The original tickle study: 16 participants, left hand moving and right palm tickled, 100/200/300 ms delays and spatial rotations.</span></li>
+<li><span class="t"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5064314/">Takagi, Bagnato &amp; Burdet, Facing the partner influences exchanges in force, Scientific Reports 2016</a></span><span class="d">An independent rerun of the force-exchange paradigm: forces converge rather than escalate, and fall lower face to face.</span></li>
+<li><span class="t"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10723797/">Job &amp; Kilteni, Action does not enhance but attenuates predicted touch, eLife 2023</a></span><span class="d">Three preregistered experiments supporting attenuation of self-generated touch and answering the "enhancement" account.</span></li>
+<li><span class="t"><a href="https://www.nature.com/articles/nature09631">Horie et al., Ependymal cells of chordate larvae are stem-like cells that form the adult nervous system, Nature 2011</a></span><span class="d">Shows most of the sea squirt's larval central nervous system is kept and rebuilt at metamorphosis, correcting "it eats its own brain."</span></li>
+</ul>
+</div>
+<footer>Talk Deep Read · one talk, the whole life of one idea · written 2026-11-06</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
