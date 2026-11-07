@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dan Gilbert · The surprising science of happiness — synthetic happiness is real, but there is less of it</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="gilbert-science-of-happiness-talk52.html">中文 →</a></div>
+<header>
+<div class="kicker">TED · 2004</div>
+<h1>When we don't get what we want, the brain makes happiness anyway, just less of it than the talk claimed</h1>
+<p class="sub">Dan Gilbert · The surprising science of happiness</p>
+<div class="modebar"><button class="on" id="btn-pop">Short</button><button id="btn-deep">Full</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>February 2004, TED. Five minutes in, the Harvard psychologist Dan Gilbert springs a pop quiz. Two futures: you win a lottery jackpot of about 314 million dollars, or you become paraplegic. Which do you prefer? The room laughs, because nobody needs to think about it. He puts up some data that look exactly as everyone expected. Then:</p>
+<blockquote><span class="en">But these aren't the data. I made these up!</span><cite>— Dan Gilbert, TED, 2004</cite></blockquote>
+<p>The real data, he says, show that a year on, lottery winners and paraplegics are equally happy with their lives. You failed the quiz. Don't feel bad: everybody fails all of them.</p>
+<p>His argument runs like this. The prefrontal cortex is an "experience simulator" that lets us live futures in our heads before we try them. But the simulator errs in a consistent direction, which he calls the impact bias: we believe different outcomes are more different than they really are. Breakups, lost elections and missed promotions hurt less, and for less time, than we predict. The reason is a "psychological immune system", a set of mostly nonconscious processes that quietly revise how we see the world after the fact. The result is <strong>synthetic happiness</strong>: natural happiness is what we get when we get what we wanted, and synthetic happiness is what we make when we don't. We tend to treat the second kind as sour grapes. Gilbert says it is just as real.</p>
+<p>He offers two pieces of evidence. First, amnesic patients rank Monet prints, choose one, and soon cannot say which one they chose. They still come to like "their" print more. They don't know they own it, so they can't be putting on a brave face. Second, Harvard students in a photography course must give up one of their two best prints. Those who are allowed to swap within days end up liking their print less than those whose choice is final. Yet when another group is asked which version of the course they want, two-thirds pick the one that lets them change their minds.</p>
+<p>He closes with Adam Smith: much human misery comes from overrating the difference between one permanent situation and another. Our longings and our worries are overblown, because we can manufacture the very thing we are chasing.</p>
+<p>Two decades later, about half of this holds. People do overestimate the emotional impact of future events, and choosing something does make us like it more. Both survive methodological correction, though with smaller effects than first reported. The talk's most striking number was stretched. In the 1978 lottery study, the paralyzed accident victims rated their happiness clearly lower than the controls did. They were not "equally happy". Later panel studies of tens of thousands of people found that disability brings a drop that barely recovers over years, and that large lottery wins raise life satisfaction for more than a decade. The most dazzling evidence, the amnesic patients, came from an experimental paradigm that critics showed in 2010 to have a built-in flaw. Verdict: <strong>partly holds</strong>.</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>Talk</b> The surprising science of happiness · <b>Venue</b> TED (Monterey, California) · 2004-02-02 · <b>Length</b> about 21 min · <b>Text</b> <a href="https://www.ted.com/talks/dan_gilbert_the_surprising_science_of_happiness/transcript">official TED transcript</a></div>
+<h2>The moment</h2>
+<p>Gilbert offers the audience two futures: a lottery jackpot of about 314 million dollars, or paraplegia. He invites them to simulate both, then adds, "You probably don't feel like you need a moment of thought." Before the laughter dies he shows happiness data for the two groups ("this is exactly what you expected, isn't it?") and then pulls the rug:</p>
+<blockquote><span class="en">But these aren't the data. I made these up!</span><cite>— Dan Gilbert, TED, 2004</cite></blockquote>
+<p>Then comes what he presents as the real result:</p>
+<blockquote><span class="en">a year after losing the use of their legs and a year after winning the lotto, lottery winners and paraplegics are equally happy with their lives.</span><cite>— Dan Gilbert, TED, 2004</cite></blockquote>
+<p>"You failed the pop quiz, and you're hardly five minutes into the lecture." The whole talk works this way: he lets your intuition answer, then tells you it was wrong. This page asks one more question. Were the "real data" right?</p>
+<h2>The speaker, and the year</h2>
+<p>Daniel Gilbert taught at the University of Texas at Austin for eleven years before moving to Harvard in 1996, where he studies how people predict their own future feelings. On stage he plays less like a professor than a stand-up comic: a Dilbert strip, a warning never to join the Beatles. The transcript marks laughter 12 times.</p>
+<p>His field is affective forecasting: can people accurately predict how they will feel? The two experiments at the heart of the talk had come out in 2001 and 2002, so they were the newest work from his lab. At the same TED, the Buddhist monk Matthieu Ricard argued that <a href="ricard-habits-of-happiness-talk7.en.html">happiness is a trainable skill of the mind</a>, and Gilbert apologizes to his "friend" by name from the stage. Two years later the ideas became a bestseller, <em>Stumbling on Happiness</em> (2006). This talk was the trailer.</p>
+<h2>Glossary</h2>
+<div class="glossary"><ul>
+<li><b>Impact bias</b>: overestimating how strongly, and for how long, an event will affect your feelings.</li>
+<li><b>Cognitive dissonance</b>: the discomfort of acting against your attitudes, usually resolved by changing the attitude.</li>
+<li><b>Free-choice paradigm</b>: rate items, choose between two that are close, rate again, and see whether the ratings "spread apart". Introduced by Jack Brehm in 1956.</li>
+<li><b>Hedonic adaptation</b>: the tendency of happiness to drift back toward its earlier level after good or bad events.</li>
+</ul></div>
+<h2>The talk, in full</h2>
+<p>Gilbert opens with an evolutionary puzzle. In two million years the human brain grew from the pound-and-a-quarter brain of Habilis to an almost three-pound "meatloaf". Why? His answer is the new frontal lobe and its signature trick, experience simulation. Pilots practice in flight simulators; humans rehearse futures in their heads. Ben &amp; Jerry's has no "liver and onion" flavor, he says, because you can simulate that one without tasting it. The trick, he says, "got our species out of the trees and into the shopping mall."</p>
+<p>Then comes the lottery quiz, and then the reveal. The simulator errs, and it errs in a consistent direction. Winning or losing an election, gaining or losing a partner, getting a promotion or not, passing a test or not: each has less impact, less intensity and less duration than people expect. He mentions "a recent study" suggesting that major traumas more than three months old, with few exceptions, have no impact on happiness. Why? "Because happiness can be synthesized." We carry a psychological immune system, a set of largely nonconscious processes that change our views of the world so we can feel better about the world we find ourselves in.</p>
+<blockquote><span class="en">We synthesize happiness, but we think happiness is a thing to be found.</span><cite>— Dan Gilbert, TED, 2004</cite></blockquote>
+<p>Next come a few people from the <em>New York Times</em>. Jim Wright, who lost his power and his money as Speaker of the House, said years later that he was better off "physically, financially, mentally". Moreese Bickham spent 37 years in Louisiana State Penitentiary for a crime he didn't commit and called it, at 78, "a glorious experience". In 1949 Harry Langerman failed to raise 3,000 dollars for a franchise from the McDonald brothers, and six months later Ray Kroc had the same idea. Pete Best, the Beatles' original drummer, said he was "happier than I would have been with the Beatles." Hence Gilbert's secret of happiness. Accrue wealth, power and prestige, then lose it. Spend as much of your life in prison as you can. Make somebody else really rich. And never, ever join the Beatles.</p>
+<p>After the laugh comes the real point. We roll our eyes at such people because we assume synthetic happiness is the inferior kind. He defines his terms:</p>
+<blockquote><span class="en">Natural happiness is what we get when we get what we wanted, and synthetic happiness is what we make when we don't get what we wanted.</span><cite>— Dan Gilbert, TED, 2004</cite></blockquote>
+<p>Where does the prejudice come from? An economy can't run on people who believe that not getting is as good as getting: "a shopping mall full of Zen monks is not going to be particularly profitable." His claim is that synthetic happiness is every bit as real and enduring as the kind you stumble upon when you get exactly what you aimed for.</p>
+<p>His first evidence is the free-choice paradigm, which by then was fifty years old. People rank Monet prints and are offered a choice between number three and number four. Naturally they take number three. When they rank the prints again later, the chosen one has risen and the rejected one has fallen. Is "yeah, right" the correct response? His lab took the prints to a hospital and ran the procedure with patients who have anterograde amnesia. These patients cannot form new memories, and most of them, he says, have Korsakoff syndrome from heavy drinking. A half hour later the patients didn't recognize the experimenters and couldn't say which print was theirs. Yet when they ranked the prints again, they raised the one they had chosen, just as normal controls did.</p>
+<blockquote><span class="en">These people like better the one they own, but they don't know they own it.</span><cite>— Dan Gilbert, TED, 2004</cite></blockquote>
+<p>Then he turns to the conditions under which synthesis works. Freedom to change your mind is the friend of natural happiness, because it lets you pick the best future. It is the enemy of synthetic happiness. His illustration is the difference between dating and marriage. A date picks his nose, and there is no second date. A husband picks his nose? "He has a heart of gold."</p>
+<p>The last experiment took place at Harvard. In a black-and-white photography course, students enlarged their two best prints and were told they could keep only one. Half could swap within four days. The other half heard that the print was leaving for "headquarters" in England in two minutes, never to be seen again. Students asked to predict saw little difference between the two conditions. In fact, the students who were stuck with their choice loved their print. The ones who could swap kept deliberating and still disliked their print after the deadline passed. A new group was then asked which course they would prefer, and 66% chose the reversible one, the one that leaves people less satisfied.</p>
+<p>He ends by setting aside Shakespeare's "'Tis nothing good or bad / But thinking makes it so". It is nice poetry, but gall bladder surgery and a trip to Paris are not the same thing. Adam Smith, he says, was closer to the truth: the great source of misery is overrating the difference between one permanent situation and another. Preferences are fine. The trouble starts when they drive us too hard. Bounded ambition leads us to work joyfully; unbounded ambition leads us to lie, cheat and steal. The final line:</p>
+<blockquote><span class="en">our longings and our worries are both to some degree overblown, because we have within us the capacity to manufacture the very commodity we are constantly chasing when we choose experience.</span><cite>— Dan Gilbert, TED, 2004</cite></blockquote>
+<h2>Beneath the iceberg</h2>
+<p><strong>Lottery and paralysis: the "real data" are not what the study found.</strong> The talk gives no citation, but the comparison is usually traced to Brickman, Coates and Janoff-Bulman, <em>Journal of Personality and Social Psychology</em>, 1978. The World Database of Happiness summary lists 22 Illinois lottery winners (the entry threshold was a prize of $50,000 or more; Lindqvist and colleagues compute an average prize of $1.18 million), 29 accident victims (11 paraplegic, 18 quadriplegic) and 22 controls. On a 0–5 scale of present happiness the winners scored 4.00 and the controls 3.82, which is not a significant difference. The victims scored 2.96, significantly lower than both (p&lt;.01). The victims were also interviewed in person, while the others were interviewed by phone. The study's genuinely surprising findings were that <strong>winning did not make people happier</strong>, and that the victims were not as unhappy as one might have guessed. "Equally happy" is the stage version.</p>
+<p><strong>"No impact after three months"</strong>: Gilbert does not name the study, so we can't check it.</p>
+<p><strong>The amnesia experiment was smaller than it sounded, and it was not about "happiness".</strong> The paper is Lieberman, Ochsner, Gilbert and Schacter, <em>Psychological Science</em>, 2001. The participants were 12 amnesic patients (6 with medial temporal lobe damage and 6 with Korsakoff syndrome, so not "most of them") and 12 age-matched controls. They ranked two sets of 15 small cards, one of Monet paintings and one of works by unknown Aboriginal artists. The choice was not "number three or number four". It was between two pairs of prints: the 4th-ranked with the 10th, or the 6th with the 12th. The whole procedure took one session, and the phases were separated only by a filler task of a few minutes (generating city names). The paper describes no half-hour absence. The amnesics' preferences spread by +2.33 ranks and the controls' by +1.98, with no difference between groups. The memory difference was real: among the cards they did recognize, controls correctly said which pair they had chosen 91% of the time, amnesics 44%. The word "happiness" does not appear anywhere in the paper. Its question was whether dissonance-driven attitude change can happen automatically. Getting from "amnesics' rankings shifted" to "happiness is synthesized, and as real as the natural kind" is a big step that the talk took on the paper's behalf.</p>
+<p><strong>The photography course: the 66% were not photography students.</strong> Gilbert and Jane Ebert published the study in <em>JPSP</em> in 2002. Study 1 had 64 Harvard undergraduates split into four cells of a dozen or so each, with satisfaction measured around day 3 and day 11. The 66% comes from Study 2b. There, 89 students stopped outside dining halls read a <strong>hypothetical</strong> scenario: rank nine posters by famous artists, take home either number three or number four, and choose between a version where the choice is final and one where you can swap any time within a month. 66.3% chose the swappable version. The talk's "number three or number four" also comes from this poster scenario. So "two-thirds of students chose the course that would leave them dissatisfied" stitches together two studies. One was a real course with a few dozen people; the other was a paper-and-pencil choice about a different experiment. The paper's own conclusion is more modest: errors in affective forecasting can lead people to behave in ways that do not optimize their happiness.</p>
+<p><strong>Within his larger framework</strong>, synthetic happiness is half of "immune neglect". We have a psychological immune system, and we don't know we have it, so we overestimate how much bad events will hurt and good ones will help. The 2002 paper opens on exactly this frame. The talk delivered it as good news: you are tougher than you think. The papers deliver it as a forecasting error: not knowing that, you choose badly.</p>
+<h2>What happened next</h2>
+<div class="fate"><p class="verdict">Partly holds · as of 2026-11</p><p>Two claims survive methodological correction with smaller effects: people overestimate the impact of future events, and choosing something makes you like it more. "Paraplegics are as happy as lottery winners" is not what the original study found, and large panel data show that both disability and wealth have lasting effects. The amnesia experiment used a flawed paradigm and cannot show what it was used to show.</p></div>
+<p><strong>2007: adaptation turns out to be incomplete.</strong> Richard Lucas of Michigan State used two nationally representative panels, from Germany and Britain (about 40,000 and 27,000 people). He picked out those who became disabled: 679 in the German panel, followed for an average of about 7 years before onset and 7 years after. His title states the finding: long-term disability is associated with <strong>lasting</strong> changes in well-being. Happiness dropped by 0.40 to 1.27 standard deviations, "followed by little adaptation over time." He notes bluntly that the idea that people adapt to almost anything is widely accepted in psychology, while the evidence for it is actually quite mixed.</p>
+<p><strong>2010: a flaw in the free-choice paradigm.</strong> M. Keith Chen and Jane Risen published an influential critique in <em>JPSP</em>. We have not read the original; what follows relies on Izuma and Murayama's restatement and on a later meta-analysis abstract. First ratings are noisy, and the choice itself reveals true preferences. So the rate–choose–rate procedure produces apparent "spreading" even when preferences never change. In 2013 Izuma and Murayama confirmed by simulation that the procedure yields dissonance-like data with no true change at all. They named Lieberman et al. (2001) specifically: the amnesics' lack of memory for their choice proves nothing here, because the artifact needs no memory. They called for findings from the old paradigm to be re-established.</p>
+<p><strong>But the phenomenon itself survived.</strong> Later studies used designs that rule out the artifact. In 2021 Enisman, Shpitzer and Kleiman pooled 43 such studies (2,191 participants) in a <a href="https://en.social.huji.ac.il/node/3092987">meta-analysis</a> and found d = 0.40, with no sign of publication bias. Choice really does change preference. "I like the one I got better" is true; the amnesia study just can't prove it.</p>
+<p><strong>2012: a discount on the impact bias.</strong> Linda Levine and colleagues found that part of the overestimation comes from how the question is asked. When forecasting, people read the question as "how will I feel when I think about this event?", but afterwards they are asked how they feel in general. When both questions concern the same thing, <a href="https://escholarship.org/content/qt1cq347f8/qt1cq347f8.pdf">their forecasts are quite accurate</a>, and clarifying the question significantly reduces the overestimate. The impact bias was not overturned, but it is smaller than the literature portrayed.</p>
+<p><strong>2018–2020: the lottery half flipped too.</strong> Erik Lindqvist, Robert Östling and David Cesarini surveyed more than 3,000 Swedish lottery players, using the random assignment of prizes as a natural experiment, with a pre-registered analysis. Large-prize winners showed higher overall life satisfaction for more than a decade, with no sign of fading. Effects on happiness and mental health were much smaller. Rescaled to the same metric, Brickman's 1978 result is close to their own happiness estimate in both size and precision. Brickman measured happiness, where money's long-run effect is small to begin with; money's lasting effect shows up in how people evaluate their lives, which is not what the 1978 study measured.</p>
+<p>We found no public response from Gilbert to these specific critiques. Today's consensus, roughly: the psychological immune system is real, and people do underestimate how well they will adapt. But adaptation is not complete for everything. "Circumstances barely matter" is the version of this talk most often bent in retelling.</p>
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Buddhism · the second arrow</b>: The Sallatha Sutta says an untrained person struck by one arrow, bodily pain, shoots himself with a second, mental distress. Both views locate much of suffering in the reaction, not the event. But Buddhism asks for awareness and the letting go of craving. Gilbert's immune system works automatically, outside awareness, and it works by inflating the value of what you already have.</li>
+<li><b>Distributed systems · two-phase commit</b>: In two-phase commit, a participant that has voted "yes" must hold its locks and wait until the final decision arrives. This blocking state is the protocol's most expensive one. The students who could swap prints sat in exactly that state, with the choice uncommitted and their attention held. Once the choice commits (the print is mailed), the locks release and the system moves on. Where the analogy breaks: a database doesn't adapt, and committed data don't start looking better.</li>
+<li><b>Behavioral economics · the endowment effect</b>: In the 1990 mug experiments of Kahneman, Knetsch and Thaler, people who were given a mug asked more than twice what non-owners would pay. In both cases, mine is better. The difference is that the endowment effect requires knowing the thing is yours, and the amnesia study set out to show the effect works even when you don't.</li>
+</ul></div>
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Dan Gilbert describes the prefrontal cortex as an "experience simulator" that lets humans rehearse futures before living them.</li>
+<li>The impact bias: when forecasting, people overestimate how intense and how lasting an event's emotional effect will be.</li>
+<li>The psychological immune system is a set of mostly nonconscious processes that revise how people view their situation, making them feel better.</li>
+<li>Natural happiness comes from getting what you wanted; synthetic happiness is what you make when you don't get it.</li>
+<li>Freedom to change your mind helps you pick the best outcome but hinders synthesizing happiness afterwards, which works best when you are stuck.</li>
+<li>In Gilbert and Ebert's photography study, students who could not swap prints liked the one they kept more than students who could.</li>
+<li>In the 1978 lottery study, paralyzed accident victims rated their happiness clearly lower than controls; they were not "equally happy" with winners.</li>
+<li>Chen and Risen showed the rate–choose–rate procedure creates an apparent post-choice preference shift even when preferences never change.</li>
+<li>With that artifact controlled, choice still changes preference: a 2021 meta-analysis found d = 0.40.</li>
+<li>Large panel studies show disability lowers well-being for years with little recovery, and big lottery wins raise life satisfaction for over a decade.</li>
+</ol>
+<h2>Sources</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.ted.com/talks/dan_gilbert_the_surprising_science_of_happiness/transcript">Dan Gilbert, The surprising science of happiness (official TED transcript)</a></span><span class="d">Source of every quotation and every number from the talk (314 million, 37 years, 3,000 dollars, 66%).</span></li>
+<li><span class="t"><a href="https://sites.harvard.edu/schacter-memory/files/2022/09/Do-Amnesics-Exhibit-Cognitive-Dissonance-Reduction_-The-Role-of-Explicit-Memory-and-Attention-in-Attitude-Change.pdf">Lieberman, Ochsner, Gilbert &amp; Schacter, Do amnesics exhibit cognitive dissonance reduction?, Psychological Science 2001</a></span><span class="d">The amnesia experiment: who the 12 patients were, the 15 cards and 4-10/6-12 pairs, +2.33 vs +1.98, 91% vs 44%.</span></li>
+<li><span class="t"><a href="https://dtg.sites.fas.harvard.edu/Gilber%20t&amp;%20Ebert%20(DECISIONS%20&amp;%20REVISIONS).pdf">Gilbert &amp; Ebert, Decisions and revisions, JPSP 2002</a></span><span class="d">The photography study (64 students) and the hypothetical poster choice (89 students, 66.3%), used to separate the two studies the talk merges.</span></li>
+<li><span class="t"><a href="https://repub.eur.nl/pub/481/Lottery.pdf">World Database of Happiness, Findings on Happiness &amp; Lottery</a></span><span class="d">Sample and happiness scores from Brickman et al. 1978 (4.00 / 3.82 / 2.96); we did not read the original paper in full.</span></li>
+<li><span class="t"><a href="https://gwern.net/doc/psychology/2007-lucas.pdf">Lucas, Long-term disability is associated with lasting changes in subjective well-being, JPSP 2007</a></span><span class="d">Well-being before and after disability in two national panels: drops of 0.40–1.27 SD, little adaptation.</span></li>
+<li><span class="t"><a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00041/full">Izuma &amp; Murayama, Choice-induced preference change in the free-choice paradigm, Frontiers in Psychology 2013</a></span><span class="d">Restates and simulates the Chen–Risen critique and names the amnesia study's evidential problem. See also <a href="https://www.nber.org/papers/w24667">Lindqvist et al. on Swedish lottery winners</a>.</span></li>
+</ul>
+</div>
+<footer>Talk Deep Read · one talk, the whole life of one idea · written 2026-11-07</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
