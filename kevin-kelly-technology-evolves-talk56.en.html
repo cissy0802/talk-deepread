@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kevin Kelly · "How technology evolves" — Technology as the seventh kingdom: "technologies don't die" held up; "technology wants" did not</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="kevin-kelly-technology-evolves-talk56.html">中文 →</a></div>
+<header>
+<div class="kicker">TED2005 · 2005</div>
+<h1>Technology as the seventh kingdom of life: "technologies don't die" held up, "technology wants" did not</h1>
+<p class="sub">Kevin Kelly · "How technology evolves"</p>
+<div class="modebar"><button class="on" id="btn-pop">Short</button><button id="btn-deep">Full</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>Kevin Kelly opened with a confession. A couple of years earlier he had sold all his technology, kept only a bicycle, and ridden 3,000 miles on America's back roads, "fuelled mostly by Twinkies and junk food." The room laughed. This was also a man who had helped start <em>Wired</em> and who ran Cool Tools, a website recommending a new gadget every day. He said he still hadn't worked out what technology meant in his life.</p>
+<p>So he changed the question. Richard Dawkins had looked at organisms as vehicles for genes and asked what the genes want. Kelly borrowed the trick and asked: <strong>what does technology want?</strong> Not chocolate or vanilla, he added, but its inherent trends and biases.</p>
+<p>His answer came in three steps. First, life: wherever life gets a foothold it never retreats, and over time it grows more diverse, more specialized, more complex and more "social," meaning that more and more life lives entirely surrounded by other life. Second, technology: hammers split into ever more specialized kinds; his daughter, armed with a tally counter, found 6,000 species of products in their house, against about 7,000 items in Henry VIII's entire household; machines increasingly deal only with other machines. Same trends. Hence his proposal: <strong>technology is the seventh kingdom of life</strong>, after plants, animals, fungi, protists, bacteria and archaea.</p>
+<p>Then came the one way technology differs from biology: it doesn't go extinct. The paleontologist Niles Eldredge drew a family tree of his cornet collection and found that models no longer made could still serve as "parents" of later ones, which is impossible in biology. Kelly took a page of farm tools from an 1895 Montgomery Ward catalog and asked how many were still being produced. "And the answer is: all of them." Historical bans on technologies keep getting shorter: you can delay a technology, but you can't kill it.</p>
+<p>Finally he pushed technology's origin back to the Big Bang. What the expanding universe produced was the potential for difference, and that is what technology gives us too: choices and freedoms. Imagine Mozart born before the piano, or Van Gogh before cheap oil paints. His conclusion was that we have a moral obligation to invent technology, so that every person on the globe can realize their own particular difference.</p>
+<p>Five years later the idea became a book, <em>What Technology Wants</em> (2010). <strong>Its fate: partly upheld.</strong> "Technologies don't die" survived a public challenge. In 2011 NPR's Robert Krulwich gathered 2,500 candidate counterexamples from listeners and conceded, while noting that Kelly won by defining "species" very broadly. What didn't hold up was the word "wants." Reviewing the book in the <em>New York Times</em>, the evolutionary biologist Jerry Coyne argued that evolution has no direction, so Kelly had turned trends into purposes. The historian of technology Edward Tenner pointed out that slaveholders and tyrants have been just as eager for new technology, so technology does not obviously "want" freedom. Most of what Kelly observed held up. The metaphysics behind it did not.</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>Talk</b> How technology evolves · <b>Venue</b> TED2005, February 24, 2005 · <b>Length</b> about 19 min 40 s · <b>Transcript</b> <a href="https://www.ted.com/talks/kevin_kelly_how_technology_evolves/transcript">official TED transcript</a></div>
+<h2>The moment</h2>
+<p>About two-thirds of the way through, Kelly puts up a screenshot of a web page. A historian of science had pushed back on him: technologies don't die? What about steam cars? They're gone. Kelly went online and found a man selling brand-new parts for Stanley steam automobiles. What he loved was one particular button on the page:</p>
+<blockquote><span class="en">And the thing that I liked is sort of this one-click, add-to-your-cart button -- (Laughter) -- for buying steam valves.</span><cite>— Kevin Kelly, TED2005</cite></blockquote>
+<p>A century-old technology with an e-commerce button. What Kelly wanted to prove was that technology behaves like a kind of life, and a kind that doesn't die.</p>
+<h2>The speaker, and the year</h2>
+<p>Until he was 30, Kelly was a vagabond wandering remote parts of Asia, owning a sleeping bag and some cameras. He got his first car at 32, then dove into the early online world and in 1992 helped start <em>Wired</em>. By 2005 his friends were building supercomputers and search engines, and his family of five still had no TV.</p>
+<p>The talk sits at an odd point. Three months earlier, in November 2004, he had started a blog, <a href="https://kk.org/thetechnium/my-search-for-t/">The Technium</a>, to think a book through in public. In its first post he declared three biases: a belief in progress at large scales, a sense that technology is on the whole a good thing, and, "most importantly," a strong faith in God. At TED he said this was the first time he was talking about the idea, "a very rough attempt to think out loud." The book would not appear until 2010. This talk is the idea in embryo.</p>
+<div class="glossary"><ul>
+<li><b>Kingdom</b>: one of the biggest bins in biological classification. Kelly uses the then-standard six: plants, animals, fungi, protists, bacteria, archaea.</li>
+<li><b>Technium</b>: Kelly's coinage for the whole system of everything that springs from the human mind, not just hardware but also law, institutions and culture. He never says the word on stage.</li>
+<li><b>Evolvability</b>: the capacity to generate useful new variation. Kelly argues that each major transition in the history of life raised this capacity.</li>
+</ul></div>
+<h2>The talk, in full</h2>
+<p>Kelly starts from the awkwardness of definitions. The earliest modern use of the word "technology" he could find was a suggested syllabus at Cambridge University in 1829. "Before that, obviously, technology didn't exist. But obviously it did." He quotes Alan Kay's joke definition: technology is anything invented after you were born. After the laugh, he says he wants something more fundamental, and poses the question that runs through the whole talk:</p>
+<blockquote><span class="en">The question that I came up with was this question: what does technology want? And by that, I don't mean, does it want chocolate or vanilla? By what it wants, I mean, what are its inherent trends and biases?</span><cite>— Kevin Kelly, TED2005</cite></blockquote>
+<p>He openly says the trick is borrowed. Dawkins looks at organisms as vehicles for genes and asks what the selfish gene wants. Kelly concedes the question is incomplete, "But it's still very, very productive." Trace technology far enough back and you arrive at life itself, so the argument begins in biology.</p>
+<p>He shows a parade of "hacks": an ant that stores its colleagues' honey in its abdomen, a sea slug that has taken chloroplasts into its body and runs on sunlight. He can't think of a single general principle of biology without an exception somewhere, and the six kingdoms are six broad approaches to hacking life. Next comes a radial tree of life with 4,000 representative species, humans one twig among them: "Those fungi and bacteria are as highly evolved as humans."</p>
+<p>Then he asks what evolution wants, and lists five long-term trends. <strong>Ubiquity</strong>: there are bacteria in the pores of deep drilling cores, and wherever life is, it never retreats. <strong>Diversity</strong>. <strong>Specialization</strong>. <strong>Complexity</strong>: he says current data show an actual drift toward complexity. And <strong>socialization</strong>: more and more life has other life as its entire environment, like the chloroplasts inside the sea slug, which never touch inert matter.</p>
+<p>Second movement: the same list applied to technology. Specialization: hammers keep getting more specific. Diversity: the 6,000 species in his house against Henry VIII's 7,000 items. Socialization: most machines will only ever be in contact with other technology. Complexity and biology: the idea that machines are becoming biological is by now a cliché, and he says he was "partly responsible for that cliche" (his 1994 book <em>Out of Control</em> was about exactly that). Here he states the talk's central claim:</p>
+<blockquote><span class="en">I suggest that, in fact, technology is the seventh kingdom of life.</span><cite>— Kevin Kelly, TED2005</cite></blockquote>
+<p>Third movement, the turn: where does technology differ from biology? He brings in Niles Eldredge, the paleontologist who developed punctuated equilibrium with Stephen Jay Gould and who, on the side, collects cornets, about 500 of them, treating them like trilobites to reconstruct their genealogy. The chart is not quite published yet, Kelly says, and the interesting part is the red lines at the bottom: a type of cornet that was no longer made became the parent of later models. "That does not happen in biology. When something is extinct, you can't have it as your parent."</p>
+<p>From this he gets to "technologies don't die," with three kinds of evidence. The steam-car parts, the add-to-cart button from the opening. The 1895 Montgomery Ward catalog: he took a page of farm tools, "not quite a random page," and asked how many items were still in production, not as antiques. "And the answer is: all of them." For 50 dollars you can buy a stone-age knife made the way they were made 10,000 years ago, and in Papua New Guinea people were making stone axes until two decades ago. Finally, bans: he went through every historical prohibition of a technology he could find and checked when it came back in, "because they always came back in," and the bans were getting shorter:</p>
+<blockquote><span class="en">And that basically, you can delay technology, but you can't kill it.</span><cite>— Kevin Kelly, TED2005</cite></blockquote>
+<p>He credits culture: culture is the accumulation of ideas, and its purpose is to keep ideas from dying out. Every major transition in life raised "the evolution of evolvability," and technology accelerates the way we search for ideas (he nods to Kurzweil's singularity). He borrows a definition of the "infinite game": "A finite game is play to win, and an infinite game is played to keep playing."</p>
+<p>The last movement goes back to the Big Bang. Compressed into a quantum dot, the universe had "no difference whatsoever"; what expanded was the potential for difference, meaning diversity, choices, opportunities and freedoms ("Those are all basically the same thing"), and that is what technology brings us. Then comes the most moving passage of the talk: imagine Mozart born before the piano, Van Gogh before cheap oil paints. Somewhere today millions of children are being born whose technology of self-expression has not been invented yet.</p>
+<blockquote><span class="en">We have a moral obligation to invent technology so that every person on the globe has the potential to realize their true difference.</span><cite>— Kevin Kelly, TED2005</cite></blockquote>
+<p>He barely deals with the other side. He says he will skip some of the objections "because I don't have answers to why there's deforestation," or to why there seem to be bad technologies. His only example is DDT: terrible when sprayed on cotton fields, very good for eliminating malaria in a village, so the job is to find each technology a good home. He closes on the personal: everyone's assignment is to spend a life discovering what their assignment is, and technology is the medium in which we play that infinite game, so we should embrace it.</p>
+<h2>Below the waterline</h2>
+<p>In the year or so around the talk, Kelly worked every part of it into long blog posts, then into the book. Read side by side, they show where the stage version was compressed and where it was stretched.</p>
+<p><strong>The seventh kingdom's root moved.</strong> On stage it comes "approximately up there, coming out of the animal kingdom." His February 2006 post "The Seventh Kingdom" is more careful. Termite mounds and nests are extended phenotypes, built from blueprints in genes, but the blueprints for human artifacts come from minds. So he writes "Technology is the phenotype of mind," and the seventh kingdom branches off from the human mind. The post goes one step further than the talk: the system has grown so complex that the human mind plays a decreasing role, and most communication traffic is machines talking to machines. In the book this becomes the technium having a measure of autonomy.</p>
+<p><strong>The sample behind "all of them."</strong> On stage: an 1895 catalog, one page. In the 2006 post "Immortal Technologies," it is an <strong>1898</strong> catalog of about 600 pages. He picked a page of agricultural implements because farm tools seemed hardest to find, and found every item for sale new on the web. Later retellings of the book's version say different things again: NPR has "6 pages of agricultural tools from an 1895 Montgomery Ward & Co. Catalogue," Tenner a "two-page spread" from an "1894–1895" catalog. The year and page count shift from version to version. What stays the same is a handful of hand-picked pages. Two smaller numbers drift as well. The stone knife is made as it was "10,000 years ago" on stage and "30,000 years ago" in the post. New Guinea's stone axes were made "until two decades ago" on stage and "until the 1960s" in the post. The post also admits exceptions such as Greek fire and the Inca quipu. On stage "technologies don't die" is absolute; in writing it is "With very few exceptions."</p>
+<p><strong>The denominator of the ban curve.</strong> On stage the bans just get shorter, with no numbers. The 2006 post "The Futility of Prohibition" gives the method. He gathered large-scale prohibitions from the last 1,000 years, imposed by a culture, religious group or nation, and found "about 40 cases." The longest were guns in shogun Japan for a century and exploration ships in Ming China for three centuries. He plotted ban duration against start year, but the chart "includes only prohibitions that have concluded." That choice deserves a second look (this is our analysis, not his). A ban that began in 1950 and is still in force never appears, so the later a ban started, the shorter it must be to make the chart at all. Some of "ever shorter" is built into the sampling. The post also narrows the claim: economic bans can achieve short-term goals; what fails is trying to eliminate a technology seen as morally wrong.</p>
+<p><strong>The cornet genealogy ended up not as a tree.</strong> At the time of the talk Eldredge's chart was unpublished. It appeared in 2007, co-authored with Ilya Tëmkin, in <em>Current Anthropology</em>. We have not read the paper itself; the secondary accounts of the figure agree that the published version is a network, because an innovation in one lineage can transfer directly to others. That adds a second difference from biology which the talk never mentions: technological lineages tangle sideways and won't draw as a clean tree.</p>
+<p><strong>Five trends became ten "wants."</strong> According to Jeannette Cooperman's 2023 essay on the book, the technium wants to copy, to specialize, mutualism, beauty, diversity, freedom, complexity, ubiquity, sentience and to evolve. Tenner's review describes the book's more cosmic layer: the history of the universe as a trend from energy to mass to information (Kelly borrows the term "exotropy"), drawing on Vladimir Vernadsky and Pierre Teilhard de Chardin. The talk's Big Bang ending is that cosmology in miniature.</p>
+<h2>What happened next</h2>
+<div class="fate"><p class="verdict">PARTLY UPHELD · as of 2026-11</p><p>The descriptive claims mostly held: old technologies rarely vanish, bans rarely last, and technological lineages can be traced much like biological ones. The interpretive layer did not. Reading those trends as what technology "wants," or as a direction built into the universe, has drawn direct criticism from evolutionary biologists and historians of technology, and no testable evidence for it has appeared.</p></div>
+<p>The talk went online in November 2006 and has about 2.44 million views. What brought the idea to wide attention was the book, published in October 2010.</p>
+<p><strong>Fall 2010, Edward Tenner.</strong> Reviewing the book in <em>Issues in Science and Technology</em>, the historian called it "a plea for nuanced optimism," then raised two serious problems. First, progress is hard to prove. When the Plains Indian tribes acquired horses and expanded their technological capabilities, they became more likely to wage war on each other; slaveholders and tyrants have been enthusiastic early adopters. Might the technium want whatever social order advances it fastest, free or unfree? Second, Kelly leans too heavily on patent counts as a measure of innovation, when patents can block competitors and reduce diversity. Tenner also drew a contrast: the historian David Edgerton used the same facts about old technology persisting to question belief in progress, while Kelly used them to redefine progress.</p>
+<p><strong>November 2010, Jerry Coyne.</strong> The University of Chicago evolutionary biologist reviewed the book for the <em>New York Times Book Review</em>. We have not read the review itself, only his introduction to it on his blog. He found the history of technology good, but objected that Kelly insists evolution moves toward complexity and beauty and then applies the same direction to technology. Evolution is neither unidirectional nor purposive, so Kelly's universal "laws" fail. Coyne also describes an October 2010 event at the New York Public Library: Krulwich noted that most orthodox biologists see no inherent direction in evolution, and Kelly replied that they were wrong. This is the most fundamental objection to the seventh-kingdom analogy.</p>
+<p><strong>February 2011, Robert Krulwich's bet.</strong> On NPR's Morning Edition Kelly said, "I say there is no species of technology that have ever gone globally extinct on this planet." Krulwich asked listeners for counterexamples, received 2,500, and chose three: the suppository, the Roman corvus boarding plank, and the ferrite core memory in a jukebox. Kelly found a living counterpart for each: high-dose-rate brachytherapy for rectal cancer, retractable gangplanks, and core technology alive in other industries. Krulwich conceded, with a sharp note. Kelly insisted he had said "no species of technology," not "no technological device," and "species" is "a lawyerly concoction" broad enough to call a tube attached to a machine a suppository. Krulwich also found the idea that technology wants to persist "a bit too mystical for my tastes." The bet splits the idea in two. "Old technologies rarely vanish" survived a large public search. But with "species" that elastic, the claim becomes hard to falsify.</p>
+<p><strong>2023, Kelly revises himself.</strong> The book laid out three scenarios for technological complexity. Kelly then bet on the first: the bulk of technology stays simple, because it works. In the third, the most complex things we use in a day would be beyond any single person's comprehension. When Cooperman emailed to ask whether he still bet on the first, he replied in one line: "These days I think we are moving towards #3." That is no retraction of the seventh kingdom, but on complexity he changed his own call.</p>
+<p>Where things stand: "technology evolves like life" remains a useful heuristic analogy; "technology has wants of its own" lacks testable evidence as a scientific claim; "we have a moral obligation to invent technology" is a value claim, and Tenner's counterexamples suggest it needs qualifications at the very least.</p>
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Evolutionary biology · Gould's "left wall"</b>: In <em>Full House</em> (1996), Stephen Jay Gould argued that life's apparent drive toward complexity may simply follow from a lower bound. Start a random walk at minimal complexity and the mean drifts right, while the most common organism remains the bacterium. McShea and Brandon (2010) generalized this into a "zero-force evolutionary law." Where it matches: Kelly's trends can be accepted as observed. Where it doesn't: those trends need no "wanting," and the wanting is exactly the step Kelly adds.</li>
+<li><b>Complexity science · W. Brian Arthur's combinatorial evolution</b>: <em>The Nature of Technology</em> (2009) holds that new technologies are combinations of existing ones, so old technologies live on as components. That explains both persistence and sideways-tangling lineages without any teleology.</li>
+<li><b>Philosophy of mind · Dennett's intentional stance</b>: Ascribing "wants" to a system is a legitimate tool whenever it predicts the system better than a physical description does. Kelly's Dawkins trick is exactly this. The trouble is that he later treats the stance as a fact.</li>
+<li><b>Philosophy · James Carse, <em>Finite and Infinite Games</em> (1986)</b>: Kelly's definition of the infinite game comes from this book. Carse was writing about how people relate to rules; scaled up into the way the universe works, the idea changes meaning.</li>
+<li><b>Distributed systems · protocol ossification</b>: TCP is hard to change because countless devices in the middle of the network assume it looks a certain way. Technologies often fail to die precisely because of "socialization": everything around them depends on them. Where it doesn't match: engineers see this as a burden, Kelly as richness.</li>
+</ul></div>
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Kevin Kelly borrowed Dawkins's "what do genes want" move to ask about technology's inherent long-term trends and biases.</li>
+<li>Life shows five long-term trends: ubiquity, diversity, specialization, complexity and socialization.</li>
+<li>Seeing the same five trends in technology, Kelly proposed technology as the seventh kingdom of life.</li>
+<li>The word "technium," meaning everything that springs from the human mind, was coined in 2004 but never appears in this talk.</li>
+<li>In cornet genealogies, discontinued models can parent later ones and lineages tangle sideways, two ways technology differs from biology.</li>
+<li>"Every farm tool in the 1895 catalog is still made" rests on a few hand-picked pages, and versions disagree on the year and page count.</li>
+<li>The curve of ever-shorter technology bans includes only bans that have ended, leaving out those still in force.</li>
+<li>NPR's 2011 call for 2,500 counterexamples failed to refute "technologies don't die," but the outcome hinged on how broadly "species" is defined.</li>
+<li>Coyne's and Tenner's critiques converge: a trend is not a purpose, and technology can serve unfree orders just as well.</li>
+<li>Gould's left-wall argument shows rising complexity can be passive diffusion, with no system needing to "want" it.</li>
+</ol>
+<h2>Sources</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.ted.com/talks/kevin_kelly_how_technology_evolves/transcript">Kevin Kelly, How technology evolves (TED2005 transcript)</a></span><span class="d">Source of every quotation from the talk and every on-stage number.</span></li>
+<li><span class="t"><a href="https://kk.org/thetechnium/immortal-techno/">Kevin Kelly, Immortal Technologies (The Technium, 2006)</a></span><span class="d">The long version of the catalog test: the 1898 catalog, about 600 pages, the admitted exceptions. Supports the version comparison in "Below the waterline."</span></li>
+<li><span class="t"><a href="https://kk.org/thetechnium/?p=1124">Kevin Kelly, The Futility of Prohibition (The Technium, 2006)</a></span><span class="d">The roughly 40 bans, the longest cases, and the "only concluded prohibitions" sampling rule.</span></li>
+<li><span class="t"><a href="https://issues.org/br_tenner-2/">Edward Tenner, Technophilia's Big Tent (Issues in Science and Technology, Fall 2010)</a></span><span class="d">Review covering the book's exotropy and related ideas, plus the critiques on progress and patents and the Edgerton contrast.</span></li>
+<li><span class="t"><a href="https://whyevolutionistrue.com/2010/11/06/my-nyt-review-of-what-technology-wants/">Jerry Coyne, My NYT review of What Technology Wants (2010)</a></span><span class="d">Coyne's introduction to his New York Times review and his account of the library event. Supports the "evolution has no direction" critique.</span></li>
+<li><span class="t"><a href="https://www.npr.org/sections/krulwich/2011/02/24/133962028/tools-never-die-the-finale">Robert Krulwich, Tools Never Die, The Finale (NPR, 2011)</a></span><span class="d">How the 2,500-counterexample bet ended, the three candidates, and Kelly's defense of "species." For Kelly's 2023 revision on complexity, see <a href="https://commonreader.wustl.edu/the-technium-and-how-kevin-kelly-changed-his-mind/">Cooperman's essay in The Common Reader</a>.</span></li>
+</ul>
+</div>
+<footer>Talk Deep-Read · one talk, the whole life of one idea · written 2026-11-11</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
