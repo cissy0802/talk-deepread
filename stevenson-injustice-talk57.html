@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bryan Stevenson ·《We need to talk about an injustice》— 每个人都不只是他做过的最坏的那件事</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="stevenson-injustice-talk57.en.html">English →</a></div>
+<header>
+<div class="kicker">TED2012 · 2012</div>
+<h1 data-tts="dba3b9ef900fb10d">每个人都不只是他做过的最坏的那件事</h1>
+<p class="sub">Bryan Stevenson ·《We need to talk about an injustice》</p>
+<div class="modebar"><button class="on" id="btn-pop">精华版</button><button id="btn-deep">完整版</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>一个 52 岁的律师站在 TED 台上，坦白一件「也许不该说」的事：他这辈子一滴酒都没喝过。全场鼓掌。他马上说，这不是美德，原因要从他八九岁那年讲起。</p>
+<p>那天早上，外婆把他单独拉到屋后，说自己一直在观察他，觉得他很特别，能做成任何想做的事；然后要他答应三件事：永远爱妈妈；永远做对的事，哪怕对的事是难的事；永远不喝酒。九岁的他都答应了。到十四五岁，哥哥在林子里递给他啤酒，他不接，哥哥问：「你不会还惦记着外婆那次谈话吧？外婆跟每个孙子都说他们很特别。」台下大笑，他说：「我崩溃了。」</p>
+<p>可他守住了。Bryan Stevenson 用这个故事讲<strong>身份认同</strong>（identity）的力量：一个人认定自己是谁，就能做到别人觉得不合理的事。然后他把这个词转向整个国家：美国认为自己是谁？</p>
+<p>接下来是一串数字。1972 年美国监狱和看守所关着 30 万人，如今是 230 万，监禁率世界第一；18 到 30 岁的黑人男性，每三个就有一个在押或在缓刑、假释中；美国是世界上唯一会判 13 岁孩子「死在狱中」的国家。死刑方面，每处决九个人，就有一个死囚被证明无辜、获释。他说，如果每起飞九架飞机就掉一架，没人会让飞机上天。</p>
+<p>他把死刑的问题翻了个面：不是「这些人该不该死」，而是「<strong>我们配不配杀人</strong>」。他讲到德国学者对他说，以德国的历史，绝不可能再有系统地处决人；而美国南方，白人受害者案件的被告被判死刑的可能性高出许多倍，处决就发生在埋着私刑受害者的土地上。</p>
+<p>最后是三句他用一辈子换来的「简单的事」：<strong>每个人都不只是他做过的最坏的那件事</strong>；在太多地方，贫穷的反面不是财富，而是正义；评判一个社会，要看它怎么对待穷人、被定罪的人和被关押的人。他用一个法院黑人清洁工的话收尾：「坚持住，盯住目标。」全场起立。演讲后，TED 观众为他的青少年量刑项目捐了约一百万美元。</p>
+<p><strong>后来的命运：部分站住。</strong>演讲不到四个月后，他代理的 Miller v. Alabama 案在最高法院以 5 比 4 胜诉：对未成年人强制判处无假释终身监禁违宪。到 2026 年，28 个州和华盛顿特区彻底禁止这种判决，近 1300 人获释。但 2021 年的 Jones 案又把门关小了一点。他用的数字也要分开看：南方死刑「11 倍、22 倍」是原始比例，控制 39 个变量后是 4.3 倍；而他在问答里说暴力犯罪率「相对稳定」、监禁暴涨主要来自毒品战争，后来的数据和研究都不支持。数字有的站住、有的说宽了，那句「不只是最坏的那件事」反倒越来越要紧：美国在押者大多不是毒品犯，要真正减少监禁，绕不开如何对待犯过暴力罪的人。</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>演讲</b> We need to talk about an injustice · <b>场合</b> TED2012，长滩 · 2012 年 3 月 · <b>时长</b> 约 23 分钟（含结尾与 Chris Anderson 的问答） · <b>全文</b> <a href="https://www.ted.com/talks/bryan_stevenson_we_need_to_talk_about_an_injustice/transcript">TED 官方逐字稿</a></div>
+<h2 data-tts="a5cc2fe6bf42ccc0">那一刻</h2>
+<p>他写过一份动议。半夜写的，写得太晚、脑子不清醒，标题是：</p>
+<blockquote><span class="en">"Motion to try my poor, 14-year-old Black male client like a privileged, white, 75-year-old corporate executive."</span><span class="zh">「动议：请求以审判一位享有特权的 75 岁白人企业高管的方式，审判我那位贫穷的、14 岁的黑人男孩当事人。」</span><cite>— Bryan Stevenson，《We need to talk about an injustice》，2012</cite></blockquote>
+<p>台下先是大笑，随后是掌声和欢呼。他接着说，动议里还指控了检方、警方和法官的不当行为，有一句疯话说这个县里「没有行为，全是不当行为」（no conduct, it's all misconduct）。第二天早上醒来，他问自己：这份疯狂的动议是梦里写的，还是真写了？「让我惊恐的是，我不仅写了，还把它递给了法院。」</p>
+<p>这个笑话底下压着一个很硬的问题：一个 14 岁的孩子，法官一纸裁定就被「认证」为成年人受审。他在台上问：法官怎么能把你变成你不是的东西？</p>
+<h2 data-tts="3e5514c4bf833c45">讲的人，和那一年</h2>
+<p>Bryan Stevenson 在特拉华州一个种族隔离的乡村长大，外婆的父母生在弗吉尼亚，出生时是奴隶。他在哈佛读法学院时一度觉得迷失，直到 1983 年去亚特兰大一个为死囚辩护的小机构实习，第一次走进死囚区（death row）。后来他在阿拉巴马州蒙哥马利创办了<strong>平等司法倡议</strong>（Equal Justice Initiative，EJI），专为死囚、穷人和被当作成年人起诉的孩子打官司。演讲里他说：「我大部分时间待在看守所、监狱和死囚区里。」</p>
+<p>2012 年 3 月的 TED 时机很特别。三周后的 3 月 20 日，他要在美国最高法院为两名 14 岁时犯下杀人罪、被判无假释终身监禁（life without parole）的少年辩护，其中一案就是 Miller v. Alabama。台下坐的是科技、设计和娱乐圈的精英，他在台上点破了这层反差：他要大家去想那些「永远到不了 TED」的穷人和弱势者。演讲结束后，TED 创办人 Chris Anderson 上台追问「除了开支票还能做什么」；据事后报道，TED 社区为他的青少年量刑项目捐了约一百万美元。</p>
+<h2 data-tts="b51f0e9f043babf7">这场演讲，讲透</h2>
+<p>他从 TED 本身切入：TED 有一种身份，在这里说的话能传遍世界。老师说的话有分量，有同情心的老师说的话分量更重。所以他要讲<strong>身份认同（identity）的力量</strong>，而这一课是外婆教的。</p>
+<p>外婆的故事占了演讲前四分之一，讲得像单口喜剧：她是「家里每场争论的终点，也是很多争论的起点」；她抱人抱得让你喘不过气，过一两个小时还要问「Bryan，你还感觉得到我在抱你吗？」接着是屋后那场谈话、三个承诺，和哥哥揭穿真相的那一刻。包袱抖完，他亮出意图：</p>
+<blockquote><span class="en">"I don't say that because I think that's virtuous; I say that because there is power in identity."</span><span class="zh">「我这么说不是因为我觉得这有多高尚，而是因为身份认同有力量。」</span><cite>— Bryan Stevenson，2012</cite></blockquote>
+<p>笑声随即沉下来：他的外祖父在禁酒令时期坐过牢，舅舅们都死于与酒精有关的疾病。外婆要孙子们许下的，是她亲眼见过的代价。</p>
+<p>然后他转向刑事司法，一层层铺数字：1972 年 30 万人在押，如今 230 万，另有 700 万人在缓刑和假释中；18 到 30 岁的黑人男性三分之一处在刑事司法控制下；阿拉巴马州 34% 的黑人男性因刑事定罪永久失去投票权；美国是唯一判 13 岁孩子死在狱中的国家。再是贫富：</p>
+<blockquote><span class="en">"We have a system of justice in this country that treats you much better if you're rich and guilty than if you're poor and innocent. Wealth, not culpability, shapes outcomes."</span><span class="zh">「我们这个国家的司法制度，对有钱的有罪者远比对贫穷的无辜者好。决定结果的是财富，不是罪责。」</span><cite>— Bryan Stevenson，2012</cite></blockquote>
+<p>到死刑，他做了全场最关键的翻转：人们习惯问「人该不该为所犯的罪去死」，另一种问法是「<strong>我们配不配杀人</strong>」（Do we deserve to kill?）。问题从被告的身份转回了「我们」的身份，正好接上开头。支撑它的是误差：每处决九人，就有一人被证明无辜、获释。「每起飞九架飞机就掉一架，我们绝不会让人上飞机。」台下笑了，他说：可我们就是能把自己和这个问题隔开。</p>
+<p>接着是历史：从重建结束到二战的「恐怖时代」，私刑和爆炸塑造了几代人。老人们托他转告：别说 9·11 是美国第一次面对恐怖主义，「我们就是在恐怖中长大的」。南非、卢旺达走过「真相与和解」，美国没有。然后是全场最安静的一段：一位德国学者对他说，以德国的历史，绝不可能再有系统地处决人。他想，如果德国在处决人，而被处决者里犹太人比例畸高，会是什么感觉？「我无法承受。」而在美国旧南方，受害者是白人时被判死刑的可能性高 11 倍，黑人被告杀白人受害者时高 22 倍，就在那些埋着私刑受害者的州。</p>
+<p>他开始收束。引哈维尔（Václav Havel）说，压迫下最需要的是希望，「一种精神的取向」；提醒这种身份「会让你累」。Rosa Parks 听完他介绍 EJI 要做的一长串事，说：「那会让你累、累、累。」组织过蒙哥马利巴士抵制运动的 Johnnie Carr 把手指伸到他脸前：「所以你得勇敢、勇敢、勇敢。」然后是那三句：</p>
+<blockquote><span class="en">"I've come to understand and to believe that each of us is more than the worst thing we've ever done."</span><span class="zh">「我渐渐明白、也渐渐相信：我们每个人，都不只是自己做过的最坏的那件事。」</span><cite>— Bryan Stevenson，2012</cite></blockquote>
+<p>「哪怕你杀了人，你也不只是一个杀人犯」，所以法律必须尊重人的基本尊严。第二句：「在太多地方，贫穷的反面是正义。」第三句：</p>
+<blockquote><span class="en">"Ultimately, you judge the character of a society not by how they treat their rich and the powerful and the privileged, but by how they treat the poor, the condemned, the incarcerated."</span><span class="zh">「说到底，评判一个社会的品格，不看它怎么对待富人、权贵和特权者，而看它怎么对待穷人、被定罪的人和被关押的人。」</span><cite>— Bryan Stevenson，2012</cite></blockquote>
+<p>结尾回到那份疯狂的动议。出庭那天，台阶上一位年长的黑人清洁工抱住他耳语：「我真为你骄傲。」庭上法官、警察、助理检察官越聚越多，都为他谈种族和贫穷而愤怒。清洁工终于进来，坐到他身后。休庭时一位副警长冲过去问：「Jimmy，你在法庭里干什么？」老人站起来：</p>
+<blockquote><span class="en">"I came into this courtroom to tell this young man, 'Keep your eyes on the prize, hold on.'"</span><span class="zh">「我进这个法庭，是来告诉这个年轻人：『盯住目标，坚持住。』」</span><cite>— Bryan Stevenson，2012</cite></blockquote>
+<p>他把这句话原样留给台下。问答里他又补了两点，后面都要再看：加州即将公投，把未来五年花在死刑上的十亿美元转给执法；监禁暴涨不是因为暴力犯罪，而是「误入歧途的毒品战争」。</p>
+<h2 data-tts="470c5cee5e756106">冰山下面</h2>
+<p><strong>那两个「11 倍」「22 倍」是从哪来的。</strong>演讲没说出处，但数字与 1987 年最高法院 McCleskey v. Kemp 案引用的 Baldus 研究对得上。它分析了 1970 年代佐治亚州 2000 多起谋杀案：杀害白人的被告 11% 被判死刑，杀害黑人的只有 1%；黑人杀白人 22% 被判死刑，黑人杀黑人 1%。台上的两个倍数，就是这两组原始比例。</p>
+<p>台上没说的有三层。第一，这是佐治亚一个州 1970 年代的数据，台上变成了「旧南方各州」。第二，原始比例没有控制案情轻重。Baldus 考察了 230 个可能的非种族解释变量，其中一个模型控制 39 个变量后，<strong>杀害白人者被判死刑的可能性是杀害黑人者的 4.3 倍</strong>，仍然很大，但不是 11 倍。第三，同一模型里被告种族本身的效应只有 1.1 倍；原始数据甚至显示白人被告整体判死率（7%）高于黑人被告（4%）。真正稳健的发现是「受害者是谁」决定了生死的价码，这和他「谁的命更值钱」的论点其实更贴，只是台上的说法比原始结论宽了一截。</p>
+<p>最高法院 5 比 4 承认了统计但驳回了上诉。Powell 大法官写道：「量刑中明显的差异是我们刑事司法制度不可避免的一部分。」异议的 Brennan 大法官回了一句：多数派担心承认这个主张会引发对所有量刑的挑战，「表面看来，这似乎是在害怕太多的正义」。</p>
+<p><strong>「九分之一」的分母。</strong>台上说「每处决九人就有一人被平反（exoneration）」，紧接着又说「九个人里有一个是无辜的」。这两句不是一回事：前者是平反人数和处决人数的比，后者听起来像是被处决的人里有九分之一无辜。被平反的人恰恰是没被处决的。更接近「死刑判决里有多少是错的」的估计来自 2014 年 Samuel Gross 等人发表在《美国国家科学院院刊》（PNAS）的研究：他们用生存分析估计，如果所有死刑犯都一直留在死囚区，<strong>至少 4.1% 最终会被平反</strong>，作者认为这是保守估计。分母是所有死刑判决，大约二十五分之一，和飞机的比喻是两种尺子。</p>
+<p><strong>外婆，以及他书里那个更大的词。</strong>两年后他出版了回忆录《正义的慈悲》（Just Mercy，2014），开篇又写了外婆，细节和台上略有出入：台上说外婆有 10 个孩子，书里写的是 9 个；书里还承认，被问「还感觉得到吗」时，「我经常说没有，因为被她有力的手臂裹住让我开心」。最重要的是书里多出的一句外婆的话：</p>
+<blockquote><span class="en">"You can't understand most of the important things from a distance, Bryan. You have to get close."</span><span class="zh">「Bryan，大多数重要的事，隔着距离是看不懂的。你得靠近。」</span><cite>— Bryan Stevenson，《Just Mercy》，2014（《亚特兰大宪法报》节选）</cite></blockquote>
+<p>他接着写，是「靠近被定罪的人」把迷失的他带回了家。TED 上的关键词是「身份」，书里换成了「靠近」（proximity）。后来他在各校毕业典礼上反复讲四件事：靠近受苦的人、改变叙事、保持希望、愿意做不舒服的事。TED 那场演讲里四件事都在，只是还没排成清单。</p>
+<p><strong>「恐怖时代」后来有了数字。</strong>台上他说「我们对那个时代知道得不多」。2015 年 EJI 的报告《美国的私刑》（Lynching in America）记录了 1877 到 1950 年间南方 12 个州 4075 起种族恐怖私刑，比此前最全面的统计多出至少 800 起。</p>
+<h2 data-tts="ff13173ef5e2e181">后来的命运</h2>
+<div class="fate"><p class="verdict">部分站住 · 截至 2026-11</p><p>核心的道德主张和青少年量刑这一仗大体赢了，死刑误差的数字后来更糟而不是更好；但台上的种族倍数说宽了，问答里关于暴力犯罪和毒品战争的两句，被数据和研究否定。</p></div>
+<p><strong>2012 年 6 月：最快的一次兑现。</strong>演讲后不到四个月，最高法院在 Miller v. Alabama 案中以 5 比 4 裁定：对犯罪时未满 18 岁的人强制判处无假释终身监禁，违反第八修正案（Eighth Amendment）。Kagan 大法官预计这类判决今后会「不常见」（uncommon）。但它只禁止「强制」，法官仍可在个案中这样判。2016 年 Montgomery v. Louisiana 以 6 比 3 让 Miller 溯及既往；2021 年 Jones v. Mississippi 又以 6 比 3 往回收：判这类刑罚前，不必单独认定少年「永久不可矫正」。州一级走得更远：青少年量刑公平运动（CFSY）2026 年 1 月的报告说，28 个州和华盛顿特区已彻底禁止，自 Miller 以来在服此刑的人数降了约 85%，近 1300 人已经回家。</p>
+<p><strong>死刑：误差率没有变好，「平反」的定义仍在吵。</strong>死刑信息中心（DPIC）2021 年的报告把比例更新为每处决 8.3 人平反 1 人，比「九分之一」更糟；到 2024 年底平反总数达 200 人。另一边，Scalia 大法官在 2006 年 Kansas v. Marsh 案中批评，把可撤销的错误说成事实上无辜，是「废死派话语中的通病」，并说 DPIC 名单里有「可疑的候选者」。Gross 的 4.1% 之所以重要，正因为它绕开了「谁算平反」的争吵。问答里那场加州公投（2012 年 34 号提案）以约 48% 对 52% 失败。</p>
+<p><strong>大规模监禁：降了，没降到他期待的程度。</strong>监狱人口 2009 年见顶。按监狱政策倡议组织（Prison Policy Initiative）2025 年的统计，在押人数「近 200 万」，另有 67.1 万人假释、290 万人缓刑。美国仍是「所有独立民主国家中监禁率最高的」。</p>
+<p><strong>问答里没站住的两句。</strong>他说「暴力犯罪率其实相对稳定」。按皮尤研究中心汇总，1993 到 2022 年 FBI 统计的暴力犯罪率降了 49%，司法统计局的被害调查显示降了 71%。另一句「暴涨来自毒品战争」，被福特汉姆大学法学教授 John Pfaff 在《锁死》（Locked In，2017）里系统反驳：州监狱的增长主要由地方检察官更多地提起重罪指控驱动，毒品犯只占少数；监狱政策倡议组织也说，在押者五分之四不是因毒品罪。Pfaff 对《Reason》说：「只盯着毒品，我们就在拖延关于暴力的那场对话。」</p>
+<p>这里有个反转：Pfaff 推翻的是一句随口的回答，却让演讲的核心更站得住了。如果在押者主要犯过暴力罪，只放「非暴力毒品犯」的改革就解决不了大规模监禁，社会迟早要回答：杀过人的人还算不算人。那正是「你不只是你做过的最坏的那件事」要回答的问题。2018 年 4 月，EJI 在蒙哥马利开放了全国和平与正义纪念馆，刻着 4000 多名私刑受害者的名字。台上他说美国没走过的「真相与和解」，他自己动手修了一段。</p>
+<h2 data-tts="a0a11b05d8cb908b">越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>佛学 · 鸯掘摩罗</b>：巴利经典《中部》第 86 经里，杀人无数的鸯掘摩罗遇佛出家，最终证得阿罗汉，一个人可以不被他最坏的行为定义，佛教讲这个故事讲了两千多年。不像在哪：出家后他托钵时仍被人打得头破血流，转变不免除业报；佛教还说根本没有固定的「自我」，而 Stevenson 恰恰需要一个承载尊严的「人」，法律才有对象可尊重。</li>
+<li><b>心理学 · 基本归因错误</b>：Lee Ross 1977 年命名的倾向：解释别人的行为时高估性格、低估处境。把一个人归为「杀人犯」，就是把一次行为归因成整个人。不像：归因错误是认知偏差，可以用实验纠正；Stevenson 的主张是道德立场，哪怕归因完全准确也照样成立。</li>
+<li><b>商业思维 · 单向门决策</b>：Jeff Bezos 在 2015 年度致股东信里把决策分成可逆的「双向门」和不可逆的「单向门」，后者必须慢、必须谨慎。死刑是最极端的单向门，而九分之一的平反率说明这道门的审核远不够慢。不像：Bezos 的分类是为了让可逆决策更快，司法没有「快」的那一半。</li>
+<li><b>政治哲学 · Rawls 的差异原则</b>：Rawls 在《正义论》（1971）里主张，不平等只有在有利于处境最差者时才正当，用最弱势的人来检验制度，和「看它怎么对待被关押的人」是同一个视角。不像：Rawls 谈的是基本善品的分配，Stevenson 谈的是惩罚和尊严，罪犯在 Rawls 的框架里并不天然是「最不利者」。</li>
+</ul></div>
+<h2 data-tts="b46b938c34d08bfc">十条要点</h2>
+<ol class="takeaways">
+<li>Bryan Stevenson 用外婆让他承诺不喝酒的故事说明：一个人认定自己是谁，就能做到别人认为不合理的事。</li>
+<li>TED 演讲把「身份认同」从个人转向国家：美国如何对待囚犯，决定了美国是一个什么样的国家。</li>
+<li>死刑问题可以翻转：不问「罪犯该不该死」，而问「我们配不配杀人」。</li>
+<li>演讲中的「每处决九人就平反一人」是平反与处决之比，不等于被处决者里有九分之一无辜。</li>
+<li>Gross 等人 2014 年估计，美国死刑判决中至少 4.1% 是错判，且这是保守估计。</li>
+<li>Baldus 研究的原始数据是 11% 对 1%，控制 39 个变量后，杀害白人者被判死刑的可能性是杀害黑人者的 4.3 倍。</li>
+<li>在 Baldus 研究里，决定死刑价码的主要是受害者的种族，被告种族本身的效应很小。</li>
+<li>Miller v. Alabama 只禁止对未成年人「强制」判无假释终身监禁；2021 年 Jones 案又放宽了法官的裁量。</li>
+<li>John Pfaff 的研究显示，监禁暴涨主要由检察官的重罪指控驱动，毒品犯只占在押者的少数，所以改革绕不开暴力犯罪者。</li>
+<li>佛经里的鸯掘摩罗杀人后出家成圣，同样说明一个人不只是他做过的最坏的事，但后果不会因此免除。</li>
+</ol>
+<h2 data-tts="124deb1762c7d278">出处</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.ted.com/talks/bryan_stevenson_we_need_to_talk_about_an_injustice/transcript">We need to talk about an injustice — TED 官方逐字稿</a></span><span class="d">本页所有演讲引语与台上数字的来源，含结尾与 Chris Anderson 的问答。</span></li>
+<li><span class="t"><a href="https://www.law.cornell.edu/supremecourt/text/481/279">McCleskey v. Kemp, 481 U.S. 279 (1987)</a></span><span class="d">最高法院判决全文，Baldus 研究的原始比例、4.3 倍和 1.1 倍、Powell 与 Brennan 的原话都出自这里。</span></li>
+<li><span class="t"><a href="https://www.ajc.com/news/just-mercy/Vg58NjVNjpIWLgJVaZFpiN/">Just Mercy 节选（《亚特兰大宪法报》，2014）</a></span><span class="d">回忆录开篇节选，外婆「九个孩子」和「你得靠近」的出处，也是第二节生平的依据。</span></li>
+<li><span class="t"><a href="https://pubmed.ncbi.nlm.nih.gov/24778209/">Gross et al., Rate of false conviction of criminal defendants who are sentenced to death, PNAS 2014</a></span><span class="d">独立于演讲者的研究，「至少 4.1%」错判估计的来源。</span></li>
+<li><span class="t"><a href="https://cfsy.org/wp-content/uploads/A-Decade-After-Montgomery-v.-Louisiana-by-Campaign-for-the-Fair-Sentencing-of-Youth-2026.pdf">A Decade After Montgomery v. Louisiana（CFSY，2026）</a></span><span class="d">28 州加华盛顿特区禁止、人数降约 85%、近 1300 人获释的数字来源。</span></li>
+<li><span class="t"><a href="https://www.prisonpolicy.org/reports/pie2025.html">Mass Incarceration: The Whole Pie 2025（Prison Policy Initiative）</a></span><span class="d">今日在押「近 200 万」、假释与缓刑人数、「五分之四不是毒品犯」的来源；暴力犯罪降幅见<a href="https://www.pewresearch.org/short-reads/2024/04/24/what-the-data-says-about-crime-in-the-us/">皮尤研究中心汇总</a>。</span></li>
+</ul>
+</div>
+<footer>演讲精读 · 一场演讲，一个想法的来龙去脉 · 写于 2026-11-12</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
