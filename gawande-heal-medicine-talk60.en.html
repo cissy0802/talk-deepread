@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Atul Gawande · How do we heal medicine? — Doctors are cowboys; patients need pit crews</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="gawande-heal-medicine-talk60.html">中文 →</a></div>
+<header>
+<div class="kicker">TED2012 · 2012</div>
+<h1>Two minutes, nineteen items: Atul Gawande asks doctors to stop being cowboys</h1>
+<p class="sub">Atul Gawande · <i>How do we heal medicine?</i></p>
+<div class="modebar"><button class="on" id="btn-pop">Short</button><button id="btn-deep">Full</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>Suppose you built a car from the best parts in the world: Porsche brakes, a Ferrari engine, a Volvo body, a BMW chassis. What do you get? Atul Gawande gave the answer on the TED stage:</p>
+<blockquote><span class="en">A very expensive pile of junk that does not go anywhere.</span><cite>— Atul Gawande, TED2012</cite></blockquote>
+<p>Modern medicine, he said, can feel like that car. It has the best drugs, the best technology and the best specialists, and still doesn't add up to a system.</p>
+<p>Gawande is a Harvard surgeon. In this 19-minute talk from 2012 he starts in 1937, when medicine was cheap and mostly useless and one doctor could hold all of it in his head: he set the fracture, drew the blood, looked down the microscope. The culture of medicine set in that era: daring, independence, and above all <strong>autonomy</strong>. Today the same doctor is licensed to prescribe 6,000 drugs, and a typical hospital patient is looked after by more than 15 clinicians, each holding one piece. His diagnosis:</p>
+<blockquote><span class="en">We have trained, hired and rewarded people to be cowboys. But it's pit crews that we need, pit crews for patients.</span><cite>— Atul Gawande, TED2012</cite></blockquote>
+<p>His model was a <strong>checklist</strong>. The World Health Organization asked his team to reduce deaths in surgery. They studied aviation and skyscraper construction, brought in Boeing's lead safety engineer, and produced a 19-item, two-minute checklist with three pauses: before anesthesia, before the incision, before the patient leaves the room. Some items were "dumb stuff," like confirming the antibiotic went in on time; others were stranger, like everyone in the room saying their name before the operation. Eight hospitals tried it, from rural Tanzania to Seattle. Complications fell 35 percent, he reported, and deaths fell 47 percent. "This was bigger than a drug." At the end he told the story of a real cowboy: herding a thousand cattle takes protocols and checklists too. The audience laughed.</p>
+<p>So what happened to the idea?</p>
+<p>The 47 percent came from a 2009 study in the <i>New England Journal of Medicine</i>: about 7,700 patients, measured <strong>before and after, with no control group</strong>. The checklist quickly became policy around the world. In 2014 an analysis of Ontario, Canada, covering 101 hospitals and over 200,000 operations, compared three months before and after adoption: deaths 0.71% vs 0.65%, complications 3.86% vs 3.82%, no significant difference. Critics, and Gawande himself, argued the checklists there had mostly been ticked rather than used.</p>
+<p>On the other side, a randomized trial in Norway in 2015 found complications falling from 19.9% to 11.5%; a statewide program in South Carolina later found deaths fell only in hospitals that actually completed implementation, where CEOs and physicians had been far more involved.</p>
+<p>The verdict is <strong>partly holds</strong>. A checklist is not a drug, and handing out a sheet of paper doesn't move the numbers. Teams that genuinely use one have fewer complications, and that is the third and hardest thing Gawande named on stage: getting everyone along the chain to actually do it.</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>Talk</b> How do we heal medicine? · <b>Venue</b> TED2012 · recorded March 1, 2012 · <b>Length</b> about 19 min · <b>Transcript</b> <a href="https://www.ted.com/talks/atul_gawande_how_do_we_heal_medicine/transcript">TED official transcript</a></div>
+
+<h2>The moment</h2>
+<p>Near the end, Gawande drops in a "by the way": he once met an actual cowboy.</p>
+<p>He asked the man how you herd a thousand cattle across hundreds of miles. The cowboy said they station people at distinct places all around, communicate electronically all the time, and have protocols and checklists for everything, from bad weather to emergencies to inoculating the cattle.</p>
+<p>At the word "checklists," the room laughed. For fifteen minutes "cowboy" had been his word for everything wrong with the old medicine: independent, self-reliant, carrying it all alone. Now even the real cowboys had given that up. (A pit crew, the image he sets against them, is the team that changes a race car's tyres in seconds, each person with one fixed job.)</p>
+<blockquote><span class="en">Even the cowboys are pit crews now.</span><cite>— Atul Gawande, TED2012</cite></blockquote>
+<p>Doctors like to say medicine is too special to compare with racing. Gawande doesn't argue. He just lets the cowboy speak.</p>
+
+<h2>The speaker, and the year</h2>
+<p>Atul Gawande is a general and endocrine surgeon at Brigham and Women's Hospital in Boston and a professor at the Harvard T.H. Chan School of Public Health. He opens by saying he started writing and doing research as a surgical trainee, someone "a long ways away from becoming any kind of an expert at anything," and the natural question was how to get good at what he was doing, and then how all of us get good at it.</p>
+<p>In 2012 he stood where two lines met. One was safety: in 2007–2008 he led the eight-country WHO study of a surgical checklist, published in 2009, the same year as his book <i>The Checklist Manifesto</i>. The other was money: the Affordable Care Act had been signed in 2010 and the United States was fighting over health costs. Is the problem government or insurers? "The answer is yes and no; it's deeper than all of that."</p>
+<p>He had used the cowboys-and-pit-crews image before, in his Harvard Medical School commencement address of May 2011, whose best-known line runs "We train, hire, and pay doctors to be cowboys." On the TED stage it became "We have trained, hired and rewarded people to be cowboys": "doctors" turned into "people." The commencement spoke to new doctors; TED spoke to everyone.</p>
+
+<h2>The talk, in full</h2>
+<p>Gawande starts with money: medicine is in "the deepest crisis of medicine's existence," driven by the thing doctors least think about, cost. Then he moves the cause. It isn't government or insurers. It's the <strong>complexity</strong> science has given us.</p>
+<p>He takes the audience back. His favorite physician-writer, Lewis Thomas, described in <i>The Youngest Science</i> his internship at Boston City Hospital in the pre-penicillin year of 1937. Medicine was "cheap and very ineffective": a hospital did you good only by offering warmth, food, shelter and a nurse's attention; "Doctors and medicine made no difference at all." The doctors were still frantically busy, working out whether you happened to have one of the few things they could treat: antiserum for lobar pneumonia, a pint of blood let for heart failure, a concoction of mercury and arsenic for syphilitic paralysis, "as long as you didn't overdose them and kill them."</p>
+<p>That, he says, is when the core structure of medicine was built. What was known, you could know; you could hold it in your head and do it all. Set the fracture, draw the blood, look under the microscope, inject the antiserum. "This was a life as a craftsman." So the profession's values became daring, courage, independence, self-sufficiency. "Autonomy was our highest value."</p>
+<p>Then he jumps two generations. We have treatments for nearly all of the tens of thousands of conditions a human can have; 4,000 medical and surgical procedures; 6,000 drugs he is licensed to prescribe. He cites a study, unnamed in the talk: in 1970 a typical hospital patient took just over two full-time-equivalent clinicians, mostly nursing time plus a doctor checking in once a day; by the end of the twentieth century it took more than 15. "We're all specialists now, even the primary care physicians." Everyone holds a piece, while clinging to the values of the lone hero. That, he says, has become a disaster.</p>
+<blockquote><span class="en">We have trained, hired and rewarded people to be cowboys. But it's pit crews that we need, pit crews for patients.</span><cite>— Atul Gawande, TED2012</cite></blockquote>
+<p>The evidence is a run of numbers: 40 percent of coronary artery disease patients and 60 percent of asthma and stroke patients receive incomplete or inappropriate care; two million people pick up an infection in hospital because someone failed to follow basic hygiene. Brilliant clinicians, amazing technology, little sense that it ever comes together from start to finish.</p>
+<p>Cost is the second sign. The doctors' defense: when a $40,000 hip replacement replaces a 10-cent aspirin, is it any surprise it costs more? Gawande states the case fully, then turns it: the data show the most expensive care is not necessarily the best, and the best care often turns out to be the least expensive, because it has fewer complications. That is where hope lies; otherwise the only option is rationing.</p>
+<p>When you look at the <strong>positive deviants</strong>, the places getting the best results at the lowest cost, "the ones that look the most like systems are the most successful." Medicine is obsessed with components. Here comes the car built from the best parts, and the pile of junk.</p>
+<p>The second half lays out three skills a system has.</p>
+<p><strong>One: recognize success and failure.</strong> Specialists can't see the end result, so you have to become interested in data, "unsexy as that sounds." A surgeon colleague in Cedar Rapids, Iowa, kept reading that too many CT scans were being done but didn't see it in his own patients, so he asked for the local numbers. It took three months; no one had asked before. For a community of 300,000 people, they had done 52,000 CT scans the previous year.</p>
+<p><strong>Two: devise solutions.</strong> The WHO came to his team: the volume of surgery had spread around the world, its safety had not. The usual fixes are more training, more specialization, more technology, but surgeons couldn't be more specialized or better trained. So they looked at skyscraper construction and aviation, and found one more thing besides technology and training: checklists.</p>
+<blockquote><span class="en">I did not expect to be spending a significant part of my time as a Harvard surgeon worrying about checklists.</span><cite>— Atul Gawande, TED2012</cite></blockquote>
+<p>They brought in Boeing's lead safety engineer, and learned that designing a checklist is harder than it looks. You need <strong>pause points</strong>, moments when a problem can be caught before it becomes a danger, like a before-takeoff check. You need to focus on the <strong>killer items</strong>. An aviation checklist isn't a recipe for flying the plane; it's a reminder of the key things that get missed if not checked.</p>
+<p>The result was a 19-item, two-minute checklist with three pause points: before anesthesia, before the knife hits the skin, before the patient leaves the room. It had "dumb stuff," such as making sure the antibiotic is given in the right time frame, which he says cuts the infection rate by half. And it had more interesting stuff, because you can't write a recipe for surgery; you can only write "a recipe for how to have a team that's prepared for the unexpected." So everyone in the room introduces themselves by name, because half a dozen people may be working together as a team for the first time that day. Eight hospitals, chosen to run from rural Tanzania to the University of Washington in Seattle. Complications fell 35 percent, in every hospital. Deaths fell 47 percent.</p>
+<blockquote><span class="en">This was bigger than a drug.</span><cite>— Atul Gawande, TED2012</cite></blockquote>
+<p>After the applause, cold water. <strong>Three: implement it</strong>, getting colleagues across the entire chain to actually do these things. It has been slow; the checklist is not yet the norm even in surgery, let alone childbirth. The resistance is deep, because these tools force you to confront that you are not a system:</p>
+<blockquote><span class="en">Just using a checklist requires you to embrace different values from the ones we've had, like humility, discipline, teamwork.</span><cite>— Atul Gawande, TED2012</cite></blockquote>
+<p>Those three words are set exactly against independence, self-sufficiency and autonomy from the opening. Then the cowboy joke, then the widening: making systems work is the great task of his generation of physicians, and of the whole generation, in health care, education, climate change, poverty. Knowledge has exploded in every field and brought complexity and specialization. The last line: "complexity requires group success. We all need to be pit crews now."</p>
+
+<h2>Below the iceberg</h2>
+<p><strong>Layer one: where the 47 percent comes from.</strong> The eight-hospital study is the <a href="https://pubmed.ncbi.nlm.nih.gov/19144931/">Safe Surgery Saves Lives study</a> by Alex Haynes, Gawande and colleagues, published in the <i>NEJM</i> in January 2009. The cities were Toronto, New Delhi, Amman, Auckland, Manila, Ifakara (Tanzania), London and Seattle; the period October 2007 to September 2008. The team enrolled 3,733 consecutive patients aged 16 or older having noncardiac surgery, then 3,955 after the checklist was introduced. Deaths fell from 1.5% to 0.8% (P=0.003); inpatient complications from 11.0% to 7.0% (P&lt;0.001).</p>
+<p>The figures match the stage. Deaths from 1.5% to 0.8% is a 47% relative drop; complications from 11.0% to 7.0% is about 36%, which he rounded to 35. But every figure on stage is <strong>relative</strong>. In absolute terms, death fell by 0.7 percentage points, roughly one life per 140 operations. Across the estimated 234 million operations a year the paper cites, that is a great deal; it just doesn't sound like "47 percent."</p>
+<p>The design matters more. This was a before-after study with no concurrent control hospitals, and the paper's conclusion says "associated with," not "caused." Other things may have changed in those hospitals between the two periods, and staff who know they are being studied behave differently. The paper is also explicit that the intervention was "a program to implement a 19-item surgical safety checklist": what was tested was not a sheet of paper but the whole effort of rolling it out. "Bigger than a drug" presents a before-after association as if it were a drug-trial effect.</p>
+<p><strong>Layer two: the aviation story is more complicated.</strong> On stage, Boeing gets one sentence. In 2010 Thomas Weiser, Haynes, Boeing's Daniel Boorman, Gawande and others <a href="https://pubmed.ncbi.nlm.nih.gov/20702569/">wrote up the design process</a>: aviation had more than 70 years of checklist experience, while the medical literature offered little guidance on building one. The paper also discusses <strong>the differences between aviation and medicine</strong> that affect checklist use. The talk gives only the similarities.</p>
+<p><strong>Layer three: "system" is bigger than "checklist."</strong> The checklist is just one example of the second of three skills. The first half of the talk is about cost and positive deviants, the second about safety, and the talk joins them: the same systems capacity lowers costs and lowers deaths. That join is made by assertion; no study on stage measures cost and safety together.</p>
+<p>Several figures came without sources on stage: the 1970-to-2000 study of two clinicians becoming fifteen, the 40 and 60 percent of inappropriate care, the two million hospital infections, the antibiotic halving infections. This page could not trace the originals and reports them only as he stated them.</p>
+
+<h2>What happened next</h2>
+<div class="fate"><p class="verdict">PARTLY HOLDS · as of 2026-11</p><p>When teams genuinely implement it, the surgical checklist does reduce complications, with support from a randomized trial and a meta-analysis. But the stage's "deaths fell 47 percent" came from an uncontrolled before-after comparison, and checklists rolled out by mandate and merely ticked show no effect in large-scale data.</p></div>
+<p>After 2009 the checklist became policy fast. By 2014 a Belgian <a href="https://pubmed.ncbi.nlm.nih.gov/24469615/">meta-analysis</a> could pool seven studies: risk ratio 0.59 for any complication and 0.77 for death. The authors noted marked methodological differences between studies; the evidence was "highly suggestive" but not definitive. Studies with bigger drops in complications tended to be those where the checklist's care steps were actually carried out.</p>
+<p>That March came the first hard blow. David Urbach and colleagues in Toronto published <a href="https://pubmed.ncbi.nlm.nih.gov/24620866/">a natural experiment from Ontario</a> in the same journal. With the province pushing every hospital to adopt checklists, they used administrative data to compare three months before and after each hospital's adoption: 101 hospitals, 109,341 versus 106,370 procedures. Adjusted mortality was 0.71% versus 0.65% (P=0.13), complications 3.86% versus 3.82% (P=0.29). No significant reduction.</p>
+<p>Lucian Leape, writing the accompanying editorial, argued according to press coverage that the likeliest reason was that the checklist had not actually been used; this page did not read the editorial itself. Gawande replied on the blog The Incidental Economist; this page could not open the original post. According to Josh Herigon's <a href="https://kevinmd.com/2014/03/nejm-publish-bad-study-checklists.html">account on KevinMD</a>, Gawande argued the study was underpowered and that the result reflected a failure of implementation, not of checklists. Herigon ran the numbers himself: Ontario's baseline death rate was half that of the 2009 study, so even 200,000-plus operations gave only about 40% statistical power against the usual 80%. Ontario proved neither that checklists fail nor that they work.</p>
+<p>The weightier evidence is randomized. In 2015 Arvid Haugen and colleagues in Bergen, Norway, published a <a href="https://pubmed.ncbi.nlm.nih.gov/24824415/">stepped-wedge cluster randomized trial</a>: five surgical specialties in two hospitals switched to the checklist in random order, 2,212 control procedures versus 2,263 checklist procedures. Complications fell from 19.9% to 11.5% and average stay by 0.8 days; mortality fell from 1.9% to 0.2% in one hospital, but the combined drop (1.6% to 1.0%) was not significant. A <a href="https://pubmed.ncbi.nlm.nih.gov/29112512/">2019 secondary analysis</a> found the effects were clearest when all three parts of the checklist were performed.</p>
+<p>Gawande's own team answered at scale in South Carolina, where hospitals joined a voluntary program. A <a href="https://pubmed.ncbi.nlm.nih.gov/29140848/">2017 analysis</a> found that in the 14 hospitals that had completed implementation by the end of 2013, adjusted 30-day mortality fell from 3.38% to 2.84%, while in the other 44 it rose from 3.50% to 3.71%, a 22% difference by difference-in-differences. Gawande is an author, and the completing hospitals selected themselves rather than being randomized. A <a href="https://pubmed.ncbi.nlm.nih.gov/30395507/">2018 follow-up</a> reported that completers had markedly more CEO and physician participation and more teamwork training.</p>
+<p>Why the same sheet of paper sometimes works and sometimes doesn't, social scientists offered another answer. In 2011 Mary Dixon-Woods, Charles Bosk and colleagues <a href="https://pubmed.ncbi.nlm.nih.gov/21676020/">re-examined the Michigan ICU project</a>, the famous checklist-style program that sharply cut catheter bloodstream infections. They concluded it worked through a set of social mechanisms: normative pressure from a dense peer network, infection data used as a disciplinary force, and some "hard edges." The checklist was one tool among them.</p>
+<p>The gap between ticking and doing is still measurable. In a 2024 study that scored operations from operating-room "black box" recordings, time-out <a href="https://pubmed.ncbi.nlm.nih.gov/38989569/">compliance was 99.9% while quality scored 73.3%</a>.</p>
+<p>What failed is the version that spread: one checklist, deaths halved. What holds is the plainer layer of the talk: a checklist is a tool for making a team work as a system, and without the team it is a sheet of paper.</p>
+
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Distributed systems · barriers and membership discovery</b>: The three pause points work like barriers in parallel computing: every participant must sync state there before anyone moves to the next phase. Saying names before the operation resembles membership discovery when a cluster starts, so each node knows who else is live. The difference: protocols assume nodes follow the rules exactly and fail by crashing or losing the network, while operating-room "nodes" skip steps or stay quiet to save face. That is Ontario's lesson: a protocol written into software runs; a protocol written into policy may not.</li>
+<li><b>Psychology · Amy Edmondson and psychological safety</b>: Studying hospital nursing teams, Edmondson found that units with better leadership and coworker relations reported more medication errors, not fewer, because people dared to speak. Introductions and pre-incision checks partly lower the cost of speaking up. The difference: Edmondson studies culture directly; the checklist tries to pry culture open from the side of procedure.</li>
+<li><b>Buddhism · the Vinaya's rule-by-incident</b>: The monastic code is traditionally said to have been laid down case by case: a monk did something wrong, and a rule was made. That resembles killer items drawn from past accidents. The difference: the precepts aim at training the mind; the checklist cares only about the outcome of this operation.</li>
+</ul></div>
+
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Atul Gawande locates medicine's crisis in the complexity science created, not in government or insurers.</li>
+<li>In 1937 medicine was cheap and ineffective, one doctor could know all of it, and the profession made autonomy its highest value.</li>
+<li>Today doctors face 6,000 drugs, and a typical hospital patient is cared for by more than 15 clinicians.</li>
+<li>Medicine trains and rewards solo cowboys, while patients need coordinated pit crews with fixed roles.</li>
+<li>The best care often costs least because it has fewer complications, and the cheapest high-performing places look most like systems.</li>
+<li>A working system needs three skills: recognize failure, devise solutions, and get everyone along the chain to actually do them.</li>
+<li>The WHO Surgical Safety Checklist has 19 items and three pause points, and asks the whole team to introduce themselves by name.</li>
+<li>The "47 percent fewer deaths" was a relative drop in an uncontrolled before-after study, from 1.5% to 0.8%.</li>
+<li>A mandated rollout in Ontario showed no measurable effect, while a Norwegian randomized trial cut complications from 19.9% to 11.5%; implementation quality made the difference.</li>
+<li>Surgical pause points resemble barrier synchronization in distributed systems, but people skip steps, and policy is not code.</li>
+</ol>
+
+<h2>Sources</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.ted.com/talks/atul_gawande_how_do_we_heal_medicine/transcript">Atul Gawande, How do we heal medicine? (TED2012), transcript</a></span><span class="d">Source of every quotation and stage figure on this page.</span></li>
+<li><span class="t"><a href="https://pubmed.ncbi.nlm.nih.gov/19144931/">Haynes et al., A surgical safety checklist to reduce morbidity and mortality in a global population, NEJM 2009</a></span><span class="d">The original eight-hospital study; the sample, design and before-after figures in "Below the iceberg."</span></li>
+<li><span class="t"><a href="https://pubmed.ncbi.nlm.nih.gov/24620866/">Urbach et al., Introduction of surgical safety checklists in Ontario, Canada, NEJM 2014</a></span><span class="d">The large null result from 101 hospitals; the main counter-evidence in "What happened next."</span></li>
+<li><span class="t"><a href="https://pubmed.ncbi.nlm.nih.gov/24824415/">Haugen et al., Effect of the WHO checklist on patient outcomes: a stepped wedge cluster RCT, Annals of Surgery 2015</a></span><span class="d">The Norwegian randomized trial; positive evidence independent of Gawande's team.</span></li>
+<li><span class="t"><a href="https://pubmed.ncbi.nlm.nih.gov/29140848/">Haynes et al., Mortality trends after a voluntary checklist-based surgical safety collaborative, Annals of Surgery 2017</a></span><span class="d">South Carolina results behind "only completed implementation showed an effect."</span></li>
+<li><span class="t"><a href="https://pubmed.ncbi.nlm.nih.gov/21676020/">Dixon-Woods et al., Explaining Michigan, Milbank Quarterly 2011</a></span><span class="d">A social-mechanism account of why checklist programs work; supports "the checklist is one tool."</span></li>
+</ul>
+</div>
+<footer>Talk Deep Read · one talk, the life of one idea · written 2026-11-15</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
