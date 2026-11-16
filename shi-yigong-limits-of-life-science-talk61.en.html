@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shi Yigong · The Limits of Knowing in Life Science — from protein structures to a "sixth sense" in one step</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="shi-yigong-limits-of-life-science-talk61.html">中文 →</a></div>
+<header>
+<div class="kicker">Future Forum, first annual meeting · 2016</div>
+<h1>A structural biologist asks four questions and walks his audience from quantum entanglement to a "sixth sense"</h1>
+<p class="sub">Shi Yigong · The Limits of Knowing in Life Science (<em>Shengming kexue renzhi de jixian</em>)</p>
+<div class="modebar"><button class="on" id="btn-pop">Short</button><button id="btn-deep">Full</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>Near the end of the talk, Shi Yigong told the room: "I want to ask you four questions." First: do you believe in a sixth sense? He answered for them: "Many people will say no." Second: could two people communicate in some unknown way? "You'll say maybe." Third: does quantum entanglement exist in the brain? "After hearing my lecture, I believe you'll think it quite possible." Fourth: does entanglement apply to matter on Earth? Of course; that has been proven. Then he turned the ladder upside down:</p>
+<blockquote><span class="en">But put simply, these four questions are exactly the same question. Reasoning backward, it shows there must be a sixth sense. We just can't feel it, which is why it's called the "sixth sense."</span><cite>— Shi Yigong, 2016 (our translation)</cite></blockquote>
+<p>The speaker was no qigong master. On January 17, 2016, Shi was vice-president of Tsinghua University and dean of its School of Life Sciences. Five months earlier he had published, in <em>Nature</em>, the atomic structure of human gamma-secretase, a membrane protein directly implicated in Alzheimer's disease.</p>
+<p>The first half of the talk was the science he knows best. Statins and PD-1 antibodies, his point went, came about because basic research took a disease apart down to its molecules, and the drugs followed. The turn came with Alzheimer's. Nobody knows its cause, he admitted, and then he widened that to the whole brain: "we can basically say we know nothing." If atoms, molecules, cells and organs can't explain consciousness, he concluded, the answer has to lie one level down, in quantum mechanics. His evidence was a hypothesis the physicist Matthew Fisher had posted only that August: phosphorus nuclear spins, tucked inside calcium-phosphate clusters called Posner molecules, might hold a quantum state for a long time. Shi told the audience their entanglement could last 10⁵ seconds, then pushed on: perhaps entanglement is "a phenomenon that can evolve," present in life for 3.5 billion years.</p>
+<p>What he didn't say: Fisher's figure of about a day was a back-of-envelope estimate of spin coherence inside a single molecule, not of how long entanglement could last. In his own first paragraph, Fisher calls sustained quantum coherence in a wet brain "exceedingly unlikely," and he offers the idea as a proposal waiting to be shot down. And the 10⁻²⁰ to 10⁻¹³ seconds Shi cited for microtubules come from Max Tegmark's 2000 paper, which used those numbers to argue that the brain is a classical system.</p>
+<p>What happened next? Two days after the talk, the science writer Fang Zhouzi published a fierce rebuttal, saying Shi had taken a hypothesis "as fact." The harder wall is in physics: the no-communication theorem says entanglement produces correlations but carries no information, so the step "two people communicating in an unknown way" was blocked before Shi ever spoke. Fisher's hypothesis itself lived on, with $1.2 million for experiments in 2018. But calculations put the entanglement between two Posner molecules at no more than 37 minutes under idealized conditions, and a 2023 simulation cut it to under a second. From 2017 a doctored version also went viral, with an added ending that said "God may also exist." In 2018 Shi said he had "never" said any such thing. But the doctored ending took off from the sixth sense, which was his own.</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>Talk</b> The Limits of Knowing in Life Science · <b>Venue</b> Future Forum first annual meeting · Beijing · January 17, 2016 · <b>Length</b> transcribed text of about 4,300 Chinese characters · <b>Text</b> <a href="https://tsg.hnzj.edu.cn/info/1037/2233.htm">Henan Polytechnic library reprint of the <em>Mr. Science</em> transcript</a> (cross-checked against <a href="https://news.sina.cn/2017-09-18/detail-ifykyfwq8238087.d.html">Sina's reprint of the Guangzhou Daily version</a>)</div>
+<h2>The moment</h2>
+<p>He asked the room: do you believe in a sixth sense? Then he answered for them: "Many people will say no."</p>
+<p>Second question: could two people communicate in some unknown way? "You'll say maybe; you won't say no as firmly as you did to the first." Third: does entanglement exist in the brain? "After hearing my lecture, I believe you'll think it quite possible." Fourth: does entanglement apply to matter on Earth? "You'll certainly say it does, because we've proven it."</p>
+<p>Four rungs, each one more confident than the last. Then he announced that the four were really one: "Reasoning backward, it shows there must be a sixth sense. We just can't feel it, which is why it's called the 'sixth sense.'"</p>
+<p>The man at the podium was one of China's best structural biologists. Everything before this point had come with papers, Nobel Prizes and drugs. Here he had four questions and nothing else.</p>
+<h2>The speaker, and the year</h2>
+<p>Shi Yigong was born in Henan in 1967, studied at Tsinghua, did his PhD in the United States, rose to an endowed chair at Princeton and returned to Tsinghua full-time in 2008. His craft is seeing a protein down to its atoms. In August 2015 his lab published a 3.4-angstrom cryo-electron-microscopy structure of human gamma-secretase in <em>Nature</em>; this is the "first report at atomic resolution, last year" he mentions on stage. When he spoke at the Future Forum on January 17, 2016, he was Tsinghua's vice-president and dean of life sciences. In the audience was Wang Xiaodong, whom he singled out as a former postdoc of Goldstein and Brown.</p>
+<p>The Future Forum was founded by a group of scientists and tech leaders, Shi among them. Its first annual meeting was themed "A New Century of Human Cognition." The listeners were curious members of the public and funders, not peer reviewers. Three days later, the science outlet <em>Mr. Science</em> (<em>Sai Xiansheng</em>) ran a transcript, which Shi later confirmed. The idea he brought on stage was five months old: Fisher's paper went up on arXiv in August 2015 and appeared that year in <em>Annals of Physics</em>, with no experimental data. The audience heard an untested hypothesis, newly born, delivered with conviction by an authority from another field.</p>
+<h2>The talk, in full</h2>
+<p>He starts at the start of a person. A sperm "wanders around" the surface of an egg looking for a way in; the egg is "clever," sealing the entrance the moment one gets through. A heartbeat appears at four weeks, kicking at four or five months. A comic rhyme follows the life span from "at 0, a dazzling debut" to "at 100, hung on the wall" (as a memorial portrait), and once the laughter dies down he gets to his subject. In China, he says, 3.03 million people a year die of cardiovascular disease (32%) and 2.65 million of cancer (28%), and neurodegenerative diseases rarely kill but torment many more. Humanity moved from searching old texts and lucky accidents to "drug discovery driven by basic research." He gives three examples, each a step up.</p>
+<p>Cardiovascular disease first. Low-density lipoprotein (LDL, the "bad cholesterol") binds a receptor, the cell swallows and degrades it, and the receptor returns to the surface to work again. Goldstein and Brown won the 1985 Nobel Prize for finding that receptor, the statins followed, and Lipitor became, as he puts it, a "drug god." Statins aren't enough for some patients because a protein called PCSK9 drags the receptor in along with the lipoprotein, so the receptor is destroyed too. Then cancer. In August 2015 Jimmy Carter announced his melanoma had spread to his brain, and in December he announced the four tumors "could no longer be found." Shi credits anti-PD-1 antibodies and says immunotherapy "fundamentally changed how humanity fights disease." Alzheimer's comes last, and here the steps run out: "Very regrettably, to this day humanity simply does not know the cause." His lab has solved gamma-secretase, which "perhaps" will lead somewhere.</p>
+<p>Then comes the biggest turn of the talk. He slides from Alzheimer's to the whole brain: "we can basically say we know nothing." Even recorded nerve impulses may be "only a surface appearance," because we understand the world through five senses and a brain we don't understand, so it "can't be called objective." He divides matter into three levels. The macroscopic is what we can see. The microscopic is what instruments can detect. The ultra-microscopic, quanta and photons, can only be inferred in theory and tested by experiment, yet we "never know what it is." "The ultra-microscopic world determines the microscopic world; the microscopic world determines the macroscopic world." And so:</p>
+<blockquote><span class="en">I have no doubt that I am a Schrödinger equation, a form of life, a form of energy. I just don't know how to solve the equation, or how thought arises. That's all.</span><cite>— Shi Yigong, 2016 (our translation)</cite></blockquote>
+<p>Atoms build up, level by level, into organs, but "no matter how you do the research, you can't explain human consciousness." Hence:</p>
+<blockquote><span class="en">I think that to explain consciousness, we must go beyond the first two levels and look at the level of quantum mechanics. That is what I myself believe.</span><cite>— Shi Yigong, 2016 (our translation)</cite></blockquote>
+<p>Calling himself an amateur showing off before experts, he explains the 1935 EPR paradox: two entangled particles, however far apart, "are not independent events." Since entanglement exists in the objective world, "I believe it is everywhere, including in our bodies." For evidence he turns to Fisher. Entanglement in microtubules, the tube-shaped scaffolding inside nerve cells, lasts only 10⁻²⁰ to 10⁻¹³ seconds, which is too short. But in calcium phosphate shaped as Posner molecules, entanglement can last "as long as 10⁵ seconds," fifteen orders of magnitude longer, and "five more orders and you reach the scale of years." By extension, "quantum entanglement is also a phenomenon that can evolve," one that "existed in ancient times."</p>
+<p>Then come the four questions, and a still wider close. Every fertilized egg traces back 3.5 billion years to a single cell, "a system in complex quantum entanglement, as simple as that." He admits: "Actually I don't know what's in there, but I believe it." He does some arithmetic: each breath takes in about 10²² oxygen atoms, of which at least 10⁴ were breathed before by some stranger in a far corner of the world. Dark matter and dark energy make up 96% of the universe. We know the world the way the blind men knew the elephant: each touches something real, "we just don't know whether we're touching the elephant's back, its tail or its ear." The landing:</p>
+<blockquote><span class="en">I think the limit of human knowing lies in this: we are a pile of atoms, we live in the macroscopic world, yet we hope to look across two worlds at the ultra-microscopic world.</span><cite>— Shi Yigong, 2016 (our translation)</cite></blockquote>
+<p>Every sentence in the first half had a source. The second half runs almost entirely on "I believe." The oxygen arithmetic is about atoms being swapped and has nothing to do with entanglement. Placed right after the sixth sense, it makes "we are all connected" sound like physics.</p>
+<h2>Below the iceberg</h2>
+<p><strong>What Fisher's paper actually says.</strong> "Quantum Cognition: The possibility of processing with nuclear spins in the brain" opens by granting that quantum mechanics has long been presumed unable to play a functional role in the brain, because sustaining coherence for seconds, minutes or hours in a wet environment is "exceedingly unlikely." His case rests on one exception: nuclear spins barely couple to their surroundings. Phosphorus is the only suitable biological element, and the rapid tumbling of the Posner molecule, Ca₉(PO₄)₆, averages away the magnetic noise from nearby water. An order-of-magnitude estimate, t ≈ f<sub>rot</sub>/f<sub>dip</sub>² ∼ 10⁵ s ∼ 1 day, follows. The stage version departs from the paper in three ways. First, this is <strong>spin coherence within one molecule</strong>, not what Shi called an "entanglement time." Second, it is an estimate on paper; the paper reports no measurement. Third, the paper closes with a list of experiments that "might serve to refute, or perhaps strengthen" the hypothesis. Fisher wrote a proposal to be tested.</p>
+<p>A few numbers changed shape along the way. From 10⁻¹³ s to 10⁵ s is eighteen orders of magnitude, not fifteen. A year is about 3×10⁷ seconds, so getting from 10⁵ s to "years" takes only two and a half more orders; five more would reach three centuries. None of this changes the direction of the argument, but it shows the passage was delivered from memory.</p>
+<p><strong>Where the microtubule numbers come from.</strong> The 10⁻²⁰ to 10⁻¹³ seconds come from Max Tegmark's "The importance of quantum decoherence in brain processes," posted in 1999 and published in <em>Physical Review E</em> in 2000. Tegmark computed decoherence times, meaning how fast the environment scrambles a quantum state, and compared them with neural timescales of 0.001 to 0.1 seconds. He concluded that the brain's cognitive degrees of freedom "should be thought of as a classical rather than quantum system." The paper was a rebuttal of Roger Penrose and others who proposed that the brain is a quantum computer. Shi presented it as "scientists found that microtubules in nerve cells can form quantum entanglement," which turns a paper against the idea into half an argument for it.</p>
+<p><strong>Fisher's credentials, and the experiments "under way."</strong> Shi introduced Fisher as "a famous theoretical and experimental physicist" who is "now carrying out experimental verification." Fisher is a condensed-matter theorist. According to Fang Zhouzi, who went through his publication list, this was his first paper touching biology. The paper lists experiments others could run; it doesn't say Fisher is running any.</p>
+<p><strong>The first half was compressed too.</strong> Shi called James Allison "the discoverer of this concept" behind PD-1 therapy. But Allison's pioneering work targeted a different checkpoint, CTLA-4. PD-1 was discovered by Tasuku Honjo in Japan, and Lieping Chen's contribution was its ligand, PD-L1. Carter also had surgery and radiation. None of this undoes the first half's argument; it shows a talk not much concerned with fine print.</p>
+<h2>What happened next</h2>
+<div class="fate"><p class="verdict">Overturned · as of 2026-11</p><p>The "sixth sense" step was blocked before the talk was given: entanglement cannot carry information. The Fisher hypothesis he borrowed is still unresolved, but later calculations have cut the key molecule's entanglement lifetime from "about a day" to "at most 37 minutes," and then to under a second.</p></div>
+<p><strong>Two days later (January 19, 2016)</strong>, Fang Zhouzi published a paragraph-by-paragraph rebuttal titled, roughly, "On how 'master' Shi Yigong spins 'life science.'" It made three substantive points. Saying "we know nothing" about the brain erases twenty or thirty years of neuroscience and cognitive science. Fisher had only proposed a hypothesis, which Shi "took as fact," while promoting a theorist to "experimental physicist." And on entanglement being "a phenomenon that can evolve": anything that evolves must at least replicate and vary, "so how exactly does quantum entanglement replicate and vary?" The piece is laced with personal insults, but those three points hold. Fu Xinyuan of Indiana University also voiced concern in a ScienceNet blog post; we have not read it. We found no public reply from Shi to these critics.</p>
+<p><strong>Why the sixth sense was blocked from the start.</strong> The key rung was the second one. Quantum mechanics has a proven result, the no-communication theorem: measuring one particle of an entangled pair does not change the statistics seen at the other end. Entanglement creates correlation but cannot, on its own, carry a single bit, which is why quantum communication always needs a classical channel alongside it. Even a brain full of entanglement could not support "communicating in an unknown way."</p>
+<p><strong>The Fisher hypothesis: still open, but narrowing.</strong> In March 2018 Fisher received $1.2 million over three years to start a Quantum Brain experimental project. Only then did Shi's "experiments under way" become true. The same year, Thomas Player and Peter Hore at Oxford calculated an upper bound of 37 minutes on entanglement between two Posner molecules under "idealized physiological conditions," and argued that real relaxation would be much faster. In 2023, Agarwal, Kattnig, Aiello and Banerjee built on an earlier finding that the Posner molecule (a calcium-phosphate trimer) lacks the well-defined symmetry axis the proposal assumed. Their simulations found trimer entanglement decaying in under a second, while calcium-phosphate dimers could keep it for hundreds of seconds. The candidate molecule has changed. In the material we read, we found no report of Posner molecules being observed directly in living tissue.</p>
+<p><strong>The doctored tail.</strong> From October 2017, an article titled "My understanding has collapsed again: the world may not exist at all" spread widely online. Its text matched the confirmed <em>Mr. Science</em> version except for an added final paragraph: "then souls and ghosts may exist; since quanta can be entangled, the sixth sense and supernatural powers may exist too," and "therefore, God may also exist." In July 2018, replying through an assistant to the <em>Beijing Youth Daily</em>, Shi said he had "never" said it, adding that "this kind of grafting, putting words in someone else's mouth to completely distort my meaning, is not the first time." But the forger took off from his own sixth sense. The original was one paragraph away from ghosts.</p>
+<p>The blind-men-and-elephant humility was fine. The mistake was presenting a newborn hypothesis as known, then pushing the known into a sixth sense.</p>
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Buddhism · the blind men and the elephant</b>: The parable appears in the Pali <em>Udāna</em> (6.4), where the Buddha uses it to describe rival ascetics each clinging to one view and quarreling: every blind man is sure the part he touched is the whole elephant. Shi took the optimistic half, that what each touches is real and so it counts as science. The sutta's point is the other half: whoever touches one part is the most likely to mistake it for the whole. Applied to this talk, that is the step from one paper to consciousness to a sixth sense.</li>
+<li><b>Western philosophy · Kant's thing-in-itself</b>: "Our senses and brain aren't objective; we look across two worlds" echoes Kant's split between phenomena and things-in-themselves: we know only a world already shaped by the forms of perception. The difference: for Kant the thing-in-itself is unknowable in principle, while Shi trusts theory plus experiment to reach across both layers.</li>
+<li><b>Complexity science · Anderson's "More Is Different"</b>: Philip Anderson's 1972 essay grants that everything is made of elementary particles but argues that being able to reduce does not mean being able to rebuild from the bottom, since each level has its own laws. Shi's "the ultra-microscopic determines the microscopic" keeps only the first half, so the answer to consciousness can only be sought at the very bottom.</li>
+<li><b>Biophysics · avian magnetoreception</b>: Quantum effects do work in warm, wet biology. The leading example is the radical-pair mechanism in cryptochrome proteins in migratory birds' eyes, a field in which Peter Hore is a major figure. But the coherence there needs to last only microseconds, and it drives a chemical reaction rather than carrying messages between cells.</li>
+<li><b>Psychology · the foot-in-the-door effect</b>: Freedman and Fraser (1966) found that people who agree to a small request are more likely to agree to a larger one. The four questions have the same shape, running from "maybe" to "quite possible" to "certainly," each rung easier to nod at than the last. The difference: that was behavioral compliance; here the confidence of "already proven" is poured backward into the rung with the least evidence.</li>
+</ul></div>
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>At the 2016 Future Forum, Shi Yigong used statins, PD-1 antibodies and Alzheimer's to argue that basic research drives drug discovery.</li>
+<li>The protein PCSK9 drags the LDL receptor into the cell along with its cargo, so some patients on statins steadily lose receptors.</li>
+<li>The talk's pivot widened not knowing the cause of Alzheimer's into knowing nothing about the brain, then declared that consciousness requires quantum mechanics.</li>
+<li>The borrowed idea was Matthew Fisher's 2015 hypothesis that phosphorus nuclear spins inside Posner molecules might hold quantum states in the brain.</li>
+<li>Fisher's 10⁵ seconds was a paper estimate of spin coherence within one molecule, presented on stage as a known entanglement time.</li>
+<li>The microtubule figures of 10⁻²⁰ to 10⁻¹³ seconds come from Tegmark's 2000 paper, which used them to argue the brain is classical.</li>
+<li>The four questions reason backward from entanglement in earthly matter to a sixth sense, but the no-communication theorem says entanglement carries no information.</li>
+<li>Later calculations capped entanglement between two Posner molecules at 37 minutes under ideal conditions, and a 2023 simulation cut it to under a second.</li>
+<li>A doctored version circulating from 2017 added a theistic ending to the talk, which Shi Yigong denied ever saying in 2018.</li>
+<li>In the Buddhist <em>Udāna</em>, the blind men and the elephant warns against mistaking a part for the whole, which is the overreach this talk commits.</li>
+</ol>
+<h2>Sources</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://tsg.hnzj.edu.cn/info/1037/2233.htm">Shi Yigong, "The Limits of Knowing in Life Science," full transcript (<em>Mr. Science</em> edit of the recording, reprinted by Henan Polytechnic library)</a></span><span class="d">The base text for every quotation on this page, checked sentence by sentence against <a href="https://news.sina.cn/2017-09-18/detail-ifykyfwq8238087.d.html">Sina's reprint of the Guangzhou Daily version</a>. That version omits the Posner passage, so that passage was checked against the quotation in Fang Zhouzi's rebuttal.</span></li>
+<li><span class="t"><a href="https://arxiv.org/abs/1508.05929">Matthew Fisher, "Quantum Cognition: The possibility of processing with nuclear spins in the brain" (<em>Annals of Physics</em>, 2015)</a></span><span class="d">The source of the talk's second half; the basis for the origin of the 10⁵ s figure, Fisher's own caveats and his proposed tests.</span></li>
+<li><span class="t"><a href="https://arxiv.org/abs/quant-ph/9907009">Max Tegmark, "The importance of quantum decoherence in brain processes" (<em>Physical Review E</em>, 2000)</a></span><span class="d">The origin of the microtubule numbers and of the paper's "classical brain" conclusion.</span></li>
+<li><span class="t"><a href="https://arxiv.org/abs/2210.14812">Agarwal et al., "The Biological Qubit: Calcium Phosphate Dimers, not Trimers" (2023)</a></span><span class="d">The simulation showing Posner-trimer entanglement decaying within a second; the 37-minute bound is from <a href="https://arxiv.org/abs/1807.06339">Player &amp; Hore (2018)</a>.</span></li>
+<li><span class="t"><a href="https://www.medsci.cn/article/show_article.do?id=dcb062522ea">Fang Zhouzi's rebuttal (January 19, 2016, reprinted by MedSci)</a></span><span class="d">The earliest and fullest point-by-point critique used in "What happened next," and the second text for the Posner passage.</span></li>
+<li><span class="t"><a href="https://news.sciencenet.cn/htmlnews/2018/7/415982.shtm">"Theistic ending added to speech; Shi Yigong: it was tampered with" (ScienceNet, reprinting <em>Beijing Youth Daily</em>, July 2018)</a></span><span class="d">The talk's date, the content of the doctored version and Shi's reply.</span></li>
+</ul>
+</div>
+<footer>Talk Deep Read · one talk, the life of one idea · written 2026-11-16</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
