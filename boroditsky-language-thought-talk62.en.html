@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lera Boroditsky · How language shapes the way we think — the sense of direction held, the elegant bridge did not replicate</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0e1311;color:#b6c2cf;line-height:1.85;font-size:16.5px}
+.wrap{max-width:760px;margin:0 auto;padding:20px 20px 80px}
+.langbar{display:flex;justify-content:flex-end;padding-top:14px;font-family:"SF Mono",Menlo,monospace;font-size:.8rem}
+.langbar a{color:#5ee6a8;text-decoration:none;border:1px solid rgba(94,230,168,.28);padding:4px 12px;border-radius:20px}
+.langbar a:hover{border-color:#e8d46b;color:#e8d46b}
+header{padding:34px 0 8px;border-bottom:1px solid rgba(94,230,168,.16)}
+header .kicker{font-family:"SF Mono",Menlo,monospace;font-size:.76rem;color:#e8d46b;letter-spacing:1.4px;text-transform:uppercase}
+header h1{font-size:1.95rem;line-height:1.35;font-weight:800;margin-top:10px;background:linear-gradient(135deg,#5ee6a8 0%,#e8d46b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .sub{margin-top:10px;color:#7d8794;font-size:.92rem}
+.modebar{display:flex;gap:8px;margin:22px 0 8px;padding:5px;background:rgba(255,255,255,.03);border:1px solid rgba(94,230,168,.14);border-radius:24px;width:fit-content}
+.modebar button{background:none;border:none;color:#7d8794;font:inherit;font-size:.86rem;font-weight:600;padding:6px 18px;border-radius:20px;cursor:pointer;transition:all .15s}
+.modebar button.on{background:linear-gradient(135deg,rgba(94,230,168,.22),rgba(232,212,107,.18));color:#d5dce4;box-shadow:inset 0 0 0 1px rgba(232,212,107,.28)}
+h2{font-size:1.24rem;color:#d5dce4;margin:44px 0 14px;padding-left:13px;border-left:3px solid #5ee6a8;line-height:1.45}
+h3{font-size:1.04rem;color:#e8d46b;margin:30px 0 10px}
+p{margin:15px 0}
+strong{color:#e2e8f0}
+a{color:#5ee6a8;text-decoration:none;border-bottom:1px solid rgba(94,230,168,.3)}
+a:hover{color:#e8d46b;border-color:#e8d46b}
+blockquote{margin:20px 0;padding:16px 20px;background:rgba(255,255,255,.035);border-left:3px solid #e8d46b;border-radius:0 8px 8px 0;color:#c8d2dc}
+blockquote .en{display:block;font-style:italic;color:#93a1ae;font-size:.94rem;line-height:1.7}
+blockquote .zh{display:block;margin-top:9px}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-size:.8rem;color:#7d8794;font-family:"SF Mono",Menlo,monospace}
+.glossary{border:1px dashed rgba(232,212,107,.35);border-radius:12px;padding:16px 22px;margin:22px 0;background:rgba(232,212,107,.03)}
+.glossary ul{list-style:none;margin-left:0}
+.glossary li{margin:9px 0;font-size:.93rem}
+.glossary b{color:#e8d46b}
+.meta-card{font-family:"SF Mono",Menlo,monospace;font-size:.85rem;line-height:1.9;color:#93a1ae;border:1px solid rgba(94,230,168,.22);border-radius:10px;padding:14px 20px;margin:20px 0;background:rgba(94,230,168,.04)}
+.meta-card b{color:#e8d46b;font-weight:600}
+figure{margin:28px 0}
+figcaption{font-size:.83rem;color:#7d8794;margin-top:10px;text-align:center;font-family:"SF Mono",Menlo,monospace}
+svg{width:100%;height:auto;display:block}
+ol,ul{margin:14px 0 14px 22px}
+li{margin:8px 0}
+.reads{margin-left:0}
+.reads li{margin:16px 0;list-style:none}
+.reads .t{font-weight:700;color:#d5dce4}
+.reads .d{font-size:.9rem;color:#9aa6b2;display:block;margin-top:3px}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid rgba(94,230,168,.14);font-size:.82rem;color:#5f6b77;font-family:"SF Mono",Menlo,monospace}
+.fate{border:1px solid rgba(232,212,107,.3);border-radius:10px;padding:4px 20px;margin:20px 0;background:rgba(232,212,107,.04)}
+.fate .verdict{font-family:"SF Mono",Menlo,monospace;font-size:.8rem;color:#e8d46b;letter-spacing:1px;margin-top:12px}
+.crossx{border:1px solid rgba(94,230,168,.32);border-radius:12px;padding:6px 22px;margin:22px 0;background:rgba(94,230,168,.05)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:.95rem}
+.crossx b{color:#e8d46b}
+.takeaways{counter-reset:tk;list-style:none;margin:18px 0 0;padding:0;border:1px solid rgba(94,230,168,.3);border-radius:12px;background:rgba(94,230,168,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(94,230,168,.12);font-size:.96rem;line-height:1.75}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:.78rem;color:#5ee6a8}
+[hidden]{display:none!important}
+@media(max-width:640px){body{font-size:16px}header h1{font-size:1.5rem}}
+</style>
+</head><body>
+<div class="wrap">
+<div class="langbar"><a href="boroditsky-language-thought-talk62.html">中文 →</a></div>
+<header>
+<div class="kicker">TEDWomen 2017 · 2017</div>
+<h1>Point southeast with your eyes closed: Lera Boroditsky says language shapes thought, and half the evidence held</h1>
+<p class="sub">Lera Boroditsky · How language shapes the way we think</p>
+<div class="modebar"><button class="on" id="btn-pop">Short</button><button id="btn-deep">Full</button></div>
+</header>
+<div class="mode-pop" id="mode-pop">
+<p>Three minutes into her talk, Lera Boroditsky asks everyone in the audience to close their eyes and point southeast.</p>
+<p>When they open them, arms are aimed in every direction. She admits she doesn't know which way it is either: "So let's just say the accuracy in this room was not very high." Then she turns the joke into the claim. This is a big difference in cognitive ability across languages. In Pormpuraaw, an Aboriginal community on the west edge of Cape York in Australia, she could ask a five-year-old and get the answer.</p>
+<p>People there speak Kuuk Thaayorre, which has no words for "left" and "right." Everything is north, south, east and west, and the way to say hello is to ask "Which way are you going?" If your language makes you report your heading before you can get past hello, you stay oriented.</p>
+<p>The 14-minute talk asks an old question: <strong>does the language we speak shape the way we think?</strong> For thousands of years, she says, people could only argue about it; only recently has there been data. She then runs through six examples. The Kuuk Thaayorre lay time out from east to west. People without exact number words struggle to keep track of exact quantities. Russian speakers, who must split blue into light <i>goluboy</i> and dark <i>siniy</i>, tell the two apart faster. "Bridge" is feminine in German and masculine in Spanish, so Germans call bridges "beautiful" and "elegant" while Spaniards call them "strong" and "long." English says "He broke the vase" where Spanish prefers "The vase broke," and witnesses in the two languages remember different things.</p>
+<p>She closes on two notes. Human minds have invented 7,000 cognitive universes, yet nearly everything we know about the mind comes from American English-speaking undergraduates. And this is not about how people elsewhere think. It is about how you think.</p>
+<p>Each example rests on a real study, and each study is narrower than the stage version. The Russian blues experiment tested 26 Russian and 24 English native speakers. When participants silently rehearsed digit strings, the Russian advantage disappeared: language steps in at the moment of judgment rather than permanently rewiring vision. In the number work with the Amazonian Pirahã, people matched quantities exactly when the objects were in view and only drifted to estimates when the task needed memory. "Folks who don't have that linguistic trick can't do that" flattens that distinction.</p>
+<p>What happened to the idea? The bridge, the funniest bit of the talk, is also the weakest. It comes from a 2003 book chapter, never published in a peer-reviewed journal, and a 2014 replication attempt was titled, plainly, a failure to replicate. A 2019 systematic review of 43 grammatical gender studies with 5,895 participants found that in tasks asking people to describe objects, only 3% of samples supported the effect.</p>
+<p>The rest held up in part. The finding that English phrasing raises blame was reproduced in English by a 2022 preregistered direct replication, with mixed results in Croatian. The verdict is <strong>partly holds</strong>. Language does nudge attention, memory and reaction time in particular tasks, and that weak version replicates. "Profoundly shape the way we think" claims more than the experiments support.</p>
+</div>
+<div class="mode-deep" hidden="" id="mode-deep">
+<div class="meta-card"><b>Talk</b> How language shapes the way we think · <b>Venue</b> TEDWomen 2017 · recorded November 2017 · <b>Length</b> about 14 minutes · <b>Transcript</b> <a href="https://www.ted.com/talks/lera_boroditsky_how_language_shapes_the_way_we_think/transcript">official TED transcript</a></div>
+
+<h2>The moment</h2>
+<p>First she asks everyone to close their eyes. Then she asks them to point.</p>
+<blockquote><span class="en">I want you all to close your eyes for a second and point southeast.</span><cite>— Lera Boroditsky, TEDWomen 2017</cite></blockquote>
+<p>Laughter. Keep your eyes closed, she says. Point. When they open them she scans the room: "I see you guys pointing there, there, there, there, there ..." She doesn't know which way it is herself, and adds: "You have not been a lot of help."</p>
+<blockquote><span class="en">So let's just say the accuracy in this room was not very high.</span><cite>— Lera Boroditsky, TEDWomen 2017</cite></blockquote>
+<p>Before the laughter has died she makes it the argument. One "very distinguished group" can't tell which way is which; in another group she could ask a five-year-old. The game puts the whole question in each listener's own body. You can't find southeast not because humans lack a sense of direction, but because your language has never required you to know.</p>
+
+<h2>The speaker, and the year</h2>
+<p>Lera Boroditsky was born in Belarus, earned her PhD at Stanford, and in 2017 taught cognitive science at UC San Diego. She had been running language-and-thought experiments since around 2000, and almost every example in this talk comes from her lab or her collaborators: time laid out east to west, the two Russian blues, German and Spanish bridges, English and Spanish accounts of who broke the vase.</p>
+<p>The question sat in an awkward spot. Since the 1930s, linguistic relativity has been tied to the American linguists Edward Sapir and Benjamin Lee Whorf (hence "the Sapir-Whorf hypothesis"). It caused a stir, then was battered. In a 2011 <i>Scientific American</i> essay Boroditsky described the problem as a near-complete lack of evidence, and said that by the 1970s many scientists had become disenchanted. Her generation's work, sometimes called neo-Whorfian, dropped the claim that language limits what you can think, and used reaction times and memory tests to measure whether language nudges performance on specific tasks.</p>
+<p>By 2017 the critics had organized too: in 2014 the linguist John McWhorter published a book titled <i>The Language Hoax</i>. So this TEDWomen talk was not announcing a discovery. It was a research program with more than a decade of experiments and named opponents, and she was laying out the case for the affirmative to a general audience.</p>
+
+<div class="glossary"><ul>
+<li><b>Linguistic relativity</b>: the idea that the language you speak affects how you think. The strong version says language determines thought, so without a word you can't think the thing. The weak version says only that language makes some things faster or easier to notice in some tasks.</li>
+<li><b>Grammatical gender</b>: many languages sort every noun into classes called masculine and feminine (sometimes also neuter), which govern the forms of articles and adjectives. It is a rule of grammar, not a claim about the object itself.</li>
+<li><b>Verbal interference</b>: having participants silently rehearse digit strings during a task, to occupy the channel of inner speech.</li>
+</ul></div>
+
+<h2>The talk, in full</h2>
+<p>She opens with language itself. I'm exhaling and making sounds, the air vibrates, it hits your eardrums, and your brain turns it into thoughts. Then she proves it on the spot:</p>
+<blockquote><span class="en">Imagine a jellyfish waltzing in a library while thinking about quantum mechanics.</span><cite>— Lera Boroditsky, TEDWomen 2017</cite></blockquote>
+<p>If everything has gone relatively well in your life so far, she says, you probably haven't had that thought before. But now I've made you think it. That's the setup, and the real question runs the other way. There are about 7,000 languages, with different sounds, vocabularies and, above all, structures. <strong>Does the language we speak shape the way we think?</strong> She sets two old lines against each other: Charlemagne's "To have a second language is to have a second soul," and Juliet's rose that would smell as sweet by any other name. The argument has gone back and forth for thousands of years, she says, without data, until recently.</p>
+<p>The first example is Kuuk Thaayorre. No left or right, only cardinal directions; "Which way are you going?" is hello. Speakers stay oriented better than we used to think humans could. It isn't that we lack magnets in our beaks or our scales; if your language and culture train you, you can do it. Then comes the moment with the pointing.</p>
+<p>She moves from space to time. She shows photos of her grandfather at different ages. English speakers lay them out left to right, which has to do with writing direction; Hebrew or Arabic speakers might go right to left. And the Kuuk Thaayorre? A hint: seated facing south, they ordered time left to right. Facing north, right to left. Facing east, time came toward the body. The pattern is east to west.</p>
+<blockquote><span class="en">For the Kuuk Thaayorre, time is locked on the landscape. It's a dramatically different way of thinking about time.</span><cite>— Lera Boroditsky, TEDWomen 2017</cite></blockquote>
+<p>The third example is number. Asked how many penguins there are, you count them, and the last number is the answer: a "little linguistic trick" taught in childhood. Some languages lack exact number words like "seven" or "eight." Their speakers don't count and have trouble keeping track of exact quantities. Ask them to match a row of penguins to the same number of ducks, and "folks who don't have that linguistic trick can't do that."</p>
+<p>The fourth is color. English has one word, blue, for every shade on the screen; Russian has no single word and must distinguish light <i>goluboy</i> from dark <i>siniy</i>. Russian speakers are faster to tell colors apart across that boundary. And in brain recordings, as a color shifts slowly from light to dark blue, people with two words show a surprise response, as if something had categorically changed, while English speakers do not.</p>
+<p>The fifth, "one of my favorites," is grammatical gender. The sun is feminine in German and masculine in Spanish; the moon is the reverse.</p>
+<blockquote><span class="en">Do German speakers think of the sun as somehow more female-like, and the moon somehow more male-like? Actually, it turns out that's the case.</span><cite>— Lera Boroditsky, TEDWomen 2017</cite></blockquote>
+<p>Her evidence is the bridge: feminine in German, masculine in Spanish. Germans are more likely to call bridges "beautiful" and "elegant," Spaniards "strong" or "long." The room laughs.</p>
+<p>The sixth is events. In English it's fine to say "He broke the vase." In Spanish, for an accident, you'd more likely say "The vase broke" or "The vase broke itself." Show the same accident to both groups, and English speakers remember who did it; Spanish speakers are more likely to remember that it was an accident. Go one step further: if she just says "He broke the vase" rather than "The vase broke," even after you've watched the video, you will blame him more and punish him more.</p>
+<blockquote><span class="en">The language guides our reasoning about events.</span><cite>— Lera Boroditsky, TEDWomen 2017</cite></blockquote>
+<p>Here she turns. She sorts the six examples: space and time are "big" effects, whole coordinate frames apart; number is a "deep" effect, since without counting you can't do algebra or build a room like this one; color is an "early" effect, reaching into the most basic perceptual decisions; grammatical gender "may be a little silly" but is "broad," because it applies to everything a noun can name; blame and eyewitness memory are effects with personal weight.</p>
+<p>She lands in two places. One is diversity:</p>
+<blockquote><span class="en">Human minds have invented not one cognitive universe, but 7,000</span><cite>— Lera Boroditsky, TEDWomen 2017</cite></blockquote>
+<p>Yet we lose about one language a week. Worse, almost everything we know about the human mind and brain is based on studies of American English-speaking undergraduates: "That excludes almost all humans." The other is the listener. This isn't about how people elsewhere think, "It's about how you think." She ends with three questions to take home: Why do I think the way that I do? How could I think differently? What thoughts do I wish to create?</p>
+
+<h2>Below the iceberg</h2>
+<p><strong>The Russian blues.</strong> The main paper behind that passage is Winawer, Boroditsky and colleagues, "Russian blues reveal effects of language on color discrimination," <i>PNAS</i>, 2007. The participants were 26 native Russian speakers and 24 native English speakers recruited in the Boston area and tested at MIT. They saw three color squares and judged which of the bottom two matched the top one. Russian speakers were faster when the two shades straddled the <i>goluboy</i>/<i>siniy</i> line; English speakers showed no such category advantage in any condition. Three things never made it onstage. The Russian speakers all lived in the US and had started learning English between the ages of 7 and 21, and everyone received instructions in English. The effect was concentrated in the hard comparisons between similar colors. Most important, when participants silently rehearsed digit strings, the Russian advantage vanished, while a spatial secondary task left it intact. The paper's own conclusion is that the effect of language is "online." The talk speaks of a "lifetime of experience" of distinguishing two colors; the paper shows a language label being called up at the moment of judgment, and the difference disappearing when that channel is occupied. That is much narrower than "language rewires vision."</p>
+<p><strong>People without number words.</strong> The talk names no language. In her 2011 <i>Scientific American</i> essay she does: Pirahã, in the Amazon, which has words only for "few" and "many." In a 2008 study in <i>Cognition</i> by Michael Frank, Daniel Everett, Evelina Fedorenko and Edward Gibson, as described in MIT's press release, Pirahã speakers used the word once thought to mean "two" for as many as five or six objects. They could do exact matching tasks as long as there was no memory component; once memory was involved, they approximated. The authors' conclusion was that number words are a "cognitive technology" that aids memory. Onstage, "can't do that" drops the half where they can, as long as the items stay in view.</p>
+<p><strong>The bridge.</strong> Her 2009 essay for Edge gives the fuller version. German and Spanish speakers described objects with opposite genders in the two languages. A key (masculine in German) was "hard," "heavy," "jagged," "metal" to Germans and "golden," "intricate," "little," "lovely" to Spaniards; a bridge was "beautiful," "elegant," "fragile," "slender" to Germans and "big," "dangerous," "strong," "towering" to Spaniards. She stresses that all testing was done in English. But the formal source is a 2003 chapter by Boroditsky, Schmidt and Phillips in the edited volume <i>Language in Mind</i>. The experiment was never published with full methods and data in a peer-reviewed journal, so its sample size and effect size can't be checked.</p>
+<p><strong>The vase and blame.</strong> Both papers are by Boroditsky and her student Caitlin Fausey. In the first study of the blame paper (<i>Psychonomic Bulletin &amp; Review</i>, 2010), 236 Stanford students read about a restaurant fire. Those who read agentive sentences such as "she had ignited the napkin" ruled that Mrs. Smith should pay $935 of the $1,500 damage; those who read "the napkin had ignited" said $689, a 36% difference. A later study used the 2004 Super Bowl "wardrobe malfunction," and the wording effect held even when people watched the video. In the memory paper (2011), English and Spanish speakers remembered the agents of intentional events equally well, about 78%. For accidental events, English speakers remembered 79% and Spanish speakers 74%: a five-point gap, effect size d = 0.31, tested one-tailed. The direction matches the talk; the size is far smaller.</p>
+<p>There is an irony too. The talk ends by criticizing psychology for studying American English-speaking undergraduates almost exclusively. The participants in the blame study were Stanford undergraduates; the Russian blues participants were English-speaking Russians living in Boston. The problem she names is real, and her own experiments did not escape it.</p>
+
+<h2>What happened next</h2>
+<div class="fate"><p class="verdict">Partly holds · as of 2026-11</p><p>The weak version replicates: language nudges attention, memory and reaction speed in specific tasks. The talk's most vivid example, grammatical gender, largely failed to replicate, and "profoundly shape the way we think" goes beyond the evidence.</p></div>
+<p>Start with Boroditsky's best-known earlier paper. It isn't in this talk, but it shows where this kind of evidence stands. In 2001 she reported that because Mandarin uses "up" and "down" for time, Mandarin speakers think of time vertically. In 2007 <i>Cognition</i> published six failed replications by January and Kako, and the Taiwanese researcher Jenn-Yeu Chen reported a failure in the same period. Boroditsky and colleagues argued again in 2011, with new methods, that the two groups do differ. The dispute is still unsettled.</p>
+<p>Grammatical gender fell hardest. In 2014 Mickan, Schiefke and Stefanowitsch published "Key is a llave is a Schlüssel: A failure to replicate an experiment from Boroditsky et al. 2003" in the yearbook of the German Cognitive Linguistics Association. In 2017 a study by Semenuks and colleagues, with Boroditsky as a co-author, found the effect only in participants' second and third adjectives, not their first. In 2019 Steven Samuel, Geoff Cole and Madeline Eacott of the University of Essex published a systematic review in <i>Psychonomic Bulletin &amp; Review</i> covering 43 studies and 5,895 participants. Overall, 32% of samples supported the hypothesis, 24% gave mixed support and 43% none. In property-judgment tasks, the closest to the bridge, only 3% supported it and 75% showed nothing at all. The support came mostly from tasks that ask whether an object should get a male or female voice, or is male or female, which the authors argue invite participants to use grammatical gender as a strategy. Remove those tasks and support falls from 32% to 11%.</p>
+<p>The blame effect fared better. In 2022 Tonković, Vlašiček and Dumančić published a preregistered direct replication in <i>Legal and Criminological Psychology</i>. According to the abstract as indexed, the English results replicated and the Croatian ones were mixed: one experiment moved blame ratings but not the proposed fine, and another showed no effect on the fine.</p>
+<p>Color has had no replication crisis; the dispute is over interpretation. The effect vanishing under verbal load fits "language called up online" better than "perception rewired." On space, Peggy Li and Lila Gleitman published a rebuttal in <i>Cognition</i> in 2002, "Turning the tables"; we have not read it and won't paraphrase its argument. For McWhorter's <i>The Language Hoax</i>, too, we checked only the bibliographic facts.</p>
+<p>Back to "Actually, it turns out that's the case." On today's evidence it doesn't hold, and that is the very effect she classed as the "broad" one. What survives sounds more like her papers than her talk. Language doesn't rewrite what you can think. It shapes what you habitually notice, what you remember, and what you reach for at the moment of judgment.</p>
+
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Neuroscience · predictive processing</b>: perception as the brain matching sensory input against prior predictions; the two Russian blues act like a prior called up in real time. The difference: predictive processing says priors change what is seen, while Winawer measured only response speed, and the effect vanished once the language channel was busy.</li>
+<li><b>Buddhism · papañca</b>: early Buddhist texts use the word for conceptual proliferation: once something is named, the mind elaborates along the name. A bridge tinted "elegant" or "sturdy" by grammatical gender is a small specimen of it: the name arrives first and the feeling follows. The difference is the goal: Buddhism wants to still this elaboration, while cognitive science only wants to measure it, and here it turned out too small to detect.</li>
+<li><b>Philosophy · Wittgenstein</b>: <i>Tractatus</i> 5.6, "The limits of my language mean the limits of my world," is often quoted as a slogan for strong relativity. The difference: Wittgenstein meant the logical limits of what can be said, not reaction times, and Boroditsky's data support the weak version.</li>
+<li><b>Psychology · WEIRD</b>: in 2010 Joseph Henrich and colleagues showed that psychology's subjects come overwhelmingly from Western, educated, industrialized, rich, democratic societies. The talk's closing complaint has the same shape. The difference: her remedy is linguistic diversity, and the same sampling bias runs through her own studies.</li>
+<li><b>Distributed systems · reference frames</b>: the Kuuk Thaayorre pin time to the landscape, like a system ordering events by a global coordinate; English left-to-right is a local frame centered on the self. The difference: a person switches frames far more cheaply than a system changes its protocol.</li>
+</ul></div>
+
+<h2>Ten takeaways</h2>
+<ol class="takeaways">
+<li>Linguistic relativity asks whether the language we speak shapes how we think; the strong version says it determines thought, the weak one says it nudges.</li>
+<li>Kuuk Thaayorre has no words for left and right; everything is cardinal directions, and hello is "Which way are you going?"</li>
+<li>Kuuk Thaayorre speakers arrange pictures of time from east to west, so time is locked to the landscape, not to the body.</li>
+<li>Russian requires separate words for light blue (goluboy) and dark blue (siniy), and Russian speakers discriminate across that line faster.</li>
+<li>The Russian blue advantage vanished when participants rehearsed digits, so language acts online at the moment of judgment rather than rewiring vision.</li>
+<li>Pirahã speakers, who lack exact number words, match quantities exactly when items are visible and only estimate when memory is needed.</li>
+<li>The German "elegant bridge" versus Spanish "strong bridge" finding comes from a 2003 chapter with no full journal publication, and failed to replicate in 2014.</li>
+<li>A 2019 review of 43 grammatical gender studies found only 3% of samples supporting the effect in tasks asking people to describe objects.</li>
+<li>Agentive wording ("she ignited the napkin") led Stanford students to assign 36% more damages, and the effect replicated in English in 2022.</li>
+<li>Boroditsky criticizes psychology for studying American English-speaking undergraduates, yet her own blame study used Stanford undergraduates.</li>
+</ol>
+
+<h2>Sources</h2>
+<ul class="reads">
+<li><span class="t"><a href="https://www.ted.com/talks/lera_boroditsky_how_language_shapes_the_way_we_think/transcript">Lera Boroditsky, How language shapes the way we think (TED transcript)</a></span><span class="d">The full talk; every quotation on this page comes from it.</span></li>
+<li><span class="t"><a href="https://langcog.stanford.edu/papers/winawer2007.pdf">Winawer et al. (2007), Russian blues reveal effects of language on color discrimination, PNAS</a></span><span class="d">The original color paper: sample, participant background, and the effect disappearing under verbal interference.</span></li>
+<li><span class="t"><a href="https://lera.ucsd.edu/papers/wardrobe-malfunction.pdf">Fausey &amp; Boroditsky (2010), Subtle linguistic cues influence perceived blame and financial liability</a></span><span class="d">The blame study: 236 Stanford students, $935 versus $689.</span></li>
+<li><span class="t"><a href="https://lera.ucsd.edu/papers/who-dunnit.pdf">Fausey &amp; Boroditsky (2011), Who dunnit? Cross-linguistic differences in eye-witness memory</a></span><span class="d">English versus Spanish eyewitness memory: 79% versus 74%, d = 0.31.</span></li>
+<li><span class="t"><a href="https://www.edge.org/conversation/lera_boroditsky-how-does-our-language-shape-the-way-we-think">Boroditsky (2009), How does our language shape the way we think? (Edge)</a></span><span class="d">The speaker's longer essay: the full adjective lists for key and bridge, and testing conducted in English.</span></li>
+<li><span class="t"><a href="https://repository.essex.ac.uk/25035/">Samuel, Cole &amp; Eacott (2019), Grammatical gender and linguistic relativity: A systematic review</a></span><span class="d">Independent review: 43 studies, 5,895 participants, 3% support in property tasks; also lists the 2014 failed replication by Mickan et al.</span></li>
+</ul>
+</div>
+<footer>Talk Deep-Read · one talk, the full life of one idea · written 2026-11-17</footer>
+</div>
+<script>
+(function(){
+  var pop=document.getElementById('mode-pop'),deep=document.getElementById('mode-deep');
+  var bp=document.getElementById('btn-pop'),bd=document.getElementById('btn-deep');
+  function set(m){
+    var isDeep=(m==='deep');
+    pop.hidden=isDeep; deep.hidden=!isDeep;
+    bp.classList.toggle('on',!isDeep); bd.classList.toggle('on',isDeep);
+    try{localStorage.setItem('ll-mode',m);}catch(e){}
+  }
+  bp.addEventListener('click',function(){set('pop');});
+  bd.addEventListener('click',function(){set('deep');});
+  var saved=null; try{saved=localStorage.getItem('ll-mode');}catch(e){}
+  set(saved==='deep'?'deep':'pop');
+})();
+</script>
+</body></html>
